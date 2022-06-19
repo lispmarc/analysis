@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+%%%%%%%%%% End TeXmacs macros
+
+\begin{document}
+
+I'm trying to prove exercise 113Y(b) of Measure Theory from Fremlin (see
+https://www1.essex.ac.uk/maths/people/fremlin/chap11.pdf page 39).
+
+Given a measure space $\left( X, \sum, \mu \right)$ and $D \subseteq X$ prove
+that $\sum_D = \left\{ E \bigcap D|E \in \sum \right\}$ is a $\sigma$-algebra
+of subsets of $D$ and that $\mu_D$ defined by $\mu_D (A) = \inf \left\{ \mu
+(E) |E \in \sum, A \subseteq E \right\}$ is a measure on $\sum_D$. I have
+already proved that $\Sigma_D$ is a $\sigma$-algebra and that $\mu^{\ast} :
+\mathcal{P} (X) \rightarrow [0, \infty]$ defined by $\mu^{\ast} (A) = \inf
+\left\{ \mu (E) |E \in \sum, A \subseteq E \right\}$ is a outer-measure such
+that $\forall A \in \mathcal{P} (X)$ there exists a $E \in \sum$ with $\mu (A)
+= \mu^{\ast} (A)$ (exercise 113Y(a)). I want then to apply the Caratheodory
+theorem for the rest of the proof and must then show that $\sum_D \subseteq
+\left\{ E \subseteq X| \forall A \subseteq X \tmop{we} \tmop{have} \mu^{\ast}
+\left( A \bigcap E \right) + \mu^{\ast} (A\backslash E) \leqslant \mu^{\ast}
+(A) \right\}$ but fails to do so. Also is this the correct way to solve the
+exercise?
+
+Any help in the last part is appreciated
+
+\
+
+\
+
+\end{document}
