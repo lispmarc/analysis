@@ -7156,11 +7156,11 @@
 
     <\enumerate>
       <item><math|A\<in\>\<cal-A\>> is <with|font-series|bold|inner regular>
-      if <math|\<mu\><around*|(|A|)>=sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F\<in\>\<cal-A\>\<wedge\>F\<subseteq\>A\<wedge\>F
-      compact|}>|)>>
+      if <math|\<mu\><around*|(|A|)>=sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F\<in\>\<cal-A\>\<wedge\>F
+      is compact\<wedge\>F\<subseteq\>A|}>|)>>
 
       <item><math|A\<in\>\<cal-A\>> is <with|font-series|bold|outer regular>
-      if <math|\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U\<in\>\<cal-T\>\<wedge\>A\<subseteq\>U|}>|)>>
+      if <math|\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U\<in\>\<cal-A\>\<wedge\>U\<in\>\<cal-T\>\<wedge\>A\<subseteq\>U|}>|)>>\ 
 
       <item><math|><math|A\<in\>\<cal-A\>> is <with|font-series|bold|regular>
       if it is <with|font-series|bold|inner >and
@@ -7180,6 +7180,13 @@
     </enumerate>
   </definition>
 
+  <\note>
+    The condition <math|F\<in\>\<cal-A\>> in (1) is needed to ensure that
+    <math|\<mu\><around*|(|F|)>> is defined. Likely the condition
+    <math|E\<in\>\<cal-A\>> in (2) is needed to ensure that
+    <math|\<mu\><around*|(|E|)>> exists.
+  </note>
+
   <\proposition>
     <label|Lebesgue measure is regular>Let <math|n\<in\>\<bbb-N\><rsub|0>>
     then the Lebesgue measure in <math|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><rsup|n>,<around*|(|\<lambda\><rsup|n>|)><rsub|\|\<cal-B\><around*|[|\<bbb-R\><rsup|b>|]>>|\<rangle\>>>
@@ -7187,10 +7194,185 @@
   </proposition>
 
   <\proof>
-    Let <math|A\<in\>>
+    This follows from <reference|Lebesgue space and compact sets> and
+    <reference|alternative formule for lebesgue measure (1)>.
   </proof>
 
-  TODO Prove that the Lebesgue measure is regular
+  We show now that finite measures on <math|\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
+  are regular. First we prove a preliminary lemma.
+
+  <\lemma>
+    Let <math|n\<in\>\<bbb-N\><rsub|0>>, <math|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>,\<mu\>|\<rangle\>>>
+    a measure space such that <math|\<forall\>A\<in\>\<cal-B\><around*|{|\<bbb-R\><rsup|n>|}>>
+    we have <math|\<mu\><around*|(|A|)>\<less\>\<infty\>> [<math|\<mu\>> is a
+    finite measure] then <math|\<forall\>A\<in\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
+    we have that
+
+    <\enumerate>
+      <item><math|\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U
+      open<infix-and>A\<subseteq\>U|}>|)>>
+
+      <item><math|\<mu\><around*|(|A|)>=sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C
+      closed<infix-and>U\<subseteq\>C|}>|)>>
+    </enumerate>
+  </lemma>
+
+  <\note>
+    As open and closed sets are in <math|\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
+    [see <reference|Borel algebra on R^n equivalences>] the above definitions
+    makes sense.
+  </note>
+
+  <\proof>
+    Let <math|\<cal-R\>> be the set of Borel sets that satisfies (1) and (2).
+    So
+
+    <\equation*>
+      \<cal-R\>=<around*|{|A\<in\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>\|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U
+      clsoed\<wedge\>A\<subseteq\>U|}>|)>=sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+      close\<wedge\>F\<subseteq\>A|}>|)>=\<mu\><around*|(|A|)>|}>
+    </equation*>
+
+    Let <math|V> now be a open set then using <reference|open/closed sets
+    relation> there exists s sequence <math|<around*|{|G<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
+    of closed sets such that <math|V=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>G<rsub|i>>.
+    Define then <math|<around*|{|F<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
+    by <math|F<rsub|i>=<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,i|}>>G<rsub|i>>
+    then as <math|F<rsub|i>> is a finite union of closed sets,
+    <math|F<rsub|i>> is closed, also trivially
+    <math|F<rsub|i>\<subseteq\>F<rsub|i+1>> Further as
+    <math|G<rsub|i>\<subseteq\>F> we have
+    <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>G<rsub|i>\<subseteq\><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>>
+    and if <math|x\<in\><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>>
+    there exists a <math|i\<in\>\<bbb-N\><rsub|0>> such that
+    <math|x\<in\>F<rsub|i>=<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>G<rsub|j>>,
+    hence <math|\<exists\>j\<in\><around*|{|1,\<ldots\>,n|}>> such that
+    <math|x\<in\>G<rsub|j>> proving that <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>\<subseteq\><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>G<rsub|i>>.
+    To summarize we have\ 
+
+    <\equation>
+      <label|eq 18.239.032>V=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>
+      with \<forall\>i\<in\>\<bbb-N\><rsub|0> we have
+      F<rsub|i>\<subseteq\>F<rsub|i+1><infix-and>F<rsub|i> is closed hence
+      F<rsub|i>\<in\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>
+    </equation>
+
+    So
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<mu\><around*|(|V|)>>|<cell|\<equallim\><rsub|<text|<reference|eq
+      18.239.032>>>>|<cell|\<mu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|measure
+      properties (2)>>>>|<cell|sup<around*|(|<around*|{|\<mu\><around*|(|F<rsub|i>|)>\|i\<in\>\<bbb-N\><rsub|0>|}>|)><eq-number><label|eq
+      18.240.032>>>>>
+    </eqnarray*>
+
+    If <math|F> is closed and <math|F\<subseteq\>V> then
+    <math|\<mu\><around*|(|F|)>\<leqslant\>\<mu\><around*|(|V|)>> so that
+
+    <\equation>
+      <label|eq 18.241.032>sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+      closed F\<subseteq\>V|}>|)>\<leqslant\>\<mu\><around*|(|V|)>
+    </equation>
+
+    As <math|F<rsub|i>\<subseteq\><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>=V>
+    and <math|F<rsub|i>> is closed we have that
+    <math|\<mu\><around*|(|F<rsub|i>|)>\<leqslant\>sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+    closed\<wedge\>F\<subseteq\>V|}>|)>> so that\ 
+
+    <\equation>
+      <label|eq 18.242.032>sup<around*|(|<around*|{|\<mu\><around*|(|F<rsub|i>|)>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\>sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+      close\<wedge\>F\<subseteq\>V|}>|)>
+    </equation>
+
+    So we have that <math|\<mu\><around*|(|V|)>\<equallim\><rsub|<text|<reference|eq
+    18.240.032>>>sup<around*|(|<around*|{|\<mu\><around*|(|F<rsub|i>|)>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\><rsub|<text|<reference|eq
+    18.242.032>>>sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+    close\<wedge\>F\<subseteq\>V|}>|)>\<leqslant\><rsub|<text|<reference|eq
+    18.241.032>>>\<mu\><around*|(|V|)>> which proves that\ 
+
+    <\equation>
+      <label|eq 18.243.032>\<mu\><around*|(|V|)>=sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+      close\<wedge\>F\<subseteq\>V|}>|)>
+    </equation>
+
+    Further as <math|V> is open and <math|V\<subseteq\>V> we have that
+    <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U
+    open\<wedge\>V\<subseteq\>U|}>|)>\<leqslant\>\<mu\><around*|(|V|)>>,
+    Further if <math|U> is open such that <math|V\<subseteq\>U> then
+    <math|\<mu\><around*|(|V|)>\<leqslant\>\<mu\><around*|(|U|)>> hence
+    <math|\<mu\><around*|(|V|)>\<leqslant\>inf<around*|(|<around*|{|\<mu\><around*|(|V|)>\|U
+    open\<wedge\>V\<subseteq\>U|}>|)>> proving that
+
+    <\equation>
+      <label|eq 18.244.032>\<mu\><around*|(|V|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U
+      open\<wedge\>V\<subseteq\>U|}>|)>
+    </equation>
+
+    From <reference|eq 18.242.032> and <reference|eq 18.244.032> it follows
+    that\ 
+
+    <\equation>
+      <label|eq 18.245.032>\<cal-T\><rsub|\<bbb-R\><rsup|n>>\<subseteq\>\<cal-R\>
+    </equation>
+
+    Define now\ 
+
+    <\equation*>
+      \<cal-S\>=<around*|{|A\<in\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>\<forall\>\<varepsilon\>\<gtr\>0
+      then \|\<exists\>U,F where E is open,F,F\<subseteq\>A\<subseteq\>U<infix-and>\<mu\><around*|(|U\\F|)>\<less\>\<varepsilon\>|}>
+    </equation*>
+
+    Next we prove that <math|\<cal-R\>> is a <math|\<sigma\>>-algebra.\ 
+
+    <\enumerate>
+      <item>As <math|X,\<emptyset\>> is open we have by <reference|eq
+      18.245.032> that <math|X,\<emptyset\>\<in\>\<cal-R\>>
+
+      <item>Let <math|A\<in\>\<cal-R\>> and <math|\<varepsilon\>\<gtr\>0>. As
+      <math|\<mu\><around*|(|A|)>=sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+      closed\<wedge\>F\<subseteq\>A|}>|)>> there exists a <math|F> closed
+      with <math|F\<subseteq\>A> such that\ 
+
+      <\equation>
+        <label|eq 18.246.032>\<mu\><around*|(|A|)>-<frac|\<varepsilon\>|2>\<less\>\<mu\><around*|(|F|)>
+      </equation>
+
+      Further as <math|\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U
+      open\<wedge\>A\<subseteq\>U|}>|)>> ther exists a <math|U> open with
+      <math|A\<subseteq\>U> such that\ 
+
+      <\equation>
+        <label|eq 18.247.032>\<mu\><around*|(|U|)>\<less\>\<mu\><around*|(|A|)>+<frac|\<varepsilon\>|2>
+      </equation>
+
+      Now as <math|\<mu\>> is finite we have by <reference|measure properties
+      (1)> that
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<mu\><around*|(|U\\F|)>>|<cell|=>|<cell|\<mu\><around*|(|U|)>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
+        18.247.032>>>>|<cell|\<mu\><around*|(|A|)>+<frac|\<varepsilon\>|2>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
+        18.246.032>>>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>>>
+      </eqnarray*>
+
+      hence we we have\ 
+
+      <\equation>
+        \<cal-R\>\<subseteq\>\<cal-S\>
+      </equation>
+
+      Let now <math|A\<in\>\<cal-S\>\<subseteq\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
+      then if <math|F> is closed and <math|F\<subseteq\>A> we have that
+      <math|\<mu\><around*|(|F|)>\<leqslant\>\<mu\><around*|(|A|)>> hence
+      <math|sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+      closed<infix-and>F\<subseteq\>A|}>|)>\<leqslant\>\<mu\><around*|(|A|)>>.
+      </enumerate>
+
+    \;
+  </proof>
+
+  \;
+
+  \;
 
   \;
 
@@ -7201,6 +7383,8 @@
   \;
 
   \ 
+
+  \;
 
   \;
 
@@ -7238,7 +7422,7 @@
     <associate|Lebesgue measurability is transalation
     invariant|<tuple|18.89|?>>
     <associate|Lebesgue measurable sets alternatives|<tuple|18.79|?>>
-    <associate|Lebesgue measure is regular|<tuple|18.111|?>>
+    <associate|Lebesgue measure is regular|<tuple|18.112|?>>
     <associate|Lebesgue measure is translation invariant|<tuple|18.90|?>>
     <associate|Lebesgue measure space|<tuple|18.72|?>>
     <associate|Lebesgue measure space on R^n|<tuple|18.77|?>>
@@ -7447,7 +7631,17 @@
     <associate|eq 18.235.031.1|<tuple|18.236|?>>
     <associate|eq 18.236.031|<tuple|18.237|?>>
     <associate|eq 18.237.031|<tuple|18.238|?>>
+    <associate|eq 18.239.032|<tuple|18.239|?>>
     <associate|eq 18.24.021|<tuple|18.24|?>>
+    <associate|eq 18.240.032|<tuple|18.240|?>>
+    <associate|eq 18.241.032|<tuple|18.241|?>>
+    <associate|eq 18.242.032|<tuple|18.242|?>>
+    <associate|eq 18.243.032|<tuple|18.243|?>>
+    <associate|eq 18.244.032|<tuple|18.244|?>>
+    <associate|eq 18.245.032|<tuple|18.245|?>>
+    <associate|eq 18.246.032|<tuple|18.246|?>>
+    <associate|eq 18.247.032|<tuple|18.247|?>>
+    <associate|eq 18.248.032|<tuple|18.248|?>>
     <associate|eq 18.25.020|<tuple|18.25|?>>
     <associate|eq 18.26.021|<tuple|18.26|?>>
     <associate|eq 18.27.021|<tuple|18.27|?>>
