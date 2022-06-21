@@ -7213,7 +7213,7 @@
       open<infix-and>A\<subseteq\>U|}>|)>>
 
       <item><math|\<mu\><around*|(|A|)>=sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C
-      closed<infix-and>U\<subseteq\>C|}>|)>>
+      closed<infix-and>C\<subseteq\>A|}>|)>>
     </enumerate>
   </lemma>
 
@@ -7351,21 +7351,76 @@
       <\eqnarray*>
         <tformat|<table|<row|<cell|\<mu\><around*|(|U\\F|)>>|<cell|=>|<cell|\<mu\><around*|(|U|)>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
         18.247.032>>>>|<cell|\<mu\><around*|(|A|)>+<frac|\<varepsilon\>|2>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
-        18.246.032>>>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>>>
+        18.246.032>>>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>|<row|<cell|>|<cell|=>|<cell|\<varepsilon\>>>>>
       </eqnarray*>
 
-      hence we we have\ 
+      hence we we have m
 
       <\equation>
-        \<cal-R\>\<subseteq\>\<cal-S\>
+        <label|eq 18.248.032>\<cal-R\>\<subseteq\>\<cal-S\>
       </equation>
 
-      Let now <math|A\<in\>\<cal-S\>\<subseteq\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
-      then if <math|F> is closed and <math|F\<subseteq\>A> we have that
-      <math|\<mu\><around*|(|F|)>\<leqslant\>\<mu\><around*|(|A|)>> hence
-      <math|sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
-      closed<infix-and>F\<subseteq\>A|}>|)>\<leqslant\>\<mu\><around*|(|A|)>>.
-      </enumerate>
+      Let <math|A\<in\>\<cal-S\>\<subseteq\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
+      then if <math|C> is closed with <math|C\<subseteq\>A><space|1em>we have
+      <math|\<mu\><around*|(|C|)>\<leqslant\>\<mu\><around*|(|A|)>> so that
+      <math|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      closed|}>|)>\<leqslant\>\<mu\><around*|(|A|)>>. Further if <math|U> is
+      open with <math|A\<subseteq\>U> then
+      <math|\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|U|)>> so that
+      <math|\<mu\><around*|(|A|)>\<leqslant\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      closed|}>|)>>. To summarize we have\ 
+
+      <\equation>
+        <label|eq 18.249.032>sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+        closed|}>|)>\<leqslant\>\<mu\><around*|(|A|)>\<leqslant\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+        open|}>|)>
+      </equation>
+
+      Assume now that <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>\<gtr\>sup<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>> then <math|0\<less\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>-sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      open|}>|)>=\<varepsilon\>>. As <math|A\<in\>\<cal-S\>> there exists a
+      open <math|U>, closed <math|C> so that\ 
+
+      <\equation*>
+        C\<subseteq\>A\<subseteq\>U<infix-and>\<mu\><around*|(|U\\C|)>\<less\>\<varepsilon\><infix-or>as
+        \<mu\> is finite \<mu\><around*|(|U|)>\<less\>\<mu\><around*|(|C|)>+\<varepsilon\>
+      </equation*>
+
+      SO\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+        open|}>|)>>|<cell|\<leqslant\>>|<cell|\<mu\><around*|(|U|)>>>|<row|<cell|>|<cell|\<less\>>|<cell|\<mu\><around*|(|C|)>+\<varepsilon\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+        open|}>|)>+\<varepsilon\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+        open|}>|)>+inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+        open|}>|)>-sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+        open|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+        open|}>|)>>>>>
+      </eqnarray*>
+
+      giving the contradiction <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>\<less\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>>. Hence <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>\<leqslant\>sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      closed|}>|)>> which together with <reference|eq 18.249.032> proves that
+      <math|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      closed|}>|)>=\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>>. So <math|A\<in\>\<cal-R\>> or
+      <math|\<cal-S\>\<subseteq\>\<cal-R\>> which together with <reference|eq
+      18.248.032> proves\ 
+
+      <\equation*>
+        \<cal-R\>=\<cal-S\>
+      </equation*>
+
+      <\equation*>
+        \;
+      </equation*>
+
+      Further if\ 
+    </enumerate>
 
     \;
   </proof>
@@ -7642,6 +7697,7 @@
     <associate|eq 18.246.032|<tuple|18.246|?>>
     <associate|eq 18.247.032|<tuple|18.247|?>>
     <associate|eq 18.248.032|<tuple|18.248|?>>
+    <associate|eq 18.249.032|<tuple|18.249|?>>
     <associate|eq 18.25.020|<tuple|18.25|?>>
     <associate|eq 18.26.021|<tuple|18.26|?>>
     <associate|eq 18.27.021|<tuple|18.27|?>>
