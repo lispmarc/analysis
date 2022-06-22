@@ -7319,107 +7319,117 @@
 
     <\equation*>
       \<cal-S\>=<around*|{|A\<in\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>\<forall\>\<varepsilon\>\<gtr\>0
-      then \|\<exists\>U,F where E is open,F,F\<subseteq\>A\<subseteq\>U<infix-and>\<mu\><around*|(|U\\F|)>\<less\>\<varepsilon\>|}>
+      \ \|\<exists\>U,F where U is open,F
+      closed,F\<subseteq\>A\<subseteq\>U<infix-and>\<mu\><around*|(|U\\F|)>\<less\>\<varepsilon\>|}>
     </equation*>
 
-    Next we prove that <math|\<cal-R\>> is a <math|\<sigma\>>-algebra.\ 
+    and prove that <math|\<cal-R\>=\<cal-S\>>.\ 
+
+    Let <math|A\<in\>\<cal-R\>> and <math|\<varepsilon\>\<gtr\>0>. As
+    <math|\<mu\><around*|(|A|)>=sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
+    closed\<wedge\>F\<subseteq\>A|}>|)>> there exists a <math|F> closed with
+    <math|F\<subseteq\>A> such that\ 
+
+    <\equation>
+      <label|eq 18.246.032>\<mu\><around*|(|A|)>-<frac|\<varepsilon\>|2>\<less\>\<mu\><around*|(|F|)>
+    </equation>
+
+    Further as <math|\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U
+    open\<wedge\>A\<subseteq\>U|}>|)>> there exists a <math|U> open with
+    <math|A\<subseteq\>U> such that\ 
+
+    <\equation>
+      <label|eq 18.247.032>\<mu\><around*|(|U|)>\<less\>\<mu\><around*|(|A|)>+<frac|\<varepsilon\>|2>
+    </equation>
+
+    Now as <math|\<mu\>> is finite we have by <reference|measure properties
+    (1)> that
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<mu\><around*|(|U\\F|)>>|<cell|=>|<cell|\<mu\><around*|(|U|)>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
+      18.247.032>>>>|<cell|\<mu\><around*|(|A|)>+<frac|\<varepsilon\>|2>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
+      18.246.032>>>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>|<row|<cell|>|<cell|=>|<cell|\<varepsilon\>>>>>
+    </eqnarray*>
+
+    hence we we have m
+
+    <\equation>
+      <label|eq 18.248.032>\<cal-R\>\<subseteq\>\<cal-S\>
+    </equation>
+
+    For the opposite inclusion. Let <math|A\<in\>\<cal-S\>\<subseteq\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
+    then if <math|C> is closed with <math|C\<subseteq\>A><space|1em>we have
+    <math|\<mu\><around*|(|C|)>\<leqslant\>\<mu\><around*|(|A|)>> so that
+    <math|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+    closed|}>|)>\<leqslant\>\<mu\><around*|(|A|)>>. Further if <math|U> is
+    open with <math|A\<subseteq\>U> then <math|\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|U|)>>
+    so that <math|\<mu\><around*|(|A|)>\<leqslant\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+    closed|}>|)>>. To summarize we have\ 
+
+    <\equation>
+      <label|eq 18.249.032>sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      closed|}>|)>\<leqslant\>\<mu\><around*|(|A|)>\<leqslant\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|C\<subseteq\>A\<wedge\>U
+      open|}>|)>
+    </equation>
+
+    Assume now that <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+    open|}>|)>\<gtr\>sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+    closed|}>|)>> then <math|0\<less\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+    open|}>|)>-sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+    closed|}>|)>=\<varepsilon\>>. As <math|A\<in\>\<cal-S\>> there exists a
+    open <math|U>, closed <math|C> so that\ 
+
+    <\equation>
+      <label|eq 18.250.032>C\<subseteq\>A\<subseteq\>U<infix-and>\<mu\><around*|(|U\\C|)>\<less\>\<varepsilon\><infix-or>as
+      \<mu\> is finite \<mu\><around*|(|U|)>\<less\>\<mu\><around*|(|C|)>+\<varepsilon\>
+    </equation>
+
+    So
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>>|<cell|\<leqslant\>>|<cell|\<mu\><around*|(|U|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
+      18.250.032>>>>|<cell|\<mu\><around*|(|C|)>+\<varepsilon\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      open|}>|)>+\<varepsilon\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      open|}>|)>+inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>-sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+      closed|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+      open|}>|)>>>>>
+    </eqnarray*>
+
+    giving the contradiction <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+    open|}>|)>\<less\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+    open|}>|)>>. Hence <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+    open|}>|)>\<leqslant\>sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+    closed|}>|)>> which together with <reference|eq 18.249.032> proves that
+    <math|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
+    closed|}>|)>=\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
+    open|}>|)>>. So <math|A\<in\>\<cal-R\>> proving
+    <math|\<cal-S\>\<subseteq\>\<cal-R\>> which together with <reference|eq
+    18.248.032> gives <math|\<cal-S\>=\<cal-R\>> or using the definition of
+    <math|\<cal-S\>>
+
+    <\equation>
+      <label|eq 18.251.032>\<cal-R\>=<around*|{|A\<in\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>\<forall\>\<varepsilon\>\<gtr\>0
+      \ \|\<exists\>U,F where U open,F closed,F\<subseteq\>A\<subseteq\>U\<wedge\>\<mu\><around*|(|U\\F|)>\<less\>\<varepsilon\>|}>
+    </equation>
+
+    We are now ready to prove that <math|\<cal-R\>> is a
+    <math|\<sigma\>>-algebra:
 
     <\enumerate>
-      <item>As <math|X,\<emptyset\>> is open we have by <reference|eq
-      18.245.032> that <math|X,\<emptyset\>\<in\>\<cal-R\>>
-
-      <item>Let <math|A\<in\>\<cal-R\>> and <math|\<varepsilon\>\<gtr\>0>. As
-      <math|\<mu\><around*|(|A|)>=sup<around*|(|<around*|{|\<mu\><around*|(|F|)>\|F
-      closed\<wedge\>F\<subseteq\>A|}>|)>> there exists a <math|F> closed
-      with <math|F\<subseteq\>A> such that\ 
-
-      <\equation>
-        <label|eq 18.246.032>\<mu\><around*|(|A|)>-<frac|\<varepsilon\>|2>\<less\>\<mu\><around*|(|F|)>
-      </equation>
-
-      Further as <math|\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|U
-      open\<wedge\>A\<subseteq\>U|}>|)>> ther exists a <math|U> open with
-      <math|A\<subseteq\>U> such that\ 
-
-      <\equation>
-        <label|eq 18.247.032>\<mu\><around*|(|U|)>\<less\>\<mu\><around*|(|A|)>+<frac|\<varepsilon\>|2>
-      </equation>
-
-      Now as <math|\<mu\>> is finite we have by <reference|measure properties
-      (1)> that
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|\<mu\><around*|(|U\\F|)>>|<cell|=>|<cell|\<mu\><around*|(|U|)>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
-        18.247.032>>>>|<cell|\<mu\><around*|(|A|)>+<frac|\<varepsilon\>|2>-\<mu\><around*|(|F|)>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
-        18.246.032>>>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>|<row|<cell|>|<cell|=>|<cell|\<varepsilon\>>>>>
-      </eqnarray*>
-
-      hence we we have m
-
-      <\equation>
-        <label|eq 18.248.032>\<cal-R\>\<subseteq\>\<cal-S\>
-      </equation>
-
-      Let <math|A\<in\>\<cal-S\>\<subseteq\>\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>
-      then if <math|C> is closed with <math|C\<subseteq\>A><space|1em>we have
-      <math|\<mu\><around*|(|C|)>\<leqslant\>\<mu\><around*|(|A|)>> so that
-      <math|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-      closed|}>|)>\<leqslant\>\<mu\><around*|(|A|)>>. Further if <math|U> is
-      open with <math|A\<subseteq\>U> then
-      <math|\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|U|)>> so that
-      <math|\<mu\><around*|(|A|)>\<leqslant\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      closed|}>|)>>. To summarize we have\ 
-
-      <\equation>
-        <label|eq 18.249.032>sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-        closed|}>|)>\<leqslant\>\<mu\><around*|(|A|)>\<leqslant\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-        open|}>|)>
-      </equation>
-
-      Assume now that <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      open|}>|)>\<gtr\>sup<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      open|}>|)>> then <math|0\<less\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      open|}>|)>-sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-      open|}>|)>=\<varepsilon\>>. As <math|A\<in\>\<cal-S\>> there exists a
-      open <math|U>, closed <math|C> so that\ 
+      <item>As <math|\<emptyset\>> is open we have that
+      <math|\<emptyset\>\<in\>\<cal-T\><rsub|\<bbb-R\><rsup|n>>> and as
+      <math|\<cal-T\><rsub|\<bbb-R\><rsup|n>>\<subseteq\>\<cal-R\>> [see
+      <reference|eq 18.245.032>] it follows that
 
       <\equation*>
-        C\<subseteq\>A\<subseteq\>U<infix-and>\<mu\><around*|(|U\\C|)>\<less\>\<varepsilon\><infix-or>as
-        \<mu\> is finite \<mu\><around*|(|U|)>\<less\>\<mu\><around*|(|C|)>+\<varepsilon\>
+        \<emptyset\>\<in\>\<cal-R\>
       </equation*>
 
-      SO\ 
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-        open|}>|)>>|<cell|\<leqslant\>>|<cell|\<mu\><around*|(|U|)>>>|<row|<cell|>|<cell|\<less\>>|<cell|\<mu\><around*|(|C|)>+\<varepsilon\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-        open|}>|)>+\<varepsilon\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-        open|}>|)>+inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-        open|}>|)>-sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-        open|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-        open|}>|)>>>>>
-      </eqnarray*>
-
-      giving the contradiction <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      open|}>|)>\<less\>inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      open|}>|)>>. Hence <math|inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      open|}>|)>\<leqslant\>sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-      closed|}>|)>> which together with <reference|eq 18.249.032> proves that
-      <math|sup<around*|(|<around*|{|\<mu\><around*|(|C|)>\|C\<subseteq\>A\<wedge\>C
-      closed|}>|)>=\<mu\><around*|(|A|)>=inf<around*|(|<around*|{|\<mu\><around*|(|U|)>\|A\<subseteq\>U\<wedge\>U
-      open|}>|)>>. So <math|A\<in\>\<cal-R\>> or
-      <math|\<cal-S\>\<subseteq\>\<cal-R\>> which together with <reference|eq
-      18.248.032> proves\ 
-
-      <\equation*>
-        \<cal-R\>=\<cal-S\>
-      </equation*>
-
-      <\equation*>
-        \;
-      </equation*>
-
-      Further if\ 
+      <item>Let <math|A\<in\>\<cal-R\>> then given a
+      <math|\<varepsilon\>\<gtr\>0> using <reference|eq 18.251.032> there
+      exists a\ 
     </enumerate>
 
     \;
@@ -7699,6 +7709,8 @@
     <associate|eq 18.248.032|<tuple|18.248|?>>
     <associate|eq 18.249.032|<tuple|18.249|?>>
     <associate|eq 18.25.020|<tuple|18.25|?>>
+    <associate|eq 18.250.032|<tuple|18.250|?>>
+    <associate|eq 18.251.032|<tuple|18.251|?>>
     <associate|eq 18.26.021|<tuple|18.26|?>>
     <associate|eq 18.27.021|<tuple|18.27|?>>
     <associate|eq 18.28.021|<tuple|18.28|?>>
