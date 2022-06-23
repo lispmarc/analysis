@@ -7423,13 +7423,78 @@
       <math|\<cal-T\><rsub|\<bbb-R\><rsup|n>>\<subseteq\>\<cal-R\>> [see
       <reference|eq 18.245.032>] it follows that
 
+      <\equation>
+        <label|eq 18.252.032>\<emptyset\>\<in\>\<cal-R\>
+      </equation>
+
+      <item>Let <math|A\<in\>\<cal-R\>> and take
+      <math|\<varepsilon\>>\<gtr\>0. Using <reference|eq 18.251.032> there
+      exists a open <math|U>, a closed <math|F> such that
+      <math|F\<subseteq\>A\<subseteq\>U> and
+      <math|\<mu\><around*|(|U\\F|)>\<less\>\<varepsilon\>>. Taking the
+      complement we have
+
+      <\equation>
+        <label|eq 18.253.032>X\<setminus\>U is closed,X\\F is
+        open<infix-and>X\\U\<subseteq\>X\\A\<subseteq\>X\\F
+      </equation>
+
+      Further\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|x\<in\><around*|(|X\\F|)>\\<around*|(|X\\U|)>>|<cell|\<Leftrightarrow\>>|<cell|x\<in\>X\\F\<wedge\>\<neg\><around*|(|x\<in\>X\\U|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x\<in\>X\<wedge\>x\<nin\>F|)>\<wedge\>\<neg\><around*|(|x\<in\>X\<wedge\>x\<nin\>U|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x\<in\>X\<wedge\>x\<nin\>F|)>\<wedge\><around*|(|x\<nin\>X\<vee\>x\<in\>U|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x\<in\>X\<wedge\>x\<nin\>F\<wedge\>x\<nin\>X|)>\<vee\><around*|(|x\<in\>X\<wedge\>x\<nin\>F\<wedge\>x\<in\>U|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x\<in\>X\<wedge\>x\<nin\>F\<wedge\>x\<in\>U>>|<row|<cell|>|<cell|\<Leftrightarrowlim\><rsub|U\<subseteq\>X>>|<cell|x\<in\>U\<wedge\>x\<nin\>F>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x\<in\>U\\F>>>>
+      </eqnarray*>
+
+      proving that <math|<around*|(|X\\F|)>\\<around*|(|X\\U|)>=U\\F>. Hence
+
+      <\equation>
+        <label|eq 18.254.032>\<mu\><around*|(|<around*|(|X\\F|)>\\<around*|(|X\\U|)>=U\\F|)>=\<mu\><around*|(|U\\F|)>\<less\>\<varepsilon\>
+      </equation>
+
+      Using <reference|eq 18.254.032>, <reference|eq 18.253.032> in
+      <reference|eq 18.251.032> proves that <math|X\\A\<in\>\<cal-R\>> so\ 
+
+      <\equation>
+        <label|eq 18.255.032>\<forall\>A\<in\>\<cal-R\> we have
+        X\\A\<in\>\<cal-R\>
+      </equation>
+
+      <item>Let <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-R\>>
+      and take <math|\<varepsilon\>>\<gtr\>0 then using <reference|eq
+      18.251.032> we have that <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
+      there exists a open <math|U<rsub|i>> and a closed <math|F<rsub|i>> with
+      <math|F<rsub|i>\<subseteq\>A<rsub|i>\<subseteq\>U<rsub|i>> such that
+      <math|\<mu\>*<around*|(|U<rsub|i>\\F<rsub|i>|)>\<less\><frac|\<varepsilon\>|2<rsup|i>>>.
+      Define <math|U=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>U<rsub|i>> and
+      <math|F=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>> then
+      <math|U> is open [note that <math|F> does not have to be closed].
+      Further <math|F=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>\<subseteq\><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<subseteq\><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>U<rsub|i>=U>
+      hence\ 
+
+      <\equation>
+        <label|eq 18.256.032>F\<subseteq\><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<subseteq\>U
+        where U is open
+      </equation>
+
+      Further <math|U\\F=<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>U<rsub|i>|)>\\<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>|)><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|U|)>>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<mu\><around*|(|U\\F|)>>|<cell|=>|<cell|\<mu\><around*|(|<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>U<rsub|i>|)>\\<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>|)>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
+        difference>>>>|<cell|\<mu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|U<rsub|i>\\<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>F<rsub|i>|)>|)>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|\<mu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|U<rsub|i>\\F<rsub|i>|)>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>\<mu\><around*|(|U<rsub|i>\\F<rsub|i>|)>>>|<row|<cell|>|<cell|\<less\>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><frac|\<varepsilon\>|2<rsup|i>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|exaple
+        of a convergent serie>>>>|<cell|\<varepsilon\>>>>>
+      </eqnarray*>
+
+      giving\ 
+
       <\equation*>
-        \<emptyset\>\<in\>\<cal-R\>
+        \<mu\><around*|(|U\\F|)>\<less\>\<varepsilon\>
       </equation*>
 
-      <item>Let <math|A\<in\>\<cal-R\>> then given a
-      <math|\<varepsilon\>\<gtr\>0> using <reference|eq 18.251.032> there
-      exists a\ 
+      \;
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|>|<cell|>|<cell|>>>>
+      </eqnarray*>
     </enumerate>
 
     \;
@@ -7711,6 +7776,11 @@
     <associate|eq 18.25.020|<tuple|18.25|?>>
     <associate|eq 18.250.032|<tuple|18.250|?>>
     <associate|eq 18.251.032|<tuple|18.251|?>>
+    <associate|eq 18.252.032|<tuple|18.252|?>>
+    <associate|eq 18.253.032|<tuple|18.253|?>>
+    <associate|eq 18.254.032|<tuple|18.254|?>>
+    <associate|eq 18.255.032|<tuple|18.255|?>>
+    <associate|eq 18.256.032|<tuple|18.256|?>>
     <associate|eq 18.26.021|<tuple|18.26|?>>
     <associate|eq 18.27.021|<tuple|18.27|?>>
     <associate|eq 18.28.021|<tuple|18.28|?>>
