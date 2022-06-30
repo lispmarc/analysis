@@ -237,9 +237,9 @@
   sets
 
   <\theorem>
-    Let <math|<around*|\<langle\>|X,\<cal-T\>|\<rangle\>>> be a topological
-    space then the set of closed sets <math|\<cal-C\>> satisfies the
-    following:
+    <label|closed set properties>Let <math|<around*|\<langle\>|X,\<cal-T\>|\<rangle\>>>
+    be a topological space then the set of closed sets <math|\<cal-C\>>
+    satisfies the following:
 
     <\enumerate>
       <item><math|\<emptyset\>\<in\>\<cal-C\>>
@@ -248,6 +248,10 @@
 
       <item>If <math|A,B\<in\>\<cal-C\>> then
       <math|A<big|cup>B\<in\>\<cal-C\>>
+
+      <item>If <math|I> is finite and <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>\<subseteq\>\<cal-C\>>
+      is a finite family of closed sets then
+      <math|<big|cup><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-C\>>
 
       <item>If <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>> is a family in
       <math|\<cal-C\>> (a family of closed sets) then
@@ -274,9 +278,17 @@
       of union or intersection>>><around*|(|X\\A|)><big|cap><around*|(|X\\B|)>\<in\>\<cal-T\>>
       (as <math|X\\A,X\\B\<in\>\<cal-T\>> and the definition of a topology).
 
+      <item>If <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>\<subseteq\>\<cal-C\>>
+      then <math|\<forall\>i\<in\>I> we have that <math|X\\A<rsub|i>> is
+      open. As <math|I> is finite we have by <reference|intersection of
+      finite open sets is open> that <math|<big|cap><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>>
+      is open, hence <math|X\\<around*|(|<big|cap><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>|)>>
+      is closed. Finally <math|X\\<around*|(|<big|cap><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>|)>\<equallim\><rsub|<with|mode|text|<reference|generalized
+      difference>>><big|cup><rsub|i\<in\>I><around*|(|X\\<around*|(|X\\A<rsub|i>|)>|)>\<equallim\><rsub|<text|<reference|Acc=A>>><big|cup><rsub|i\<in\>I>A<rsub|i>>
+
       <item>If <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>> is a family in
       <math|\<cal-C\>> then <math|X\\<around*|(|<big|cap><rsub|i\<in\>I>A<rsub|i>|)>\<equallim\><rsub|<with|mode|text|<reference|generalized
-      difference>>><big|cup><rsub|i\<in\>I><around*|(|A\\A<rsub|i>|)>\<in\>\<cal-T\>>
+      difference>>><big|cup><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>\<in\>\<cal-T\>>
       (as <math|\<forall\>i\<in\>I> we have
       <math|X\\A<rsub|i>\<in\>\<cal-T\>>)
     </enumerate>
@@ -19637,12 +19649,11 @@
     <associate|closed balls are closed|<tuple|11.56|389>>
     <associate|closed rectangles are compact in the norm
     topology|<tuple|11.298|444>>
+    <associate|closed set properties|<tuple|11.13|?>>
     <associate|closed sets|<tuple|11.11|380>>
     <associate|closed sets and limits|<tuple|11.323|?>>
-    <associate|closed sets aree closed|<tuple|11.323|?>>
     <associate|closed subset of a complete space is
     complete|<tuple|11.347|452>>
-    <associate|clsoed sets and limits|<tuple|11.323|?>>
     <associate|coefficients of a polynomial are unique|<tuple|12.3|494>>
     <associate|combined partition|<tuple|11.426|482>>
     <associate|compact Hausdorf space is regular and
