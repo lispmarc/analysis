@@ -1727,7 +1727,7 @@
   </proof>
 
   <\lemma>
-    Let <math|<around*|{|G<rsub|i>|)>i\<in\>I> be a family of classes with
+    Let <math|<around*|{|G<rsub|i>|)> i\<in\>I> be a family of classes with
     <math|G=graph<around*|(|<around*|{|G|)><rsub|i\<in\>I>|)>> and <math|A> a
     class then <math|<around*|\<langle\>|F,I|\<rangle\>>> where
     <math|F=<around*|{|<around*|(|i,<around*|(|x,a|)>|)>\|<around*|(|i,x|)>\<in\>G\<wedge\>a\<in\>A|}>>
@@ -1920,8 +1920,8 @@
   </definition>
 
   <\definition>
-    If <math|<around*|{|G<rsub|i>|}><rsub|i\<in\>I>> is a indexed family of
-    classes then <math|<big|cap><rsub|i\<in\>I>G<rsub|i>=<around*|{|x<around*|\||\<forall\>i\<in\>I\<vDash\>x\<in\>G<rsub|i>|\<nobracket\>>|}>>
+    If <math|<around*|{|G<rsub|i>|}><rsub|i\<in\>I>> is a non empty indexed
+    family of classes then <math|<big|cap><rsub|i\<in\>I>G<rsub|i>=<around*|{|x<around*|\||\<forall\>i\<in\>I\<vDash\>x\<in\>G<rsub|i>|\<nobracket\>>|}>>
     or written using the graph and index we have
     <math|<big|cap><rsub|i\<in\>I>G<rsub|i>=<around*|{|x<around*|\||\<forall\>i\<in\>I|\<nobracket\>>\<vDash\><around*|(|i,x|)>\<in\>graph<around*|(|<around*|{|G<rsub|i>|}><rsub|i\<in\>I>|)>|}>>
   </definition>
