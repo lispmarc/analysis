@@ -11,7 +11,37 @@
 
   <section|Prerequisites>
 
-  We have the following useful [and trivial] set relations
+  We have the following useful [and maybe trivial] set relations
+
+  <\proposition>
+    <label|(A except B) interect C>Let <math|A,B,C> be sets then
+    <math|<around*|(|A\\B|)><big|cap>C=<around*|(|A<big|cap>C|)>\\<around*|(|B<big|cap>C|)>>
+  </proposition>
+
+  <\proof>
+    \ If <math|x\<in\><around*|(|A\\B|)><big|cap>C> then
+    <math|x\<in\>A\<wedge\>x\<nin\>B\<wedge\>x\<in\>C> so that
+    <math|x\<in\><around*|(|A<big|cap>C|)>> and
+    <math|x\<nin\>B\<Rightarrow\>x\<nin\>B<big|cap>C> proving that\ 
+
+    <\equation*>
+      <around*|(|A\\B|)><big|cap>C\<subseteq\><around*|(|A<big|cap>C|)>\\<around*|(|B<big|cap>C|)>
+    </equation*>
+
+    Further for the opposite inclusion
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|x\<in\><around*|(|A<big|cap>C|)>\\<around*|(|B<big|cap>C|)>>|<cell|\<Rightarrow\>>|<cell|x\<in\>A\<wedge\>x\<in\>C\<wedge\>x\<nin\><around*|(|B<big|cap>C|)>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<around*|(|x\<in\>A\<wedge\>x\<in\>C|)>\<wedge\>\<neg\><around*|(|x\<in\>B<big|cap>C|)>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<around*|(|x\<in\>A\<wedge\>x\<in\>C|)><around*|(|x\<nin\>B\<vee\>x\<nin\>C|)>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<around*|(|x\<in\>A\<wedge\>x\<in\>C\<nin\>B|)>\<vee\><around*|(|x\<in\>A\<wedge\>x\<in\>C\<wedge\>x\<nin\>C|)>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|x\<in\>A\<wedge\>x\<in\>C\<nin\>B>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|x\<in\><around*|(|A\\B|)><big|cap>C>>>>
+    </eqnarray*>
+
+    proving that\ 
+
+    <\equation*>
+      <around*|(|A<big|cap>C|)>\\<around*|(|B<big|cap>C|)>\<subseteq\><around*|(|A\\B|)><big|cap>C
+    </equation*>
+
+    \;
+  </proof>
 
   <\proposition>
     <label|singleton family union intersection>Let <math|I=<around*|{|i|}>>
@@ -251,19 +281,8 @@
     <\enumerate>
       <item>As <math|I> is finite and non empty there exists a
       <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
-      <math|\<varphi\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>I>. If
-      <math|x\<in\><big|cap><rsub|i\<in\>I>A<rsub|i>> we have for
-      <math|j\<in\><around*|{|1,\<ldots\>,n|}>> that
-      <math|\<varphi\><around*|(|j|)>\<in\>I> so that
-      <math|x\<in\>A<rsub|\<varphi\><around*|(|j|)>>> proving that
-      <math|<big|cap><rsub|i\<in\>I>A<rsub|i>\<subseteq\><big|cap><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|\<varphi\><around*|(|j|)>>.>
-      Likewise if <math|x\<in\><big|cap><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|\<varphi\><around*|(|j|)>>>
-      then if <math|i\<in\>I> we have that
-      <math|\<exists\>j\<in\><around*|{|1,\<ldots\>,n|}>> so that
-      <math|i=\<varphi\><around*|(|j|)>> hence
-      <math|x\<in\>A<rsub|\<varphi\><around*|(|j|)>>=A<rsub|i>> proving that
-      <math|<big|cap><rsub|i\<in\><around*|{|1,\<ldots\>n|}>>A<rsub|\<varphi\><around*|(|i|)>>\<subseteq\><big|cap><rsub|i\<in\>I>A<rsub|i>>.
-      Hence\ 
+      <math|\<varphi\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>I> then using
+      <reference|union,intersection and function between and indexes> we have
 
       <\equation>
         <label|eq 18.5.033><big|cap><rsub|i\<in\>I>A<rsub|i>=<big|cap><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|\<varphi\><around*|(|i|)>>
@@ -292,17 +311,9 @@
 
       <item>As <math|I> is finite and non empty there exists a
       <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
-      <math|\<varphi\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>I>. If
-      <math|x\<in\><big|cup><rsub|i\<in\>I>A<rsub|i>> then there exists a
-      <math|i\<in\>I> such that <math|x\<in\>A<rsub|i>> as <math|\<varphi\>>
-      is surjective there exists a <math|j\<in\><around*|{|1,\<ldots\>,n|}>>
-      so that <math|\<varphi\><around*|(|j|)>=i> hence
-      <math|x\<in\>A<rsub|\<varphi\><around*|(|j|)>>\<in\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|\<varphi\><around*|(|i|)>>>.
-      Further if <math|x\<in\><big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|\<varphi\><around*|(|j|)>>>
-      then there exists a <math|j\<in\><around*|{|1,\<ldots\>,n|}>> such that
-      <math|x\<in\>A<rsub|\<varphi\><around*|(|j|)>>=A<rsub|k>> where
-      <math|k=\<varphi\><around*|(|j|)>\<in\>I> proving that
-      <math|x\<in\><big|cup><rsub|i\<in\>I>A<rsub|i>>. Hence\ 
+      <math|\<varphi\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>I> \ then
+      using <reference|union,intersection and function between and indexes>
+      we have\ 
 
       <\equation>
         <label|eq 18.6.033><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>=<big|cup><rsub|i\<in\>I>A<rsub|i>
@@ -7889,6 +7900,136 @@
   </theorem>
 
   <\proof>
+    First we prove that <math|\<cal-d\><around*|[|\<cal-A\>|]>> is itself a
+    <math|\<pi\>>-system. For this define
+
+    <\equation>
+      <label|eq 18.266.033>\<cal-D\><rsub|1>=<around*|{|A\<in\>\<cal-d\><around*|[|\<cal-A\>|]>\|\<forall\>C\<in\>\<cal-A\>
+      we have A<big|cap>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>|}>
+    </equation>
+
+    If <math|A\<in\>\<cal-A\>\<subseteq\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    then as <math|\<cal-A\>> is a <math|\<pi\>>-system we have that
+    <math|\<forall\>C\<in\>\<cal-A\>> that
+    <math|A<big|cap>C\<in\>\<cal-A\>\<subseteq\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    which proves that\ 
+
+    <\equation>
+      <label|eq 18.267.033>\<cal-A\>\<subseteq\>\<cal-D\><rsub|1>
+    </equation>
+
+    As <math|X\<in\>\<cal-d\><around*|[|\<cal-A\>|]>> and
+    <math|\<forall\>C\<in\>\<cal-A\>> we have
+    <math|X<big|cap>C=C\<in\>\<cal-A\>\<subseteq\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    which proves that\ 
+
+    <\equation>
+      <label|eq 18.268.033>X\<in\>\<cal-D\><rsub|1>
+    </equation>
+
+    If <math|A,B\<in\>\<cal-D\><rsub|1>> then
+    <math|\<forall\>C\<in\>\<cal-A\>> <math|<around*|(|A<big|cap>C|)>,<around*|(|B<big|cap>C|)>\<in\>\<cal-D\><rsub|1>>,<space|1em>further
+    using <reference|(A except B) interect C> we have
+    <math|<around*|(|A\\B|)><big|cap>C=<around*|(|A<big|cap>C|)>\\<around*|(|B<big|cap>C|)>>
+    which as <math|\<cal-d\><around*|(|\<cal-A\>|)>> is a Dynkin system
+    proves that <math|<around*|(|A<big|cap>C|)>\\<around*|(|B<big|cap>C|)>\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    proves that <math|A\\B\<in\>\<cal-D\><rsub|1>>. Hence we have
+
+    <\equation>
+      <label|eq 18.269.033>\<forall\>A,B\<in\>\<cal-D\><rsub|1> then
+      A\\B\<in\>\<cal-D\><rsub|1>
+    </equation>
+
+    Further if <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-D\><rsub|1>>
+    and <math|C\<in\>\<cal-A\>> then <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
+    we have <math|A<rsub|i><big|cap>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>,
+    as <math|<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>|)><big|cap>C\<equallim\><rsub|<text|<reference|generalized
+    distributive laws>>><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|A<rsub|i><big|cap>C|)>\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    it follows that <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>.
+    So if we restrict ourselve to a sequence of increasing sets we have
+
+    <\equation>
+      <label|eq 18.270.033>\<forall\><around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-D\><rsub|1>
+      with \<forall\>i\<in\>\<bbb-N\><rsub|0>
+      A<rsub|i>\<subseteq\>A<rsub|i+1> \ we have
+      <big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<in\>\<cal-D\><rsub|1>
+    </equation>
+
+    From <reference|eq 18.267.033>, <reference|eq 18.268.033>, <reference|eq
+    18.269.033> and <reference|eq 18.270.033> it follows that
+    <math|\<cal-D\><rsub|1>> is a Dynkin class containing <math|\<cal-A\>>
+    hence we have that
+
+    <\equation>
+      <label|eq 18.271.033>\<cal-d\><around*|[|\<cal-A\>|]>\<subseteq\>\<cal-D\><rsub|1>
+    </equation>
+
+    Next define
+
+    <\equation>
+      <label|eq 18.272.033>\<cal-D\><rsub|2>=<around*|{|A\<in\>\<cal-d\><around*|[|\<cal-A\>|]>\|\<forall\>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>
+      we have A<big|cap>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>|}>
+    </equation>
+
+    If <math|A\<in\>\<cal-A\>\<subseteq\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    and <math|C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>\<Rightarrowlim\><rsub|<text|<reference|eq
+    18.271.033>>>C\<in\>\<cal-D\><rsub|1>> and using the definition of
+    <math|\<cal-D\><rsub|1>> we have then that
+    <math|A<big|cap>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>> which proves
+    that <math|A\<in\>\<cal-D\><rsub|2>>. Hence\ 
+
+    <\equation>
+      <label|eq 18.273.033>\<cal-A\>\<subseteq\>\<cal-D\><rsub|2>
+    </equation>
+
+    Further as <math|X\<in\>\<cal-d\><around*|[|\<cal-A\>|]>> and
+    <math|\<forall\>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    <math|X<big|cap>C=C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>> it follows
+    that\ 
+
+    <\equation>
+      <label|eq 18.274.033>X\<in\>\<cal-D\><rsub|2>
+    </equation>
+
+    If <math|A,B\<in\>\<cal-D\><rsub|2>> and
+    <math|C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>> then by definition
+    <math|A<big|cap>C,B<big|cap>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>, as
+    <math|<around*|(|A\\B|)><big|cap>C\<equallim\><rsub|<text|<reference|(A
+    except B) interect C>>><around*|(|A<big|cap>C|)>\\<around*|(|B<big|cap>C|)>\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    it follows that\ 
+
+    <\equation>
+      <label|eq 18.275.033>\<forall\>A,B\<in\>\<cal-D\><rsub|2> we have
+      A\\B\<in\>\<cal-D\><rsub|2>
+    </equation>
+
+    Further if <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-D\><rsub|2>>
+    and <math|C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>> then
+    <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>> we have
+    <math|A<rsub|i><big|cap>C\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>, as
+    <math|<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>|)><big|cap>C\<equallim\><rsub|<text|<reference|generalized
+    distributive laws>>><big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|A<rsub|i><big|cap>C|)>\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>
+    it follows that <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<in\>\<cal-d\><around*|[|\<cal-A\>|]>>.
+    So if we restrict ourselve to a sequence of increasing sets we have
+
+    <\equation>
+      <label|eq 18.276.033>\<forall\><around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-D\><rsub|2>
+      with \<forall\>i\<in\>\<bbb-N\><rsub|0>
+      A<rsub|i>\<subseteq\>A<rsub|i+1> \ we have
+      <big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<in\>\<cal-D\><rsub|2>
+    </equation>
+
+    Using <reference|eq 18.273.033>, <reference|eq 18.274.033>, <reference|eq
+    18.75.018> and <reference|eq 18.276.033> we have that
+    <math|\<cal-D\><rsub|2>> is a Dynkin system containing <math|\<cal-A\>>
+    so that
+
+    <\equation>
+      <label|eq 18.277.033>\<cal-d\><around*|[|\<cal-A\>|]>\<subseteq\>\<cal-D\><rsub|2>
+    </equation>
+
+    TODO
+
     \;
   </proof>
 
@@ -7919,42 +8060,43 @@
 
 <\references>
   <\collection>
-    <associate|Borel algebra is generated by closed sets|<tuple|18.19|?>>
-    <associate|Borel algebra on R|<tuple|18.17|?>>
-    <associate|Borel algebra on R^n|<tuple|18.18|?>>
-    <associate|Borel algebra on R^n (1)|<tuple|18.44|?>>
-    <associate|Borel algebra on R^n (2)|<tuple|18.49|?>>
-    <associate|Borel algebra on R^n equivalences|<tuple|18.50|?>>
-    <associate|Borel algebras on R|<tuple|18.24|?>>
-    <associate|Borel measure space|<tuple|18.81|?>>
-    <associate|Borel sets in R^n are transaltion invariant|<tuple|18.92|?>>
-    <associate|Caratheodore|<tuple|18.67|?>>
-    <associate|Dunkin class|<tuple|18.119|?>>
-    <associate|Dyadic cube properties|<tuple|18.40|?>>
-    <associate|Dyadic cubes|<tuple|18.38|?>>
-    <associate|Dyadic interval basic property|<tuple|18.37|?>>
-    <associate|Dyadic intervals|<tuple|18.36|?>>
-    <associate|Dynkin class generated|<tuple|18.123|?>>
-    <associate|Dynkin classes and sigma algebra|<tuple|18.126|?>>
+    <associate|(A except B) interect C|<tuple|18.1|?>>
+    <associate|Borel algebra is generated by closed sets|<tuple|18.20|?>>
+    <associate|Borel algebra on R|<tuple|18.18|?>>
+    <associate|Borel algebra on R^n|<tuple|18.19|?>>
+    <associate|Borel algebra on R^n (1)|<tuple|18.45|?>>
+    <associate|Borel algebra on R^n (2)|<tuple|18.50|?>>
+    <associate|Borel algebra on R^n equivalences|<tuple|18.51|?>>
+    <associate|Borel algebras on R|<tuple|18.25|?>>
+    <associate|Borel measure space|<tuple|18.82|?>>
+    <associate|Borel sets in R^n are transaltion invariant|<tuple|18.93|?>>
+    <associate|Caratheodore|<tuple|18.68|?>>
+    <associate|Dunkin class|<tuple|18.120|?>>
+    <associate|Dyadic cube properties|<tuple|18.41|?>>
+    <associate|Dyadic cubes|<tuple|18.39|?>>
+    <associate|Dyadic interval basic property|<tuple|18.38|?>>
+    <associate|Dyadic intervals|<tuple|18.37|?>>
+    <associate|Dynkin class generated|<tuple|18.124|?>>
+    <associate|Dynkin classes and sigma algebra|<tuple|18.127|?>>
     <associate|Lebesgue measurability is transalation
-    invariant|<tuple|18.90|?>>
-    <associate|Lebesgue measurable sets alternatives|<tuple|18.80|?>>
-    <associate|Lebesgue measure is regular|<tuple|18.114|?>>
-    <associate|Lebesgue measure is translation invariant|<tuple|18.91|?>>
-    <associate|Lebesgue measure space|<tuple|18.73|?>>
-    <associate|Lebesgue measure space on R^n|<tuple|18.78|?>>
-    <associate|Lebesgue measure spaces are complete|<tuple|18.101|?>>
-    <associate|Lebesgue space and compact sets|<tuple|18.84|?>>
-    <associate|Lower half spaces|<tuple|18.47|?>>
-    <associate|R can be covered by open intervals|<tuple|18.70|?>>
-    <associate|R^n is a unin of rectangles|<tuple|18.74|?>>
-    <associate|[0,1[ as a union of Dyadic intervals|<tuple|18.93|?>>
-    <associate|[0,1[^n as a union of half open rectangles|<tuple|18.94|?>>
-    <associate|algebra equivalent definitions|<tuple|18.7|?>>
-    <associate|algebra of sets|<tuple|18.6|?>>
-    <associate|almost complete|<tuple|18.98|?>>
-    <associate|alternative formule for lebesgue measure (1)|<tuple|18.83|?>>
-    <associate|aproximate halfopen by open|<tuple|18.82|?>>
+    invariant|<tuple|18.91|?>>
+    <associate|Lebesgue measurable sets alternatives|<tuple|18.81|?>>
+    <associate|Lebesgue measure is regular|<tuple|18.115|?>>
+    <associate|Lebesgue measure is translation invariant|<tuple|18.92|?>>
+    <associate|Lebesgue measure space|<tuple|18.74|?>>
+    <associate|Lebesgue measure space on R^n|<tuple|18.79|?>>
+    <associate|Lebesgue measure spaces are complete|<tuple|18.102|?>>
+    <associate|Lebesgue space and compact sets|<tuple|18.85|?>>
+    <associate|Lower half spaces|<tuple|18.48|?>>
+    <associate|R can be covered by open intervals|<tuple|18.71|?>>
+    <associate|R^n is a unin of rectangles|<tuple|18.75|?>>
+    <associate|[0,1[ as a union of Dyadic intervals|<tuple|18.94|?>>
+    <associate|[0,1[^n as a union of half open rectangles|<tuple|18.95|?>>
+    <associate|algebra equivalent definitions|<tuple|18.8|?>>
+    <associate|algebra of sets|<tuple|18.7|?>>
+    <associate|almost complete|<tuple|18.99|?>>
+    <associate|alternative formule for lebesgue measure (1)|<tuple|18.84|?>>
+    <associate|aproximate halfopen by open|<tuple|18.83|?>>
     <associate|auto-1|<tuple|18|?>>
     <associate|auto-10|<tuple|18.2.2|?>>
     <associate|auto-11|<tuple|<with|mode|<quote|math>|\<cal-R\><rsup|n>>|?>>
@@ -8000,16 +8142,16 @@
     <associate|auto-7|<tuple|Borel algebra|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
     <associate|auto-9|<tuple|18.2.1|?>>
-    <associate|boundaries of a rectangle are unique|<tuple|18.31|?>>
-    <associate|bounded intervals|<tuple|18.20|?>>
-    <associate|complete measures|<tuple|18.99|?>>
-    <associate|completion lemma|<tuple|18.102|?>>
-    <associate|completion of Borelset label|<tuple|18.105|?>>
-    <associate|completion of a measure|<tuple|18.103|?>>
-    <associate|completion of a measure space|<tuple|18.104|?>>
-    <associate|consequence of a pi-system|<tuple|18.125|?>>
-    <associate|countable additivity implies additivity|<tuple|18.55|?>>
-    <associate|empty rectaangles|<tuple|18.27|?>>
+    <associate|boundaries of a rectangle are unique|<tuple|18.32|?>>
+    <associate|bounded intervals|<tuple|18.21|?>>
+    <associate|complete measures|<tuple|18.100|?>>
+    <associate|completion lemma|<tuple|18.103|?>>
+    <associate|completion of Borelset label|<tuple|18.106|?>>
+    <associate|completion of a measure|<tuple|18.104|?>>
+    <associate|completion of a measure space|<tuple|18.105|?>>
+    <associate|consequence of a pi-system|<tuple|18.126|?>>
+    <associate|countable additivity implies additivity|<tuple|18.56|?>>
+    <associate|empty rectaangles|<tuple|18.28|?>>
     <associate|eq 18.1.014|<tuple|18.7|?>>
     <associate|eq 18.1.016|<tuple|18.1|?>>
     <associate|eq 18.10.021|<tuple|18.12|?>>
@@ -8184,7 +8326,19 @@
     <associate|eq 18.261.032|<tuple|18.263|?>>
     <associate|eq 18.262.032|<tuple|18.264|?>>
     <associate|eq 18.263.032|<tuple|18.265|?>>
+    <associate|eq 18.266.033|<tuple|18.266|?>>
+    <associate|eq 18.267.033|<tuple|18.267|?>>
+    <associate|eq 18.268.033|<tuple|18.268|?>>
+    <associate|eq 18.269.033|<tuple|18.269|?>>
     <associate|eq 18.27.021|<tuple|18.29|?>>
+    <associate|eq 18.270.033|<tuple|18.270|?>>
+    <associate|eq 18.271.033|<tuple|18.271|?>>
+    <associate|eq 18.272.033|<tuple|18.272|?>>
+    <associate|eq 18.273.033|<tuple|18.273|?>>
+    <associate|eq 18.274.033|<tuple|18.274|?>>
+    <associate|eq 18.275.033|<tuple|18.275|?>>
+    <associate|eq 18.276.033|<tuple|18.276|?>>
+    <associate|eq 18.277.033|<tuple|18.277|?>>
     <associate|eq 18.28.021|<tuple|18.30|?>>
     <associate|eq 18.29.021|<tuple|18.31|?>>
     <associate|eq 18.3.014|<tuple|18.9|?>>
@@ -8277,69 +8431,69 @@
     <associate|eq 18.86.018|<tuple|18.113|?>>
     <associate|eq 18.9.020|<tuple|18.11|?>>
     <associate|every open set in R^n is a countable union of dyadic
-    cubes|<tuple|18.42|?>>
-    <associate|finite unions and intersections|<tuple|18.5|?>>
-    <associate|generated sigma algebra|<tuple|18.15|?>>
+    cubes|<tuple|18.43|?>>
+    <associate|finite unions and intersections|<tuple|18.6|?>>
+    <associate|generated sigma algebra|<tuple|18.16|?>>
     <associate|half open rectangle as intersection of open
-    sets|<tuple|18.43|?>>
-    <associate|half spaces are Lebesgue measurable in R^n|<tuple|18.79|?>>
-    <associate|induced outer inner measure|<tuple|18.107|?>>
-    <associate|induced outer measure is a outer measure|<tuple|18.109|?>>
-    <associate|inner/outer regularity|<tuple|18.111|?>>
+    sets|<tuple|18.44|?>>
+    <associate|half spaces are Lebesgue measurable in R^n|<tuple|18.80|?>>
+    <associate|induced outer inner measure|<tuple|18.108|?>>
+    <associate|induced outer measure is a outer measure|<tuple|18.110|?>>
+    <associate|inner/outer regularity|<tuple|18.112|?>>
     <associate|intersection of a class of Dynkin classes is a Dynkin
-    class|<tuple|18.122|?>>
+    class|<tuple|18.123|?>>
     <associate|intersection of sigma algebras is a sigma
-    algebra|<tuple|18.14|?>>
-    <associate|interval identities|<tuple|18.23|?>>
-    <associate|length of interval is increasing|<tuple|18.34|?>>
-    <associate|lower half open spaces|<tuple|18.45|?>>
-    <associate|lower half open spaces are open|<tuple|18.46|?>>
-    <associate|measurable set alternative definition|<tuple|18.65|?>>
-    <associate|measurable sets and null sets|<tuple|18.66|?>>
-    <associate|measurable space|<tuple|18.11|?>>
-    <associate|measure|<tuple|18.53|?>>
-    <associate|measure is subadditive|<tuple|18.58|?>>
-    <associate|measure properties (1)|<tuple|18.56|?>>
-    <associate|measure properties (2)|<tuple|18.59|?>>
-    <associate|measure regularity lemma|<tuple|18.115|?>>
-    <associate|measureable set|<tuple|18.64|?>>
-    <associate|negligibility|<tuple|18.96|?>>
-    <associate|negligible set properties|<tuple|18.97|?>>
+    algebra|<tuple|18.15|?>>
+    <associate|interval identities|<tuple|18.24|?>>
+    <associate|length of interval is increasing|<tuple|18.35|?>>
+    <associate|lower half open spaces|<tuple|18.46|?>>
+    <associate|lower half open spaces are open|<tuple|18.47|?>>
+    <associate|measurable set alternative definition|<tuple|18.66|?>>
+    <associate|measurable sets and null sets|<tuple|18.67|?>>
+    <associate|measurable space|<tuple|18.12|?>>
+    <associate|measure|<tuple|18.54|?>>
+    <associate|measure is subadditive|<tuple|18.59|?>>
+    <associate|measure properties (1)|<tuple|18.57|?>>
+    <associate|measure properties (2)|<tuple|18.60|?>>
+    <associate|measure regularity lemma|<tuple|18.116|?>>
+    <associate|measureable set|<tuple|18.65|?>>
+    <associate|negligibility|<tuple|18.97|?>>
+    <associate|negligible set properties|<tuple|18.98|?>>
     <associate|open,half open and bounded intervals are
-    different|<tuple|18.22|?>>
-    <associate|open/closed sets relation|<tuple|18.51|?>>
-    <associate|outer measure|<tuple|18.61|?>>
-    <associate|outer measure definition on rectangles|<tuple|18.76|?>>
-    <associate|outer measure finite subadditivity|<tuple|18.62|?>>
-    <associate|outer measure is translation invariant|<tuple|18.89|?>>
-    <associate|outer measure on R|<tuple|18.72|?>>
-    <associate|outer measure on rectangles|<tuple|18.77|?>>
-    <associate|outermeasure construction|<tuple|18.63|?>>
-    <associate|properties of algebras|<tuple|18.8|?>>
-    <associate|rectangle and half open sets|<tuple|18.48|?>>
+    different|<tuple|18.23|?>>
+    <associate|open/closed sets relation|<tuple|18.52|?>>
+    <associate|outer measure|<tuple|18.62|?>>
+    <associate|outer measure definition on rectangles|<tuple|18.77|?>>
+    <associate|outer measure finite subadditivity|<tuple|18.63|?>>
+    <associate|outer measure is translation invariant|<tuple|18.90|?>>
+    <associate|outer measure on R|<tuple|18.73|?>>
+    <associate|outer measure on rectangles|<tuple|18.78|?>>
+    <associate|outermeasure construction|<tuple|18.64|?>>
+    <associate|properties of algebras|<tuple|18.9|?>>
+    <associate|rectangle and half open sets|<tuple|18.49|?>>
     <associate|replace countable untion of sets by disjoint union of
-    sets|<tuple|18.57|?>>
+    sets|<tuple|18.58|?>>
     <associate|restriction of measure space to a sub sigma
-    algebra|<tuple|18.54|?>>
-    <associate|semi additivity of the length in the reals|<tuple|18.71|?>>
-    <associate|set of all subsets is a Dynkin class|<tuple|18.121|?>>
-    <associate|set of all subsets is a sigma algebra|<tuple|18.10|?>>
+    algebra|<tuple|18.55|?>>
+    <associate|semi additivity of the length in the reals|<tuple|18.72|?>>
+    <associate|set of all subsets is a Dynkin class|<tuple|18.122|?>>
+    <associate|set of all subsets is a sigma algebra|<tuple|18.11|?>>
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
-    <associate|sigma algebra equivalent definitions|<tuple|18.12|?>>
-    <associate|singleton family union intersection|<tuple|18.1|?>>
-    <associate|the set of Dyadic cubes is denumerable|<tuple|18.41|?>>
-    <associate|translation properties|<tuple|18.87|?>>
-    <associate|union intersection union of families|<tuple|18.2|?>>
+    <associate|sigma algebra equivalent definitions|<tuple|18.13|?>>
+    <associate|singleton family union intersection|<tuple|18.2|?>>
+    <associate|the set of Dyadic cubes is denumerable|<tuple|18.42|?>>
+    <associate|translation properties|<tuple|18.88|?>>
+    <associate|union intersection union of families|<tuple|18.3|?>>
     <associate|union,intersection and function between and
-    indexes|<tuple|18.3|?>>
-    <associate|uniqueness of the Lebesgue measure|<tuple|18.85|?>>
-    <associate|volume in R^n|<tuple|18.33|?>>
-    <associate|volume is increasing|<tuple|18.35|?>>
-    <associate|volume is subadditive|<tuple|18.75|?>>
-    <associate|volume is translation invariant|<tuple|18.88|?>>
-    <associate|volume of a rectangle|<tuple|18.32|?>>
+    indexes|<tuple|18.4|?>>
+    <associate|uniqueness of the Lebesgue measure|<tuple|18.86|?>>
+    <associate|volume in R^n|<tuple|18.34|?>>
+    <associate|volume is increasing|<tuple|18.36|?>>
+    <associate|volume is subadditive|<tuple|18.76|?>>
+    <associate|volume is translation invariant|<tuple|18.89|?>>
+    <associate|volume of a rectangle|<tuple|18.33|?>>
     <associate|writing a countable family of sets as a disjoint familly of
-    sets|<tuple|18.4|?>>
+    sets|<tuple|18.5|?>>
   </collection>
 </references>
 
