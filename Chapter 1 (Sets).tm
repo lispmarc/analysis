@@ -259,8 +259,6 @@
 
       <item><math|A\\\<emptyset\>=A>
     </enumerate>
-
-    \ <math|A\\<around*|(|A\\B|)>=B>
   </theorem>
 
   <\proof>

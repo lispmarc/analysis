@@ -1952,8 +1952,12 @@
     <label|topology of real complex numbers><math|<around*|\<langle\>|\<bbb-R\>,<around*|\|||\|>|\<rangle\>>>
     and <math|<around*|\<langle\>|\<bbb-C\>,<around*|\|||\|>|\<rangle\>>>
     where <math|<around*|\||x|\|>> is the absolute value of <math|x> forms a
-    normed space.. In <math|<around*|\<langle\>|\<bbb-R\>,\<\|\|\>|\<rangle\>>>
-    the basis of the normed topology is <math|\<cal-B\>=<around*|{|<around*|]|a,b|[>\|a,b\<in\>\<bbb-R\>\<wedge\>a\<less\>b|}>>
+    normed space. In <math|<around*|\<langle\>|\<bbb-R\>,\<\|\|\>|\<rangle\>>>
+    the basis <math|\<cal-B\>> of the normed topology is given by\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<cal-B\>>|<cell|=>|<cell|<around*|{|B<rsub|<around*|\|||\|>><around*|(|x,\<varepsilon\>|)>\|x\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>|}>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|<around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>\|x\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>|}>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|<around*|]|a,b|[>\|a,b\<in\>\<bbb-R\>\<wedge\>a\<less\>b|}>>>>>
+    </eqnarray*>
   </proposition>
 
   <\proof>
@@ -1961,24 +1965,39 @@
     a norm> it follows that <math|<around*|\|||\|>> is a norm so that we can
     apply <reference|normed topology>. \ For the case of
     <math|<around*|\<langle\>|\<bbb-R\>,\<\|\|\>|\<rangle\>>> its basis is
-    <math|\<cal-B\><rsub|<around*|\|||\|>>=<around*|{|B<rsub|<around*|\|||\|>><around*|(|x,\<varepsilon\>|)>\|x\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>|}>>.
-    Now take <math|B\<in\>\<cal-B\><rsub|<around*|\|||\|>>> then there exists
-    <math|x\<in\>\<bbb-R\>,\<varepsilon\>\<in\>\<bbb-R\><rsub|+>>
+    <math|\<cal-B\>=<around*|{|B<rsub|<around*|\|||\|>><around*|(|x,\<varepsilon\>|)>\|x\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>|}>>.
+    First if <math|x\<in\>\<bbb-R\>> and <math|\<varepsilon\>\<in\>\<bbb-R\><rsub|+>>
+    then\ 
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|y\<in\>B<rsub|<around*|\|||\|>><around*|(|x,\<varepsilon\>|)>>|<cell|\<Leftrightarrow\>>|<cell|<around*|\||x-y|\|>\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x-y\<less\>\<varepsilon\>\<wedge\>y-x\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x-\<varepsilon\>\<less\>y\<wedge\>y\<less\>x+\<varepsilon\>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|y\<in\><around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>>>>>
     </eqnarray*>
 
-    proving that <math|B<rsub|<around*|\|||\|>><around*|(|x,\<varepsilon\>|)>=<around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>>
-    and thus that\ 
+    proving that
+
+    <\equation*>
+      B<rsub|<around*|\|||\|>><around*|(|x,\<varepsilon\>|)>=<around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>
+      </equation*>
+
+    So\ 
+
+    <\equation*>
+      \<cal-B\>=<around*|{|<around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>\|x\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>|}>
+    </equation*>
+
+    Further if <math|B\<in\><around*|{|<around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>\|x\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>|}>>
+    then as <math|x=\<varepsilon\>,x+\<varepsilon\>\<in\>\<bbb-R\>> and
+    <math|x-\<varepsilon\>\<less\>x+\<varepsilon\>> we have that
+    <math|B\<in\><around*|{|<around*|]|a,b|[><around*|\|||\|>a,b\<in\>\<bbb-R\>\<wedge\>a\<less\>b|}>>
+    proving that
 
     <\equation*>
       \<cal-B\><rsub|<around*|\|||\|>>\<subseteq\>\<cal-B\>
     </equation*>
 
-    If now <math|B\<in\>\<cal-B\>> then there exists
-    <math|a,b\<in\>\<bbb-R\>> with <math|a\<less\>b> such that
-    <math|B=<around*|]|a,b|[>>. Take then
+    If now <math|B\<in\><around*|{|<around*|]|a,b|[><around*|\|||\|>a,b\<in\>\<bbb-R\>\<wedge\>a\<less\>b|}>>
+    then there exists <math|a,b\<in\>\<bbb-R\>> with <math|a\<less\>b> such
+    that <math|B=<around*|]|a,b|[>>. Take then
     <math|\<varepsilon\>=<frac|b-a|2>\<gtr\>0> and <math|x=a+\<varepsilon\>>
     then we have\ 
 
@@ -1997,7 +2016,7 @@
   <\lemma>
     <label|open intervals in R>Let <math|I> be a generalized interval [see
     <reference|generalized interval> and <reference|generalized intervals and
-    intervals>] then the followin intervals are open\ 
+    intervals>] then the following intervals are open\ 
 
     <\enumerate>
       <item><math|<around*|]|a,b|[>> where <math|a,b\<in\>\<bbb-R\>> with
