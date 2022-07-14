@@ -1726,12 +1726,12 @@
     <label|lemma 18.28 set relations>\ 
 
     <\enumerate>
-      <item><math|\<forall\>a,b\<in\>\<bbb-R\>> we have that
+      <item><math|\<forall\>a\<in\>\<bbb-R\>> we have
       <math|<around*|[|a,\<infty\>|]>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|]|a-<frac|1|n>,\<infty\>|]>>
 
       <item><math|<around*|{|\<infty\>|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|]|n,\<infty\>|]>>
 
-      <item><math|<around*|{|-\<infty\>|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|]>>
+      <item><math|<around*|{|-\<infty\>|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|[>>
     </enumerate>
   </lemma>
 
@@ -1742,7 +1742,7 @@
       <item>Let <math|n\<in\>\<bbb-N\><rsub|0>> then if
       <math|x\<in\><around*|[|a,\<infty\>|]>>
       <math|a\<leqslant\>x\<leqslant\>\<infty\>\<Rightarrow\>a-<frac|1|n>\<less\>a\<leqslant\>x>
-      prving <math|<around*|[|a,\<infty\>|]>\<subseteq\><around*|]|a-<frac|1|n>,\<infty\>|]>>.
+      proving <math|<around*|[|a,\<infty\>|]>\<subseteq\><around*|]|a-<frac|1|n>,\<infty\>|]>>.
       Hence\ 
 
       <\equation>
@@ -1760,7 +1760,7 @@
       <math|x\<leqslant\>\<infty\>> we have
       <math|x\<in\><around*|[|a,\<infty\>|]>>. So
       <math|><math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|]|a-<frac|1|n>,\<infty\>|]>\<subseteq\><around*|[|a,\<infty\>|]>>
-      which combined with <reference|eq 18.44.033>
+      which combined with <reference|eq 18.44.033> gives
 
       <\equation*>
         <around*|[|a,\<infty\>|]>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|]|a-<frac|1|n>,\<infty\>|]>
@@ -1780,7 +1780,7 @@
       <math|n\<less\>x\<leqslant\>\<infty\>>, Assume that
       <math|x\<neq\>\<infty\>> then <math|x\<less\>\<infty\>> and as
       <math|-\<infty\>\<less\>n\<less\>x> we have also that
-      <math|x\<neq\>-\<infty\>> hence <math|x\<in\>\<bbb-R\>> and using
+      <math|x\<neq\>-\<infty\>> hence <math|x\<in\>\<bbb-R\>>, then using
       <reference|consequence of the archimedean property for the reals> there
       exists a <math|n\<in\>\<bbb-N\><rsub|0>> such that <math|x\<less\>n> a
       contradiction. So we must have that <math|x=\<infty\>> which proves
@@ -1793,17 +1793,17 @@
 
       <item>As <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
       <math|-\<infty\>\<leqslant\>-\<infty\>\<less\>-n> it follows that
-      <math|-\<infty\>\<in\><around*|[|-\<infty\>,n|]>>, hence\ 
+      <math|-\<infty\>\<in\><around*|[|-\<infty\>,n|[>>, hence\ 
 
       <\equation>
-        <label|eq 18.46.033><around*|{|-\<infty\>|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|]>
+        <label|eq 18.46.033><around*|{|-\<infty\>|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|[>
       </equation>
 
-      Let <math|x\<in\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|]>>
+      Let <math|x\<in\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|[>>
       then <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
-      <math|-\<infty\>\<leqslant\>x\<leqslant\>-n>, Assume that
+      <math|-\<infty\>\<leqslant\>x\<less\>-n>, Assume that
       <math|x\<neq\>-\<infty\>> then <math|-\<infty\>\<less\>x> and as
-      <math|x\<leqslant\>n\<less\>\<infty\>> we have also
+      <math|x\<less\>-n\<less\>\<infty\>> we have also
       <math|x\<neq\>\<infty\>> hence <math|x\<in\>\<bbb-R\>>. Using
       <reference|consequence of the archimedean property for the reals> there
       exists a <math|n\<in\>\<bbb-N\><rsub|0>> such that <math|-x\<less\>n>
@@ -1813,7 +1813,7 @@
       combining this with <reference|eq 18.46.033> gives\ 
 
       <\equation*>
-        <around|{|-\<infty\>|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|]>
+        <around|{|-\<infty\>|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|]>
       </equation*>
 
       \;
@@ -1855,7 +1855,7 @@
       we have that\ 
 
       <\equation*>
-        <around*|[|a,\<infty\>|]>=<big|cup><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|]|a-<frac|1|n>,\<infty\>|]>
+        <around*|[|a,\<infty\>|]>\<in\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>
       </equation*>
 
       <item>Let <math|a\<in\>\<bbb-R\>> then
@@ -1875,13 +1875,13 @@
       <item>Let <math|a,b\<in\>\<bbb-R\>> with <math|a\<leqslant\>b> then
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|<around*|]|a,\<infty\>|]><big|cap><around*|[|-\<infty\>,b|[>>|<cell|\<Leftrightarrow\>>|<cell|x\<in\><around*|]|a,\<infty\>|]>*x\<in\><around*|[|-\<infty\>,b|[>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|a\<less\>x\<wedge\>x\<leqslant\>\<infty\>\<wedge\>-\<infty\>\<leqslant\>x\<wedge\>x\<less\>b>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|a\<less\>x\<wedge\>x\<less\>b\<wedge\>x\<in\><wide|\<bbb-R\>|\<wide-bar\>>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x\<in\><around*|]|a,b|[>>>>>
+        <tformat|<table|<row|<cell|x\<in\><around*|]|a,\<infty\>|]><big|cap><around*|[|-\<infty\>,b|[>>|<cell|\<Leftrightarrow\>>|<cell|x\<in\><around*|]|a,\<infty\>|]>*\<wedge\>x\<in\><around*|[|-\<infty\>,b|[>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|a\<less\>x\<wedge\>x\<leqslant\>\<infty\>\<wedge\>-\<infty\>\<leqslant\>x\<wedge\>x\<less\>b>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|a\<less\>x\<wedge\>x\<less\>b>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x\<in\><around*|]|a,b|[>>>>>
       </eqnarray*>
 
       proving that <math|<around*|]|a,b|[>=<around*|]|a,\<infty\>|]><big|cap><around*|[|-\<infty\>,b|[>>.
       As <math|><math|<around*|]|a,\<infty\>|]>\<in\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>
       and by (2) <math|<around*|[|-\<infty\>,b|[>\<in\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>
-      we have that <math|><math|<around*|]|a,\<infty\>|]><big|cap><around*|[|-\<infty\>,b|[>>.
+      we have that <math|><math|<around*|]|a,\<infty\>|]><big|cap><around*|[|-\<infty\>,b|[>\<in\>\<sigma\><around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>>.
       So\ 
 
       <\equation*>
@@ -1889,12 +1889,13 @@
       </equation*>
 
       <item>Let <math|U> be a open set in <math|\<bbb-R\>> then there exists
-      a <math|<around*|{|<around*|]|a<rsub|i>,b<rsub|i>|[>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
+      a sequence <math|<around*|{|<around*|]|a<rsub|i>,b<rsub|i>|[>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
       such that <math|U=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|]|a<rsub|i>,b<rsub|i>|]>>
       [see <reference|a open set in R is a countable union of open finite
       intervals>]. As by (3) we have that
       <math|><math|<around*|{|<around*|]|a<rsub|i>,b<rsub|i>|[>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>
-      it follows that <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|]|a<rsub|i>,b<rsub|i>|[>>\N<math|\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>.
+      [which is a <math|\<sigma\>>-algebra] it follows that
+      <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|]|a<rsub|i>,b<rsub|i>|[>\<in\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>.
       So\ 
 
       <\equation*>
@@ -1903,16 +1904,16 @@
 
       <item>Using <reference|lemma 18.28 set relations> we have that
       <math|<around*|{|\<infty\>|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|]|n,\<infty\>|]>>
-      which, as <math|<around*|{|<around*|]|,\<infty\>|]>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<in\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>,
+      which, as <math|<around*|{|<around*|]|n,\<infty\>|]>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<in\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>,
       \ proves that\ 
 
       <\equation*>
         <around*|{|\<infty\>|}>\<in\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>
       </equation*>
 
-      <item>Using <reference|lemma 18.28 set relations> we have that we have
-      that <math|<around*|{|-\<infty\>|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,n|]>>
-      which, as by (1) <math|<around*|{|<around*|[|-\<infty\>,n|]>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>,
+      <item>Using <reference|lemma 18.28 set relations> we have that
+      <math|<around*|{|-\<infty\>|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|[|-\<infty\>,-n|[>>
+      which, as by (2) <math|<around*|{|<around*|[|-\<infty\>,-n|[>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<sigma\><around*|(|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|)>>,
       proves that\ 
 
       <\equation*>
@@ -1921,25 +1922,22 @@
     </enumerate>
   </proof>
 
-  <\theorem>
-    We have now the following equivalences for the Borel algebra on
-    <math|<wide|\<bbb-R\>|\<wide-bar\>>>
+  We can now find equivalent definitions of the Borel algebra's on the
+  extended real numbers.
 
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>|<cell|\<equallim\><rsub|def>>|<cell|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>>|<row|<cell|>|<cell|=>|<cell|\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>>|<row|<cell|>|<cell|=>|<cell|\<sigma\><around*|[|<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>|]>>>>>
-    </eqnarray*>
-  </theorem>
+  <\lemma>
+    <label|borel algebra on the extebded reals
+    (1)><math|><math|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>=\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>
+  </lemma>
 
   <\proof>
-    First we prove that <math|\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>=\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>.\ 
-
     Let <math|I\<in\><around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>>
-    then there exists a <math|a\<in\>\<bbb-R\>> sich that
-    <math|I=<around*|]|a,\<infty\>|]>> then [see <reference|sets for basis of
-    topology on the extented reals>, <reference|gnerating basis vor the
-    extended reals>] we have that <math|I\<in\>\<cal-B\><rsub|\<infty\>>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>.
-    So <math|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>,
-    hence\ 
+    then there exists a <math|a\<in\>\<bbb-R\>> such that
+    <math|I=<around*|]|a,\<infty\>|]>>, using <reference|sets for basis of
+    topology on the extented reals> and <reference|gnerating basis vor the
+    extended reals> \ we have that <math|I\<in\>\<cal-B\><rsub|\<infty\>>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>.
+    So <math|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>.
+    Hence
 
     <\equation>
       <label|eq 18.47.033>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>
@@ -1947,22 +1945,44 @@
 
     Let <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> then by
     <reference|topology on the extended reals properties> we have that
-    <math|U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>. As
+    <math|U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>. From
     <math|<wide|\<bbb-R\>|\<wide-bar\>>=\<bbb-R\><big|cup><around*|{|-\<infty\>|}><big|cup><around*|{|\<infty\>|}>>
-    we have that <math|U=U<big|cap><wide|\<bbb-R\>|\<wide-bar\>>=<around*|(|U<big|cap>\<bbb-R\>|)><big|cup><around*|(|U<big|cap><around*|{|-\<infty\>|}>|)><big|cup><around*|(|U<big|cap><around*|{|\<infty\>|}>|)>>.
-    As <math|U<big|cap>\<bbb-R\>> is open we have by <reference|corollary
-    18.29> that <math|U<big|cap>\<bbb-R\>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>,
-    also <math|U<big|cap><around*|{|-\<infty\>|}>> is either
-    <math|\<emptyset\>> or <math|<around*|{|-\<infty\>|}>,> both are in
-    <math|\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>
-    [see <reference|corollary 18.29>] and finally <math|>
-    \ <math|U<big|cap><around*|{|\<infty\>|}>> is either <math|\<emptyset\>>
-    or <math|<around*|{|\<infty\>|}>> both in
-    \ <math|\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>><math|>
-    [see <reference|corollary 18.29> again]. This proves that
+    it follows that
+
+    <\equation>
+      <label|eq 18.48.033.1>U=U<big|cap><wide|\<bbb-R\>|\<wide-bar\>>=<around*|(|U<big|cap>\<bbb-R\>|)><big|cup><around*|(|U<big|cap><around*|{|-\<infty\>|}>|)><big|cup><around*|(|U<big|cap><around*|{|\<infty\>|}>|)>
+    </equation>
+
+    Now as <math|U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>> we have
+    by <reference|corollary 18.29> that
+
+    <\equation>
+      <label|eq 18.49.033.1>U<big|cap>\<bbb-R\>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>
+    </equation>
+
+    Also <math|U<big|cap><around*|{|-\<infty\>|}>> is either
+    <math|\<emptyset\>> or <math|<around*|{|-\<infty\>|}>> and as by
+    <reference|corollary 18.29> <math|<around*|{|-\<infty\>|}>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>
+    we have that\ 
+
+    <\equation>
+      <label|eq 18.50.033.1>U<big|cap><around*|{|-\<infty\>|}>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>
+    </equation>
+
+    Finally <math|U<big|cap><around*|{|\<infty\>|}>> is either
+    <math|\<emptyset\>> or <math|<around*|{|\<infty\>|}>> and as by
+    <reference|corollary 18.29> <math|<around*|{|\<infty\>|}>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>
+    it follows that\ 
+
+    <\equation>
+      <label|eq 18.51.033.1>U<big|cap><around*|{|\<infty\>|}>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>
+    </equation>
+
+    From <reference|eq 18.48.033.1>,<reference|eq 18.49.033.1>,<reference|eq
+    18.50.033.1> and <reference|eq 18.51.033.1> it follows that
     <math|U\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>.
     Hence <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<subseteq\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>
-    a sigma algebra so that <math|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>\<subseteq\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>,
+    [a sigma algebra] so that <math|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>\<subseteq\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>,
     combining this with <reference|eq 18.47.033> gives
 
     <\equation>
@@ -1970,46 +1990,172 @@
     </equation>
   </proof>
 
-  Secondly we have to prove that <math|><math|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>=<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>.\ 
+  <\lemma>
+    <label|borel algebra on the extended real numbers
+    (2)><math|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>=<around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
+    where <math|\<cal-B\><around*|[|\<bbb-R\>|]>=\<sigma\><around*|[|\<cal-T\><rsub|\<bbb-R\>>|]>>
+  </lemma>
 
-  Take <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> then by
-  \ <reference|topology on the extended reals properties> we have that
-  <math|U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|\<bbb-R\>>|]>\<equallim\><rsub|def>\<cal-B\><around*|[|\<bbb-R\>|]>>
-  hence <math|U\<in\><around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
-  proving that <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<subseteq\><around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>\<subseteq\>\<sigma\><around*|[|<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>|]>>.
-  So it follows that\ 
+  <\proof>
+    First we prove that
 
-  <\equation>
-    <label|eq 18.49.033>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>\<subseteq\>\<sigma\><around*|[|<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>|]>
-  </equation>
-
-  For the opposite inclusion take <math|U\<in\><around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
-  then <math|U\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> and
-  <math|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>. As
-  <math|<wide|\<bbb-R\>|\<wide-bar\>>=\<bbb-R\><big|cup><around*|{|-\<infty\>|}><big|cup><around*|{|\<infty\>|}>>
-
-  <\equation>
-    <label|eq 18.50.033>U=U<big|cap><wide|\<bbb-R\>|\<wide-bar\>>=<around*|(|U<big|cap>\<bbb-R\>|)><big|cup><around*|(|U<big|cap><around*|{|-\<infty\>|}>|)><big|cap><around*|(|U<big|cap><around*|{|\<infty\>|}>|)>
+    <\equation>
+      <label|eq 18.53.033.2><around*|{|U\<in\>\<cal-P\><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>|)>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}><text|
+      is a >\<sigma\><text|-algebra> on <wide|\<bbb-R\>|\<wide-bar\>>
     </equation>
 
-  Now <math|\<emptyset\>> is closed and using <reference|closed sets in the
-  extended reals> <math|<around*|{|-\<infty\>|}>,<around*|{|\<infty\>|}>> are
-  closed and thus element of <math|><math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>><text|
-  and thus of >\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>\<equallim\><rsub|def>\<cal-B\><around*|[|\<bbb-R\>|]>>.
-  Applying this on <reference|eq 18.50.033> together with
-  <math|I<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|{|\<bbb-R\>|}>> proves
-  that <math|U\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>,
-  hence <math|> <math|<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
-  [a sigma algebra] from which we conclude that
-  <math|\<sigma\><around*|[|<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|\<nobracket\>>|}>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>.
-  Combining this with <reference|eq 18.49.033> proves that\ 
+    <\proof>
+      \ 
 
-  <\equation>
-    <label|eq 18.51.033>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>\<subseteq\>\<sigma\><around*|[|<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>|]>
-  </equation>
+      <\enumerate>
+        <item>As <math|<wide|\<bbb-R\>|\<wide-bar\>><big|cap>\<bbb-R\>=\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>
+        it follows that <math|<wide|\<bbb-R\>|\<wide-bar\>>\<in\><around*|{|U\<in\>\<cal-P\><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>|)>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
 
-  The tehroem is then prove by <reference|eq 18.48.033> and <reference|eq
-  18.51.033>.
+        <item>Let <math|U\<in\><around*|{|U\<in\>\<cal-P\><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>|)>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
+        then <math|<around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\\U|)><big|cap>\<bbb-R\>\<equallim\><rsub|<text|<reference|(A
+        except B) interect C>>><around*|(|<wide|\<bbb-R\>|\<wide-bar\>><big|cap>\<bbb-R\>|)>\\<around*|(|\<bbb-R\><big|cap>U|)>=\<bbb-R\>\\<around*|(|\<bbb-R\><big|cap>U|)>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>
+        [as <math|\<cal-B\><around*|[|\<bbb-R\>|]>> is a
+        <math|\<sigma\>>-algebra and <math|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>].
+
+        <item>Let <math|<around*|{|U<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\><around*|{|U\<in\>\<cal-P\><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>|)>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
+        then <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
+        <math|U<rsub|i><big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>,
+        further <math|<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>U<rsub|i>|)><big|cap>\<bbb-R\>=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|U<rsub|i><big|cap>\<bbb-R\>|)>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>.
+      </enumerate>
+    </proof>
+
+    Take <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> then by
+    <reference|topology on the extended reals properties> we have that
+    <math|U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|\<bbb-R\>>|]>\<equallim\><rsub|def>\<cal-B\><around*|[|\<bbb-R\>|]>>
+    hence <math|U\<in\><around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>.
+    This proves that <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<subseteq\><around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
+    and as <math|<around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
+    is a <math|\<sigma\>>-algebra we have
+
+    <\equation>
+      <label|eq 18.54.033.2>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>\<subseteq\><around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>
+    </equation>
+
+    Now for the opposite inclusion. Define
+
+    <\equation>
+      <label|eq 18.54.033.1>\<cal-S\>=<around*|{|U<big|cap>\<bbb-R\>\<of\>U\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>|}>\<subseteq\>\<bbb-R\>
+    </equation>
+
+    then as <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>
+    > we have that
+
+    <\equation>
+      <label|eq 18.55.033.1>\<cal-S\>\<supseteq\><around*|{|U<big|cap>\<bbb-R\>\|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|}>\<equallim\><rsub|<text|<reference|topology
+      on the extended reals properties>>>\<cal-T\><rsub|\<bbb-R\>>
+    </equation>
+
+    Further as <math|\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+    [see <reference|topology on the extended reals properties>] we have for
+    <math|U\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+    that <math|U<big|cap>\<bbb-R\>\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+    so that\ 
+
+    <\equation>
+      <label|eq 18.56.033.1>\<cal-S\>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>
+    </equation>
+
+    Further we prove that\ 
+
+    <\equation>
+      <label|eq 18.57.033.1>S is a \<sigma\><text|-algebra on >\<bbb-R\>
+    </equation>
+
+    <\proof>
+      \ 
+
+      <\enumerate>
+        <item>As <math|\<bbb-R\>=\<bbb-R\><big|cap>\<bbb-R\> <text| and
+        >\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+        we have that <math|\<bbb-R\>\<in\>\<cal-S\>>
+
+        <item>If <math|A\<in\>\<cal-S\>> then
+        <math|\<exists\>V\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+        such that <math|A=V<big|cap>\<bbb-R\>>. Then
+        <math|\<bbb-R\>\\A=\<bbb-R\>\\<around*|(|V<big|cap>\<bbb-R\>|)>=<around*|(|\<bbb-R\>\\V|)><big|cup><around*|(|\<bbb-R\>\\\<bbb-R\>|)>=\<bbb-R\>\\V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        [as <math|\<bbb-R\>,V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>],
+        further <math|<around*|(|\<bbb-R\>\\A|)><big|cap>\<bbb-R\>=\<bbb-R\>\\A>.
+        So <math|\<bbb-R\>\\A\<in\>\<cal-S\>>.
+
+        <item>If <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-S\>>
+        then <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>> then exists a
+        <math|V<rsub|i>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        such that <math|A<rsub|i>=V<rsub|i><big|cap>\<bbb-R\>>. Then
+        <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|V<rsub|i><big|cap>\<bbb-R\>|)>=<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>V<rsub|i>|)><big|cap>\<bbb-R\>>
+        where <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>V<rsub|i>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>.
+        So <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<in\>\<cal-S\>>
+      </enumerate>
+    </proof>
+
+    Combining the above [<reference|eq 18.57.033.1>] with <reference|eq
+    18.55.033.1> gives <math|\<sigma\><around*|(|\<cal-T\><rsub|\<bbb-R\>>|)>\<subseteq\>\<cal-S\>>.
+    Using then <reference|eq 18.56.033.1> together with the fact that
+    <math|\<cal-B\><around*|[|\<bbb-R\>|]>\<equallim\><rsub|def>\<sigma\><around*|[|\<cal-T\><rsub|\<bbb-R\>>|]>>
+    result in\ 
+
+    <\equation>
+      <label|eq 18.58.033.1>\<cal-B\><around*|[|\<bbb-R\>|]>\<subseteq\>\<cal-S\>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>
+    </equation>
+
+    Take <math|A\<in\><around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>>
+    then <math|A=A<big|cap><wide|\<bbb-R\>|\<bar\>>=A<big|cap><around*|(|\<bbb-R\><big|cup><around*|{|-\<infty\>|}>,<around*|{|\<infty\>|}>|)>>
+    giving\ 
+
+    <\equation>
+      <label|eq 18.59.033.1>A=<around*|(|A<big|cap>\<bbb-R\>|)><big|cap><around*|(|A<big|cap><around*|{|-\<infty\>|}>|)><big|cap><around*|(|A<big|cap><around*|{|\<infty\>|}>|)>
+    </equation>
+
+    where\ 
+
+    <\enumerate>
+      <item><math|A<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>\<Rightarrowlim\><rsub|<text|<reference|eq
+      18.58.033.1>>>A<big|cap>\<bbb-R\>\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+
+      <item><math|A<big|cap><around*|{|-\<infty\>|}>> is either
+      <math|\<emptyset\>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      or <math|<around*|{|-\<infty\>|}>\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+      [as <math|-\<infty\>> is closed by <reference|closed sets in the
+      extended reals> and closed sets are part of
+      <math|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+      by <reference|Borel algebras on R>]\ 
+
+      <item><math|A<big|cap><around*|{|-\<infty\>|}>> is either
+      <math|\<emptyset\>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      or <math|<around*|{|\<infty\>|}>\<in\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+      [as <math|\<infty\>> is closed by <reference|closed sets in the
+      extended reals> and closed sets are part of
+      <math|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+      by <reference|Borel algebras on R>]
+    </enumerate>
+
+    From the above we conclude that <math|<around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>\<subseteq\>\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>
+    which combined with <reference|eq 18.54.033.2> proves that
+
+    <\equation*>
+      \<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>=<around*|{|U\<in\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>
+    </equation*>
+  </proof>
+
+  To summarize the two previous lemma's we ave
+
+  <\theorem>
+    The following equivalences for the Borel algebra on
+    <math|<wide|\<bbb-R\>|\<wide-bar\>>> exists
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>|<cell|\<equallim\><rsub|def>>|<cell|\<sigma\><around*|[|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|]>>>|<row|<cell|>|<cell|=>|<cell|\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>>>|<row|<cell|>|<cell|=>|<cell|\<sigma\><around*|[|<around*|{|U\<subseteq\>\<cal-P\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>\|U<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>|}>|]>>>>>
+    </eqnarray*>
+  </theorem>
+
+  <\proof>
+    Use <reference|borel algebra on the extebded reals (1)> and
+    <reference|borel algebra on the extended real numbers (2)>.
+  </proof>
 
   <subsection|Borel algebra on <math|\<bbb-R\><rsup|n>>>
 
@@ -8609,27 +8755,36 @@
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>,
     <math|<around*|\<langle\>|Y,\<cal-B\>|\<rangle\>>> be two measurable
     spaces spaces then a function <math|f:X\<rightarrow\>Y> is
-    <math|\<cal-A\>,\<cal-B\>>-measurable if
+    <with|font-series|bold|<math|\<cal-A\>,\<cal-B\>>-measurable> if
     <math|\<forall\>B\<in\>\<cal-B\>> we have that
     <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>.
   </definition>
 
+  <\note>
+    As a set can have many <math|\<sigma\>>-algebras defined on it, it is
+    important to understand that the same function can be at the same time
+    measurable and not measurable, depending on the <math|\<sigma\>>-algebras
+    used.
+  </note>
+
   <\definition>
-    <reference|Borel function><index|Borel function>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
-    <math|<around*|\<langle\>|Y,\<cal-T\>|\<rangle\>>> a topological space,
-    <math|\<cal-B\><around*|[|Y,\<cal-T\>|]>> based on the topological space
-    and <math|f:X\<rightarrow\>Y> a <math|\<cal-A\>,\<cal-B\><around*|[|Y,T|]>>-measurable
-    function then <math|f> is called a <with|font-series|bold|Borel
-    function>.
+    <label|Borel function><index|Borel function>Let
+    <math|<around*|\<langle\>|X,\<cal-T\><rsub|X>|\<rangle\>>>,
+    <math|<around*|\<langle\>|Y,\<cal-T\><rsub|Y>|\<rangle\>>> be a
+    topological spaces then <math|f:X\<rightarrow\>Y> is
+    <with|font-series|bold|Borel measurable> if <math|f> is
+    <math|\<cal-B\><around*|[|X,\<cal-T\><rsub|X>|]>,\<cal-B\><around*|[|Y,\<cal-T\><rsub|Y>|]>>-measurable
+    where <math|\<cal-B\><around*|[|X,\<cal-T\><rsub|X>|]>=\<sigma\><around*|[|\<cal-T\><rsub|X>|]>>
+    and <math|\<cal-B\><around*|[|Y,\<cal-T\><rsub|Y>|]>=\<sigma\><around*|[|\<cal-T\><rsub|Y>|]>>.
   </definition>
 
   In case of generated <math|\<sigma\>>-algebras we have a easier way of
   checking that a function is measurable as is shown in the next theorem.
 
   <\theorem>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
-    space, <math|Y> a set and <math|\<cal-B\>\<subseteq\>\<cal-P\><around*|(|Y|)>>
+    <label|measurable functions and generated algebra>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|Y> a set and <math|\<cal-B\>\<subseteq\>\<cal-P\><around*|(|Y|)>>
     so that <math|<around*|\<langle\>|Y,\<sigma\><around*|[|\<cal-B\>|]>|\<rangle\>>>
     is a measurable space then <math|f:X\<rightarrow\>Y> is
     <math|\<cal-A\>,\<sigma\><around*|[|\<cal-B\>|]>>-measurable if and only
@@ -8659,13 +8814,13 @@
       As <math|f<rsup|-1><around*|(|Y|)>=X\<in\>\<cal-A\>> we have
 
       <\equation>
-        <label|eq 18.294.033>X\<in\>\<cal-H\>
+        <label|eq 18.294.033>Y\<in\>\<cal-H\>
       </equation>
 
       If <math|B\<in\>\<cal-H\>> then <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>
       and <math|f<rsup|-1><around*|(|Y\\B|)>\<equallim\><rsub|<text|<reference|properties
       of image and preimage>>>X\\f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>
-      [as <math|\<cal-A\>> is a sigma algebra] ]giving\ 
+      [as <math|\<cal-A\>> is a sigma algebra] ] giving\ 
 
       <\equation>
         <label|eq 18.295.033>\<forall\>B\<in\>\<cal-H\> we have
@@ -8682,19 +8837,51 @@
         we have <big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>B<rsub|i>\<in\>\<cal-A\>
       </equation>
 
-      From <reference|eq 18.294.033>, <reference|eq 18.294.033>,
-      <reference|eq 18.295.033> and <reference|eq 18.296.033> it follows that
-      <math|\<cal-H\>> is a <math|\<sigma\>>-algebra that by <reference|eq
-      18.293.033> contains <math|\<cal-B\>>. Hence
-      <math|\<sigma\><around*|[|\<cal-B\>|]>\<subseteq\>\<cal-H\>> which
-      means that <math|\<forall\>B\<in\>\<sigma\><around*|(|\<cal-B\>|)>>
+      From <reference|eq 18.294.033>, <reference|eq 18.295.033> and
+      <reference|eq 18.296.033> it follows that <math|\<cal-H\>> is a
+      <math|\<sigma\>>-algebra on <math|Y> that by <reference|eq 18.293.033>
+      contains <math|\<cal-B\>>. Hence <math|\<sigma\><around*|[|\<cal-B\>|]>\<subseteq\>\<cal-H\>>
+      which means that <math|\<forall\>B\<in\>\<sigma\><around*|(|\<cal-B\>|)>>
       <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>> proving that <math|f>
       is a <math|\<cal-A\>,\<sigma\><around*|[|\<cal-B\>|]>>-measurable
       function.
     </description>
-
-    \;
   </proof>
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-T\><rsub|X>|\<rangle\>>>,
+    <math|<around*|\<langle\>|Y,\<cal-T\><rsub|Y>|\<rangle\>>> and
+    <math|f:X\<rightarrow\>Y> a continuous function then <math|f> is
+    <math|\<cal-B\><around*|[|X,\<cal-T\><rsub|X>|]>,\<cal-B\><around*|[|Y,\<cal-T\><rsub|Y>|]>>-measurable.
+    In other words continuous functions are Borel measurable.
+  </proposition>
+
+  <\proof>
+    If <math|U\<in\>\<cal-T\><rsub|Y>> then as <math|f> is continuous
+    <math|>we have <math|f<rsup|-1><around*|(|U|)>\<in\>\<cal-T\><rsub|X>\<subseteq\>\<cal-B\><around*|[|X,\<cal-T\><rsub|X>|]>>
+    which using <reference|measurable functions and generated algebra> proves
+    that <math|f> is <math|\<cal-B\><around*|[|X,\<cal-T\><rsub|X>|]>,\<cal-B\><around*|[|Y,\<cal-T\><rsub|Y>|]>>-measurable.
+  </proof>
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\><rsub|X>|\<rangle\>>,<around*|\<langle\>|Y,\<cal-A\><rsub|Y>|\<rangle\>>>,<math|<around*|\<langle\>|Z,\<cal-T\><rsub|Z>|)>>
+    measurable spaces, <math|f:X\<rightarrow\>Y> a
+    <math|\<cal-A\><rsub|X>,\<cal-A\><rsub|Y>>-measurable function and
+    <math|g:Y\<rightarrow\>Z> a <math|\<cal-A\><rsub|Y>,\<cal-A\><rsub|Z>>-measurable
+    function then <math|g\<circ\>f> is a <math|\<cal-A\><rsub|X>,\<cal-A\><rsub|Z>>
+    measurable function\ 
+  </proposition>
+
+  <\proof>
+    Take <math|A\<in\>\<cal-A\><rsub|Z>> then
+    <math|f<rsup|-1><around*|(|A|)>\<in\>\<cal-A\><rsub|Y>> so that
+    <math|g<rsup|-1><around*|(|f<rsup|-1><around*|(|A|)>|)>\<in\>\<cal-A\><rsub|X>>.
+    Finally <math|<around*|(|g\<circ\>f|)><rsup|-1><around*|(|A|)>\<equallim\><rsub|<text|<reference|inverse
+    image of a composition of functions>>>f<rsup|-1><around*|(|g<rsup|-1><around*|(|A|)>|)>\<in\>\<cal-A\><rsub|X>>
+    proving the proposition.
+  </proof>
+
+  \;
 
   \;
 
@@ -8730,40 +8917,41 @@
     <associate|Borel algebra is generated by closed sets|<tuple|18.21|?>>
     <associate|Borel algebra on R|<tuple|18.19|?>>
     <associate|Borel algebra on R^n|<tuple|18.20|?>>
-    <associate|Borel algebra on R^n (1)|<tuple|18.50|?>>
-    <associate|Borel algebra on R^n (2)|<tuple|18.55|?>>
-    <associate|Borel algebra on R^n equivalences|<tuple|18.56|?>>
+    <associate|Borel algebra on R^n (1)|<tuple|18.52|?>>
+    <associate|Borel algebra on R^n (2)|<tuple|18.57|?>>
+    <associate|Borel algebra on R^n equivalences|<tuple|18.58|?>>
     <associate|Borel algebras on R|<tuple|18.26|?>>
-    <associate|Borel measure space|<tuple|18.87|?>>
-    <associate|Borel sets in R^n are transaltion invariant|<tuple|18.98|?>>
-    <associate|Caratheodore|<tuple|18.73|?>>
-    <associate|Dunkin class|<tuple|18.125|?>>
-    <associate|Dyadic cube properties|<tuple|18.46|?>>
-    <associate|Dyadic cubes|<tuple|18.44|?>>
-    <associate|Dyadic interval basic property|<tuple|18.43|?>>
-    <associate|Dyadic intervals|<tuple|18.42|?>>
-    <associate|Dynkin class and uniqueness of measures|<tuple|18.134|?>>
-    <associate|Dynkin class generated|<tuple|18.129|?>>
-    <associate|Dynkin classes and sigma algebra|<tuple|18.133|?>>
+    <associate|Borel function|<tuple|18.140|?>>
+    <associate|Borel measure space|<tuple|18.89|?>>
+    <associate|Borel sets in R^n are transaltion invariant|<tuple|18.100|?>>
+    <associate|Caratheodore|<tuple|18.75|?>>
+    <associate|Dunkin class|<tuple|18.127|?>>
+    <associate|Dyadic cube properties|<tuple|18.48|?>>
+    <associate|Dyadic cubes|<tuple|18.46|?>>
+    <associate|Dyadic interval basic property|<tuple|18.45|?>>
+    <associate|Dyadic intervals|<tuple|18.44|?>>
+    <associate|Dynkin class and uniqueness of measures|<tuple|18.136|?>>
+    <associate|Dynkin class generated|<tuple|18.131|?>>
+    <associate|Dynkin classes and sigma algebra|<tuple|18.135|?>>
     <associate|Lebesgue measurability is transalation
-    invariant|<tuple|18.96|?>>
-    <associate|Lebesgue measurable sets alternatives|<tuple|18.86|?>>
-    <associate|Lebesgue measure is regular|<tuple|18.120|?>>
-    <associate|Lebesgue measure is translation invariant|<tuple|18.97|?>>
-    <associate|Lebesgue measure space|<tuple|18.79|?>>
-    <associate|Lebesgue measure space on R^n|<tuple|18.84|?>>
-    <associate|Lebesgue measure spaces are complete|<tuple|18.107|?>>
-    <associate|Lebesgue space and compact sets|<tuple|18.90|?>>
-    <associate|Lower half spaces|<tuple|18.53|?>>
-    <associate|R can be covered by open intervals|<tuple|18.76|?>>
-    <associate|R^n is a unin of rectangles|<tuple|18.80|?>>
-    <associate|[0,1[ as a union of Dyadic intervals|<tuple|18.99|?>>
-    <associate|[0,1[^n as a union of half open rectangles|<tuple|18.100|?>>
+    invariant|<tuple|18.98|?>>
+    <associate|Lebesgue measurable sets alternatives|<tuple|18.88|?>>
+    <associate|Lebesgue measure is regular|<tuple|18.122|?>>
+    <associate|Lebesgue measure is translation invariant|<tuple|18.99|?>>
+    <associate|Lebesgue measure space|<tuple|18.81|?>>
+    <associate|Lebesgue measure space on R^n|<tuple|18.86|?>>
+    <associate|Lebesgue measure spaces are complete|<tuple|18.109|?>>
+    <associate|Lebesgue space and compact sets|<tuple|18.92|?>>
+    <associate|Lower half spaces|<tuple|18.55|?>>
+    <associate|R can be covered by open intervals|<tuple|18.78|?>>
+    <associate|R^n is a unin of rectangles|<tuple|18.82|?>>
+    <associate|[0,1[ as a union of Dyadic intervals|<tuple|18.101|?>>
+    <associate|[0,1[^n as a union of half open rectangles|<tuple|18.102|?>>
     <associate|algebra equivalent definitions|<tuple|18.9|?>>
     <associate|algebra of sets|<tuple|18.8|?>>
-    <associate|almost complete|<tuple|18.104|?>>
-    <associate|alternative formule for lebesgue measure (1)|<tuple|18.89|?>>
-    <associate|aproximate halfopen by open|<tuple|18.88|?>>
+    <associate|almost complete|<tuple|18.106|?>>
+    <associate|alternative formule for lebesgue measure (1)|<tuple|18.91|?>>
+    <associate|aproximate halfopen by open|<tuple|18.90|?>>
     <associate|auto-1|<tuple|18|?>>
     <associate|auto-10|<tuple|18.2.2|?>>
     <associate|auto-11|<tuple|18.2.3|?>>
@@ -8813,219 +9001,221 @@
     <associate|auto-7|<tuple|Borel algebra|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
     <associate|auto-9|<tuple|18.2.1|?>>
-    <associate|boundaries of a rectangle are unique|<tuple|18.37|?>>
+    <associate|borel algebra on the extebded reals (1)|<tuple|18.30|?>>
+    <associate|borel algebra on the extended real numbers
+    (2)|<tuple|18.31|?>>
+    <associate|boundaries of a rectangle are unique|<tuple|18.39|?>>
     <associate|bounded intervals|<tuple|18.22|?>>
-    <associate|complete measures|<tuple|18.105|?>>
-    <associate|completion lemma|<tuple|18.108|?>>
-    <associate|completion of Borelset label|<tuple|18.111|?>>
-    <associate|completion of a measure|<tuple|18.109|?>>
-    <associate|completion of a measure space|<tuple|18.110|?>>
+    <associate|complete measures|<tuple|18.107|?>>
+    <associate|completion lemma|<tuple|18.110|?>>
+    <associate|completion of Borelset label|<tuple|18.113|?>>
+    <associate|completion of a measure|<tuple|18.111|?>>
+    <associate|completion of a measure space|<tuple|18.112|?>>
     <associate|condition for a Dynkin class to be a sigma
-    algebra|<tuple|18.132|?>>
-    <associate|consequence of a pi-system|<tuple|18.131|?>>
-    <associate|corollary 18.20|<tuple|18.29|?>>
+    algebra|<tuple|18.134|?>>
+    <associate|consequence of a pi-system|<tuple|18.133|?>>
     <associate|corollary 18.29|<tuple|18.29|?>>
-    <associate|countable additivity implies additivity|<tuple|18.61|?>>
-    <associate|empty rectaangles|<tuple|18.33|?>>
+    <associate|countable additivity implies additivity|<tuple|18.63|?>>
+    <associate|empty rectaangles|<tuple|18.35|?>>
     <associate|eq 18.1.014|<tuple|18.10|?>>
     <associate|eq 18.1.016|<tuple|18.4|?>>
     <associate|eq 18.1.033|<tuple|18.1|?>>
     <associate|eq 18.10.021|<tuple|18.15|?>>
-    <associate|eq 18.108.021|<tuple|18.125|?>>
-    <associate|eq 18.109.021|<tuple|18.126|?>>
+    <associate|eq 18.108.021|<tuple|18.134|?>>
+    <associate|eq 18.109.021|<tuple|18.135|?>>
     <associate|eq 18.11.021|<tuple|18.16|?>>
-    <associate|eq 18.111.021|<tuple|18.127|?>>
-    <associate|eq 18.112.021|<tuple|18.129|?>>
-    <associate|eq 18.112.021.1|<tuple|18.128|?>>
-    <associate|eq 18.113.021|<tuple|18.130|?>>
-    <associate|eq 18.114.021|<tuple|18.131|?>>
-    <associate|eq 18.115.021|<tuple|18.132|?>>
-    <associate|eq 18.116.021|<tuple|18.133|?>>
-    <associate|eq 18.117.021|<tuple|18.134|?>>
-    <associate|eq 18.118.021|<tuple|18.135|?>>
-    <associate|eq 18.119.021|<tuple|18.136|?>>
+    <associate|eq 18.111.021|<tuple|18.136|?>>
+    <associate|eq 18.112.021|<tuple|18.138|?>>
+    <associate|eq 18.112.021.1|<tuple|18.137|?>>
+    <associate|eq 18.113.021|<tuple|18.139|?>>
+    <associate|eq 18.114.021|<tuple|18.140|?>>
+    <associate|eq 18.115.021|<tuple|18.141|?>>
+    <associate|eq 18.116.021|<tuple|18.142|?>>
+    <associate|eq 18.117.021|<tuple|18.143|?>>
+    <associate|eq 18.118.021|<tuple|18.144|?>>
+    <associate|eq 18.119.021|<tuple|18.145|?>>
     <associate|eq 18.12.021|<tuple|18.17|?>>
-    <associate|eq 18.120.021|<tuple|18.137|?>>
-    <associate|eq 18.121.021|<tuple|18.138|?>>
-    <associate|eq 18.122.021|<tuple|18.139|?>>
-    <associate|eq 18.123.021|<tuple|18.140|?>>
-    <associate|eq 18.127.025|<tuple|18.141|?>>
-    <associate|eq 18.128.025|<tuple|18.142|?>>
-    <associate|eq 18.129.025|<tuple|18.143|?>>
+    <associate|eq 18.120.021|<tuple|18.146|?>>
+    <associate|eq 18.121.021|<tuple|18.147|?>>
+    <associate|eq 18.122.021|<tuple|18.148|?>>
+    <associate|eq 18.123.021|<tuple|18.149|?>>
+    <associate|eq 18.127.025|<tuple|18.150|?>>
+    <associate|eq 18.128.025|<tuple|18.151|?>>
+    <associate|eq 18.129.025|<tuple|18.152|?>>
     <associate|eq 18.13.021|<tuple|18.18|?>>
-    <associate|eq 18.130.025|<tuple|18.144|?>>
-    <associate|eq 18.131.025|<tuple|18.145|?>>
-    <associate|eq 18.132.025|<tuple|18.146|?>>
-    <associate|eq 18.133.025|<tuple|18.147|?>>
-    <associate|eq 18.134.025|<tuple|18.148|?>>
-    <associate|eq 18.135.025|<tuple|18.149|?>>
-    <associate|eq 18.136.025|<tuple|18.150|?>>
-    <associate|eq 18.137.025|<tuple|18.151|?>>
-    <associate|eq 18.138.025|<tuple|18.152|?>>
-    <associate|eq 18.139.025|<tuple|18.153|?>>
+    <associate|eq 18.130.025|<tuple|18.153|?>>
+    <associate|eq 18.131.025|<tuple|18.154|?>>
+    <associate|eq 18.132.025|<tuple|18.155|?>>
+    <associate|eq 18.133.025|<tuple|18.156|?>>
+    <associate|eq 18.134.025|<tuple|18.157|?>>
+    <associate|eq 18.135.025|<tuple|18.158|?>>
+    <associate|eq 18.136.025|<tuple|18.159|?>>
+    <associate|eq 18.137.025|<tuple|18.160|?>>
+    <associate|eq 18.138.025|<tuple|18.161|?>>
+    <associate|eq 18.139.025|<tuple|18.162|?>>
     <associate|eq 18.14.021|<tuple|18.19|?>>
-    <associate|eq 18.140.025|<tuple|18.154|?>>
-    <associate|eq 18.141.025|<tuple|18.155|?>>
-    <associate|eq 18.142.025|<tuple|18.156|?>>
-    <associate|eq 18.143.025|<tuple|18.157|?>>
-    <associate|eq 18.144.025|<tuple|18.158|?>>
-    <associate|eq 18.145.025|<tuple|18.159|?>>
-    <associate|eq 18.146.025|<tuple|18.160|?>>
-    <associate|eq 18.147.025|<tuple|18.161|?>>
-    <associate|eq 18.148.025|<tuple|18.162|?>>
-    <associate|eq 18.149.025|<tuple|18.163|?>>
+    <associate|eq 18.140.025|<tuple|18.163|?>>
+    <associate|eq 18.141.025|<tuple|18.164|?>>
+    <associate|eq 18.142.025|<tuple|18.165|?>>
+    <associate|eq 18.143.025|<tuple|18.166|?>>
+    <associate|eq 18.144.025|<tuple|18.167|?>>
+    <associate|eq 18.145.025|<tuple|18.168|?>>
+    <associate|eq 18.146.025|<tuple|18.169|?>>
+    <associate|eq 18.147.025|<tuple|18.170|?>>
+    <associate|eq 18.148.025|<tuple|18.171|?>>
+    <associate|eq 18.149.025|<tuple|18.172|?>>
     <associate|eq 18.15.021|<tuple|18.20|?>>
-    <associate|eq 18.150.025|<tuple|18.164|?>>
-    <associate|eq 18.151.025|<tuple|18.165|?>>
-    <associate|eq 18.152.025|<tuple|18.166|?>>
-    <associate|eq 18.153.025|<tuple|18.167|?>>
-    <associate|eq 18.154.025|<tuple|18.168|?>>
-    <associate|eq 18.155.025|<tuple|18.169|?>>
-    <associate|eq 18.156.025|<tuple|18.170|?>>
-    <associate|eq 18.157.025|<tuple|18.171|?>>
-    <associate|eq 18.158.025|<tuple|18.172|?>>
-    <associate|eq 18.159.025|<tuple|18.173|?>>
+    <associate|eq 18.150.025|<tuple|18.173|?>>
+    <associate|eq 18.151.025|<tuple|18.174|?>>
+    <associate|eq 18.152.025|<tuple|18.175|?>>
+    <associate|eq 18.153.025|<tuple|18.176|?>>
+    <associate|eq 18.154.025|<tuple|18.177|?>>
+    <associate|eq 18.155.025|<tuple|18.178|?>>
+    <associate|eq 18.156.025|<tuple|18.179|?>>
+    <associate|eq 18.157.025|<tuple|18.180|?>>
+    <associate|eq 18.158.025|<tuple|18.181|?>>
+    <associate|eq 18.159.025|<tuple|18.182|?>>
     <associate|eq 18.16.021|<tuple|18.21|?>>
-    <associate|eq 18.160.025|<tuple|18.174|?>>
-    <associate|eq 18.161.025|<tuple|18.175|?>>
-    <associate|eq 18.162.025|<tuple|18.176|?>>
-    <associate|eq 18.163.025|<tuple|18.177|?>>
-    <associate|eq 18.164.025|<tuple|18.178|?>>
-    <associate|eq 18.165.025|<tuple|18.179|?>>
-    <associate|eq 18.166.025|<tuple|18.180|?>>
-    <associate|eq 18.167.026|<tuple|18.222|?>>
-    <associate|eq 18.167.027|<tuple|18.185|?>>
-    <associate|eq 18.167.028|<tuple|18.181|?>>
-    <associate|eq 18.168.026|<tuple|18.223|?>>
-    <associate|eq 18.168.027|<tuple|18.190|?>>
-    <associate|eq 18.168.028|<tuple|18.182|?>>
-    <associate|eq 18.169.026|<tuple|18.224|?>>
-    <associate|eq 18.169.027|<tuple|18.191|?>>
-    <associate|eq 18.169.028|<tuple|18.183|?>>
+    <associate|eq 18.160.025|<tuple|18.183|?>>
+    <associate|eq 18.161.025|<tuple|18.184|?>>
+    <associate|eq 18.162.025|<tuple|18.185|?>>
+    <associate|eq 18.163.025|<tuple|18.186|?>>
+    <associate|eq 18.164.025|<tuple|18.187|?>>
+    <associate|eq 18.165.025|<tuple|18.188|?>>
+    <associate|eq 18.166.025|<tuple|18.189|?>>
+    <associate|eq 18.167.026|<tuple|18.231|?>>
+    <associate|eq 18.167.027|<tuple|18.194|?>>
+    <associate|eq 18.167.028|<tuple|18.190|?>>
+    <associate|eq 18.168.026|<tuple|18.232|?>>
+    <associate|eq 18.168.027|<tuple|18.199|?>>
+    <associate|eq 18.168.028|<tuple|18.191|?>>
+    <associate|eq 18.169.026|<tuple|18.233|?>>
+    <associate|eq 18.169.027|<tuple|18.200|?>>
+    <associate|eq 18.169.028|<tuple|18.192|?>>
     <associate|eq 18.17.021|<tuple|18.22|?>>
-    <associate|eq 18.170.026|<tuple|18.225|?>>
-    <associate|eq 18.170.027|<tuple|18.192|?>>
-    <associate|eq 18.170.028|<tuple|18.184|?>>
-    <associate|eq 18.171.026|<tuple|18.226|?>>
-    <associate|eq 18.171.027|<tuple|18.193|?>>
-    <associate|eq 18.172.026|<tuple|18.227|?>>
-    <associate|eq 18.172.027|<tuple|18.194|?>>
-    <associate|eq 18.172.028|<tuple|18.186|?>>
-    <associate|eq 18.173.026|<tuple|18.228|?>>
-    <associate|eq 18.173.027|<tuple|18.195|?>>
-    <associate|eq 18.173list|<tuple|18.187|?>>
-    <associate|eq 18.174.026|<tuple|18.229|?>>
-    <associate|eq 18.174.027|<tuple|18.196|?>>
-    <associate|eq 18.174.028|<tuple|18.188|?>>
-    <associate|eq 18.175.026|<tuple|18.230|?>>
-    <associate|eq 18.175.027|<tuple|18.197|?>>
-    <associate|eq 18.175.028|<tuple|18.189|?>>
-    <associate|eq 18.176.026|<tuple|18.231|?>>
-    <associate|eq 18.176.027|<tuple|18.198|?>>
-    <associate|eq 18.177.026|<tuple|18.232|?>>
-    <associate|eq 18.177.027|<tuple|18.199|?>>
+    <associate|eq 18.170.026|<tuple|18.234|?>>
+    <associate|eq 18.170.027|<tuple|18.201|?>>
+    <associate|eq 18.170.028|<tuple|18.193|?>>
+    <associate|eq 18.171.026|<tuple|18.235|?>>
+    <associate|eq 18.171.027|<tuple|18.202|?>>
+    <associate|eq 18.172.026|<tuple|18.236|?>>
+    <associate|eq 18.172.027|<tuple|18.203|?>>
+    <associate|eq 18.172.028|<tuple|18.195|?>>
+    <associate|eq 18.173.026|<tuple|18.237|?>>
+    <associate|eq 18.173.027|<tuple|18.204|?>>
+    <associate|eq 18.173list|<tuple|18.196|?>>
+    <associate|eq 18.174.026|<tuple|18.238|?>>
+    <associate|eq 18.174.027|<tuple|18.205|?>>
+    <associate|eq 18.174.028|<tuple|18.197|?>>
+    <associate|eq 18.175.026|<tuple|18.239|?>>
+    <associate|eq 18.175.027|<tuple|18.206|?>>
+    <associate|eq 18.175.028|<tuple|18.198|?>>
+    <associate|eq 18.176.026|<tuple|18.240|?>>
+    <associate|eq 18.176.027|<tuple|18.207|?>>
+    <associate|eq 18.177.026|<tuple|18.241|?>>
+    <associate|eq 18.177.027|<tuple|18.208|?>>
     <associate|eq 18.18.021|<tuple|18.23|?>>
-    <associate|eq 18.186.030.1|<tuple|18.200|?>>
-    <associate|eq 18.187.030.1|<tuple|18.201|?>>
-    <associate|eq 18.188.028|<tuple|18.207|?>>
-    <associate|eq 18.189.028|<tuple|18.208|?>>
+    <associate|eq 18.186.030.1|<tuple|18.209|?>>
+    <associate|eq 18.187.030.1|<tuple|18.210|?>>
+    <associate|eq 18.188.028|<tuple|18.216|?>>
+    <associate|eq 18.189.028|<tuple|18.217|?>>
     <associate|eq 18.19.021|<tuple|18.24|?>>
-    <associate|eq 18.190.028|<tuple|18.202|?>>
-    <associate|eq 18.191.028|<tuple|18.203|?>>
-    <associate|eq 18.192.028|<tuple|18.204|?>>
-    <associate|eq 18.193.028|<tuple|18.205|?>>
-    <associate|eq 18.194.028|<tuple|18.206|?>>
-    <associate|eq 18.195.028|<tuple|18.209|?>>
-    <associate|eq 18.196.028|<tuple|18.210|?>>
-    <associate|eq 18.197.028|<tuple|18.216|?>>
-    <associate|eq 18.197.029|<tuple|18.211|?>>
-    <associate|eq 18.198.028|<tuple|18.217|?>>
-    <associate|eq 18.198.029|<tuple|18.212|?>>
-    <associate|eq 18.199.029|<tuple|18.213|?>>
+    <associate|eq 18.190.028|<tuple|18.211|?>>
+    <associate|eq 18.191.028|<tuple|18.212|?>>
+    <associate|eq 18.192.028|<tuple|18.213|?>>
+    <associate|eq 18.193.028|<tuple|18.214|?>>
+    <associate|eq 18.194.028|<tuple|18.215|?>>
+    <associate|eq 18.195.028|<tuple|18.218|?>>
+    <associate|eq 18.196.028|<tuple|18.219|?>>
+    <associate|eq 18.197.028|<tuple|18.225|?>>
+    <associate|eq 18.197.029|<tuple|18.220|?>>
+    <associate|eq 18.198.028|<tuple|18.226|?>>
+    <associate|eq 18.198.029|<tuple|18.221|?>>
+    <associate|eq 18.199.029|<tuple|18.222|?>>
     <associate|eq 18.2.014|<tuple|18.11|?>>
     <associate|eq 18.2.016|<tuple|18.5|?>>
     <associate|eq 18.2.033|<tuple|18.2|?>>
     <associate|eq 18.20.021|<tuple|18.25|?>>
-    <associate|eq 18.200.029|<tuple|18.214|?>>
-    <associate|eq 18.201.029|<tuple|18.215|?>>
-    <associate|eq 18.204.029|<tuple|18.219|?>>
-    <associate|eq 18.206.029|<tuple|18.220|?>>
-    <associate|eq 18.207.029|<tuple|18.221|?>>
+    <associate|eq 18.200.029|<tuple|18.223|?>>
+    <associate|eq 18.201.029|<tuple|18.224|?>>
+    <associate|eq 18.204.029|<tuple|18.228|?>>
+    <associate|eq 18.206.029|<tuple|18.229|?>>
+    <associate|eq 18.207.029|<tuple|18.230|?>>
     <associate|eq 18.21.021|<tuple|18.26|?>>
-    <associate|eq 18.219.030|<tuple|18.233|?>>
+    <associate|eq 18.219.030|<tuple|18.242|?>>
     <associate|eq 18.22.021|<tuple|18.27|?>>
-    <associate|eq 18.220.030|<tuple|18.234|?>>
-    <associate|eq 18.221.030.1|<tuple|18.235|?>>
-    <associate|eq 18.222.030|<tuple|18.236|?>>
-    <associate|eq 18.223.030|<tuple|18.237|?>>
-    <associate|eq 18.224.030|<tuple|18.238|?>>
-    <associate|eq 18.225.030|<tuple|18.239|?>>
-    <associate|eq 18.226.030|<tuple|18.240|?>>
-    <associate|eq 18.227.030|<tuple|18.242|?>>
-    <associate|eq 18.228.030.1|<tuple|18.241|?>>
+    <associate|eq 18.220.030|<tuple|18.243|?>>
+    <associate|eq 18.221.030.1|<tuple|18.244|?>>
+    <associate|eq 18.222.030|<tuple|18.245|?>>
+    <associate|eq 18.223.030|<tuple|18.246|?>>
+    <associate|eq 18.224.030|<tuple|18.247|?>>
+    <associate|eq 18.225.030|<tuple|18.248|?>>
+    <associate|eq 18.226.030|<tuple|18.249|?>>
+    <associate|eq 18.227.030|<tuple|18.251|?>>
+    <associate|eq 18.228.030.1|<tuple|18.250|?>>
     <associate|eq 18.23.021|<tuple|18.28|?>>
-    <associate|eq 18.230.030|<tuple|18.243|?>>
-    <associate|eq 18.231.030|<tuple|18.244|?>>
-    <associate|eq 18.232.030|<tuple|18.245|?>>
-    <associate|eq 18.233.030|<tuple|18.246|?>>
-    <associate|eq 18.234.031|<tuple|18.247|?>>
-    <associate|eq 18.235.031|<tuple|18.248|?>>
-    <associate|eq 18.235.031.1|<tuple|18.249|?>>
-    <associate|eq 18.236.031|<tuple|18.250|?>>
-    <associate|eq 18.237.031|<tuple|18.251|?>>
-    <associate|eq 18.239.032|<tuple|18.252|?>>
+    <associate|eq 18.230.030|<tuple|18.252|?>>
+    <associate|eq 18.231.030|<tuple|18.253|?>>
+    <associate|eq 18.232.030|<tuple|18.254|?>>
+    <associate|eq 18.233.030|<tuple|18.255|?>>
+    <associate|eq 18.234.031|<tuple|18.256|?>>
+    <associate|eq 18.235.031|<tuple|18.257|?>>
+    <associate|eq 18.235.031.1|<tuple|18.258|?>>
+    <associate|eq 18.236.031|<tuple|18.259|?>>
+    <associate|eq 18.237.031|<tuple|18.260|?>>
+    <associate|eq 18.239.032|<tuple|18.261|?>>
     <associate|eq 18.24.021|<tuple|18.29|?>>
-    <associate|eq 18.240.032|<tuple|18.253|?>>
-    <associate|eq 18.241.032|<tuple|18.254|?>>
-    <associate|eq 18.242.032|<tuple|18.255|?>>
-    <associate|eq 18.243.032|<tuple|18.256|?>>
-    <associate|eq 18.244.032|<tuple|18.257|?>>
-    <associate|eq 18.245.032|<tuple|18.258|?>>
-    <associate|eq 18.246.032|<tuple|18.259|?>>
-    <associate|eq 18.247.032|<tuple|18.260|?>>
-    <associate|eq 18.248.032|<tuple|18.261|?>>
-    <associate|eq 18.249.032|<tuple|18.262|?>>
+    <associate|eq 18.240.032|<tuple|18.262|?>>
+    <associate|eq 18.241.032|<tuple|18.263|?>>
+    <associate|eq 18.242.032|<tuple|18.264|?>>
+    <associate|eq 18.243.032|<tuple|18.265|?>>
+    <associate|eq 18.244.032|<tuple|18.266|?>>
+    <associate|eq 18.245.032|<tuple|18.267|?>>
+    <associate|eq 18.246.032|<tuple|18.268|?>>
+    <associate|eq 18.247.032|<tuple|18.269|?>>
+    <associate|eq 18.248.032|<tuple|18.270|?>>
+    <associate|eq 18.249.032|<tuple|18.271|?>>
     <associate|eq 18.25.020|<tuple|18.30|?>>
-    <associate|eq 18.250.032|<tuple|18.263|?>>
-    <associate|eq 18.251.032|<tuple|18.264|?>>
-    <associate|eq 18.252.032|<tuple|18.265|?>>
-    <associate|eq 18.253.032|<tuple|18.266|?>>
-    <associate|eq 18.254.032|<tuple|18.267|?>>
-    <associate|eq 18.255.032|<tuple|18.268|?>>
-    <associate|eq 18.256.032|<tuple|18.269|?>>
-    <associate|eq 18.257.032|<tuple|18.270|?>>
-    <associate|eq 18.258.032|<tuple|18.271|?>>
-    <associate|eq 18.258.032.1|<tuple|18.270|?>>
-    <associate|eq 18.259.032|<tuple|18.272|?>>
-    <associate|eq 18.259.032.1|<tuple|18.270|?>>
+    <associate|eq 18.250.032|<tuple|18.272|?>>
+    <associate|eq 18.251.032|<tuple|18.273|?>>
+    <associate|eq 18.252.032|<tuple|18.274|?>>
+    <associate|eq 18.253.032|<tuple|18.275|?>>
+    <associate|eq 18.254.032|<tuple|18.276|?>>
+    <associate|eq 18.255.032|<tuple|18.277|?>>
+    <associate|eq 18.256.032|<tuple|18.278|?>>
+    <associate|eq 18.257.032|<tuple|18.279|?>>
+    <associate|eq 18.258.032|<tuple|18.280|?>>
+    <associate|eq 18.258.032.1|<tuple|18.279|?>>
+    <associate|eq 18.259.032|<tuple|18.281|?>>
+    <associate|eq 18.259.032.1|<tuple|18.279|?>>
     <associate|eq 18.26.021|<tuple|18.31|?>>
-    <associate|eq 18.260.032|<tuple|18.273|?>>
-    <associate|eq 18.261.032|<tuple|18.274|?>>
-    <associate|eq 18.262.032|<tuple|18.275|?>>
-    <associate|eq 18.263.032|<tuple|18.276|?>>
-    <associate|eq 18.266.033|<tuple|18.277|?>>
-    <associate|eq 18.267.033|<tuple|18.278|?>>
-    <associate|eq 18.268.033|<tuple|18.279|?>>
-    <associate|eq 18.269.033|<tuple|18.280|?>>
+    <associate|eq 18.260.032|<tuple|18.282|?>>
+    <associate|eq 18.261.032|<tuple|18.283|?>>
+    <associate|eq 18.262.032|<tuple|18.284|?>>
+    <associate|eq 18.263.032|<tuple|18.285|?>>
+    <associate|eq 18.266.033|<tuple|18.286|?>>
+    <associate|eq 18.267.033|<tuple|18.287|?>>
+    <associate|eq 18.268.033|<tuple|18.288|?>>
+    <associate|eq 18.269.033|<tuple|18.289|?>>
     <associate|eq 18.27.021|<tuple|18.32|?>>
-    <associate|eq 18.270.033|<tuple|18.281|?>>
-    <associate|eq 18.271.033|<tuple|18.282|?>>
-    <associate|eq 18.272.033|<tuple|18.283|?>>
-    <associate|eq 18.273.033|<tuple|18.284|?>>
-    <associate|eq 18.274.033|<tuple|18.285|?>>
-    <associate|eq 18.276.033|<tuple|18.287|?>>
-    <associate|eq 18.277.033|<tuple|18.288|?>>
-    <associate|eq 18.278.033|<tuple|18.286|?>>
+    <associate|eq 18.270.033|<tuple|18.290|?>>
+    <associate|eq 18.271.033|<tuple|18.291|?>>
+    <associate|eq 18.272.033|<tuple|18.292|?>>
+    <associate|eq 18.273.033|<tuple|18.293|?>>
+    <associate|eq 18.274.033|<tuple|18.294|?>>
+    <associate|eq 18.276.033|<tuple|18.296|?>>
+    <associate|eq 18.277.033|<tuple|18.297|?>>
+    <associate|eq 18.278.033|<tuple|18.295|?>>
     <associate|eq 18.28.021|<tuple|18.33|?>>
-    <associate|eq 18.281.033|<tuple|18.289|?>>
-    <associate|eq 18.282.033|<tuple|18.290|?>>
-    <associate|eq 18.283.033|<tuple|18.291|?>>
-    <associate|eq 18.284.033|<tuple|18.292|?>>
+    <associate|eq 18.281.033|<tuple|18.298|?>>
+    <associate|eq 18.282.033|<tuple|18.299|?>>
+    <associate|eq 18.283.033|<tuple|18.300|?>>
+    <associate|eq 18.284.033|<tuple|18.301|?>>
     <associate|eq 18.29.021|<tuple|18.34|?>>
-    <associate|eq 18.293.033|<tuple|18.293|?>>
-    <associate|eq 18.294.033|<tuple|18.294|?>>
-    <associate|eq 18.295.033|<tuple|18.295|?>>
-    <associate|eq 18.296.033|<tuple|18.296|?>>
+    <associate|eq 18.293.033|<tuple|18.302|?>>
+    <associate|eq 18.294.033|<tuple|18.303|?>>
+    <associate|eq 18.295.033|<tuple|18.304|?>>
+    <associate|eq 18.296.033|<tuple|18.305|?>>
     <associate|eq 18.3.014|<tuple|18.12|?>>
     <associate|eq 18.3.016|<tuple|18.6|?>>
     <associate|eq 18.3.033|<tuple|18.3|?>>
@@ -9035,160 +9225,175 @@
     <associate|eq 18.33.021|<tuple|18.38|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
     <associate|eq 18.35.021|<tuple|18.40|?>>
-    <associate|eq 18.36.016|<tuple|18.76|?>>
+    <associate|eq 18.36.016|<tuple|18.85|?>>
     <associate|eq 18.36.021|<tuple|18.41|?>>
-    <associate|eq 18.37.016|<tuple|18.77|?>>
+    <associate|eq 18.37.016|<tuple|18.86|?>>
     <associate|eq 18.37.021|<tuple|18.42|?>>
-    <associate|eq 18.38.016|<tuple|18.78|?>>
+    <associate|eq 18.38.016|<tuple|18.87|?>>
     <associate|eq 18.38.021|<tuple|18.43|?>>
-    <associate|eq 18.39.016|<tuple|18.78|?>>
-    <associate|eq 18.39.022|<tuple|18.52|?>>
+    <associate|eq 18.39.016|<tuple|18.87|?>>
+    <associate|eq 18.39.022|<tuple|18.61|?>>
     <associate|eq 18.4.016|<tuple|18.7|?>>
-    <associate|eq 18.40.016|<tuple|18.80|?>>
-    <associate|eq 18.40.022|<tuple|18.53|?>>
-    <associate|eq 18.41.016|<tuple|18.81|?>>
-    <associate|eq 18.41.022|<tuple|18.54|?>>
-    <associate|eq 18.42.016|<tuple|18.82|?>>
-    <associate|eq 18.42.022|<tuple|18.55|?>>
-    <associate|eq 18.43.016|<tuple|18.83|?>>
-    <associate|eq 18.43.022|<tuple|18.56|?>>
-    <associate|eq 18.44.016|<tuple|18.84|?>>
-    <associate|eq 18.44.022|<tuple|18.57|?>>
+    <associate|eq 18.40.016|<tuple|18.89|?>>
+    <associate|eq 18.40.022|<tuple|18.62|?>>
+    <associate|eq 18.41.016|<tuple|18.90|?>>
+    <associate|eq 18.41.022|<tuple|18.63|?>>
+    <associate|eq 18.42.016|<tuple|18.91|?>>
+    <associate|eq 18.42.022|<tuple|18.64|?>>
+    <associate|eq 18.43.016|<tuple|18.92|?>>
+    <associate|eq 18.43.022|<tuple|18.65|?>>
+    <associate|eq 18.44.016|<tuple|18.93|?>>
+    <associate|eq 18.44.022|<tuple|18.66|?>>
     <associate|eq 18.44.033|<tuple|18.44|?>>
-    <associate|eq 18.45.016|<tuple|18.85|?>>
-    <associate|eq 18.45.022|<tuple|18.58|?>>
+    <associate|eq 18.45.016|<tuple|18.94|?>>
+    <associate|eq 18.45.022|<tuple|18.67|?>>
     <associate|eq 18.45.033|<tuple|18.45|?>>
-    <associate|eq 18.46.016|<tuple|18.86|?>>
-    <associate|eq 18.46.022|<tuple|18.59|?>>
+    <associate|eq 18.46.016|<tuple|18.95|?>>
+    <associate|eq 18.46.022|<tuple|18.68|?>>
     <associate|eq 18.46.033|<tuple|18.46|?>>
-    <associate|eq 18.47.016|<tuple|18.87|?>>
-    <associate|eq 18.47.022|<tuple|18.60|?>>
+    <associate|eq 18.47.016|<tuple|18.96|?>>
+    <associate|eq 18.47.022|<tuple|18.69|?>>
     <associate|eq 18.47.033|<tuple|18.47|?>>
-    <associate|eq 18.48.016|<tuple|18.88|?>>
-    <associate|eq 18.48.022|<tuple|18.61|?>>
-    <associate|eq 18.48.033|<tuple|18.48|?>>
-    <associate|eq 18.49.016|<tuple|18.89|?>>
-    <associate|eq 18.49.022|<tuple|18.62|?>>
-    <associate|eq 18.49.033|<tuple|18.49|?>>
+    <associate|eq 18.48.016|<tuple|18.97|?>>
+    <associate|eq 18.48.022|<tuple|18.70|?>>
+    <associate|eq 18.48.033|<tuple|18.52|?>>
+    <associate|eq 18.48.033.1|<tuple|18.48|?>>
+    <associate|eq 18.49.016|<tuple|18.98|?>>
+    <associate|eq 18.49.022|<tuple|18.71|?>>
+    <associate|eq 18.49.033|<tuple|18.54|?>>
+    <associate|eq 18.49.033.1|<tuple|18.49|?>>
     <associate|eq 18.5.033|<tuple|18.8|?>>
-    <associate|eq 18.50.016|<tuple|18.90|?>>
-    <associate|eq 18.50.022|<tuple|18.63|?>>
-    <associate|eq 18.50.033|<tuple|18.50|?>>
-    <associate|eq 18.51.016|<tuple|18.91|?>>
-    <associate|eq 18.51.022|<tuple|18.64|?>>
-    <associate|eq 18.51.033|<tuple|18.51|?>>
-    <associate|eq 18.52.016|<tuple|18.101|?>>
-    <associate|eq 18.52.018|<tuple|18.92|?>>
-    <associate|eq 18.52.022|<tuple|18.65|?>>
-    <associate|eq 18.53.016|<tuple|18.102|?>>
-    <associate|eq 18.53.018|<tuple|18.93|?>>
-    <associate|eq 18.53.022|<tuple|18.66|?>>
-    <associate|eq 18.54.016|<tuple|18.103|?>>
-    <associate|eq 18.54.018|<tuple|18.94|?>>
-    <associate|eq 18.54.022|<tuple|18.67|?>>
-    <associate|eq 18.55.016|<tuple|18.104|?>>
-    <associate|eq 18.55.018|<tuple|18.95|?>>
-    <associate|eq 18.55.022|<tuple|18.68|?>>
-    <associate|eq 18.56.016|<tuple|18.105|?>>
-    <associate|eq 18.56.018|<tuple|18.96|?>>
-    <associate|eq 18.56.022|<tuple|18.69|?>>
-    <associate|eq 18.57.016|<tuple|18.106|?>>
-    <associate|eq 18.57.018|<tuple|18.97|?>>
-    <associate|eq 18.57.022|<tuple|18.70|?>>
-    <associate|eq 18.58.016|<tuple|18.107|?>>
-    <associate|eq 18.58.018|<tuple|18.98|?>>
-    <associate|eq 18.58.022|<tuple|18.71|?>>
-    <associate|eq 18.59.016|<tuple|18.108|?>>
-    <associate|eq 18.59.018|<tuple|18.99|?>>
-    <associate|eq 18.59.022|<tuple|18.72|?>>
+    <associate|eq 18.50.016|<tuple|18.99|?>>
+    <associate|eq 18.50.022|<tuple|18.72|?>>
+    <associate|eq 18.50.033|<tuple|18.55|?>>
+    <associate|eq 18.50.033.1|<tuple|18.50|?>>
+    <associate|eq 18.51.016|<tuple|18.100|?>>
+    <associate|eq 18.51.022|<tuple|18.73|?>>
+    <associate|eq 18.51.033|<tuple|18.56|?>>
+    <associate|eq 18.51.033.1|<tuple|18.51|?>>
+    <associate|eq 18.52.016|<tuple|18.110|?>>
+    <associate|eq 18.52.018|<tuple|18.101|?>>
+    <associate|eq 18.52.022|<tuple|18.74|?>>
+    <associate|eq 18.53.016|<tuple|18.111|?>>
+    <associate|eq 18.53.018|<tuple|18.102|?>>
+    <associate|eq 18.53.022|<tuple|18.75|?>>
+    <associate|eq 18.53.033.2|<tuple|18.53|?>>
+    <associate|eq 18.54.016|<tuple|18.112|?>>
+    <associate|eq 18.54.018|<tuple|18.103|?>>
+    <associate|eq 18.54.022|<tuple|18.76|?>>
+    <associate|eq 18.54.033.1|<tuple|18.55|?>>
+    <associate|eq 18.54.033.2|<tuple|18.54|?>>
+    <associate|eq 18.55.016|<tuple|18.113|?>>
+    <associate|eq 18.55.018|<tuple|18.104|?>>
+    <associate|eq 18.55.022|<tuple|18.77|?>>
+    <associate|eq 18.55.033.1|<tuple|18.56|?>>
+    <associate|eq 18.56.016|<tuple|18.114|?>>
+    <associate|eq 18.56.018|<tuple|18.105|?>>
+    <associate|eq 18.56.022|<tuple|18.78|?>>
+    <associate|eq 18.56.033.1|<tuple|18.57|?>>
+    <associate|eq 18.57.016|<tuple|18.115|?>>
+    <associate|eq 18.57.018|<tuple|18.106|?>>
+    <associate|eq 18.57.022|<tuple|18.79|?>>
+    <associate|eq 18.57.033.1|<tuple|18.58|?>>
+    <associate|eq 18.58.016|<tuple|18.116|?>>
+    <associate|eq 18.58.018|<tuple|18.107|?>>
+    <associate|eq 18.58.022|<tuple|18.80|?>>
+    <associate|eq 18.58.033.1|<tuple|18.59|?>>
+    <associate|eq 18.59.016|<tuple|18.117|?>>
+    <associate|eq 18.59.018|<tuple|18.108|?>>
+    <associate|eq 18.59.022|<tuple|18.81|?>>
+    <associate|eq 18.59.033.1|<tuple|18.60|?>>
     <associate|eq 18.6.033|<tuple|18.9|?>>
-    <associate|eq 18.60.016|<tuple|18.109|?>>
-    <associate|eq 18.60.018|<tuple|18.100|?>>
-    <associate|eq 18.60.023|<tuple|18.73|?>>
-    <associate|eq 18.61.016|<tuple|18.110|?>>
-    <associate|eq 18.61.023|<tuple|18.74|?>>
-    <associate|eq 18.62.016|<tuple|18.111|?>>
-    <associate|eq 18.62.032|<tuple|18.75|?>>
-    <associate|eq 18.74.018|<tuple|18.112|?>>
-    <associate|eq 18.75.018|<tuple|18.113|?>>
-    <associate|eq 18.76.018|<tuple|18.114|?>>
-    <associate|eq 18.77.018|<tuple|18.115|?>>
-    <associate|eq 18.78.018|<tuple|18.116|?>>
-    <associate|eq 18.79.018|<tuple|18.117|?>>
+    <associate|eq 18.60.016|<tuple|18.118|?>>
+    <associate|eq 18.60.018|<tuple|18.109|?>>
+    <associate|eq 18.60.023|<tuple|18.82|?>>
+    <associate|eq 18.61.016|<tuple|18.119|?>>
+    <associate|eq 18.61.023|<tuple|18.83|?>>
+    <associate|eq 18.62.016|<tuple|18.120|?>>
+    <associate|eq 18.62.032|<tuple|18.84|?>>
+    <associate|eq 18.74.018|<tuple|18.121|?>>
+    <associate|eq 18.75.018|<tuple|18.122|?>>
+    <associate|eq 18.76.018|<tuple|18.123|?>>
+    <associate|eq 18.77.018|<tuple|18.124|?>>
+    <associate|eq 18.78.018|<tuple|18.125|?>>
+    <associate|eq 18.79.018|<tuple|18.126|?>>
     <associate|eq 18.8.020|<tuple|18.13|?>>
-    <associate|eq 18.80.018|<tuple|18.118|?>>
-    <associate|eq 18.81.018|<tuple|18.119|?>>
-    <associate|eq 18.82.018|<tuple|18.120|?>>
-    <associate|eq 18.83.018|<tuple|18.121|?>>
-    <associate|eq 18.84.018|<tuple|18.122|?>>
-    <associate|eq 18.85.018|<tuple|18.123|?>>
-    <associate|eq 18.86.018|<tuple|18.124|?>>
+    <associate|eq 18.80.018|<tuple|18.127|?>>
+    <associate|eq 18.81.018|<tuple|18.128|?>>
+    <associate|eq 18.82.018|<tuple|18.129|?>>
+    <associate|eq 18.83.018|<tuple|18.130|?>>
+    <associate|eq 18.84.018|<tuple|18.131|?>>
+    <associate|eq 18.85.018|<tuple|18.132|?>>
+    <associate|eq 18.86.018|<tuple|18.133|?>>
     <associate|eq 18.9.020|<tuple|18.14|?>>
     <associate|every open set in R^n is a countable union of dyadic
-    cubes|<tuple|18.48|?>>
+    cubes|<tuple|18.50|?>>
     <associate|finite unions and intersections|<tuple|18.7|?>>
     <associate|generated sigma algebra|<tuple|18.17|?>>
     <associate|half open rectangle as intersection of open
-    sets|<tuple|18.49|?>>
-    <associate|half spaces are Lebesgue measurable in R^n|<tuple|18.85|?>>
-    <associate|induced outer inner measure|<tuple|18.113|?>>
-    <associate|induced outer measure is a outer measure|<tuple|18.115|?>>
-    <associate|inner/outer regularity|<tuple|18.117|?>>
+    sets|<tuple|18.51|?>>
+    <associate|half spaces are Lebesgue measurable in R^n|<tuple|18.87|?>>
+    <associate|induced outer inner measure|<tuple|18.115|?>>
+    <associate|induced outer measure is a outer measure|<tuple|18.117|?>>
+    <associate|inner/outer regularity|<tuple|18.119|?>>
     <associate|intersection of a class of Dynkin classes is a Dynkin
-    class|<tuple|18.128|?>>
+    class|<tuple|18.130|?>>
     <associate|intersection of sigma algebras is a sigma
     algebra|<tuple|18.16|?>>
     <associate|interval identities|<tuple|18.25|?>>
     <associate|lemma 18.28 set relations|<tuple|18.28|?>>
-    <associate|length of interval is increasing|<tuple|18.40|?>>
-    <associate|lower half open spaces|<tuple|18.51|?>>
-    <associate|lower half open spaces are open|<tuple|18.52|?>>
-    <associate|measurable function|<tuple|18.136|?>>
-    <associate|measurable set alternative definition|<tuple|18.71|?>>
-    <associate|measurable sets and null sets|<tuple|18.72|?>>
+    <associate|length of interval is increasing|<tuple|18.42|?>>
+    <associate|lower half open spaces|<tuple|18.53|?>>
+    <associate|lower half open spaces are open|<tuple|18.54|?>>
+    <associate|measurable function|<tuple|18.138|?>>
+    <associate|measurable functions and generated algebra|<tuple|18.141|?>>
+    <associate|measurable set alternative definition|<tuple|18.73|?>>
+    <associate|measurable sets and null sets|<tuple|18.74|?>>
     <associate|measurable space|<tuple|18.13|?>>
-    <associate|measure|<tuple|18.59|?>>
-    <associate|measure is subadditive|<tuple|18.64|?>>
-    <associate|measure properties (1)|<tuple|18.62|?>>
-    <associate|measure properties (2)|<tuple|18.65|?>>
-    <associate|measure regularity lemma|<tuple|18.121|?>>
-    <associate|measureable set|<tuple|18.70|?>>
-    <associate|negligibility|<tuple|18.102|?>>
-    <associate|negligible set properties|<tuple|18.103|?>>
+    <associate|measure|<tuple|18.61|?>>
+    <associate|measure is subadditive|<tuple|18.66|?>>
+    <associate|measure properties (1)|<tuple|18.64|?>>
+    <associate|measure properties (2)|<tuple|18.67|?>>
+    <associate|measure regularity lemma|<tuple|18.123|?>>
+    <associate|measureable set|<tuple|18.72|?>>
+    <associate|negligibility|<tuple|18.104|?>>
+    <associate|negligible set properties|<tuple|18.105|?>>
     <associate|open,half open and bounded intervals are
     different|<tuple|18.24|?>>
-    <associate|open/closed sets relation|<tuple|18.57|?>>
-    <associate|outer measure|<tuple|18.67|?>>
-    <associate|outer measure definition on rectangles|<tuple|18.82|?>>
-    <associate|outer measure finite subadditivity|<tuple|18.68|?>>
-    <associate|outer measure is translation invariant|<tuple|18.95|?>>
-    <associate|outer measure on R|<tuple|18.78|?>>
-    <associate|outer measure on rectangles|<tuple|18.83|?>>
-    <associate|outermeasure construction|<tuple|18.69|?>>
+    <associate|open/closed sets relation|<tuple|18.59|?>>
+    <associate|outer measure|<tuple|18.69|?>>
+    <associate|outer measure definition on rectangles|<tuple|18.84|?>>
+    <associate|outer measure finite subadditivity|<tuple|18.70|?>>
+    <associate|outer measure is translation invariant|<tuple|18.97|?>>
+    <associate|outer measure on R|<tuple|18.80|?>>
+    <associate|outer measure on rectangles|<tuple|18.85|?>>
+    <associate|outermeasure construction|<tuple|18.71|?>>
     <associate|properties of algebras|<tuple|18.10|?>>
-    <associate|rectangle and half open sets|<tuple|18.54|?>>
+    <associate|rectangle and half open sets|<tuple|18.56|?>>
     <associate|replace countable untion of sets by disjoint union of
-    sets|<tuple|18.63|?>>
+    sets|<tuple|18.65|?>>
     <associate|restriction of measure space to a sub sigma
-    algebra|<tuple|18.60|?>>
-    <associate|semi additivity of the length in the reals|<tuple|18.77|?>>
-    <associate|set of all subsets is a Dynkin class|<tuple|18.127|?>>
+    algebra|<tuple|18.62|?>>
+    <associate|semi additivity of the length in the reals|<tuple|18.79|?>>
+    <associate|set of all subsets is a Dynkin class|<tuple|18.129|?>>
     <associate|set of all subsets is a sigma algebra|<tuple|18.12|?>>
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
     <associate|sigma algebra equivalent definitions|<tuple|18.14|?>>
-    <associate|sigma algebras are Dynkin classes|<tuple|18.126|?>>
-    <associate|the set of Dyadic cubes is denumerable|<tuple|18.47|?>>
-    <associate|translation properties|<tuple|18.93|?>>
+    <associate|sigma algebra on the extebded reals|<tuple|18.30|?>>
+    <associate|sigma algebra on the extebded reals (1)|<tuple|18.30|?>>
+    <associate|sigma algebras are Dynkin classes|<tuple|18.128|?>>
+    <associate|the set of Dyadic cubes is denumerable|<tuple|18.49|?>>
+    <associate|translation properties|<tuple|18.95|?>>
     <associate|union intersection union of families|<tuple|18.3|?>>
     <associate|union of union of sets (1)|<tuple|18.5|?>>
     <associate|union,intersection and function between and
     indexes|<tuple|18.4|?>>
-    <associate|uniqueness of the Lebesgue measure|<tuple|18.91|?>>
-    <associate|volume in R^n|<tuple|18.39|?>>
-    <associate|volume is increasing|<tuple|18.41|?>>
-    <associate|volume is subadditive|<tuple|18.81|?>>
-    <associate|volume is translation invariant|<tuple|18.94|?>>
-    <associate|volume of a rectangle|<tuple|18.38|?>>
+    <associate|uniqueness of the Lebesgue measure|<tuple|18.93|?>>
+    <associate|volume in R^n|<tuple|18.41|?>>
+    <associate|volume is increasing|<tuple|18.43|?>>
+    <associate|volume is subadditive|<tuple|18.83|?>>
+    <associate|volume is translation invariant|<tuple|18.96|?>>
+    <associate|volume of a rectangle|<tuple|18.40|?>>
     <associate|writing a countable family of sets as a disjoint familly of
     sets|<tuple|18.6|?>>
   </collection>
@@ -9258,6 +9463,10 @@
       <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-45>>
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-46>>
+
+      <tuple|<tuple|measurable function>|<pageref|auto-48>>
+
+      <tuple|<tuple|Borel function>|<pageref|auto-49>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>Measure
@@ -9276,7 +9485,7 @@
       <no-break><pageref|auto-9>>
 
       <with|par-left|<quote|1tab>|18.2.2<space|2spc>Borel algebra on
-      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>
+      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10>>
 
