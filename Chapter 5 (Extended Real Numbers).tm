@@ -13,7 +13,7 @@
 
   <\lemma>
     There exists at least two sets that are not a element of <math|\<bbb-R\>>
-    </lemma>
+  </lemma>
 
   <\proof>
     Using the definition of the real numbers (see <reference|dedekind's cut>)
@@ -246,6 +246,45 @@
     <math|x\<in\>\<bbb-R\>> (or in other words
     <math|x\<neq\>\<infty\>,-\<infty\>>)
   </definition>
+
+  <\proposition>
+    <label|x\<less\>y=\<gtr\>x+1/n\<less\>y>Let
+    <math|x,y\<in\><wide|\<bbb-R\>|\<bar\>>> with <math|x\<less\>y> then
+    <math|n\<in\>\<bbb-N\><rsub|0>> such that <math|x+<frac|1|n>\<less\>y>
+  </proposition>
+
+  <\proof>
+    As <math|x\<less\>y> we can not have <math|y=-\<infty\>> [if
+    <math|y=-\<infty\>> then <math|y=-\<infty\>\<leqslant\>x>], so we must
+    only consider the following cases for <math|x,y>:
+
+    <\description>
+      <item*|<math|y\<in\>\<bbb-R\>>>As <math|x\<less\>y> we can not have
+      <math|x=\<infty\>> so we must have for <math|x> either\ 
+
+      <\description>
+        <item*|<math|x\<in\>\<bbb-R\>>>then using <reference|consequence of
+        the archimedean property for the reals> there exists a
+        <math|n\<in\>\<bbb-N\><rsub|0>> such that
+        <math|x\<less\>x+<frac|1|n>\<less\>y>
+
+        <item*|<math|x=-\<infty\>>>then for <math|n=2\<in\>\<bbb-N\><rsub|0>>
+        we have <math|x+<frac|1|n>=-\<infty\>+<frac|1|2>=-\<infty\>\<less\>y>
+      </description>
+
+      <item*|<math|y\<eqcirc\>\<infty\>>>As <math|x\<less\>y> we can not have
+      <math|x=\<infty\>> so we must have for <math|x> either
+
+      <\description>
+        <item*|<math|x\<in\>\<bbb-R\>>>then for
+        <math|n=2\<in\>\<bbb-N\><rsub|0>> we have
+        <math|x+<frac|1|2>\<less\>\<infty\>=y>
+
+        <item*|<math|x=-\<infty\>>>then for <math|n=2\<in\>\<bbb-N\><rsub|0>>
+        we have <math|x+<frac|1|n>=-\<infty\>+<frac|1|2>=-\<infty\>\<less\>y>
+      </description>
+    </description>
+  </proof>
 
   We have the following analog to the density of <math|\<bbb-R\>>
 
@@ -11081,9 +11120,9 @@
 
 <\references>
   <\collection>
-    <associate|(a-b)+(c-d)=(a+c)-(b+d)|<tuple|17.24|616>>
-    <associate|-sup A=inf -A|<tuple|17.30|619>>
-    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.22|616>>
+    <associate|(a-b)+(c-d)=(a+c)-(b+d)|<tuple|17.25|616>>
+    <associate|-sup A=inf -A|<tuple|17.31|619>>
+    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.23|616>>
     <associate|0\<less\>cos(x),sin(x)|<tuple|18.49|701>>
     <associate|Abel-Dirichlet|<tuple|18.15|681>>
     <associate|Balls and convergence domains|<tuple|18.12|679>>
@@ -11092,17 +11131,17 @@
     <associate|Power series|<tuple|18.2|677>>
     <associate|Young's inequality|<tuple|18.42|694>>
     <associate|a serie of extented positive reals converges always and is
-    independent of the order|<tuple|17.121|666>>
-    <associate|a-b=c-d=\<gtr\>a+d=c+b|<tuple|17.25|616>>
-    <associate|absolute value in the extended reals|<tuple|17.31|620>>
+    independent of the order|<tuple|17.122|666>>
+    <associate|a-b=c-d=\<gtr\>a+d=c+b|<tuple|17.26|616>>
+    <associate|absolute value in the extended reals|<tuple|17.32|620>>
     <associate|absolute value on the extended real
-    properties|<tuple|17.33|620>>
-    <associate|adding of positive extented reals|<tuple|17.27|617>>
+    properties|<tuple|17.34|620>>
+    <associate|adding of positive extented reals|<tuple|17.28|617>>
     <associate|alternative definition of limit in the extented
-    reals|<tuple|17.89|653>>
-    <associate|alternative graph of sum of functions|<tuple|17.107|662>>
-    <associate|associativity of inifinite series|<tuple|17.127|672>>
-    <associate|associativity of series of extended reals|<tuple|17.125|670>>
+    reals|<tuple|17.90|653>>
+    <associate|alternative graph of sum of functions|<tuple|17.108|662>>
+    <associate|associativity of inifinite series|<tuple|17.128|672>>
+    <associate|associativity of series of extended reals|<tuple|17.126|670>>
     <associate|auto-1|<tuple|17|607>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|621>>
     <associate|auto-11|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|-\<infty\>>>|621>>
@@ -11152,27 +11191,27 @@
     <associate|auto-8|<tuple|17.2|620>>
     <associate|auto-9|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<bbb-R\>>>|621>>
     <associate|ball inclusion|<tuple|18.11|679>>
-    <associate|closed sets in the extended reals|<tuple|17.39|622>>
+    <associate|closed sets in the extended reals|<tuple|17.40|622>>
     <associate|condition for supremum (infinum) to be
-    infinite|<tuple|17.11|609>>
+    infinite|<tuple|17.12|609>>
     <associate|continuity in R is continuity of extended
-    reals|<tuple|17.41|623>>
-    <associate|convention of sup inf|<tuple|17.14|?>>
+    reals|<tuple|17.42|623>>
+    <associate|convention of sup inf|<tuple|17.15|?>>
     <associate|convergence domain and balls|<tuple|18.7|678>>
     <associate|convergence domain of exponential function|<tuple|18.18|682>>
     <associate|convergence in real implies that lim inferior = lim
-    superior|<tuple|17.78|650>>
+    superior|<tuple|17.79|650>>
     <associate|convergence of derived powerseries|<tuple|18.22|683>>
     <associate|convergence of powerseries (1)|<tuple|18.6|677>>
     <associate|convergence radius|<tuple|18.8|678>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.126|672>>
+    sum|<tuple|17.127|672>>
     <associate|d'Alembert|<tuple|18.17|681>>
-    <associate|definition of limit in the extented reals|<tuple|17.79|651>>
-    <associate|density of the extented reals|<tuple|17.7|609>>
+    <associate|definition of limit in the extented reals|<tuple|17.80|651>>
+    <associate|density of the extented reals|<tuple|17.8|609>>
     <associate|derivative of the exponential function|<tuple|18.24|686>>
-    <associate|difference in extented reals|<tuple|17.21|615>>
-    <associate|distributivity in the extented reals|<tuple|17.28|617>>
+    <associate|difference in extented reals|<tuple|17.22|615>>
+    <associate|distributivity in the extented reals|<tuple|17.29|617>>
     <associate|eq 13.1.300|<tuple|17.1|618>>
     <associate|eq 13.11.40|<tuple|17.29|654>>
     <associate|eq 13.12.40|<tuple|17.30|655>>
@@ -11260,10 +11299,10 @@
     <associate|eq 17.9.033|<tuple|17.9|?>>
     <associate|eq 17.9.515|<tuple|18.9|683>>
     <associate|equivalence of limits on increasing (decreasing) sequences of
-    extented reals|<tuple|17.85|652>>
+    extented reals|<tuple|17.86|652>>
     <associate|every non empty set in the extented reals has a
-    limit|<tuple|17.10|609>>
-    <associate|existance of lim inf and lim sup|<tuple|17.69|647>>
+    limit|<tuple|17.11|609>>
+    <associate|existance of lim inf and lim sup|<tuple|17.70|647>>
     <associate|exp exceeds every number|<tuple|18.31|689>>
     <associate|exp is a bijection|<tuple|18.32|689>>
     <associate|exp is convex|<tuple|18.28|688>>
@@ -11272,76 +11311,76 @@
     <associate|exp(z)|<tuple|18.19|682>>
     <associate|exponential as power|<tuple|18.30|688>>
     <associate|extented reals|<tuple|17.2|607>>
-    <associate|finite infinite sum means finite terms|<tuple|17.118|665>>
+    <associate|finite infinite sum means finite terms|<tuple|17.119|665>>
     <associate|finite sum of constants in the extented
-    reals|<tuple|17.112|664>>
-    <associate|finite sum of denumerable sums|<tuple|17.124|669>>
-    <associate|finite sum of extented reals|<tuple|17.99|661>>
-    <associate|finite sum of extented reals properties|<tuple|17.111|664>>
-    <associate|finite sum of extented reals starting at n|<tuple|17.100|661>>
+    reals|<tuple|17.113|664>>
+    <associate|finite sum of denumerable sums|<tuple|17.125|669>>
+    <associate|finite sum of extented reals|<tuple|17.100|661>>
+    <associate|finite sum of extented reals properties|<tuple|17.112|664>>
+    <associate|finite sum of extented reals starting at n|<tuple|17.101|661>>
     <associate|finite sum of extented reals written as infinite
-    sum|<tuple|17.119|665>>
-    <associate|finite sum of limits of functions|<tuple|17.108|663>>
+    sum|<tuple|17.120|665>>
+    <associate|finite sum of limits of functions|<tuple|17.109|663>>
     <associate|finite sum of limits of scalar product with
-    functions|<tuple|17.110|663>>
+    functions|<tuple|17.111|663>>
     <associate|finite sum of non negative extented reals is non
-    negative|<tuple|17.101|661>>
+    negative|<tuple|17.102|661>>
     <associate|general strict positive powers|<tuple|18.38|692>>
     <associate|generalized power|<tuple|18.35|690>>
     <associate|generalized sequence of extended and remove
-    zeroes|<tuple|17.132|675>>
+    zeroes|<tuple|17.133|675>>
     <associate|generalized sequence of extended reals and
-    zeroes|<tuple|17.131|674>>
+    zeroes|<tuple|17.132|674>>
     <associate|generalized serie of extended positive
-    numbers|<tuple|17.130|674>>
-    <associate|generalized sum of the extended reals|<tuple|17.129|673>>
-    <associate|gnerating basis vor the extended reals|<tuple|17.36|?>>
-    <associate|graph of sum of functions|<tuple|17.106|662>>
-    <associate|increasing (decreasing) sequence|<tuple|17.66|646>>
-    <associate|increasing (decreasing) sequence converges|<tuple|17.68|646>>
+    numbers|<tuple|17.131|674>>
+    <associate|generalized sum of the extended reals|<tuple|17.130|673>>
+    <associate|gnerating basis vor the extended reals|<tuple|17.37|?>>
+    <associate|graph of sum of functions|<tuple|17.107|662>>
+    <associate|increasing (decreasing) sequence|<tuple|17.67|646>>
+    <associate|increasing (decreasing) sequence converges|<tuple|17.69|646>>
     <associate|independence of limit inf and limit sup of start
-    index|<tuple|17.71|648>>
+    index|<tuple|17.72|648>>
     <associate|inequality of Abel|<tuple|18.14|680>>
-    <associate|infinity can not be a right limit|<tuple|17.47|625>>
-    <associate|interchange infinite and finite sum|<tuple|17.123|668>>
-    <associate|left (right) continuity|<tuple|17.58|633>>
-    <associate|left and right limit implies limit|<tuple|17.54|632>>
-    <associate|left limit of a function|<tuple|17.48|625>>
-    <associate|left, right limit of sum and scalar product|<tuple|17.53|627>>
-    <associate|lemma 15.75|<tuple|17.94|660>>
+    <associate|infinity can not be a right limit|<tuple|17.48|625>>
+    <associate|interchange infinite and finite sum|<tuple|17.124|668>>
+    <associate|left (right) continuity|<tuple|17.59|633>>
+    <associate|left and right limit implies limit|<tuple|17.55|632>>
+    <associate|left limit of a function|<tuple|17.49|625>>
+    <associate|left, right limit of sum and scalar product|<tuple|17.54|627>>
+    <associate|lemma 15.75|<tuple|17.95|660>>
     <associate|lemma 17.2|<tuple|18.16|681>>
     <associate|lemma 17.38|<tuple|18.41|693>>
-    <associate|lim inf -xn|<tuple|17.74|648>>
-    <associate|lim inf and lim sup|<tuple|17.70|648>>
-    <associate|lim inf lim sup basic properties|<tuple|17.72|?>>
-    <associate|lim sup xn+x|<tuple|17.73|648>>
+    <associate|lim inf -xn|<tuple|17.75|648>>
+    <associate|lim inf and lim sup|<tuple|17.71|648>>
+    <associate|lim inf lim sup basic properties|<tuple|17.73|?>>
+    <associate|lim sup xn+x|<tuple|17.74|648>>
     <associate|liminf and limsup properties for sum
-    product|<tuple|17.76|649>>
-    <associate|limit and absolut value|<tuple|17.90|655>>
-    <associate|limit and continuity in the extented reals|<tuple|17.57|633>>
-    <associate|limit and translation of indexes|<tuple|17.82|?>>
+    product|<tuple|17.77|649>>
+    <associate|limit and absolut value|<tuple|17.91|655>>
+    <associate|limit and continuity in the extented reals|<tuple|17.58|633>>
+    <associate|limit and translation of indexes|<tuple|17.83|?>>
     <associate|limit at infinity of ascending (descending)
-    functions|<tuple|17.62|642>>
-    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.64|645>>
-    <associate|limit for f\<less\>=g|<tuple|17.63|643>>
-    <associate|limit n|<tuple|17.96|660>>
-    <associate|limit of 1/f|<tuple|17.95|660>>
-    <associate|limit of a constant function|<tuple|17.51|626>>
-    <associate|limit of a function|<tuple|17.50|626>>
-    <associate|limit of constant extented real|<tuple|17.81|651>>
-    <associate|limit of constants|<tuple|17.88|653>>
-    <associate|limit of finite sums in the extented reals|<tuple|17.104|662>>
-    <associate|limit of functions and sequences|<tuple|17.87|653>>
-    <associate|limit of monotone functions|<tuple|17.61|640>>
-    <associate|limit points|<tuple|17.45|625>>
-    <associate|limit points and plus or min infinity|<tuple|17.46|625>>
-    <associate|limit xi+x|<tuple|17.83|651>>
-    <associate|limits at infinity|<tuple|17.56|632>>
-    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.97|660>>
+    functions|<tuple|17.63|642>>
+    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.65|645>>
+    <associate|limit for f\<less\>=g|<tuple|17.64|643>>
+    <associate|limit n|<tuple|17.97|660>>
+    <associate|limit of 1/f|<tuple|17.96|660>>
+    <associate|limit of a constant function|<tuple|17.52|626>>
+    <associate|limit of a function|<tuple|17.51|626>>
+    <associate|limit of constant extented real|<tuple|17.82|651>>
+    <associate|limit of constants|<tuple|17.89|653>>
+    <associate|limit of finite sums in the extented reals|<tuple|17.105|662>>
+    <associate|limit of functions and sequences|<tuple|17.88|653>>
+    <associate|limit of monotone functions|<tuple|17.62|640>>
+    <associate|limit points|<tuple|17.46|625>>
+    <associate|limit points and plus or min infinity|<tuple|17.47|625>>
+    <associate|limit xi+x|<tuple|17.84|651>>
+    <associate|limits at infinity|<tuple|17.57|632>>
+    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.98|660>>
     <associate|notation for limit of increasing/decreasing
-    sequences|<tuple|17.86|653>>
+    sequences|<tuple|17.87|653>>
     <associate|open sets and addition scalar
-    multiplication|<tuple|17.42|623>>
+    multiplication|<tuple|17.43|623>>
     <associate|pi|<tuple|18.48|701>>
     <associate|power series 0|<tuple|18.3|677>>
     <associate|properties of exp (1)|<tuple|18.27|688>>
@@ -11350,47 +11389,48 @@
     <associate|properties of general strict power|<tuple|18.37|690>>
     <associate|properties of log|<tuple|18.34|689>>
     <associate|properties of the limit in the extented
-    reals|<tuple|17.91|655>>
-    <associate|right limit|<tuple|17.49|625>>
-    <associate|series and product with a scalar|<tuple|17.114|665>>
-    <associate|series are increasing|<tuple|17.102|661>>
-    <associate|series of extended reals and zeroes|<tuple|17.122|666>>
+    reals|<tuple|17.92|655>>
+    <associate|right limit|<tuple|17.50|625>>
+    <associate|series and product with a scalar|<tuple|17.115|665>>
+    <associate|series are increasing|<tuple|17.103|661>>
+    <associate|series of extended reals and zeroes|<tuple|17.123|666>>
     <associate|series of positive extented reals is
-    increasing|<tuple|17.115|665>>
+    increasing|<tuple|17.116|665>>
     <associate|sets for basis of topology on the extented
-    reals|<tuple|17.35|621>>
-    <associate|special cases of limits|<tuple|17.59|633>>
+    reals|<tuple|17.36|621>>
+    <associate|special cases of limits|<tuple|17.60|633>>
     <associate|sum and order relation in the extented
-    reals|<tuple|17.117|665>>
-    <associate|sum from -infinity to infinity|<tuple|17.128|673>>
-    <associate|sum of extented reals and product|<tuple|17.103|661>>
+    reals|<tuple|17.118|665>>
+    <associate|sum from -infinity to infinity|<tuple|17.129|673>>
+    <associate|sum of extented reals and product|<tuple|17.104|661>>
     <associate|sum of extented reals is indepenent of order the
-    reals|<tuple|17.120|665>>
-    <associate|sum of series in the extended reals|<tuple|17.116|?>>
-    <associate|sup and inf in real and extended reals|<tuple|17.12|?>>
-    <associate|sup of set and sum|<tuple|17.29|618>>
-    <associate|sup,inf sum of monotone sequences|<tuple|17.75|649>>
+    reals|<tuple|17.121|665>>
+    <associate|sum of series in the extended reals|<tuple|17.117|?>>
+    <associate|sup and inf in real and extended reals|<tuple|17.13|?>>
+    <associate|sup of set and sum|<tuple|17.30|618>>
+    <associate|sup,inf sum of monotone sequences|<tuple|17.76|649>>
     <associate|supremum (infinum) of increasing (decreasing) sequence is
-    indpendent of start|<tuple|17.84|652>>
-    <associate|supremum, infinum of extented real set|<tuple|17.9|609>>
-    <associate|supremum, infinum of real set|<tuple|17.8|609>>
+    indpendent of start|<tuple|17.85|652>>
+    <associate|supremum, infinum of extented real set|<tuple|17.10|609>>
+    <associate|supremum, infinum of real set|<tuple|17.9|609>>
     <associate|the limit inferior is lower then limit
-    superior|<tuple|17.77|650>>
+    superior|<tuple|17.78|650>>
     <associate|the positive extented reals form a abelian
-    semi-group|<tuple|17.26|617>>
+    semi-group|<tuple|17.27|617>>
     <associate|the topology on the extented reals is
-    Hausdorff|<tuple|17.44|624>>
-    <associate|topology on extented reals|<tuple|17.37|621>>
-    <associate|topology on the extended reals properties|<tuple|17.38|?>>
+    Hausdorff|<tuple|17.45|624>>
+    <associate|topology on extented reals|<tuple|17.38|621>>
+    <associate|topology on the extended reals properties|<tuple|17.39|?>>
     <associate|trigoniometic properties|<tuple|18.45|696>>
     <associate|trigoniometric functions|<tuple|18.44|696>>
-    <associate|uniqueness of limits in extented reals|<tuple|17.52|626>>
+    <associate|uniqueness of limits in extented reals|<tuple|17.53|626>>
     <associate|usefull properties of open sets in the extented reals
-    |<tuple|17.60|640>>
-    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.19|612>>
-    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.17|611>>
-    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.18|612>>
-    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.20|614>>
+    |<tuple|17.61|640>>
+    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.20|612>>
+    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.18|611>>
+    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.19|612>>
+    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.21|614>>
+    <associate|x\<less\>y=\<gtr\>x+1/n\<less\>y|<tuple|17.7|?>>
     <associate|x^p is continuous|<tuple|18.40|693>>
     <associate|zero and convergentie domain|<tuple|18.5|677>>
     <associate|zeroes of cos has a minimum|<tuple|18.47|700>>
@@ -11478,17 +11518,17 @@
       17.1<space|2spc>Extented reals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>
 
-      17.2<space|2spc>Topology on <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>
+      17.2<space|2spc>Topology on <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>
 
       <with|par-left|<quote|1tab>|17.2.1<space|2spc>Limit of functions in
-      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>
+      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14>>
 
       <with|par-left|<quote|1tab>|17.2.2<space|2spc>Sequences in
-      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>
+      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-23>>
 
