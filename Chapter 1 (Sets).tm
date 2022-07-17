@@ -2548,14 +2548,17 @@
 
   <subsection|Functions>
 
-  A function <math|f:A\<rightarrow\>B> is a partial function so that the
+  A function <math|f:A\<rightarrow\>B> is a partial function such that the
   mapping exists for every element in A. In other words for every
   <math|a\<in\>A> we can find a unique element <math|b> in <math|B>.\ 
 
   <\definition>
     <index|function><index|mapping><dueto|function>A partial function
     <math|f:A\<rightarrow\>B> is a <with|font-series|bold|function> if
-    <math|\<forall\>x\<in\>A\<vDash\>\<exists\>y\<in\>B\<vdash\><around*|(|x,y|)>\<in\>f>
+    <math|\<forall\>x\<in\>A\<vDash\>\<exists\>y\<in\>B\<vdash\><around*|(|x,y|)>\<in\>f>.
+    The collection of all functions from <math|A\<rightarrow\>B> is noted as
+    <math|B<rsup|A>>, so <math|B<rsup|A>=<around*|{|f:A\<rightarrow\>B\|f:A\<rightarrow\>B
+    is a function|}>>
   </definition>
 
   A alternative definition of a function is given by the following theorem.

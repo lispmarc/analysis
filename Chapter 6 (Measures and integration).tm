@@ -8757,7 +8757,14 @@
     spaces spaces then a function <math|f:X\<rightarrow\>Y> is
     <with|font-series|bold|<math|\<cal-A\>,\<cal-B\>>-measurable> if
     <math|\<forall\>B\<in\>\<cal-B\>> we have that
-    <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>.
+    <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>. The set of
+    <with|font-series|medium|<math|\<cal-A\>,\<cal-B\>>>-measurable functions
+    is noted as <math|\<cal-M\><around*|[|X,\<cal-A\>;Y,\<cal-B\>|]>>, so\ 
+
+    <\equation*>
+      \<cal-M\><around*|[|X,\<cal-A\>;Y,\<cal-B\>|]>=<around*|{|f\<in\>Y<rsup|X>\|f
+      is \<cal-A\>,\<cal-B\><text|-measurable>|}>
+    </equation*>
   </definition>
 
   <\note>
@@ -8864,7 +8871,8 @@
   </proof>
 
   <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\><rsub|X>|\<rangle\>>,<around*|\<langle\>|Y,\<cal-A\><rsub|Y>|\<rangle\>>>,<math|<around*|\<langle\>|Z,\<cal-T\><rsub|Z>|)>>
+    <label|composition of measurable functions is measurable>Let
+    <math|<around*|\<langle\>|X,\<cal-A\><rsub|X>|\<rangle\>>,<around*|\<langle\>|Y,\<cal-A\><rsub|Y>|\<rangle\>>>,<math|<around*|\<langle\>|Z,\<cal-T\><rsub|Z>|)>>
     measurable spaces, <math|f:X\<rightarrow\>Y> a
     <math|\<cal-A\><rsub|X>,\<cal-A\><rsub|Y>>-measurable function and
     <math|g:Y\<rightarrow\>Z> a <math|\<cal-A\><rsub|Y>,\<cal-A\><rsub|Z>>-measurable
@@ -8880,6 +8888,104 @@
     image of a composition of functions>>>f<rsup|-1><around*|(|g<rsup|-1><around*|(|A|)>|)>\<in\>\<cal-A\><rsub|X>>
     proving the proposition.
   </proof>
+
+  We have two interesting cases of measurable functions when the codomain of
+  a function is <math|\<bbb-R\>> or <math|<wide|\<bbb-R\>|\<wide-bar\>>.>
+
+  <\definition>
+    <index|<math|\<cal-A\>>-measurable function><index|<math|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    then if <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is
+    <math|\<cal-A\>,\<cal-B\><around*|[|<wide|\<bbb-R\>|\<bar\>>|]>>-measurable
+    [see <reference|borel algebra on the extended real numbers (2)>] then we
+    say that <math|f> is <math|\<cal-A\>>-measurable. The set of
+    <math|\<cal-A\>>-measurable functions is noted as
+    <math|=<wide|\<cal-M\>|\<wide-bar\>><around*|[|X,\<cal-A\>|]>>, so\ 
+
+    <\equation*>
+      <wide|\<cal-M\>|\<wide-bar\>><around*|[|X,\<cal-A\>|]>=<around*|{|f\<in\><wide|\<bbb-R\><rsup|>|\<wide-bar\>><rsup|X>\|f
+      is \<cal-A\>,\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]><text|-measurable>|}>=\<cal-M\><around*|[|X,\<cal-A\>;<wide|\<bbb-R\>|\<wide-bar\>>,\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>|]>
+    </equation*>
+
+    If <math|<around*|\<langle\>|X,A|\<rangle\>>=<around*|\<langle\>|\<bbb-R\>,\<cal-L\>|\<rangle\>>>[or
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=\<cal-L\><rsup|n>> the
+    Lebesgue measurable sets on <math|\<bbb-R\>>[or <math|\<bbb-R\><rsup|n>>
+    [see <reference|Lebesgue measure space> and <reference|Lebesgue measure
+    space on R^n>] then a function <math|f:\<bbb-R\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    [or <math|f:\<bbb-R\><rsup|n>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>]
+    is <math|Lebesgue>-measurable if <math|f> is <math|\<cal-L\>>-measurable
+    [or <math|f> is<space|1em><math|\<cal-L\><rsup|n>> measurable].
+  </definition>
+
+  <\definition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
+    space then if <math|f:X\<rightarrow\>\<bbb-R\>> is
+    <math|\<cal-A\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable [see
+    <reference|Borel algebras on R>] we say that <math|f> is
+    <math|\<cal-A\>>-measurable. The set of all <math|\<cal-A\>>-measurable
+    functions is noted as <math|\<cal-M\><around*|[|X,\<cal-A\>|]>>, so\ 
+
+    <\equation*>
+      \<cal-M\><around*|[|X,\<cal-A\>|]>=<around*|{|f\<in\>\<bbb-R\><rsup|X>\|f
+      is \<cal-A\>,\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]><text|-measurable>|}>=\<cal-M\><around*|[|X,\<cal-A\>;\<bbb-R\>,\<cal-B\><around*|{|\<bbb-R\>|}>|]>
+    </equation*>
+
+    If <math|<around*|\<langle\>|X,A|\<rangle\>>=<around*|\<langle\>|\<bbb-R\>,\<cal-L\>|\<rangle\>>>[or
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=\<cal-L\><rsup|n>> the
+    Lebesgue measurable sets on <math|\<bbb-R\>>[or <math|\<bbb-R\><rsup|n>>
+    [see <reference|Lebesgue measure space> and <reference|Lebesgue measure
+    space on R^n>] then a function <math|f:\<bbb-R\>\<rightarrow\>\<bbb-R\>>
+    [or <math|f:\<bbb-R\><rsup|n>\<rightarrow\>\<bbb-R\>>] is
+    <math|Lebesgue>-measurable if <math|f> is <math|\<cal-L\>>-measurable [or
+    <math|f> is<space|1em><math|\<cal-L\><rsup|n>> measurable].
+  </definition>
+
+  <\note>
+    Altough we have proved that the composition of measurable functions is
+    measurable this does not hold for Lebessgue measurable function. Notice
+    the following differences
+
+    <\enumerate>
+      <item>If <math|<around*|\<langle\>|X,\<cal-A\><rsub|X>|\<rangle\>>>,<math|<around*|\<langle\>|Y,\<cal-A\><rsub|Y>|\<rangle\>>>
+      and <math|<around*|\<langle\>|Z,\<cal-A\><rsub|Z>|\<rangle\>>> are
+      measurable sets then if <math|f:X\<rightarrow\>Y> is
+      <math|\<cal-A\><rsub|X>,\<cal-A\><rsub|Y>>-measurable and
+      <math|g:Y\<rightarrow\>Z> is <math|\<cal-A\><rsub|Y>,\<cal-A\><rsub|Z>>
+      then <math|g\<circ\>f> is <math|\<cal-A\><rsub|X>,\<cal-A\><rsub|Z>>
+      measurable [see <reference|composition of measurable functions is
+      measurable>]
+
+      <item>If <math|f,g:\<bbb-R\>\<rightarrow\>\<bbb-R\>> are Lebesgue
+      measurable then <math|f> is <math|\<cal-L\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable
+      and <math|g> <math|>is <math|\<cal-L\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable.
+      As <math|g> is not <math|\<cal-B\><around*|[|\<bbb-R\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable
+      we are different with the situation (1) and can not use
+      <reference|composition of measurable functions is measurable>. It is
+      guaranteed the <math|\<forall\>A\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>
+      <math|g<rsup|-1><around*|(|A|)>\<in\>\<cal-L\>>, which does not
+      guarantee that <math|g<rsup|-1><around*|(|A|)>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>.
+      If however <math|g> is not only Lebesgue measuable but also Borel
+      measurable then <math|g> is not only
+      <math|\<cal-L\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable but also
+      <math|\<cal-B\><around*|[|\<bbb-R\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable
+      so that we can apply <reference|composition of measurable functions is
+      measurable> proving that <math|g\<circ\>f> is
+      <math|\<cal-L\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable hence
+      Lebesgue measurable. The difference is that we have <math|\<bbb-R\>>
+      difference <math|\<sigma\>>-algebras, either <math|\<cal-L\>> or
+      <math|\<cal-B\><around*|[|\<cal-A\>|]>>.
+
+      <item>If <math|f,g:\<bbb-R\>\<rightarrow\>\<bbb-R\>> are Borel
+      measurable then <math|f,g> are <math|\<cal-B\><around*|[|\<bbb-R\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable
+      so that we can use <reference|composition of measurable functions is
+      measurable> to prove that <math|g\<circ\>f> is
+      <math|\<cal-B\><around*|[|\<bbb-R\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable
+      and thus Borel measurable.
+    </enumerate>
+  </note>
+
+  We will now find equivalen definitions to check if a function is
+  <math|\<cal-A\>>-measurable
 
   \;
 
@@ -8922,8 +9028,11 @@
     <associate|Borel algebra on R^n equivalences|<tuple|18.58|?>>
     <associate|Borel algebras on R|<tuple|18.26|?>>
     <associate|Borel function|<tuple|18.140|?>>
+    <associate|Borel measurable function|<tuple|18.146|?>>
+    <associate|Borel measurable functions|<tuple|18.146|?>>
     <associate|Borel measure space|<tuple|18.89|?>>
     <associate|Borel sets in R^n are transaltion invariant|<tuple|18.100|?>>
+    <associate|Borel, Lebesgue measurable function|<tuple|18.146|?>>
     <associate|Caratheodore|<tuple|18.75|?>>
     <associate|Dunkin class|<tuple|18.127|?>>
     <associate|Dyadic cube properties|<tuple|18.48|?>>
@@ -8935,7 +9044,7 @@
     <associate|Dynkin classes and sigma algebra|<tuple|18.135|?>>
     <associate|Lebesgue measurability is transalation
     invariant|<tuple|18.98|?>>
-    <associate|Lebesgue measurable sets alternatives|<tuple|18.88|?>>
+    <associate|Lebesgue measurable sets alternatives|<tuple|18.145|?>>
     <associate|Lebesgue measure is regular|<tuple|18.122|?>>
     <associate|Lebesgue measure is translation invariant|<tuple|18.99|?>>
     <associate|Lebesgue measure space|<tuple|18.81|?>>
@@ -8997,6 +9106,9 @@
     <associate|auto-48|<tuple|measurable function|?>>
     <associate|auto-49|<tuple|Borel function|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
+    <associate|auto-50|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
+    function|?>>
+    <associate|auto-51|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|?>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>|?>>
     <associate|auto-7|<tuple|Borel algebra|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
@@ -9011,6 +9123,8 @@
     <associate|completion of Borelset label|<tuple|18.113|?>>
     <associate|completion of a measure|<tuple|18.111|?>>
     <associate|completion of a measure space|<tuple|18.112|?>>
+    <associate|composition of measurable functions is
+    measurable|<tuple|18.143|?>>
     <associate|condition for a Dynkin class to be a sigma
     algebra|<tuple|18.134|?>>
     <associate|consequence of a pi-system|<tuple|18.133|?>>
@@ -9260,16 +9374,13 @@
     <associate|eq 18.48.033.1|<tuple|18.48|?>>
     <associate|eq 18.49.016|<tuple|18.98|?>>
     <associate|eq 18.49.022|<tuple|18.71|?>>
-    <associate|eq 18.49.033|<tuple|18.54|?>>
     <associate|eq 18.49.033.1|<tuple|18.49|?>>
     <associate|eq 18.5.033|<tuple|18.8|?>>
     <associate|eq 18.50.016|<tuple|18.99|?>>
     <associate|eq 18.50.022|<tuple|18.72|?>>
-    <associate|eq 18.50.033|<tuple|18.55|?>>
     <associate|eq 18.50.033.1|<tuple|18.50|?>>
     <associate|eq 18.51.016|<tuple|18.100|?>>
     <associate|eq 18.51.022|<tuple|18.73|?>>
-    <associate|eq 18.51.033|<tuple|18.56|?>>
     <associate|eq 18.51.033.1|<tuple|18.51|?>>
     <associate|eq 18.52.016|<tuple|18.110|?>>
     <associate|eq 18.52.018|<tuple|18.101|?>>
@@ -9379,8 +9490,6 @@
     <associate|set of all subsets is a sigma algebra|<tuple|18.12|?>>
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
     <associate|sigma algebra equivalent definitions|<tuple|18.14|?>>
-    <associate|sigma algebra on the extebded reals|<tuple|18.30|?>>
-    <associate|sigma algebra on the extebded reals (1)|<tuple|18.30|?>>
     <associate|sigma algebras are Dynkin classes|<tuple|18.128|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|18.49|?>>
     <associate|translation properties|<tuple|18.95|?>>
