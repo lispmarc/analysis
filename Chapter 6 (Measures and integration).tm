@@ -682,6 +682,18 @@
         <item><math|\<forall\><around*|{|A<rsub|i>|}><rsub|i\<in\>I>\<subseteq\>\<cal-A\>>
         with <math|I> countable we have <math|<big|cup><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-A\>>
       </enumerate>
+
+      <item><math|\<cal-A\>> satisfies\ 
+
+      <\enumerate>
+        <item><math|\<emptyset\>\<in\>\<cal-A\>>
+
+        <item><math|\<forall\>A\<in\>\<cal-A\>> we have
+        <math|X\\A\<in\>\<cal-A\>>
+
+        <item><math|\<forall\><around*|{|A<rsub|i>|}><rsub|i\<in\>I>\<subseteq\>\<cal-A\>>
+        with <math|I> countable we have <math|<big|cap><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-A\>>
+      </enumerate>
     </enumerate>
   </proposition>
 
@@ -842,6 +854,40 @@
         <item>If <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>
         then as <math|\<bbb-N\><rsub|0>> is countable we have by (5.c) that
         <math|<big|cup><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-A\>>.\ 
+      </enumerate-alpha>
+
+      <item*|<math|5\<Rightarrow\>6>>
+
+      <\enumerate-alpha>
+        <item>By (5.a) we have that <math|\<emptyset\>\<in\>\<cal-A\>>
+
+        <item>By (5.b( we have that <math|\<forall\>A\<in\>\<cal-A\>>
+        <math|X\\A\<in\>\<cal-A\>>
+
+        <item>If <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>\<subseteq\>\<cal-A\>>
+        then <math|\<forall\>i\<in\>I> we have
+        <math|X\\A<rsub|i>\<in\>\<cal-A\>> so that by (5.c)
+        <math|<big|cup><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>\<in\>\<cal-A\>>.
+        Further as <math|<big|cap><rsub|i\<in\>I>A<rsub|i>\<equallim\><rsub|<text|<reference|Acc=A>>>X\\<around*|(|X\\<big|cap><rsub|i\<in\>I>A<rsub|i>|)>\<equallim\><rsub|<text|<reference|generalized
+        difference>>>X\\<around*|(|<big|cup><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>|)>\<in\>\<cal-A\>>
+        \ which by (5.b) proves that <math|<big|cap><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-A\>>.
+      </enumerate-alpha>
+
+      <item*|<math|6\<Rightarrow\>5>>
+
+      <\enumerate-alpha>
+        <item>By (6.a) we have that <math|\<emptyset\>\<in\>\<cal-A\>>
+
+        <item>By (6.b( we have that <math|\<forall\>A\<in\>\<cal-A\>>
+        <math|X\\A\<in\>\<cal-A\>>
+
+        <item>If <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>\<subseteq\>\<cal-A\>>
+        then <math|\<forall\>i\<in\>I> we have
+        <math|X\\A<rsub|i>\<in\>\<cal-A\>> so that by (6.b)
+        <math|<big|cap><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>\<in\>\<cal-A\>>.
+        Further as <math|<big|cup><rsub|i\<in\>I>A<rsub|i>\<equallim\><rsub|<text|<reference|Acc=A>>>X\\<around*|(|X\\<big|cup><rsub|i\<in\>I>A<rsub|i>|)>\<equallim\><rsub|<text|<reference|generalized
+        difference>>>X\\<around*|(|<big|cap><rsub|i\<in\>I><around*|(|X\\A<rsub|i>|)>|)>\<in\>\<cal-A\>>
+        \ which by (5.b) proves that <math|<big|cup><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-A\>>.
       </enumerate-alpha>
     </description>
   </proof>
@@ -2149,7 +2195,7 @@
     </equation*>
   </proof>
 
-  To summarize the two previous lemma's we ave
+  To summarize the two previous lemma's we have
 
   <\theorem>
     <label|borel algebra on the extended reals (3)>The following equivalences
@@ -8758,6 +8804,8 @@
 
   <section|Measurable functions>
 
+  <subsection|Measurable functions>
+
   <\definition>
     <label|measurable function><index|measurable function>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>,
@@ -8776,10 +8824,9 @@
   </definition>
 
   <\note>
-    As a set can have many <math|\<sigma\>>-algebras defined on it, it is
-    important to understand that the same function can be at the same time
-    measurable and not measurable, depending on the <math|\<sigma\>>-algebras
-    used.
+    A set can have many <math|\<sigma\>>-algebras defined on it,so the same
+    function can be at the same time be measurable and not measurable,
+    depending on the <math|\<sigma\>>-algebras used.
   </note>
 
   <\definition>
@@ -8798,8 +8845,8 @@
 
   <\theorem>
     <label|measurable functions and generated algebra>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
-    space,<math|A\<in\>\<cal-A\>>, <math|Y> a set and
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|A\<in\>\<cal-A\>>, <math|Y> a set and
     <math|\<cal-B\>\<subseteq\>\<cal-P\><around*|(|Y|)>> so that
     <math|<around*|\<langle\>|Y,\<sigma\><around*|[|\<cal-B\>|]>|\<rangle\>>>
     is a measurable space then <math|f:A\<rightarrow\>Y> is
@@ -8901,7 +8948,7 @@
     proving the proposition.
   </proof>
 
-  We have two interesting cases of measurable functions when the codomain of
+  We have two interesting cases of measurable functions, when the codomain of
   a function is <math|\<bbb-R\>> or <math|<wide|\<bbb-R\>|\<wide-bar\>>.>
 
   <\definition>
@@ -8920,15 +8967,17 @@
     </equation*>
 
     If <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=<around*|\<langle\>|\<bbb-R\>,\<cal-L\>|\<rangle\>>>,
-    <math|A\<in\>\<cal-L\>> [or <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=\<cal-L\><rsup|n>>,
+    <math|A\<in\>\<cal-L\>> [or <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><rsup|n>|\<rangle\>>>,
     <math|A\<in\>\<cal-L\><rsup|n>>] the Lebesgue measurable sets on
     <math|\<bbb-R\>>[or <math|\<bbb-R\><rsup|n>>] [see <reference|Lebesgue
     measure space> and <reference|Lebesgue measure space on R^n>] then a
     function <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> [or
-    <math|f:\<bbb-R\><rsup|n>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>] is
+    <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>] is
     <math|Lebesgue>-measurable if <math|f> is <math|\<cal-L\>>-measurable [or
     <math|f> is<space|1em><math|\<cal-L\><rsup|n>> measurable].
   </definition>
+
+  We have a equivalent definition for real functions.
 
   <\definition>
     Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
@@ -8944,8 +8993,8 @@
     </equation*>
 
     If <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=<around*|\<langle\>|\<bbb-R\>,\<cal-L\>|\<rangle\>>>,
-    <math|A\<in\>\<cal-L\>> [or <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=\<cal-L\><rsup|n>>,
-    <math|A\<in\>\<cal-A\>> the Lebesgue measurable sets on
+    <math|A\<in\>\<cal-L\>> [or <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>=<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><rsup|n>|\<rangle\>>>,
+    <math|A\<in\>\<cal-L\><rsup|n>>] the Lebesgue measurable sets on
     <math|\<bbb-R\>>[or <math|\<bbb-R\><rsup|n>> [see <reference|Lebesgue
     measure space> and <reference|Lebesgue measure space on R^n>] then a
     function <math|f:A\<rightarrow\>\<bbb-R\>> is <math|Lebesgue>-measurable
@@ -8955,7 +9004,7 @@
 
   <\note>
     Altough we have proved that the composition of measurable functions is
-    measurable this does not hold for Lebessgue measurable function. Notice
+    measurable, this does not hold for Lebessgue measurable function. Notice
     the following differences for the composition of measurable functions.
 
     <\enumerate>
@@ -8972,9 +9021,8 @@
       measurable then <math|f> is <math|\<cal-L\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable
       and <math|g> <math|>is <math|\<cal-L\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable.
       As <math|g> is not <math|\<cal-B\><around*|[|\<bbb-R\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable
-      we are different with the situation (1) and can not use
-      <reference|composition of measurable functions is measurable>. It is
-      guaranteed the <math|\<forall\>A\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>
+      we can not use <reference|composition of measurable functions is
+      measurable>. It is guaranteed that <math|\<forall\>A\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>
       <math|g<rsup|-1><around*|(|A|)>\<in\>\<cal-L\>>, which does not
       guarantee that <math|g<rsup|-1><around*|(|A|)>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>>.
       If however <math|g> is not only Lebesgue measuable but also Borel
@@ -8984,7 +9032,7 @@
       so that we can apply <reference|composition of measurable functions is
       measurable> proving that <math|g\<circ\>f> is
       <math|\<cal-L\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable hence
-      Lebesgue measurable. The difference is that we have <math|\<bbb-R\>>
+      Lebesgue measurable. The difference is that we have on <math|\<bbb-R\>>
       difference <math|\<sigma\>>-algebras, either <math|\<cal-L\>> or
       <math|\<cal-B\><around*|[|\<cal-A\>|]>>.
 
@@ -8997,6 +9045,50 @@
     </enumerate>
   </note>
 
+  Note that up to know we have to duplicate our statemens between real
+  functions and extended real functions. The following proposition allows us
+  to significantly reduce the number of proofs and statements for
+  measurability of real functions or extended real functions.
+
+  <\proposition>
+    <label|real (extended real) measurability>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then\ 
+
+    <\enumerate>
+      <item>If <math|<around*|(|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|)>\<in\><wide|\<cal-M\>|\<wide-bar\>><around*|[|A,\<cal-A\>|]>>
+      is such that <math|f<around*|(|A|)>\<subseteq\>\<bbb-R\>> [so that
+      <math|f:X\<rightarrow\>\<bbb-R\>> is a function] then
+      <math|<around*|(|f:X\<rightarrow\>\<bbb-R\>|)>\<in\>\<cal-M\><around*|[|A,\<cal-A\>|]>>
+
+      <item>If <math|<around*|(|f:A\<rightarrow\>\<bbb-R\>|)>\<in\>\<cal-M\><around*|[|A,\<cal-A\>|]>>
+      then <math|<around*|(|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|)>\<in\><wide|\<cal-M\>|\<wide-bar\>><around*|[|A,\<cal-A\>|]>>
+      [in a sense we can write this as <math|\<cal-M\><around*|[|A,\<cal-A\>|]>\<subseteq\><wide|\<cal-M\>|\<wide-bar\>><around*|[|A,\<cal-A\>|]>>
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>If <math|B\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>> then as
+      <math|B<big|cap>\<bbb-R\>=B> we have by <reference|borel algebra on the
+      extended reals (3)> that <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>,
+      so as <math|><math|<around*|(|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|)>\<in\><wide|\<cal-M\>|\<wide-bar\>><around*|[|A,\<cal-A\>|]>>
+      it follows that <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>, which
+      proves that <math|<around*|(|f:A\<rightarrow\>\<bbb-R\>|)>\<in\>\<cal-M\><around*|[|A,\<cal-A\>|]>>
+
+      <item>If <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
+      then by <reference|borel algebra on the extended reals (3)>
+      <math|B<big|cap>\<bbb-R\>\<in\>\<cal-B\><around*|[|\<bbb-R\>|]>> and as
+      <math|><math|<around*|(|f:A\<rightarrow\>\<bbb-R\>|)>\<in\>\<cal-M\><around*|[|A,\<cal-A\>|]>>
+      we have that <math|f<rsup|-1><around*|(|B<big|cap>\<bbb-R\>|)>\<in\>\<cal-A\>>,
+      further <math|f<rsup|-1><around*|(|B<big|cap>\<bbb-R\>|)>\<equallim\><rsub|<text|<reference|image
+      (preimage) of union , intersections>>>f<rsup|-1><around*|(|B|)><big|cap>f<rsup|-1><around*|(|\<bbb-R\>|)>=f<rsup|-1><around*|(|B|)><big|cap>A=f<rsup|-1><around*|(|B|)>>.
+      So that <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>> which proves
+      that <math|<around*|(|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|)>\<in\><wide|\<cal-M\>|\<wide-bar\>><around*|[|\<bbb-R\>|]>>.
+    </enumerate>
+  </proof>
+
   The following definition will be used to find a alternative condition for a
   (extended) real function to be <math|\<cal-A\>>-measurable.
 
@@ -9004,18 +9096,19 @@
     Let <math|X> be a set then we define
 
     <\enumerate>
-      <item>If <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> then
-      given <math|x\<in\>\<bbb-R\>> we define\ 
+      <item>If <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,<math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      then given <math|x\<in\>\<bbb-R\>> we define\ 
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|<around*|{|f\<less\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|-\<infty\>,x|[>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<less\>x|}>>>|<row|<cell|<around*|{|f\<leqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|-\<infty\>,x|]>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<leqslant\>x|}>>>|<row|<cell|<around*|{|f\<gtr\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|x,\<infty\>|]>|)>=<around*|{|t\<in\>X\|x\<less\>f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f\<geqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|x,\<infty\>|]>|)>=<around*|{|t\<in\>X\|x\<leqslant\>f<around*|(|t|)>|}>>>>>
+        <tformat|<table|<row|<cell|<around*|{|f\<less\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|-\<infty\>,x|[>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<less\>x|}>>>|<row|<cell|<around*|{|f\<leqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|-\<infty\>,x|]>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<leqslant\>x|}>>>|<row|<cell|<around*|{|f\<gtr\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|x,\<infty\>|]>|)>=<around*|{|t\<in\>X\|x\<less\>f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f\<geqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|x,\<infty\>|]>|)>=<around*|{|t\<in\>X\|x\<leqslant\>f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f=x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|{|x|}>|)>=<around*|{|t\<in\>X\|x=f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f\<leqslant\>g|}>>|<cell|\<equallim\><rsub|def>>|<cell|<around*|{|x\<in\>X\|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>|}>>>|<row|<cell|<around*|{|f\<less\>g|}>>|<cell|\<equallim\><rsub|def>>|<cell|<around*|{|x\<in\>X\|f<around*|(|x|)>\<less\>g<around*|(|x|)>|}>>>|<row|<cell|<around*|{|f=g|}>>|<cell|\<equallim\>-def>|<cell|<around*|{|x\<in\>X\|f<around*|(|x|)>=g<around*|(|x|)>|}>>>>>
       </eqnarray*>
 
-      <item>If <math|f:X\<rightarrow\>\<bbb-R\>> then given
-      <math|x\<in\>\<bbb-R\>> we define
+      <item>If <math|f:X\<rightarrow\>\<bbb-R\>>,
+      <math|g:X\<rightarrow\>\<bbb-R\>> then given <math|x\<in\>\<bbb-R\>> we
+      define
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|<around*|{|f\<less\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|-\<infty\>,x|[>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<less\>x|}>>>|<row|<cell|<around*|{|f\<leqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|-\<infty\>,x|]>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<leqslant\>x|}>>>|<row|<cell|<around*|{|f\<gtr\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|x,\<infty\>|[>|)>=<around*|{|t\<in\>X\|x\<less\>f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f\<geqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|x,\<infty\>|[>|)>=<around*|{|t\<in\>X\|x\<leqslant\>f<around*|(|t|)>|}>>>>>
+        <tformat|<table|<row|<cell|<around*|{|f\<less\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|-\<infty\>,x|[>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<less\>x|}>>>|<row|<cell|<around*|{|f\<leqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|-\<infty\>,x|]>|)>=<around*|{|t\<in\>X\|f<around*|(|t|)>\<leqslant\>x|}>>>|<row|<cell|<around*|{|f\<gtr\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|]|x,\<infty\>|[>|)>=<around*|{|t\<in\>X\|x\<less\>f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f\<geqslant\>x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|[|x,\<infty\>|[>|)>=<around*|{|t\<in\>X\|x\<leqslant\>f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f=x|}>>|<cell|\<equallim\><rsub|def>>|<cell|f<rsup|-1><around*|(|<around*|{|x|}>|)>=<around*|{|t\<in\>X\|x=f<around*|(|t|)>|}>>>|<row|<cell|<around*|{|f\<leqslant\>g|}>>|<cell|\<equallim\><rsub|def>>|<cell|<around*|{|x\<in\>X\|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>|}>>>|<row|<cell|<around*|{|f\<less\>g|}>>|<cell|\<equallim\><rsub|def>>|<cell|<around*|{|x\<in\>X\|f<around*|(|x|)>\<less\>g<around*|(|x|)>|}>>>|<row|<cell|<around*|{|f=g|}>>|<cell|\<equallim\>-def>|<cell|<around*|{|x\<in\>X\|f<around*|(|x|)>=g<around*|(|x|)>|}>>>>>
       </eqnarray*>
     </enumerate>
   </definition>
@@ -9026,11 +9119,13 @@
     <math|x\<in\>X> then\ 
 
     <\enumerate>
-      <item><math|<around*|{|x\<leqslant\>f|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|x-<frac|1|n>\<less\>f|}>>
+      <item><math|<around*|{|f\<geqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>>
 
-      <item><math|X\\<around*|{|x\<leqslant\>f|}>=<around*|{|f\<less\>x|}>>
+      <item><math|X\\<around*|{|f\<geqslant\>x|}>=<around*|{|f\<less\>x|}>>
 
       <item><math|<around*|{|f\<leqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>>
+
+      <item><math|X\\<around*|{|f\<leqslant\>x|}>=<around*|{|f\<gtr\>x|}>>
     </enumerate>
   </lemma>
 
@@ -9039,57 +9134,58 @@
 
     <\enumerate>
       <item>Let <math|n\<in\>\<bbb-N\>> then if
-      <math|t\<in\><around*|{|x\<leqslant\>f|}>> we have that
+      <math|t\<in\><around*|{|f\<geqslant\>x|}>> we have that
       <math|x\<leqslant\>f<around*|(|t|)>\<Rightarrowlim\><rsub|x\<in\>\<bbb-R\>>x-<frac|1|n>\<less\>f<around*|(|t|)>\<Rightarrow\>t\<in\><around*|{|x-<frac|1|n>\<less\>f|}>>
       proving\ 
 
       <\equation>
-        <label|eq 18.306.033><around*|{|x\<leqslant\>f|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|x-<frac|1|n>\<less\>f|}>
+        <label|eq 18.306.033><around*|{|f\<geqslant\>x|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>
       </equation>
 
-      If <math|t\<in\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|x-<frac|1|n>\<less\>f|}>>
+      If <math|t\<in\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>>
       then <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
       <math|x-<frac|1|n>\<less\>f<around*|(|t|)>>. Assume that
       <math|f<around*|(|t|)>\<less\>x> then by
       <reference|x\<less\>y=\<gtr\>x+1/n\<less\>y> we have that
       <math|f<around*|(|t|)>+<frac|1|n>\<less\>x\<Rightarrowlim\><rsub|x\<in\>\<bbb-R\>>f<around*|(|t|)>\<less\>x-<frac|1|n>>
       a contradiction so we must have <math|x\<leqslant\>f<around*|(|t|)>> or
-      <math|t\<in\><around*|{|x\<leqslant\>f|}>>. So
-      <math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|x-<frac|1|n>\<less\>f|}>\<subseteq\><around*|{|x\<leqslant\>f|}>>.
+      <math|t\<in\><around*|{|f\<geqslant\>|}>>. So
+      <math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>\<subseteq\><around*|{|f\<geqslant\>x|}>>.
       Combining this with <reference|eq 18.306.033> proves\ 
 
       <\equation*>
-        <around*|{|x\<leqslant\>f|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|x-<frac|1|n>\<less\>f|}>
+        <around*|{|f\<geqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>
       </equation*>
 
-      <item><math|X\\<around*|{|x\<leqslant\>f|}>=X\\f<rsup|-1><around*|(|<around*|[|x,\<infty\>|]>|)>\<equallim\><rsub|<text|<reference|properties
-      of image and preimage>>>f<rsup|-1><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\\<around*|[|x,\<infty\>|]>|)>f<rsup|-1><around*|(|<around*|[|-\<infty\>,x|[>|)>=<around*|{|f\<less\>a|}>>
+      <item><math|X\\<around*|{|f\<geqslant\>x|}>=X\\f<rsup|-1><around*|(|<around*|[|x,\<infty\>|]>|)>\<equallim\><rsub|<text|<reference|properties
+      of image and preimage>>>f<rsup|-1><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\\<around*|[|x,\<infty\>|]>|)>f<rsup|-1><around*|(|<around*|[|-\<infty\>,x|[>|)>=<around*|{|f\<less\>x|}>>
 
-      <item>Let <math|x\<in\>\<bbb-N\><rsub|0>> then if
+      <item>Let <math|n\<in\>\<bbb-N\><rsub|0>> then if
       <math|t\<in\><around*|{|f\<leqslant\>x|}>> we have that
       <math|f<around*|(|t|)>\<leqslant\>x\<Rightarrowlim\><rsub|x\<in\>\<bbb-R\>>f<around*|(|t|)>\<less\>x+<frac|1|n>>
       or <math|t\<in\><around*|{|f\<less\>x+<frac|1|n>|}>>. So\ 
 
       <\equation>
-        <label|eq 18.307.033><around*|{|x\<leqslant\>f|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>
+        <label|eq 18.307.033><around*|{|f\<leqslant\>x|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>
       </equation>
 
       Let <math|t\<in\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>>
       then <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have that
       <math|f<around*|(|t|)>\<less\>x+<frac|1|n>>. Assume that
-      <math|f<around*|(|t|)>\<less\>x> then by
+      <math|f<around*|(|t|)>\<gtr\>x> then by
       <reference|x\<less\>y=\<gtr\>x+1/n\<less\>y> there exists a
       <math|n\<in\>\<bbb-N\><rsub|0>> such that
-      <math|f<around*|(|t|)>+<frac|1|n>\<less\>x> a contradictionm hence
-      <math|x\<leqslant\>f<around*|(|t|)>> or
+      <math|x+<frac|1|n>\<less\>f<around*|(|t|)>> a contradiction hence
+      <math|f<around*|(|t|)>\<leqslant\>x> or
       <math|t\<in\><around*|{|f\<leqslant\>x|}>>. Combining this with
       <reference|eq 18.307.033> proves that\ 
 
       <\equation*>
-        <around*|{|x\<leqslant\>f|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>
+        <around*|{|f\<leqslant\>x|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>
       </equation*>
 
-      <item>
+      <item><math|X\\<around*|{|f\<leqslant\>x|}>=X\\f<rsup|-1><around*|(|<around*|[|-\<infty\>,x|]>|)>\<equallim\><rsub|<text|<reference|properties
+      of image and preimage>>>f<rsup|-1><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\\<around*|[|-\<infty\>,x|]>|)>=f<rsup|-1><around*|(|<around*|]|x,\<infty\>|]>|)>=<around*|{|x\<less\>f|}>>
 
       \;
     </enumerate>
@@ -9098,18 +9194,19 @@
   </proof>
 
   <\theorem>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
-    set, <math|A\<in\>\<cal-A\>> and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    <label|measurable function condition (1)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable set,
+    <math|A\<in\>\<cal-A\>> and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
     then we have the following equivalences:
 
     <\enumerate>
       <item>f is <math|\<cal-A\>>-measurable
 
       <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
-      <math|<around*|{|x\<less\>f|}>\<in\>\<cal-A\>>
+      <math|<around*|{|f\<gtr\>x|}>\<in\>\<cal-A\>>
 
       <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
-      <math|<around*|{|x\<leqslant\>f|}>\<in\>\<cal-A\>>
+      <math|<around*|{|f\<geqslant\>x|}>\<in\>\<cal-A\>>
 
       <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
       <math|<around*|{|f\<less\>x|}>\<in\>\<cal-A\>>
@@ -9127,33 +9224,761 @@
       <math|<around*|]|x,\<infty\>|]>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>\<equallim\><rsub|<text|<reference|borel
       algebra on the extended reals (3)>>>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
       we have as <math|f> is <math|\<cal-A\>>-measurable that
-      <math|<around*|{|x\<less\>f|}>=f<rsup|-1><around*|(|<around*|]|x,\<infty\>|]>|)>\<in\>\<cal-A\>>
+      <math|<around*|{|f\<gtr\>x|}>=f<rsup|-1><around*|(|<around*|]|x,\<infty\>|]>|)>\<in\>\<cal-A\>>
 
-      \ <item*|<math|2\<Rightarrow\>1>>As <math|\<forall\>x\<in\>\<bbb-R\>>
-      we have <math|f<rsup|-1><around*|(|<around*|]|a,\<infty\>|]>|)>=<around*|{|x\<less\>f|}>\<in\>\<cal-A\>>,
+      <item*|<math|2\<Rightarrow\>1>>As <math|\<forall\>x\<in\>\<bbb-R\>> we
+      have <math|f<rsup|-1><around*|(|<around*|]|a,\<infty\>|]>|)>=<around*|{|f\<gtr\>x|}>\<in\>\<cal-A\>>,
       it follows from <reference|measurable functions and generated algebra>
+      and <math|\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|]>\|a\<in\>\<bbb-R\>|}>|]>=\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
       that <math|f> is <math|\<cal-A\>,\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>-measurable
       or in other words <math|f> is <math|\<cal-A\>>-measurable.
 
-      <item*|<math|2\<Rightarrow\>3>>Let <math|x\<in\>R> then using (2) we
-      have <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> that
+      <item*|<math|2\<Rightarrow\>3>>Let <math|x\<in\>\<bbb-R\>> then using
+      (2) we have <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> that
+      <math|<around*|{|f\<gtr\>x-<frac|1|n>|}>\<in\>\<cal-A\>> hence
+      <math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>\<in\>\<cal-A\>>.
+      Using <reference|{x\<less\>f} properties>
+      \ <math|<around*|{|f\<geqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>>
+      proving that <math|<around*|{|f\<geqslant\>x|}>\<in\>\<cal-A\>>.
+
+      <item*|<math|3\<Rightarrow\>4>>Let <math|x\<in\>\<bbb-R\>> then
+      <math|<around*|{|f\<less\>x|}>\<equallim\><rsub|<text|<reference|{x\<less\>f}
+      properties>>>A\\<around*|{|f\<geqslant\>x|}>\<in\>\<cal-A\>> [as
+      <math|A,<around*|{|f\<geqslant\>x|}>\<in\>\<cal-A\>>, together with
+      <reference|properties of algebras>]\ 
+
+      <item*|<math|4\<Rightarrow\>5>>Let <math|x\<in\>\<bbb-R\>> then by (4)
+      we have that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> that
+      <math|<around*|{|f\<less\>x+<frac|1|n>|}>\<in\>\<cal-A\>> hence
+      <math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>\<in\>\<cal-A\>>.
+      Using <reference|{x\<less\>f} properties>
+      <math|<around*|{|f\<leqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>>
+      proving that <math|<around*|{|f\<leqslant\>x|}>\<in\>\<cal-A\>>
+
+      <item*|<math|5\<Rightarrow\>1>>Let <math|x\<in\>\<bbb-R\>> then
+      <math|<around*|{|x\<less\>f|}>\<equallim\><rsub|<text|<reference|{x\<less\>f}
+      properties>>>A\\<around*|{|f\<leqslant\>x|}>\<in\>\<cal-A\>> [as
+      <math|A\<in\>\<cal-A\>> together with <reference|properties of
+      algebras>]
+    </description>
+  </proof>
+
+  We have a simular result for real functions and the proofs are essentially
+  the same with the execption of some details.
+
+  <\lemma>
+    <label|{x\<less\>f} properties (1)>Let <math|X> be a set,
+    <math|f:X\<rightarrow\>\<bbb-R\>> \ and <math|x\<in\>X> then\ 
+
+    <\enumerate>
+      <item><math|<around*|{|f\<geqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>>
+
+      <item><math|X\\<around*|{|f\<geqslant\>x|}>=<around*|{|f\<less\>x|}>>
+
+      <item><math|<around*|{|f\<leqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>>
+
+      <item><math|X\\<around*|{|f\<leqslant\>x|}>=<around*|{|f\<gtr\>x|}>>
+    </enumerate>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|n\<in\>\<bbb-N\>> then if
+      <math|t\<in\><around*|{|f\<geqslant\>x|}>> we have that
+      <math|x\<leqslant\>f<around*|(|t|)>\<Rightarrowlim\>x-<frac|1|n>\<less\>f<around*|(|t|)>\<Rightarrow\>t\<in\><around*|{|f\<gtr\>x-<frac|1|n>|}>>
+      proving\ 
+
+      <\equation>
+        <label|eq 18.308.033><around*|{|f\<geqslant\>x|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>
+      </equation>
+
+      If <math|t\<in\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>>
+      then <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
+      <math|x-<frac|1|n>\<less\>f<around*|(|t|)>>. Assume that
+      <math|f<around*|(|t|)>\<less\>x> then by <reference|consequence of the
+      archimedean property for the reals> we have that
+      <math|f<around*|(|t|)>+<frac|1|n>\<less\>x\<Rightarrowlim\>f<around*|(|t|)>\<less\>x-<frac|1|n>>
+      a contradiction so we must have <math|x\<leqslant\>f<around*|(|t|)>> or
+      <math|t\<in\><around*|{|f\<geqslant\>x|}>>. So
+      <math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>\<subseteq\><around*|{|f\<geqslant\>x|}>>.
+      Combining this with <reference|eq 18.308.033> proves\ 
+
+      <\equation*>
+        <around*|{|f\<geqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<gtr\>x-<frac|1|n>|}>
+      </equation*>
+
+      <item><math|X\\<around*|{|f\<geqslant\>x|}>=X\\f<rsup|-1><around*|(|<around*|[|x,\<infty\>|[>|)>\<equallim\><rsub|<text|<reference|properties
+      of image and preimage>>>f<rsup|-1><around*|(|\<bbb-R\>\\<around*|[|x,\<infty\>|[>|)>=f<rsup|-1><around*|(|<around*|]|-\<infty\>,x|[>|)>=<around*|{|f\<less\>x|}>>
+
+      <item>Let <math|n\<in\>\<bbb-N\><rsub|0>> then if
+      <math|t\<in\><around*|{|f\<leqslant\>x|}>> we have that
+      <math|f<around*|(|t|)>\<leqslant\>x\<Rightarrowlim\>f<around*|(|t|)>\<less\>x+<frac|1|n>>
+      or <math|t\<in\><around*|{|f\<less\>x+<frac|1|n>|}>>. So\ 
+
+      <\equation>
+        <label|eq 18.309.033><around*|{|f\<leqslant\>x|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>
+      </equation>
+
+      Let <math|t\<in\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>>
+      then <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have that
+      <math|f<around*|(|t|)>\<less\>x+<frac|1|n>>. Assume that
+      <math|x\<less\>f<around*|(|t|)>> then by <reference|consequence of the
+      archimedean property for the reals> there exists a
+      <math|n\<in\>\<bbb-N\><rsub|0>> such that
+      <math|x+<frac|1|n>\<less\>f<around*|(|t|)>> a contradiction hence
+      <math|f<around*|(|t|)>\<leqslant\>x> or
+      <math|t\<in\><around*|{|f\<leqslant\>x|}>>. Combining this with
+      <reference|eq 18.309.033> proves that\ 
+
+      <\equation*>
+        <around*|{|f\<leqslant\>x|}>\<subseteq\><big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>
+      </equation*>
+
+      <item><math|X\\<around*|{|f\<leqslant\>x|}>=X\\f<rsup|-1><around*|(|<around*|]|-\<infty\>,x|]>|)>\<equallim\><rsub|<text|<reference|properties
+      of image and preimage>>>f<rsup|-1><around*|(|\<bbb-R\>\\<around*|]|-\<infty\>,x|]>|)>=f<rsup|-1><around*|(|<around*|]|x,\<infty\>|[>|)>=<around*|{|f\<gtr\>x|}>>
+
+      \;
+    </enumerate>
+  </proof>
+
+  <\theorem>
+    <label|measurable function condition (2)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable set,
+    <math|A\<in\>\<cal-A\>> and <math|f:A\<rightarrow\>\<bbb-R\>> then we
+    have the following equivalences:
+
+    <\enumerate>
+      <item>f is <math|\<cal-A\>>-measurable
+
+      <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
+      <math|<around*|{|f\<gtr\>x|}>\<in\>\<cal-A\>>
+
+      <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
+      <math|<around*|{|f\<geqslant\>x|}>\<in\>\<cal-A\>>
+
+      <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
+      <math|<around*|{|f\<less\>x|}>\<in\>\<cal-A\>>
+
+      <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
+      <math|<around*|{|f\<leqslant\>x|}>\<in\>\<cal-A\>>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|1\<Rightarrow\>2>>Take <math|x\<in\>\<bbb-R\>> then
+      <math|<around*|]|x,\<infty\>|[>\<in\>\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|[>\|a\<in\>\<bbb-R\>|}>|]>\<equallim\><rsub|<text|<reference|Borel
+      algebras on R>>>\<cal-B\><around*|[|\<bbb-R\>|]>> we have as <math|f>
+      is <math|\<cal-A\>>-measurable that
+      <math|<around*|{|f\<gtr\>x|}>=f<rsup|-1><around*|(|<around*|]|x,\<infty\>|[>|)>\<in\>\<cal-A\>>
+
+      <item*|<math|2\<Rightarrow\>1>>As <math|\<forall\>x\<in\>\<bbb-R\>> we
+      have <math|f<rsup|-1><around*|(|<around*|]|x,\<infty\>|[>|)>=<around*|{|f\<gtr\>x|}>\<in\>\<cal-A\>>,
+      it follows from <reference|measurable functions and generated algebra>
+      and <math|\<sigma\><around*|[|<around*|{|<around*|]|a,\<infty\>|[>\|a\<in\>\<bbb-R\>|}>|]>\<equallim\><rsub|<text|<reference|Borel
+      algebras on R>>>\<cal-B\><around*|[|\<bbb-R\>|]>> that <math|f> is
+      <math|\<cal-A\>,\<cal-B\><around*|[|\<bbb-R\>|]>>-measurable or in
+      other words <math|f> is <math|\<cal-A\>>-measurable.
+
+      <item*|<math|2\<Rightarrow\>3>>Let <math|x\<in\>\<bbb-R\>> then using
+      (2) we have <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> that
       <math|<around*|{|x-<frac|1|n>\<less\>f|}>\<in\>\<cal-A\>> hence
       <math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|x-<frac|1|n>\<less\>f|}>\<in\>\<cal-A\>>.
-      Using <reference|{x\<less\>f} properties> it
+      Using <reference|{x\<less\>f} properties (1)>
       <math|<around*|{|x\<leqslant\>f|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|x-<frac|1|n>\<less\>f|}>>
       proving that <math|<around*|{|x\<leqslant\>f|}>\<in\>\<cal-A\>>
 
       <item*|<math|3\<Rightarrow\>4>>Let <math|x\<in\>\<bbb-R\>> then
       <math|<around*|{|f\<less\>x|}>\<equallim\><rsub|<text|<reference|{x\<less\>f}
-      properties>>>A\\<around*|{|x\<leqslant\>f|}>\<in\>\<cal-A\>> [as
+      properties (1)>>>A\\<around*|{|f\<geqslant\>x|}>\<in\>\<cal-A\>> [as
+      <math|A,<around*|{|f\<geqslant\>x|}>\<in\>\<cal-A\>>, \ together with
+      <reference|properties of algebras>]\ 
+
+      <item*|<math|4\<Rightarrow\>5>>Let <math|x\<in\>\<bbb-R\>> then by (4)
+      we have that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> that
+      <math|<around*|{|f\<less\>x+<frac|1|n>|}>\<in\>\<cal-A\>> hence
+      <math|<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>\<in\>\<cal-A\>>.
+      Using <reference|{x\<less\>f} properties (1)>
+      <math|<around*|{|f\<leqslant\>x|}>=<big|cap><rsub|n\<in\>\<bbb-N\><rsub|0>><around*|{|f\<less\>x+<frac|1|n>|}>>
+      proving that <math|<around*|{|f\<leqslant\>x|}>\<in\>\<cal-A\>>
+
+      <item*|<math|5\<Rightarrow\>1>>Let <math|x\<in\>\<bbb-R\>> then
+      <math|<around*|{|f\<gtr\>x|}>\<equallim\><rsub|<text|<reference|{x\<less\>f}
+      properties (1)>>>A\\<around*|{|f\<leqslant\>x|}>\<in\>\<cal-A\>> [as
       <math|A\<in\>\<cal-A\>> together with <reference|properties of
-      algebras>]\ 
-
-      <item*|<math|4\<Rightarrow\>5>>
-
-      <item*|<math|5\<Rightarrow\>1>>
+      algebras>]
     </description>
   </proof>
+
+  <subsection|Example of measurable functions>
+
+  <\example>
+    <label|null function is measurable><math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>,
+    <math|<around*|\<langle\>|Y,\<cal-B\>|\<rangle\>>> be measurable spaces
+    then <math|\<emptyset\>:\<emptyset\>\<rightarrow\>Y> is
+    <math|\<cal-A\>,\<cal-B\>>-measurable.
+  </example>
+
+  <\proof>
+    Let <math|B\<in\>\<cal-B\>> then as <math|\<emptyset\><rsup|-1><around*|(|B|)>\<equallim\><rsub|<text|<reference|image
+    and inverse image>>><around*|{|x\<in\>\<emptyset\>\|\<exists\>y\<in\>Y\<vdash\><around*|(|x,y|)>\<in\>\<emptyset\>|}>=\<emptyset\>\<in\>\<cal-A\>>
+  </proof>
+
+  <\example>
+    <label|continuous functions are measurable (4)>Let
+    <math|<around*|\<langle\>|X,\<cal-T\>|\<rangle\>>> be a topological set,
+    <math|U> a open set then\ 
+
+    <\enumerate>
+      <item>If <math|f:U\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is
+      contiuous [using the subspace topolgy
+      <math|\<cal-T\><rsub|U>=<around*|{|V<big|cap>U\|V\<in\>\<cal-T\>|}>>
+      [see \ <reference|subspace topology>]] \ then <math|f> is Borel
+      measurable [more specific <math|f> is
+      <math|\<cal-B\><around*|[|X,\<cal-T\>|]>,\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>-measurable].
+
+      <item>If <math|f:U\<rightarrow\>\<bbb-R\>> is continuous \ [using the
+      subspace topolgy <math|\<cal-T\><rsub|U>=<around*|{|V<big|cap>U\|V\<in\>\<cal-T\>|}>>
+      [see <reference|subspace topology>]] \ then <math|f> is Borel
+      measurable [more specific <math|f> is
+      <math|\<cal-B\><around*|[|X,\<cal-T\>|]>,\<cal-T\><rsub|\<bbb-R\>>>-measurable].
+    </enumerate>
+  </example>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      then by continuity we have that <math|f<rsup|-1><around*|(|V|)>\<in\>\<cal-T\><rsub|U>>,
+      so there exists a <math|W\<in\>\<cal-T\>> such that
+      <math|f<rsup|-1><around*|(|V|)>=W<big|cap>U\<in\>\<cal-T\>> [as
+      <math|U,W\<in\>\<cal-T\>>], hence <math|f<rsup|-1><around*|(|V|)>\<in\>\<cal-T\>\<subseteq\>\<cal-B\><around*|[|X,\<cal-T\>|]>>.
+      Finally using <reference|measurable functions and generated algebra> it
+      follow that <math|f> is <math|\<cal-B\><around*|[|X,\<cal-T\>|]>,\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>-measurable.
+
+      <item>Let <math|V\<in\>\<cal-T\><rsub|\<bbb-R\>>> then by continuity we
+      have that <math|f<rsup|-1><around*|(|V|)>\<in\>\<cal-T\><rsub|U>>, so
+      there exists a <math|W\<in\>\<cal-T\>> such that
+      <math|f<rsup|-1><around*|(|V|)>=W<big|cap>U\<in\>\<cal-T\>> [as
+      <math|U,W\<in\>\<cal-T\>>] hence <math|f<rsup|-1><around*|(|V|)>\<in\>\<cal-T\>\<subseteq\>\<cal-B\><around*|[|X,\<cal-T\>|]>>.
+      Finally using <reference|measurable functions and generated algebra> it
+      follow that <math|f> is <math|\<cal-B\><around*|[|X,\<cal-T\>|]>,\<cal-T\><rsub|\<bbb-R\>>>-measurable.
+    </enumerate>
+  </proof>
+
+  <\example>
+    <label|characteristic function is measurable>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|A\<in\>\<cal-A\>> then\ 
+
+    <\enumerate>
+      <item><math|\<cal-X\><rsub|A>:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      defined by <math|\<cal-X\><rsub|A><around*|(|x|)>=<choice|<tformat|<table|<row|<cell|1
+      if x\<in\>A>>|<row|<cell|0 if x\<in\>X\\A>>>>>> [the characteristic
+      function [see <reference|characteristics function>]] is Borel
+      measurable.
+
+      <item><math|\<cal-X\><rsub|A>:X\<rightarrow\>\<bbb-R\>> defined by
+      <math|\<cal-X\><rsub|A><around*|(|x|)>=<choice|<tformat|<table|<row|<cell|1
+      if x\<in\>A>>|<row|<cell|0 if x\<in\>X\\A>>>>>> [the characteristic
+      function [see <reference|characteristics function>]] is Borel
+      measurable.
+    </enumerate>
+  </example>
+
+  <\proof>
+    \ The proof is the same for the two cases. Let <math|x\<in\>\<bbb-R\>>
+    then we must consider two cases:
+
+    <\description>
+      <item*|<math|1\<leqslant\>x>>then if
+      <math|t\<in\><around*|{|x\<less\>\<cal-X\><rsub|A>|}>> we have
+      <math|1\<leqslant\>\<cal-X\><rsub|A><around*|(|t|)>> and we must have
+      <math|\<cal-X\><around*|(|t|)>=1> or <math|t\<in\>A> proving that
+      <math|<around*|{|x\<leqslant\>\<cal-X\><rsub|A>|}>\<subseteq\>A>.
+      Further if <math|t\<in\>A> then <math|\<cal-X\><rsub|A><around*|(|t|)>=1\<geqslant\>1>
+      so that <math|A\<subseteq\><around*|{|x\<less\>\<cal-X\><rsub|A>|}>>.
+      Hence <math|><math|<around*|{|x\<less\>\<cal-X\><rsub|A>|}>=A\<in\>\<cal-A\>>
+
+      <item*|<math|x\<less\>1>>then if <math|t\<in\><around*|{|x\<less\>\<cal-X\><rsub|A>|}>>
+      we have <math|\<cal-X\><rsub|A><around*|(|t|)>\<less\>1> and we must
+      have <math|\<cal-X\><around*|(|t|)>=0> or <math|t\<in\>X\\A> proving
+      that <math|<around*|{|x\<less\>\<cal-X\><rsub|A>|}>\<subseteq\>X\\A>.
+      Further if <math|t\<in\>X\\A> then <math|\<cal-X\><rsub|A><around*|(|t|)>=0\<less\>1>
+      so that <math|<around*|{|x\<less\>\<cal-X\><rsub|A>|}>\<subseteq\>X\\A>.
+      Hence <math|><math|<around*|{|x\<less\>\<cal-X\><rsub|A>|}>=X\\A\<in\>\<cal-A\>>.
+    </description>
+
+    As in all cases <math|<around*|{|x\<less\>\<cal-X\><rsub|A>|}>\<in\>\<cal-A\>>
+    we have by <reference|measurable function condition (1)> (for (1)) [or
+    <reference|measurable function condition (2)> for (2)].
+  </proof>
+
+  <\definition>
+    <label|simple function>Let <math|X> be a set then a function
+    <math|f\<of\>X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is a
+    <with|font-series|bold|simple function> if <math|f<around*|(|X|)>> is
+    finite.
+  </definition>
+
+  <\example>
+    <label|simple functions are measurable>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a simple
+    function then <math|f> is <math|\<cal-A\>>-measurable if
+    <math|\<forall\>y\<in\>f<around*|(|X|)>> we have that
+    <math|<around*|{|f=y|}>=f<rsup|-1><around*|(|<around*|{|y|}>|)>\<in\>\<cal-A\>>
+  </example>
+
+  <\proof>
+    As <math|f> is a simple function we have that <math|f<around*|(|X|)>> is
+    finite. Let <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
+    then <math|f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>\<equallim\><rsub|<text|<reference|image
+    (preimage) of union , intersections>>>f<rsup|-1><around*|(|B|)><big|cap>f<rsup|-1><around*|(|f<around*|(|X|)>|)>=f<rsup|-1><around*|(|B|)><big|cap>X=f<rsup|-1><around*|(|B|)>>
+    proving that\ 
+
+    <\equation>
+      <label|eq 18.310.033>f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>=f<rsup|-1><around*|(|B|)>
+    </equation>
+
+    As <math|f<around*|(|X|)>> is finite we have that
+    <math|B<big|cap>f<around*|(|X|)>> is finite, so we have either\ 
+
+    <\description>
+      <item*|<math|B<big|cap>f<around*|(|X|)>=\<emptyset\>>>then
+      <math|f<rsup|-1><around*|(|B|)>\<equallim\><rsub|<text|<reference|eq
+      18.310.033>>>f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>=f<rsup|-1><around*|(|\<emptyset\>|)>=\<emptyset\>\<in\>\<cal-A\>>
+
+      <item*|<math|B<big|cap>f<around*|(|X|)>\<neq\>\<emptyset\>>>then\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|f<rsup|-1><around*|(|B|)>>|<cell|\<equallim\><rsub|<text|<reference|eq
+        18.310.033>>>>|<cell|f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|-1><around*|(|<big|cup><rsub|y\<in\>B<big|cap>f<around*|(|X|)>><around*|{|y|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|cup><rsub|y\<in\>B<big|cap>f<around*|(|X|)>>f<rsup|-1><around*|(|<around*|{|y|}>|)>>>>>
+      </eqnarray*>
+
+      which as <math|f<rsup|-1><around*|(|<around*|{|y|}>|)>\<in\>\<cal-A\>>
+      and <math|B<big|cap>f<around*|(|X|)>> is finite proves by
+      <reference|properties of algebras> that
+      <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>
+    </description>
+
+    So in all cases we have that <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>
+    proving that <math|f> is <math|\<cal-A\>>-measurable.
+  </proof>
+
+  <subsection|Properties of measurable functions>
+
+  <\proposition>
+    <label|function comparizatons are measurable>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|A\<in\>\<cal-A\>> and let <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    and <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be
+    <math|\<cal-A\>>-measurable functions then\ 
+
+    <\enumerate>
+      <item><math|<around*|{|f\<less\>g|}>\<in\>\<cal-A\>>
+
+      <item><math|<around*|{|f\<leqslant\>f|}>\<in\>\<cal-A\>>
+
+      <item><math|<around*|{|f=g|}>\<in\>\<cal-A\>>
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|t\<in\><around*|{|f\<less\>q|}>> then
+      <math|f<around*|(|t|)>\<less\>g<around*|(|t|)>>. Using the density of
+      the rational numbers in the extended real numbers [see
+      <reference|density of the extented reals>] there exists a
+      <math|q\<in\>\<bbb-Q\>> such that <math|f<around*|(|t|)>\<less\>q\<less\>g<around*|(|t|)>>
+      or <math|t\<in\><around*|{|f\<less\>q|}>\<wedge\>t\<in\><around*|{|g\<gtr\>q|}>>.
+      So we have\ 
+
+      <\equation>
+        <label|eq 18.311.033><around*|{|f\<less\>g|}>\<subseteq\><big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<gtr\>q|}>|)>
+      </equation>
+
+      If <math|t\<in\><big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<gtr\>q|}>|)>>
+      then <math|\<exists\>q\<in\>\<bbb-Q\>> such that
+      <math|t\<in\><around*|{|f\<less\>q|}><big|cap><around*|{|g\<gtr\>q|}>\<Rightarrow\>f<around*|(|t|)>\<less\>q\<less\>g<around*|(|t|)>\<Rightarrow\>f<around*|(|t|)>\<less\>g<around*|(|t|)>\<Rightarrow\>t\<in\><around*|{|f\<less\>g|}>>.
+      So we have <math|<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<gtr\>q|}>|)>\<subseteq\><around*|{|f\<less\>g|}>>.
+      Combining this with <reference|eq 18.311.033> we have\ 
+
+      <\equation>
+        <label|eq 18.312.033><around*|{|f\<less\>g|}>=<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<gtr\>q|}>|)>
+      </equation>
+
+      As <math|\<forall\>q\<in\>\<bbb-Q\>> we have by <reference|measurable
+      function condition (1)> that <math|<around*|{|f\<less\>q|}>,<around*|{|g\<gtr\>q|}>\<in\>\<cal-A\>=<around*|{|f\<less\>q|}><big|cap><around*|{|g\<gtr\>q|}>\<in\>\<cal-A\>>,
+      <math|Q> is denumerable [see <reference|The rational numbers are
+      denumerable>] we have by <reference|sigma algebra equivalent
+      definitions> that <math|<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<gtr\>q|}>|)>\<in\>\<cal-A\>>.
+      Hence by <reference|eq 18.312.033> we conclude that\ 
+
+      <\equation*>
+        <around*|{|f\<less\>g|}>\<in\>\<cal-A\>
+      </equation*>
+
+      <item>Now\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|t\<in\><around*|(|X\\<around*|{|g\<less\>f|}>|)>>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>X\<wedge\>\<neg\><around*|(|g<around*|(|t|)>\<less\>f<around*|(|t|)>|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>X\<wedge\>f<around*|(|t|)>\<leqslant\>g<around*|(|t|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<leqslant\>g|}>>>>>
+      </eqnarray*>
+
+      proving that <math|X\\<around*|{|g\<less\>f|}>=<around*|{|f\<leqslant\>g|}>>.
+      Using <math|<around*|(|1|)>> we have
+      <math|<around*|{|g\<less\>f|}>\<in\>\<cal-A\>> hence
+      <math|X\\<around*|{|g\<less\>f|}>\<in\>\<cal-A\>> which proves that
+
+      <\equation*>
+        <around*|{|f\<leqslant\>g|}>\<in\>\<cal-A\>
+      </equation*>
+
+      <item>Now\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|t\<in\><around*|(|<around*|{|f\<leqslant\>g|}>\\<around*|{|f\<less\>g|}>|)>>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<leqslant\>g|}>\<wedge\>t\<nin\><around*|{|f\<less\>g|}>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>X\<wedge\>f<around*|(|t|)>\<leqslant\>g<around*|(|t|)>\<wedge\>\<neg\><around*|(|f<around*|(|t|)>\<less\>g<around*|(|t|)>|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>X\<wedge\>f<around*|(|t|)>\<leqslant\>g<around*|(|t|)>\<wedge\>g<around*|(|t|)>\<leqslant\>f<around*|(|t|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>X\<wedge\>f<around*|(|t|)>=g<around*|(|t|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f=g|}>>>>>
+      </eqnarray*>
+
+      proving that <math|<around*|{|f=g|}>=<around*|{|f\<leqslant\>g|}>\\<around*|{|f\<gtr\>g|}>\<in\>\<cal-A\>>
+      [using (1), (2) and <reference|properties of algebras>].
+    </enumerate>
+  </proof>
+
+  <\definition>
+    Let <math|X> be a set and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> then\ 
+
+    <\enumerate>
+      <item><math|f\<wedge\>g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is defined by <math|<around*|(|f\<wedge\>g|)><around*|(|x|)>=max<around*|(|f<around*|(|x|)>,g<around*|(|x|)>|)>>
+
+      <item><math|f\<vee\>g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is
+      defined by <math|<around*|(|f\<vee\>g|)><around*|(|x|)>=min<around*|(|f<around*|(|x|)>,g<around*|(|x|)>|)>>
+    </enumerate>
+  </definition>
+
+  <\definition>
+    Let <math|X> be a set, <math|k\<in\>\<bbb-N\><rsub|0>> and
+    <math|<around*|{|f<rsub|n>:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    a sequence of functions then we define
+
+    <\enumerate>
+      <item><math|<below|sup|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>:X-<wide|\<bbb-R\>|\<wide-bar\>>>
+      where <math|<around*|(|<below|sup|n>f<rsub|n>|)><around*|(|x|)>=sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
+
+      <item><math|<below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>:X-<wide|\<bbb-R\>|\<wide-bar\>>>
+      where <math|<around*|(|<below|inf|n>f<rsub|n>|)><around*|(|x|)>=inf<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
+
+      <item><math|<below|lim sup|n\<rightarrow\>\<infty\>>f<rsub|n>:X\<rightarrow\>=\<bbb-R\>>
+      where <math|<around*|(|<below|lim sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>=<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>
+
+      <item><math|<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>:X\<rightarrow\>=\<bbb-R\>>
+      where <math|<around*|(|<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>=<below|lim
+      inf|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>
+
+      <item>If <math|\<forall\>x\<in\>X> <math|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>
+      exists then we define <math|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>\<of\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      by <math|<around*|(|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>
+    </enumerate>
+  </definition>
+
+  <\lemma>
+    <label|liminf or limsup of functions>Let <math|X> be a set,
+    <math|k\<in\>\<bbb-N\><rsub|0>> and <math|<around*|{|f<rsub|n>:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    a sequence of functions then
+
+    <\enumerate>
+      <item><math|<below|lim sup|n\<rightarrow\>\<infty\>>f<rsub|n>=<below|inf|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>>g<rsub|n>>
+      where <math|g<rsub|n>=<below|sup|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>f<rsub|n>>
+
+      <item><math|<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>=<below|sup|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>>h<rsub|n>>
+      where <math|h<rsub|n>=<below|inf|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>f<rsub|n>>
+    </enumerate>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|x\<in\>X>. If <math|n\<in\>\<bbb-N\><rsub|0>> then
+      <math|g<rsub|n><around*|(|x|)>=sup<around*|(|<around*|{|f<rsub|k><around*|(|x|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>.
+      So\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|(|<below|lim
+        sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>>|<cell|\<equallim\><rsub|def>>|<cell|inf<around*|(|<around*|{|sup<around*|(|<around*|{|f<rsub|k><around*|(|x|)>\|k\<in\><around*|{|n,\<ldots\>\<infty\>|}>|}>|)>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|g<rsub|n><around*|(|x|)>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<below|inf|n\<in\><around*|{|1,\<ldots\>,n|}>>g<rsub|n>|)><around*|(|x|)>>>>>
+      </eqnarray*>
+
+      proving that\ 
+
+      <\equation*>
+        <below|lim sup|n\<rightarrow\>\<infty\>>f<rsub|n>=<below|inf|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>>g<rsub|n>
+      </equation*>
+
+      <item>Let <math|x\<in\>X>. If <math|n\<in\>\<bbb-N\><rsub|0>> then
+      <math|h<rsub|n><around*|(|x|)>=inf<around*|(|<around*|{|f<rsub|k><around*|(|x|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>.
+      So\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|(|<below|lim
+        inf|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>>|<cell|\<equallim\><rsub|def>>|<cell|sup<around*|(|<around*|{|inf<around*|(|<around*|{|f<rsub|k><around*|(|x|)>\|k\<in\><around*|{|n,\<ldots\>\<infty\>|}>|}>|)>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|h<rsub|n><around*|(|x|)>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<below|inf|n\<in\><around*|{|1,\<ldots\>,n|}>>h<rsub|n>|)><around*|(|x|)>>>>>
+      </eqnarray*>
+
+      proving that\ 
+
+      <\equation*>
+        <below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>=<below|sup|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>>g<rsub|n>
+      </equation*>
+    </enumerate>
+
+    \;
+  </proof>
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>,
+    <math|A\<in\>\<cal-A\>> be a measurable space and
+    <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|g:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be
+    <math|\<cal-A\>>-measurable functions then\ 
+
+    <\enumerate>
+      <item><math|f\<wedge\>g:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is <math|\<cal-A\>>-measurable.
+
+      <item><math|f\<vee\>g:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is
+      <math|\<cal-A\>>-measurable.
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>We have Let <math|x\<in\>\<bbb-R\>> then\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|t\<in\><around*|{|<around*|(|f\<wedge\>g|)>\<less\>x|}>>|<cell|\<Leftrightarrow\>>|<cell|max<around*|(|f<around*|(|t|)>,g<around*|(|t|)>|)>\<less\>x>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|f<around*|(|t|)>\<less\>x\<wedge\>g<around*|(|t|)>\<less\>x>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<less\>x|}>\<wedge\>t\<in\><around*|{|g\<less\>x|}>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|(|<around*|{|f\<less\>x|}><big|cap><around*|{|g\<less\>x|}>|)>>>>>
+      </eqnarray*>
+
+      proving that <math|<around*|{|<around*|(|f\<wedge\>g|)>\<less\>x|}>=<around*|{|f\<less\>x|}><big|cap><around*|{|g\<less\>x|}>>.
+      As by <reference|measurable function condition (1)>
+      <math|<around*|{|f\<less\>x|}>,<around*|{|g\<less\>x|}>\<in\>\<cal-A\>>
+      it follows that <math|><math|<around*|{|f\<less\>x|}><big|cap><around*|{|g\<less\>x|}>\<in\>\<cal-A\>>.
+      Using <reference|measurable function condition (1)> again proves that
+      <math|f\<wedge\>g> is <math|\<cal-A\>>-measurable.
+
+      <item>We have Let <math|x\<in\>X> then\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|t\<in\><around*|{|<around*|(|f\<vee\>g|)>\<gtr\>x|}>>|<cell|\<Leftrightarrow\>>|<cell|min<around*|(|f<around*|(|t|)>,g<around*|(|t|)>|)>\<gtr\>x>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|f<around*|(|t|)>\<gtr\>x\<wedge\>g<around*|(|t|)>\<gtr\>x>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<gtr\>x|}>\<wedge\>t\<in\><around*|{|g\<gtr\>x|}>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|(|<around*|{|f\<gtr\>x|}><big|cap><around*|{|g\<gtr\>x|}>|)>>>>>
+      </eqnarray*>
+
+      proving that <math|<around*|{|<around*|(|f\<wedge\>g|)>\<gtr\>x|}>=<around*|{|f\<gtr\>x|}><big|cap><around*|{|g\<gtr\>x|}>>.
+      As by <reference|measurable function condition (1)>
+      <math|<around*|{|f\<gtr\>x|}>,<around*|{|g\<gtr\>x|}>\<in\>\<cal-A\>>
+      it follows that <math|><math|<around*|{|f\<gtr\>x|}><big|cap><around*|{|g\<gtr\>x|}>\<in\>\<cal-A\>>.
+      Using <reference|measurable function condition (1)> again proves that
+      <math|f\<vee\>g> is <math|\<cal-A\>>-measurable.
+    </enumerate>
+  </proof>
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
+    space, <math|A\<in\>\<cal-A\>> and <math|<around*|{|f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    a sequence of functions that are <math|\<cal-A\>>-measurable then we
+    have:
+
+    <\enumerate>
+      <item>If <math|k\<in\>\<bbb-N\><rsub|0 ><text| then
+      ><below|sup|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is <math|\<cal-A\>>-measurable.
+
+      <item>If <math|k\<in\>\<bbb-N\><rsub|0><text| then
+      ><below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is <math|\<cal-A\>>-measurable.
+
+      <item><math|<below|lim sup|n\<rightarrow\>\<infty\>>f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is <math|\<cal-A\>>-measurable.
+
+      <item><math|<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is <math|\<cal-A\>>-measurable
+
+      <item><math|D=<around*|{|x\<in\>A\|<around*|(|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>=<around*|(|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>|}>\<in\>\<cal-A\>>
+      [this is the set where by <reference|definition of limit in the
+      extented reals> <math|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>> is
+      defined] and <math|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>:D\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is <math|\<cal-A\>>-measurable.
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|x\<in\>\<bbb-R\>>. If
+      <math|t\<in\><around*|{|<around*|(|<below|sup|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<leqslant\>x|}>>
+      then <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|t|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>x>.
+      So <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
+      <math|f<rsub|n><around*|(|t|)>\<leqslant\>x\<Rightarrow\>t\<in\><around*|{|f<rsub|n>\<leqslant\>x|}>>.
+      Hence\ 
+
+      <\equation>
+        <label|eq 18.133.033><around*|{|<around*|(|<below|sup|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<leqslant\>x|}>\<subseteq\><big|cap><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<leqslant\>x|}>
+      </equation>
+
+      If <math|t\<in\><big|cap><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<leqslant\>x|}>>
+      we have <math|\<forall\>n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+      that <math|t\<in\><around*|{|f<rsub|n>\<leqslant\>x|}>\<Rightarrow\>f<rsub|n><around*|(|t|)>\<leqslant\>x>.
+      Assume that <math|x\<less\>sup<around*|(|<around*|{|f<rsub|n><around*|(|t|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
+      then there exists a <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+      such that <math|x\<less\>f<rsub|n><around*|(|t|)>> leading to the
+      contradiction <math|x\<less\>x>. Hence
+      <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|t|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>x>
+      or <math|t\<in\><around*|{|<around*|(|<below|sup|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<leqslant\>x|}>>
+      proving <math|<big|cap><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<leqslant\>x|}>\<subseteq\>><math|<around*|{|<around*|(|<below|sup|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<leqslant\>x|}>>.
+      Combining this with <reference|eq 18.133.033> gives\ 
+
+      <\equation>
+        <label|eq 18.314.033><around*|{|<around*|(|<below|sup|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<leqslant\>x|}>=<big|cap><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<leqslant\>x|}>
+      </equation>
+
+      As <math|\<forall\>n\<in\><around*|{|k,\<ldots\>,n|}>> <math|f<rsub|n>>
+      is <math|\<cal-A\>>-measurable, hence
+      <math|<around*|{|f<rsub|n>\<leqslant\>x|}>\<in\>\<cal-A\>>, applying
+      then <reference|sigma algebra equivalent definitions> proves
+      <math|<big|cap><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<leqslant\>x|}>\<in\>\<cal-A\>>
+      or using <reference|eq 18.314.033> that
+      <math|><math|<around*|{|<around*|(|<below|sup|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<leqslant\>x|}>>.
+      Using <reference|measurable function condition (1)> it follows that\ 
+
+      <\equation*>
+        <below|sup|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n> is
+        \<cal-A\><text|-measurable>
+      </equation*>
+
+      <item>Let <math|x\<in\>\<bbb-R\>>. If
+      <math|t\<in\><around*|{|<around*|(|<below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<less\>x|}>>
+      then <math|inf<around*|(|<around*|{|f<rsub|n><around*|(|t|)>\|n\<in\><around*|{|k,\<ldots\>,n|}>|}>|)>\<less\>x>.
+      So <math|\<exists\>n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such
+      that <math|f<rsub|n><around*|(|t|)>\<less\>x\<Rightarrow\>t\<in\><around*|{|f<rsub|n>\<less\>x|}>>.
+      Hence\ 
+
+      <\equation>
+        <label|eq 18.315.033><around*|{|<around*|(|<below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<less\>x|}>\<subseteq\><big|cup><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<less\>x|}>
+      </equation>
+
+      If <math|t\<in\><big|cup><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<less\>x|}>>
+      then <math|\<exists\>n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such
+      that <math|t\<in\><around*|{|f<rsub|n>\<less\>x|}>\<Rightarrow\>f<rsub|n><around*|(|t|)>\<less\>x>,
+      hence <math|inf<around*|(|<around*|{|f<rsub|n><around*|(|t|)>\|n\<in\><around*|{|k,\<ldots\>,n|}>|}>|)>\<leqslant\>f<rsub|n><around*|(|t|)>\<less\>x>,
+      proving that <math|t\<in\><around*|{|<around*|(|<below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<less\>x|}>>.
+      So <math|<big|cup><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<less\>x|}>\<subseteq\><around*|{|<around*|(|<below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<less\>x|}>>
+      which by <reference|eq 18.315.033> gives
+
+      <\equation>
+        <label|eq 18.316.033><around*|{|<around*|(|<below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<less\>x|}>=<big|cup><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<less\>x|}>
+      </equation>
+
+      As <math|\<forall\>n\<in\><around*|{|k,\<ldots\>,n|}>> <math|f<rsub|n>>
+      is <math|\<cal-A\>>-measurable, hence
+      <math|<around*|{|f<rsub|n>\<less\>x|}>\<in\>\<cal-A\>>, applying then
+      <reference|sigma algebra equivalent definitions> proves
+      <math|<big|cup><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|f<rsub|n>\<less\>x|}>\<in\>\<cal-A\>>
+      or using <reference|eq 18.314.033> that
+      <math|><math|<around*|{|<around*|(|<below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n>|)>\<leqslant\>x|}>>.
+      Using <reference|measurable function condition (1)> it follows that\ 
+
+      <\equation*>
+        <below|inf|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>f<rsub|n> is
+        \<cal-A\><text|-measurable>
+      </equation*>
+
+      <item><math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have by
+      <math|<around*|(|1|)>> that \ <math|g<rsub|n>=<below|sup|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>f<rsub|n>>
+      is <math|\<cal-A\>>-measurable. Using (2) we have then that
+      <math|<below|inf|n\<in\><around*|{|1,\<ldots\>,n|}>>g<rsub|n>> is
+      <math|\<cal-A\>>-measurable. As <math|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>\<equallim\><rsub|<text|<reference|liminf
+      or limsup of functions>>><below|inf|n\<in\><around*|{|1,\<ldots\>,n|}>>g<rsub|n>>
+      we have proved that\ 
+
+      <\equation*>
+        <below|lim sup|n\<rightarrow\>\<infty\>>f<rsub|n> is
+        \<cal-A\><text|-measurable>
+      </equation*>
+
+      <item><math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have by
+      <math|<around*|(|2|)>> that \ <math|h<rsub|n>=<below|inf|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>f<rsub|n>>
+      is <math|\<cal-A\>>-measurable. Using (1) we have then that
+      <math|<below|sup|n\<in\><around*|{|1,\<ldots\>,n|}>>h<rsub|n>> is
+      <math|\<cal-A\>>-measurable. As <math|<below|lim
+      inf|n\<rightarrow\>\<infty\>>f<rsub|n>\<equallim\><rsub|<text|<reference|liminf
+      or limsup of functions>>><below|sup|n\<in\><around*|{|1,\<ldots\>,n|}>>h<rsub|n>>
+      we have proved that\ 
+
+      <\equation*>
+        <below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n> is
+        \<cal-A\><text|-measurable>
+      </equation*>
+
+      <item>As by (3),(4) <math|><math|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>> and <math|<below|lim
+      inf|n\<rightarrow\>\<infty\>>f<rsub|n>> are
+      <math|\<cal-A\>>-measurable. Further
+      <math|D=<around*|{|x\<in\>A\|<around*|(|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>=<around*|(|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|x|)>|}>=<around*|{|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>=<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>|}>\<in\>\<cal-A\>> [see
+      <reference|function comparizatons are measurable>] proving that\ 
+
+      <\equation>
+        <label|eq 18.317.033>D\<in\>\<cal-A\>
+      </equation>
+
+      Let <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|t\<in\>D<big|cap><around*|{|<around*|(|<below|lim
+        sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)>\<leqslant\>x|}>>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>D\<wedge\><around*|(|<below|lim
+        sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|t|)>\<leqslant\>x>>|<row|<cell|>|<cell|\<Leftrightarrowlim\><rsub|t\<in\>D\<Rightarrow\><below|lim|n\<rightarrow\>\<infty\>>f<rsub|m><around*|(|t|)>=<below|lim
+        sup|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|t|)>>>|<cell|t\<in\>D\<wedge\><around*|(|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>|)><around*|(|t|)>\<leqslant\>x>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|<around*|(|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>|)>\<leqslant\>x|}>>>>>
+      </eqnarray*>
+
+      which proves that <math|><math|<around*|{|<around*|(|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>|)>\<leqslant\>x|}>=D<big|cap><around*|{|<around*|(|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)>\<leqslant\>x|}>\<in\>\<cal-A\>>
+      [as <math|D\<in\>\<cal-A\>> and <math|<around*|{|<around*|(|<below|lim
+      sup|n\<rightarrow\>\<infty\>>f<rsub|n>|)>\<leqslant\>x|}>\<in\>\<cal-A\>>
+      [see <reference|measurable function condition (1)>]]. Finally using
+      <reference|measurable function condition (1)> it follows that
+
+      <\equation*>
+        <below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>:D\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>
+        is \<cal-A\><text|-measurable>
+      </equation*>
+    </enumerate>
+  </proof>
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
 
   \;
 
@@ -9166,18 +9991,12 @@
   \ 
 
   \;
-
-  \;
-
-  \;
-
-  \;
 </body>
 
 <\initial>
   <\collection>
     <associate|chapter-nr|18>
-    <associate|page-first|764>
+    <associate|page-first|765>
     <associate|page-medium|papyrus>
     <associate|section-nr|1>
     <associate|subsection-nr|3>
@@ -9268,12 +10087,15 @@
     <associate|auto-45|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>|?>>
     <associate|auto-46|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>|?>>
     <associate|auto-47|<tuple|18.5|?>>
-    <associate|auto-48|<tuple|measurable function|?>>
-    <associate|auto-49|<tuple|Borel function|?>>
+    <associate|auto-48|<tuple|18.5.1|?>>
+    <associate|auto-49|<tuple|measurable function|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
-    <associate|auto-50|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
+    <associate|auto-50|<tuple|Borel function|?>>
+    <associate|auto-51|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
     function|?>>
-    <associate|auto-51|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|?>>
+    <associate|auto-52|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|?>>
+    <associate|auto-53|<tuple|18.5.2|?>>
+    <associate|auto-54|<tuple|18.5.3|?>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>|?>>
     <associate|auto-7|<tuple|Borel algebra|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
@@ -9284,6 +10106,7 @@
     <associate|borel algebra on the extended reals (3)|<tuple|18.32|?>>
     <associate|boundaries of a rectangle are unique|<tuple|18.39|?>>
     <associate|bounded intervals|<tuple|18.22|?>>
+    <associate|characteristic function is measurable|<tuple|18.155|?>>
     <associate|complete measures|<tuple|18.107|?>>
     <associate|completion lemma|<tuple|18.110|?>>
     <associate|completion of Borelset label|<tuple|18.113|?>>
@@ -9294,6 +10117,7 @@
     <associate|condition for a Dynkin class to be a sigma
     algebra|<tuple|18.134|?>>
     <associate|consequence of a pi-system|<tuple|18.133|?>>
+    <associate|continuous functions are measurable (4)|<tuple|18.154|?>>
     <associate|corollary 18.29|<tuple|18.29|?>>
     <associate|countable additivity implies additivity|<tuple|18.63|?>>
     <associate|empty rectaangles|<tuple|18.35|?>>
@@ -9327,6 +10151,7 @@
     <associate|eq 18.131.025|<tuple|18.154|?>>
     <associate|eq 18.132.025|<tuple|18.155|?>>
     <associate|eq 18.133.025|<tuple|18.156|?>>
+    <associate|eq 18.133.033|<tuple|18.313|?>>
     <associate|eq 18.134.025|<tuple|18.157|?>>
     <associate|eq 18.135.025|<tuple|18.158|?>>
     <associate|eq 18.136.025|<tuple|18.159|?>>
@@ -9502,7 +10327,17 @@
     <associate|eq 18.30.021|<tuple|18.35|?>>
     <associate|eq 18.306.033|<tuple|18.306|?>>
     <associate|eq 18.307.033|<tuple|18.307|?>>
+    <associate|eq 18.308.033|<tuple|18.308|?>>
+    <associate|eq 18.309.033|<tuple|18.309|?>>
     <associate|eq 18.31.021|<tuple|18.36|?>>
+    <associate|eq 18.310.033|<tuple|18.310|?>>
+    <associate|eq 18.311.033|<tuple|18.311|?>>
+    <associate|eq 18.312.033|<tuple|18.312|?>>
+    <associate|eq 18.313.033|<tuple|18.313|?>>
+    <associate|eq 18.314.033|<tuple|18.314|?>>
+    <associate|eq 18.315.033|<tuple|18.315|?>>
+    <associate|eq 18.316.033|<tuple|18.316|?>>
+    <associate|eq 18.317.033|<tuple|18.317|?>>
     <associate|eq 18.32.021|<tuple|18.37|?>>
     <associate|eq 18.33.021|<tuple|18.38|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
@@ -9608,6 +10443,7 @@
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|18.50|?>>
     <associate|finite unions and intersections|<tuple|18.7|?>>
+    <associate|function comparizatons are measurable|<tuple|18.158|?>>
     <associate|generated sigma algebra|<tuple|18.17|?>>
     <associate|half open rectangle as intersection of open
     sets|<tuple|18.51|?>>
@@ -9622,9 +10458,12 @@
     <associate|interval identities|<tuple|18.25|?>>
     <associate|lemma 18.28 set relations|<tuple|18.28|?>>
     <associate|length of interval is increasing|<tuple|18.42|?>>
+    <associate|liminf or limsup of functions|<tuple|18.161|?>>
     <associate|lower half open spaces|<tuple|18.53|?>>
     <associate|lower half open spaces are open|<tuple|18.54|?>>
     <associate|measurable function|<tuple|18.138|?>>
+    <associate|measurable function condition (1)|<tuple|18.150|?>>
+    <associate|measurable function condition (2)|<tuple|18.152|?>>
     <associate|measurable functions and generated algebra|<tuple|18.141|?>>
     <associate|measurable set alternative definition|<tuple|18.73|?>>
     <associate|measurable sets and null sets|<tuple|18.74|?>>
@@ -9637,6 +10476,7 @@
     <associate|measureable set|<tuple|18.72|?>>
     <associate|negligibility|<tuple|18.104|?>>
     <associate|negligible set properties|<tuple|18.105|?>>
+    <associate|null function is measurable|<tuple|18.153|?>>
     <associate|open,half open and bounded intervals are
     different|<tuple|18.24|?>>
     <associate|open/closed sets relation|<tuple|18.59|?>>
@@ -9648,6 +10488,7 @@
     <associate|outer measure on rectangles|<tuple|18.85|?>>
     <associate|outermeasure construction|<tuple|18.71|?>>
     <associate|properties of algebras|<tuple|18.10|?>>
+    <associate|real (extended real) measurability|<tuple|18.147|?>>
     <associate|rectangle and half open sets|<tuple|18.56|?>>
     <associate|replace countable untion of sets by disjoint union of
     sets|<tuple|18.65|?>>
@@ -9659,6 +10500,8 @@
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
     <associate|sigma algebra equivalent definitions|<tuple|18.14|?>>
     <associate|sigma algebras are Dynkin classes|<tuple|18.128|?>>
+    <associate|simple function|<tuple|18.156|?>>
+    <associate|simple functions are measurable|<tuple|18.157|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|18.49|?>>
     <associate|translation properties|<tuple|18.95|?>>
     <associate|union intersection union of families|<tuple|18.3|?>>
@@ -9673,7 +10516,8 @@
     <associate|volume of a rectangle|<tuple|18.40|?>>
     <associate|writing a countable family of sets as a disjoint familly of
     sets|<tuple|18.6|?>>
-    <associate|{x\<less\>f} properties|<tuple|18.148|?>>
+    <associate|{x\<less\>f} properties|<tuple|18.149|?>>
+    <associate|{x\<less\>f} properties (1)|<tuple|18.151|?>>
   </collection>
 </references>
 
@@ -9742,14 +10586,14 @@
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-46>>
 
-      <tuple|<tuple|measurable function>|<pageref|auto-48>>
+      <tuple|<tuple|measurable function>|<pageref|auto-49>>
 
-      <tuple|<tuple|Borel function>|<pageref|auto-49>>
+      <tuple|<tuple|Borel function>|<pageref|auto-50>>
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
-      function>|<pageref|auto-50>>
+      function>|<pageref|auto-51>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-51>>
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-52>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>Measure
@@ -9818,6 +10662,18 @@
       18.5<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-47>
+
+      <with|par-left|<quote|1tab>|18.5.1<space|2spc>Measurable functions
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-48>>
+
+      <with|par-left|<quote|1tab>|18.5.2<space|2spc>Example of measurable
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-53>>
+
+      <with|par-left|<quote|1tab>|18.5.3<space|2spc>{roperties of measurable
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-54>>
     </associate>
   </collection>
 </auxiliary>

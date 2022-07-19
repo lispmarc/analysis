@@ -291,8 +291,7 @@
   <\theorem>
     <label|density of the extented reals>If
     <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> with <math|x\<less\>y> then
-    <math|\<exists\>z\<in\><wide|\<bbb-R\>|\<wide-bar\>>> such that
-    <math|x\<less\>z\<less\>y>
+    <math|\<exists\>z\<in\>\<bbb-Q\>> such that <math|x\<less\>z\<less\>y>
   </theorem>
 
   <\proof>
@@ -300,19 +299,22 @@
     <math|x\<less\>y\<Rightarrow\>x\<neq\>y>
 
     <\description>
-      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>take then
-      <math|z=x+1\<Rightarrow\>x\<less\>z\<less\>y>
+      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then as
+      <math|x\<less\>x+1> there exists by <reference|density theorem for the
+      reals> a <math|z\<in\>\<bbb-Q\>> such that
+      <math|x\<less\>z\<less\>x+1\<less\>\<infty\>=y><math|\<Rightarrow\>x\<less\>z\<less\>y>.
 
       <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>take then
-      <math|x=0\<Rightarrow\>x\<less\>z\<less\>y>
+      <math|z=0\<in\>\<bbb-Q\>\<Rightarrow\>x\<less\>z\<less\>y>.
 
       <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>using
       <reference|density theorem for the reals> there exists then a
-      <math|z\<in\>\<bbb-R\>\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> such
-      that <math|x\<less\>x\<less\>y>
+      <math|z\<in\>\<bbb-Q\>> such that <math|x\<less\>x\<less\>y>.
 
-      <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>take then
-      <math|z=y-1> so that <math|x\<less\>z\<less\>y>
+      <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then as
+      <math|y-1\<less\>y> there exists by <reference|density theorem for the
+      reals> a <math|z\<in\>\<bbb-Q\>> such that <math|y-1\<less\>z\<less\>y>
+      so that <math|x\<less\>z\<less\>y>.
     </description>
   </proof>
 

@@ -2431,13 +2431,13 @@
   </proof>
 
   <\definition>
-    <index|<math|f<around*|(|C|)>>><index|<math|f<rsup|-1><around*|(|D|)>>>Let
+    <label|image and inverse image><index|<math|f<around*|(|C|)>>><index|<math|f<rsup|-1><around*|(|D|)>>>Let
     <math|f:A\<rightarrow\>B> be a partial function then if
     <math|C\<subseteq\>A> and <math|D\<subseteq\>B> we define
     <math|f<around*|(|C|)>=<around*|{|y\<in\>B\|\<exists\>x\<in\>C\<vdash\><around*|(|x,y|)>\<in\>f|}>>
     [called <with|font-series|bold|the image of C by f>] and
     <math|f<rsup|-1><around*|(|D|)>=<around*|{|x\<in\>A\|\<exists\>y\<in\>D\<vdash\><around*|(|x,y|)>\<in\>F|}>>
-    ([called <with|font-series|bold|the reverse image of D by f>].
+    ([called <with|font-series|bold|the inverse image of D by f>].
   </definition>
 
   <\theorem>
@@ -2587,8 +2587,8 @@
   </proof>
 
   <\example>
-    <math|\<emptyset\>:\<emptyset\>\<rightarrow\>\<emptyset\>> is a function
-    [the null function].
+    <label|null function><math|\<emptyset\>:\<emptyset\>\<rightarrow\>\<emptyset\>>
+    is a function [the null function].
   </example>
 
   <\proof>
@@ -25309,7 +25309,7 @@
   <\theorem>
     <label|density theorem for the reals><index|density
     theorem><dueto|Density Theorem>If <math|x,y\<in\>\<bbb-R\><rsub|\<bbb-C\>>>
-    such that <math|x\<less\>y> then <math|\<exists\>q\<in\>y\<bbb-Q\><rsub|\<bbb-C\>>>
+    such that <math|x\<less\>y> then <math|\<exists\>q\<in\>\<bbb-Q\><rsub|\<bbb-C\>>>
     and <math|\<exists\>r\<in\>\<bbb-R\><rsub|\<bbb-C\>>\<backslash\>\<bbb-Q\><rsub|\<bbb-C\>>>
     such that <math|x\<less\><rsub|\<bbb-R\>>q\<less\><rsub|\<bbb-R\>>y> and
     <math|x\<less\><rsub|\<bbb-R\>>r\<less\><rsub|\<bbb-R\>>y>
@@ -26366,6 +26366,7 @@
     infinite|<tuple|5.40|121>>
     <associate|if successors are equal numbers are equal|<tuple|4.15|94>>
     <associate|image (preimage) of union , intersections|<tuple|2.60|47>>
+    <associate|image and inverse image|<tuple|2.4|?>>
     <associate|image restricted function|<tuple|2.63|49>>
     <associate|image restriction of a function is a function|<tuple|2.43|43>>
     <associate|immediate successor|<tuple|2.192|74>>
@@ -26505,6 +26506,7 @@
     <associate|non zero element is a successor|<tuple|4.17|95>>
     <associate|norm in real space|<tuple|8.65|202>>
     <associate|notation for a tuple|<tuple|2.86|53>>
+    <associate|null function|<tuple|2.10|?>>
     <associate|number of elements in a finite set|<tuple|5.42|122>>
     <associate|number of elements of strict subsets of a finite
     set|<tuple|5.46|124>>
