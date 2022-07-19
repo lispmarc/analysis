@@ -9529,40 +9529,40 @@
   <\example>
     <label|simple functions are measurable>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
-    and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a simple
+    and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a simple
     function then <math|f> is <math|\<cal-A\>>-measurable if
     <math|\<forall\>y\<in\>f<around*|(|X|)>> we have that
     <math|<around*|{|f=y|}>=f<rsup|-1><around*|(|<around*|{|y|}>|)>\<in\>\<cal-A\>>
   </example>
 
   <\proof>
-    As <math|f> is a simple function we have that <math|f<around*|(|X|)>> is
+    As <math|f> is a simple function we have that <math|f<around*|(|A|)>> is
     finite. Let <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
-    then <math|f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>\<equallim\><rsub|<text|<reference|image
-    (preimage) of union , intersections>>>f<rsup|-1><around*|(|B|)><big|cap>f<rsup|-1><around*|(|f<around*|(|X|)>|)>=f<rsup|-1><around*|(|B|)><big|cap>X=f<rsup|-1><around*|(|B|)>>
+    then <math|f<rsup|-1><around*|(|B<big|cap>f<around*|(|A|)>|)>\<equallim\><rsub|<text|<reference|image
+    (preimage) of union , intersections>>>f<rsup|-1><around*|(|B|)><big|cap>f<rsup|-1><around*|(|f<around*|(|A|)>|)>=f<rsup|-1><around*|(|B|)><big|cap>A=f<rsup|-1><around*|(|B|)>>
     proving that\ 
 
     <\equation>
-      <label|eq 18.310.033>f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>=f<rsup|-1><around*|(|B|)>
+      <label|eq 18.310.033>f<rsup|-1><around*|(|B<big|cap>f<around*|(|A|)>|)>=f<rsup|-1><around*|(|B|)>
     </equation>
 
-    As <math|f<around*|(|X|)>> is finite we have that
-    <math|B<big|cap>f<around*|(|X|)>> is finite, so we have either\ 
+    As <math|f<around*|(|A|)>> is finite we have that
+    <math|B<big|cap>f<around*|(|A|)>> is finite, so we have either\ 
 
     <\description>
-      <item*|<math|B<big|cap>f<around*|(|X|)>=\<emptyset\>>>then
+      <item*|<math|B<big|cap>f<around*|(|A|)>=\<emptyset\>>>then
       <math|f<rsup|-1><around*|(|B|)>\<equallim\><rsub|<text|<reference|eq
-      18.310.033>>>f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>=f<rsup|-1><around*|(|\<emptyset\>|)>=\<emptyset\>\<in\>\<cal-A\>>
+      18.310.033>>>f<rsup|-1><around*|(|B<big|cap>f<around*|(|A|)>|)>=f<rsup|-1><around*|(|\<emptyset\>|)>=\<emptyset\>\<in\>\<cal-A\>>
 
-      <item*|<math|B<big|cap>f<around*|(|X|)>\<neq\>\<emptyset\>>>then\ 
+      <item*|<math|B<big|cap>f<around*|(|A|)>\<neq\>\<emptyset\>>>then\ 
 
       <\eqnarray*>
         <tformat|<table|<row|<cell|f<rsup|-1><around*|(|B|)>>|<cell|\<equallim\><rsub|<text|<reference|eq
-        18.310.033>>>>|<cell|f<rsup|-1><around*|(|B<big|cap>f<around*|(|X|)>|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|-1><around*|(|<big|cup><rsub|y\<in\>B<big|cap>f<around*|(|X|)>><around*|{|y|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|cup><rsub|y\<in\>B<big|cap>f<around*|(|X|)>>f<rsup|-1><around*|(|<around*|{|y|}>|)>>>>>
+        18.310.033>>>>|<cell|f<rsup|-1><around*|(|B<big|cap>f<around*|(|A|)>|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|-1><around*|(|<big|cup><rsub|y\<in\>B<big|cap>f<around*|(|A|)>><around*|{|y|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|cup><rsub|y\<in\>B<big|cap>f<around*|(|A|)>>f<rsup|-1><around*|(|<around*|{|y|}>|)>>>>>
       </eqnarray*>
 
       which as <math|f<rsup|-1><around*|(|<around*|{|y|}>|)>\<in\>\<cal-A\>>
-      and <math|B<big|cap>f<around*|(|X|)>> is finite proves by
+      and <math|B<big|cap>f<around*|(|A|)>> is finite proves by
       <reference|properties of algebras> that
       <math|f<rsup|-1><around*|(|B|)>\<in\>\<cal-A\>>
     </description>
@@ -9970,6 +9970,175 @@
     </enumerate>
   </proof>
 
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
+    space, <math|A\<in\>\<cal-A\>>, <math|\<alpha\>\<in\>\<bbb-R\><rsub|+>>
+    and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|g:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    <math|\<cal-A\>>-measurable functions such that
+    <math|f<around*|(|A|)>\<subseteq\><around*|[|0,\<infty\>|]>> and
+    <math|g<around*|(|A|)>\<subseteq\><around*|[|0,\<infty\>|]>> then\ 
+
+    <\enumerate>
+      <item><math|f+g:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> defined
+      by <math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>>
+      is <math|\<cal-A\>>-measurable\ 
+
+      <item><math|\<alpha\>\<cdot\>f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      defined by <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>>
+      is <math|\<cal-A\>>-measurable
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|x\<in\>\<bbb-R\>>. If
+      <math|t\<in\><around*|{|f+g\<less\>x|}>> then
+      <math|f<around*|(|t|)>+g<around*|(|t|)>\<less\>x\<Rightarrowlim\><rsub|0\<leqslant\>f<around*|(|t|)>+g<around*|(|t|)>\<less\>x\<Rightarrow\>g<around*|(|t|)>\<in\>\<bbb-R\>>f<around*|(|t|)>\<less\>x-g<around*|(|t|)>>
+      and using <reference|density of the extented reals> there exists a
+      <math|q\<in\>\<bbb-Q\>> such that <math|f<around*|(|t|)>\<less\>q\<less\>x-g<around*|(|t|)>\<Rightarrow\>f<around*|(|t|)>\<less\>q\<wedge\>g<around*|(|t|)>\<less\>x-q\<Rightarrow\>t\<in\><around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>>.
+      Hence\ 
+
+      <\equation>
+        <label|eq 18.318.033><around*|{|f+g\<less\>x|}>\<subseteq\><big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>
+      </equation>
+
+      Further if <math|t\<in\><big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>>
+      there exists a <math|q\<in\>\<bbb-Q\>> such that
+      <math|t\<in\><around*|{|f\<less\>q|}>\<wedge\>t\<in\><around*|{|g\<less\>x-q|}>>
+      or <math|f<around*|(|t|)>\<less\>q\<wedge\>g<around*|(|t|)>\<less\>x-q\<Rightarrowlim\>f<around*|(|t|)>+g<around*|(|t|)>\<less\>q+x-q=x>,
+      hence <math|t\<in\><around*|{|f+g|}>\<less\>x>. So
+      <math|<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>\<subseteq\><around*|{|f+g\<less\>x|}>>
+      which using <reference|eq 18.318.033> proves that\ 
+
+      <\equation>
+        <label|eq 18.319.033><around*|{|f+g\<less\>x|}>=<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>
+      </equation>
+
+      As <math|f,g> are <math|\<cal-A\>>-measurable we have that
+      <math|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>\<in\>\<cal-A\>>,
+      further, as <math|\<bbb-Q\>> is denumerable [see <reference|The
+      rational numbers are denumerable>], we can use <reference|sigma algebra
+      equivalent definitions> to conclude that
+      <math|<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>\<in\>\<cal-A\>>.
+      Hence using <reference|measurable function condition (1)> it follows
+      that\ 
+
+      <\equation*>
+        f+g:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>> is
+        \<cal-A\><text|-measurable>
+      </equation*>
+
+      <item>We have two cases to consider for <math|\<alpha\>>:
+
+      <\description>
+        <item*|<math|\<alpha\>=0>>then <math|\<forall\>x\<in\>A>
+        <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|A|)>=<around*|{|0|}>>
+        proving that <math|\<alpha\>\<cdot\>f> is a simple function and thus
+        <math|\<cal-A\>>-measurable [see <reference|simple functions are
+        measurable>]
+
+        <item*|<math|0\<less\>\<alpha\>>>Let <math|x\<in\>\<bbb-R\>> then
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|t\<in\><around*|{|\<alpha\>\<cdot\>f\<less\>x|}>>|<cell|\<Leftrightarrow\>>|<cell|\<alpha\>\<cdot\>f<around*|(|t|)>\<less\>x>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|f<around*|(|t|)>\<less\><frac|x|\<alpha\>>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<less\><frac|x|\<alpha\>>|}>>>>>
+        </eqnarray*>
+
+        proving that <math|<around*|{|\<alpha\>\<cdot\>f\<less\>x|}>=<around*|{|f\<less\><frac|x|\<alpha\>>|}>\<in\>\<cal-A\>>
+        [as <math|f> is <math|\<cal-A\>>-measurable]. Using
+        <reference|measurable function condition (1)> we have then that
+        <math|f>is <math|\<cal-A\>>-measurable.
+      </description>
+    </enumerate>
+  </proof>
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
+    space, <math|\<alpha\>\<in\>\<bbb-R\>>, <math|A\<in\>\<cal-A\>> and
+    <math|f:A\<rightarrow\>\<bbb-R\>>. <math|g:A\<rightarrow\>\<bbb-R\>>
+    <math|\<cal-A\>>-measurable functions then we have\ 
+
+    <\enumerate>
+      <item><math|f+g:X\<rightarrow\>\<bbb-R\>> defined by
+      <math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>>
+      is <math|\<cal-A\>>-meaurable.
+
+      <item><math|\<alpha\>\<cdot\>f:X\<rightarrow\>\<bbb-R\>> defined by
+      <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>>
+      is a <math|\<cal-A\>>-measurable.
+
+      <item><math|f-g:X\<rightarrow\>\<bbb-R\>> defined by
+      <math|<around*|(|f-g|)><around*|(|x|)>=f<around*|(|x|)>-g<around*|(|x|)>>
+      is <math|\<cal-A\>>-meaurable.
+
+      <item><math|f\<cdot\>g:X\<rightarrow\>\<bbb-R\>> defined by
+      <math|<around*|(|f\<cdot\>g|)><around*|(|x|)>=f<around*|(|x|)>\<cdot\>g<around*|(|x|)>>
+      is <math|\<cal-A\>>-meaurable.
+
+      <item><math|D=<around*|{|x\<in\>A\|g<around*|(|x|)>\<neq\>0|}>\<in\>\<cal-A\>>
+      and <math|<frac|f|g>:D\<rightarrow\>\<bbb-R\>> defined by
+      <math|<around*|(|<frac|f|g>|)><around*|(|x|)>=<frac|f<around*|(|x|)>|g<around*|(|x|)>>>
+      is <math|\<cal-A\>>-measurable.
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|x\<in\>\<bbb-R\>>. If
+      <math|t\<in\><around*|{|f+g\<less\>x|}>> then
+      <math|f<around*|(|t|)>+g<around*|(|t|)>\<less\>x\<Rightarrowlim\>f<around*|(|t|)>\<less\>x-g<around*|(|t|)>>
+      and using <reference|density theorem for the reals> there exists a
+      <math|q\<in\>\<bbb-Q\>> such that <math|f<around*|(|t|)>\<less\>q\<less\>x-g<around*|(|t|)>\<Rightarrow\>f<around*|(|t|)>\<less\>q\<wedge\>g<around*|(|t|)>\<less\>x-q\<Rightarrow\>t\<in\><around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>>.
+      Hence\ 
+
+      <\equation>
+        <label|eq 18.320.033><around*|{|f+g\<less\>x|}>\<subseteq\><big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>
+      </equation>
+
+      Further if <math|t\<in\><big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>>
+      there exists a <math|q\<in\>\<bbb-Q\>> such that
+      <math|t\<in\><around*|{|f\<less\>q|}>\<wedge\>t\<in\><around*|{|g\<less\>x-q|}>>
+      or <math|f<around*|(|t|)>\<less\>q\<wedge\>g<around*|(|t|)>\<less\>x-q\<Rightarrowlim\>f<around*|(|t|)>+g<around*|(|t|)>\<less\>q+x-q=x>,
+      hence <math|t\<in\><around*|{|f+g|}>\<less\>x>. So
+      <math|<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>\<subseteq\><around*|{|f+g\<less\>x|}>>
+      which using <reference|eq 18.320.033> proves that\ 
+
+      <\equation>
+        <label|eq 18.321.033><around*|{|f+g\<less\>x|}>=<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>
+      </equation>
+
+      As <math|f,g> are <math|\<cal-A\>>-measurable we have that
+      <math|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>\<in\>\<cal-A\>>,
+      further, as <math|\<bbb-Q\>> is denumerable [see <reference|The
+      rational numbers are denumerable>], we can use <reference|sigma algebra
+      equivalent definitions> to conclude that
+      <math|<big|cup><rsub|q\<in\>\<bbb-Q\>><around*|(|<around*|{|f\<less\>q|}><big|cap><around*|{|g\<less\>x-q|}>|)>\<in\>\<cal-A\>>.
+      Hence using <reference|measurable function condition (1)> it follows
+      that\ 
+
+      <\equation*>
+        f+g:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>> is
+        \<cal-A\><text|-measurable>
+      </equation*>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+    </enumerate>
+  </proof>
+
+  \;
+
+  \;
+
   \;
 
   \;
@@ -10338,7 +10507,11 @@
     <associate|eq 18.315.033|<tuple|18.315|?>>
     <associate|eq 18.316.033|<tuple|18.316|?>>
     <associate|eq 18.317.033|<tuple|18.317|?>>
+    <associate|eq 18.318.033|<tuple|18.318|?>>
+    <associate|eq 18.319.033|<tuple|18.319|?>>
     <associate|eq 18.32.021|<tuple|18.37|?>>
+    <associate|eq 18.320.033|<tuple|18.320|?>>
+    <associate|eq 18.321.033|<tuple|18.321|?>>
     <associate|eq 18.33.021|<tuple|18.38|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
     <associate|eq 18.35.021|<tuple|18.40|?>>
