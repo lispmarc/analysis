@@ -2437,7 +2437,7 @@
     <math|f<around*|(|C|)>=<around*|{|y\<in\>B\|\<exists\>x\<in\>C\<vdash\><around*|(|x,y|)>\<in\>f|}>>
     [called <with|font-series|bold|the image of C by f>] and
     <math|f<rsup|-1><around*|(|D|)>=<around*|{|x\<in\>A\|\<exists\>y\<in\>D\<vdash\><around*|(|x,y|)>\<in\>F|}>>
-    ([called <with|font-series|bold|the inverse image of D by f>].
+    ([called <with|font-series|bold|the preimage of D by f>].
   </definition>
 
   <\theorem>
@@ -2946,6 +2946,25 @@
     Finally if <math|f> is a function then <math|dom<around*|(|f|)>=A> so
     that <math|dom<around*|(|f<rsub|\|C>|)>=A<big|cap>C\<equallim\><rsub|C\<subseteq\>A>A>
     proving that <math|f<rsub|\|C>:C\<rightarrow\>B> is a function.
+  </proof>
+
+  <\theorem>
+    <label|inverse image of a restricted function>Let
+    <math|f:A\<rightarrow\>B> be a function and <math|C\<subseteq\>A> and
+    <math|D\<subseteq\>B> then <math|<around*|(|f<rsub|\|C>|)><rsup|-1><around*|(|D|)>=C<big|cap>f<rsup|-1><around*|(|D|)>>
+  </theorem>
+
+  <\proof>
+    If <math|x\<in\><around*|(|f<rsub|\|C>|)><rsup|-1><around*|(|D|)>> then
+    [see <reference|image and inverse image>] <math|\<exists\>y\<in\>D> such
+    that <math|<around*|(|x,y|)>\<in\>f<rsub|\|C>\<subseteq\>C\<times\>B> so
+    as <math|f<rsub|C>\<subseteq\>f> we have
+    <math|x\<in\>D\<wedge\><around*|(|x,y|)>\<in\>f> proving that
+    <math|x\<in\>f<rsup|-1><around*|(|D|)><big|cap>C>.<space|1em>If
+    <math|x\<in\>C<big|cap>f<rsup|-1><around*|(|D|)>> then <math|x\<in\>C>
+    and <math|\<exists\>y\<in\>D> such that <math|<around*|(|x,y|)>\<in\>f>
+    so <math|<around*|(|x,y|)>=f<rsub|\|C>> proving that
+    <math|x\<in\><around*|(|f<rsub|\|C>|)><rsup|-1><around*|(|D|)>>
   </proof>
 
   <\theorem>
@@ -21585,172 +21604,172 @@
         <math|\<alpha\>\<leqslant\>\<beta\><rsup|n>>
       </enumerate>
     </enumerate>
+  </theorem>
 
-    <\proof>
-      \ 
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>If <math|\<alpha\>\<in\>\<bbb-R\><rsub|+>> then
+      <math|\<alpha\>\<upl\><around*|(|\<um\>0|)>=\<alpha\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>0\<less\>\<alpha\>>.
+      On the other hand if <math|0\<less\>\<alpha\>> then
+      <math|\<bbb-R\><rsub|+>\<ni\>\<alpha\>\<upl\><around*|(|-0|)>=\<alpha\>\<Rightarrow\>\<alpha\>\<in\>\<bbb-R\><rsub|+>>.
+
+      <item>If <math|\<alpha\>\<in\>\<bbb-R\><rsub|->> then
+      <math|\<um\>\<alpha\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>0\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<less\>0>.
+      If <math|\<alpha\>\<less\>0\<Rightarrow\>0\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>-\<alpha\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<in\>\<bbb-R\><rsub|->>
+
+      <item>If <math|\<alpha\>\<comma\>\<beta\>\<in\>\<bbb-R\>> then we have
+      by <reference|disjoint union of reals> the following exclusive possible
+      cases for <math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>>
 
       <\enumerate>
-        <item>If <math|\<alpha\>\<in\>\<bbb-R\><rsub|+>> then
-        <math|\<alpha\>\<upl\><around*|(|\<um\>0|)>=\<alpha\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>0\<less\>\<alpha\>>.
-        On the other hand if <math|0\<less\>\<alpha\>> then
-        <math|\<bbb-R\><rsub|+>\<ni\>\<alpha\>\<upl\><around*|(|-0|)>=\<alpha\>\<Rightarrow\>\<alpha\>\<in\>\<bbb-R\><rsub|+>>.
+        <item><math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>\<in\>\<bbb-R\><rsub|+>\<Leftrightarrow\>\<beta\>\<less\>\<alpha\>>
 
-        <item>If <math|\<alpha\>\<in\>\<bbb-R\><rsub|->> then
-        <math|\<um\>\<alpha\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>0\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<less\>0>.
-        If <math|\<alpha\>\<less\>0\<Rightarrow\>0\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>-\<alpha\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<in\>\<bbb-R\><rsub|->>
+        <item><math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>\<in\>\<bbb-R\><rsub|->\<Leftrightarrow\>-<around*|(|\<alpha\>\<upl\><around*|(|-\<beta\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Leftrightarrow\>\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Leftrightarrow\>\<alpha\>\<less\>\<beta\>>
 
-        <item>If <math|\<alpha\>\<comma\>\<beta\>\<in\>\<bbb-R\>> then we
-        have by <reference|disjoint union of reals> the following exclusive
-        possible cases for <math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>>
-
-        <\enumerate>
-          <item><math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>\<in\>\<bbb-R\><rsub|+>\<Leftrightarrow\>\<beta\>\<less\>\<alpha\>>
-
-          <item><math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>\<in\>\<bbb-R\><rsub|->\<Leftrightarrow\>-<around*|(|\<alpha\>\<upl\><around*|(|-\<beta\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Leftrightarrow\>\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Leftrightarrow\>\<alpha\>\<less\>\<beta\>>
-
-          <item><math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>=0\<Leftrightarrow\>\<alpha\>=\<beta\>>
-        </enumerate>
-
-        <item>If <math|\<alpha\>,\<beta\>\<in\>\<bbb-R\>> with
-        <math|\<alpha\>\<less\>\<beta\>> then
-        <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\><around*|(|-\<alpha\>|)>\<upl\><around*|(|-<around*|(|-\<beta\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>-\<beta\>\<less\>-\<alpha\>>
-
-        <item>If <math|\<alpha\>,\<beta\>,\<gamma\>\<in\>\<bbb-R\>> with
-        <math|\<alpha\>\<less\>\<beta\>> then
-        <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<beta\>\<upl\>\<gamma\>+<around*|(|-\<gamma\>|)>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\><around*|(|\<beta\>\<upl\>\<gamma\>|)>\<upl\><around*|(|\<um\><around*|(|\<alpha\>\<upl\>\<gamma\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<upl\>\<gamma\>\<less\>\<beta\>\<upl\>\<gamma\>>
-
-        <item>If <math|\<alpha\>,\<beta\>\<in\>\<bbb-R\>> with
-        <math|\<alpha\>\<less\>\<beta\>> and
-        <math|\<gamma\>\<in\>\<bbb-R\><rsub|+>> then
-        <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>>
-        then using <reference|0\<less\>a,b=\<less\>0\<less\>a+b,a.b a,b
-        reals> we have <math|<around*|(|\<beta\>\<upl\><around*|(|-\<alpha\>|)>|)>\<cdot\>\<gamma\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<beta\>\<cdot\>\<gamma\>\<upl\><around*|(|-\<alpha\>|)>\<cdot\>\<gamma\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\><around*|(|\<beta\>\<cdot\>\<gamma\>|)>\<upl\><around*|(|\<um\><around*|(|\<alpha\>\<cdot\>\<gamma\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<cdot\>\<gamma\>\<less\>\<beta\>\<cdot\>\<gamma\>>
-
-        <item>If <math|\<alpha\>,\<beta\>\<in\>\<bbb-R\>> with
-        <math|\<alpha\>\<less\>\<beta\>> and
-        <math|\<gamma\>\<in\>\<bbb-R\><rsub|->> then
-        <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>>
-        and <math|-\<gamma\>\<in\>\<bbb-R\><rsub|+>> then using
-        <reference|0\<less\>a,b=\<less\>0\<less\>a+b,a.b a,b reals> we have
-        <math|\<bbb-R\><rsub|+>\<ni\><around*|(|\<beta\>\<upl\><around*|(|\<um\>\<alpha\>|)>|)>\<cdot\><around*|(|\<um\>\<gamma\>|)>=\<um\><around*|(|<around*|(|\<beta\>\<upl\><around*|(|-\<alpha\>|)>|)>\<cdot\>\<gamma\>|)>=-<around*|(|\<beta\>\<cdot\>\<gamma\>\<upl\><around*|(|-<around*|(|\<alpha\>\<cdot\>\<gamma\>|)>|)>|)>=<around*|(|\<alpha\>\<cdot\>\<gamma\>|)>\<upl\><around*|(|-<around*|(|\<beta\>\<cdot\>\<gamma\>|)>|)>\<Rightarrow\>\<beta\>\<cdot\>\<gamma\>\<less\>\<alpha\>\<cdot\>\<gamma\>>
-
-        <item>Let <math|0\<less\>x> consider then the following possible
-        cases for <math|x<rsup|-1>> are
-
-        <\enumerate>
-          <item><dueto|<math|x<rsup|-1>=0>>then
-          <math|1=x\<cdot\>x<rsup|-1>=0> contradicting <math|1\<neq\>0>
-
-          <item><dueto|<math|x<rsup|-1>\<less\>0>>then using (6)
-          <math|1=x\<cdot\>x<rsup|-1>\<less\>0\<cdot\>x=0\<Rightarrow\>1\<less\>0>
-          contradicting <math|0\<less\>1>
-
-          <item><dueto|<math|0\<less\>x<rsup|-1>>>this is the only case left
-          and proves thus (8)
-        </enumerate>
-
-        <item>If <math|0\<less\>x\<less\>y\<Rightarrowlim\><rsub|<around*|(|8|)>>0\<less\>x<rsup|-1>,y<rsup|-1>>
-        and using (6) we have <math|1=x\<cdot\>x<rsup|-1>\<less\>y\<cdot\>x<rsup|-1>\<Rightarrow\>1\<less\>y\<cdot\>x<rsup|-1>\<Rightarrow\>y<rsup|-1>=1\<cdot\>y<rsup|-1>\<less\><around*|(|y\<cdot\>x<rsup|-1>|)>\<cdot\>y<rsup|-1>=x<rsup|-1>\<Rightarrow\>y<rsup|-1>\<less\>x<rsup|-1>>
-
-        <item>If <math|x\<in\>\<bbb-R\>> then we have
-
-        <\enumerate>
-          <item><dueto|<math|x=0>><math|\<Rightarrow\>x<rsup|2>=x\<cdot\>x=0\<cdot\>0=0\<Rightarrow\>0\<leqslant\>x<rsup|2>>
-
-          <item><dueto|<math|x\<less\>0>><math|\<Rightarrow\>-0\<less\>-x\<Rightarrow\>0\<less\>-x\<Rightarrow\>0\<less\><around*|(|-x|)>\<cdot\><around*|(|-x|)>=<around*|(|-1|)><rsup|2><around*|(|x\<cdot\>x|)>=x<rsup|2>\<Rightarrow\>0\<less\>x<rsup|2>>
-
-          <item><dueto|<math|0\<less\>x>><math|\<Rightarrow\>0\<cdot\>x\<less\>x\<cdot\>x\<Rightarrow\>0\<less\>x<rsup|2>>
-        </enumerate>
-
-        <item>If <math|x,y\<in\>\<bbb-R\><rsub|+><big|cup><around*|{|0|}>> is
-        such that <math|x\<less\>y> then we have to consider the following
-        cases for <math|x>
-
-        <\enumerate>
-          <item><dueto|<math|x=0>>then <math|x<rsup|2>=0\<cdot\>0\<less\>y\<Rightarrow\>x<rsup|2>=0\<equallim\><rsub|<around*|(|6|)>>0\<cdot\>y\<less\>y\<cdot\>y=y<rsup|2>\<Rightarrow\>x<rsup|2>\<less\>y<rsup|2>>
-
-          <item><dueto|<math|0\<less\>x>>then from <math|0\<less\>x\<less\>y>
-          we have <math|x,y\<in\>R<rsub|+>> and using (6) we get
-          <math|x\<cdot\>x\<less\>y\<cdot\>x> and
-          <math|x\<cdot\>y\<less\>y\<cdot\>y> giving
-          <math|x\<cdot\>x\<less\>y\<cdot\>y\<Rightarrow\>x<rsup|2>\<less\>y<rsup|2>>
-        </enumerate>
-
-        <item>If <math|\<alpha\>\<in\>\<bbb-R\><rsub|+>> then
-        <math|0\<less\>\<alpha\>> we proceed now by induction on <math|n> to
-        prove that <math|\<forall\>n\<in\>\<bbb-N\>> we have
-        <math|0\<less\>\<alpha\><rsup|n>>. So let
-        <math|X=<around*|{|n\<in\>\<bbb-N\>\|if 0\<less\>\<alpha\> then
-        0\<less\>\<alpha\><rsup|n>|}>> then we have:
-
-        <\enumerate>
-          <item><math|\<alpha\><rsup|0>=1\<gtr\>0\<Rightarrow\>0\<in\>X>
-
-          <item>If <math|n\<in\>X> then if <math|0\<less\>\<alpha\>> we have
-          <math|0\<less\>\<alpha\><rsup|n>>. Now
-          <math|\<alpha\><rsup|n+1>=\<alpha\><rsup|n>\<cdot\>\<alpha\>\<Rightarrowlim\><rsub|0\<less\>\<alpha\><rsup|n>,\<alpha\>\<in\>\<bbb-R\><rsub|+>
-          and <around*|(|6|)>>0\<less\>\<alpha\><rsup|n>\<cdot\>\<alpha\>=\<alpha\><rsup|n\<upl\>1>\<Rightarrow\>n\<upl\>1\<in\>X>
-        </enumerate>
-
-        Using mathematical induction (see <reference|mathematical induction>)
-        we have <math|X=\<bbb-N\>> proving our assertion.
-
-        <item>Let <math|\<alpha\>\<in\>\<bbb-R\><rsub|+>> with
-        <math|0\<less\>\<alpha\>\<less\>1> then if <math|n\<in\>\<bbb-N\>> we
-        have by (12) already <math|0\<less\>\<alpha\><rsup|n>>. Now to prove
-        <math|\<alpha\><rsup|n>\<less\>\<alpha\>> take
-        <math|S=<around*|{|n\<less\>\<bbb-N\>\|if \<alpha\>\<less\>1 then
-        \<alpha\><rsup|n>\<less\>\<alpha\>|}>> then we have\ 
-
-        <\enumerate>
-          <item>if <math|n=1> then <math|\<alpha\><rsup|1>=\<alpha\>\<less\>1>
-          so that <math|1\<in\>S>
-
-          <item>if <math|n\<in\>S> then <math|\<alpha\><rsup|n+1>=\<alpha\><rsup|n>\<cdot\>\<alpha\>\<less\>\<alpha\>>
-          [as <math|n\<in\>S\<Rightarrow\>\<alpha\><rsup|n>\<less\>1\<Rightarrowlim\><rsub|0\<less\>\<alpha\>
-          and <around*|(|6|)>>\<alpha\><rsup|n>\<cdot\>\<alpha\>\<less\>1\<cdot\>\<alpha\>=\<alpha\>>]
-        </enumerate>
-
-        <item>\ 
-
-        <\enumerate>
-          <item>We prove this by induction so let
-          <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\>\|\<alpha\>\<less\>\<beta\><rsup|n>|}>>
-          then we have\ 
-
-          <\description>
-            <item*|<math|1\<in\>\<cal-S\>>>this follows from
-            <math|\<alpha\>\<less\>\<beta\>=\<beta\><rsup|1>>
-
-            <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>as
-            <math|n\<in\>\<cal-S\>> we have
-            <math|\<alpha\>\<less\>\<beta\><rsup|n>> we have by (6) that
-            <math|\<alpha\>\<cdot\>\<beta\>\<less\>\<beta\>\<cdot\>\<beta\><rsup|n>=\<beta\><rsup|n+1>>
-            and <math|1\<leq\>\<alpha\>\<Rightarrow\>\<beta\>\<leqslant\>\<alpha\>\<cdot\>\<beta\>\<Rightarrowlim\><rsub|\<alpha\>\<less\>\<beta\>>\<alpha\>\<less\>\<alpha\>\<cdot\>\<beta\>\<less\>\<beta\><rsup|n+1>>
-            proving that <math|n+1\<in\>\<cal-S\>>
-          </description>
-
-          <item>We prove this by induction so let
-          <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\>\|\<alpha\>\<leqslant\>\<beta\><rsup|n>|}>>
-          then we have\ 
-
-          <\description>
-            <item*|<math|1\<in\>\<cal-S\>>>this follows from
-            <math|\<alpha\>\<leqslant\>\<beta\>=\<beta\><rsup|1>>
-
-            <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>as
-            <math|n\<in\>\<cal-S\>> we have
-            <math|\<alpha\>\<leqslant\>\<beta\><rsup|n>> we have by (6) that
-            <math|\<alpha\>\<cdot\>\<beta\>\<leqslant\>\<beta\>\<cdot\>\<beta\><rsup|n>=\<beta\><rsup|n+1>>
-            and <math|1\<leq\>\<alpha\>\<Rightarrow\>\<beta\>\<leqslant\>\<alpha\>\<cdot\>\<beta\>\<Rightarrowlim\><rsub|\<alpha\>\<leqslant\>\<beta\>>\<alpha\>\<leqslant\>\<alpha\>\<cdot\>\<beta\>\<leqslant\>\<beta\><rsup|n+1>>
-            proving that <math|n+1\<in\>\<cal-S\>>
-          </description>
-        </enumerate>
-
-        \ 
+        <item><math|\<alpha\>\<upl\><around*|(|-\<beta\>|)>=0\<Leftrightarrow\>\<alpha\>=\<beta\>>
       </enumerate>
-    </proof>
-  </theorem>
+
+      <item>If <math|\<alpha\>,\<beta\>\<in\>\<bbb-R\>> with
+      <math|\<alpha\>\<less\>\<beta\>> then
+      <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\><around*|(|-\<alpha\>|)>\<upl\><around*|(|-<around*|(|-\<beta\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>-\<beta\>\<less\>-\<alpha\>>
+
+      <item>If <math|\<alpha\>,\<beta\>,\<gamma\>\<in\>\<bbb-R\>> with
+      <math|\<alpha\>\<less\>\<beta\>> then
+      <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<beta\>\<upl\>\<gamma\>+<around*|(|-\<gamma\>|)>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\><around*|(|\<beta\>\<upl\>\<gamma\>|)>\<upl\><around*|(|\<um\><around*|(|\<alpha\>\<upl\>\<gamma\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<upl\>\<gamma\>\<less\>\<beta\>\<upl\>\<gamma\>>
+
+      <item>If <math|\<alpha\>,\<beta\>\<in\>\<bbb-R\>> with
+      <math|\<alpha\>\<less\>\<beta\>> and
+      <math|\<gamma\>\<in\>\<bbb-R\><rsub|+>> then
+      <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>>
+      then using <reference|0\<less\>a,b=\<less\>0\<less\>a+b,a.b a,b reals>
+      we have <math|<around*|(|\<beta\>\<upl\><around*|(|-\<alpha\>|)>|)>\<cdot\>\<gamma\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<beta\>\<cdot\>\<gamma\>\<upl\><around*|(|-\<alpha\>|)>\<cdot\>\<gamma\>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\><around*|(|\<beta\>\<cdot\>\<gamma\>|)>\<upl\><around*|(|\<um\><around*|(|\<alpha\>\<cdot\>\<gamma\>|)>|)>\<in\>\<bbb-R\><rsub|+>\<Rightarrow\>\<alpha\>\<cdot\>\<gamma\>\<less\>\<beta\>\<cdot\>\<gamma\>>
+
+      <item>If <math|\<alpha\>,\<beta\>\<in\>\<bbb-R\>> with
+      <math|\<alpha\>\<less\>\<beta\>> and
+      <math|\<gamma\>\<in\>\<bbb-R\><rsub|->> then
+      <math|\<beta\>\<upl\><around*|(|-\<alpha\>|)>\<in\>\<bbb-R\><rsub|+>>
+      and <math|-\<gamma\>\<in\>\<bbb-R\><rsub|+>> then using
+      <reference|0\<less\>a,b=\<less\>0\<less\>a+b,a.b a,b reals> we have
+      <math|\<bbb-R\><rsub|+>\<ni\><around*|(|\<beta\>\<upl\><around*|(|\<um\>\<alpha\>|)>|)>\<cdot\><around*|(|\<um\>\<gamma\>|)>=\<um\><around*|(|<around*|(|\<beta\>\<upl\><around*|(|-\<alpha\>|)>|)>\<cdot\>\<gamma\>|)>=-<around*|(|\<beta\>\<cdot\>\<gamma\>\<upl\><around*|(|-<around*|(|\<alpha\>\<cdot\>\<gamma\>|)>|)>|)>=<around*|(|\<alpha\>\<cdot\>\<gamma\>|)>\<upl\><around*|(|-<around*|(|\<beta\>\<cdot\>\<gamma\>|)>|)>\<Rightarrow\>\<beta\>\<cdot\>\<gamma\>\<less\>\<alpha\>\<cdot\>\<gamma\>>
+
+      <item>Let <math|0\<less\>x> consider then the following possible cases
+      for <math|x<rsup|-1>> are
+
+      <\enumerate>
+        <item><dueto|<math|x<rsup|-1>=0>>then <math|1=x\<cdot\>x<rsup|-1>=0>
+        contradicting <math|1\<neq\>0>
+
+        <item><dueto|<math|x<rsup|-1>\<less\>0>>then using (6)
+        <math|1=x\<cdot\>x<rsup|-1>\<less\>0\<cdot\>x=0\<Rightarrow\>1\<less\>0>
+        contradicting <math|0\<less\>1>
+
+        <item><dueto|<math|0\<less\>x<rsup|-1>>>this is the only case left
+        and proves thus (8)
+      </enumerate>
+
+      <item>If <math|0\<less\>x\<less\>y\<Rightarrowlim\><rsub|<around*|(|8|)>>0\<less\>x<rsup|-1>,y<rsup|-1>>
+      and using (6) we have <math|1=x\<cdot\>x<rsup|-1>\<less\>y\<cdot\>x<rsup|-1>\<Rightarrow\>1\<less\>y\<cdot\>x<rsup|-1>\<Rightarrow\>y<rsup|-1>=1\<cdot\>y<rsup|-1>\<less\><around*|(|y\<cdot\>x<rsup|-1>|)>\<cdot\>y<rsup|-1>=x<rsup|-1>\<Rightarrow\>y<rsup|-1>\<less\>x<rsup|-1>>
+
+      <item>If <math|x\<in\>\<bbb-R\>> then we have
+
+      <\enumerate>
+        <item><dueto|<math|x=0>><math|\<Rightarrow\>x<rsup|2>=x\<cdot\>x=0\<cdot\>0=0\<Rightarrow\>0\<leqslant\>x<rsup|2>>
+
+        <item><dueto|<math|x\<less\>0>><math|\<Rightarrow\>-0\<less\>-x\<Rightarrow\>0\<less\>-x\<Rightarrow\>0\<less\><around*|(|-x|)>\<cdot\><around*|(|-x|)>=<around*|(|-1|)><rsup|2><around*|(|x\<cdot\>x|)>=x<rsup|2>\<Rightarrow\>0\<less\>x<rsup|2>>
+
+        <item><dueto|<math|0\<less\>x>><math|\<Rightarrow\>0\<cdot\>x\<less\>x\<cdot\>x\<Rightarrow\>0\<less\>x<rsup|2>>
+      </enumerate>
+
+      <item>If <math|x,y\<in\>\<bbb-R\><rsub|+><big|cup><around*|{|0|}>> is
+      such that <math|x\<less\>y> then we have to consider the following
+      cases for <math|x>
+
+      <\enumerate>
+        <item><dueto|<math|x=0>>then <math|x<rsup|2>=0\<cdot\>0\<less\>y\<Rightarrow\>x<rsup|2>=0\<equallim\><rsub|<around*|(|6|)>>0\<cdot\>y\<less\>y\<cdot\>y=y<rsup|2>\<Rightarrow\>x<rsup|2>\<less\>y<rsup|2>>
+
+        <item><dueto|<math|0\<less\>x>>then from <math|0\<less\>x\<less\>y>
+        we have <math|x,y\<in\>R<rsub|+>> and using (6) we get
+        <math|x\<cdot\>x\<less\>y\<cdot\>x> and
+        <math|x\<cdot\>y\<less\>y\<cdot\>y> giving
+        <math|x\<cdot\>x\<less\>y\<cdot\>y\<Rightarrow\>x<rsup|2>\<less\>y<rsup|2>>
+      </enumerate>
+
+      <item>If <math|\<alpha\>\<in\>\<bbb-R\><rsub|+>> then
+      <math|0\<less\>\<alpha\>> we proceed now by induction on <math|n> to
+      prove that <math|\<forall\>n\<in\>\<bbb-N\>> we have
+      <math|0\<less\>\<alpha\><rsup|n>>. So let
+      <math|X=<around*|{|n\<in\>\<bbb-N\>\|if 0\<less\>\<alpha\> then
+      0\<less\>\<alpha\><rsup|n>|}>> then we have:
+
+      <\enumerate>
+        <item><math|\<alpha\><rsup|0>=1\<gtr\>0\<Rightarrow\>0\<in\>X>
+
+        <item>If <math|n\<in\>X> then if <math|0\<less\>\<alpha\>> we have
+        <math|0\<less\>\<alpha\><rsup|n>>. Now
+        <math|\<alpha\><rsup|n+1>=\<alpha\><rsup|n>\<cdot\>\<alpha\>\<Rightarrowlim\><rsub|0\<less\>\<alpha\><rsup|n>,\<alpha\>\<in\>\<bbb-R\><rsub|+>
+        and <around*|(|6|)>>0\<less\>\<alpha\><rsup|n>\<cdot\>\<alpha\>=\<alpha\><rsup|n\<upl\>1>\<Rightarrow\>n\<upl\>1\<in\>X>
+      </enumerate>
+
+      Using mathematical induction (see <reference|mathematical induction>)
+      we have <math|X=\<bbb-N\>> proving our assertion.
+
+      <item>Let <math|\<alpha\>\<in\>\<bbb-R\><rsub|+>> with
+      <math|0\<less\>\<alpha\>\<less\>1> then if <math|n\<in\>\<bbb-N\>> we
+      have by (12) already <math|0\<less\>\<alpha\><rsup|n>>. Now to prove
+      <math|\<alpha\><rsup|n>\<less\>\<alpha\>> take
+      <math|S=<around*|{|n\<less\>\<bbb-N\>\|if \<alpha\>\<less\>1 then
+      \<alpha\><rsup|n>\<less\>\<alpha\>|}>> then we have\ 
+
+      <\enumerate>
+        <item>if <math|n=1> then <math|\<alpha\><rsup|1>=\<alpha\>\<less\>1>
+        so that <math|1\<in\>S>
+
+        <item>if <math|n\<in\>S> then <math|\<alpha\><rsup|n+1>=\<alpha\><rsup|n>\<cdot\>\<alpha\>\<less\>\<alpha\>>
+        [as <math|n\<in\>S\<Rightarrow\>\<alpha\><rsup|n>\<less\>1\<Rightarrowlim\><rsub|0\<less\>\<alpha\>
+        and <around*|(|6|)>>\<alpha\><rsup|n>\<cdot\>\<alpha\>\<less\>1\<cdot\>\<alpha\>=\<alpha\>>]
+      </enumerate>
+
+      <item>\ 
+
+      <\enumerate>
+        <item>We prove this by induction so let
+        <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\>\|\<alpha\>\<less\>\<beta\><rsup|n>|}>>
+        then we have\ 
+
+        <\description>
+          <item*|<math|1\<in\>\<cal-S\>>>this follows from
+          <math|\<alpha\>\<less\>\<beta\>=\<beta\><rsup|1>>
+
+          <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>as
+          <math|n\<in\>\<cal-S\>> we have
+          <math|\<alpha\>\<less\>\<beta\><rsup|n>> we have by (6) that
+          <math|\<alpha\>\<cdot\>\<beta\>\<less\>\<beta\>\<cdot\>\<beta\><rsup|n>=\<beta\><rsup|n+1>>
+          and <math|1\<leq\>\<alpha\>\<Rightarrow\>\<beta\>\<leqslant\>\<alpha\>\<cdot\>\<beta\>\<Rightarrowlim\><rsub|\<alpha\>\<less\>\<beta\>>\<alpha\>\<less\>\<alpha\>\<cdot\>\<beta\>\<less\>\<beta\><rsup|n+1>>
+          proving that <math|n+1\<in\>\<cal-S\>>
+        </description>
+
+        <item>We prove this by induction so let
+        <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\>\|\<alpha\>\<leqslant\>\<beta\><rsup|n>|}>>
+        then we have\ 
+
+        <\description>
+          <item*|<math|1\<in\>\<cal-S\>>>this follows from
+          <math|\<alpha\>\<leqslant\>\<beta\>=\<beta\><rsup|1>>
+
+          <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>as
+          <math|n\<in\>\<cal-S\>> we have
+          <math|\<alpha\>\<leqslant\>\<beta\><rsup|n>> we have by (6) that
+          <math|\<alpha\>\<cdot\>\<beta\>\<leqslant\>\<beta\>\<cdot\>\<beta\><rsup|n>=\<beta\><rsup|n+1>>
+          and <math|1\<leq\>\<alpha\>\<Rightarrow\>\<beta\>\<leqslant\>\<alpha\>\<cdot\>\<beta\>\<Rightarrowlim\><rsub|\<alpha\>\<leqslant\>\<beta\>>\<alpha\>\<leqslant\>\<alpha\>\<cdot\>\<beta\>\<leqslant\>\<beta\><rsup|n+1>>
+          proving that <math|n+1\<in\>\<cal-S\>>
+        </description>
+      </enumerate>
+
+      \ 
+    </enumerate>
+  </proof>
 
   <\theorem>
     <label|zero sum in R (R)>If <math|\<alpha\>,\<beta\>\<in\>\<bbb-R\>> and
@@ -23319,6 +23338,110 @@
     <math|<around*|(|<sqrt|y>|)><rsup|2>\<leqslant\><around*|(|<sqrt|x>|)><rsup|2>\<Rightarrow\>y\<leqslant\>x>
     contradicting <math|x\<less\>y> so we must have
     <math|<sqrt|x>\<less\><sqrt|y>>
+  </proof>
+
+  <\theorem>
+    <label|square root properties>If <math|x\<in\>\<bbb-R\>> and
+    <math|0\<leqslant\>a\<in\>\<bbb-R\>> then we have\ 
+
+    <\enumerate>
+      <item><math|x<rsup|2>=a> if and only if <math|x=<sqrt|a> >or
+      <math|x=-<sqrt|a>>
+
+      <item><math|x<rsup|2>\<leqslant\>a> if and only if
+      <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>
+
+      <item><math|x<rsup|2>\<less\>a> if and only iof
+      <math|-<sqrt|a>\<less\>x\<less\><sqrt|a>>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    \;
+
+    <\enumerate>
+      <item>
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>For <math|x> we have either\ 
+
+        <\description>
+          <item*|<math|0\<leqslant\>x>>then using <reference|square root (R)>
+          we have that <math|x=<around*|(|<sqrt|>|)>\<circ\><around*|(|<rsup|2>|)><around*|(|x|)>=<around*|(|<sqrt|>|)><around*|(|x<rsup|2>|)>=<around*|(|<sqrt|>|)><around*|(|a|)>=<sqrt|<around*|(|a|)>>>.
+
+          <item*|<math|x\<less\>0>>then <math|0\<less\>-x> so that using the
+          case <math|<around*|(|0\<less\>x|)>> we have that
+          <math|-x=<sqrt|a>> or <math|x=-<sqrt|a>>
+        </description>
+
+        <item*|<math|\<Leftarrow\>>>If <math|x=<sqrt|a>> then
+        <math|x<rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>, if
+        <math|x=-<sqrt|a>> then <math|x<rsup|2>=<around*|(|-x|)><rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>.
+        </description>
+
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>> For <math|x> we have either\ 
+
+        <\description>
+          <item*|<math|0\<leqslant\>x>>Then as <math|0\<leqslant\><sqrt|a>>
+          we have that <math|-<sqrt|a>\<leqslant\>0\<leqslant\>x>. Further
+          assume that <math|<sqrt|a>\<less\>x> then, as
+          <math|<around*|(|<rsup|2>|)>> is strictly increasing [see
+          <reference|properties of positive, negative real numbers (R)>], we
+          have that <math|a=<around*|(|<sqrt|a>|)><rsup|2>\<less\>x<rsup|2>>
+          contradicting <math|x<rsup|2>\<leqslant\>a>, hence we must have
+          that <math|x\<leqslant\><sqrt|a>>. So we have
+          <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>
+
+          <item*|<math|x\<less\>0>>then <math|0\<less\><around*|(|-x|)>> and
+          we can apply the case <math|<around*|(|0\<leqslant\>x|)>> to find
+          that <math|-<sqrt|a>\<leqslant\>-x\<leqslant\><sqrt|a>>,
+          multiplying this by <math|<around*|(|-1|)>> gives
+          \ <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>
+        </description>
+
+        <item*|<math|\<Leftarrow\>>>Consider the following cases for <math|x>\ 
+
+        <\description>
+          <item*|<math|0\<leqslant\>x>>then from <math|x\<leqslant\><sqrt|a>>
+          we have, as <math|<around*|(|<rsup|2>|)>> is increasing [see
+          <reference|properties of positive, negative real numbers>], that
+          <math|x<rsup|2>\<leqslant\><around*|(|<sqrt|a>|)><rsup|2>=a>.
+
+          <item*|<math|x\<less\>0>>then from <math|-<sqrt|a>\<leqslant\>x> we
+          have <math|0\<less\>-x\<less\><sqrt|a>>. As
+          \ <math|<around*|(|<rsup|2>|)>> is increasing [see
+          <reference|properties of positive, negative real numbers (R)>] it
+          follows that <math|x<rsup|2>=<around*|(|-x|)><rsup|2>\<less\><around*|(|<sqrt|a>|)><rsup|2>=a>
+        </description>
+      </description>
+
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>Using (2) we have
+        <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>. If
+        <math|x=<sqrt|a>> then <math|x<rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>\<equallim\><rsub|<text|<reference|square
+        root is a strictly increasing function (R)>>>\<alpha\>> contradicting
+        <math|x<rsup|2>\<less\>a>, if <math|x=-<sqrt|a>> then
+        <math|<around*|(|-x|)>=<sqrt|a>> so that
+        <math|x<rsup|2>=<around*|(|-x|)><rsup|2>=<around*|(|<sqrt|a>|)><rsup|2><math|\<equallim\><rsub|<text|<reference|square
+        root is a strictly increasing function (R)>>>>\<alpha\>>
+        contradicting <math|x<rsup|2>\<less\>a>. So we must have that
+        <math|-<sqrt|a>\<less\>x\<less\><sqrt|a>>.
+
+        <item*|<math|\<Leftarrow\>>>Using <math|<around*|(|2|)>> we have that
+        <math|x<rsup|2>\<leqslant\>a>. If <math|x<rsup|2>=a> then by
+        <math|<around*|(|1|)>> <math|x> would be either <math|<sqrt|a>> or
+        <math|-<sqrt|a>>, where both contradicts
+        <math|-<sqrt|a>\<less\>x\<less\><sqrt|a>> so we must have that
+        <math|x<rsup|2>\<less\>a>.
+      </description>
+
+      <space|1em>
+    </enumerate>
   </proof>
 
   <\theorem>
@@ -25600,13 +25723,13 @@
 
   <\theorem>
     <label|square root is a strictly increasing function><math|<sqrt|
-    >:<around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>\<rightarrow\><around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>>
+    >:<around*|{|x\<in\>\<bbb-R\><rsub|\<bbb-C\>>\|0\<leqslant\>x|}>\<rightarrow\><around*|{|x\<in\>\<bbb-R\><rsub|\<bbb-C\>>\|0\<leqslant\>x|}>>
     is a strictly increasing function
   </theorem>
 
   <\proof>
-    If <math|x,y\<in\><around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>> is such
-    that <math|x\<less\>y>. Assume then that
+    If <math|x,y\<in\><around*|{|x\<in\>\<bbb-R\><rsub|\<bbb-C\>>\|0\<leqslant\>x|}>>
+    is such that <math|x\<less\>y>. Assume then that
     <math|<sqrt|y>\<leqslant\><sqrt|x>> then by <reference|properties of
     positive, negative real numbers> we have
     <math|<around*|(|<sqrt|y>|)><rsup|2>\<leqslant\><around*|(|<sqrt|x>|)><rsup|2>\<Rightarrow\>y\<leqslant\>x>
@@ -25615,21 +25738,123 @@
   </proof>
 
   <\theorem>
-    <label|product of square roots>If <math|x,y\<in\><around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>>
+    <label|square root properties (1)>If <math|x\<in\>\<bbb-R\><rsub|\<bbb-C\>>>
+    and <math|0\<leqslant\>a\<in\>\<bbb-R\><rsub|\<bbb-C\>>> then we have\ 
+
+    <\enumerate>
+      <item><math|x<rsup|2>=a> if and only if <math|x=<sqrt|a> >or
+      <math|x=-<sqrt|a>>
+
+      <item><math|x<rsup|2>\<leqslant\>a> if and only if
+      <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>
+
+      <item><math|x<rsup|2>\<less\>a> if and only if
+      <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    \;
+
+    <\enumerate>
+      <item>
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>For <math|x> we have either\ 
+
+        <\description>
+          <item*|<math|0\<leqslant\>x>>then using <reference|square root is
+          inverse (1)> we have that <math|x=<around*|(|<sqrt|>|)>\<circ\><around*|(|<rsup|2>|)><around*|(|x|)>=<around*|(|<sqrt|>|)><around*|(|x<rsup|2>|)>=<around*|(|<sqrt|>|)><around*|(|a|)>=<sqrt|<around*|(|a|)>>>.
+
+          <item*|<math|x\<less\>0>>then <math|0\<less\>-x> so that using the
+          case <math|<around*|(|0\<less\>x|)>> we have that
+          <math|-x=<sqrt|a>> or <math|x=-<sqrt|a>>
+        </description>
+
+        <item*|<math|\<Leftarrow\>>>If <math|x=<sqrt|a>> then
+        <math|x<rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>, if
+        <math|x=-<sqrt|a>> then <math|x<rsup|2>=<around*|(|-x|)><rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>.
+        </description>
+
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>> For <math|x> we have either\ 
+
+        <\description>
+          <item*|<math|0\<leqslant\>x>>Then as <math|0\<leqslant\><sqrt|a>>
+          we have that <math|-<sqrt|a>\<leqslant\>0\<leqslant\>x>. Further
+          assume that <math|<sqrt|a>\<less\>x> then, as
+          <math|<around*|(|<rsup|2>|)>> is strictly increasing [see
+          <reference|properties of positive, negative real numbers>], we have
+          that <math|a=<around*|(|<sqrt|a>|)><rsup|2>\<less\>x<rsup|2>>
+          contradicting <math|x<rsup|2>\<leqslant\>a>, hence we must have
+          that <math|x\<leqslant\><sqrt|a>>. So we have
+          <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>
+
+          <item*|<math|x\<less\>0>>then <math|0\<less\><around*|(|-x|)>> and
+          we can apply the case <math|<around*|(|0\<leqslant\>x|)>> to find
+          that <math|-<sqrt|a>\<leqslant\>-x\<leqslant\><sqrt|a>>,
+          multiplying this by <math|<around*|(|-1|)>> gives
+          \ <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>
+        </description>
+
+        <item*|<math|\<Leftarrow\>>>Consider the following cases for <math|x>\ 
+
+        <\description>
+          <item*|<math|0\<leqslant\>x>>then from <math|x\<leqslant\><sqrt|a>>
+          we have, as <math|<around*|(|<rsup|2>|)>> is increasing [see
+          <reference|properties of positive, negative real numbers>], that
+          <math|x<rsup|2>\<leqslant\><around*|(|<sqrt|a>|)><rsup|2>=a>.
+
+          <item*|<math|x\<less\>0>>then from <math|-<sqrt|a>\<leqslant\>x> we
+          have <math|0\<less\>-x\<less\><sqrt|a>>. As
+          \ <math|<around*|(|<rsup|2>|)>> is increasing [see
+          <reference|properties of positive, negative real numbers>] it
+          follows that <math|x<rsup|2>=<around*|(|-x|)><rsup|2>\<less\><around*|(|<sqrt|a>|)><rsup|2>=a>
+        </description>
+      </description>
+
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>Using (2) we have
+        <math|-<sqrt|a>\<leqslant\>x\<leqslant\><sqrt|a>>. If
+        <math|x=<sqrt|a>> then <math|x<rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>\<equallim\><rsub|<text|<reference|square
+        root is a strictly increasing function>>>\<alpha\>> contradicting
+        <math|x<rsup|2>\<less\>a>, if <math|x=-<sqrt|a>> then
+        <math|<around*|(|-x|)>=<sqrt|a>> so that
+        <math|x<rsup|2>=<around*|(|-x|)><rsup|2>=<around*|(|<sqrt|a>|)><rsup|2><math|\<equallim\><rsub|<text|<reference|square
+        root is a strictly increasing function>>>>\<alpha\>> contradicting
+        <math|x<rsup|2>\<less\>a>. So we must have that
+        <math|-<sqrt|a>\<less\>x\<less\><sqrt|a>>.
+
+        <item*|<math|\<Leftarrow\>>>Using <math|<around*|(|2|)>> we have that
+        <math|x<rsup|2>\<leqslant\>a>. If <math|x<rsup|2>=a> then by
+        <math|<around*|(|1|)>> <math|x> would be either <math|<sqrt|a>> or
+        <math|-<sqrt|a>>, where both contradicts
+        <math|-<sqrt|a>\<less\>x\<less\><sqrt|a>> so we must have that
+        <math|x<rsup|2>\<less\>a>.
+      </description>
+    </enumerate>
+  </proof>
+
+  <\theorem>
+    <label|product of square roots>If <math|x,y\<in\><around*|{|x\<in\>\<bbb-R\><rsub|\<bbb-C\>>\|0\<leqslant\>x|}>>
     then <math|<sqrt|x\<cdot\>y>=<sqrt|x>\<cdot\><sqrt|y>>
   </theorem>
 
   <\proof>
     As <math|<around*|(|<sqrt|x\<cdot\>y>|)><rsup|2>=x\<cdot\>y=<around*|(|<sqrt|x>|)><rsup|2>\<cdot\><around*|(|<sqrt|y>|)><rsup|2>=<around*|(|<sqrt|x>\<cdot\><sqrt|y>|)><rsup|2>>
-    we have by the fact that <math|<rsup|2>:<around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>\<rightarrow\><around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>>
+    we have by the fact that <math|<rsup|2>:<around*|{|x\<in\>\<bbb-R\><rsub|\<bbb-C\>>\|0\<leqslant\>x|}>\<rightarrow\><around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>>
     is a bijection and thus injective so we have
     <math|<sqrt|x\<cdot\>y>=<sqrt|x>\<cdot\><sqrt|y>>
   </proof>
 
   <\theorem>
     <label|square root of sum is lower the sum of squareroots>Given
-    <math|x,y\<in\><around*|{|x\<in\>\<bbb-R\>\|0\<leqslant\>x|}>> then we
-    have <math|<sqrt|x+y>\<leqslant\><sqrt|x>+<sqrt|y>>
+    <math|x,y\<in\><around*|{|x\<in\>\<bbb-R\><rsub|\<bbb-C\>>\|0\<leqslant\>x|}>>
+    then we have <math|<sqrt|x+y>\<leqslant\><sqrt|x>+<sqrt|y>>
   </theorem>
 
   <\proof>
@@ -25791,18 +26016,18 @@
     <associate|0=~[(n,n)]|<tuple|6.7|146>>
     <associate|1\<less\>x=\<gtr\>a\<less\>x^n|<tuple|9.65|221>>
     <associate|A\SB and injection|<tuple|5.4|111>>
-    <associate|A/R R is a equivalence relation|<tuple|2.121|59>>
+    <associate|A/R R is a equivalence relation|<tuple|2.122|59>>
     <associate|A\<less\>~B and surjectivity|<tuple|5.9|112>>
     <associate|Acc=A|<tuple|1.19|9>>
-    <associate|B^A is a set if B and A are sets|<tuple|2.74|51>>
+    <associate|B^A is a set if B and A are sets|<tuple|2.75|51>>
     <associate|DeMorgan's Laws|<tuple|1.23|10>>
-    <associate|Hausdorff's maximal principle|<tuple|2.220|81>>
+    <associate|Hausdorff's maximal principle|<tuple|2.221|81>>
     <associate|N,+ is a abelian semi-group|<tuple|4.34|102>>
     <associate|N,.is a semi-group|<tuple|4.43|103>>
     <associate|N_Q forms positive integers|<tuple|7.32|166>>
     <associate|N_Q is semi group|<tuple|7.30|166>>
     <associate|P'(X)|<tuple|1.65|21>>
-    <associate|P(A) and 2^A are bijective|<tuple|2.75|51>>
+    <associate|P(A) and 2^A are bijective|<tuple|2.76|51>>
     <associate|QC is a sub field of C|<tuple|9.37|214>>
     <associate|QC is not conditional complete|<tuple|9.50|218>>
     <associate|R is isomorph to R embedded in the reals|<tuple|9.14|209>>
@@ -25811,11 +26036,11 @@
     <associate|Sn|<tuple|5.15|113>>
     <associate|The natural numbers are fully ordered|<tuple|4.53|105>>
     <associate|The rational numbers are denumerable|<tuple|7.40|169>>
-    <associate|Zorn' lemma for pre-ordered sets|<tuple|2.233|86>>
-    <associate|Zorn's lemma|<tuple|2.223|82>>
+    <associate|Zorn' lemma for pre-ordered sets|<tuple|2.234|86>>
+    <associate|Zorn's lemma|<tuple|2.224|82>>
     <associate|^2 is a bijection|<tuple|8.75|204>>
     <associate|a class is not isomorph to a subclass of a initial segment of
-    itself|<tuple|2.198|75>>
+    itself|<tuple|2.199|75>>
     <associate|a denumerable family of countable sets is
     countable|<tuple|5.73|132>>
     <associate|a natural number does not comtains a countable
@@ -25833,10 +26058,10 @@
     <associate|addition of natural numbers is associative|<tuple|4.32|101>>
     <associate|addition of rational numbers|<tuple|7.5|159>>
     <associate|alternative definition for conditional
-    completeness|<tuple|2.178|70>>
+    completeness|<tuple|2.179|70>>
     <associate|alternative definition of a function (1)|<tuple|2.9|36>>
     <associate|alternative definition of partial function|<tuple|2.3|35>>
-    <associate|application of axiom of choice|<tuple|2.210|79>>
+    <associate|application of axiom of choice|<tuple|2.211|79>>
     <associate|archimedean property of natural numbers|<tuple|4.73|108>>
     <associate|archimedean property of the rationals|<tuple|7.33|167>>
     <associate|archimedean property of the reals|<tuple|9.55|219>>
@@ -26127,20 +26352,20 @@
     <associate|auto-97|<tuple|fully ordered class|65>>
     <associate|auto-98|<tuple|chain|65>>
     <associate|auto-99|<tuple|chain|65>>
-    <associate|axiom of choice|<tuple|2.205|78>>
+    <associate|axiom of choice|<tuple|2.206|78>>
     <associate|axiom of construction|<tuple|1.9|8>>
     <associate|axiom of extent|<tuple|1.5|7>>
     <associate|axiom of infinity|<tuple|1.68|21>>
     <associate|axiom of pairing|<tuple|1.57|20>>
     <associate|axiom of power sets|<tuple|1.63|20>>
-    <associate|axiom of replacements|<tuple|2.67|50>>
+    <associate|axiom of replacements|<tuple|2.68|50>>
     <associate|axiom of subsets|<tuple|1.58|20>>
     <associate|axiom of unions|<tuple|1.60|20>>
     <associate|basic property of gcd(n,m)|<tuple|6.54|156>>
-    <associate|bijection and its inverse|<tuple|2.39|41>>
-    <associate|bijections and exclusions|<tuple|2.53|45>>
-    <associate|canonical decomposition of a function|<tuple|2.130|60>>
-    <associate|canonical function of a equivalence relation|<tuple|2.129|60>>
+    <associate|bijection and its inverse|<tuple|2.40|41>>
+    <associate|bijections and exclusions|<tuple|2.54|45>>
+    <associate|canonical decomposition of a function|<tuple|2.131|60>>
+    <associate|canonical function of a equivalence relation|<tuple|2.130|60>>
     <associate|cartesian product|<tuple|1.38|15>>
     <associate|cartesian product and general union|<tuple|5.98|140>>
     <associate|cartesian product and unions|<tuple|5.99|141>>
@@ -26149,47 +26374,47 @@
     <associate|cartesion product and intersection|<tuple|5.97|140>>
     <associate|cartesion product of a family of sets|<tuple|5.82|134>>
     <associate|characteristics function|<tuple|2.13|38>>
-    <associate|characterization of a bijective mapping|<tuple|2.41|42>>
+    <associate|characterization of a bijective mapping|<tuple|2.42|42>>
     <associate|common divisior and gcd|<tuple|6.52|156>>
     <associate|commutative laws of union and intersection|<tuple|1.24|11>>
     <associate|comparability|<tuple|comparability|65>>
-    <associate|comparable elements and relations|<tuple|2.145|65>>
+    <associate|comparable elements and relations|<tuple|2.146|65>>
     <associate|complex conjugate is positive|<tuple|9.5|208>>
     <associate|complex conjugate of power|<tuple|9.9|208>>
     <associate|complex norm is a norm|<tuple|9.33|212>>
     <associate|complex numbers|<tuple|9.1|207>>
-    <associate|composition of a restricted function|<tuple|2.49|44>>
+    <associate|composition of a restricted function|<tuple|2.50|44>>
     <associate|composition of function graphs is a function
     graph|<tuple|1.55|20>>
-    <associate|composition of functions|<tuple|2.34|40>>
-    <associate|composition of functions (3)|<tuple|2.33|40>>
+    <associate|composition of functions|<tuple|2.35|40>>
+    <associate|composition of functions (3)|<tuple|2.34|40>>
     <associate|composition of functions and function
-    application|<tuple|2.36|41>>
-    <associate|composition of increasing functions|<tuple|2.153|66>>
+    application|<tuple|2.37|41>>
+    <associate|composition of increasing functions|<tuple|2.154|66>>
     <associate|composition of injective partial functions|<tuple|2.17|37>>
     <associate|composition of n functions|<tuple|4.80|110>>
     <associate|composition of partial functions|<tuple|2.5|35>>
     <associate|composition of relations|<tuple|1.47|?>>
     <associate|condition 1 for positive integers|<tuple|6.28|151>>
     <associate|condition 2 for positive integers|<tuple|6.29|151>>
-    <associate|condition for R[x]=R[y]|<tuple|2.118|58>>
-    <associate|condition for beeing a inversible function|<tuple|2.42|43>>
-    <associate|condition for bijection to be isomorph|<tuple|2.158|67>>
+    <associate|condition for R[x]=R[y]|<tuple|2.119|58>>
+    <associate|condition for beeing a inversible function|<tuple|2.43|43>>
+    <associate|condition for bijection to be isomorph|<tuple|2.159|67>>
     <associate|condition for equality of functions|<tuple|2.12|37>>
-    <associate|condition for interval to be empty|<tuple|2.182|?>>
+    <associate|condition for interval to be empty|<tuple|2.183|?>>
     <associate|condition for invertable function|<tuple|2.20|37>>
     <associate|condition for invertible partial functions|<tuple|2.19|37>>
     <associate|condition for isomorphism in a full ordered
-    set|<tuple|2.161|67>>
-    <associate|condition of partition|<tuple|2.116|58>>
-    <associate|condition to belong to a product of sets|<tuple|2.82|52>>
+    set|<tuple|2.162|67>>
+    <associate|condition of partition|<tuple|2.117|58>>
+    <associate|condition to belong to a product of sets|<tuple|2.83|52>>
     <associate|conditional completeness preserved by
-    isomorphism|<tuple|2.180|71>>
+    isomorphism|<tuple|2.181|71>>
     <associate|conditions for countability|<tuple|5.67|130>>
-    <associate|conditonal complete classes|<tuple|2.177|70>>
+    <associate|conditonal complete classes|<tuple|2.178|70>>
     <associate|conjugate of a complex number|<tuple|9.4|208>>
     <associate|consequence of cartesian product subsets|<tuple|5.95|139>>
-    <associate|consequence of generalized product subsets|<tuple|2.93|54>>
+    <associate|consequence of generalized product subsets|<tuple|2.94|54>>
     <associate|consequence of the Archimedean property (2)|<tuple|9.57|219>>
     <associate|consequence of the Archimedean property (2)
     (R)|<tuple|8.63|201>>
@@ -26199,7 +26424,7 @@
     (R)|<tuple|8.62|200>>
     <associate|constant function|<tuple|2.14|?>>
     <associate|construction of a function using Axiom of
-    choice|<tuple|2.209|79>>
+    choice|<tuple|2.210|79>>
     <associate|conventions for product of sets|<tuple|5.103|142>>
     <associate|countable set minus one element is countable|<tuple|5.32|118>>
     <associate|countable sets|<tuple|5.30|118>>
@@ -26288,16 +26513,16 @@
     <associate|eq 9.2.075|<tuple|9.4|?>>
     <associate|eq 9.2.076|<tuple|9.2|?>>
     <associate|equality of classes|<tuple|1.4|7>>
-    <associate|equality of product of sets|<tuple|2.95|54>>
+    <associate|equality of product of sets|<tuple|2.96|54>>
     <associate|equality of product of sets (1)|<tuple|5.104|143>>
     <associate|equality of unordered pairs|<tuple|1.35|14>>
     <associate|equipotent|<tuple|5.1|111>>
     <associate|equipotent is the same as equal in the natural
     numbers|<tuple|5.41|122>>
     <associate|equivalence of order and subset in the reals|<tuple|8.37|193>>
-    <associate|equivalence relation|<tuple|2.114|58>>
-    <associate|equivalence relation determined by f|<tuple|2.128|60>>
-    <associate|equivalences of axiom of choice|<tuple|2.208|78>>
+    <associate|equivalence relation|<tuple|2.115|58>>
+    <associate|equivalence relation determined by f|<tuple|2.129|60>>
+    <associate|equivalences of axiom of choice|<tuple|2.209|78>>
     <associate|even and odd|<tuple|6.55|157>>
     <associate|even and odd numbers|<tuple|6.56|157>>
     <associate|every natural number is bigger or equal to
@@ -26305,19 +26530,19 @@
     <associate|every natural number is transitive|<tuple|4.13|94>>
     <associate|every set with a infinite subset is finite|<tuple|5.35|119>>
     <associate|every subclass of a well ordered class is isomorphic to the
-    class or a segment|<tuple|2.203|77>>
+    class or a segment|<tuple|2.204|77>>
     <associate|every subset of N is finite or denumerable|<tuple|5.54|127>>
-    <associate|f@g^-1|<tuple|2.62|48>>
+    <associate|f@g^-1|<tuple|2.63|48>>
     <associate|faculty|<tuple|5.20|114>>
     <associate|faithful, trasitive action|<tuple|3.19|89>>
-    <associate|family and subset|<tuple|2.109|57>>
+    <associate|family and subset|<tuple|2.110|57>>
     <associate|family of classes|<tuple|1.77|24>>
-    <associate|family of classes as a set function|<tuple|2.65|50>>
+    <associate|family of classes as a set function|<tuple|2.66|50>>
     <associate|family of classes indexed by itself|<tuple|1.96|29>>
     <associate|family of classes properties (1)|<tuple|1.98|?>>
     <associate|family of classes properties (2)|<tuple|1.99|?>>
-    <associate|family of elements|<tuple|2.102|56>>
-    <associate|family of sets defined by set function|<tuple|2.64|49>>
+    <associate|family of elements|<tuple|2.103|56>>
+    <associate|family of sets defined by set function|<tuple|2.65|49>>
     <associate|field|<tuple|3.29|91>>
     <associate|field homomorphism|<tuple|3.33|92>>
     <associate|field isomorphism and neutral element|<tuple|3.35|92>>
@@ -26334,21 +26559,21 @@
     <associate|finite union of finite sets is finite (2)|<tuple|5.38|120>>
     <associate|function graph|<tuple|1.54|20>>
     <associate|function notation|<tuple|2.11|?>>
-    <associate|function space|<tuple|2.71|50>>
-    <associate|f\|C is bijective if f is injective|<tuple|2.50|45>>
+    <associate|function space|<tuple|2.72|50>>
+    <associate|f\|C is bijective if f is injective|<tuple|2.51|45>>
     <associate|gap theorem|<tuple|8.7|172>>
-    <associate|general product of sets and subsets|<tuple|2.87|53>>
-    <associate|general product of sets is a set|<tuple|2.80|52>>
+    <associate|general product of sets and subsets|<tuple|2.88|53>>
+    <associate|general product of sets is a set|<tuple|2.81|52>>
     <associate|generalized deMorgan's Laws|<tuple|1.100|29>>
     <associate|generalized difference|<tuple|1.102|32>>
     <associate|generalized distributive laws|<tuple|1.101|30>>
-    <associate|generalized interval|<tuple|2.183|71>>
-    <associate|generalized intervals and boundaries|<tuple|2.187|?>>
-    <associate|generalized intervals and intervals|<tuple|2.185|?>>
-    <associate|generalized intervals condition|<tuple|2.186|72>>
-    <associate|generalized product of empty set is empty|<tuple|2.88|53>>
-    <associate|generalized product of sets|<tuple|2.79|52>>
-    <associate|generalized product of sets and bijections|<tuple|2.83|52>>
+    <associate|generalized interval|<tuple|2.184|71>>
+    <associate|generalized intervals and boundaries|<tuple|2.188|?>>
+    <associate|generalized intervals and intervals|<tuple|2.186|?>>
+    <associate|generalized intervals condition|<tuple|2.187|72>>
+    <associate|generalized product of empty set is empty|<tuple|2.89|53>>
+    <associate|generalized product of sets|<tuple|2.80|52>>
+    <associate|generalized product of sets and bijections|<tuple|2.84|52>>
     <associate|group|<tuple|group|87>>
     <associate|group homomorphism and neutral and inverse
     elements|<tuple|3.13|88>>
@@ -26361,56 +26586,57 @@
     <associate|idempotent laws|<tuple|1.25|11>>
     <associate|identity function|<tuple|2.25|38>>
     <associate|if A is isomorph with a segment of B then B is not isomorph
-    with a sublcass of A|<tuple|2.200|75>>
+    with a sublcass of A|<tuple|2.201|75>>
     <associate|if a set is equipotent with a proper subset then it is
     infinite|<tuple|5.40|121>>
     <associate|if successors are equal numbers are equal|<tuple|4.15|94>>
-    <associate|image (preimage) of union , intersections|<tuple|2.60|47>>
+    <associate|image (preimage) of union , intersections|<tuple|2.61|47>>
     <associate|image and inverse image|<tuple|2.4|?>>
-    <associate|image restricted function|<tuple|2.63|49>>
-    <associate|image restriction of a function is a function|<tuple|2.43|43>>
-    <associate|immediate successor|<tuple|2.192|74>>
+    <associate|image restricted function|<tuple|2.64|49>>
+    <associate|image restriction of a function is a function|<tuple|2.44|43>>
+    <associate|immediate successor|<tuple|2.193|74>>
     <associate|in a well ordered set every element has a immediate
-    succesor|<tuple|2.193|74>>
+    succesor|<tuple|2.194|74>>
     <associate|in a well-ordered class there is no isomorphism to a initial
-    segment|<tuple|2.199|75>>
-    <associate|inclusion and greatest and least element|<tuple|2.171|69>>
-    <associate|inclusion and sup and inf|<tuple|2.173|69>>
-    <associate|inclusion and upper and lower bounds|<tuple|2.172|69>>
+    segment|<tuple|2.200|75>>
+    <associate|inclusion and greatest and least element|<tuple|2.172|69>>
+    <associate|inclusion and sup and inf|<tuple|2.174|69>>
+    <associate|inclusion and upper and lower bounds|<tuple|2.173|69>>
     <associate|inclusion function|<tuple|2.26|38>>
-    <associate|inclusion is partial order|<tuple|2.135|62>>
+    <associate|inclusion is partial order|<tuple|2.136|62>>
     <associate|increasing function|<tuple|increasing function|66>>
     <associate|increasing sequence property|<tuple|5.76|?>>
-    <associate|induced order relation|<tuple|2.141|64>>
+    <associate|induced order relation|<tuple|2.142|64>>
     <associate|inf(S+T)|<tuple|9.48|?>>
     <associate|inf(S+T)(R)|<tuple|8.48|?>>
     <associate|inf(S+x)|<tuple|9.49|?>>
     <associate|inf(S+x) (R)|<tuple|8.49|?>>
-    <associate|inf, sup in class ordered by inclusion|<tuple|2.170|69>>
+    <associate|inf, sup in class ordered by inclusion|<tuple|2.171|69>>
     <associate|infinite sets have countable subset|<tuple|5.34|119>>
-    <associate|initial segment|<tuple|2.149|65>>
+    <associate|initial segment|<tuple|2.150|65>>
     <associate|injection from a infinite set|<tuple|5.49|125>>
-    <associate|injective function and preimage/image|<tuple|2.55|46>>
+    <associate|injective function and preimage/image|<tuple|2.56|46>>
     <associate|injective function implies function in other
-    directory|<tuple|2.45|43>>
-    <associate|injective functions preserve set difference|<tuple|2.61|48>>
+    directory|<tuple|2.46|43>>
+    <associate|injective functions preserve set difference|<tuple|2.62|48>>
     <associate|integer numbers|<tuple|6.3|145>>
     <associate|integer numbers form a ring|<tuple|6.10|147>>
     <associate|integers embedded in the reals|<tuple|8.52|198>>
-    <associate|intersection of a product|<tuple|2.98|55>>
-    <associate|intersection of general product of sets|<tuple|2.97|55>>
+    <associate|intersection of a product|<tuple|2.99|55>>
+    <associate|intersection of general product of sets|<tuple|2.98|55>>
     <associate|inverse and order in integers|<tuple|6.27|151>>
     <associate|inverse for multiplication of reals|<tuple|8.23|180>>
-    <associate|inverse image of a composition of functions|<tuple|2.57|47>>
+    <associate|inverse image of a composition of functions|<tuple|2.58|47>>
+    <associate|inverse image of a restricted function|<tuple|2.29|?>>
     <associate|inverse of a field isomorphism is a field
     isomorphism|<tuple|3.34|92>>
     <associate|inverse of element in Q in R|<tuple|8.24|180>>
     <associate|inverse of inverse|<tuple|3.6|87>>
     <associate|irrationals|<tuple|8.51|197>>
-    <associate|isomorph classes|<tuple|2.156|66>>
+    <associate|isomorph classes|<tuple|2.157|66>>
     <associate|isomorphism|<tuple|isomorphism|66>>
-    <associate|isomorphism is strictly increasing|<tuple|2.157|66>>
-    <associate|isomorphism preserves sup and inf|<tuple|2.179|71>>
+    <associate|isomorphism is strictly increasing|<tuple|2.158|66>>
+    <associate|isomorphism preserves sup and inf|<tuple|2.180|71>>
     <associate|iteration|<tuple|4.21|98>>
     <associate|iteration over a group|<tuple|4.22|99>>
     <associate|left (right action)|<tuple|3.16|89>>
@@ -26418,9 +26644,9 @@
     <associate|lemma for sum of reals|<tuple|8.11|174>>
     <associate|lemma to help prove that the reals forms a
     field|<tuple|8.20|177>>
-    <associate|lexical order|<tuple|2.143|64>>
-    <associate|lexical order and fully ordering|<tuple|2.148|65>>
-    <associate|linear ordered class|<tuple|2.146|65>>
+    <associate|lexical order|<tuple|2.144|64>>
+    <associate|lexical order and fully ordering|<tuple|2.149|65>>
+    <associate|linear ordered class|<tuple|2.147|65>>
     <associate|m*m is even then m is even|<tuple|6.57|157>>
     <associate|m+s(n)=s(m+n)|<tuple|4.31|101>>
     <associate|m-n if n\<less\>=m, n,m natural numbers|<tuple|4.63|107>>
@@ -26429,11 +26655,11 @@
     <associate|mathematical induction form 2|<tuple|4.77|109>>
     <associate|mathematical induction form 3|<tuple|4.78|109>>
     <associate|maximal (minimal element in a pre-ordered
-    class|<tuple|2.162|67>>
-    <associate|maximal, minimal, greatest, least|<tuple|2.163|67>>
-    <associate|maximum and minimum|<tuple|2.165|68>>
+    class|<tuple|2.163|67>>
+    <associate|maximal, minimal, greatest, least|<tuple|2.164|67>>
+    <associate|maximum and minimum|<tuple|2.166|68>>
     <associate|maximum of class with bigger elements then another
-    class|<tuple|2.166|68>>
+    class|<tuple|2.167|68>>
     <associate|multiplaction of natural numbers|<tuple|4.35|102>>
     <associate|multiplication of natural numbers is
     associative|<tuple|4.42|103>>
@@ -26505,7 +26731,7 @@
     <associate|neutral element of naturals|<tuple|4.29|101>>
     <associate|non zero element is a successor|<tuple|4.17|95>>
     <associate|norm in real space|<tuple|8.65|202>>
-    <associate|notation for a tuple|<tuple|2.86|53>>
+    <associate|notation for a tuple|<tuple|2.87|53>>
     <associate|null function|<tuple|2.10|?>>
     <associate|number of elements in a finite set|<tuple|5.42|122>>
     <associate|number of elements of strict subsets of a finite
@@ -26514,8 +26740,8 @@
     <associate|one to one correspondence|<tuple|2.24|38>>
     <associate|order in real and complex|<tuple|9.25|211>>
     <associate|order in the reals|<tuple|8.36|193>>
-    <associate|order induced by totally order is totally|<tuple|2.147|65>>
-    <associate|order relation|<tuple|2.134|62>>
+    <associate|order induced by totally order is totally|<tuple|2.148|65>>
+    <associate|order relation|<tuple|2.135|62>>
     <associate|order relation in C|<tuple|9.24|210>>
     <associate|order relation on rational cuts|<tuple|8.41|196>>
     <associate|order relation on rational numbers|<tuple|7.17|164>>
@@ -26526,32 +26752,32 @@
     <associate|pair|<tuple|1.36|15>>
     <associate|pair of classes|<tuple|1.73|22>>
     <associate|partial function|<tuple|2.1|?>>
-    <associate|partial ordered functions|<tuple|2.136|62>>
-    <associate|partial ordered set|<tuple|2.137|63>>
-    <associate|partition by a equivalence relation|<tuple|2.119|58>>
+    <associate|partial ordered functions|<tuple|2.137|62>>
+    <associate|partial ordered set|<tuple|2.138|63>>
+    <associate|partition by a equivalence relation|<tuple|2.120|58>>
     <associate|peano axioms|<tuple|4.16|94>>
     <associate|permutation of a family gives same set as the
-    family|<tuple|2.108|57>>
+    family|<tuple|2.109|57>>
     <associate|power in the rationals|<tuple|7.14|163>>
     <associate|power in the whole numbers|<tuple|6.19|149>>
     <associate|power in the whole numbers embedded in the
     reals|<tuple|8.33|192>>
-    <associate|power of a family of sets|<tuple|2.84|52>>
+    <associate|power of a family of sets|<tuple|2.85|52>>
     <associate|power of i|<tuple|9.22|210>>
     <associate|power of product of complex numbers|<tuple|9.8|208>>
     <associate|power of product of integers|<tuple|6.18|148>>
     <associate|power of product of rationals|<tuple|7.13|163>>
     <associate|power of product of reals|<tuple|8.32|192>>
     <associate|power set|<tuple|1.62|20>>
-    <associate|pre-order|<tuple|2.132|62>>
-    <associate|pre-order to order|<tuple|2.140|63>>
-    <associate|pre-ordered class|<tuple|2.133|62>>
-    <associate|preimage of a bijection|<tuple|2.51|45>>
-    <associate|preimage of a relation|<tuple|2.122|59>>
-    <associate|pretuple|<tuple|2.76|51>>
-    <associate|product of a empty family|<tuple|2.81|52>>
+    <associate|pre-order|<tuple|2.133|62>>
+    <associate|pre-order to order|<tuple|2.141|63>>
+    <associate|pre-ordered class|<tuple|2.134|62>>
+    <associate|preimage of a bijection|<tuple|2.52|45>>
+    <associate|preimage of a relation|<tuple|2.123|59>>
+    <associate|pretuple|<tuple|2.77|51>>
+    <associate|product of a empty family|<tuple|2.82|52>>
     <associate|product of a family of groups|<tuple|3.15|88>>
-    <associate|product of a family of sets condition|<tuple|2.85|53>>
+    <associate|product of a family of sets condition|<tuple|2.86|53>>
     <associate|product of a finite and denumerable set is
     denumerable|<tuple|5.64|130>>
     <associate|product of classes and equipotence|<tuple|5.12|112>>
@@ -26562,30 +26788,30 @@
     <associate|product of non zero natural numbers is non
     zero|<tuple|4.69|108>>
     <associate|product of product of sets|<tuple|5.94|137>>
-    <associate|product of products of sets|<tuple|2.101|56>>
+    <associate|product of products of sets|<tuple|2.102|56>>
     <associate|product of sets as element|<tuple|1.71|21>>
     <associate|product of sets is a set|<tuple|1.72|22>>
     <associate|product of sets properties|<tuple|1.43|15>>
-    <associate|product of square roots|<tuple|9.73|222>>
-    <associate|product of square roots (R)|<tuple|8.79|206>>
+    <associate|product of square roots|<tuple|9.74|222>>
+    <associate|product of square roots (R)|<tuple|8.80|206>>
     <associate|product of subclasses|<tuple|1.41|15>>
     <associate|product of subclasses (1)|<tuple|1.42|15>>
     <associate|product of union of sets that is a product of
     sets|<tuple|5.105|?>>
     <associate|product tuple|<tuple|5.85|134>>
-    <associate|projection function|<tuple|2.89|54>>
-    <associate|projection function and subsets|<tuple|2.90|54>>
-    <associate|projection function is surjective|<tuple|2.91|54>>
+    <associate|projection function|<tuple|2.90|54>>
+    <associate|projection function and subsets|<tuple|2.91|54>>
+    <associate|projection function is surjective|<tuple|2.92|54>>
     <associate|proper subclass|<tuple|1.7|7>>
     <associate|properties of []n|<tuple|5.88|134>>
     <associate|properties of a projection map|<tuple|5.93|136>>
     <associate|properties of classes|<tuple|1.8|7>>
-    <associate|properties of composition of functions|<tuple|2.47|44>>
+    <associate|properties of composition of functions|<tuple|2.48|44>>
     <associate|properties of composition of mappings|<tuple|1.48|18>>
-    <associate|properties of compositions|<tuple|2.35|40>>
+    <associate|properties of compositions|<tuple|2.36|40>>
     <associate|properties of domains and ranges of graphs|<tuple|1.51|18>>
     <associate|properties of empty set and universal class|<tuple|1.27|12>>
-    <associate|properties of image and preimage|<tuple|2.56|46>>
+    <associate|properties of image and preimage|<tuple|2.57|46>>
     <associate|properties of multiplication of integer
     numbers|<tuple|6.9|147>>
     <associate|properties of natural numbers embedded in the
@@ -26597,13 +26823,13 @@
     numbers|<tuple|9.41|215>>
     <associate|properties of positive, negative real numbers
     (R)|<tuple|8.39|194>>
-    <associate|properties of the isomorph relation|<tuple|2.160|67>>
+    <associate|properties of the isomorph relation|<tuple|2.161|67>>
     <associate|properties of the natural numbers embeded in the embedded
     integers|<tuple|9.52|218>>
     <associate|properties of the natural numbers embeded in the embedded
     integers (R)|<tuple|8.58|199>>
-    <associate|property of inf and sup|<tuple|2.169|68>>
-    <associate|property of stritly less|<tuple|2.139|63>>
+    <associate|property of inf and sup|<tuple|2.170|68>>
+    <associate|property of stritly less|<tuple|2.140|63>>
     <associate|property to determine membership of a cut|<tuple|8.3|171>>
     <associate|q-1\<less\>q|<tuple|7.23|165>>
     <associate|q\<less\>=r=\<gtr\>-r\<less\>=-q for rational
@@ -26628,33 +26854,33 @@
     <associate|recursion sequence form (general)|<tuple|5.23|116>>
     <associate|recursion with restricted set (general)|<tuple|5.26|118>>
     <associate|recursive injective function|<tuple|4.19|96>>
-    <associate|reindexing of a family|<tuple|2.66|50>>
+    <associate|reindexing of a family|<tuple|2.67|50>>
     <associate|relation|<tuple|1.45|?>>
     <associate|relation between real and imaginary art|<tuple|9.19|210>>
     <associate|relation classes and intersection and union|<tuple|1.20|9>>
-    <associate|relation inf and sup|<tuple|2.176|70>>
-    <associate|relation of well ordered classes|<tuple|2.202|76>>
+    <associate|relation inf and sup|<tuple|2.177|70>>
+    <associate|relation of well ordered classes|<tuple|2.203|76>>
     <associate|relation subclass and union or intersection|<tuple|1.21|9>>
     <associate|restricted partial function|<tuple|2.28|39>>
-    <associate|restriction of a equivalence relation|<tuple|2.123|59>>
-    <associate|restriction of restricted function|<tuple|2.29|39>>
+    <associate|restriction of a equivalence relation|<tuple|2.124|59>>
+    <associate|restriction of restricted function|<tuple|2.30|39>>
     <associate|ring|<tuple|3.20|89>>
     <associate|ring homorphism|<tuple|3.26|91>>
     <associate|ring isomorphism|<tuple|3.28|91>>
     <associate|section is a initial segement in a well-ordered
-    class|<tuple|2.195|74>>
-    <associate|section of a well ordered class|<tuple|2.194|74>>
-    <associate|selfindexed family|<tuple|2.103|56>>
-    <associate|selfindexed family image|<tuple|2.107|57>>
+    class|<tuple|2.196|74>>
+    <associate|section of a well ordered class|<tuple|2.195|74>>
+    <associate|selfindexed family|<tuple|2.104|56>>
+    <associate|selfindexed family image|<tuple|2.108|57>>
     <associate|semi-group|<tuple|semi-group|87>>
     <associate|sequence|<tuple|5.75|133>>
     <associate|sequence of classes|<tuple|5.78|?>>
     <associate|set is included in its set of upper and lower
-    bounds|<tuple|2.175|70>>
-    <associate|set of family of elements|<tuple|2.106|57>>
+    bounds|<tuple|2.176|70>>
+    <associate|set of family of elements|<tuple|2.107|57>>
     <associate|set of rational cuts|<tuple|8.6|172>>
     <associate|sign(q)=-1=\<gtr\>sign(-q)=1|<tuple|7.16|164>>
-    <associate|solution of x^2=z|<tuple|9.75|222>>
+    <associate|solution of x^2=z|<tuple|9.76|222>>
     <associate|some properties of rational numbers|<tuple|7.35|167>>
     <associate|square root|<tuple|9.70|222>>
     <associate|square root (R)|<tuple|8.76|206>>
@@ -26664,9 +26890,11 @@
     (R)|<tuple|8.78|206>>
     <associate|square root is inverse (1)|<tuple|9.71|222>>
     <associate|square root of sum is lower the sum of
-    squareroots|<tuple|9.74|222>>
+    squareroots|<tuple|9.75|222>>
     <associate|square root of sum is lower the sum of squareroots
-    (R)|<tuple|8.80|206>>
+    (R)|<tuple|8.81|206>>
+    <associate|square root properties|<tuple|8.79|?>>
+    <associate|square root properties (1)|<tuple|9.73|?>>
     <associate|strict order in the reals|<tuple|8.35|193>>
     <associate|strict positive natural numbers|<tuple|4.7|93>>
     <associate|strictly increasing function|<tuple|strictly increasing
@@ -26681,13 +26909,13 @@
     <associate|subfield real embedded in the complex field|<tuple|9.13|209>>
     <associate|subring is a ring|<tuple|3.24|90>>
     <associate|subset of a well-ordered (fully-ordered) set is well-ordered
-    (fully-ordered)|<tuple|2.189|74>>
-    <associate|subset of functions|<tuple|2.73|51>>
+    (fully-ordered)|<tuple|2.190|74>>
+    <associate|subset of functions|<tuple|2.74|51>>
     <associate|subsets of countable sets are countable|<tuple|5.66|130>>
     <associate|subsets of denumerable sets are finite or
     denumerable|<tuple|5.55|127>>
     <associate|subsets of finite sets are finite|<tuple|5.36|120>>
-    <associate|subtuple|<tuple|2.78|52>>
+    <associate|subtuple|<tuple|2.79|52>>
     <associate|subtuple of product of sets|<tuple|5.80|133>>
     <associate|successor and multiplication|<tuple|4.39|102>>
     <associate|successor function and addition|<tuple|4.30|101>>
@@ -26697,7 +26925,7 @@
     <associate|successor of zero is not zero|<tuple|4.8|93>>
     <associate|successor set|<tuple|1.67|21>>
     <associate|sum and product of rational cuts|<tuple|8.27|190>>
-    <associate|sup of set of bigger elements|<tuple|2.174|70>>
+    <associate|sup of set of bigger elements|<tuple|2.175|70>>
     <associate|sup(A) is element of A in N|<tuple|4.67|107>>
     <associate|sup(S+T)|<tuple|9.46|218>>
     <associate|sup(S+T) (R)|<tuple|8.46|197>>
@@ -26712,10 +26940,10 @@
     finite|<tuple|5.48|125>>
     <associate|surjection f:Sn-\<gtr\>A implies A is finite|<tuple|5.47|124>>
     <associate|surjection implies function in other
-    directory|<tuple|2.46|43>>
-    <associate|surjective function and image/preimage|<tuple|2.54|46>>
+    directory|<tuple|2.47|43>>
+    <associate|surjective function and image/preimage|<tuple|2.55|46>>
     <associate|surjective function implies injective function in opposite
-    direction|<tuple|2.206|78>>
+    direction|<tuple|2.207|78>>
     <associate|the complex numbers form a field|<tuple|9.2|207>>
     <associate|the integer numbers are denumerable|<tuple|6.59|157>>
     <associate|the integer numbers forms a group|<tuple|6.6|145>>
@@ -26750,37 +26978,37 @@
     <associate|there exists irational numbers|<tuple|9.51|218>>
     <associate|there is no surjection between A and P(A)|<tuple|5.5|111>>
     <associate|there is only one empty set|<tuple|1.16|9>>
-    <associate|transfinite induction|<tuple|2.196|75>>
+    <associate|transfinite induction|<tuple|2.197|75>>
     <associate|translation of families|<tuple|5.22|115>>
     <associate|tripple of classes|<tuple|1.75|23>>
     <associate|union and equipotency|<tuple|5.11|112>>
     <associate|union and intersection of disjoint classes|<tuple|1.29|13>>
     <associate|union and intersection of emptyset|<tuple|1.94|28>>
-    <associate|union definition of functions|<tuple|2.32|40>>
-    <associate|union of a family of sets is a set|<tuple|2.70|50>>
-    <associate|union of bijections|<tuple|2.44|43>>
+    <associate|union definition of functions|<tuple|2.33|40>>
+    <associate|union of a family of sets is a set|<tuple|2.71|50>>
+    <associate|union of bijections|<tuple|2.45|43>>
     <associate|union of family of classes|<tuple|1.97|29>>
     <associate|union of finite denumerable sets is
     denumerable|<tuple|5.62|129>>
     <associate|union of finite family of finite sets (number of
     elements)|<tuple|5.43|122>>
-    <associate|union of functions|<tuple|2.31|39>>
-    <associate|union of general product of sets|<tuple|2.99|55>>
+    <associate|union of functions|<tuple|2.32|39>>
+    <associate|union of general product of sets|<tuple|2.100|55>>
     <associate|union of possible empty sets|<tuple|1.103|34>>
     <associate|union of two finite sets is finite|<tuple|5.37|120>>
     <associate|union of two graphs|<tuple|1.53|19>>
     <associate|union of two sets is a set|<tuple|1.61|20>>
     <associate|universal property of natural numbers|<tuple|4.20|97>>
     <associate|unordered pair is a element|<tuple|1.32|14>>
-    <associate|upper bound|<tuple|2.168|68>>
-    <associate|upper bound in pre-ordered set|<tuple|2.167|68>>
+    <associate|upper bound|<tuple|2.169|68>>
+    <associate|upper bound in pre-ordered set|<tuple|2.168|68>>
     <associate|use domain restriction to make a function
-    injective|<tuple|2.232|86>>
-    <associate|well ordered class|<tuple|2.188|74>>
+    injective|<tuple|2.233|86>>
+    <associate|well ordered class|<tuple|2.189|74>>
     <associate|well ordering implies conditional
-    completeness|<tuple|2.191|74>>
-    <associate|well ordering implies fully ordering|<tuple|2.190|74>>
-    <associate|well-ordering theorem|<tuple|2.225|82>>
+    completeness|<tuple|2.192|74>>
+    <associate|well ordering implies fully ordering|<tuple|2.191|74>>
+    <associate|well-ordering theorem|<tuple|2.226|82>>
     <associate|whole numbers are fully-ordered|<tuple|6.26|150>>
     <associate|whole numbers embedded in the reals from a sub
     ring|<tuple|8.53|198>>
