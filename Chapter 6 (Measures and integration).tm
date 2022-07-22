@@ -10413,27 +10413,276 @@
     </enumerate>
   </proof>
 
-  The following theorm will be essential to define the measure integral
+  The following theorm will be essential to define the measure integral.
 
   <\theorem>
     <label|measurable functions properties (6)>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
     <math|A\<in\>\<cal-A\>> and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
-    a <math|\<cal-A\>>-measurable function then there exists a sequence
-    <math|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> of
-    <with|font-series|bold|simple functions> such that
+    a <math|\<cal-A\>>-measurable function such that
+    <math|f<around*|(|A|)>\<subseteq\><around*|[|0,\<infty\>|]>> then there
+    exists a sequence <math|<around*|{|f<rsub|i>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
+    of <with|font-series|bold|simple functions> such that
     <math|\<forall\>x\<in\>A>
 
     <\enumerate>
       <item><math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
       <math|f<rsub|i><around*|(|x|)>\<leqslant\>f<rsub|i+1><around*|(|x|)>>
+      and <math|0\<leqslant\>f<rsub|i><around*|(|x|)>\<less\>\<infty\>>
 
-      <item><math|f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|i><around*|(|x|)>>
+      <item><math|f<around*|(|x|)>=sup<around*|(|n\<in\>\<bbb-N\><rsub|0>\|f<rsub|n><around*|(|x|)>|)>\<equallim\><rsub|<around*|(|1|)>+<text|<reference|equivalence
+      of limits on increasing (decreasing) sequences of extented
+      reals>>><below|lim|n\<rightarrow\>\<infty\>>f<rsub|i><around*|(|x|)>>
     </enumerate>
   </theorem>
 
   <\proof>
-    \;
+    Let <math|n\<in\>\<bbb-N\><rsub|0>>.\ 
+
+    <\equation>
+      <label|eq 18.325.033>I<rsub|n>=<around*|{|i\<cdot\>2<rsup|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>=<around*|{|1,2,\<ldots\>,n\<cdot\>2<rsup|n>|}>
+    </equation>
+
+    Define for <math|k\<in\>I<rsub|n>>
+
+    <\equation>
+      <label|eq 18.326.033>A<rsub|n,k>=<around*|{|x\<in\>A\|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>|}>=f<rsup|-1><around*|(|<around*|[|<frac|k-1|2<rsup|n>>,<frac|k|2<rsup|n>>|[>|)>
+    </equation>
+
+    now
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|t\<in\>A<rsub|n,k>>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>A\<wedge\><frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|t|)>\<less\><frac|k|2<rsup|n>>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|<around*|(|t\<in\>A\<wedge\><frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|t|)>|)>\<wedge\><around*|(|t\<in\>\<cal-A\>\<wedge\>f<around*|(|t|)>\<less\><frac|k|2<rsup|n>>|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<geqslant\><frac|k-1|2<rsup|n>>|}>\<wedge\>t\<in\><around*|{|f\<less\><frac|k|2<rsup|n>>|}>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<geqslant\><frac|k-1|2<rsup|n>>|}><big|cap><around*|{|f\<less\><frac|k|2<rsup|n>>|}>>>>>
+    </eqnarray*>
+
+    proving that\ 
+
+    <\equation>
+      <label|eq 18.327.033>A<rsub|n,k>=<around*|{|f\<geqslant\><frac|k-1|2<rsup|n>>|}><big|cap><around*|{|f\<less\><frac|k|2<rsup|n>>|}>
+    </equation>
+
+    As <math|f> is <math|\<cal-A\>>-measurable we have by
+    <reference|measurable function condition (1)> that
+    <math|<around*|{|f\<geqslant\><frac|k-1|2<rsup|n>>|}>,<around*|{|f\<less\><frac|k|2<rsup|n>>|}>\<in\>\<cal-A\>>,
+    so it follows that\ 
+
+    <\equation>
+      <label|eq 18.327.033>\<forall\>k\<in\><around*|{|i\<cdot\>2<rsup|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>\<vDash\>A<rsub|n,k>\<in\>\<cal-A\>
+    </equation>
+
+    Let <math|l,k\<in\>I<rsub|n>> with <math|l\<less\>k\<Rightarrow\>l+1\<leqslant\>k\<Rightarrow\>l\<leqslant\>k-1>,
+    assume that <math|t\<in\>A<rsub|n,l><big|cap>A<rsub|n,k>> then
+    <math|<frac|l-1|2<rsup|n>>\<leqslant\>f<around*|(|t|)>\<less\><frac|l|2<rsup|n>>\<leqslant\><frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|t|)>\<less\><frac|k|2<rsup|n>>>
+    giving the contradiction <math|f<around*|(|t|)>\<less\>f<around*|(|t|)>>,
+    hence we must have that <math|A<rsub|n,l><big|cap>A<rsub|n,k>=\<emptyset\>>.
+    So\ 
+
+    <\equation>
+      <label|eq 18.329.033>\<forall\>l,k\<in\>I<rsub|n> with l\<neq\>k we
+      have A<rsub|n,k><big|cap>A<rsub|n,l>
+    </equation>
+
+    Now <math|x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>> then there
+    exists a <math|k\<in\>I<rsub|n>> such that <math|x\<in\>A<rsub|n,k>> and
+    if there is another <math|l\<in\>I<rsub|n>> then we must have that
+    <math|k=l> [as <math|A<rsub|n,l><big|cap>A<rsub|n,k>=\<emptyset\>> if
+    <math|k=l>]. In other workds if <math|x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
+    there exists a <with|font-series|bold|unique> <math|k\<in\>I<rsub|n>>
+    such that <math|x\<in\>A<rsub|n,k>>. This allows us to define
+    <math|<around*|{|f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    by\ 
+
+    <\equation>
+      <label|eq 18.330.033>f<rsub|n><around*|(|x|)>=<choice|<tformat|<table|<row|<cell|<frac|k-1|2<rsup|<rsup|n>>>
+      if x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k > where k is the
+      unique k such that x\<in\>A<rsub|n,k>>>|<row|<cell|n if
+      x\<in\>A\\<big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>>>>>\<less\>\<infty\>
+    </equation>
+
+    Let <math|n\<in\>\<bbb-N\><rsub|0>> and take <math|k\<in\>I<rsub|n>> and
+    <math|l\<in\>I<rsub|n+1>> such that <math|A<rsub|n,k><big|cap>A<rsub|n+1,l>\<neq\>\<emptyset\>>.
+    Then there exists <math|x\<in\>A> such that
+    <math|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>
+    and <math|<frac|l-1|2<rsup|n+1>>\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n+1>>>.
+    So we have then
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<frac|k-1|2<rsup|n>>\<less\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|k|2<rsup|n>>>|<cell|\<Rightarrow\>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<leqslant\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-2\<less\>l\<wedge\>l-1\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-1\<leqslant\>l\<wedge\>l\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|l=2\<cdot\>k-1<eq-number><label|eq
+      18.331.033>>>>>
+    </eqnarray*>
+
+    Next
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|x\<in\>A<rsub|n+1,l>>|<cell|\<Rightarrow\>>|<cell|<frac|l-1|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|l|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrowlim\><rsub|<text|<reference|eq
+      18.331.033>>>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|k|2<rsup|n1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|x\<in\>A<rsub|n,k>>>>>
+    </eqnarray*>
+
+    So we have
+
+    <\equation>
+      <label|eq 18.332.033>\<forall\>n\<in\>\<bbb-N\><rsub|0> if
+      k\<in\>I<rsub|n>,l\<in\>I<rsub|n+1><infix-and>A<rsub|n,k><big|cap>A<rsub|n+1,l>\<neq\>\<emptyset\>
+      then A<rsub|n+1,l>\<subseteq\>A<rsub|n,k>
+    </equation>
+
+    Let <math|n\<in\>\<bbb-N\><rsub|0>>, and
+    <math|x\<in\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<Rightarrow\>0\<leqslant\>f<around*|(|x|)>\<less\>n>.
+    Define <math|B<rsub|x>=<around*|{|k\<in\>I<rsub|n>\|f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>|}>\<subset\>I<rsub|n>>
+    a finite set. As <math|n=<frac|n\<cdot\>2<rsup|n>|2<rsup|n>>\<in\>I<rsub|n>>
+    and <math|f<around*|(|x|)>\<less\>n=<frac|n\<cdot\>2<rsup|n>|2<rsup|n>>>
+    we have that <math|n\<cdot\>2<rsup|n>\<in\>B<rsub|x>> proving that
+    <math|B<rsub|x>\<neq\>\<emptyset\>>. So
+    <math|l=min<around*|(|B<rsub|x>|)>> exists, and we have to consider two
+    cases:
+
+    <\description>
+      <item*|<math|l=1>>then <math|<frac|l-1|2<rsup|n>>=0\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,1>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
+
+      <item*|<math|1\<less\>l>>then <math|1\<leqslant\>l-1\<less\>l\<leqslant\>n\<cdot\>2<rsup|n>
+      proving that l-1\<in\>I<rsub|n>>, so as
+      <math|l-1\<less\>min<around*|(|B<rsub|x>|)>> we must have that
+      <math|<frac|l-1|2<rsup|b>>\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,l>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
+    </description>
+
+    So we have proved that <math|f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|i>>A<rsub|n,k>>,
+    also for <math|k\<in\>I<rsub|n>> we have that
+    <math|A<rsub|n,k>=f<rsup|-1><around*|(|<around*|[|<frac|k-1|2<rsup|n>>,<frac|k|2<rsup|n>>|[>|)>\<subseteq\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>>,
+    hence\ 
+
+    <\equation>
+      <label|eq 18.333.033>\<forall\>n\<in\>\<bbb-N\><rsub|0> we have
+      f<rsup|-1><around*|(|<around*|[|0,n|[>|)>=<big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>
+    </equation>
+
+    Let <math|x\<in\>A> and <math|n\<in\>\<bbb-N\>> then either:
+
+    <\description>
+      <item*|<math|n\<leqslant\>f<around*|(|x|)>>>then
+      <math|x\<nin\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<equallim\><rsub|<text|<reference|eq
+      18.333.033>>><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>> so using
+      <reference|eq 18.330.033> we have that
+      <math|f<rsub|n><around*|(|x|)>=n\<leqslant\>f<around*|(|x|)>>
+
+      <item*|<math|0\<leqslant\>f<around*|(|x|)>\<less\>n>>then
+      <math|x\<in\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<equallim\><rsub|<text|<reference|eq
+      18.333.033>>><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>, so there
+      exists a <math|k\<in\>I<rsub|k>> such that <math|x\<in\>A<rsub|n,k>>,
+      using <reference|eq 18.330.033> it follows that
+      <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>
+    </description>
+
+    To suummarize
+
+    <\equation>
+      <label|eq 18.334.033>\<forall\>x\<in\>E,\<forall\>n\<in\>\<bbb-N\><rsub|0>
+      we have f<rsub|n><around*|(|x|)>\<leqslant\>f<around*|(|x|)><infix-and>f<rsub|n><around*|(|x|)>=<choice|<tformat|<table|<row|<cell|n
+      if n\<leqslant\>f<around*|(|x|)>>>|<row|<cell|<frac|k-1|2<rsup|n>> if
+      f<around*|(|x|)>\<less\>n where k\<in\>I<rsub|n>>>>>>
+    </equation>
+
+    and\ 
+
+    <\equation>
+      <label|eq 18.335.033>\<forall\>n\<in\>\<bbb-N\><rsub|0> if x\<in\>A is
+      such that f<around*|(|x|)>\<leqslant\>n then \<exists\>k\<in\>I<rsub|n>
+      such that f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>
+    </equation>
+
+    Let now <math|x\<in\>A> then we must consider the following cases for
+    <math|f<around*|(|x|)>>:
+
+    <\description>
+      <item*|<math|n+1\<leqslant\>f<around*|(|x|)>>>then by <reference|eq
+      18.334.033> <math|f<rsub|n><around*|(|x|)>=n\<less\>n+1=f<rsub|n+1><around*|(|x|)>>\ 
+
+      <\equation*>
+        f<rsub|n><around*|(|x|)>\<less\>f<rsub|n+1><around*|(|x|)>
+      </equation*>
+
+      <item*|<math|n\<leqslant\>f<around*|(|x|)>\<less\>n+1>>then by
+      <reference|eq 18.334.033>,<reference|eq 18.335.033>
+      <math|n=f<rsub|n><around*|(|x|)>> and
+      <math|\<exists\>k\<in\>I<rsub|n+1>> with
+      <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>.
+      <math|> As <math|n\<leqslant\>f<around*|(|x|)>> we have that
+      <math|n\<less\><frac|k|2<rsup|n+1>>\<Rightarrow\>n\<cdot\>2<rsup|n+1>\<less\>k\<Rightarrow\>n\<cdot\>2<rsup|n+1>\<leqslant\>k-1\<Rightarrow\>n\<leqslant\><frac|k-1|2<rsup|n+1>>=f<rsub|n+1><around*|(|x|)>>
+      proving that
+
+      <\equation*>
+        f<rsub|n><around*|(|x|)>\<leqslant\>f<rsub|n+1><around*|(|x|)>
+      </equation*>
+
+      <item*|<math|0\<leqslant\>f<around*|(|x|)>\<less\>n>>then
+      <math|x\<in\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>,x\<in\>f<rsup|-1><around*|(|<around*|[|0,n+1|[>|)>>,
+      so using <reference|eq 18.333.033> <math|\<exists\>k\<in\>I<rsub|n>,l\<in\>I<rsub|n+1>>
+      such that <math|f<around*|(|x|)>\<in\>A<rsub|n,k><big|cap>A<rsub|n+1,l>>.
+      Applying then <reference|eq 18.332.033> we have
+      <math|A<rsub|n+1,l>\<subseteq\>A<rsub|n,k>> proving that
+      <math|<frac|l-1|2<rsup|n+1>>\<leqslant\><frac|k-1|2<rsup|n>>>. Using
+      <reference|eq 18.330.033> we have that
+      <math|f<rsub|n+1><around*|(|x|)>=<frac|l-1|2<rsup|n+1>>,f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>>
+      proving that\ 
+
+      <\equation*>
+        f<rsub|n><around*|(|x|)>\<leqslant\>f<rsub|n+1><around*|(|x|)>
+      </equation*>
+    </description>
+
+    So\ 
+
+    <\equation>
+      <label|eq 18.336.033>\<forall\>x\<in\>A we have
+      \<forall\>n\<in\>\<bbb-N\><rsub|0> that
+      f<rsub|n><around*|(|x|)>\<leqslant\>f<rsub|n+1><around*|(|x|)><infix-and>0\<leqslant\>f<rsub|n><around*|(|x|)>\<less\>\<infty\>
+    </equation>
+
+    Let <math|x\<in\>A>. Using <reference|eq 18.334.033> it follows that
+
+    <\equation>
+      <label|eq 18.337.033>sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\>f<around*|(|x|)>
+    </equation>
+
+    Assume now that <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>f<around*|(|x|)>>.
+    For <math|f<around*|(|x|)>> wwe have either:
+
+    <\description>
+      <item*|<math|f<around*|(|x|)>=\<infty\>>>then as
+      <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>\<infty\>>
+      we have by <reference|consequence of the archimedean property for the
+      reals> that <math|\<exists\>n\<in\>\<bbb-N\><rsub|0>> such that
+      <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n\<less\>f<around*|(|x|)>>.
+      Using <reference|eq 18.334.033> we have then that
+      <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n=f<rsub|n><around*|(|x|)>>
+      a contradiction.
+
+      <item*|<math|f<around*|(|x|)>\<less\>\<infty\>>>then by
+      <math|\<delta\>=f<around*|(|x|)>-sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<gtr\>0>,
+      using <reference|properties of positive, negative real numbers> there
+      exists a <math|n1\<in\>\<bbb-N\><rsub|0>> such that
+      <math|<frac|1|2<rsup|n<rsub|1>>>\<less\>\<delta\>>. Using
+      <reference|consequence of the archimedean property for the reals> there
+      exists a <math|n<rsub|2>\<in\>\<bbb-N\><rsub|0>> such that
+      <math|f<around*|(|x|)>\<less\>n<rsub|2>>. Take
+      <math|n=max<around*|(|n<rsub|1>,n<rsub|2>|)>> then
+      <math|f<around*|(|x|)>\<less\>n> so that by <reference|eq 18.335.033>
+      there exists a <math|k\<in\>I<rsub|n>> such that
+      <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|<rsup|n>>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>.
+      then <math|f<around*|(|x|)>-f<rsub|n><around*|(|x|)>\<leqslant\><frac|k|2<rsup|n>>-<frac|k-1|2<rsup|n>>=<frac|1|2<rsup|n>>\<leqslant\><frac|1|2<rsup|n<rsub|1>>>\<less\>\<delta\><rsub|1>=f<around*|(|x|)>-sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>,
+      so that <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>f<rsub|n><around*|(|x|)>>
+      a contradiction.\ 
+    </description>
+
+    As we have in all cases a contradiction we must have that
+    <math|f<around*|(|x|)>\<leqslant\>sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>
+    which combined with <reference|eq 18.337.033> proves that\ 
+
+    <\equation>
+      <label|eq 18.338.033>f<around*|(|x|)>=sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>
+    </equation>
+
+    The theorem is now proved by <reference|eq 18.336.033> and <reference|eq
+    18.338.033>.
   </proof>
 
   \;
@@ -10815,7 +11064,21 @@
     <associate|eq 18.322.033|<tuple|18.322|?>>
     <associate|eq 18.323.033|<tuple|18.323|?>>
     <associate|eq 18.324.033|<tuple|18.324|?>>
+    <associate|eq 18.325.033|<tuple|18.325|?>>
+    <associate|eq 18.326.033|<tuple|18.326|?>>
+    <associate|eq 18.327.033|<tuple|18.328|?>>
+    <associate|eq 18.329.033|<tuple|18.329|?>>
     <associate|eq 18.33.021|<tuple|18.38|?>>
+    <associate|eq 18.330.033|<tuple|18.330|?>>
+    <associate|eq 18.330.33|<tuple|18.330|?>>
+    <associate|eq 18.331.033|<tuple|18.331|?>>
+    <associate|eq 18.332.033|<tuple|18.332|?>>
+    <associate|eq 18.333.033|<tuple|18.333|?>>
+    <associate|eq 18.334.033|<tuple|18.334|?>>
+    <associate|eq 18.335.033|<tuple|18.335|?>>
+    <associate|eq 18.336.033|<tuple|18.336|?>>
+    <associate|eq 18.337.033|<tuple|18.337|?>>
+    <associate|eq 18.338.033|<tuple|18.338|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
     <associate|eq 18.35.021|<tuple|18.40|?>>
     <associate|eq 18.36.016|<tuple|18.85|?>>
@@ -10943,7 +11206,6 @@
     <associate|measurable function condition (2)|<tuple|18.154|?>>
     <associate|measurable function condition and restricted
     functions|<tuple|18.143|?>>
-    <associate|measurable function properties (6)|<tuple|18.171|?>>
     <associate|measurable functions and generated algebra|<tuple|18.141|?>>
     <associate|measurable functions properties (1)|<tuple|18.164|?>>
     <associate|measurable functions properties (2)|<tuple|18.165|?>>
