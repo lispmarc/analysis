@@ -7063,19 +7063,6 @@
     </enumerate>
   </proof>
 
-  Using the concept of <math|\<mu\>>-negligible sets we can introduce the
-  concept of almost everywhere predicates and complete measures.
-
-  <\definition>
-    <label|almost complete><index|almost everyware>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
-    space and <math|P<around*|(|x|)>> a predicate then <math|P> is
-    <with|font-series|bold|almost everywhere true> if
-    <math|<around*|{|x\<in\>X\|P<around*|(|x|)><text| is
-    false>|}>\<in\>\<cal-N\><rsub|\<mu\>>>. In other words the set where the
-    predicate does not hold is <math|\<mu\>>-negligible.
-  </definition>
-
   <\definition>
     <label|complete measures><index|complete measures>Let
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
@@ -9566,7 +9553,7 @@
     <label|simple function>Let <math|X> be a set then a function
     <math|f\<of\>X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is a
     <with|font-series|bold|simple function> if <math|f<around*|(|X|)>> is
-    finite.
+    finite and not empty.
   </definition>
 
   <\example>
@@ -9580,7 +9567,7 @@
 
   <\proof>
     As <math|f> is a simple function we have that <math|f<around*|(|A|)>> is
-    finite. Let <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
+    finite and not empty.. Let <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
     then <math|f<rsup|-1><around*|(|B<big|cap>f<around*|(|A|)>|)>\<equallim\><rsub|<text|<reference|image
     (preimage) of union , intersections>>>f<rsup|-1><around*|(|B|)><big|cap>f<rsup|-1><around*|(|f<around*|(|A|)>|)>=f<rsup|-1><around*|(|B|)><big|cap>A=f<rsup|-1><around*|(|B|)>>
     proving that\ 
@@ -10440,7 +10427,7 @@
     Let <math|n\<in\>\<bbb-N\><rsub|0>>.\ 
 
     <\equation>
-      <label|eq 18.325.033>I<rsub|n>=<around*|{|i\<cdot\>2<rsup|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>=<around*|{|1,2,\<ldots\>,n\<cdot\>2<rsup|n>|}>
+      <label|eq 18.325.033>I<rsub|n>=<around*|{|i\<in\>\<bbb-N\><rsub|0>\|i\<leqslant\>n\<cdot\>2<rsup|n>|}>=<around*|{|1,2,\<ldots\>,n\<cdot\>2<rsup|n>|}>
     </equation>
 
     Define for <math|k\<in\>I<rsub|n>>
@@ -10449,7 +10436,7 @@
       <label|eq 18.326.033>A<rsub|n,k>=<around*|{|x\<in\>A\|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>|}>=f<rsup|-1><around*|(|<around*|[|<frac|k-1|2<rsup|n>>,<frac|k|2<rsup|n>>|[>|)>
     </equation>
 
-    now
+    Now
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|t\<in\>A<rsub|n,k>>|<cell|\<Leftrightarrow\>>|<cell|t\<in\>A\<wedge\><frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|t|)>\<less\><frac|k|2<rsup|n>>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|<around*|(|t\<in\>A\<wedge\><frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|t|)>|)>\<wedge\><around*|(|t\<in\>\<cal-A\>\<wedge\>f<around*|(|t|)>\<less\><frac|k|2<rsup|n>>|)>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<geqslant\><frac|k-1|2<rsup|n>>|}>\<wedge\>t\<in\><around*|{|f\<less\><frac|k|2<rsup|n>>|}>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|t\<in\><around*|{|f\<geqslant\><frac|k-1|2<rsup|n>>|}><big|cap><around*|{|f\<less\><frac|k|2<rsup|n>>|}>>>>>
@@ -10467,7 +10454,7 @@
     so it follows that\ 
 
     <\equation>
-      <label|eq 18.327.033>\<forall\>k\<in\><around*|{|i\<cdot\>2<rsup|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>\<vDash\>A<rsub|n,k>\<in\>\<cal-A\>
+      <label|eq 18.328.033>\<forall\>k\<in\><around*|{|i\<cdot\>2<rsup|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>\<vDash\>A<rsub|n,k>\<in\>\<cal-A\>
     </equation>
 
     Let <math|l,k\<in\>I<rsub|n>> with <math|l\<less\>k\<Rightarrow\>l+1\<leqslant\>k\<Rightarrow\>l\<leqslant\>k-1>,
@@ -10479,17 +10466,13 @@
 
     <\equation>
       <label|eq 18.329.033>\<forall\>l,k\<in\>I<rsub|n> with l\<neq\>k we
-      have A<rsub|n,k><big|cap>A<rsub|n,l>
+      have A<rsub|n,k><big|cap>A<rsub|n,l>=\<emptyset\>
     </equation>
 
-    Now <math|x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>> then there
+    If <math|x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>> then there
     exists a <math|k\<in\>I<rsub|n>> such that <math|x\<in\>A<rsub|n,k>> and
-    if there is another <math|l\<in\>I<rsub|n>> then we must have that
-    <math|k=l> [as <math|A<rsub|n,l><big|cap>A<rsub|n,k>=\<emptyset\>> if
-    <math|k=l>]. In other workds if <math|x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
-    there exists a <with|font-series|bold|unique> <math|k\<in\>I<rsub|n>>
-    such that <math|x\<in\>A<rsub|n,k>>. This allows us to define
-    <math|<around*|{|f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    this <math|k> is unique because of <reference|eq 18.329.033>. This allows
+    us to define <math|<around*|{|f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
     by\ 
 
     <\equation>
@@ -10497,6 +10480,16 @@
       if x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k > where k is the
       unique k such that x\<in\>A<rsub|n,k>>>|<row|<cell|n if
       x\<in\>A\\<big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>>>>>\<less\>\<infty\>
+    </equation>
+
+    Using the above definition if is clear that
+    <math|f<rsub|n><around*|(|A|)>\<subseteq\><around*|{|n|}><big|cup><rsub|k\<in\>I<rsub|n>><around*|{|<frac|k-1|2<rsup|n>>|}>>
+    which is finite [see <reference|finite union of finite sets is finite>],
+    taking this in account together with <reference|eq 18.328.033> proves\ 
+
+    <\equation>
+      <label|eq 18.331.033.1>\<forall\>n\<in\>\<bbb-N\><rsub|0> f<rsub|n> is
+      a<with|font-series|medium| simple function>
     </equation>
 
     Let <math|n\<in\>\<bbb-N\><rsub|0>> and take <math|k\<in\>I<rsub|n>> and
@@ -10507,15 +10500,15 @@
     So we have then
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<frac|k-1|2<rsup|n>>\<less\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|k|2<rsup|n>>>|<cell|\<Rightarrow\>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<leqslant\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-2\<less\>l\<wedge\>l-1\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-1\<leqslant\>l\<wedge\>l\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|l=2\<cdot\>k-1<eq-number><label|eq
+      <tformat|<table|<row|<cell|<frac|k-1|2<rsup|n>>\<less\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|k|2<rsup|n>>>|<cell|\<Rightarrow\>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<less\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-2\<less\>l\<wedge\>l-1\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-1\<leqslant\>l\<wedge\>l\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|l=2\<cdot\>k-1<eq-number><label|eq
       18.331.033>>>>>
     </eqnarray*>
 
     Next
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|x\<in\>A<rsub|n+1,l>>|<cell|\<Rightarrow\>>|<cell|<frac|l-1|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|l|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrowlim\><rsub|<text|<reference|eq
-      18.331.033>>>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|k|2<rsup|n1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|x\<in\>A<rsub|n,k>>>>>
+      <tformat|<table|<row|<cell|y\<in\>A<rsub|n+1,l>>|<cell|\<Rightarrow\>>|<cell|<frac|l-1|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|l|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrowlim\><rsub|<text|<reference|eq
+      18.331.033>>>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|k|2<rsup|n1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|y\<in\>A<rsub|n,k>>>>>
     </eqnarray*>
 
     So we have
@@ -10528,21 +10521,21 @@
 
     Let <math|n\<in\>\<bbb-N\><rsub|0>>, and
     <math|x\<in\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<Rightarrow\>0\<leqslant\>f<around*|(|x|)>\<less\>n>.
-    Define <math|B<rsub|x>=<around*|{|k\<in\>I<rsub|n>\|f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>|}>\<subset\>I<rsub|n>>
-    a finite set. As <math|n=<frac|n\<cdot\>2<rsup|n>|2<rsup|n>>\<in\>I<rsub|n>>
-    and <math|f<around*|(|x|)>\<less\>n=<frac|n\<cdot\>2<rsup|n>|2<rsup|n>>>
-    we have that <math|n\<cdot\>2<rsup|n>\<in\>B<rsub|x>> proving that
-    <math|B<rsub|x>\<neq\>\<emptyset\>>. So
-    <math|l=min<around*|(|B<rsub|x>|)>> exists, and we have to consider two
-    cases:
+    Define <math|B<rsub|x>=<around*|{|k\<in\>I<rsub|n>\|f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>|}>\<subseteq\>I<rsub|n>>
+    a finite set. As <math|n\<cdot\>2<rsup|n>\<in\>I<rsub|n>> and
+    <math|f<around*|(|x|)>\<less\>n=<frac|n\<cdot\>2<rsup|n>|2<rsup|n>>> we
+    have that <math|n\<cdot\>2<rsup|n>\<in\>B<rsub|x>> proving that
+    <math|B<rsub|x>\<neq\>\<emptyset\>>, so
+    <math|l=min<around*|(|B<rsub|x>|)>> exists. We have to consider two cases
+    for <math|l>:
 
     <\description>
       <item*|<math|l=1>>then <math|<frac|l-1|2<rsup|n>>=0\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,1>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
 
       <item*|<math|1\<less\>l>>then <math|1\<leqslant\>l-1\<less\>l\<leqslant\>n\<cdot\>2<rsup|n>
-      proving that l-1\<in\>I<rsub|n>>, so as
+      proving that l-1\<in\>I<rsub|n>>, and as
       <math|l-1\<less\>min<around*|(|B<rsub|x>|)>> we must have that
-      <math|<frac|l-1|2<rsup|b>>\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,l>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
+      <math|<frac|l-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,l>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
     </description>
 
     So we have proved that <math|f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|i>>A<rsub|n,k>>,
@@ -10560,22 +10553,22 @@
     <\description>
       <item*|<math|n\<leqslant\>f<around*|(|x|)>>>then
       <math|x\<nin\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<equallim\><rsub|<text|<reference|eq
-      18.333.033>>><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>> so using
-      <reference|eq 18.330.033> we have that
+      18.333.033>>><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>\<Rightarrow\>x\<in\>A\\<big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>,
+      so using <reference|eq 18.330.033> we have that
       <math|f<rsub|n><around*|(|x|)>=n\<leqslant\>f<around*|(|x|)>>
 
       <item*|<math|0\<leqslant\>f<around*|(|x|)>\<less\>n>>then
       <math|x\<in\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<equallim\><rsub|<text|<reference|eq
       18.333.033>>><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>, so there
-      exists a <math|k\<in\>I<rsub|k>> such that <math|x\<in\>A<rsub|n,k>>,
-      using <reference|eq 18.330.033> it follows that
-      <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>
+      exists a unique <math|k\<in\>I<rsub|k>> such that
+      <math|x\<in\>A<rsub|n,k>>, using <reference|eq 18.330.033> it follows
+      that <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>
     </description>
 
     To suummarize
 
     <\equation>
-      <label|eq 18.334.033>\<forall\>x\<in\>E,\<forall\>n\<in\>\<bbb-N\><rsub|0>
+      <label|eq 18.334.033>\<forall\>x\<in\>A,\<forall\>n\<in\>\<bbb-N\><rsub|0>
       we have f<rsub|n><around*|(|x|)>\<leqslant\>f<around*|(|x|)><infix-and>f<rsub|n><around*|(|x|)>=<choice|<tformat|<table|<row|<cell|n
       if n\<leqslant\>f<around*|(|x|)>>>|<row|<cell|<frac|k-1|2<rsup|n>> if
       f<around*|(|x|)>\<less\>n where k\<in\>I<rsub|n>>>>>>
@@ -10604,7 +10597,7 @@
       <reference|eq 18.334.033>,<reference|eq 18.335.033>
       <math|n=f<rsub|n><around*|(|x|)>> and
       <math|\<exists\>k\<in\>I<rsub|n+1>> with
-      <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>.
+      <math|f<rsub|n+1><around*|(|x|)>=<frac|k-1|2<rsup|n+1>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n+1>>>.
       <math|> As <math|n\<leqslant\>f<around*|(|x|)>> we have that
       <math|n\<less\><frac|k|2<rsup|n+1>>\<Rightarrow\>n\<cdot\>2<rsup|n+1>\<less\>k\<Rightarrow\>n\<cdot\>2<rsup|n+1>\<leqslant\>k-1\<Rightarrow\>n\<leqslant\><frac|k-1|2<rsup|n+1>>=f<rsub|n+1><around*|(|x|)>>
       proving that
@@ -10644,23 +10637,24 @@
     </equation>
 
     Assume now that <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>f<around*|(|x|)>>.
-    For <math|f<around*|(|x|)>> wwe have either:
+    For <math|f<around*|(|x|)>> we have either:
 
     <\description>
       <item*|<math|f<around*|(|x|)>=\<infty\>>>then as
       <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>\<infty\>>
       we have by <reference|consequence of the archimedean property for the
       reals> that <math|\<exists\>n\<in\>\<bbb-N\><rsub|0>> such that
-      <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n\<less\>f<around*|(|x|)>>.
+      <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n\<less\>\<infty\>=f<around*|(|x|)>>.
       Using <reference|eq 18.334.033> we have then that
-      <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n=f<rsub|n><around*|(|x|)>>
+      <math|f<rsub|n><around*|(|x|)>=n>, so
+      \ <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n=f<rsub|n><around*|(|x|)>>
       a contradiction.
 
-      <item*|<math|f<around*|(|x|)>\<less\>\<infty\>>>then by
+      <item*|<math|f<around*|(|x|)>\<less\>\<infty\>>>Take
       <math|\<delta\>=f<around*|(|x|)>-sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<gtr\>0>,
       using <reference|properties of positive, negative real numbers> there
       exists a <math|n1\<in\>\<bbb-N\><rsub|0>> such that
-      <math|<frac|1|2<rsup|n<rsub|1>>>\<less\>\<delta\>>. Using
+      <math|<frac|1|2<rsup|n<rsub|1>>>\<less\>\<delta\>>, using
       <reference|consequence of the archimedean property for the reals> there
       exists a <math|n<rsub|2>\<in\>\<bbb-N\><rsub|0>> such that
       <math|f<around*|(|x|)>\<less\>n<rsub|2>>. Take
@@ -10668,7 +10662,7 @@
       <math|f<around*|(|x|)>\<less\>n> so that by <reference|eq 18.335.033>
       there exists a <math|k\<in\>I<rsub|n>> such that
       <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|<rsup|n>>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>.
-      then <math|f<around*|(|x|)>-f<rsub|n><around*|(|x|)>\<leqslant\><frac|k|2<rsup|n>>-<frac|k-1|2<rsup|n>>=<frac|1|2<rsup|n>>\<leqslant\><frac|1|2<rsup|n<rsub|1>>>\<less\>\<delta\><rsub|1>=f<around*|(|x|)>-sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>,
+      then <math|f<around*|(|x|)>-f<rsub|n><around*|(|x|)>\<less\><frac|k|2<rsup|n>>-<frac|k-1|2<rsup|n>>=<frac|1|2<rsup|n>>\<leqslant\><frac|1|2<rsup|n<rsub|1>>>\<less\>\<delta\>=f<around*|(|x|)>-sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>,
       so that <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>f<rsub|n><around*|(|x|)>>
       a contradiction.\ 
     </description>
@@ -10681,9 +10675,249 @@
       <label|eq 18.338.033>f<around*|(|x|)>=sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>
     </equation>
 
-    The theorem is now proved by <reference|eq 18.336.033> and <reference|eq
-    18.338.033>.
+    The theorem is now proved by <reference|eq 18.331.033.1>,<reference|eq
+    18.336.033> and <reference|eq 18.338.033>.
   </proof>
+
+  <subsection|Properties that hold everywhere>
+
+  Using the concept of <math|\<mu\>>-negligible sets [see
+  <reference|negligibility>] we can introduce the concept of almost
+  everywhere predicates and complete measures.
+
+  <\definition>
+    <label|almost complete><index|almost everyware>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
+    space and <math|P<around*|(|x|)>> a predicate then <math|P> is
+    <with|font-series|bold|<math|\<mu\>>-almost everywhere true> if
+    <math|<around*|{|x\<in\>X\|P<around*|(|x|)><text| is
+    false>|}>\<in\>\<cal-N\><rsub|\<mu\>>>. A property holds almost
+    everywhere if the set where the predicate does not hold is
+    <math|\<mu\>>-negligible.
+  </definition>
+
+  Using the above we can define the following
+
+  <\definition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
+    measure space and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> then\ 
+
+    <\enumerate>
+      <item><math|f=g> <math|\<mu\>>-almost everywhere if
+      <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>>
+      is <math|\<mu\>>-negligible.
+
+      <item><math|f\<geqslant\>g> <math|\<mu\>>-almost everywhere if
+      <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<less\>g<around*|(|x|)>|}>>
+      is <math|\<mu\>>-negligible.
+
+      <item>Let <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+      a sequence of functions from <math|X> to
+      <math|<wide|\<bbb-R\>|\<wide-bar\>>> then
+      <math|<around*|{|f<rsub|n><rsub|>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+      converges <math|\<mu\>>-almost everywhere to <math|f> if
+      <math|<around*|{|x\<in\>X<mid|\|><around*|{|f<rsub|n><around*|(|x|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>
+      does not converges to f<around*|(|x|)>|}>> is <math|\<mu\>>-negligible.
+    </enumerate>
+  </definition>
+
+  <\proposition>
+    <label|f=g almost everywhere property>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a complete
+    measure space [see <reference|complete measures>] and let
+    <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
+    <math|\<cal-A\>>-measurable function and
+    <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> such that
+    <math|f=g> <math|\<mu\>>-almost everywhere then <math|g> is
+    <math|\<cal-A\>>-measurable.\ 
+  </proposition>
+
+  <\proof>
+    As <math|f=g> <math|\<mu\>>-almost everywhere there exists a
+    <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> and
+    <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
+    So\ 
+
+    <\equation*>
+      x\<in\>X\\N\<Rightarrow\>f<around*|(|x|)>=g<around*|(|x|)>
+    </equation*>
+
+    . Let <math|t\<in\>\<bbb-R\>> then\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|{|g\<leqslant\>t|}>>|<cell|=>|<cell|<around*|{|x\<in\>X\|g<around*|(|x|)>\<leqslant\>t|}>>>|<row|<cell|>|<cell|=>|<cell|X<big|cap><around*|{|x\<in\>X\|g<around*|(|x|)>\<leqslant\>t|}>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<around*|(|X\\N|)><big|cup>N|)><big|cap><around*|{|x\<in\>X\|g<around*|(|x|)>\<leqslant\>t|}>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<around*|(|X\\N|)><big|cap><around*|{|x\<in\>X\|g<around*|(|x|)>\<leqslant\>t|}>|)><big|cup><around*|(|N<big|cap><around*|{|x\<in\>X\|g<around*|(|x|)>\<leqslant\>t|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<around*|(|X\\N|)><big|cap><around*|{|x\<in\>X<around*|\||f<around*|(|x|)>\<leqslant\>t|\<nobracket\>>|}>|)><big|cup><around*|(|N<big|cap><around*|{|x\<in\>X\|g<around*|(|x|)>\<leqslant\>t|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<around*|(|X\\N|)><big|cap><around*|{|f\<leqslant\>t|}>|)><big|cup><around*|(|N<big|cap><around*|{|x\<in\>X\|g<around*|(|x|)>\<leqslant\>t|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<around*|(|X\\N|)><big|cap><around*|{|f\<leqslant\>t|}>|)><big|cup><around*|(|N<big|cap><around*|{|g\<leqslant\>t|}>|)><eq-number><label|eq
+      18.340.033>>>>>
+    </eqnarray*>
+
+    As <math|><math|N<big|cap><around*|{|g\<leqslant\>t|}>\<subseteq\>N>,
+    <math|\<mu\><around*|(|N|)>=\<emptyset\>> and <math|\<mu\>> is complete
+    [see <reference|complete measures> for a definition] we have
+    <math|N<big|cap><around*|{|g\<leqslant\>t|}>\<in\>\<cal-A\>>. As <math|f>
+    is <math|\<mu\>>-measurable we have by <reference|measurable function
+    condition (1)> that <math|<around*|{|f\<leqslant\>t|}>\<in\>\<cal-A\>,>also
+    as <math|N\<in\>\<cal-A\>\<Rightarrow\>X\\N\<in\>\<cal-A\>>,
+    <math|<around*|(|<around*|(|X\\N|)><big|cap><around*|{|f\<leqslant\>t|}>|)>\<in\>\<cal-A\>>.
+    So using <reference|eq 18.340.033> we have that
+    <math|<around*|{|g\<leqslant\>t|}>\<in\>\<cal-A\>> which by
+    <reference|measurable function condition (1)> proves that\ 
+
+    <\equation*>
+      g is \<cal-A\><text|-measurable>
+    </equation*>
+  </proof>
+
+  <\corollary>
+    <label|measurable function and limit>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> is a complete
+    measure space, let <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    be a sequence of <math|\<cal-A\>>-measurable functions from
+    <math|X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> such that
+    <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>> converges
+    <math|\<mu\>>-almost everywhere to <math|f> then <math|f> is
+    <math|\<cal-A\>>-measurable.
+  </corollary>
+
+  <\proof>
+    Take <math|B=<around*|{|x\<in\>X\|<around*|{|f<rsub|n><around*|(|x|)><rsub|n\<in\>\<bbb-N\><rsub|0>>
+    does not converges to f<around*|(|x|)>|}>|}>. >As
+    <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>> converges
+    <math|\<mu\>>-almost everywhere to <math|f> we have that there exists a
+    <math|N\<in\>\<cal-A\>> with <math|B\<subseteq\>N> and
+    <math|\<mu\><around*|(|N|)>=\<emptyset\>>. If <math|x\<in\>X\\B> then
+    <math|f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>\<equallim\><rsub|<text|<reference|definition
+    of limit in the extented reals>>><below|lim
+    inf|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>> so we have that
+    <math|f=<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>>
+    <math|\<mu\>>-almost everywhere. As by <reference|measurable functions
+    properties (2)> <math|<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>>
+    is <math|\<cal-A\>>-measurable [given that
+    <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> <math|f<rsub|n> > is
+    <math|\<cal-A\>>-measurable] we have using the previous property
+    <reference|f=g almost everywhere property> that\ 
+
+    <\equation*>
+      f is \<cal-A\><text|-measurable>
+    </equation*>
+  </proof>
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
+    measure space, <math|\<cal-A\><rsub|\<mu\>>> the completion of
+    <math|\<cal-A\>> under <math|\<mu\>> [see <reference|completion of a
+    measure>,<reference|completion of a measure space>] and
+    <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a function then the
+    following are equivalent
+
+    <\enumerate>
+      <item><math|\<exists\>g,h:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      such that
+
+      <\enumerate>
+        <item><math|g,h> are <math|\<cal-A\>>-measurable
+
+        <item><math|\<forall\>x\<in\>X> <math|g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>>
+
+        <item><math|g=h> <math|\<mu\>>-almost everywhere
+      </enumerate>
+
+      <item><math|f> is <math|\<cal-A\><rsub|\<mu\>>>-measurable
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|1\<Rightarrow\>2>>Let <math|x\<in\>\<bbb-R\>> thenas
+      <math|g> is <math|\<cal-A\>>-measurable we have by
+      <reference|measurable function condition (1)> that
+      <math|<around*|{|g\<leqslant\>x|}>\<in\>\<cal-A\>>, as by
+      <reference|completion of a measure space>
+      <math|\<cal-A\>\<subseteq\>\<cal-A\><rsub|\<mu\>>> we have that
+      <math|<around*|{|g\<leqslant\>x|}>\<in\>\<cal-A\><rsub|\<mu\>>>. So
+      using <reference|measurable function condition (1)> we have that\ 
+
+      <\equation>
+        <label|eq 18.341.033>g is \<cal-A\><rsub|\<mu\>><text|-measurable>
+      </equation>
+
+      Take <math|B=<around*|\<langle\>|x\<in\>X\|g<around*|(|x|)>\<neq\>h<around*|(|x|)>|\<rangle\>>>
+      then by (1.c) there exists a <math|N\<in\>\<cal-A\>> with
+      <math|\<mu\><around*|(|N|)>=0> and <math|B\<subseteq\>N>. Using
+      <reference|completion of a measure space> we have that
+      <math|\<cal-A\>\<subseteq\>\<cal-A\><rsub|\<mu\>>> and
+      <math|<around*|(|<wide|\<mu\>|\<wide-bar\>>|)><rsub|\|\<cal-A\>>=\<mu\>>
+      so that
+
+      <\equation>
+        <label|eq 18.342.033>N\<in\>\<cal-A\><rsub|\<mu\>><infix-and><wide|\<mu\>|\<wide-bar\>><around*|(|N|)>=\<mu\><around*|(|N|)>=0
+      </equation>
+
+      If <math|x\<in\>X\\N> then <math|g<around*|(|x|)>=h<around*|(|x|)>\<Rightarrowlim\><rsub|1.b>g<around*|(|x|)>=f<around*|(|x|)>>,
+      so if <math|x\<in\>X> is such that <math|f<around*|(|x|)>\<neq\>g<around*|(|x|)>>
+      then <math|x\<nin\>X\\N\<Rightarrow\>x\<in\>X\\<around*|(|X\\N|)>=N> so\ 
+
+      <\equation>
+        <label|eq 18.343.033><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N
+      </equation>
+
+      Combining <reference|eq 18.342.033>,<reference|eq 18.343.033> proves
+      that <math|f=g> <math|<wide|\<mu\>|\<wide-bar\>>>-almost everwhere. So
+      as <math|g> is <math|\<cal-A\><rsub|\<mu\>>>-measurable [see
+      <reference|eq 18.341.033>] we can apply <reference|f=g almost
+      everywhere property> proving that\ 
+
+      <\equation*>
+        f is \<cal-A\><rsub|\<mu\>><text|-measurable>
+      </equation*>
+
+      <item*|<math|2\<Rightarrow\>1>>Let <math|s:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      be a <math|\<cal-A\><rsub|\<mu\>>>-measurable simple function with
+      <math|s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|[>>. As
+      <math|s<around*|(|X|)>> is finite non empty there exists a
+      <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
+      <math|\<alpha\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>s<around*|(|X|)>>.
+      Given <math|i\<in\><around*|{|1,\<ldots\>,n|}>> define
+      <math|A<rsub|i>=s<rsup|-1><around*|(|<around*|{|\<alpha\><around*|(|i|)>|}>|)>>.
+      As <math|s> is <math|\<cal-A\><rsub|\<mu\>>> measurable we have by
+      <reference|simple functions are measurable> that
+      <math|\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}>>
+      <math|A<rsub|i>\<in\>\<cal-A\><rsub|\<mu\>>>. As
+      <math|X=s<rsup|-1><around*|(|s<around*|(|X|)>|)>=s<rsup|-1><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>s<rsup|-1><around*|(|<around*|{|\<alpha\><around*|(|i|)>|}>|)>|)>=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>
+      we have that\ 
+
+      <\equation>
+        <label|eq 18.344.033>X=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>
+      </equation>
+
+      \ Using the definition of <math|\<cal-A\><rsub|\<mu\>>> [see
+      <reference|completion of a measure> there exists
+      <math|C<rsub|i>,B<rsub|i>\<in\>\<cal-A\>> such that
+      <math|C<rsub|i>\<subseteq\>A<rsub|i>\<subseteq\>B<rsub|i>> and
+      <math|\<mu\><around*|(|B<rsub|i>\\C<rsub|i>|)>=0>. Define now
+      <math|g=<big|sum><rsub|i=1><rsup|n>\<alpha\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|C<rsub|i>>>
+      and <math|h=<big|sum><rsub|i=1><rsup|n>\<alpha\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|B<rsub|i>>>.
+      Take <math|x\<in\>X> then we have either:
+
+      <\description>
+        <item*|<math|x\<in\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>>>then\ 
+
+        <item*|<math|x\<nin\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>>>
+      </description>
+    </description>
+  </proof>
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
 
   \;
 
@@ -10733,26 +10967,26 @@
     <associate|Borel algebra on R^n (2)|<tuple|18.57|?>>
     <associate|Borel algebra on R^n equivalences|<tuple|18.58|?>>
     <associate|Borel algebras on R|<tuple|18.26|?>>
-    <associate|Borel function|<tuple|18.140|?>>
+    <associate|Borel function|<tuple|18.139|?>>
     <associate|Borel measure space|<tuple|18.89|?>>
     <associate|Borel sets in R^n are transaltion invariant|<tuple|18.100|?>>
     <associate|Caratheodore|<tuple|18.75|?>>
-    <associate|Dunkin class|<tuple|18.127|?>>
+    <associate|Dunkin class|<tuple|18.126|?>>
     <associate|Dyadic cube properties|<tuple|18.48|?>>
     <associate|Dyadic cubes|<tuple|18.46|?>>
     <associate|Dyadic interval basic property|<tuple|18.45|?>>
     <associate|Dyadic intervals|<tuple|18.44|?>>
-    <associate|Dynkin class and uniqueness of measures|<tuple|18.136|?>>
-    <associate|Dynkin class generated|<tuple|18.131|?>>
-    <associate|Dynkin classes and sigma algebra|<tuple|18.135|?>>
+    <associate|Dynkin class and uniqueness of measures|<tuple|18.135|?>>
+    <associate|Dynkin class generated|<tuple|18.130|?>>
+    <associate|Dynkin classes and sigma algebra|<tuple|18.134|?>>
     <associate|Lebesgue measurability is transalation
     invariant|<tuple|18.98|?>>
     <associate|Lebesgue measurable sets alternatives|<tuple|18.88|?>>
-    <associate|Lebesgue measure is regular|<tuple|18.122|?>>
+    <associate|Lebesgue measure is regular|<tuple|18.121|?>>
     <associate|Lebesgue measure is translation invariant|<tuple|18.99|?>>
     <associate|Lebesgue measure space|<tuple|18.81|?>>
     <associate|Lebesgue measure space on R^n|<tuple|18.86|?>>
-    <associate|Lebesgue measure spaces are complete|<tuple|18.109|?>>
+    <associate|Lebesgue measure spaces are complete|<tuple|18.108|?>>
     <associate|Lebesgue space and compact sets|<tuple|18.92|?>>
     <associate|Lower half spaces|<tuple|18.55|?>>
     <associate|R can be covered by open intervals|<tuple|18.78|?>>
@@ -10761,7 +10995,7 @@
     <associate|[0,1[^n as a union of half open rectangles|<tuple|18.102|?>>
     <associate|algebra equivalent definitions|<tuple|18.9|?>>
     <associate|algebra of sets|<tuple|18.8|?>>
-    <associate|almost complete|<tuple|18.106|?>>
+    <associate|almost complete|<tuple|18.171|?>>
     <associate|alternative formule for lebesgue measure (1)|<tuple|18.91|?>>
     <associate|aproximate halfopen by open|<tuple|18.90|?>>
     <associate|auto-1|<tuple|18|?>>
@@ -10789,32 +11023,33 @@
     <associate|auto-3|<tuple|18.2|?>>
     <associate|auto-30|<tuple|18.3.6|?>>
     <associate|auto-31|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible|?>>
-    <associate|auto-32|<tuple|almost everyware|?>>
-    <associate|auto-33|<tuple|complete measures|?>>
-    <associate|auto-34|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>|?>>
-    <associate|auto-35|<tuple|completion of a measure space|?>>
-    <associate|auto-36|<tuple|outer measure induced|?>>
-    <associate|auto-37|<tuple|inner measure induced|?>>
-    <associate|auto-38|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>|?>>
-    <associate|auto-39|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>|?>>
+    <associate|auto-32|<tuple|complete measures|?>>
+    <associate|auto-33|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>|?>>
+    <associate|auto-34|<tuple|completion of a measure space|?>>
+    <associate|auto-35|<tuple|outer measure induced|?>>
+    <associate|auto-36|<tuple|inner measure induced|?>>
+    <associate|auto-37|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>|?>>
+    <associate|auto-38|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>|?>>
+    <associate|auto-39|<tuple|inner regular sets|?>>
     <associate|auto-4|<tuple|algebra|?>>
-    <associate|auto-40|<tuple|inner regular sets|?>>
-    <associate|auto-41|<tuple|outer regular sets|?>>
-    <associate|auto-42|<tuple|18.4|?>>
-    <associate|auto-43|<tuple|18.4.1|?>>
-    <associate|auto-44|<tuple|Dynkin class|?>>
-    <associate|auto-45|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>|?>>
-    <associate|auto-46|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>|?>>
-    <associate|auto-47|<tuple|18.5|?>>
-    <associate|auto-48|<tuple|18.5.1|?>>
-    <associate|auto-49|<tuple|measurable function|?>>
+    <associate|auto-40|<tuple|outer regular sets|?>>
+    <associate|auto-41|<tuple|18.4|?>>
+    <associate|auto-42|<tuple|18.4.1|?>>
+    <associate|auto-43|<tuple|Dynkin class|?>>
+    <associate|auto-44|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>|?>>
+    <associate|auto-45|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>|?>>
+    <associate|auto-46|<tuple|18.5|?>>
+    <associate|auto-47|<tuple|18.5.1|?>>
+    <associate|auto-48|<tuple|measurable function|?>>
+    <associate|auto-49|<tuple|Borel function|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
-    <associate|auto-50|<tuple|Borel function|?>>
-    <associate|auto-51|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
+    <associate|auto-50|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
     function|?>>
-    <associate|auto-52|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|?>>
-    <associate|auto-53|<tuple|18.5.2|?>>
-    <associate|auto-54|<tuple|18.5.3|?>>
+    <associate|auto-51|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|?>>
+    <associate|auto-52|<tuple|18.5.2|?>>
+    <associate|auto-53|<tuple|18.5.3|?>>
+    <associate|auto-54|<tuple|18.5.4|?>>
+    <associate|auto-55|<tuple|almost everyware|?>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>|?>>
     <associate|auto-7|<tuple|Borel algebra|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
@@ -10825,18 +11060,18 @@
     <associate|borel algebra on the extended reals (3)|<tuple|18.32|?>>
     <associate|boundaries of a rectangle are unique|<tuple|18.39|?>>
     <associate|bounded intervals|<tuple|18.22|?>>
-    <associate|characteristic function is measurable|<tuple|18.157|?>>
-    <associate|complete measures|<tuple|18.107|?>>
-    <associate|completion lemma|<tuple|18.110|?>>
-    <associate|completion of Borelset label|<tuple|18.113|?>>
-    <associate|completion of a measure|<tuple|18.111|?>>
-    <associate|completion of a measure space|<tuple|18.112|?>>
+    <associate|characteristic function is measurable|<tuple|18.156|?>>
+    <associate|complete measures|<tuple|18.106|?>>
+    <associate|completion lemma|<tuple|18.109|?>>
+    <associate|completion of Borelset label|<tuple|18.112|?>>
+    <associate|completion of a measure|<tuple|18.110|?>>
+    <associate|completion of a measure space|<tuple|18.111|?>>
     <associate|composition of measurable functions is
-    measurable|<tuple|18.145|?>>
+    measurable|<tuple|18.144|?>>
     <associate|condition for a Dynkin class to be a sigma
-    algebra|<tuple|18.134|?>>
-    <associate|consequence of a pi-system|<tuple|18.133|?>>
-    <associate|continuous functions are measurable (4)|<tuple|18.156|?>>
+    algebra|<tuple|18.133|?>>
+    <associate|consequence of a pi-system|<tuple|18.132|?>>
+    <associate|continuous functions are measurable (4)|<tuple|18.155|?>>
     <associate|corollary 18.29|<tuple|18.29|?>>
     <associate|countable additivity implies additivity|<tuple|18.63|?>>
     <associate|empty rectaangles|<tuple|18.35|?>>
@@ -11066,20 +11301,26 @@
     <associate|eq 18.324.033|<tuple|18.324|?>>
     <associate|eq 18.325.033|<tuple|18.325|?>>
     <associate|eq 18.326.033|<tuple|18.326|?>>
-    <associate|eq 18.327.033|<tuple|18.328|?>>
+    <associate|eq 18.327.033|<tuple|18.327|?>>
+    <associate|eq 18.328.033|<tuple|18.328|?>>
     <associate|eq 18.329.033|<tuple|18.329|?>>
     <associate|eq 18.33.021|<tuple|18.38|?>>
     <associate|eq 18.330.033|<tuple|18.330|?>>
-    <associate|eq 18.330.33|<tuple|18.330|?>>
-    <associate|eq 18.331.033|<tuple|18.331|?>>
-    <associate|eq 18.332.033|<tuple|18.332|?>>
-    <associate|eq 18.333.033|<tuple|18.333|?>>
-    <associate|eq 18.334.033|<tuple|18.334|?>>
-    <associate|eq 18.335.033|<tuple|18.335|?>>
-    <associate|eq 18.336.033|<tuple|18.336|?>>
-    <associate|eq 18.337.033|<tuple|18.337|?>>
-    <associate|eq 18.338.033|<tuple|18.338|?>>
+    <associate|eq 18.331.033|<tuple|18.332|?>>
+    <associate|eq 18.331.033.1|<tuple|18.331|?>>
+    <associate|eq 18.332.033|<tuple|18.333|?>>
+    <associate|eq 18.333.033|<tuple|18.334|?>>
+    <associate|eq 18.334.033|<tuple|18.335|?>>
+    <associate|eq 18.335.033|<tuple|18.336|?>>
+    <associate|eq 18.336.033|<tuple|18.337|?>>
+    <associate|eq 18.337.033|<tuple|18.338|?>>
+    <associate|eq 18.338.033|<tuple|18.339|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
+    <associate|eq 18.340.033|<tuple|18.340|?>>
+    <associate|eq 18.341.033|<tuple|18.341|?>>
+    <associate|eq 18.342.033|<tuple|18.342|?>>
+    <associate|eq 18.343.033|<tuple|18.343|?>>
+    <associate|eq 18.344.033|<tuple|18.344|?>>
     <associate|eq 18.35.021|<tuple|18.40|?>>
     <associate|eq 18.36.016|<tuple|18.85|?>>
     <associate|eq 18.36.021|<tuple|18.41|?>>
@@ -11181,38 +11422,40 @@
     <associate|eq 18.9.020|<tuple|18.14|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|18.50|?>>
+    <associate|f=g almost everywhere property|<tuple|18.173|?>>
     <associate|finite unions and intersections|<tuple|18.7|?>>
-    <associate|function comparizatons are measurable|<tuple|18.160|?>>
+    <associate|function comparizatons are measurable|<tuple|18.159|?>>
     <associate|generated sigma algebra|<tuple|18.17|?>>
     <associate|half open rectangle as intersection of open
     sets|<tuple|18.51|?>>
     <associate|half spaces are Lebesgue measurable in R^n|<tuple|18.87|?>>
-    <associate|induced outer inner measure|<tuple|18.115|?>>
-    <associate|induced outer measure is a outer measure|<tuple|18.117|?>>
-    <associate|inner/outer regularity|<tuple|18.119|?>>
+    <associate|induced outer inner measure|<tuple|18.114|?>>
+    <associate|induced outer measure is a outer measure|<tuple|18.116|?>>
+    <associate|inner/outer regularity|<tuple|18.118|?>>
     <associate|intersection of a class of Dynkin classes is a Dynkin
-    class|<tuple|18.130|?>>
+    class|<tuple|18.129|?>>
     <associate|intersection of sigma algebras is a sigma
     algebra|<tuple|18.16|?>>
     <associate|interval identities|<tuple|18.25|?>>
     <associate|lemma 18.28 set relations|<tuple|18.28|?>>
     <associate|length of interval is increasing|<tuple|18.42|?>>
-    <associate|liminf or limsup of functions|<tuple|18.163|?>>
+    <associate|liminf or limsup of functions|<tuple|18.162|?>>
     <associate|lower half open spaces|<tuple|18.53|?>>
     <associate|lower half open spaces are open|<tuple|18.54|?>>
-    <associate|measurable function|<tuple|18.138|?>>
-    <associate|measurable function and restriction|<tuple|18.142|?>>
-    <associate|measurable function condition (1)|<tuple|18.152|?>>
-    <associate|measurable function condition (2)|<tuple|18.154|?>>
+    <associate|measurable function|<tuple|18.137|?>>
+    <associate|measurable function and limit|<tuple|18.174|?>>
+    <associate|measurable function and restriction|<tuple|18.141|?>>
+    <associate|measurable function condition (1)|<tuple|18.151|?>>
+    <associate|measurable function condition (2)|<tuple|18.153|?>>
     <associate|measurable function condition and restricted
-    functions|<tuple|18.143|?>>
-    <associate|measurable functions and generated algebra|<tuple|18.141|?>>
-    <associate|measurable functions properties (1)|<tuple|18.164|?>>
-    <associate|measurable functions properties (2)|<tuple|18.165|?>>
-    <associate|measurable functions properties (3)|<tuple|18.166|?>>
-    <associate|measurable functions properties (4)|<tuple|18.167|?>>
-    <associate|measurable functions properties (5)|<tuple|18.170|?>>
-    <associate|measurable functions properties (6)|<tuple|18.171|?>>
+    functions|<tuple|18.142|?>>
+    <associate|measurable functions and generated algebra|<tuple|18.140|?>>
+    <associate|measurable functions properties (1)|<tuple|18.163|?>>
+    <associate|measurable functions properties (2)|<tuple|18.164|?>>
+    <associate|measurable functions properties (3)|<tuple|18.165|?>>
+    <associate|measurable functions properties (4)|<tuple|18.166|?>>
+    <associate|measurable functions properties (5)|<tuple|18.169|?>>
+    <associate|measurable functions properties (6)|<tuple|18.170|?>>
     <associate|measurable set alternative definition|<tuple|18.73|?>>
     <associate|measurable sets and null sets|<tuple|18.74|?>>
     <associate|measurable space|<tuple|18.13|?>>
@@ -11220,11 +11463,11 @@
     <associate|measure is subadditive|<tuple|18.66|?>>
     <associate|measure properties (1)|<tuple|18.64|?>>
     <associate|measure properties (2)|<tuple|18.67|?>>
-    <associate|measure regularity lemma|<tuple|18.123|?>>
+    <associate|measure regularity lemma|<tuple|18.122|?>>
     <associate|measureable set|<tuple|18.72|?>>
     <associate|negligibility|<tuple|18.104|?>>
     <associate|negligible set properties|<tuple|18.105|?>>
-    <associate|null function is measurable|<tuple|18.155|?>>
+    <associate|null function is measurable|<tuple|18.154|?>>
     <associate|open,half open and bounded intervals are
     different|<tuple|18.24|?>>
     <associate|open/closed sets relation|<tuple|18.59|?>>
@@ -11236,20 +11479,20 @@
     <associate|outer measure on rectangles|<tuple|18.85|?>>
     <associate|outermeasure construction|<tuple|18.71|?>>
     <associate|properties of algebras|<tuple|18.10|?>>
-    <associate|real (extended real) measurability|<tuple|18.149|?>>
+    <associate|real (extended real) measurability|<tuple|18.148|?>>
     <associate|rectangle and half open sets|<tuple|18.56|?>>
     <associate|replace countable untion of sets by disjoint union of
     sets|<tuple|18.65|?>>
     <associate|restriction of measure space to a sub sigma
     algebra|<tuple|18.62|?>>
     <associate|semi additivity of the length in the reals|<tuple|18.79|?>>
-    <associate|set of all subsets is a Dynkin class|<tuple|18.129|?>>
+    <associate|set of all subsets is a Dynkin class|<tuple|18.128|?>>
     <associate|set of all subsets is a sigma algebra|<tuple|18.12|?>>
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
     <associate|sigma algebra equivalent definitions|<tuple|18.14|?>>
-    <associate|sigma algebras are Dynkin classes|<tuple|18.128|?>>
-    <associate|simple function|<tuple|18.158|?>>
-    <associate|simple functions are measurable|<tuple|18.159|?>>
+    <associate|sigma algebras are Dynkin classes|<tuple|18.127|?>>
+    <associate|simple function|<tuple|18.157|?>>
+    <associate|simple functions are measurable|<tuple|18.158|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|18.49|?>>
     <associate|translation properties|<tuple|18.95|?>>
     <associate|union intersection union of families|<tuple|18.3|?>>
@@ -11264,9 +11507,9 @@
     <associate|volume of a rectangle|<tuple|18.40|?>>
     <associate|writing a countable family of sets as a disjoint familly of
     sets|<tuple|18.6|?>>
-    <associate|{x\<less\>f} properties|<tuple|18.151|?>>
-    <associate|{x\<less\>f} properties (1)|<tuple|18.153|?>>
-    <associate|\|f(x)\| as f+ f-|<tuple|18.169|?>>
+    <associate|{x\<less\>f} properties|<tuple|18.150|?>>
+    <associate|{x\<less\>f} properties (1)|<tuple|18.152|?>>
+    <associate|\|f(x)\| as f+ f-|<tuple|18.168|?>>
   </collection>
 </references>
 
@@ -11309,40 +11552,40 @@
 
       <tuple|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible>|<pageref|auto-31>>
 
-      <tuple|<tuple|almost everyware>|<pageref|auto-32>>
+      <tuple|<tuple|complete measures>|<pageref|auto-32>>
 
-      <tuple|<tuple|complete measures>|<pageref|auto-33>>
+      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-33>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-34>>
+      <tuple|<tuple|completion of a measure space>|<pageref|auto-34>>
 
-      <tuple|<tuple|completion of a measure space>|<pageref|auto-35>>
+      <tuple|<tuple|outer measure induced>|<pageref|auto-35>>
 
-      <tuple|<tuple|outer measure induced>|<pageref|auto-36>>
+      <tuple|<tuple|inner measure induced>|<pageref|auto-36>>
 
-      <tuple|<tuple|inner measure induced>|<pageref|auto-37>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-37>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-38>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-38>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-39>>
+      <tuple|<tuple|inner regular sets>|<pageref|auto-39>>
 
-      <tuple|<tuple|inner regular sets>|<pageref|auto-40>>
+      <tuple|<tuple|outer regular sets>|<pageref|auto-40>>
 
-      <tuple|<tuple|outer regular sets>|<pageref|auto-41>>
+      <tuple|<tuple|Dynkin class>|<pageref|auto-43>>
 
-      <tuple|<tuple|Dynkin class>|<pageref|auto-44>>
+      <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-44>>
 
-      <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-45>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-45>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-46>>
+      <tuple|<tuple|measurable function>|<pageref|auto-48>>
 
-      <tuple|<tuple|measurable function>|<pageref|auto-49>>
-
-      <tuple|<tuple|Borel function>|<pageref|auto-50>>
+      <tuple|<tuple|Borel function>|<pageref|auto-49>>
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
-      function>|<pageref|auto-51>>
+      function>|<pageref|auto-50>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-52>>
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-51>>
+
+      <tuple|<tuple|almost everyware>|<pageref|auto-55>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>Measure
@@ -11402,26 +11645,30 @@
 
       18.4<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>
+      <no-break><pageref|auto-41>
 
       <with|par-left|<quote|1tab>|18.4.1<space|2spc>Dynkin Classes
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43>>
+      <no-break><pageref|auto-42>>
 
       18.5<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>
+      <no-break><pageref|auto-46>
 
       <with|par-left|<quote|1tab>|18.5.1<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-47>>
 
       <with|par-left|<quote|1tab>|18.5.2<space|2spc>Example of measurable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-52>>
 
       <with|par-left|<quote|1tab>|18.5.3<space|2spc>Properties of measurable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-53>>
+
+      <with|par-left|<quote|1tab>|18.5.4<space|2spc>Properties that hold
+      everywhere <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-54>>
     </associate>
   </collection>
