@@ -10087,44 +10087,6 @@
     </enumerate>
   </proof>
 
-  Using mathematical induction we have that the finite sum of measurable
-  functions is measurable.
-
-  <\corollary>
-    <label|finite sum of mesaurable functions is measurable (1)>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
-    <math|n\<in\>\<bbb-N\><rsub|0>> and <math|<around*|{|f<rsub|i>|}><rsub|i\<in\><around*|{|1,.,n|}>>>
-    a finite set of <math|\<cal-A\>>-measurable functions from <math|X> to
-    <math|<wide|\<bbb-R\>|\<wide-bar\>>> with
-    <math|f<rsub|i><around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|]>> then
-    <math|<big|sum><rsub|i=1><rsup|n>f<rsub|i>:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
-    defined by <math|<around*|(|<big|sum><rsub|i=1><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i><around*|(|x|)>>
-    then <math|<big|sum><rsub|i=1><rsup|n>f<rsub|i>> is
-    <math|\<cal-A\>>-measurable.
-  </corollary>
-
-  <\proof>
-    This is trivially proved by induction, so define
-    <math|\<cal-S\>=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|if
-    \ i\<leqslant\>n<text| then ><big|sum><rsub|j=1><rsup|i>f<rsub|j> is
-    \<cal-A\><text|-measurable>|}>> then we have:
-
-    <\description>
-      <item*|<math|1\<in\>\<cal-S\>>>This follows from the fact that
-      <math|<big|sum><rsub|j=1><rsup|1>f<rsub|j>=f<rsub|1>> and that
-      <math|f<rsub|1>> is <math|\<cal-A\>>-measurable.
-
-      <item*|<math|i\<in\>\<cal-S\>\<Rightarrow\>i+1\<in\>\<cal-S\>>>Let
-      <math|i\<in\>\<cal-S\>> then if <math|i+1\<leqslant\>n> we have
-      <math|<around*|(|<big|sum><rsub|j=1><rsup|i+1>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|j=1><rsup|i+1>f<rsub|j><around*|(|x|)>=f<rsub|i+1><around*|(|x|)>+<big|sum><rsub|j=1><rsup|i>f<rsub|j><around*|(|x|)>>.
-      So <math|<big|sum><rsub|j=1><rsup|i+1>f<rsub|j>=f<rsub|i+1>+<big|sum><rsub|j=1><rsup|i>f<rsub|j>>
-      which, as <math|i\<in\>\<cal-S\>> is the sum of tow
-      <math|\<cal-A\>>-measurable functions, is <math|\<cal-A\>>-measurable
-      using <reference|measurable functions properties (3)>. Hence
-      <math|i+1\<in\>\<cal-S\>>
-    </description>
-  </proof>
-
   <\proposition>
     <label|measurable functions properties (4)>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
@@ -10335,38 +10297,6 @@
     </enumerate>
   </proof>
 
-  <\corollary>
-    <label|finite sum of mesaurable functions is measurable (2)>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
-    <math|n\<in\>\<bbb-N\><rsub|0>> and <math|<around*|{|f<rsub|i>|}><rsub|i\<in\><around*|{|1,.,n|}>>>
-    a finite set of <math|\<cal-A\>>-measurable functions from <math|X> to
-    <math|\<bbb-R\>> then <math|<big|sum><rsub|i=1><rsup|n>f<rsub|i>:X\<rightarrow\>\<bbb-R\>>
-    defined by <math|<around*|(|<big|sum><rsub|i=1><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i><around*|(|x|)>>
-    is <math|\<cal-A\>>-measurable.
-  </corollary>
-
-  <\proof>
-    This is trivially proved by induction, so define
-    <math|\<cal-S\>=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|if
-    \ i\<leqslant\>n<text| then ><big|sum><rsub|j=1><rsup|i>f<rsub|j> is
-    \<cal-A\><text|-measurable>|}>> then we have:
-
-    <\description>
-      <item*|<math|1\<in\>\<cal-S\>>>This follows from the fact that
-      <math|<big|sum><rsub|j=1><rsup|1>f<rsub|j>=f<rsub|1>> and that
-      <math|f<rsub|1>> is <math|\<cal-A\>>-measurable.
-
-      <item*|<math|i\<in\>\<cal-S\>\<Rightarrow\>i+1\<in\>\<cal-S\>>>Let
-      <math|i\<in\>\<cal-S\>> then if <math|i+1\<leqslant\>n> we have
-      <math|<around*|(|<big|sum><rsub|j=1><rsup|i+1>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|j=1><rsup|i+1>f<rsub|j><around*|(|x|)>=f<rsub|i+1><around*|(|x|)>+<big|sum><rsub|j=1><rsup|i>f<rsub|j><around*|(|x|)>>.
-      So <math|<big|sum><rsub|j=1><rsup|i+1>f<rsub|j>=f<rsub|i+1>+<big|sum><rsub|j=1><rsup|i>f<rsub|j>>
-      which, as <math|i\<in\>\<cal-S\>> is the sum of tow
-      <math|\<cal-A\>>-measurable functions, is <math|\<cal-A\>>-measurable
-      by <reference|measurable functions properties (4)>. Hence
-      <math|i+1\<in\>\<cal-S\>>
-    </description>
-  </proof>
-
   <\definition>
     Let <math|X> be a set and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
     a extended rea; function then we define\ 
@@ -10388,37 +10318,23 @@
     <\lemma>
       <label|\|f(x)\| as f+ f->Let <math|X> be a set and
       <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a extended rea;
-      function then
-
-      <\enumerate>
-        <item><math|<around*|\||f|\|>=f<rsup|+>+f<rsup|->> [note that the sum
-        is well defined]
-
-        <item><math|f=f<rsup|+>-f<rsup|->> [note that the difference is welll
-        defined]
-      </enumerate>
-
-      \ 
+      function then <math|<around*|\||f|\|>=f<rsup|+>+f<rsup|->>
     </lemma>
 
     <\proof>
-      \ Let <math|x\<in\>X> then we have either\ 
+      Let <math|x\<in\>X> then we have either\ 
 
       <\description>
         <item*|<math|f<around*|(|x|)>\<leqslant\>0>>then
         <math|f<rsup|+><around*|(|x|)>=max<around*|(|f<around*|(|x|)>,0|)>=0>
-        and <math|f<rsup|-><around*|(|x|)>=-min<around*|(|f<around*|(|x|)>,0|)>=-f<around*|(|x|)>=<around*|\||f<around*|(|x|)>|\|>>
+        and <math|f<rsup|-1><around*|(|x|)>=-min<around*|(|f<around*|(|x|)>,0|)>=-f<around*|(|x|)>=<around*|\||f<around*|(|x|)>|\|>>
         so that <math|f<rsup|+><around*|(|x|)>+f<rsup|-><around*|(|x|)>=<around*|\||f<around*|(|x|)>|\|>>
-        and <math|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>=0+f<around*|(|x|)>=f<around*|(|x|)>>.
 
         <item*|<math|0\<less\>f<around*|(|x|)>>>then
         <math|f<rsup|+><around*|(|x|)>=max<around*|(|f<around*|(|x|)>,0|)>=f<around*|(|x|)>>
         and <math|f<rsup|-><around*|(|x|)>=-min<around*|(|f<around*|(|x|)>,0|)>=0>
         so that <math|f<rsup|+><around*|(|x|)>+f<rsup|-><around*|(|x|)>=f<around*|(|x|)>=<around*|\||f<around*|(|x|)>|\|>>
-        and <math|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>=f<around*|(|x|)>+0=f<around*|(|x|)>>.
       </description>
-
-      \;
     </proof>
   </definition>
 
@@ -10484,7 +10400,7 @@
     </enumerate>
   </proof>
 
-  The following theorem will be essential to define the measure integral.
+  The following theorm will be essential to define the measure integral.
 
   <\theorem>
     <label|measurable functions properties (6)>Let
@@ -10807,105 +10723,6 @@
   </definition>
 
   <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
-    measure space and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
-    <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
-    <math|h:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
-    <math|k:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>\ 
-
-    <\enumerate>
-      <item>If <math|f=g> <math|\<mu\>>-almost everywhere and <math|g=h>
-      <math|\<mu\>>-almost everywhere then <math|f=h> almost everywhere.
-
-      <item>If <math|f\<leqslant\>g> <math|\<mu\>>-almost everywhere and
-      <math|g\<leqslant\>h> <math|\<mu\>>-almost everywhere then
-      <math|f\<leqslant\>h> almost everywhere.
-
-      <item>If <math|f\<leqslant\>g> <math|\<mu\>>-almost everywhere and
-      <math|g\<leqslant\>f> <math|\<mu\>>-almost everywhere then <math|f=g>
-      almost everywhere.
-
-      <item>If <math|\<alpha\>\<in\>\<bbb-R\>\\<around*|{|0|}>> then if
-      <math|f=g> <math|\<mu\>>-almost everywhere then
-      <math|\<alpha\>\<cdot\>f=\<alpha\>\<cdot\>g> <math|\<mu\>>-almost
-      everywhere.
-
-      <item>If <math|\<forall\>x\<in\>X> we have that
-      <math|f<around*|(|x|)>+g<around*|(|x|)>> and
-      <math|h<around*|(|x|)>+k<around*|(|x|)>> is well defined and in
-      addition <math|f=h> <math|\<mu\>>-almost everywhere and <math|g=k>
-      <math|\<mu\>>-almost everywhere.
-    </enumerate>
-  </proposition>
-
-  <\proof>
-    \ 
-
-    <\enumerate>
-      <item>As <math|f=g> <math|\<mu\>>-almost everywhere and <math|g=h>
-      <math|\<mu\>>-almost everywhere <math|>there exists
-      <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
-      <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>>
-      such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
-      and <math|<around*|{|x\<in\>X\|g<around*|(|x|)>\<neq\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|2>>.
-      Let <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>h<around*|(|x|)>|}>>
-      then <math|f<around*|(|x|)>\<neq\>g<around*|(|x|)>\<vee\>g<around*|(|x|)>\<neq\>h<around*|(|x|)>>
-      [for if <math|f<around*|(|x|)>=g<around*|(|x|)>\<wedge\>g<around*|(|x|)>=h<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>=h<around*|(|x|)>>]
-      so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<neq\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
-      As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f=h> <math|\<mu\>>-almost everywhere.
-
-      <item>As <math|f\<leqslant\>g> <math|\<mu\>>-almost everywhere and
-      <math|g\<leqslant\>h> <math|\<mu\>>-almost everywhere <math|>there
-      exists <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
-      <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>>
-      such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
-      and <math|<around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|2>>.
-      Let <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>|}>>
-      then <math|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>\<vee\>g<around*|(|x|)>\<nleqslant\>h<around*|(|x|)>>
-      [for if <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>\<wedge\>g<around*|(|x|)>\<leqslant\>h<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>>]
-      so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
-      As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f\<leqslant\>h> <math|\<mu\>>-almost
-      everywhere.<math|>
-
-      <item>As <math|f\<leqslant\>g> <math|\<mu\>>-almost everywhere and
-      <math|g\<leqslant\>f> <math|\<mu\>>-almost everywhere <math|>there
-      exists <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
-      <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>
-      >such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
-      and <math|<around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>f<around*|(|x|)>|}>\<subseteq\>N<rsub|2>>.
-      Let <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>>
-      then <math|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>\<vee\>g<around*|(|x|)>\<nleqslant\>f<around*|(|x|)>>
-      [for if <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>\<wedge\>g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>=g<around*|(|x|)>>]
-      so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>f<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
-      As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f=h> <math|\<mu\>>-almost everywhere.<math|>
-
-      <item>As <math|f=g> <math|\<mu\>>-almost everywhere there exists a
-      <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> such that
-      <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
-      Let now <math|x\<in\><around*|{|x\<in\>X\|\<alpha\>\<cdot\>f<around*|(|x|)>\<neq\>\<alpha\>\<cdot\>g<around*|(|x|)>|}>>
-      then <math|\<alpha\>\<cdot\>f<around*|(|x|)>\<neq\>\<alpha\>\<cdot\>g<around*|(|x|)>\<Rightarrowlim\><rsub|\<alpha\>\<neq\>0>f<around*|(|x|)>\<neq\>g<around*|(|x|)>>
-      proving that <math|><math|<around*|{|x\<in\>X\|\<alpha\>\<cdot\>f<around*|(|x|)>\<neq\>\<alpha\>\<cdot\>g<around*|(|x|)>|}>\<subseteq\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
-      So <math|\<alpha\>\<cdot\>f\<neq\>\<alpha\>\<cdot\>g>.
-
-      <item>As As <math|f=h> <math|\<mu\>>-almost everywhere and <math|g=k>
-      <math|\<mu\>>-almost everywhere <math|>there exists
-      <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
-      <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>>
-      such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
-      and <math|<around*|{|x\<in\>X\|g<around*|(|x|)>\<neq\>k<around*|(|x|)>|}>\<subseteq\>N<rsub|2>>.
-      Let <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>+g<around*|(|x|)>\<neq\>h<around*|(|x|)>+k<around*|(|x|)>|}>>
-      then <math|f<around*|(|x|)>\<neq\>h<around*|(|x|)>\<vee\>g<around*|(|x|)>\<neq\>k<around*|(|x|)>>
-      [for if <math|f<around*|(|x|)>=h<around*|(|x|)>\<wedge\>g<around*|(|x|)>=k<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>+g<around*|(|x|)>=h<around*|(|x|)>+k<around*|(|x|)>>]
-      so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>h<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<neq\>k<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
-      As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f+g=h+k> <math|\<mu\>>-almost everywhere.<math|>
-    </enumerate>
-  </proof>
-
-  <\proposition>
     <label|f=g almost everywhere property>Let
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a complete
     measure space [see <reference|complete measures>] and let
@@ -10985,159 +10802,6 @@
     </equation*>
   </proof>
 
-  <\lemma>
-    <label|simple function as a finite sum>Let <math|X> be a set and
-    <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be a simple
-    function then there exists a <math|n\<in\>\<bbb-N\><rsub|0>> and a
-    bijection <math|\<beta\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>f<around*|(|X|)>>
-    such that for <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
-    defined by <math|A<rsub|i>=f<rsup|-1><around*|(|<around*|{|\<beta\><around*|(|i|)>|}>|)>>
-    we have\ 
-
-    <\enumerate>
-      <item><math|X=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>
-      [<math|X> is the pairwise disjoint union of <math|A<rsub|i>>'s]
-
-      <item><math|\<forall\>x\<in\>X> we have that
-      <math|f<around*|(|x|)>=<big|sum><rsub|i=1><rsup|n>\<beta\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>
-    </enumerate>
-  </lemma>
-
-  <\proof>
-    \ As <math|f> is a simple function we have by definition that
-    <math|f<around*|(|X|)>> is finite and non empty, so there exists a
-    <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
-    <math|\<beta\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>f<around*|(|X|)>>.
-    Define now <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
-    by <math|f<rsup|-1><around*|(|\<beta\><around*|(|i|)>|)>> then as
-    <math|A<rsub|i>=f<rsup|-1><around*|(|<around*|{|\<beta\><around*|(|i|)>|}>|)>\<subseteq\>X>
-    we have <math|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>\<subseteq\>X>.
-    Now if <math|x\<in\>X> then <math|f<around*|(|x|)>\<in\>f<around*|(|X|)>>
-    so that <math|\<exists\>i\<in\><around*|{|1,\<ldots\>,n|}>> with
-    <math|f<around*|(|x|)>=\<beta\><around*|(|i|)>\<Rightarrow\>x\<in\>f<rsup|-1><around*|(|<around*|{|\<beta\><around*|(|i|)>|}>|)>=A<rsub|i>>
-    proving that <math|X\<subseteq\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>.
-    Hence we have\ 
-
-    <\equation>
-      <label|eq 18.341.034>X=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>
-    </equation>
-
-    Further if <math|i,j\<in\><around*|{|1,\<ldots\>,n|}>> with
-    <math|i\<neq\>j> then if <math|x\<in\>A<rsub|i><big|cap>A<rsub|j>> we
-    have <math|x\<in\>f<rsup|-1><around*|(|<around*|{|\<beta\><around*|(|i|)>|}>|)>\<wedge\>x\<in\>f<rsup|-1><around*|(|<around*|{|\<beta\><around*|(|j|)>|}>|)>>
-    or <math|\<beta\><around*|(|i|)>=f<around*|(|x|)>=\<beta\><around*|(|j|)>\<equallim\><rsub|\<beta\>
-    is a bijection>i=j> a contradiction. So we must have that that
-    <math|A<rsub|i><big|cap>A<rsub|j>=\<emptyset\>> which using <reference|eq
-    18.341.034> proves\ 
-
-    <\equation>
-      <label|eq 18.342.034>X=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>
-    </equation>
-
-    If now <math|x\<in\>X> then by the above there exists a
-    <math|i\<in\><around*|{|1,\<ldots\>,n|}>> such that
-    <math|x\<in\>A<rsub|i>\<Rightarrow\>f<around*|(|x|)>=\<beta\><around*|(|i|)>>
-    and <math|\<forall\>j\<in\><around*|{|1,\<ldots\>,n|}>\\<around*|{|i|}>>
-    <math|x\<nin\>A<rsub|j>>. So\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|f<around*|(|x|)>>|<cell|=>|<cell|\<beta\><around*|(|i|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|x\<in\>A<rsub|i>>>|<cell|\<beta\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|x\<nin\>A<rsub|j>
-      if j\<in\><around*|{|1,\<ldots\>,n|}>\\<around*|{|i|}>>>|<cell|\<beta\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>+<big|sum><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>\\<around*|{|i|}>>\<beta\><around*|(|j|)>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<beta\><around*|(|j|)>\<cdot\>\<cal-X\><rsub|A<rsub|j>><around*|(|x|)>>>>>
-    </eqnarray*>
-
-    proving the lemma.
-  </proof>
-
-  <\lemma>
-    <label|simple function properties>Let <math|X> be a set
-    <math|n\<in\>\<bbb-N\><rsub|0>>, <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>,<around*|{|B<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-P\><around*|(|X|)>>
-    such that <math|\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}>> we have
-    <math|A<rsub|i>\<subseteq\>B<rsub|i>> and
-    <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
-    then if we define
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>|<cell|by>|<cell|f<around*|(|x|)>=<big|sum><rsub|i=1><rsup|n>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>
-      <text|[where <math|\<cal-X\><rsub|A<rsub|i>>> is the characteristics
-      function [see <reference|characteristics
-      function>]]>>>|<row|<cell|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>|<cell|by>|<cell|g<around*|(|x|)>=<big|sum><rsub|i=1><rsup|n>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><around*|(|x|)>
-      <text|[where <math|\<cal-X\><rsub|B<rsub|i>>> is the characteristics
-      function [see <reference|characteristics function>]]>>>>>
-    </eqnarray*>
-
-    we have
-
-    <\enumerate>
-      <item><math|\<forall\>x\<in\>X> we have
-      <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>>
-
-      <item><math|\<forall\>x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\A<rsub|i>|)>|)>>
-      we have <math|f<around*|(|x|)>=g<around*|(|x|)>>
-    </enumerate>
-  </lemma>
-
-  <\proof>
-    First given <math|x\<in\>X> define\ 
-
-    <\equation*>
-      A<rsub|x>=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|x\<in\>A<rsub|i>|}><text|
-      and >B<rsub|x>=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|x\<in\>B<rsub|i>|}>
-    </equation*>
-
-    If <math|i\<in\>A<rsub|x>> we have by definition that
-    <math|x\<in\>A<rsub|i>>, hence as <math|A<rsub|i>\<subseteq\>B<rsub|i>>
-    we have <math|x\<in\>B<rsub|i>\<Rightarrow\>i\<in\>B<rsub|x>> proving
-    that\ 
-
-    <\equation>
-      <label|eq 18.343.0.34>A<rsub|x>\<subseteq\>B<rsub|x>
-    </equation>
-
-    Next we have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|f<around*|(|x|)>>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\A<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>+<big|sum><rsub|i\<in\>A<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|0+<big|sum><rsub|i\<in\>A<rsub|x>>\<alpha\><rsub|i>>>|<row|<cell|>|<cell|\<leqslant\><rsub|A<rsub|x>\<subseteq\>B<rsub|x>>>|<cell|<big|sum><rsub|i\<in\>B<rsub|x>>\<alpha\><rsub|i>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\B<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><around*|(|x|)>+<big|sum><rsub|i\<in\>B<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|g<around*|(|x|)>>>>>
-    </eqnarray*>
-
-    proving\ 
-
-    <\equation>
-      <label|eq 18.44.034>\<forall\>x\<in\>X<text| we have
-      >f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>
-    </equation>
-
-    This concludes part (1) of the lemma. For part (2) assume that
-    <math|x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\A<rsub|i>|)>|)>>
-    so that <math|x\<nin\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\A<rsub|i>|)>>.
-    Let <math|j\<in\>B<rsub|x>> we have by definition
-    <math|x\<in\>B<rsub|j>>, if <math|x\<nin\>A<rsub|i>> then
-    <math|x\<in\>B<rsub|i>\\A<rsub|i>> contradicting
-    <math|><math|x\<nin\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\A<rsub|i>|)>>,
-    so we must have that <math|x\<in\>A<rsub|j>> or <math|j\<in\>A<rsub|x>>,
-    which proves that <math|B<rsub|x>\<subseteq\>A<rsub|x>>. Combining this
-    with <reference|eq 18.343.0.34> proves that\ 
-
-    <\equation>
-      <label|eq 18.345.034>\<forall\>x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\A<rsub|i>|)>|)><text|
-      we have >A<rsub|x>=B<rsub|x>
-    </equation>
-
-    In this case we have
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|f<around*|(|x|)>>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\A<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>+<big|sum><rsub|i\<in\>A<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\>A<rsub|x>>\<alpha\><rsub|i>>>|<row|<cell|>|<cell|\<equallim\><rsub|A<rsub|x>=B<rsub|x>>>|<cell|<big|sum><rsub|i\<in\>B<rsub|x>>\<alpha\><rsub|i>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\B<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><around*|(|x|)>+<big|sum><rsub|i\<in\>B<rsub|x>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|g<around*|(|x|)>>>>>
-    </eqnarray*>
-
-    proving\ 
-
-    <\equation*>
-      <label|eq 18.345.034>\<forall\>x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\A<rsub|i>|)>|)><text|
-      we have >f<around*|(|x|)>=g<around*|(|x|)>
-    </equation*>
-
-    \;
-  </proof>
-
   <\proposition>
     Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
     measure space, <math|\<cal-A\><rsub|\<mu\>>> the completion of
@@ -11166,17 +10830,17 @@
     \ 
 
     <\description>
-      <item*|<math|1\<Rightarrow\>2>>Let <math|x\<in\>\<bbb-R\>> then as
+      <item*|<math|1\<Rightarrow\>2>>Let <math|x\<in\>\<bbb-R\>> thenas
       <math|g> is <math|\<cal-A\>>-measurable we have by
       <reference|measurable function condition (1)> that
-      <math|<around*|{|g\<leqslant\>x|}>\<in\>\<cal-A\>>, further as by
+      <math|<around*|{|g\<leqslant\>x|}>\<in\>\<cal-A\>>, as by
       <reference|completion of a measure space>
       <math|\<cal-A\>\<subseteq\>\<cal-A\><rsub|\<mu\>>> we have that
       <math|<around*|{|g\<leqslant\>x|}>\<in\>\<cal-A\><rsub|\<mu\>>>. So
       using <reference|measurable function condition (1)> we have that\ 
 
       <\equation>
-        <label|eq 18.346.033>g is \<cal-A\><rsub|\<mu\>><text|-measurable>
+        <label|eq 18.341.033>g is \<cal-A\><rsub|\<mu\>><text|-measurable>
       </equation>
 
       Take <math|B=<around*|\<langle\>|x\<in\>X\|g<around*|(|x|)>\<neq\>h<around*|(|x|)>|\<rangle\>>>
@@ -11188,19 +10852,18 @@
       so that
 
       <\equation>
-        <label|eq 18.347.033>N\<in\>\<cal-A\><rsub|\<mu\>><infix-and><wide|\<mu\>|\<wide-bar\>><around*|(|N|)>=\<mu\><around*|(|N|)>=0
+        <label|eq 18.342.033>N\<in\>\<cal-A\><rsub|\<mu\>><infix-and><wide|\<mu\>|\<wide-bar\>><around*|(|N|)>=\<mu\><around*|(|N|)>=0
       </equation>
 
-      If <math|x\<in\>X\\N\<subseteq\>X\\B> then
-      <math|g<around*|(|x|)>=h<around*|(|x|)>\<Rightarrowlim\><rsub|1.b>g<around*|(|x|)>=f<around*|(|x|)>>,
+      If <math|x\<in\>X\\N> then <math|g<around*|(|x|)>=h<around*|(|x|)>\<Rightarrowlim\><rsub|1.b>g<around*|(|x|)>=f<around*|(|x|)>>,
       so if <math|x\<in\>X> is such that <math|f<around*|(|x|)>\<neq\>g<around*|(|x|)>>
       then <math|x\<nin\>X\\N\<Rightarrow\>x\<in\>X\\<around*|(|X\\N|)>=N> so\ 
 
       <\equation>
-        <label|eq 18.348.034><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N
+        <label|eq 18.343.033><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N
       </equation>
 
-      Combining <reference|eq 18.347.033>, <reference|eq 18.348.034> proves
+      Combining <reference|eq 18.342.033>,<reference|eq 18.343.033> proves
       that <math|f=g> <math|<wide|\<mu\>|\<wide-bar\>>>-almost everwhere. So
       as <math|g> is <math|\<cal-A\><rsub|\<mu\>>>-measurable [see
       <reference|eq 18.341.033>] we can apply <reference|f=g almost
@@ -11210,109 +10873,40 @@
         f is \<cal-A\><rsub|\<mu\>><text|-measurable>
       </equation*>
 
-      <item*|<math|2\<Rightarrow\>1>>We prove this in three steps, first we
-      provie it for non negative simple functions, then for simple functions
-      and then finally the general case.\ 
+      <item*|<math|2\<Rightarrow\>1>>Let <math|s:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      be a <math|\<cal-A\><rsub|\<mu\>>>-measurable simple function with
+      <math|s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|[>>. As
+      <math|s<around*|(|X|)>> is finite non empty there exists a
+      <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
+      <math|\<alpha\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>s<around*|(|X|)>>.
+      Given <math|i\<in\><around*|{|1,\<ldots\>,n|}>> define
+      <math|A<rsub|i>=s<rsup|-1><around*|(|<around*|{|\<alpha\><around*|(|i|)>|}>|)>>.
+      As <math|s> is <math|\<cal-A\><rsub|\<mu\>>> measurable we have by
+      <reference|simple functions are measurable> that
+      <math|\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}>>
+      <math|A<rsub|i>\<in\>\<cal-A\><rsub|\<mu\>>>. As
+      <math|X=s<rsup|-1><around*|(|s<around*|(|X|)>|)>=s<rsup|-1><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>s<rsup|-1><around*|(|<around*|{|\<alpha\><around*|(|i|)>|}>|)>|)>=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>
+      we have that\ 
 
-      <\enumerate>
-        <item>Let <math|s:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be a
-        <math|\<cal-A\><rsub|\<mu\>>>-measurable simple function with
-        <math|s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|]>>. Using
-        <reference|simple function as a finite sum> there exists a
-        <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
-        <math|\<alpha\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|]>>
-        such that, if we define <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
-        by <math|A<rsub|i>=s<rsup|-1><around*|(|<around*|{|\<alpha\><around*|(|i|)>|}>|)><rsup|>>
-        such that\ 
+      <\equation>
+        <label|eq 18.344.033>X=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>
+      </equation>
 
-        <\equation>
-          <label|eq 18.349.034>X=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i><text|
-          and >\<forall\>x\<in\>X we have
-          s<around*|(|x|)>=<big|sum><rsub|i=1><rsup|n>\<alpha\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>
-        </equation>
+      \ Using the definition of <math|\<cal-A\><rsub|\<mu\>>> [see
+      <reference|completion of a measure> there exists
+      <math|C<rsub|i>,B<rsub|i>\<in\>\<cal-A\>> such that
+      <math|C<rsub|i>\<subseteq\>A<rsub|i>\<subseteq\>B<rsub|i>> and
+      <math|\<mu\><around*|(|B<rsub|i>\\C<rsub|i>|)>=0>. Define now
+      <math|g=<big|sum><rsub|i=1><rsup|n>\<alpha\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|C<rsub|i>>>
+      and <math|h=<big|sum><rsub|i=1><rsup|n>\<alpha\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|B<rsub|i>>>.
+      Take <math|x\<in\>X> then we have either:
 
-        As <math|s> is <math|\<cal-A\><rsub|\<mu\>>>-measurable we have by
-        <reference|simple functions are measurable> that
-        <math|\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}>>
-        <math|A<rsub|i>\<in\>\<cal-A\><rsub|\<mu\>>> which using the
-        definition of <math|\<cal-A\><rsub|\<mu\>>> [see
-        <reference|completion of a measure>] gives
+      <\description>
+        <item*|<math|x\<in\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>>>then\ 
 
-        <\equation>
-          <label|eq 18.350.0.34>\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}><text|
-          there exists >C<rsub|i>,B<rsub|i>\<in\>\<cal-A\> <text|such that
-          >C<rsub|i>\<subseteq\>A<rsub|i>\<subseteq\>B<rsub|i><text| and
-          >\<mu\><around*|(|B<rsub|i>\\C<rsub|i>|)>=0
-        </equation>
-
-        Define now <math|g=<big|sum><rsub|i=1><rsup|n>\<alpha\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|C<rsub|i>>>
-        and <math|h=<big|sum><rsub|i=1><rsup|n>\<alpha\><around*|(|i|)>\<cdot\>\<cal-X\><rsub|B<rsub|i>>>
-        then by <reference|measurable functions properties (3)>,
-        <reference|finite sum of mesaurable functions is measurable (1)> and
-        <reference|characteristic function is measurable> we have that\ 
-
-        <\equation>
-          <label|eq 18.351.034>g,h \ are \<cal-A\><text|-measurable>
-        </equation>
-
-        Using the previous lemma <reference|simple function properties> and
-        <reference|eq 18.350.0.34> it follows that
-
-        <\equation>
-          <label|eq 18.352.034>\<forall\>x\<in\>X <text|we have
-          >g<around*|(|x|)>\<leqslant\>s<around*|(|x|)>\<leqslant\>h<around*|(|x|)>
-        </equation>
-
-        Using the previous lemma <reference|simple function properties> and
-        <reference|eq 18.350.0.34> again we find<space|1em>that
-        <math|\<forall\>x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\C<rsub|i>|)>|)>
-        <text| we have >g<around*|(|x|)>=h<around*|(|x|)>>. As
-        <math|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|B<rsub|i>\\C<rsub|i>|)><rsub|>|)>\<leqslant\><rsub|<text|<reference|measure
-        is subadditive>>><big|sum><rsub|i=1><rsup|\<infty\>>\<mu\><around*|(|B<rsub|i>\\C<rsub|i>|)>\<equallim\><rsub|<text|<reference|eq
-        18.350.0.34>>>0> we conclude that
-
-        <\equation>
-          <label|eq 18.353.034>g=h<text| >\<mu\><text|-almost everywhere>
-        </equation>
-
-        <item>Let <math|s:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be a
-        <math|\<cal-A\><rsub|\<mu\>>>-measurable function [not neccesary non
-        negative] then using <reference|\|f(x)\| as f+ f-> we have that
-        <math|s=s<rsup|+>-s<rsup|->>. As <math|s<rsup|+><around*|(|X|)>=<around*|{|max<around*|(|s<around*|(|x|)>,0|)>\|x\<in\>X|}>\<subset\>s<around*|(|X|)><big|cup><around*|{|0|}>>
-        a finite non empty set and <math|s<rsup|-><around*|(|X|)>=<around*|{|-min<around*|(|s<around*|(|x|)>,0|)>\|x\<in\>X|}>\<subseteq\><around*|{|-y\|y\<in\>s<around*|(|X|)>|}><big|cup><around*|{|0|}>>
-        a finite non empty set it follows that <math|s<rsup|+>> and
-        <math|s<rsup|->> are simple functions. Further using
-        <reference|measurable functions properties (5)> and the
-        <math|\<cal-A\>>-measurability of <math|s> we have that
-        <math|s<rsup|+>>, <math|s<rsup|->>are
-        <math|\<cal-A\><rsub|\<mu\>>>-measurable. So we can use (1) to find
-        <math|\<cal-A\>>-measurable function
-        <math|g<rsup|+>,g<rsup|->,h<rsup|+>,h<rsup|->> such that\ 
-
-        <\eqnarray*>
-          <tformat|<table|<row|<cell|>|<cell|\<forall\>x\<in\>X<text|
-          >g<rsup|+><around*|(|x|)>\<leqslant\>s<rsup|+><around*|(|x|)>\<leqslant\>h<rsup|+><around*|(|x|)><infix-and>g<rsup|-><around*|(|x|)>\<leqslant\>s<rsup|-><around*|(|x|)>\<leqslant\>h<rsup|-><around*|(|x|)>>|<cell|<eq-number><label|eq
-          18.354.034>>>|<row|<cell|>|<cell|h<rsup|+>=g<rsup|+>
-          \<mu\><text|-almost everywhere and> h<rsup|<rsup|->>=g<rsup|->
-          \<mu\><text|-almost everywhere>>|<cell|<eq-number><label|eq
-          18.355.034>>>>>
-        </eqnarray*>
-
-        TODO
-
-        <\equation*>
-          \;
-        </equation*>
-
-        \;
-
-        \;
-      </enumerate>
-
-      \;
+        <item*|<math|x\<nin\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>>>
+      </description>
     </description>
-
-    \;
   </proof>
 
   \;
@@ -11401,7 +10995,7 @@
     <associate|[0,1[^n as a union of half open rectangles|<tuple|18.102|?>>
     <associate|algebra equivalent definitions|<tuple|18.9|?>>
     <associate|algebra of sets|<tuple|18.8|?>>
-    <associate|almost complete|<tuple|18.173|?>>
+    <associate|almost complete|<tuple|18.171|?>>
     <associate|alternative formule for lebesgue measure (1)|<tuple|18.91|?>>
     <associate|aproximate halfopen by open|<tuple|18.90|?>>
     <associate|auto-1|<tuple|18|?>>
@@ -11481,7 +11075,6 @@
     <associate|corollary 18.29|<tuple|18.29|?>>
     <associate|countable additivity implies additivity|<tuple|18.63|?>>
     <associate|empty rectaangles|<tuple|18.35|?>>
-    <associate|eq 18|<tuple|18.353|?>>
     <associate|eq 18.1.014|<tuple|18.10|?>>
     <associate|eq 18.1.016|<tuple|18.4|?>>
     <associate|eq 18.1.033|<tuple|18.1|?>>
@@ -11724,29 +11317,11 @@
     <associate|eq 18.338.033|<tuple|18.339|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
     <associate|eq 18.340.033|<tuple|18.340|?>>
-    <associate|eq 18.341.033|<tuple|18.346|?>>
-    <associate|eq 18.341.034|<tuple|18.341|?>>
-    <associate|eq 18.342.033|<tuple|18.347|?>>
-    <associate|eq 18.342.034|<tuple|18.342|?>>
-    <associate|eq 18.343.0.34|<tuple|18.343|?>>
-    <associate|eq 18.343.033|<tuple|18.348|?>>
-    <associate|eq 18.343.033.01|<tuple|18.348|?>>
-    <associate|eq 18.343.034|<tuple|18.343|?>>
-    <associate|eq 18.343.034.01|<tuple|18.348|?>>
-    <associate|eq 18.344.034.1|<tuple|18.344|?>>
-    <associate|eq 18.345.034|<tuple|18.345|?>>
-    <associate|eq 18.346.033|<tuple|18.346|?>>
-    <associate|eq 18.347.033|<tuple|18.347|?>>
-    <associate|eq 18.347.034|<tuple|18.346|?>>
-    <associate|eq 18.348.034|<tuple|18.348|?>>
-    <associate|eq 18.349.034|<tuple|18.349|?>>
+    <associate|eq 18.341.033|<tuple|18.341|?>>
+    <associate|eq 18.342.033|<tuple|18.342|?>>
+    <associate|eq 18.343.033|<tuple|18.343|?>>
+    <associate|eq 18.344.033|<tuple|18.344|?>>
     <associate|eq 18.35.021|<tuple|18.40|?>>
-    <associate|eq 18.350.0.34|<tuple|18.350|?>>
-    <associate|eq 18.351.034|<tuple|18.351|?>>
-    <associate|eq 18.352.034|<tuple|18.352|?>>
-    <associate|eq 18.353.034|<tuple|18.353|?>>
-    <associate|eq 18.354.034|<tuple|18.354|?>>
-    <associate|eq 18.355.034|<tuple|18.355|?>>
     <associate|eq 18.36.016|<tuple|18.85|?>>
     <associate|eq 18.36.021|<tuple|18.41|?>>
     <associate|eq 18.37.016|<tuple|18.86|?>>
@@ -11767,7 +11342,6 @@
     <associate|eq 18.44.016|<tuple|18.93|?>>
     <associate|eq 18.44.022|<tuple|18.66|?>>
     <associate|eq 18.44.033|<tuple|18.44|?>>
-    <associate|eq 18.44.034|<tuple|18.344|?>>
     <associate|eq 18.45.016|<tuple|18.94|?>>
     <associate|eq 18.45.022|<tuple|18.67|?>>
     <associate|eq 18.45.033|<tuple|18.45|?>>
@@ -11848,18 +11422,13 @@
     <associate|eq 18.9.020|<tuple|18.14|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|18.50|?>>
-    <associate|f=g almost everywhere property|<tuple|18.176|?>>
-    <associate|finite sum of mesaurable functions is measurable
-    (1)|<tuple|18.166|?>>
-    <associate|finite sum of mesaurable functions is measurable
-    (2)|<tuple|18.168|?>>
+    <associate|f=g almost everywhere property|<tuple|18.173|?>>
     <associate|finite unions and intersections|<tuple|18.7|?>>
     <associate|function comparizatons are measurable|<tuple|18.159|?>>
     <associate|generated sigma algebra|<tuple|18.17|?>>
     <associate|half open rectangle as intersection of open
     sets|<tuple|18.51|?>>
     <associate|half spaces are Lebesgue measurable in R^n|<tuple|18.87|?>>
-    <associate|increasing simple functions|<tuple|18.179|?>>
     <associate|induced outer inner measure|<tuple|18.114|?>>
     <associate|induced outer measure is a outer measure|<tuple|18.116|?>>
     <associate|inner/outer regularity|<tuple|18.118|?>>
@@ -11874,7 +11443,7 @@
     <associate|lower half open spaces|<tuple|18.53|?>>
     <associate|lower half open spaces are open|<tuple|18.54|?>>
     <associate|measurable function|<tuple|18.137|?>>
-    <associate|measurable function and limit|<tuple|18.177|?>>
+    <associate|measurable function and limit|<tuple|18.174|?>>
     <associate|measurable function and restriction|<tuple|18.141|?>>
     <associate|measurable function condition (1)|<tuple|18.151|?>>
     <associate|measurable function condition (2)|<tuple|18.153|?>>
@@ -11884,9 +11453,9 @@
     <associate|measurable functions properties (1)|<tuple|18.163|?>>
     <associate|measurable functions properties (2)|<tuple|18.164|?>>
     <associate|measurable functions properties (3)|<tuple|18.165|?>>
-    <associate|measurable functions properties (4)|<tuple|18.167|?>>
-    <associate|measurable functions properties (5)|<tuple|18.171|?>>
-    <associate|measurable functions properties (6)|<tuple|18.172|?>>
+    <associate|measurable functions properties (4)|<tuple|18.166|?>>
+    <associate|measurable functions properties (5)|<tuple|18.169|?>>
+    <associate|measurable functions properties (6)|<tuple|18.170|?>>
     <associate|measurable set alternative definition|<tuple|18.73|?>>
     <associate|measurable sets and null sets|<tuple|18.74|?>>
     <associate|measurable space|<tuple|18.13|?>>
@@ -11923,8 +11492,6 @@
     <associate|sigma algebra equivalent definitions|<tuple|18.14|?>>
     <associate|sigma algebras are Dynkin classes|<tuple|18.127|?>>
     <associate|simple function|<tuple|18.157|?>>
-    <associate|simple function as a finite sum|<tuple|18.178|?>>
-    <associate|simple function properties|<tuple|18.179|?>>
     <associate|simple functions are measurable|<tuple|18.158|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|18.49|?>>
     <associate|translation properties|<tuple|18.95|?>>
@@ -11942,7 +11509,7 @@
     sets|<tuple|18.6|?>>
     <associate|{x\<less\>f} properties|<tuple|18.150|?>>
     <associate|{x\<less\>f} properties (1)|<tuple|18.152|?>>
-    <associate|\|f(x)\| as f+ f-|<tuple|18.170|?>>
+    <associate|\|f(x)\| as f+ f-|<tuple|18.168|?>>
   </collection>
 </references>
 
