@@ -10807,8 +10807,9 @@
   </definition>
 
   <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
-    measure space and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <label|almost everywhere properties>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
+    space and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
     <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
     <math|h:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
     <math|k:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>\ 
@@ -11203,7 +11204,7 @@
       Combining <reference|eq 18.347.033>, <reference|eq 18.348.034> proves
       that <math|f=g> <math|<wide|\<mu\>|\<wide-bar\>>>-almost everwhere. So
       as <math|g> is <math|\<cal-A\><rsub|\<mu\>>>-measurable [see
-      <reference|eq 18.341.033>] we can apply <reference|f=g almost
+      <reference|eq 18.346.033>] we can apply <reference|f=g almost
       everywhere property> proving that\ 
 
       <\equation*>
@@ -11211,16 +11212,16 @@
       </equation*>
 
       <item*|<math|2\<Rightarrow\>1>>We prove this in three steps, first we
-      provie it for non negative simple functions, then for simple functions
-      and then finally the general case.\ 
+      provie it for non negative real simple functions, then for simple
+      functions and then finally the general case.\ 
 
       <\enumerate>
         <item>Let <math|s:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be a
-        <math|\<cal-A\><rsub|\<mu\>>>-measurable simple function with
-        <math|s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|]>>. Using
+        real <math|\<cal-A\><rsub|\<mu\>>>-measurable simple function with
+        <math|s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|[>>. Using
         <reference|simple function as a finite sum> there exists a
         <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
-        <math|\<alpha\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|]>>
+        <math|\<alpha\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>s<around*|(|X|)>\<subseteq\><around*|[|0,\<infty\>|[>>
         such that, if we define <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
         by <math|A<rsub|i>=s<rsup|-1><around*|(|<around*|{|\<alpha\><around*|(|i|)>|}>|)><rsup|>>
         such that\ 
@@ -11276,13 +11277,15 @@
         </equation>
 
         <item>Let <math|s:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be a
-        <math|\<cal-A\><rsub|\<mu\>>>-measurable function [not neccesary non
-        negative] then using <reference|\|f(x)\| as f+ f-> we have that
+        a real <math|\<cal-A\><rsub|\<mu\>>>-measurable function [not
+        neccesary non negative] with <math|s<around*|(|X|)>\<subseteq\>\<bbb-R\>>
+        then using <reference|\|f(x)\| as f+ f-> we have that
         <math|s=s<rsup|+>-s<rsup|->>. As <math|s<rsup|+><around*|(|X|)>=<around*|{|max<around*|(|s<around*|(|x|)>,0|)>\|x\<in\>X|}>\<subset\>s<around*|(|X|)><big|cup><around*|{|0|}>>
-        a finite non empty set and <math|s<rsup|-><around*|(|X|)>=<around*|{|-min<around*|(|s<around*|(|x|)>,0|)>\|x\<in\>X|}>\<subseteq\><around*|{|-y\|y\<in\>s<around*|(|X|)>|}><big|cup><around*|{|0|}>>
-        a finite non empty set it follows that <math|s<rsup|+>> and
-        <math|s<rsup|->> are simple functions. Further using
-        <reference|measurable functions properties (5)> and the
+        a finite non empty set in <math|\<bbb-R\>> and
+        <math|s<rsup|-><around*|(|X|)>=<around*|{|-min<around*|(|s<around*|(|x|)>,0|)>\|x\<in\>X|}>\<subseteq\><around*|{|-y\|y\<in\>s<around*|(|X|)>|}><big|cup><around*|{|0|}>>
+        a finite non empty set in <math|\<bbb-R\>>, it follows that
+        <math|s<rsup|+>> and <math|s<rsup|->> are simple functions. Further
+        using <reference|measurable functions properties (5)> and the
         <math|\<cal-A\>>-measurability of <math|s> we have that
         <math|s<rsup|+>>, <math|s<rsup|->>are
         <math|\<cal-A\><rsub|\<mu\>>>-measurable. So we can use (1) to find
@@ -11298,11 +11301,34 @@
           18.355.034>>>>>
         </eqnarray*>
 
-        TODO
+        Let <math|x\<in\>X> then we have (taking in account that all the
+        terms in the sum are finite)\ 
 
-        <\equation*>
-          \;
-        </equation*>
+        <\equation>
+          <label|eq 18.356.034>g<rsup|+><around*|(|x|)>-h<rsup|-><around*|(|x|)>\<leqslant\>s<rsup|+><around*|(|x|)>-s<rsup|-><around*|(|x|)>\<leqslant\>h<rsup|+><around*|(|x|)>-g<rsup|-><around*|(|x|)>
+        </equation>
+
+        If we define <math|g=g<rsup|+>-h<rsup|->> and
+        <math|h=h<rsup|+>-g<rsup|->> then using <reference|measurable
+        functions properties (4)> and the above we have that
+
+        <\equation>
+          <label|eq 18.357.034>g,h<text| are >\<cal-A\><text|-measurable and
+          >\<forall\>x\<in\>X<text| >g<around*|(|x|)>\<leqslant\>s<around*|(|x|)>\<leqslant\>h<around*|(|x|)>
+        </equation>
+
+        Further as <math|h<rsup|+>=g<rsup|+> \<mu\><text|-almost everywhere
+        and> h<rsup|<rsup|->>=g<rsup|-> \<mu\><text|-almost everywhere>> we
+        have by <reference|almost everywhere properties> and <reference|eq
+        18.355.034> that <math|g<rsup|+>-h<rsup|->=h<rsup|+>-g<rsup|->>
+        <math|\<mu\>>-almost everywhere proving that\ 
+
+        <\equation>
+          <label|eq 18.358.034>g=h<text| holds >\<mu\><text|-almost
+          everywhere>
+        </equation>
+
+        <item>Now for the general case\ 
 
         \;
 
@@ -11402,6 +11428,7 @@
     <associate|algebra equivalent definitions|<tuple|18.9|?>>
     <associate|algebra of sets|<tuple|18.8|?>>
     <associate|almost complete|<tuple|18.173|?>>
+    <associate|almost everywhere properties|<tuple|18.175|?>>
     <associate|alternative formule for lebesgue measure (1)|<tuple|18.91|?>>
     <associate|aproximate halfopen by open|<tuple|18.90|?>>
     <associate|auto-1|<tuple|18|?>>
@@ -11481,7 +11508,6 @@
     <associate|corollary 18.29|<tuple|18.29|?>>
     <associate|countable additivity implies additivity|<tuple|18.63|?>>
     <associate|empty rectaangles|<tuple|18.35|?>>
-    <associate|eq 18|<tuple|18.353|?>>
     <associate|eq 18.1.014|<tuple|18.10|?>>
     <associate|eq 18.1.016|<tuple|18.4|?>>
     <associate|eq 18.1.033|<tuple|18.1|?>>
@@ -11724,20 +11750,12 @@
     <associate|eq 18.338.033|<tuple|18.339|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
     <associate|eq 18.340.033|<tuple|18.340|?>>
-    <associate|eq 18.341.033|<tuple|18.346|?>>
     <associate|eq 18.341.034|<tuple|18.341|?>>
-    <associate|eq 18.342.033|<tuple|18.347|?>>
     <associate|eq 18.342.034|<tuple|18.342|?>>
     <associate|eq 18.343.0.34|<tuple|18.343|?>>
-    <associate|eq 18.343.033|<tuple|18.348|?>>
-    <associate|eq 18.343.033.01|<tuple|18.348|?>>
-    <associate|eq 18.343.034|<tuple|18.343|?>>
-    <associate|eq 18.343.034.01|<tuple|18.348|?>>
-    <associate|eq 18.344.034.1|<tuple|18.344|?>>
     <associate|eq 18.345.034|<tuple|18.345|?>>
     <associate|eq 18.346.033|<tuple|18.346|?>>
     <associate|eq 18.347.033|<tuple|18.347|?>>
-    <associate|eq 18.347.034|<tuple|18.346|?>>
     <associate|eq 18.348.034|<tuple|18.348|?>>
     <associate|eq 18.349.034|<tuple|18.349|?>>
     <associate|eq 18.35.021|<tuple|18.40|?>>
@@ -11747,6 +11765,9 @@
     <associate|eq 18.353.034|<tuple|18.353|?>>
     <associate|eq 18.354.034|<tuple|18.354|?>>
     <associate|eq 18.355.034|<tuple|18.355|?>>
+    <associate|eq 18.356.034|<tuple|18.356|?>>
+    <associate|eq 18.357.034|<tuple|18.357|?>>
+    <associate|eq 18.358.034|<tuple|18.358|?>>
     <associate|eq 18.36.016|<tuple|18.85|?>>
     <associate|eq 18.36.021|<tuple|18.41|?>>
     <associate|eq 18.37.016|<tuple|18.86|?>>
@@ -11859,7 +11880,6 @@
     <associate|half open rectangle as intersection of open
     sets|<tuple|18.51|?>>
     <associate|half spaces are Lebesgue measurable in R^n|<tuple|18.87|?>>
-    <associate|increasing simple functions|<tuple|18.179|?>>
     <associate|induced outer inner measure|<tuple|18.114|?>>
     <associate|induced outer measure is a outer measure|<tuple|18.116|?>>
     <associate|inner/outer regularity|<tuple|18.118|?>>
