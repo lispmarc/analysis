@@ -9556,6 +9556,87 @@
     finite and not empty.
   </definition>
 
+  <\proposition>
+    <label|simple function properties (1)>Let <math|X> be a set,
+    <math|\<alpha\>\<in\>\<bbb-R\>> and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be simple functions
+    then we have\ 
+
+    <\enumerate>
+      <item><math|\<alpha\>\<ast\>f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      defined by <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>>
+      is a simple function
+
+      <item><math|>If <math|f<around*|(|X|)>\<subseteq\>\<bbb-R\>> and
+      <math|g<around*|(|X|)>\<subseteq\>\<bbb-R\>> then
+      <math|f+g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> defined by
+      <math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>>
+      is a simple function. Note: that the requirement
+      <math|f<around*|(|X|)>,g<around*|(|X|)>\<subseteq\>\<bbb-R\>> is needed
+      to ensure that the sum is always defined.
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>We have to consider two cases for <math|\<alpha\>>
+
+      <\description>
+        <item*|<math|\<alpha\>=0>>then <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|X|)>=<around*|{|0|}>>
+        which is finite and non empty
+
+        <item*|<math|\<alpha\>\<neq\>0>>as <math|f>is a simple function there
+        exists a <math|n\<in\>\<bbb-N\><rsub|0>> and a bijection
+        <math|\<beta\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>f<around*|(|X|)>>.
+        Define now <math|\<alpha\><rsub|f>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\><around*|(|\<alpha\>\<cdot\>f|)><around*|(|X|)>>
+        by <math|\<alpha\><rsub|f><around*|(|i|)>=\<alpha\>\<cdot\>\<beta\><around*|(|i|)>>.
+        If <math|y\<in\><around*|(|\<alpha\>\<cdot\>f|)><around*|(|X|)>> then
+        there exists a <math|x\<in\>X> such that
+        <math|y=<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>\<Rightarrowlim\><rsub|\<alpha\>\<neq\>0>f<around*|(|x|)>=<frac|y|\<alpha\>>>,
+        as <math|f<around*|(|x|)>\<in\>f<around*|(|X|)>> there exists a
+        <math|i\<in\><around*|{|1,\<ldots\>,n|}>> such that
+        <math|<math|>\<beta\><around*|(|i|)>=f<around*|(|x|)>=<frac|y|\<alpha\>>\<Rightarrow\>y=\<alpha\>\<cdot\>\<beta\><around*|(|i|)>=\<alpha\><rsub|f><around*|(|i|)>>
+        proving that <math|\<alpha\><rsub|f> is a surjection.> So using
+        <reference|surjection f:A-\<gtr\>B B is finite if A is finite> we
+        have that <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|X|)>> is
+        finite (and non empty as <math|<around*|{|1,\<ldots\>,n|}>> is non
+        empty).
+      </description>
+
+      so in all cases <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|X|)>>
+      is finite and non empty proving that <math|\<alpha\>\<cdot\>f> is a
+      simple function.
+
+      <item>As <math|f> and <math|g> are simple functions we have that
+      <math|f<around*|(|X|)>> and <math|g<around*|(|X|)>> are finite and non
+      empty. As the product of finite sets is finite [see <reference|product
+      of finite sets is finite>] we have that
+      <math|f<around*|(|X|)>\<times\>g<around*|(|X|)>> is a non empty finite
+      set. Define <math|<around*|(|+|)>:f<around*|(|X|)>\<times\>g<around*|(|X|)>\<rightarrow\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
+      by <math|<around*|(|+|)><around*|(|x,y|)>=x+y> then if
+      <math|z\<in\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
+      there exists a <math|x\<in\>f<around*|(|X|)>> and
+      <math|y\<in\>g<around*|(|X|)>> such that
+      <math|x+y=<around*|(|+|)><around*|(|x,y|)>> proving that
+      <math|<around*|(|+|)>> is a surjection. Applying then
+      <reference|surjection f:A-\<gtr\>B B is finite if A is finite> proves
+      that <math|><math|<around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
+      is finite. Let <math|y\<in\><around*|(|f+g|)><around*|(|X|)>> then
+      there exists a <math|x\<in\>X> such that
+      <math|y=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>.
+      Hence <math|<around*|(|f+g|)><around*|(|X|)>\<subseteq\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
+      which, as we have proved that <math|<around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
+      is finite, proves using it follows from <reference|subsets of finite
+      sets are finite> that <math|<around*|(|f+g|)><around*|(|X|)>> is
+      finite. Finally as <math|f<around*|(|X|)>\<neq\>\<emptyset\>>
+      \ <math|X\<neq\>\<emptyset\>> proving that
+      <math|<around*|(|f+g|)><around*|(|X|)>> is non empty. This proves that
+      <math|f+g> is a simple function.
+    </enumerate>
+  </proof>
+
   <\example>
     <label|simple functions are measurable>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
@@ -10493,7 +10574,8 @@
     a <math|\<cal-A\>>-measurable function such that
     <math|f<around*|(|A|)>\<subseteq\><around*|[|0,\<infty\>|]>> then there
     exists a sequence <math|<around*|{|f<rsub|i>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
-    of <with|font-series|bold|simple functions> such that
+    of <with|font-series|bold|<math|\<cal-A\>>-measurable>
+    <with|font-series|bold|simple functions> such that
     <math|\<forall\>x\<in\>A>
 
     <\enumerate>
@@ -10504,6 +10586,7 @@
       <item><math|f<around*|(|x|)>=sup<around*|(|n\<in\>\<bbb-N\><rsub|0>\|f<rsub|n><around*|(|x|)>|)>\<equallim\><rsub|<around*|(|1|)>+<text|<reference|equivalence
       of limits on increasing (decreasing) sequences of extented
       reals>>><below|lim|n\<rightarrow\>\<infty\>>f<rsub|i><around*|(|x|)>>
+      [or in other words <math|f=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>=<below|sup|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>>f<rsub|n>>
     </enumerate>
   </theorem>
 
@@ -10761,6 +10844,62 @@
 
     The theorem is now proved by <reference|eq 18.331.033.1>,<reference|eq
     18.336.033> and <reference|eq 18.338.033>.
+  </proof>
+
+  <\corollary>
+    <label|measurable function as a limit of simple functions>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
+    <math|\<cal-A\>>-measurable function then there exists a sequence
+    <math|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> of
+    <with|font-series|bold|<math|\<cal-A\>>-measurable>
+    <with|font-series|bold|simple functions> <math|between >X and
+    <math|<wide|\<bbb-R\>|\<wide-bar\>>> such that
+
+    <\enumerate>
+      <item><math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+      <math|f<rsub|n><around*|(|X|)>\<subseteq\>\<bbb-R\>>
+
+      <item><math|\<forall\>x\<in\>X f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|i><around*|(|x|)>>
+      [or in other words <math|f=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>>]
+    </enumerate>
+  </corollary>
+
+  <\proof>
+    Using <reference|\|f(x)\| as f+ f-> we have <math|f=f<rsup|+>-f<rsup|->>
+    [where the difference us well defined] and as <math|f> is
+    <math|\<cal-A\>>-measurable it follows from <reference|measurable
+    functions properties (5)> that <math|f<rsup|+>> and <math|f<rsup|-1>> are
+    <math|\<cal-A\>>-measurable. Using the fact that
+    <math|f<rsup|+>,f<rsup|->> are non negative we can apply the previous
+    theorem <reference|measurable functions properties (6)> two find two
+    sequences of <math|\<cal-A\>>-measurable simple functions
+    <math|<around*|{|f<rsup|+><rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>,
+    <math|<around*|{|f<rsup|-><rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    with <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> and <math|x\<in\>X>,
+    <math|f<rsup|+><rsub|n><around*|(|x|)>\<in\>\<bbb-R\>>,
+    <math|f<rsup|-><rsub|n><around*|(|x|)>\<in\>\<bbb-R\>>,
+    <math|f<rsup|+><around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsup|+><rsub|n><around*|(|x|)>>
+    and <math|f<rsup|-><around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsup|-><rsub|n><around*|(|x|)>>.
+    Define now <math|<around*|(|f<rsub|n>|)><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    by <math|f<rsub|n>=f<rsup|+><rsub|n>-f<rsup|-><rsub|n>> \ then by
+    <reference|simple function properties> and <reference|measurable
+    functions properties (5)> it follows that <math|f<rsub|n>> is
+    <math|\<cal-A\>>-measurable. \ As <math|\<forall\>x\<in\>X>
+    <math|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>> is well defined
+    and <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+    <math|f<rsup|+><rsub|n><around*|(|x|)>-f<rsup|-><rsub|n><around*|(|x|)>>
+    is well defined [difference of real numbers] \ we have
+    using<reference|properties of the limit in the extented reals> that\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>|<cell|\<equallim\><rsub|def>>|<cell|<below|lim|n\<rightarrow\>\<infty\>><around*|(|f<rsup|+><rsub|n><around*|(|x|)>+<around*|(|-1\<cdot\>f<rsup|-><rsub|n><around*|(|x|)>|)>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|properties
+      of the limit in the extented reals>>>>|<cell|<below|lim|n\<rightarrow\>\<infty\>>f<rsup|+><rsub|n><around*|(|x|)>+<around*|(|-1|)>\<cdot\><below|lim|n\<rightarrow\>\<infty\>>f<rsup|-><rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|+><around*|(|x|)>+<around*|(|-1|)>\<cdot\>f<rsup|-1><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|f<rsup|+>-f<rsup|->|)><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<around*|(|x|)>>>>>
+    </eqnarray*>
+
+    So there exists a sequence of real simple functions
+    <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>> such that
+    <math|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>=f<around*|(|x|)>>
   </proof>
 
   <subsection|Properties that hold everywhere>
@@ -11328,17 +11467,87 @@
           everywhere>
         </equation>
 
-        <item>Now for the general case\ 
+        <item>Now for the general case let
+        <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be a
+        <math|\<cal-A\><rsub|\<mu\>>>-measurable function. Using
+        <reference|measurable function as a limit of simple functions> there
+        exists a sequence <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+        of <math|\<cal-A\><rsub|\<mu\>>>-measurable smple functions such that\ 
 
-        \;
+        <\equation>
+          <label|eq 18.359.034>\<forall\>x\<in\>X
+          f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>
+        </equation>
+
+        Let <math|n\<in\>\<bbb-N\><rsub|0>> then using <reference|eq
+        18.357.034> and <reference|eq 18.358.034> there exists a
+        <math|\<cal-A\>>-measurable functions <math|g<rsub|n>,h<rsub|n>> such
+        that\ 
+
+        <\equation>
+          <label|eq 18.360.034>\<forall\>x\<in\>X
+          g<rsub|n><around*|(|x|)>\<leqslant\>f<rsub|n><around*|(|x|)>\<leqslant\>h<rsub|n><around*|(|x|)><text|
+          and >g<rsub|n>=h<rsub|n> \<mu\><text|-almost everywhere>
+        </equation>
+
+        Define now <math|g> and <math|h> as <math|g=<below|lim
+        sup|n\<rightarrow\>\<infty\>> g<rsub|n>> and <math|h=<below|lim
+        inf|n\<rightarrow\>\<infty\>> h<rsub|n>> then using
+        <reference|measurable functions properties (2)>\ 
+
+        <\equation>
+          <label|eq 18.361.034>g,h are \<cal-A\><text|-measurable>
+        </equation>
+
+        Let <math|x\<in\>X> then we have\ 
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|g<around*|(|x|)>>|<cell|=>|<cell|<below|lim
+          sup|n\<rightarrow\>\<infty\>> g<rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|eq
+          18.360.034> and <reference|lim inf and lim sup
+          inequality>>>>|<cell|<below|lim sup|n\<rightarrow\>\<infty\>>
+          f<rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
+          18.359.034> def of lim>>>|<cell|f<around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
+          18.359.034> def of lim>>>|<cell|<below|lim
+          inf|n\<rightarrow\>\<infty\>> f<rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|eq
+          18.360.034> and <reference|lim inf and lim sup
+          inequality>>>>|<cell|<below|lim inf|n\<rightarrow\>\<infty\>>
+          h<rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|h<around*|(|x|)>>>>>
+        </eqnarray*>
+
+        proving that\ 
+
+        <\equation>
+          <label|eq 18.362.034>\<forall\>x\<in\>X
+          g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>
+        </equation>
+
+        Let <math|n\<in\>\<bbb-N\><rsub|0>> then as
+        <math|g<rsub|n>=h<rsub|n>> is <math|\<mu\>>-almost anywhere there
+        exists s <math|N<rsub|n>\<in\>\<cal-A\>> with
+        <math|\<mu\><around*|(|N<rsub|n>|)>=0> such that
+        <math|<around*|{|x\<in\>X\|g<rsub|n><around*|(|x|)>\<neq\>h<rsub|n><around*|(|x|)>|}>\<subseteq\>N<rsub|n>>.
+        Then we have <math|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>N<rsub|i>\<in\>\<cal-A\>>
+        and <math|\<mu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>N<rsub|i>|)>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>>\<mu\><around*|(|N<rsub|i>|)>=0>.
+        Further if <math|x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>U<rsub|i>|)>=<big|cap><rsub|i\<in\>\<bbb-N\><rsub|0>>X<rsub|i>>
+        we have that <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
+        <math|g<rsub|i><around*|(|x|)>=h<rsub|i><around*|(|x|)>> so that
+        <math|<below|lim sup|n\<rightarrow\>\<infty\>>
+        g<rsub|n><around*|(|x|)>=<below|lim inf|n\<rightarrow\>\<infty\>>
+        h<rsub|n><around*|(|x|)>\<Rightarrow\>g<around*|(|x|)>=h<around*|(|x|)>>.
+        Hence we have that\ 
+
+        <\equation>
+          <label|eq 18.363.034>g=h<space|1em>\<mu\><text|-almost everywhere>
+        </equation>
 
         \;
       </enumerate>
 
-      \;
+      Finally <math|<around*|(|1\<Rightarrow\>2|)>> is proved by
+      <reference|eq 18.361.034>, <reference|eq 18.362.034> and <reference|eq
+      18.363.034>.
     </description>
-
-    \;
   </proof>
 
   \;
@@ -11374,6 +11583,8 @@
   \;
 
   \ 
+
+  \;
 
   \;
 </body>
@@ -11427,8 +11638,8 @@
     <associate|[0,1[^n as a union of half open rectangles|<tuple|18.102|?>>
     <associate|algebra equivalent definitions|<tuple|18.9|?>>
     <associate|algebra of sets|<tuple|18.8|?>>
-    <associate|almost complete|<tuple|18.173|?>>
-    <associate|almost everywhere properties|<tuple|18.175|?>>
+    <associate|almost complete|<tuple|18.175|?>>
+    <associate|almost everywhere properties|<tuple|18.177|?>>
     <associate|alternative formule for lebesgue measure (1)|<tuple|18.91|?>>
     <associate|aproximate halfopen by open|<tuple|18.90|?>>
     <associate|auto-1|<tuple|18|?>>
@@ -11768,8 +11979,13 @@
     <associate|eq 18.356.034|<tuple|18.356|?>>
     <associate|eq 18.357.034|<tuple|18.357|?>>
     <associate|eq 18.358.034|<tuple|18.358|?>>
+    <associate|eq 18.359.034|<tuple|18.359|?>>
     <associate|eq 18.36.016|<tuple|18.85|?>>
     <associate|eq 18.36.021|<tuple|18.41|?>>
+    <associate|eq 18.360.034|<tuple|18.360|?>>
+    <associate|eq 18.361.034|<tuple|18.361|?>>
+    <associate|eq 18.362.034|<tuple|18.362|?>>
+    <associate|eq 18.363.034|<tuple|18.363|?>>
     <associate|eq 18.37.016|<tuple|18.86|?>>
     <associate|eq 18.37.021|<tuple|18.42|?>>
     <associate|eq 18.38.016|<tuple|18.87|?>>
@@ -11869,13 +12085,13 @@
     <associate|eq 18.9.020|<tuple|18.14|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|18.50|?>>
-    <associate|f=g almost everywhere property|<tuple|18.176|?>>
+    <associate|f=g almost everywhere property|<tuple|18.178|?>>
     <associate|finite sum of mesaurable functions is measurable
-    (1)|<tuple|18.166|?>>
+    (1)|<tuple|18.167|?>>
     <associate|finite sum of mesaurable functions is measurable
-    (2)|<tuple|18.168|?>>
+    (2)|<tuple|18.169|?>>
     <associate|finite unions and intersections|<tuple|18.7|?>>
-    <associate|function comparizatons are measurable|<tuple|18.159|?>>
+    <associate|function comparizatons are measurable|<tuple|18.160|?>>
     <associate|generated sigma algebra|<tuple|18.17|?>>
     <associate|half open rectangle as intersection of open
     sets|<tuple|18.51|?>>
@@ -11890,23 +12106,25 @@
     <associate|interval identities|<tuple|18.25|?>>
     <associate|lemma 18.28 set relations|<tuple|18.28|?>>
     <associate|length of interval is increasing|<tuple|18.42|?>>
-    <associate|liminf or limsup of functions|<tuple|18.162|?>>
+    <associate|liminf or limsup of functions|<tuple|18.163|?>>
     <associate|lower half open spaces|<tuple|18.53|?>>
     <associate|lower half open spaces are open|<tuple|18.54|?>>
     <associate|measurable function|<tuple|18.137|?>>
-    <associate|measurable function and limit|<tuple|18.177|?>>
+    <associate|measurable function and limit|<tuple|18.179|?>>
     <associate|measurable function and restriction|<tuple|18.141|?>>
+    <associate|measurable function as a limit of simple
+    functions|<tuple|18.174|?>>
     <associate|measurable function condition (1)|<tuple|18.151|?>>
     <associate|measurable function condition (2)|<tuple|18.153|?>>
     <associate|measurable function condition and restricted
     functions|<tuple|18.142|?>>
     <associate|measurable functions and generated algebra|<tuple|18.140|?>>
-    <associate|measurable functions properties (1)|<tuple|18.163|?>>
-    <associate|measurable functions properties (2)|<tuple|18.164|?>>
-    <associate|measurable functions properties (3)|<tuple|18.165|?>>
-    <associate|measurable functions properties (4)|<tuple|18.167|?>>
-    <associate|measurable functions properties (5)|<tuple|18.171|?>>
-    <associate|measurable functions properties (6)|<tuple|18.172|?>>
+    <associate|measurable functions properties (1)|<tuple|18.164|?>>
+    <associate|measurable functions properties (2)|<tuple|18.165|?>>
+    <associate|measurable functions properties (3)|<tuple|18.166|?>>
+    <associate|measurable functions properties (4)|<tuple|18.168|?>>
+    <associate|measurable functions properties (5)|<tuple|18.172|?>>
+    <associate|measurable functions properties (6)|<tuple|18.173|?>>
     <associate|measurable set alternative definition|<tuple|18.73|?>>
     <associate|measurable sets and null sets|<tuple|18.74|?>>
     <associate|measurable space|<tuple|18.13|?>>
@@ -11943,9 +12161,10 @@
     <associate|sigma algebra equivalent definitions|<tuple|18.14|?>>
     <associate|sigma algebras are Dynkin classes|<tuple|18.127|?>>
     <associate|simple function|<tuple|18.157|?>>
-    <associate|simple function as a finite sum|<tuple|18.178|?>>
-    <associate|simple function properties|<tuple|18.179|?>>
-    <associate|simple functions are measurable|<tuple|18.158|?>>
+    <associate|simple function as a finite sum|<tuple|18.180|?>>
+    <associate|simple function properties|<tuple|18.181|?>>
+    <associate|simple function properties (1)|<tuple|18.158|?>>
+    <associate|simple functions are measurable|<tuple|18.159|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|18.49|?>>
     <associate|translation properties|<tuple|18.95|?>>
     <associate|union intersection union of families|<tuple|18.3|?>>
@@ -11962,7 +12181,7 @@
     sets|<tuple|18.6|?>>
     <associate|{x\<less\>f} properties|<tuple|18.150|?>>
     <associate|{x\<less\>f} properties (1)|<tuple|18.152|?>>
-    <associate|\|f(x)\| as f+ f-|<tuple|18.170|?>>
+    <associate|\|f(x)\| as f+ f-|<tuple|18.171|?>>
   </collection>
 </references>
 
