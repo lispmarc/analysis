@@ -11,14 +11,24 @@
 
   <section|Extented reals>
 
+  In measure theory we have to work with series of positive real numbers that
+  will not always convert. By extending the set of the real numbers we are
+  able to deal with these series, in addition the supremum and infinum of non
+  empty sets will always exists. The disadvantage that we will encounter is
+  that the sum of extended reals is not always well defined.
+
+  First we extend the set of the reals with two non real numbers
+  <math|\<infty\>> and <math|-\<infty\>>.
+
   <\lemma>
-    There exists at least two sets that are not a element of <math|\<bbb-R\>>
+    There exists at least two sets that are not a element of
+    <math|\<bbb-R\>>.
   </lemma>
 
   <\proof>
-    Using the definition of the real numbers (see <reference|dedekind's cut>)
-    we have that <math|\<emptyset\>\<nin\>\<bbb-R\>> and
-    <math|\<bbb-Q\>\<nin\>\<bbb-R\>>
+    Using the definition of the real numbers [see <reference|dedekind's cut>
+    and <reference|the real numbers>] we have that
+    <math|\<emptyset\>\<nin\>\<bbb-R\>> and <math|\<bbb-Q\>\<nin\>\<bbb-R\>>.
   </proof>
 
   Using the above lemma and the fact that a set is by definition a element
@@ -31,9 +41,18 @@
     <math|\<infty\>\<neq\>-\<infty\>>
   </definition>
 
-  We extend the order relation <math|\<leqslant\><rsub|\<bbb-R\>>> on
-  <math|\<bbb-R\>> to a order relation on
-  <math|<wide|\<bbb-R\>|\<wide-bar\>>> that will make
+  The original real numbers are now called finite real numbers in the set of
+  the extended reals
+
+  <\definition>
+    <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> is finite iff
+    <math|x\<in\>\<bbb-R\>> (or in other words
+    <math|x\<neq\>\<infty\>,-\<infty\>>)
+  </definition>
+
+  We extend now the order relation <math|\<leqslant\><rsub|\<bbb-R\>>> on
+  <math|\<bbb-R\>> [see <reference|the set of reals is fully-ordered>] to a
+  order relation on <math|<wide|\<bbb-R\>|\<wide-bar\>>> that will make
   <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>>,\<leqslant\>|\<rangle\>>>
   a fully ordered set. By doing so we will show that as a benefit every non
   empty set in <math|<wide|\<bbb-R\>|\<wide-bar\>>> has a supremum and a
@@ -41,12 +60,12 @@
 
   <\definition>
     Given the fully ordered set <math|<around*|\<langle\>|\<bbb-R\>,\<leqslant\><rsub|\<bbb-R\>>|\<rangle\>>>
-    (see <reference|the set of reals is fully-ordered>) define
+    [see <reference|the set of reals is fully-ordered>] define
     <math|\<leqslant\>\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>>
     by\ 
 
     <\enumerate>
-      <item><math|-\<infty\>\<leqslant\>\<infty\>>
+      <item><math|-\<infty\>\<leqslant\>\<infty\>>\ 
 
       <item><math|-\<infty\>\<leqslant\>-\<infty\>>
 
@@ -100,30 +119,31 @@
       cases must be considered for <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>>:\ 
 
       <\description>
-        <item*|<math|x=y=\<infty\>>>then <math|x=y>
+        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then <math|x=y>
 
-        <item*|<math|x=y=-\<infty\>>>then <math|x=y>
+        <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then as by the
+        definition <math|y\<nleqslant\>x> this case will not apply.
 
-        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then by definition
-        <math|x\<nleqslant\>y> so this case does not count
+        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then as by
+        definition <math|y\<nleqslant\>x> this case does not apply
 
-        <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then by definition
-        <math|y\<nleqslant\>x> so this case does not count
+        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then as by definition
+        <math|x\<nleqslant\>y> this case does not apply
 
-        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then by definition
-        <math|x\<nleqslant\>y> so this case does not count
+        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then <math|x=y>
 
-        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then by
-        definition <math|y\<nleqslant\>x> so this case does not count
+        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>>then asby
+        definition <math|x\<nleqslant\>y> the case does not apply
 
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then by definition
-        <math|y\<nleqslant\>x> so this case does not count
+        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then as by
+        definition <math|x\<nleqslant\>y> this case does not apply
 
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>>then by
-        definition <math|x\<nleqslant\>y> so this case does not count
+        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then as by
+        definiton <math|y\<nleqslant\>x> this case does not apply
 
-        <item*|<math|x,y\<in\>\<bbb-R\>>>then
-        <math|x\<leqslant\><rsub|\<bbb-R\>>y\<wedge\>y\<leqslant\><rsub|\<bbb-R\>>x\<Rightarrow\>x=y>
+        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then by
+        defintion <math|x\<leqslant\><rsub|R>y> and
+        <math|y\<leqslant\><rsub|R>x> from which it follows that <math|x=y>
       </description>
 
       so in all the cases where <math|x\<leqslant\>y\<wedge\>y\<leqslant\>x>
@@ -219,33 +239,61 @@
       so in all cases that count we have <math|x\<leqslant\>z>
 
       <item*|fully-ordered>The following cases must be considered for
-      <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>>:
+      <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>>:\ 
 
       <\description>
-        <item*|<math|x=y=-\<infty\>>><math|\<Rightarrow\>x\<leqslant\>y>
+        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then
+        <math|x\<leqslant\>y>
 
-        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>><math|\<Rightarrow\>y\<leqslant\>x>
+        <item*|<math|x=-\<infty\>\<wedge\>x=\<infty\>>>then
+        <math|x\<leqslant\>y>
 
-        <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>><math|\<Rightarrow\>x\<leqslant\>y>
+        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then
+        <math|x\<leqslant\>y>
 
-        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>><math|\<Rightarrow\>y\<leqslant\>x>
+        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then
+        <math|y\<leqslant\>x>
 
-        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>><math|\<Rightarrow\>x\<leqslant\>y>
+        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then
+        <math|x\<leqslant\>y>
 
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>><math|\<Rightarrow\>x\<leqslant\>y>
+        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>>then
+        <math|y\<leqslant\>x>
 
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>><math|\<Rightarrow\>y\<leqslant\>x>
+        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
+        <math|y\<leqslant\>x>
 
-        <item*|<math|x,y\<in\>\<bbb-R\>>><math|x\<leqslant\><rsub|\<bbb-R\>>y\<vee\>y\<leqslant\><rsub|\<bbb-R\>>x\<Rightarrow\>x\<leqslant\>y\<vee\>y\<leqslant\>x>
+        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
+        <math|x\<leqslant\>y>
+
+        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then either
+        <math|x\<leqslant\><rsub|R>y\<Rightarrow\>x\<leqslant\>y> or
+        <math|y\<leqslant\><rsub|R>x\<Rightarrow\>y\<leqslant\>x>
       </description>
+
+      so in all possible cases we have either <math|x\<leqslant\>y> or
+      <math|y\<leqslant\>x>
     </description>
   </proof>
 
-  <\definition>
-    <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> is finite iff
-    <math|x\<in\>\<bbb-R\>> (or in other words
-    <math|x\<neq\>\<infty\>,-\<infty\>>)
-  </definition>
+  <\proposition>
+    <label|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf and y\<less\>\<gtr\>-inf>Let
+    <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> such that <math|x\<less\>y>
+    then <math|x\<neq\>\<infty\>> and <math|y\<neq\>-\<infty\>>
+  </proposition>
+
+  <\proof>
+    Assume that <math|x=\<infty\>> then by definition
+    <math|y\<leqslant\>x\<Rightarrowlim\><rsub|x\<less\>y>y\<less\>y> a
+    contradiction so we must have that <math|x\<neq\>\<infty\>>. Assume that
+    <math|y=-\<infty\>> then by definiton
+    <math|y\<leqslant\>x\<Rightarrowlim\><rsub|x\<less\>y>\<Rightarrow\>y\<less\>y>
+    a contradiction so we must have that <math|y\<neq\>-\<infty\>>.
+  </proof>
+
+  Some of the properties of the real numbers (like the density of the
+  rational numbers in the set of real numbers still apply for extended real
+  numbers).
 
   <\proposition>
     <label|x\<less\>y=\<gtr\>x+1/n\<less\>y>Let
@@ -254,13 +302,15 @@
   </proposition>
 
   <\proof>
-    As <math|x\<less\>y> we can not have <math|y=-\<infty\>> [if
-    <math|y=-\<infty\>> then <math|y=-\<infty\>\<leqslant\>x>], so we must
-    only consider the following cases for <math|x,y>:
+    As <math|x\<less\>y> we can not have <math|y=-\<infty\>> [see
+    <reference|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf and
+    y\<less\>\<gtr\>-inf>i], so we must only consider the following cases for
+    <math|x,y>:
 
     <\description>
       <item*|<math|y\<in\>\<bbb-R\>>>As <math|x\<less\>y> we can not have
-      <math|x=\<infty\>> so we must have for <math|x> either\ 
+      <math|x=\<infty\>> [see <reference|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf
+      and y\<less\>\<gtr\>-inf>], so we must have for <math|x> either\ 
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>>>then using <reference|consequence of
@@ -272,8 +322,9 @@
         we have <math|x+<frac|1|n>=-\<infty\>+<frac|1|2>=-\<infty\>\<less\>y>
       </description>
 
-      <item*|<math|y\<eqcirc\>\<infty\>>>As <math|x\<less\>y> we can not have
-      <math|x=\<infty\>> so we must have for <math|x> either
+      <item*|<math|y=\<infty\>>>As <math|x\<less\>y> we can not have
+      <math|x=\<infty\>> [see <reference|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf
+      and y\<less\>\<gtr\>-inf>], so we must have for <math|x> either
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>>>then for
@@ -286,7 +337,8 @@
     </description>
   </proof>
 
-  We have the following analog to the density of <math|\<bbb-R\>>
+  We have the following analog to the density of the rational numbers in
+  <math|\<bbb-R\>>
 
   <\theorem>
     <label|density of the extented reals>If
@@ -295,8 +347,10 @@
   </theorem>
 
   <\proof>
-    We have the following possibilities for
-    <math|x\<less\>y\<Rightarrow\>x\<neq\>y>
+    As <math|x\<less\>y> we have by <reference|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf
+    and y\<less\>\<gtr\>-inf> that <math|x\<neq\>-\<infty\>>,
+    <math|y\<neq\>\<infty\>> and <math|x\<neq\>y> So we have to consider only
+    the following cases for <math|x> and <math|y>:
 
     <\description>
       <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then as
@@ -313,10 +367,15 @@
 
       <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then as
       <math|y-1\<less\>y> there exists by <reference|density theorem for the
-      reals> a <math|z\<in\>\<bbb-Q\>> such that <math|y-1\<less\>z\<less\>y>
-      so that <math|x\<less\>z\<less\>y>.
+      reals> a <math|z\<in\>\<bbb-Q\>> such that
+      <math|-\<infty\>\<less\>y-1\<less\>z\<less\>y> so that
+      <math|x\<less\>z\<less\>y>.
     </description>
   </proof>
+
+  We look now at the infinum and supremum on the extended reals. To avoid
+  confusion with the infinum and supremum on the real numbers and the
+  extended real numbers we introduce the following notation.
 
   <\notation>
     <label|supremum, infinum of real set><index|<math|sup<rsub|\<bbb-R\>>>><index|<math|inf<rsub|\<bbb-R\>>>>Let
@@ -338,120 +397,306 @@
   </notation>
 
   We prove now that in <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>>,\<leqslant\>|\<rangle\>>>
-  every on empty set has a supremum and infinum
+  every non empty set has a supremum and infinum, which the primary reason
+  that we introduced the set of the extended real numbers.
 
   <\theorem>
     <label|every non empty set in the extented reals has a limit>Let
     <math|\<emptyset\>\<neq\>A\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> then
-    <math|sup<around*|(|A|)>> and <math|inf<around*|(|A|)>> exist
+    <math|sup<around*|(|A|)>> and <math|inf<around*|(|A|)>> exist. Further
+    more we have for <math|A> the following exclusive cases
+
+    <\enumerate>
+      <item>If <math|A=<around*|{|-\<infty\>|}>> then
+      <math|sup<around*|(|<around*|{|-\<infty\>|}>|)>=-\<infty\>>
+
+      <item>If <math|\<infty\>\<in\>A> then
+      <math|sup<around*|(|A|)>=\<infty\>>
+
+      <item>If <math|\<infty\>\<nin\>A\<neq\>\<infty\>> then we have\ 
+
+      <\enumerate>
+        <item>If <math|><math|\<exists\>u\<in\>\<bbb-R\>\<vdash\>\<forall\>x\<in\>A
+        we have x\<leqslant\>u> then <math|sup<around*|(|A|)>=sup<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>>
+
+        <item>If <math|\<exists\>u\<in\>\<bbb-R\>\<vdash\>\<forall\>x\<in\>A
+        we have x\<leqslant\>u> then <math|sup<around*|(|A|)>=\<infty\>>
+      </enumerate>
+
+      <item>If <math|A=<around*|{|\<infty\>|}>> then
+      <math|inf<around*|(|A|)>=\<infty\>>
+
+      <item>If <math|-\<infty\>\<in\>A> then
+      <math|inf<around*|(|A|)>=-\<infty\>>
+
+      <item>If <math|-\<infty\>\<nin\>A\<neq\><around*|{|\<infty\>|}>> then
+      we have
+
+      <\enumerate>
+        <item>If <math|\<exists\>l\<in\>\<bbb-R\>\<vdash\>\<forall\>x\<in\>A
+        we have l\<leqslant\>x> then <math|inf<around*|(|A|)>=inf<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>>
+
+        <item>If <math|\<forall\>l\<in\>\<bbb-R\>\<vdash\>\<exists\>x\<in\>A
+        such that l\<nleqslant\>x> then <math|inf<around*|(|A|)>=-\<infty\>>
+      </enumerate>
+    </enumerate>
   </theorem>
 
   <\proof>
-    From the full ordering of <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>>,\<leqslant\>|\<rangle\>>>
-    we have by <reference|subset of a well-ordered (fully-ordered) set is
-    well-ordered (fully-ordered)> that <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>>,\<leqslant\>|\<rangle\>>>
-    is well ordered and thus by <reference|well ordering implies conditional
-    completeness> conditionally complete. Now if <math|A> is non empty then
-    it is bounded above by <math|\<infty\>> and bounded below by
-    <math|-\<infty\>> so that by conditional completeness (see
-    <reference|conditonal complete classes> and the equivalence of inf and
-    sup (see <reference|alternative definition for conditional
-    completeness>)) <math|A> has a infinum and supremum.
+    Lets first consider the supremum then we must consider the following
+    cases:
+
+    <\description>
+      <item*|<math|A=<around*|{|-\<infty\>|}>>>then as
+      <math|-\<infty\>\<leqslant\>-\<infty\>>, <math|-\<infty\>> is trivially
+      a upper bound, further if <math|u\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is another upper bound then as <math|-\<infty\>\<leqslant\>u> we have
+      that
+
+      <\equation*>
+        sup<around*|(|A|)>=-\<infty\>
+      </equation*>
+
+      <item*|<math|\<infty\>\<in\>A>>then trivially <math|\<infty\>> is a
+      upper bound of <math|A> [actually of every set in <math|\<bbb-R\>>].
+      Further if <math|u> is a another upper bound of <math|A> we must have
+      that <math|\<infty\>\<leqslant\>u> [<math|\<infty\>\<in\>>A] so that
+
+      <\equation*>
+        sup<around*|(|A|)>=\<infty\>
+      </equation*>
+
+      <item*|<math|\<infty\>\<nin\>A\<neq\><around*|{|-\<infty\>|}>>>Now we
+      consider the following cases for <math|A>:\ 
+
+      <\description>
+        <item*|<math|\<exists\>u\<in\>\<bbb-R\>\<vdash\>\<forall\>x\<in\>A we
+        have x\<leqslant\>u>>then <math|\<forall\>x\<in\>A<big|cap>\<bbb-R\>\<subseteq\>A>
+        we have <math|x\<leqslant\>u\<Rightarrowlim\><rsub|x,u\<in\>\<bbb-R\>>x\<leqslant\><rsub|\<bbb-R\>>u>
+        so that <math|A<big|cap>\<bbb-R\>> is bounded above [using
+        <math|\<leqslant\><rsub|\<bbb-R\>>>. Hence as <math|\<bbb-R\>> is
+        conditional complete [see <reference|the reals are conditional
+        complete>] <math|S=sup<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>>
+        exists. Let <math|x\<in\>A> then we have as
+        <math|\<infty\>\<nsubset\>A> <math|>either:
+
+        <\description>
+          <item*|<math|x\<in\>A<big|cap>\<bbb-R\>>>then as a supremum is a
+          upper bound we have <math|x\<leqslant\><rsub|\<bbb-R\>>S\<Rightarrow\>x\<leqslant\>S>
+
+          <item*|<math|x=-\<infty\>>>then <math|x\<leqslant\>S>
+        </description>
+
+        So we have that <math|S> is a upper bound of <math|A> [using
+        <math|\<leqslant\>>]. Let <math|U> be another upper bound of <math|A>
+        [using <math|\<leqslant\>>] then we have either:
+
+        <\description>
+          <item*|<math|U\<in\>\<bbb-R\>>>in this case as <math|U> is also a
+          upper bound of <math|A<big|cap>\<bbb-R\>> [using
+          <math|\<leqslant\>>] we have <math|\<forall\>a\<in\>A<big|cap>\<bbb-R\>>
+          that <math|a\<leqslant\>u\<Rightarrowlim\><rsub|a,U\<in\>\<bbb-R\>>a\<leqslant\>U>.
+          It follows that <math|U> is another upper bound of
+          <math|A<big|cap>\<bbb-R\>> [using
+          <math|\<leqslant\><rsub|\<bbb-R\>>>] so that
+          <math|S\<leqslant\><rsub|\<bbb-R\>>U><math|>, hence
+          <math|S\<leqslant\>U>.
+
+          <item*|<math|U=\<infty\>>>then triviall <math|S\<leqslant\>U>
+
+          <item*|<math|U=-\<infty\>>>then <math|\<forall\>x\<in\>A> we have
+          <math|-\<infty\>\<leqslant\>x\<leqslant\>-\<infty\>> contradicting
+          <math|A\<neq\><around*|{|-\<infty\>|}>> so this will not occur.
+        </description>
+
+        Hence in all valid cases we have <math|S\<leqslant\>U> which proves
+        that\ 
+
+        <\equation*>
+          sup<around*|(|A|)>=sup <rsub|\<bbb-R\>><around*|(|A|)>
+        </equation*>
+
+        <item*|<math|\<forall\>u\<in\>\<bbb-R\>\<vdash\>\<exists\>x\<in\>A
+        such that x\<nleqslant\>u>>As <math|\<forall\>x\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+        we have <math|x\<leqslant\>\<infty\>>, <math|\<infty\>> is clearly a
+        upper bound of <math|A> [using <math|\<leqslant\>>]. Let <math|u> be
+        another upper bound of <math|A> [using <math|\<leqslant\>>] and
+        assume that <math|\<infty\>\<nleqslant\>u>, so that
+        <math|u\<less\>\<infty\>>, then we must have either:
+
+        <\description>
+          <item*|<math|u=-\<infty\>>>then <math|\<forall\>x\<in\>A> we have
+          <math|-\<infty\>\<leqslant\>x\<leqslant\>-\<infty\>> contradicting
+          <math|A\<neq\><around*|{|-\<infty\>|}>>.
+
+          <item*|<math|u\<in\>\<bbb-R\>>>then <math|\<exists\>x\<in\>A> such
+          that <math|x\<nleqslant\>u> contradicting the fact that <math|u> is
+          a upper bound.
+        </description>
+
+        As in all cases we have a contradcition we must have that
+        <math|u\<leqslant\>\<infty\>> which proves that\ 
+
+        <\equation*>
+          sup<around*|(|A|)>=\<infty\>
+        </equation*>
+      </description>
+    </description>
+
+    So in all possible cases for <math|A> we have that\ 
+
+    <\equation>
+      sup<around*|(|A|)> exists
+    </equation>
+
+    Now for the existance of the infinum we must consider the following
+    cases:
+
+    <\description>
+      <item*|<math|A=<around*|{|\<infty\>|}>>>then as
+      <math|\<infty\>\<leqslant\>\<infty\>>, <math|\<infty\>> is a lower
+      bound of <math|A>, further if <math|l\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is another lower bound then <math|l\<leqslant\>\<infty\>> which proves
+      that
+
+      <\equation*>
+        inf<around*|(|A|)>=\<infty\>
+      </equation*>
+
+      <item*|<math|-\<infty\>\<in\>A>>then <math|-\<infty\>> is a lower bound
+      of <math|A> [actually of every set in <math|\<bbb-R\>>]. If <math|l> is
+      another lower bound of <math|A> then we must have
+      <math|l\<leqslant\>-\<infty\>> so that\ 
+
+      <\equation*>
+        inf<around*|(|A|)>=-\<infty\>
+      </equation*>
+
+      <item*|<math|-\<infty\>\<nin\>A\<wedge\>A\<neq\><around*|{|\<infty\>|}>>>Then
+      we must consider the following possible cases:
+
+      <\description>
+        <item*|<math|\<exists\>l\<in\>\<bbb-R\>\<vdash\>\<forall\>x\<in\>A we
+        have l\<leqslant\>x>>then <math|\<forall\>x\<in\>A<big|cap>\<bbb-R\>\<subseteq\>A>
+        we have <math|l\<leqslant\>x\<Rightarrowlim\><rsub|l,x\<in\>\<bbb-R\>>l\<leqslant\><rsub|\<bbb-R\>>x>
+        so that <math|l> is a lower bound of <math|A<big|cap>\<bbb-R\>>
+        [using <math|\<leqslant\><rsub|\<bbb-R\>>>]. Hence as
+        <math|\<bbb-R\>> is conditional complete [see <reference|the reals
+        are conditional complete>] <math|I=inf<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>>
+        exists. Let <math|x\<in\>A> then we have as <math|-\<infty\>\<nin\>A>
+        either:
+
+        <\description>
+          <item*|<math|x\<in\>A<big|cap>\<bbb-R\>>>then by the definition of
+          a infinum we have <math|I\<leqslant\><rsub|\<bbb-R\>>x\<Rightarrow\>I\<leqslant\>x>
+
+          <item*|<math|x=\<infty\>>>then <math|I\<leqslant\>x>
+        </description>
+
+        So it follows that <math|I> is a upper bound of <math|A> [using
+        <math|\<leqslant\>>]. Let <math|L> be another lower bound of <math|A>
+        [using <math|\<leqslant\>>] then we have either\ 
+
+        <\description>
+          <item*|<math|L\<in\>\<bbb-R\>>>then <math|L> is also a lower bound
+          of <math|A<big|cap>\<bbb-R\>> [using <math|\<leqslant\>>], so that
+          <math|\<forall\>a\<in\>A<big|cap>\<bbb-R\>> we have
+          <math|L\<leqslant\>a\<Rightarrowlim\><rsub|a,L\<in\>\<bbb-R\>>L\<leqslant\><rsub|\<bbb-R\>>a>,
+          proving that <math|L> is also a lower bound of
+          <math|A<big|cap>\<bbb-R\>> [using
+          <math|\<leqslant\><rsub|\<bbb-R\>>>] so that
+          <math|L\<leqslant\><rsub|\<bbb-R\>>I>, from which it follows that
+          <math|L\<leqslant\>I>
+
+          <item*|<math|L=\<infty\>>>then <math|\<forall\>a\<in\>A> we have
+          <math|\<infty\>\<leqslant\>a\<leqslant\>\<infty\>\<Rightarrow\>a=\<infty\>>
+          contradicting <math|A\<neq\><around*|{|\<infty\>|}>>, so this case
+          does not apply.
+
+          <item*|<math|L=-\<infty\>>>then <math|L\<leqslant\>I>
+        </description>
+
+        So in all valid cases we have <math|L\<leqslant\>I> which proves that\ 
+
+        <\equation*>
+          inf<around*|(|A|)>=inf <rsub|\<bbb-R\>><around*|(|A|)>
+        </equation*>
+
+        <item*|<math|\<forall\>l\<in\>\<bbb-R\>\<vdash\>\<exists\>x\<in\>A
+        such that l\<nleqslant\>x>>as <math|\<forall\>x\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+        we have <math|-\<infty\>\<leqslant\>x>, <math|-\<infty\>> is a lower
+        bound of <math|A> [using <math|\<leqslant\>>]. Let <math|l> be
+        another lower bound of <math|A> [using <math|\<leqslant\>>] and
+        assume that <math|l\<nleqslant\>-\<infty\>> so that
+        <math|-\<infty\>\<less\>l>. then we must have either
+
+        <\description>
+          <item*|<math|l=\<infty\>>>then <math|\<forall\>x\<in\>A> we have
+          <math|\<infty\>\<leqslant\>x\<leqslant\>\<infty\>> contradicting
+          <math|A=<around*|{|\<infty\>|}>>
+
+          <item*|<math|l\<in\>\<bbb-R\>>>then <math|\<exists\>x\<in\>A> usch
+          that <math|l\<nleqslant\>x> contradicting the fact that <math|l> is
+          a lower bound,
+        </description>
+
+        As in all cases we have a contradiction we must have that
+        <math|l\<leqslant\>-\<infty\>> which proves that
+
+        <\equation*>
+          inf<around*|(|A|)>=-\<infty\>
+        </equation*>
+
+        \ 
+      </description>
+    </description>
+
+    So in all possible cases for <math|A> we have that\ 
+
+    <\equation>
+      inf<around*|(|A|)> exists
+    </equation>
   </proof>
 
-  <\theorem>
+  TODO Check the rest
+
+  The next theorem shows the neccesary and sufficient contraint for the
+  supremum and infinum to be not finite.\ 
+
+  <\corollary>
     <label|condition for supremum (infinum) to be infinite>Let
-    <math|\<emptyset\>\<neq\>A\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> then
-    <math|sup<around*|(|A|)>=\<infty\>> (or
-    <math|inf<around*|(|A|)>=-\<infty\>>) iff either <math|\<infty\>\<in\>A>
-    or <math|A<big|cap>\<bbb-R\>> is not bounded above (or either
-    <math|-\<infty\>\<in\>A> or <math|A<big|cap>\<bbb-R\>> is not bounded
-    below) in <math|\<bbb-R\>>
-  </theorem>
+    <math|\<emptyset\>\<neq\>A\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> then\ 
+
+    <\enumerate>
+      <item><math|sup<around*|(|A|)>=\<infty\>> if and only if
+      <math|\<infty\>\<in\>A> or <math|\<forall\>u\<in\>\<bbb-R\>> there
+      exists a <math|a\<in\>A<big|cap>\<bbb-R\>> with <math|a\<nleqslant\>u>
+      [in other words <math|A<big|cap>\<bbb-R\>> is not bounded above using
+      <math|\<leqslant\><rsub|\<bbb-R\>>>]
+
+      <item><math|inf<around*|(|A|)>=-\<infty\>> if and only if
+      <math|-\<infty\>\<in\>A> or <math|\<forall\>l\<in\>\<bbb-R\>> there
+      exists a <math|a\<in\>A<big|cap>\<bbb-R\>> with <math|l\<nleqslant\>a>
+      [in other words <math|A<big|cap>\<bbb-R\>> is not bounded below using
+      <math|\<leqslant\><rsub|\<bbb-R\>>>]
+    </enumerate>
+  </corollary>
 
   <\proof>
     \ 
 
-    <\description>
-      <item*|<math|\<Rightarrow\>>>If <math|sup<around*|(|A|)>=\<infty\>>
-      then we have for <math|A> either\ 
+    <\enumerate>
+      <item>This follows from <reference|every non empty set in the extented
+      reals has a limit> (2),{3.b)
 
-      <\description>
-        <item*|<math|\<infty\>\<in\>A>>proving <math|\<infty\>\<in\>A>
-
-        <item*|<math|\<infty\>\<nin\>A>>consider then the following cases\ 
-
-        <\description>
-          <item*|<math|A=<around*|{|-\<infty\>|}>>>then as
-          <math|sup<around*|(|<around*|{|-\<infty\>|}>|)>=-\<infty\>\<neq\>\<infty\>>
-          we have a contradiction, so this case can not occur
-
-          <item*|<math|A\<neq\><around*|{|-\<infty\>|}>>>then if
-          <math|A<big|cap>\<bbb-R\>> is bounded above in <math|\<bbb-R\>> we
-          have by <reference|the reals are conditional complete> that
-          <math|sup<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>\<in\>\<bbb-R\>>
-          exists. If now <math|x\<in\>A> then either <math|x=-\<infty\>> and
-          thus <math|x=-\<infty\>\<less\>sup<rsub|\<bbb-R\>><around*|(|A<big|cap>R|)>>
-          or <math|x\<neq\>-\<infty\>> and
-          <math|x\<in\>A<big|cap>\<bbb-R\>\<Rightarrow\>x\<leqslant\>sup<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>>
-          so <math|A> is bounded above by
-          <math|sup<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>> proving
-          that <math|sup<around*|(|A|)>\<leqslant\>sup<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>\<less\>\<infty\>>
-          a contradition. So we must have that <math|A<big|cap>\<bbb-R\>> is
-          not bounded above.
-        </description>
-      </description>
-
-      If <math|inf<around*|(|A|)>=-\<infty\>> then we have for <math|A>
-      either\ 
-
-      <\description>
-        <item*|<math|-\<infty\>\<in\>A>>proving <math|-\<infty\>>
-
-        <item*|<math|-\<infty\>\<nin\>A>>consider then the following cases
-
-        <\description>
-          <item*|<math|A=<around*|{|\<infty\>|}>>>then as
-          <math|inf<around*|(|<around*|{|\<infty\>|}>|)>=\<infty\>\<neq\>-\<infty\>>
-          we have a contradiction, so this case can not occur
-
-          <item*|<math|A\<neq\><around*|{|\<infty\>|}>>>then if
-          <math|A<big|cap>\<bbb-R\>> is bounded below in <math|\<bbb-R\>> we
-          have by <reference|the reals are conditional complete> and
-          <reference|alternative definition for conditional completeness>
-          that <math|inf<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>\<in\>\<bbb-R\>>
-          exists. If now <math|x\<in\>A> then either
-          <math|x=\<infty\>\<Rightarrow\>inf<rsub|\<bbb-R\>><around*|(|A<big|cap>R|)>\<less\>\<infty\>=x>
-          or <math|x\<neq\>\<infty\>\<Rightarrow\>x\<in\>A<big|cap>\<bbb-R\>\<Rightarrow\>inf<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>\<leqslant\>x>,
-          so <math|A> is bounded below by
-          <math|inf<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>> proving
-          that <math|-\<infty\>\<less\>inf<rsub|\<bbb-R\>><around*|(|A<big|cap>\<bbb-R\>|)>\<leqslant\>inf<around*|(|A|)>>
-          a contradiction. So we must have that <math|A<big|cap>\<bbb-R\>> is
-          not bounded below.
-        </description>
-      </description>
-
-      <item*|<math|\<Leftarrow\>>>If <math|\<infty\>\<in\>A> then
-      <math|\<infty\>\<leqslant\>sup<around*|(|A|)>\<Rightarrow\>sup<around*|(|A|)>=\<infty\>>
-      [if <math|sup<around*|(|A|)>\<neq\>\<infty\>\<Rightarrow\>\<infty\>\<leqslant\>sup<around*|(|A|)>\<less\>\<infty\>>
-      a contradiction], else if <math|A<big|cap>\<bbb-R\>> is not bounded
-      above in <math|\<bbb-R\>> then if <math|sup<around*|(|A|)>\<less\>\<infty\>>
-      we have that <math|sup<around*|(|A<big|cap>R|)>\<leqslant\>sup*<around*|(|A|)>\<less\>\<infty\>>
-      giving the contradiction that <math|A<big|cap>\<bbb-R\>> is bounded
-      above, so <math|sup<around*|(|A|)>=\<infty\>>. If
-      <math|-\<infty\>\<in\>A> then <math|inf<around*|(|A|)>\<leqslant\>-\<infty\>\<Rightarrow\>inf<around*|(|A|)>=-\<infty\>>
-      [if <math|inf<around*|(|A|)>\<neq\>-\<infty\>\<Rightarrow\>-\<infty\>\<less\>inf<around*|(|A|)>\<leqslant\>-\<infty\>>
-      a contradiction], else if <math|A<big|cap>\<bbb-R\>> is not bounded
-      below in <math|\<bbb-R\>> then if <math|-\<infty\>\<less\>inf<around*|(|A|)>>
-      we have that <math|-\<infty\>\<less\>inf<around*|(|A|)>\<leqslant\>inf<around*|(|A<big|cap>\<bbb-R\>|)>>
-      giving the contradiction that <math|A<big|cap>\<bbb-R\>> is bounded
-      below, so <math|inf<around*|(|A|)>=-\<infty\>>.
-    </description>
+      <item>This follows from <reference|every non empty set in the extented
+      reals has a limit> (5),{6.b)
+    </enumerate>
   </proof>
 
   We show now that the supremum (infinum) in
   <math|<wide|\<bbb-R\>|\<wide-bar\>>> is a extension of the supremum and
-  infinum in <math|\<bbb-R\>>.
+  infinum in <math|\<bbb-R\>> (if they exists)
 
   <\theorem>
     <label|sup and inf in real and extended reals>Let
@@ -463,7 +708,7 @@
       <math|A\<subseteq\>\<bbb-R\>>, <math|sup<rsub|\<bbb-R\>><around*|(|A|)>>
       exists and <math|sup<around*|(|A|)>=sup<rsub|\<bbb-R\>><around*|(|A|)>>\ 
 
-      <item>If <math|A\<subset\>-<around*|[|-\<infty\>,\<infty\>|[>>
+      <item>If <math|A\<subseteq\><around*|[|-\<infty\>,\<infty\>|[>> and
       <math|-\<infty\>\<less\>inf<around*|(|A|)>> then
       <math|A\<subseteq\>\<bbb-R\>>, <math|inf<rsub|\<bbb-R\>><around*|(|A|)>>
       \ and <math|inf<around*|(|A|)>=inf<rsub|\<bbb-R\>><around*|(|A|)>>
@@ -482,18 +727,9 @@
         A\<subseteq\>\<bbb-R\>
       </equation*>
 
-      Take <math|x\<in\>A> then by definition of the supremum we have
-      <math|x\<leqslant\>sup<around*|(|A|)>\<Rightarrowlim\><rsub|x\<in\>A\<subseteq\>\<bbb-R\>>x\<leqslant\><rsub|\<bbb-R\>>sup<around*|(|A|)>>
-      proving that <math|A> is bounded above by
-      <math|sup<around*|(|A|)>\<in\>\<bbb-R\>> and thus by conditionally
-      completeness of <math|\<bbb-R\>> (see <reference|the reals are
-      conditional complete>) that <math|sup<rsub|\<bbb-R\>><around*|(|A|)>>
-      exists and that <math|sup<rsub|\<bbb-R\>><around*|(|A|)>\<leqslant\><rsub|\<bbb-R\>>sup<around*|(|A|)>>.
-      If now <math|sup<rsub|\<bbb-R\>><around*|(|A|)>\<less\><rsub|\<bbb-R\>>sup<around*|(|A|)>>
-      then <math|\<exists\>a\<in\>A> such that
-      <math|sup<around*|(|A|)>\<less\>a\<leqslant\>sup<rsub|\<bbb-R\>><around*|(|A|)>\<Rightarrowlim\><rsub|a\<in\>A\<subseteq\>\<bbb-R\>>sup<around*|(|A|)>\<less\><rsub|\<bbb-R\>>a>
-      contradicting <math|a\<leqslant\><rsub|\<bbb-R\>>sup<rsub|\<bbb-R\>><around*|(|A|)>>,
-      hence we have <math|sup<rsub|\<bbb-R\>><around*|(|A|)>=sup<around*|(|A|)>>
+      Further using <reference|every non empty set in the extented reals has
+      a limit> we have as <math|sup<around*|(|A|)>\<less\>\<infty\>> that
+      <math|sup<around*|(|A|)>=sup<rsub|\<bbb-R\>><around*|(|A|)>>.
 
       <item>If <math|-\<infty\>\<in\>A> then by the above theorem (see
       <reference|condition for supremum (infinum) to be infinite>) we have
@@ -503,20 +739,13 @@
         A\<subseteq\>\<bbb-R\>
       </equation*>
 
-      Take <math|x\<in\>A> then by the definition of the supremum we have
-      <math|inf<around*|(|A|)>\<leqslant\>x\<Rightarrowlim\><rsub|x\<in\>A\<subseteq\>\<bbb-R\>>inf<around*|(|A|)>\<leqslant\><rsub|\<bbb-R\>>x>
-      proving that <math|A> is bounded below by
-      <math|inf<around*|(|A|)>\<in\>\<bbb-R\>> and thus by conditionally
-      completeness of <math|\<bbb-R\>> (see <reference|the reals are
-      conditional complete>) that <math|inf<rsub|\<bbb-R\>><around*|(|A|)>>
-      exists and that <math|inf<around*|(|A|)>\<leqslant\><rsub|\<bbb-R\>>inf<rsub|\<bbb-R\>><around*|(|A|)>>.
-      If now <math|inf<around*|(|A|)>\<less\>inf<rsub|\<bbb-R\>><around*|(|A|)>>
-      then there exists a <math|a\<in\>A> such that
-      <math|inf<around*|(|A|)>\<leqslant\>a\<less\>inf<rsub|\<bbb-R\>><around*|(|A|)>\<Rightarrowlim\><rsub|a\<in\>A\<subseteq\>\<bbb-R\>>a\<less\><rsub|\<bbb-R\>>inf<rsub|\<bbb-R\>><around*|(|A|)>>
-      contradicting <math|inf<rsub|\<bbb-R\>><around*|(|A|)>\<leqslant\><rsub|\<bbb-R\>>inf<around*|(|A|)>>,
-      hence we have <math|inf<rsub|\<bbb-R\>><around*|(|A|)>=inf<around*|(|A|)>>.
+      Further using <reference|every non empty set in the extented reals has
+      a limit> we have as <math|-\<infty\>\<less\>inf<around*|(|A|)>> that
+      <math|inf<around*|(|A|)>=inf<rsub|\<bbb-R\>><around*|(|A|)>>.
     </enumerate>
   </proof>
+
+  TODO
 
   <\note>
     The condition <math|A\<subseteq\><around*|]|-\<infty\>,\<infty\>|]>> in
@@ -11256,9 +11485,9 @@
 
 <\references>
   <\collection>
-    <associate|(a-b)+(c-d)=(a+c)-(b+d)|<tuple|17.25|616>>
-    <associate|-sup A=inf -A|<tuple|17.31|619>>
-    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.23|616>>
+    <associate|(a-b)+(c-d)=(a+c)-(b+d)|<tuple|17.26|616>>
+    <associate|-sup A=inf -A|<tuple|17.32|619>>
+    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.24|616>>
     <associate|0\<less\>cos(x),sin(x)|<tuple|18.49|701>>
     <associate|Abel-Dirichlet|<tuple|18.15|681>>
     <associate|Balls and convergence domains|<tuple|18.12|679>>
@@ -11267,17 +11496,17 @@
     <associate|Power series|<tuple|18.2|677>>
     <associate|Young's inequality|<tuple|18.42|694>>
     <associate|a serie of extented positive reals converges always and is
-    independent of the order|<tuple|17.124|666>>
-    <associate|a-b=c-d=\<gtr\>a+d=c+b|<tuple|17.26|616>>
-    <associate|absolute value in the extended reals|<tuple|17.32|620>>
+    independent of the order|<tuple|17.125|666>>
+    <associate|a-b=c-d=\<gtr\>a+d=c+b|<tuple|17.27|616>>
+    <associate|absolute value in the extended reals|<tuple|17.33|620>>
     <associate|absolute value on the extended real
-    properties|<tuple|17.34|620>>
-    <associate|adding of positive extented reals|<tuple|17.28|617>>
+    properties|<tuple|17.35|620>>
+    <associate|adding of positive extented reals|<tuple|17.29|617>>
     <associate|alternative definition of limit in the extented
-    reals|<tuple|17.92|653>>
-    <associate|alternative graph of sum of functions|<tuple|17.110|662>>
-    <associate|associativity of inifinite series|<tuple|17.130|672>>
-    <associate|associativity of series of extended reals|<tuple|17.128|670>>
+    reals|<tuple|17.93|653>>
+    <associate|alternative graph of sum of functions|<tuple|17.111|662>>
+    <associate|associativity of inifinite series|<tuple|17.131|672>>
+    <associate|associativity of series of extended reals|<tuple|17.129|670>>
     <associate|auto-1|<tuple|17|607>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|621>>
     <associate|auto-11|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|-\<infty\>>>|621>>
@@ -11327,93 +11556,96 @@
     <associate|auto-8|<tuple|17.2|620>>
     <associate|auto-9|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<bbb-R\>>>|621>>
     <associate|ball inclusion|<tuple|18.11|679>>
-    <associate|closed sets in the extended reals|<tuple|17.40|622>>
+    <associate|closed sets in the extended reals|<tuple|17.41|622>>
     <associate|condition for supremum (infinum) to be
-    infinite|<tuple|17.12|609>>
+    infinite|<tuple|17.13|609>>
     <associate|continuity in R is continuity of extended
-    reals|<tuple|17.42|623>>
-    <associate|convention of sup inf|<tuple|17.15|?>>
+    reals|<tuple|17.43|623>>
+    <associate|convention of sup inf|<tuple|17.16|?>>
     <associate|convergence domain and balls|<tuple|18.7|678>>
     <associate|convergence domain of exponential function|<tuple|18.18|682>>
     <associate|convergence in real implies that lim inferior = lim
-    superior|<tuple|17.81|650>>
+    superior|<tuple|17.82|650>>
     <associate|convergence of derived powerseries|<tuple|18.22|683>>
     <associate|convergence of powerseries (1)|<tuple|18.6|677>>
     <associate|convergence radius|<tuple|18.8|678>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.129|672>>
+    sum|<tuple|17.130|672>>
     <associate|d'Alembert|<tuple|18.17|681>>
-    <associate|definition of limit in the extented reals|<tuple|17.82|651>>
-    <associate|density of the extented reals|<tuple|17.8|609>>
+    <associate|definition of limit in the extented reals|<tuple|17.83|651>>
+    <associate|density of the extented reals|<tuple|17.9|609>>
     <associate|derivative of the exponential function|<tuple|18.24|686>>
-    <associate|difference in extented reals|<tuple|17.22|615>>
-    <associate|distributivity in the extented reals|<tuple|17.29|617>>
-    <associate|eq 13.1.300|<tuple|17.1|618>>
-    <associate|eq 13.11.40|<tuple|17.29|654>>
-    <associate|eq 13.12.40|<tuple|17.30|655>>
-    <associate|eq 13.13.40|<tuple|17.31|655>>
-    <associate|eq 13.14.41|<tuple|17.32|666>>
-    <associate|eq 13.15.41|<tuple|17.41|669>>
-    <associate|eq 13.16.41|<tuple|17.42|669>>
-    <associate|eq 13.2.300|<tuple|17.2|618>>
-    <associate|eq 13.3|<tuple|17.25|651>>
-    <associate|eq 13.3.301|<tuple|17.3|619>>
-    <associate|eq 13.4|<tuple|17.26|651>>
-    <associate|eq 13.5|<tuple|17.27|651>>
-    <associate|eq 13.6|<tuple|17.28|651>>
-    <associate|eq 14.22.423|<tuple|17.43|669>>
-    <associate|eq 14.23.409|<tuple|17.52|672>>
-    <associate|eq 14.23.424|<tuple|17.45|670>>
-    <associate|eq 14.23.425|<tuple|17.44|670>>
-    <associate|eq 14.24.409|<tuple|17.53|673>>
-    <associate|eq 14.24.424|<tuple|17.46|671>>
-    <associate|eq 14.25.411|<tuple|17.54|673>>
-    <associate|eq 14.25.424|<tuple|17.47|671>>
-    <associate|eq 14.26.424|<tuple|17.48|671>>
-    <associate|eq 14.4.472|<tuple|17.4|619>>
-    <associate|eq 14.5.472|<tuple|17.5|620>>
+    <associate|difference in extented reals|<tuple|17.23|615>>
+    <associate|distributivity in the extented reals|<tuple|17.30|617>>
+    <associate|eq 13.1.300|<tuple|17.3|618>>
+    <associate|eq 13.11.40|<tuple|17.31|654>>
+    <associate|eq 13.12.40|<tuple|17.32|655>>
+    <associate|eq 13.13.40|<tuple|17.33|655>>
+    <associate|eq 13.14.41|<tuple|17.34|666>>
+    <associate|eq 13.15.41|<tuple|17.43|669>>
+    <associate|eq 13.16.41|<tuple|17.44|669>>
+    <associate|eq 13.2.300|<tuple|17.4|618>>
+    <associate|eq 13.3|<tuple|17.27|651>>
+    <associate|eq 13.3.301|<tuple|17.5|619>>
+    <associate|eq 13.4|<tuple|17.28|651>>
+    <associate|eq 13.5|<tuple|17.29|651>>
+    <associate|eq 13.6|<tuple|17.30|651>>
+    <associate|eq 14.22.423|<tuple|17.45|669>>
+    <associate|eq 14.23.409|<tuple|17.54|672>>
+    <associate|eq 14.23.424|<tuple|17.47|670>>
+    <associate|eq 14.23.425|<tuple|17.46|670>>
+    <associate|eq 14.24.409|<tuple|17.55|673>>
+    <associate|eq 14.24.424|<tuple|17.48|671>>
+    <associate|eq 14.25.411|<tuple|17.56|673>>
+    <associate|eq 14.25.424|<tuple|17.49|671>>
+    <associate|eq 14.26.424|<tuple|17.50|671>>
+    <associate|eq 14.4.472|<tuple|17.6|619>>
+    <associate|eq 14.5.472|<tuple|17.7|620>>
+    <associate|eq 17.1.034|<tuple|17.1|?>>
     <associate|eq 17.1.514|<tuple|18.7|682>>
     <associate|eq 17.1.515|<tuple|18.1|677>>
-    <associate|eq 17.10.001|<tuple|17.10|?>>
+    <associate|eq 17.10.001|<tuple|17.12|?>>
     <associate|eq 17.10.515|<tuple|18.10|683>>
-    <associate|eq 17.11.001|<tuple|17.11|?>>
+    <associate|eq 17.11.001|<tuple|17.13|?>>
     <associate|eq 17.11.515|<tuple|18.11|683>>
-    <associate|eq 17.12.001|<tuple|17.12|?>>
+    <associate|eq 17.12.001|<tuple|17.14|?>>
     <associate|eq 17.12.073|<tuple|18.12|685>>
-    <associate|eq 17.13.001|<tuple|17.13|?>>
+    <associate|eq 17.13.001|<tuple|17.15|?>>
     <associate|eq 17.13.073|<tuple|18.13|686>>
-    <associate|eq 17.14.001|<tuple|17.14|?>>
-    <associate|eq 17.14.006|<tuple|17.22|649>>
+    <associate|eq 17.14.001|<tuple|17.16|?>>
+    <associate|eq 17.14.006|<tuple|17.24|649>>
     <associate|eq 17.14.073|<tuple|18.14|686>>
-    <associate|eq 17.15.001|<tuple|17.15|?>>
-    <associate|eq 17.15.006|<tuple|17.23|649>>
+    <associate|eq 17.15.001|<tuple|17.17|?>>
+    <associate|eq 17.15.006|<tuple|17.25|649>>
     <associate|eq 17.15.073|<tuple|18.15|687>>
-    <associate|eq 17.16.001|<tuple|17.16|?>>
+    <associate|eq 17.16.001|<tuple|17.18|?>>
     <associate|eq 17.16.002|<tuple|18.16|687>>
-    <associate|eq 17.16.006|<tuple|17.24|650>>
-    <associate|eq 17.17.001|<tuple|17.17|?>>
+    <associate|eq 17.16.006|<tuple|17.26|650>>
+    <associate|eq 17.17.001|<tuple|17.19|?>>
     <associate|eq 17.17.002.1|<tuple|18.17|688>>
-    <associate|eq 17.18.001|<tuple|17.18|?>>
+    <associate|eq 17.18.001|<tuple|17.20|?>>
     <associate|eq 17.18.002|<tuple|18.18|689>>
-    <associate|eq 17.19.001|<tuple|17.19|?>>
+    <associate|eq 17.19.001|<tuple|17.21|?>>
     <associate|eq 17.19.002|<tuple|18.19|689>>
-    <associate|eq 17.2.20.001|<tuple|17.33|666>>
-    <associate|eq 17.2.21.001|<tuple|17.34|666>>
-    <associate|eq 17.2.22.001.1|<tuple|17.35|666>>
-    <associate|eq 17.2.23.001|<tuple|17.36|667>>
-    <associate|eq 17.2.24.001|<tuple|17.37|667>>
-    <associate|eq 17.2.25.001|<tuple|17.38|667>>
-    <associate|eq 17.2.26.001|<tuple|17.39|668>>
-    <associate|eq 17.2.27.001|<tuple|17.40|668>>
-    <associate|eq 17.2.40.001|<tuple|17.55|674>>
-    <associate|eq 17.2.41.001|<tuple|17.56|674>>
-    <associate|eq 17.2.42.001|<tuple|17.57|674>>
+    <associate|eq 17.2.0.34|<tuple|17.2|?>>
+    <associate|eq 17.2.034|<tuple|17.2|?>>
+    <associate|eq 17.2.20.001|<tuple|17.35|666>>
+    <associate|eq 17.2.21.001|<tuple|17.36|666>>
+    <associate|eq 17.2.22.001.1|<tuple|17.37|666>>
+    <associate|eq 17.2.23.001|<tuple|17.38|667>>
+    <associate|eq 17.2.24.001|<tuple|17.39|667>>
+    <associate|eq 17.2.25.001|<tuple|17.40|667>>
+    <associate|eq 17.2.26.001|<tuple|17.41|668>>
+    <associate|eq 17.2.27.001|<tuple|17.42|668>>
+    <associate|eq 17.2.40.001|<tuple|17.57|674>>
+    <associate|eq 17.2.41.001|<tuple|17.58|674>>
+    <associate|eq 17.2.42.001|<tuple|17.59|674>>
     <associate|eq 17.2.514|<tuple|18.8|682>>
     <associate|eq 17.2.515|<tuple|18.2|677>>
-    <associate|eq 17.20.001|<tuple|17.20|?>>
+    <associate|eq 17.20.001|<tuple|17.22|?>>
     <associate|eq 17.20.003|<tuple|18.25|700>>
     <associate|eq 17.20.020|<tuple|18.20|693>>
-    <associate|eq 17.21.001|<tuple|17.21|?>>
+    <associate|eq 17.21.001|<tuple|17.23|?>>
     <associate|eq 17.21.003|<tuple|18.26|700>>
     <associate|eq 17.21.020|<tuple|18.21|693>>
     <associate|eq 17.22.003|<tuple|18.27|700>>
@@ -11424,21 +11656,21 @@
     <associate|eq 17.24.020|<tuple|18.24|695>>
     <associate|eq 17.3.515|<tuple|18.3|678>>
     <associate|eq 17.4.515.1|<tuple|18.4|681>>
-    <associate|eq 17.49.001|<tuple|17.49|?>>
+    <associate|eq 17.49.001|<tuple|17.51|?>>
     <associate|eq 17.5.515|<tuple|18.5|681>>
-    <associate|eq 17.50.001|<tuple|17.50|?>>
-    <associate|eq 17.51.001|<tuple|17.51|?>>
-    <associate|eq 17.6.033|<tuple|17.6|?>>
+    <associate|eq 17.50.001|<tuple|17.52|?>>
+    <associate|eq 17.51.001|<tuple|17.53|?>>
+    <associate|eq 17.6.033|<tuple|17.8|?>>
     <associate|eq 17.6.515|<tuple|18.6|681>>
-    <associate|eq 17.7.033|<tuple|17.7|?>>
-    <associate|eq 17.8.033|<tuple|17.8|?>>
-    <associate|eq 17.9.033|<tuple|17.9|?>>
+    <associate|eq 17.7.033|<tuple|17.9|?>>
+    <associate|eq 17.8.033|<tuple|17.10|?>>
+    <associate|eq 17.9.033|<tuple|17.11|?>>
     <associate|eq 17.9.515|<tuple|18.9|683>>
     <associate|equivalence of limits on increasing (decreasing) sequences of
-    extented reals|<tuple|17.88|652>>
+    extented reals|<tuple|17.89|652>>
     <associate|every non empty set in the extented reals has a
-    limit|<tuple|17.11|609>>
-    <associate|existance of lim inf and lim sup|<tuple|17.70|647>>
+    limit|<tuple|17.12|609>>
+    <associate|existance of lim inf and lim sup|<tuple|17.71|647>>
     <associate|exp exceeds every number|<tuple|18.31|689>>
     <associate|exp is a bijection|<tuple|18.32|689>>
     <associate|exp is convex|<tuple|18.28|688>>
@@ -11447,78 +11679,78 @@
     <associate|exp(z)|<tuple|18.19|682>>
     <associate|exponential as power|<tuple|18.30|688>>
     <associate|extented reals|<tuple|17.2|607>>
-    <associate|finite infinite sum means finite terms|<tuple|17.121|665>>
+    <associate|finite infinite sum means finite terms|<tuple|17.122|665>>
     <associate|finite sum of constants in the extented
-    reals|<tuple|17.115|664>>
-    <associate|finite sum of denumerable sums|<tuple|17.127|669>>
-    <associate|finite sum of extented reals|<tuple|17.102|661>>
-    <associate|finite sum of extented reals properties|<tuple|17.114|664>>
-    <associate|finite sum of extented reals starting at n|<tuple|17.103|661>>
+    reals|<tuple|17.116|664>>
+    <associate|finite sum of denumerable sums|<tuple|17.128|669>>
+    <associate|finite sum of extented reals|<tuple|17.103|661>>
+    <associate|finite sum of extented reals properties|<tuple|17.115|664>>
+    <associate|finite sum of extented reals starting at n|<tuple|17.104|661>>
     <associate|finite sum of extented reals written as infinite
-    sum|<tuple|17.122|665>>
-    <associate|finite sum of limits of functions|<tuple|17.111|663>>
+    sum|<tuple|17.123|665>>
+    <associate|finite sum of limits of functions|<tuple|17.112|663>>
     <associate|finite sum of limits of scalar product with
-    functions|<tuple|17.113|663>>
+    functions|<tuple|17.114|663>>
     <associate|finite sum of non negative extented reals is non
-    negative|<tuple|17.104|661>>
+    negative|<tuple|17.105|661>>
     <associate|general strict positive powers|<tuple|18.38|692>>
     <associate|generalized power|<tuple|18.35|690>>
     <associate|generalized sequence of extended and remove
-    zeroes|<tuple|17.135|675>>
+    zeroes|<tuple|17.136|675>>
     <associate|generalized sequence of extended reals and
-    zeroes|<tuple|17.134|674>>
+    zeroes|<tuple|17.135|674>>
     <associate|generalized serie of extended positive
-    numbers|<tuple|17.133|674>>
-    <associate|generalized sum of the extended reals|<tuple|17.132|673>>
-    <associate|gnerating basis vor the extended reals|<tuple|17.37|?>>
-    <associate|graph of sum of functions|<tuple|17.109|662>>
-    <associate|increasing (decreasing) sequence|<tuple|17.67|646>>
-    <associate|increasing (decreasing) sequence converges|<tuple|17.69|646>>
+    numbers|<tuple|17.134|674>>
+    <associate|generalized sum of the extended reals|<tuple|17.133|673>>
+    <associate|gnerating basis vor the extended reals|<tuple|17.38|?>>
+    <associate|graph of sum of functions|<tuple|17.110|662>>
+    <associate|increasing (decreasing) sequence|<tuple|17.68|646>>
+    <associate|increasing (decreasing) sequence converges|<tuple|17.70|646>>
     <associate|independence of limit inf and limit sup of start
-    index|<tuple|17.72|648>>
+    index|<tuple|17.73|648>>
     <associate|inequality of Abel|<tuple|18.14|680>>
-    <associate|infinity can not be a right limit|<tuple|17.48|625>>
-    <associate|interchange infinite and finite sum|<tuple|17.126|668>>
-    <associate|left (right) continuity|<tuple|17.59|633>>
-    <associate|left and right limit implies limit|<tuple|17.55|632>>
-    <associate|left limit of a function|<tuple|17.49|625>>
-    <associate|left, right limit of sum and scalar product|<tuple|17.54|627>>
-    <associate|lemma 15.75|<tuple|17.97|660>>
+    <associate|infinity can not be a right limit|<tuple|17.49|625>>
+    <associate|interchange infinite and finite sum|<tuple|17.127|668>>
+    <associate|left (right) continuity|<tuple|17.60|633>>
+    <associate|left and right limit implies limit|<tuple|17.56|632>>
+    <associate|left limit of a function|<tuple|17.50|625>>
+    <associate|left, right limit of sum and scalar product|<tuple|17.55|627>>
+    <associate|lemma 15.75|<tuple|17.98|660>>
     <associate|lemma 17.2|<tuple|18.16|681>>
     <associate|lemma 17.38|<tuple|18.41|693>>
-    <associate|lim inf -xn|<tuple|17.77|648>>
-    <associate|lim inf and lim sup|<tuple|17.71|648>>
-    <associate|lim inf and lim sup inequality|<tuple|17.74|?>>
-    <associate|lim inf lim sup basic properties|<tuple|17.73|?>>
-    <associate|lim sup lim inf inequality (1)|<tuple|17.75|?>>
-    <associate|lim sup xn+x|<tuple|17.76|648>>
+    <associate|lim inf -xn|<tuple|17.78|648>>
+    <associate|lim inf and lim sup|<tuple|17.72|648>>
+    <associate|lim inf and lim sup inequality|<tuple|17.75|?>>
+    <associate|lim inf lim sup basic properties|<tuple|17.74|?>>
+    <associate|lim sup lim inf inequality (1)|<tuple|17.76|?>>
+    <associate|lim sup xn+x|<tuple|17.77|648>>
     <associate|liminf and limsup properties for sum
-    product|<tuple|17.79|649>>
-    <associate|limit and absolut value|<tuple|17.93|655>>
-    <associate|limit and continuity in the extented reals|<tuple|17.58|633>>
-    <associate|limit and translation of indexes|<tuple|17.85|?>>
+    product|<tuple|17.80|649>>
+    <associate|limit and absolut value|<tuple|17.94|655>>
+    <associate|limit and continuity in the extented reals|<tuple|17.59|633>>
+    <associate|limit and translation of indexes|<tuple|17.86|?>>
     <associate|limit at infinity of ascending (descending)
-    functions|<tuple|17.63|642>>
-    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.65|645>>
-    <associate|limit for f\<less\>=g|<tuple|17.64|643>>
-    <associate|limit n|<tuple|17.99|660>>
-    <associate|limit of 1/f|<tuple|17.98|660>>
-    <associate|limit of a constant function|<tuple|17.52|626>>
-    <associate|limit of a function|<tuple|17.51|626>>
-    <associate|limit of constant extented real|<tuple|17.84|651>>
-    <associate|limit of constants|<tuple|17.91|653>>
-    <associate|limit of finite sums in the extented reals|<tuple|17.107|662>>
-    <associate|limit of functions and sequences|<tuple|17.90|653>>
-    <associate|limit of monotone functions|<tuple|17.62|640>>
-    <associate|limit points|<tuple|17.46|625>>
-    <associate|limit points and plus or min infinity|<tuple|17.47|625>>
-    <associate|limit xi+x|<tuple|17.86|651>>
-    <associate|limits at infinity|<tuple|17.57|632>>
-    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.100|660>>
+    functions|<tuple|17.64|642>>
+    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.66|645>>
+    <associate|limit for f\<less\>=g|<tuple|17.65|643>>
+    <associate|limit n|<tuple|17.100|660>>
+    <associate|limit of 1/f|<tuple|17.99|660>>
+    <associate|limit of a constant function|<tuple|17.53|626>>
+    <associate|limit of a function|<tuple|17.52|626>>
+    <associate|limit of constant extented real|<tuple|17.85|651>>
+    <associate|limit of constants|<tuple|17.92|653>>
+    <associate|limit of finite sums in the extented reals|<tuple|17.108|662>>
+    <associate|limit of functions and sequences|<tuple|17.91|653>>
+    <associate|limit of monotone functions|<tuple|17.63|640>>
+    <associate|limit points|<tuple|17.47|625>>
+    <associate|limit points and plus or min infinity|<tuple|17.48|625>>
+    <associate|limit xi+x|<tuple|17.87|651>>
+    <associate|limits at infinity|<tuple|17.58|632>>
+    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.101|660>>
     <associate|notation for limit of increasing/decreasing
-    sequences|<tuple|17.89|653>>
+    sequences|<tuple|17.90|653>>
     <associate|open sets and addition scalar
-    multiplication|<tuple|17.43|623>>
+    multiplication|<tuple|17.44|623>>
     <associate|pi|<tuple|18.48|701>>
     <associate|power series 0|<tuple|18.3|677>>
     <associate|properties of exp (1)|<tuple|18.27|688>>
@@ -11527,48 +11759,50 @@
     <associate|properties of general strict power|<tuple|18.37|690>>
     <associate|properties of log|<tuple|18.34|689>>
     <associate|properties of the limit in the extented
-    reals|<tuple|17.94|655>>
-    <associate|right limit|<tuple|17.50|625>>
-    <associate|series and product with a scalar|<tuple|17.117|665>>
-    <associate|series are increasing|<tuple|17.105|661>>
-    <associate|series of extended reals and zeroes|<tuple|17.125|666>>
+    reals|<tuple|17.95|655>>
+    <associate|right limit|<tuple|17.51|625>>
+    <associate|series and product with a scalar|<tuple|17.118|665>>
+    <associate|series are increasing|<tuple|17.106|661>>
+    <associate|series of extended reals and zeroes|<tuple|17.126|666>>
     <associate|series of positive extented reals is
-    increasing|<tuple|17.118|665>>
+    increasing|<tuple|17.119|665>>
     <associate|sets for basis of topology on the extented
-    reals|<tuple|17.36|621>>
-    <associate|special cases of limits|<tuple|17.60|633>>
+    reals|<tuple|17.37|621>>
+    <associate|special cases of limits|<tuple|17.61|633>>
     <associate|sum and order relation in the extented
-    reals|<tuple|17.120|665>>
-    <associate|sum from -infinity to infinity|<tuple|17.131|673>>
-    <associate|sum of extented reals and product|<tuple|17.106|661>>
+    reals|<tuple|17.121|665>>
+    <associate|sum from -infinity to infinity|<tuple|17.132|673>>
+    <associate|sum of extented reals and product|<tuple|17.107|661>>
     <associate|sum of extented reals is indepenent of order the
-    reals|<tuple|17.123|665>>
-    <associate|sum of series in the extended reals|<tuple|17.119|?>>
-    <associate|sup and inf in real and extended reals|<tuple|17.13|?>>
-    <associate|sup of set and sum|<tuple|17.30|618>>
-    <associate|sup,inf sum of monotone sequences|<tuple|17.78|649>>
+    reals|<tuple|17.124|665>>
+    <associate|sum of series in the extended reals|<tuple|17.120|?>>
+    <associate|sup and inf in real and extended reals|<tuple|17.14|?>>
+    <associate|sup of set and sum|<tuple|17.31|618>>
+    <associate|sup,inf sum of monotone sequences|<tuple|17.79|649>>
     <associate|supremum (infinum) of increasing (decreasing) sequence is
-    indpendent of start|<tuple|17.87|652>>
-    <associate|supremum, infinum of extented real set|<tuple|17.10|609>>
-    <associate|supremum, infinum of real set|<tuple|17.9|609>>
+    indpendent of start|<tuple|17.88|652>>
+    <associate|supremum, infinum of extented real set|<tuple|17.11|609>>
+    <associate|supremum, infinum of real set|<tuple|17.10|609>>
     <associate|the limit inferior is lower then limit
-    superior|<tuple|17.80|650>>
+    superior|<tuple|17.81|650>>
     <associate|the positive extented reals form a abelian
-    semi-group|<tuple|17.27|617>>
+    semi-group|<tuple|17.28|617>>
     <associate|the topology on the extented reals is
-    Hausdorff|<tuple|17.45|624>>
-    <associate|topology on extented reals|<tuple|17.38|621>>
-    <associate|topology on the extended reals properties|<tuple|17.39|?>>
+    Hausdorff|<tuple|17.46|624>>
+    <associate|topology on extented reals|<tuple|17.39|621>>
+    <associate|topology on the extended reals properties|<tuple|17.40|?>>
     <associate|trigoniometic properties|<tuple|18.45|696>>
     <associate|trigoniometric functions|<tuple|18.44|696>>
-    <associate|uniqueness of limits in extented reals|<tuple|17.53|626>>
+    <associate|uniqueness of limits in extented reals|<tuple|17.54|626>>
     <associate|usefull properties of open sets in the extented reals
-    |<tuple|17.61|640>>
-    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.20|612>>
-    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.18|611>>
-    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.19|612>>
-    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.21|614>>
-    <associate|x\<less\>y=\<gtr\>x+1/n\<less\>y|<tuple|17.7|?>>
+    |<tuple|17.62|640>>
+    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.21|612>>
+    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.19|611>>
+    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.20|612>>
+    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.22|614>>
+    <associate|x\<less\>y=\<gtr\>x+1/n\<less\>y|<tuple|17.8|?>>
+    <associate|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf and
+    y\<less\>\<gtr\>-inf|<tuple|17.7|?>>
     <associate|x^p is continuous|<tuple|18.40|693>>
     <associate|zero and convergentie domain|<tuple|18.5|677>>
     <associate|zeroes of cos has a minimum|<tuple|18.47|700>>

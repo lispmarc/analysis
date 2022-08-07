@@ -6773,7 +6773,7 @@
     <math|\<forall\>y\<in\>\<upsilon\><around*|(|B|)>> that
     <math|b\<leqslant\>y>. So <math|\<upsilon\><around*|(|B|)>> is nonempty
     and bounded below. From the hypothesis we have then that
-    <math|in<around*|(|\<upsilon\><around*|(|B|)>|)>> exists and then by
+    <math|inf<around*|(|\<upsilon\><around*|(|B|)>|)>> exists and then by
     <reference|relation inf and sup> we have that <math|B> has a supremum.
   </proof>
 
@@ -7694,7 +7694,7 @@
     <\enumerate>
       <item>If <math|<around*|\<langle\>|A,\<leqslant\>|\<rangle\>>> is fully
       ordered then <math|<around*|\<langle\>|B,\<leqslant\>|\<rangle\>>> is
-      full ordered
+      fully ordered
 
       <item>If <math|<around*|\<langle\>|A,\<leqslant\>|\<rangle\>>> is
       well-ordered then <math|<around*|\<langle\>|B,\<leqslant\>|\<rangle\>>>
@@ -21834,7 +21834,7 @@
     which there exists a <math|b\<in\>\<bbb-R\>> such that
     <math|\<forall\>s\<in\>S> we have <math|b\<leqslant\>s> (existence of a
     lower bound) there exists a <math|inf<around*|(|S|)>> (in other words
-    every non empty set in <math|\<bbb-R\>> with a lower bound has greatest
+    every non empty set in <math|\<bbb-R\>> with a lower bound has a greatest
     lower bound).
   </theorem>
 
@@ -23377,7 +23377,7 @@
         <item*|<math|\<Leftarrow\>>>If <math|x=<sqrt|a>> then
         <math|x<rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>, if
         <math|x=-<sqrt|a>> then <math|x<rsup|2>=<around*|(|-x|)><rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>.
-        </description>
+      </description>
 
       <item>\ 
 
@@ -25774,7 +25774,7 @@
         <item*|<math|\<Leftarrow\>>>If <math|x=<sqrt|a>> then
         <math|x<rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>, if
         <math|x=-<sqrt|a>> then <math|x<rsup|2>=<around*|(|-x|)><rsup|2>=<around*|(|<sqrt|a>|)><rsup|2>=a>.
-        </description>
+      </description>
 
       <item>\ 
 
