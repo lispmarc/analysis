@@ -658,8 +658,6 @@
     </equation>
   </proof>
 
-  TODO Check the rest
-
   The next theorem shows the neccesary and sufficient contraint for the
   supremum and infinum to be not finite.\ 
 
@@ -745,8 +743,6 @@
     </enumerate>
   </proof>
 
-  TODO
-
   <\note>
     The condition <math|A\<subseteq\><around*|]|-\<infty\>,\<infty\>|]>> in
     (1) above or <math|A\<subseteq\><around*|[|-\<infty\>,\<infty\>|[>> in
@@ -767,21 +763,24 @@
     course consistent with the above theorem.
   </convention>
 
-  We extend the algebraic operations on <math|\<bbb-R\>> as follows (note
-  that this will not make <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>>,+,\<cdot\>|\<rangle\>>>
-  a field)
+  The avoid any confusion we note the sum and product on <math|\<bbb-R\>> as
+  <math|+<rsub|\<bbb-R\>>> and <math|\<cdot\><rsub|\<bbb-R\>>>. We will
+  extend the algebraic operations on <math|\<bbb-R\>> to
+  <math|<wide|\<bbb-R\>|\<wide-bar\>>>, however it will not be possible to
+  define <math|+> fully on <math|<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>>.
 
   <\definition>
-    On <math|<wide|\<bbb-R\>|\<wide-bar\>>> we have the following
-    possibilities for the <math|+> and <math|.> operations
+    On <math|<wide|\<bbb-R\>|\<wide-bar\>>> we \ define the <math|+> and
+    <math|.> operations for the following cases
 
     <\enumerate>
-      <item>Given <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have for
-      <math|x+y> the following possibilities
+      <item>The function <math|<around*|(|+|)>:<around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>|)>\\<around*|{|<around*|(|\<infty\>,-\<infty\>|)>,<around*|(|-\<infty\>,\<infty\>|)>|}>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is defined by <math|<around*|(|+|)><around*|(|x,y|)>=x+y> where
+      <math|+> is defined as follows:
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|x+y> is equal to <math|x+y> as defined in <math|\<bbb-R\>>
+        <math|x+y=x+<rsub|\<bbb-R\>>y>
 
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then
         <math|x+y=\<infty\>>
@@ -808,15 +807,13 @@
         <math|x+y=-\<infty\>>
       </description>
 
-      <item>Given <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have for
-      <math|x\<cdot\>y> the following possibilities where
-      <math|\<bbb-R\><rsub|+>=<around*|{|x\<in\>\<bbb-R\>\|0\<less\>x|}>>,
-      <math|\<bbb-R\><rsub|->=<around*|{|x\<in\>\<bbb-R\>\|x\<less\>0|}>>
+      <item>The function <math|<around*|(|\<cdot\>|)>:<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      is defined by <math|<around*|(|\<cdot\>|)><around*|(|x,y|)>> where
+      <math|x\<cdot\>y> is defined as follows:
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|x\<cdot\>y> is equal to <math|x\<cdot\>y> as defined in
-        <math|\<bbb-R\>>
+        <math|x\<cdot\>y=x\<cdot\><rsub|\<bbb-R\>>y>
 
         <item*|<math|><math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y=\<infty\>>>then
         <math|x\<cdot\>y=\<infty\>>
@@ -875,12 +872,13 @@
         <math|x\<cdot\>y=\<infty\>>
       </description>
 
-      <item>Given <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have for
-      <math|-x> the following possibilities\ 
+      <item>We define <math|<around*|(|-|)>:<wide|\<bbb-R\>|\<wide-bar\>>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+      by <math|*<around*|(|-|)><around*|(|x|)>=<around*|(|-1|)>\<cdot\>x>
+      hence we have
 
       <\description>
-        <item*|<math|x\<in\>\<bbb-R\>>>then <math|-x> is as is defined in
-        <math|\<bbb-R\>>
+        <item*|<math|x\<in\>\<bbb-R\>>>then <math|-x> [as is defined in
+        <math|\<bbb-R\>>]
 
         <item*|<math|x=\<infty\>>>then <math|-x=-\<infty\>>
 
@@ -930,8 +928,8 @@
       consider the following possibilities
 
       <\description>
-        <item*|<math|y\<in\>\<bbb-R\>>>then <math|-x=\<infty\>> so that
-        <math|\<bbb-R\>\<ni\>-y\<leqslant\>\<infty\>=-x> proving
+        <item*|<math|y\<in\>\<bbb-R\>>>then <math|-x=\<infty\>> so as
+        <math|-y\<in\>\<bbb-R\>> <math|-y\<leqslant\>\<infty\>=-x> proving
         <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
 
         <item*|<math|y=\<infty\>>>then <math|-y=-\<infty\>\<less\>\<infty\>=-x>
@@ -948,6 +946,8 @@
     and <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>> proving
     <math|<around*|(|-y|)>\<less\><around*|(|-x|)>>
   </proof>
+
+  TODO
 
   <\corollary>
     <label|x\<less\>=y=\<gtr\>lx\<less\>=ly>If
@@ -11601,7 +11601,6 @@
     <associate|eq 14.26.424|<tuple|17.50|671>>
     <associate|eq 14.4.472|<tuple|17.6|619>>
     <associate|eq 14.5.472|<tuple|17.7|620>>
-    <associate|eq 17.1.034|<tuple|17.1|?>>
     <associate|eq 17.1.514|<tuple|18.7|682>>
     <associate|eq 17.1.515|<tuple|18.1|677>>
     <associate|eq 17.10.001|<tuple|17.12|?>>
@@ -11627,8 +11626,6 @@
     <associate|eq 17.18.002|<tuple|18.18|689>>
     <associate|eq 17.19.001|<tuple|17.21|?>>
     <associate|eq 17.19.002|<tuple|18.19|689>>
-    <associate|eq 17.2.0.34|<tuple|17.2|?>>
-    <associate|eq 17.2.034|<tuple|17.2|?>>
     <associate|eq 17.2.20.001|<tuple|17.35|666>>
     <associate|eq 17.2.21.001|<tuple|17.36|666>>
     <associate|eq 17.2.22.001.1|<tuple|17.37|666>>
