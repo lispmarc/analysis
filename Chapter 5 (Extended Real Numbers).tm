@@ -877,7 +877,8 @@
       hence we have
 
       <\description>
-        <item*|<math|x\<in\>\<bbb-R\>>>then <math|-x> [as is defined in
+        <item*|<math|x\<in\>\<bbb-R\>>>then
+        <math|<around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>x> [as is defined in
         <math|\<bbb-R\>>]
 
         <item*|<math|x=\<infty\>>>then <math|-x=-\<infty\>>
@@ -900,51 +901,83 @@
 
   <\theorem>
     <label|x\<less\>=y=\<gtr\>-y\<less\>=-x>If
-    <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> with <math|x\<leqslant\>y>
-    then <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>> and if
-    <math|x\<less\>y> then <math|<around*|(|-y|)>\<less\><around*|(|-x|)>>
+    <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have\ 
+
+    <\enumerate>
+      <item>If <math|-x=-y> then <math|>x=y
+
+      <item>If <math|x\<leqslant\>y> then <math|-y\<leqslant\>-x>
+
+      <item>If <math|x\<less\>y> then <math|-y\<less\>-x>
+    </enumerate>
   </theorem>
 
   <\proof>
-    First if <math|x\<leqslant\>y> then we have to consider the following
-    possibilities for <math|x>
+    \ 
 
-    <\description>
-      <item*|<math|x\<in\>\<bbb-R\>>>then as <math|x\<leqslant\>y> we have to
-      consider the following possibilities for <math|y>
+    <\enumerate>
+      <item>For <math|x> we have to consider the following cases to consider
 
       <\description>
-        <item*|<math|y\<in\>\<bbb-R\>>>then using the properties of the reals
-        we have <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+        <item*|<math|x\<in\>\<bbb-R\>>>then
+        <math|-x=<around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>x\<in\>\<bbb-R\>> so
+        that <math|-y\<in\>\<bbb-R\>>. If <math|y=\<infty\>> or
+        <math|y=-\<infty\>> then <math|-y\<nin\>\<bbb-R\>>, so we must have
+        that <math|y\<in\>\<bbb-R\>>, but then we have that
+        <math|-y=<around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>y>. Hence we have
+        <math|<around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>x=<around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>y\<Rightarrow\>x=y>
 
-        <item*|<math|y=\<infty\>>>then <math|-y=-\<infty\>\<less\>-x\<in\>\<bbb-R\>\<Rightarrow\><around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+        <item*|<math|x=\<infty\>>>then <math|-x=-\<infty\>> so that
+        <math|-y=-\<infty\>>. If <math|y\<in\>\<bbb-R\>> then
+        <math|-y\<in\>\<bbb-R\>> and if <math|y=-\<infty\>> then
+        <math|-y=\<infty\>>, so we must have that <math|y=\<infty\>> from
+        which it follows that <math|x=y>.
+
+        <item*|<math|x=-\<infty\>>>then <math|-x=\<infty\>> so that
+        <math|-y=\<infty\>>. If <math|y\<in\>\<bbb-R\>> then
+        <math|-y\<in\>\<bbb-R\>> and if <math|y=\<infty\>> then
+        <math|-y=-\<infty\>>, so we must have that <math|y=-\<infty\>> from
+        which it follows that <math|x=y>.
       </description>
 
-      <item*|<math|x=\<infty\>>>then as <math|x\<leqslant\>y> we have
-      <math|y=\<infty\>> so that <math|-y=-\<infty\>\<leqslant\>-\<infty\>=-x>
-      proving <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
-
-      <item*|<math|x=-\<infty\>>>then as <math|x\<leqslant\>y> we have to
-      consider the following possibilities
+      <item>If <math|x\<leqslant\>y> then we have to consider the following
+      possibilities for <math|x>
 
       <\description>
-        <item*|<math|y\<in\>\<bbb-R\>>>then <math|-x=\<infty\>> so as
-        <math|-y\<in\>\<bbb-R\>> <math|-y\<leqslant\>\<infty\>=-x> proving
-        <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+        <item*|<math|x\<in\>\<bbb-R\>>>then as <math|x\<leqslant\>y> we have
+        to consider the following possibilities for <math|y>
 
-        <item*|<math|y=\<infty\>>>then <math|-y=-\<infty\>\<less\>\<infty\>=-x>
+        <\description>
+          <item*|<math|y\<in\>\<bbb-R\>>>then using the properties of the
+          reals we have <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+
+          <item*|<math|y=\<infty\>>>then <math|-y=-\<infty\>\<less\>-x\<in\>\<bbb-R\>\<Rightarrow\><around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+        </description>
+
+        <item*|<math|x=\<infty\>>>then as <math|x\<leqslant\>y> we have
+        <math|y=\<infty\>> so that <math|-y=-\<infty\>\<leqslant\>-\<infty\>=-x>
         proving <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
 
-        <item*|<math|y=-\<infty\>>>then <math|-y=\<infty\>=-x> proving
-        <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
-      </description>
-    </description>
+        <item*|<math|x=-\<infty\>>>then as <math|x\<leqslant\>y> we have to
+        consider the following possibilities
 
-    this proves the first part of the theorem. For the second part if
-    <math|x\<less\>y> then <math|x\<neq\>y> and
-    <math|x\<leqslant\>y\<Rightarrow\><around*|(|-x|)>\<neq\><around*|(|-y|)>>
-    and <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>> proving
-    <math|<around*|(|-y|)>\<less\><around*|(|-x|)>>
+        <\description>
+          <item*|<math|y\<in\>\<bbb-R\>>>then <math|-x=\<infty\>> so as
+          <math|-y\<in\>\<bbb-R\>> <math|-y\<leqslant\>\<infty\>=-x> proving
+          <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+
+          <item*|<math|y=\<infty\>>>then <math|-y=-\<infty\>\<less\>\<infty\>=-x>
+          proving <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+
+          <item*|<math|y=-\<infty\>>>then <math|-y=\<infty\>=-x> proving
+          <math|<around*|(|-y|)>\<leqslant\><around*|(|-x|)>>
+        </description>
+      </description>
+
+      <item>If <math|x\<less\>y> then <math|x\<neq\>y> and <math|x\<less\>y>,
+      using (2) we have then that <math|<around*|(|-y|)>\<leqslant\>-x> and
+      using (1) that <math|-x\<neq\>-y> proving that <math|-y\<less\>-x>
+    </enumerate>
   </proof>
 
   TODO
