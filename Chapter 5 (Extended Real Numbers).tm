@@ -778,130 +778,547 @@
       is defined by <math|<around*|(|+|)><around*|(|x,y|)>=x+y> where
       <math|+> is defined as follows:
 
-      <\description>
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|x+y=x+<rsub|\<bbb-R\>>y>
+      <\equation*>
+        x+y=<choice|<tformat|<table|<row|<cell|\<infty\> if
+        x=\<infty\>\<wedge\>y\<in\><wide|\<bbb-R\>|\<wide-bar\>>\\<around*|{|-\<infty\>|}>>>|<row|<cell|-\<infty\>
+        if x=-\<infty\>\<wedge\>y\<in\><wide|\<bbb-R\>|\<wide-bar\>>\\<around*|{|\<infty\>|}>>>|<row|<cell|\<infty\>
+        if x\<in\><wide|\<bbb-R\>|\<wide-bar\>>\\<around*|{|\<infty\>|}>\<wedge\>y=\<infty\>>>|<row|<cell|-\<infty\>
+        if x\<in\><wide|\<bbb-R\>|\<wide-bar\>>\\<around*|{|-\<infty\>|}>\<wedge\>y=-\<infty\>>>|<row|<cell|x+<rsub|\<bbb-R\>>y
+        if x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>>>>
+      </equation*>
 
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then
-        <math|x+y=\<infty\>>
-
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>>then
-        <math|x+y=-\<infty\>>
-
-        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|x+y=\<infty\>>
-
-        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then
-        <math|x+y=\<infty\>>
-
-        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then <math|x+y> is
-        <with|font-series|bold|not defined>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|x+y=-\<infty\>>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then <math|x+y> is
-        <with|font-series|bold|not definied>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|x+y=-\<infty\>>
-      </description>
+      Note: Using the above definition it is easy to see that if <math|x+y>
+      exists then <math|y+x> exists and <math|x+y=y+x>.
 
       <item>The function <math|<around*|(|\<cdot\>|)>:<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
       is defined by <math|<around*|(|\<cdot\>|)><around*|(|x,y|)>> where
-      <math|x\<cdot\>y> is defined as follows:
+      <math|x\<cdot\>y> is defined as follows:\ 
 
-      <\description>
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|x\<cdot\>y=x\<cdot\><rsub|\<bbb-R\>>y>
-
-        <item*|<math|><math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y=\<infty\>>>then
-        <math|x\<cdot\>y=\<infty\>>
-
-        <item*|<math|x\<in\>\<bbb-R\><rsub|->\<wedge\>y=\<infty\>>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x=0\<wedge\>y=\<infty\>>>then <math|x\<cdot\>y=0>
-
-        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then
-        <math|x\<cdot\>y=\<infty\>>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y=-\<infty\>>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x\<in\>\<bbb-R\><rsub|->\<wedge\>y=-\<infty\>>>then
-        <math|x\<cdot\>y=\<infty\>>
-
-        <item*|<math|x=0\<wedge\>y=-\<infty\>>>then <math|x\<cdot\>y=0>
-
-        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|x\<cdot\>y=\<infty\>>
-
-        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|+>>>then
-        <math|x\<cdot\>y=\<infty\>>
-
-        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|->>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x=\<infty\>\<wedge\>y=0>>then <math|x\<cdot\>y=0>
-
-        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then
-        <math|x\<cdot\>y=\<infty\>>
-
-        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|+>>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|->>>then
-        <math|x\<cdot\>y=\<infty\>>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y=0>>then <math|x\<cdot\>y=0>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then
-        <math|x\<cdot\>y=-\<infty\>>
-
-        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|x\<cdot\>y=\<infty\>>
-      </description>
+      <\equation*>
+        x\<cdot\>y=<choice|<tformat|<table|<row|<cell|\<infty\> if
+        x=\<infty\>\<wedge\>0\<less\>y>>|<row|<cell|-\<infty\> if
+        x=\<infty\>\<wedge\>y\<less\>0>>|<row|<cell|0 if
+        x=\<infty\>\<wedge\>y=0>>|<row|<cell|-\<infty\> if
+        x=-\<infty\>\<wedge\>0\<less\>y>>|<row|<cell|\<infty\> if
+        x=-\<infty\>\<wedge\>y\<less\>0>>|<row|<cell|0 if
+        x=-\<infty\>\<wedge\>y=0>>|<row|<cell|\<infty\> if
+        \ 0\<less\>x\<wedge\>y=\<infty\>>>|<row|<cell|-\<infty\> if
+        x\<less\>0\<wedge\>y=\<infty\>>>|<row|<cell|0 if
+        x=0\<wedge\>y=\<infty\>>>|<row|<cell|-\<infty\> if
+        0\<less\>x\<wedge\>y=-\<infty\>>>|<row|<cell|\<infty\> if
+        x\<less\>0\<wedge\>y=-\<infty\>>>|<row|<cell|0 if
+        x=0\<wedge\>y=-\<infty\>>>|<row|<cell|x\<cdot\><rsub|\<bbb-R\>>y if
+        \ x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>>>>
+      </equation*>
 
       <item>We define <math|<around*|(|-|)>:<wide|\<bbb-R\>|\<wide-bar\>>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
-      by <math|*<around*|(|-|)><around*|(|x|)>=<around*|(|-1|)>\<cdot\>x>
-      hence we have
+      by <math|*<around*|(|-|)><around*|(|x|)>=<around*|(|-1|)>\<cdot\>x> and
+      note <math|<around*|(|-|)><around*|(|x|)>> as <math|-x>. Using (2) we
+      have then that\ 
+
+      <\equation*>
+        -x=<choice|<tformat|<table|<row|<cell|\<infty\> if
+        x=-\<infty\>>>|<row|<cell|-\<infty\> if
+        x=\<infty\>>>|<row|<cell|-x\<equallim\><rsub|def><around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>x>>>>>
+      </equation*>
+
+      <item>Let <math|x,y\<in\><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>|)>\\<around*|{|<around*|(|\<infty\>,\<infty\>|)>,<around*|(|-\<infty\>,-\<infty\>|)>|}>>
+      then <math|x-y=x+<around*|(|-y|)>=x+<around*|(|<around*|(|-1|)>\<cdot\>y|)>>
+    </enumerate>
+
+    \ 
+
+    <\note>
+      The product of two extended numbers is alwasy defined, howver the sum
+      is not defined for the cases <math|\<infty\>+<around*|(|-\<infty\>|)>>
+      and <math|-\<infty\>+\<infty\>>.
+    </note>
+  </definition>
+
+  <\lemma>
+    <label|x.y \<less\> 0 or \<gtr\> 0>Let
+    <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have\ 
+
+    <\enumerate>
+      <item>If <math|0\<less\>x\<wedge\>0\<less\>y> then
+      <math|0\<less\>x\<cdot\>y>
+
+      <item>If <math|x\<less\>0\<wedge\>y\<less\>0> then
+      <math|0\<less\>x\<cdot\>y>
+
+      <item>If <math|x\<less\>0\<wedge\>0\<less\>y> then
+      <math|x\<cdot\>y\<less\>0>
+
+      <item>If <math|0\<less\>x\<wedge\>y\<less\>0> then
+      <math|x\<cdot\>y\<less\>0>
+    </enumerate>
+  </lemma>
+
+  <\proof>
+    \ Take <math|\<bbb-R\><rsub|+>=<around*|{|x\<in\>\<bbb-R\>\|0\<less\>x|}>>
+    and <math|\<bbb-R\><rsub|->=<around*|{|x\<in\>\<bbb-R\>\|x\<less\>0|}>>
+
+    <\enumerate>
+      <item>If <math|0\<less\>x\<wedge\>0\<less\>y> then we have either\ 
+
+      <\description>
+        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then
+        <math|x\<cdot\>y=\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|+>>>then
+        <math|x\<cdot\>y=\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y=\<infty\>>>then
+        <math|x\<cdot\>y=\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y\<in\>\<bbb-R\><rsub|+>>>then
+        <math|0\<less\>x\<cdot\><rsub|\<bbb-R\>>y=x\<cdot\>y>
+      </description>
+
+      <item>If <math|x\<less\>0\<wedge\>y\<less\>y> then we have either then
+      we have either\ 
+
+      <\description>
+        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then
+        <math|x\<cdot\>y=\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|->>>then
+        <math|x\<cdot\>y=\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|->\<wedge\>y=-\<infty\>>>then
+        <math|x\<cdot\>y=\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|->\<wedge\>y\<in\>\<bbb-R\><rsub|->>>then
+        <math|0\<less\>x\<cdot\><rsub|\<bbb-R\>>y=x\<cdot\>y>
+      </description>
+
+      <item>If <math|x\<less\>0\<wedge\>0\<less\>y> then we have either then
+      we have either\ 
+
+      <\description>
+        <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then
+        <math|x\<cdot\>y=-\<infty\>\<Rightarrow\>x\<cdot\>y\<less\>0>
+
+        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|+>>>then
+        <math|x\<cdot\>y=-\<infty\>\<Rightarrow\>x\<cdot\>y\<less\>0>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|->\<wedge\>y=\<infty\>>>then
+        <math|x\<cdot\>y=-\<infty\>\<Rightarrow\>x\<cdot\>y\<less\>0>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|->\<wedge\>y\<in\>\<bbb-R\><rsub|+>>>then
+        <math|x\<cdot\>y=x\<cdot\><rsub|\<bbb-R\>>y\<less\>0>
+      </description>
+
+      <item>If <math|0\<less\>x\<wedge\>y\<less\>0> then we have either then
+      we have either\ 
+
+      <\description>
+        <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then
+        <math|x\<cdot\>y=-\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\><rsub|->>>then
+        <math|x\<cdot\>y=-\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y=-\<infty\>>>then
+        <math|x\<cdot\>y=-\<infty\>\<Rightarrow\>0\<less\>x\<cdot\>y>
+
+        <item*|<math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y\<in\>\<bbb-R\><rsub|->>>then
+        <math|x\<cdot\>y=x\<cdot\><rsub|\<bbb-R\>>y\<less\>0>
+      </description>
+    </enumerate>
+  </proof>
+
+  <\proposition>
+    <label|associativity of the product of extnded reals>We have the
+    following properties for the product of extended real numbers\ 
+
+    <\enumerate>
+      <item><math|\<forall\>x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have
+
+      <\enumerate>
+        <item><math|x\<cdot\>y=0> if and only if <math|x=0> or <math|y=0>
+
+        <item><math|x\<cdot\>y\<in\>\<bbb-R\>\\<around*|{|0|}>> if and only
+        if <math|x,y\<in\>\<bbb-R\>>
+
+        <item><math|x\<cdot\>y=\<infty\>> if and only if
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<around*|(|x=\<infty\>*\<wedge\>0\<less\>y|)>>|<cell|\<vee\>>|<cell|<around*|(|x=-\<infty\>\<wedge\>y\<less\>0|)>>>|<row|<cell|>|<cell|\<vee\>>|<cell|<around*|(|0\<less\>x\<wedge\>y=\<infty\>|)>>>|<row|<cell|>|<cell|\<vee\>>|<cell|<around*|(|x\<less\>0\<wedge\>y=-\<infty\>|)>>>>>
+        </eqnarray*>
+
+        <item><math|x\<cdot\>y=-\<infty\>> if and only if
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<around*|(|x=-\<infty\>*\<wedge\>0\<less\>y|)>>|<cell|\<vee\>>|<cell|<around*|(|x=\<infty\>\<wedge\>y\<less\>0|)>>>|<row|<cell|>|<cell|\<vee\>>|<cell|<around*|(|0\<less\>x\<wedge\>y=-\<infty\>|)>>>|<row|<cell|>|<cell|\<vee\>>|<cell|<around*|(|x\<less\>0\<wedge\>y=\<infty\>|)>>>>>
+        </eqnarray*>
+      </enumerate>
+
+      <item><math|\<forall\>x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>> we have
+      x\<cdot\>y=y\<cdot\>x>
+
+      <item><math|\<forall\>x,y,z\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have
+      <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+      <item><math|\<forall\>x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have
+      <math|1\<cdot\>x=x>
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>\ 
+
+      <\enumerate>
+        <item>\ 
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>If <math|x\<cdot\>y=0> then we must
+          consider the following cases for <math|x>
+
+          <\description>
+            <item*|<math|x\<in\><around*|{|-\<infty\>,\<infty\>|}>>>then
+            using the definition of <math|<around*|(|\<cdot\>|)>> we must
+            have <math|y=0>\ 
+
+            <item*|<math|x\<in\>\<bbb-R\>>>If
+            <math|y\<in\><around*|{|-\<infty\>,\<infty\>|}>> then using the
+            definition of the \ we must have that <math|x=0>, if
+            <math|y\<in\>\<bbb-R\>> then <math|x\<cdot\>y=x\<cdot\><rsub|\<bbb-R\>>y>
+            so that we must have <math|y=0> or <math|x=0>
+          </description>
+
+          so in all cases we have either <math|x=0> or <math|y=0>
+
+          <item*|<math|\<Leftarrow\>>>this trivially follows from the
+          definition of the product.
+        </description>
+
+        <item>this trivially follows from the defiition of the product
+
+        <item>this trivially follows from the definition of the product
+
+        <item>this trivially follows from the dediniton of the prodcut\ 
+      </enumerate>
+
+      <item>For <math|x\<cdot\>y> we have either
+
+      <\description>
+        <item*|<math|x\<cdot\>y=\<infty\>>>then using (1.c) we have either\ 
+
+        <\description>
+          <item*|<math|<around*|(|x=\<infty\>\<wedge\>0\<less\>y|)>>>then
+          <math|y\<cdot\>x=\<infty\>=x\<cdot\>y>
+
+          <item*|<math|<around*|(|x=-\<infty\>\<wedge\>y\<less\>0|)>>>then
+          <math|y\<cdot\>x=\<infty\>=x\<cdot\>y>
+
+          <item*|<math|<around*|(|0\<less\>x\<wedge\>y=\<infty\>|)>>>then
+          <math|y\<cdot\>x=\<infty\>=x\<cdot\>y>
+
+          <item*|<math|<around*|(|x\<less\>0\<wedge\>y=-\<infty\>|)>>>then
+          <math|y\<cdot\>x=\<infty\>=x\<cdot\>y>
+        </description>
+
+        <item*|<math|x\<cdot\>y=-\<infty\>>>then using (1.d) we have either\ 
+
+        <\description>
+          <item*|<math|<around*|(|x=-\<infty\>\<wedge\>0\<less\>y|)>>>then
+          <math|y\<cdot\>x=-\<infty\>=x\<cdot\>y>
+
+          <item*|<math|<around*|(|x=\<infty\>\<wedge\>y\<less\>0|)>>>then
+          <math|y\<cdot\>x=-\<infty\>=x\<cdot\>y>
+
+          <item*|<math|<around*|(|0\<less\>x\<wedge\>y=-\<infty\>|)>>>then
+          <math|y\<cdot\>x=-\<infty\>=x\<cdot\>y>
+
+          <item*|<math|<around*|(|x\<less\>0\<wedge\>y=\<infty\>|)>>>then
+          <math|y\<cdot\>x=-\<infty\>=x\<cdot\>y>
+        </description>
+
+        <item*|<math|x\<cdot\>y=0>>then using (1.a) we have either <math|x=0>
+        so that <math|y\<cdot\>x=0=x\<cdot\>y> or <math|y=0> so that
+        <math|y\<cdot\>x=0=x\<cdot\>y>
+
+        <item*|<math|x\<cdot\>y\<in\>\<bbb-R\>\\<around*|{|0|}>>>then using
+        (1.b) we have <math|x,y\<in\>\<bbb-R\>> so that
+        <math|y\<cdot\>x=y\<cdot\><rsub|\<bbb-R\>>x=x\<cdot\><rsub|\<bbb-R\>>y=x\<cdot\>y>
+      </description>
+
+      <item>For <math|x\<cdot\>y> we have the following possibilities to
+      consider :
+
+      <\description>
+        <item*|<math|x\<cdot\>y=\<infty\>>>then using (1.c) we have either\ 
+
+        <\description>
+          <item*|<math|<around*|(|x=\<infty\>\<wedge\>0\<less\>y|)>>>then for
+          <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            \ <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further
+            using <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|0\<less\>y\<cdot\>z> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>.
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            using <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|y\<cdot\>z\<less\>0> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|<around*|(|x=-\<infty\>\<wedge\>y\<less\>0|)>>>then
+          for <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            \ <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further
+            using <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|y\<cdot\>z\<less\>0> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>.
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            using <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|0\<less\>y\<cdot\>z> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|<around*|(|0\<less\>x\<wedge\>y=\<infty\>|)>>>then for
+          <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            \ <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further
+            <math|y\<cdot\>z=\<infty\>> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>.
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            <math|y\<cdot\>z=-\<infty\>> <math|> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|<around*|(|x\<less\>0\<wedge\>y=-\<infty\>|)>>>then
+          for <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            \ <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further
+            <math|y\<cdot\>z=-\<infty\>> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>.
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            <math|y\<cdot\>z=\<infty\>> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+        </description>
+
+        <item*|<math|x\<cdot\>y=-\<infty\>>>then using (1.d) we have either\ 
+
+        <\description>
+          <item*|<math|<around*|(|x=-\<infty\>\<wedge\>0\<less\>y|)>>>then
+          for <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            using <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|0\<less\>y\<cdot\>z> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further using
+            <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|y\<cdot\>z\<less\>0> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|<around*|(|x=\<infty\>\<wedge\>y\<less\>0|)>>>then for
+          <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            using <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|y\<cdot\>z\<less\>0> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> proving that
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further using
+            <reference|x.y \<less\> 0 or \<gtr\> 0>
+            <math|0\<less\>y\<cdot\>z> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>> proving that
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|<around*|(|0\<less\>x\<wedge\>y=-\<infty\>|)>>>then
+          for <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            <math|y\<cdot\>z=-\<infty\>> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further
+            <math|y\<cdot\>z=\<infty\>> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|<around*|(|x\<less\>0\<wedge\>y=\<infty\>|)>>>then for
+          <math|z> we must have either\ 
+
+          <\description>
+            <item*|<math|0\<less\>z>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>>, further
+            <math|y\<cdot\>z=\<infty\>> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=-\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<less\>0>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>>, further
+            <math|y\<cdot\>z=-\<infty\>> so that
+            <math|x\<cdot\><around*|(|y\<cdot\>z|)>=\<infty\>> which proves
+            that <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+        </description>
+
+        <item*|<math|x\<cdot\>y=0>>then using (1.a) we have either
+
+        <\description>
+          <item*|<math|x=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0\<cdot\>z=0\<cdot\><around*|(|y\<cdot\>z|)>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+          <item*|<math|y=0>>then <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=0\<cdot\>z=x\<cdot\><around*|(|0\<cdot\>z|)>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+        </description>
+
+        <item*|<math|x\<cdot\>y\<in\>\<bbb-R\><rsub|+>>>then by (1.b)
+        <math|x,y\<in\>\<bbb-R\>> so that using <reference|x.y \<less\> 0 or
+        \<gtr\> 0> we have
+
+        <\description>
+          <item*|<math|x,y\<in\>\<bbb-R\><rsub|+>>>for <math|z> we must then
+          consider the following cases:\ 
+
+          <\description>
+            <item*|<math|z=\<infty\>>>then as by <reference|x.y \<less\> 0 or
+            \<gtr\> 0> <math|0\<less\>x\<cdot\>y> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=-\<infty\>>>then as by <reference|x.y \<less\> 0
+            or \<gtr\> 0> <math|0\<less\>x\<cdot\>y> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<in\>\<bbb-R\>>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=<around*|(|x\<cdot\><rsub|\<bbb-R\>>y|)>\<cdot\><rsub|\<bbb-R\>>z=x\<cdot\><rsub|\<bbb-R\>><around*|(|y\<cdot\><rsub|\<bbb-R\>>z|)>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|x,y\<in\>\<bbb-R\><rsub|->>>for <math|z> we must then
+          consider the following cases:\ 
+
+          <\description>
+            <item*|<math|z=\<infty\>>>then as by <reference|x.y \<less\> 0 or
+            \<gtr\> 0> <math|0\<less\>x\<cdot\>y> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=-\<infty\>>>then as by <reference|x.y \<less\> 0
+            or \<gtr\> 0> <math|0\<less\>x\<cdot\>y> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<in\>\<bbb-R\>>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=<around*|(|x\<cdot\><rsub|\<bbb-R\>>y|)>\<cdot\><rsub|\<bbb-R\>>z=x\<cdot\><rsub|\<bbb-R\>><around*|(|y\<cdot\><rsub|\<bbb-R\>>z|)>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+        </description>
+
+        <item*|<math|x\<cdot\>y\<in\>\<bbb-R\><rsub|->>>then by (1.b)
+        <math|x,y\<in\>\<bbb-R\>> so that using <reference|x.y \<less\> 0 or
+        \<gtr\> 0> we have
+
+        <\description>
+          <item*|<math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y\<in\>\<bbb-R\><rsub|->>>for
+          <math|z> we must then consider the following cases:\ 
+
+          <\description>
+            <item*|<math|z=\<infty\>>>then as by <reference|x.y \<less\> 0 or
+            \<gtr\> 0> <math|x\<cdot\>y\<less\>0> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=-\<infty\>>>then as by <reference|x.y \<less\> 0
+            or \<gtr\> 0> <math|x\<cdot\>y\<less\>0> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<in\>\<bbb-R\>>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=<around*|(|x\<cdot\><rsub|\<bbb-R\>>y|)>\<cdot\><rsub|\<bbb-R\>>z=x\<cdot\><rsub|\<bbb-R\>><around*|(|y\<cdot\><rsub|\<bbb-R\>>z|)>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+
+          <item*|<math|x\<in\>\<bbb-R\><rsub|->\<wedge\>y\<in\>\<bbb-R\><rsub|+>>>for
+          <math|z> we must then consider the following cases:\ 
+
+          <\description>
+            <item*|<math|z=\<infty\>>>then as by <reference|x.y \<less\> 0 or
+            \<gtr\> 0> <math|x\<cdot\>y\<less\>0> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=-\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z=-\<infty\>>>then as by <reference|x.y \<less\> 0
+            or \<gtr\> 0> <math|x\<cdot\>y\<less\>0> we have
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=\<infty\>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+
+            <item*|<math|z\<in\>\<bbb-R\>>>then
+            <math|<around*|(|x\<cdot\>y|)>\<cdot\>z=<around*|(|x\<cdot\><rsub|\<bbb-R\>>y|)>\<cdot\><rsub|\<bbb-R\>>z=x\<cdot\><rsub|\<bbb-R\>><around*|(|y\<cdot\><rsub|\<bbb-R\>>z|)>=x\<cdot\><around*|(|y\<cdot\>z|)>>
+          </description>
+        </description>
+      </description>
+
+      <item>For <math|x> we have either\ 
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>>>then
-        <math|<around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>x> [as is defined in
-        <math|\<bbb-R\>>]
+        <math|1\<cdot\>x=1\<cdot\><rsub|\<bbb-R\>>x=x>
 
-        <item*|<math|x=\<infty\>>>then <math|-x=-\<infty\>>
+        <item*|<math|x=\<infty\>>>then <math|1\<cdot\>x=\<infty\>=x>
 
-        <item*|<math|x=-\<infty\>>>then <math|-x=\<infty\>>
+        <item*|<math|x=-\<infty\>>>then <math|1\<cdot\>x=-\<infty\>=x>
       </description>
     </enumerate>
-
-    So in all cases the product of two numbers is defined, however the sum is
-    not defined for the cases <math|\<infty\>+<around*|(|-\<infty\>|)>> and
-    <math|-\<infty\>+\<infty\>>.
-  </definition>
-
-  <\note>
-    Using the above definition it is easy to see that
-    <math|\<forall\>x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> we have
-    <math|x\<cdot\>y=y\<cdot\>x> and if <math|x+y> is defined then <math|y+x>
-    is defined and <math|x+y=y+x>.
-  </note>
+  </proof>
 
   <\theorem>
     <label|x\<less\>=y=\<gtr\>-y\<less\>=-x>If
-    <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have\ 
+    <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have
 
     <\enumerate>
       <item>If <math|-x=-y> then <math|>x=y
@@ -980,8 +1397,6 @@
     </enumerate>
   </proof>
 
-  TODO
-
   <\corollary>
     <label|x\<less\>=y=\<gtr\>lx\<less\>=ly>If
     <math|x,y\<in\><wide|\<bbb-R\>|\<wide-bar\>>> with <math|x\<leqslant\>y>
@@ -1011,54 +1426,36 @@
 
         <\description>
           <item*|<math|x=-\<infty\>>>then
-          <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>y\<leqslant\>\<lambda\>\<cdot\>y>
+          <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<lambda\>\<cdot\>y>
 
-          <item*|<math|x\<in\>\<bbb-R\>>>then
-          <math|\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y> (using
-          <reference|properties of positive, negative real numbers>)
+          <item*|<math|x\<in\>\<bbb-R\>>>then as <math|-\<infty\>\<less\>x>
+          we must have that <math|-\<infty\>\<less\>y>, so for <math|y> to
+          consider either
 
-          <item*|<math|x=\<infty\>>>then <math|y\<equallim\><rsub|x\<leqslant\>\<infty\>>\<infty\>>
+          <\description>
+            <item*|<math|y=\<infty\>>>then
+            <math|\<lambda\>\<cdot\>y=\<infty\>> so that
+            <math|\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
+
+            <item*|<math|y\<in\>\<bbb-R\>>>then as
+            <math|x\<leqslant\><rsub|\<bbb-R\>>y> we have using
+            \ <reference|properties of positive, negative real numbers> that
+            <math|\<lambda\>\<cdot\>x\<leqslant\><rsub|\<bbb-R\>>\<lambda\>\<cdot\>y>
+            proving <math|\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>.
+          </description>
+
+          <item*|<math|x=\<infty\>>>then <math|y\<equallim\><rsub|x\<leqslant\>y>\<infty\>>
           hence <math|\<lambda\>\<cdot\>x=\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
         </description>
 
-        <item*|<math|\<lambda\>=\<infty\>>>then for <math|x> we have either\ 
+        <item*|<math|\<lambda\>=\<infty\>>>then for <math|x> we have either
 
         <\description>
-          <item*|<math|x=-\<infty\>>>then for <math|y> we have either
+          <item*|<math|x=-\<infty\>>>then
+          <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<lambda\>\<cdot\>y>\ 
 
-          <\description>
-            <item*|<math|y=-\<infty\>>><math|\<lambda\>\<cdot\>x=-\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y\<in\>\<bbb-R\><rsub|->>>then
-            <math|\<lambda\>\<cdot\>x=-\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y=0>>then <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>0=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y\<in\>\<bbb-R\><rsub|+>>>then
-            <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y=\<infty\>>>then
-            <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-          </description>
-
-          <item*|<math|x\<in\>\<bbb-R\><rsub|->>>then for <math|y> we have
-          either\ 
-
-          <\description>
-            <item*|<math|y=-\<infty\>>>then
-            <math|\<lambda\>\<cdot\>x=-\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y\<in\>\<bbb-R\><rsub|->>>then
-            <math|\<lambda\>\<cdot\>x=-\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y=0>>then <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>0=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y\<in\>\<bbb-R\><rsub|+>>>then
-            <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-
-            <item*|<math|y=\<infty\>>>then
-            <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<infty\>=\<lambda\>\<cdot\>y\<Rightarrow\>\<lambda\>\<cdot\>x\<leqslant\>\<lambda\>\<cdot\>y>
-          </description>
+          <item*|<math|x\<in\>\<bbb-R\><rsub|->>>then
+          <math|\<lambda\>\<cdot\>x=-\<infty\>\<leqslant\>\<lambda\>\<cdot\>y>
 
           <item*|<math|x=0>>then as <math|0=x\<leqslant\>y> we have for
           <math|y> either
@@ -1091,14 +1488,35 @@
 
       <item>As <math|\<lambda\>\<leqslant\>0> we have by
       <reference|x\<less\>=y=\<gtr\>-y\<less\>=-x> that
-      <math|0\<leqslant\><around*|(|-\<lambda\>|)>> so by (1) we have that
-      <math|<around*|(|-\<lambda\>|)>\<cdot\>x\<leqslant\><around*|(|-\<lambda\>|)>\<Rightarrow\>-<around*|(|\<lambda\>\<cdot\>x|)>\<leqslant\>-<around*|(|\<lambda\>\<cdot\>y|)>\<Rightarrowlim\><rsub|<text|<reference|x\<less\>=y=\<gtr\>-y\<less\>=-x>>>\<lambda\>\<cdot\>y\<leqslant\>\<lambda\>\<cdot\>x>
+      <math|0\<leqslant\><around*|(|-\<lambda\>|)>> then by (1)
+      <math|<around*|(|-\<lambda\>|)>\<cdot\>x\<leqslant\><around*|(|-\<lambda\>|)>\<cdot\>y>,<space|1em>Using
+      <reference|x\<less\>=y=\<gtr\>-y\<less\>=-x> we have that
+      <math|<around*|(|-<around*|(|<around*|(|-\<lambda\>|)>\<cdot\>y|)>|)>\<leqslant\><around*|(|-<around*|(|<around*|(|-\<lambda\>|)>\<cdot\>x|)>|)>>.
+      As
+
+      <\equation*>
+        <around*|(|-<around*|(|<around*|(|-\<lambda\>|)>\<cdot\>y|)>|)>\<equallim\><rsub|def><around*|(|<around*|(|-1|)>\<cdot\><around*|(|<around*|(|<around*|(|-1|)>\<cdot\>\<lambda\>|)>\<cdot\>y|)>|)>\<equallim\><rsub|<text|<reference|associativity
+        of the product of extnded reals>>><around*|(|<around*|(|-1|)>\<cdot\><around*|(|-1|)>|)><around*|(|\<lambda\>\<cdot\>y|)>=\<lambda\>\<cdot\>y
+      </equation*>
+
+      and
+
+      <\equation*>
+        <around*|(|-<around*|(|<around*|(|-\<lambda\>|)>\<cdot\>x|)>|)>\<equallim\><rsub|def><around*|(|<around*|(|-1|)>\<cdot\><around*|(|<around*|(|<around*|(|-1|)>\<cdot\>\<lambda\>|)>\<cdot\>x|)>|)>\<equallim\><rsub|<text|<reference|associativity
+        of the product of extnded reals>>><around*|(|<around*|(|-1|)>\<cdot\><around*|(|-1|)>|)><around*|(|\<lambda\>\<cdot\>x|)>=\<lambda\>\<cdot\>x
+      </equation*>
+
+      it follows that
+
+      <\equation*>
+        \<lambda\>\<cdot\>y\<less\>\<lambda\>\<cdot\>x
+      </equation*>
     </enumerate>
   </proof>
 
   We have to be very carefull if we do sums on elements of
   <math|<wide|\<bbb-R\>|\<wide-bar\>>> for example if <math|x=10,y=4> and
-  <math|z=\<infty\>> then <math|x+z=y+z=\<infty\>> however <math|x\<neq\>y>
+  <math|z=\<infty\>> then <math|x+z=y+z=\<infty\>> however <math|x\<neq\>y>,
   also <math|x+z\<leqslant\>y+z> however <math|x\<nleqslant\>y>. The
   following theorems shows what is possible.
 
@@ -1113,12 +1531,16 @@
 
       <item>if <math|x+z\<less\>y+z> we have <math|x\<less\>y>
 
-      <item>if <math|x+z=y> we have <math|x=y-z>
+      <item>if <math|x+z=y> we have <math|x=y-z\<equallim\><rsub|def>y+<around*|(|-z|)>>
+      [where <math|y-z> is well defined]
 
       <item>if <math|x+z\<leqslant\>y> we have
-      <math|x\<leqslant\>y+<around*|(|-z|)>>
+      <math|x\<leqslant\>y-z\<equallim\><rsub|def>y+<around*|(|-z|)>> [where
+      <math|y-z> is well defined]
 
-      <item>if <math|x+z\<less\>y> we have <math|x\<less\>y+<around*|(|-z|)>>
+      <item>if <math|x+z\<less\>y> we have
+      <math|x\<less\>y-x\<equallim\><rsub|def>y+<around*|(|-z|)>> [where
+      <math|y-z> is well defined]
 
       <item>if <math|x\<leqslant\>y+z> we have
       <math|x+<around*|(|-z|)>\<leqslant\>y>
@@ -1132,31 +1554,35 @@
 
     <\enumerate>
       <item>Assume <math|x+z=y+z> and consider the following possibilities
-      for <math|x,y> when
+      for <math|x,y>\ 
 
       <\description>
-        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then as
-        <math|x+z=y+z> we have <math|<around*|(|x+z|)>-z=<around*|(|y+z|)>-z\<Rightarrow\>x=y>
+        <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then
+        <math|x+<rsub|\<bbb-R\>>z=y+<rsub|\<bbb-R\>>z> so that <math|x=y>
 
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then
-        <math|x+z\<neq\>y+z=\<infty\>> so this does not apply
+        <math|x+z\<in\>\<bbb-R\>> and <math|y+z=\<infty\>> giving the
+        contradiction <math|x+z\<neq\>y+z> so this case does not apply.
 
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>>then
-        <math|x+z\<neq\>y+z=-\<infty\>> so this does not apply
+        <math|x+z\<in\>\<bbb-R\>> and <math|y+z=-\<infty\>> giving the
+        contradiction <math|x+z\<neq\>y+z> so this case does not apply.
 
         <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|\<infty\>=x+z\<neq\>y+z> so this does not apply
+        <math|x+z=\<infty\>> and <math|y+x\<in\>\<bbb-R\>> giving the
+        contradiction <math|x+z\<neq\>y+z> so this case does not apply.
 
-        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then <math|x=y>
+        <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then <math|x=y>.
 
         <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|\<infty\>=x+z\<neq\>y+z=-\<infty\>> so this does not apply
+        <math|x+z=\<infty\>\<neq\>-\<infty\>=y+z> so this does not apply.
 
         <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|-\<infty\>=x+z\<neq\>y+z> so this does not apply
+        <math|x+z=-\<infty\>> and <math|y+z\<in\>\<bbb-R\>> giving the
+        contradiction <math|x+z\<neq\>y+z> so this does not apply.
 
         <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then
-        <math|-\<infty\>=x+z\<neq\>y+z=\<infty\>> so this does not apply
+        <math|x+z=-\<infty\>\<neq\>y+z=\<infty\>> so this does not apply.
 
         <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then <math|x=y>
       </description>
@@ -1174,17 +1600,17 @@
         <math|x\<leqslant\>y>
 
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>>then
-        <math|x+z\<nleqslant\>y+z=-\<infty\>> so this does not apply
+        <math|x+z\<nleqslant\>-\<infty\>=y+z> so this does not apply.
 
         <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|\<infty\>=x+z\<nleqslant\>y+z> so this does not apply
+        <math|\<infty\>=x+z\<nleqslant\>y+z> so this does not apply.
 
         <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then
         <math|x\<leqslant\>y>
 
         <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|\<infty\>=x+z\<nleqslant\>y+z=-\<infty\>> so this does not
-        apply
+        <math|x+z=\<infty\>\<nleqslant\>-\<infty\>=y+z> so this does not
+        apply.
 
         <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
         <math|x\<less\>y\<Rightarrow\>x\<leqslant\>y>
@@ -1202,22 +1628,25 @@
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>>>then as
-        <math|x+z\<less\>y+z> we have <math|<around*|(|x+z|)>-z\<less\><around*|(|y+z|)>-z\<Rightarrow\>x\<less\>y>
+        <math|x+z\<less\>y+z> we have using the properties of the real
+        numbers that <math|x\<less\>y>
 
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>then
         <math|x\<less\>y>
 
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>>>then
-        <math|x+z\<nless\>y+z=-\<infty\>> so this does not apply
+        <math|x+z\<in\>\<bbb-R\>> and <math|y+z=-\<infty\>> so that
+        <math|x+z\<nless\>y+z> so this does not apply.
 
         <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
-        <math|\<infty\>=x+z\<nless\>y+z> so this does not apply
+        <math|x+z=\<infty\>> and <math|y+x\<in\>\<bbb-R\>> giving the
+        contradiction <math|x+z\<nless\>y+z> so this does not apply.
 
         <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>>>then
-        <math|\<infty\>=x+z\<nless\>y+z=\<infty\>> so this does not apply
+        <math|x+z=y+z\<Rightarrow\>x+z\<nless\>y+z> so this does not apply.
 
         <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|\<infty\>=x+z\<nless\>y+z=-\<infty\>> so this does not apply
+        <math|\<infty\>=x+z\<nless\>y+z=-\<infty\>> so this does not apply.
 
         <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then
         <math|x\<less\>y>
@@ -1225,16 +1654,16 @@
         <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>>>then <math|x\<less\>y>
 
         <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>then
-        <math|-\<infty\>=x+z\<nless\>y+z=-\<infty\>> so this does not apply
+        <math|x+z-\<infty\>\<nless\>-\<infty\>=y+z> so this does not apply.
       </description>
 
-      So in all cases that apply we have <math|x\<less\>y>
+      So in all cases that apply we have <math|x\<less\>y>.
 
       <item>If <math|x+z=y> we have for <math|x> the following possibilities
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>>>then <math|y\<in\>\<bbb-R\>> and we
-        have <math|x=y+<around*|(|-z|)>>
+        have <math|x=y+<rsub|\<bbb-R\>><around*|(|-z|)>=y+<around*|(|-z|)>>
 
         <item*|<math|x=\<infty\>>>then <math|y=\<infty\>> and we have
         <math|x=\<infty\>=\<infty\>+<around*|(|-z|)>=y+<around*|(|-z|)>>
@@ -1253,7 +1682,7 @@
 
         <\description>
           <item*|<math|y\<in\>\<bbb-R\>>>then
-          <math|x\<leqslant\>y+<around*|(|-z|)>>
+          <math|x\<leqslant\>y+<rsub|\<bbb-R\>><around*|(|-z|)>=y+<around*|(|-z|)>>
 
           <item*|<math|y=\<infty\>>>then <math|x\<leqslant\>\<infty\>=\<infty\>+<around*|(|-z|)>\<Rightarrow\>x\<leqslant\>y+<around*|(|-z|)>>
         </description>
@@ -1279,7 +1708,8 @@
       possibilities
 
       <\description>
-        <item*|<math|x\<in\>\<bbb-R\>>>then we have for <math|> either
+        <item*|<math|x\<in\>\<bbb-R\>>>then we have as
+        <math|x+z\<nless\>-\<infty\>> for <math|y> <math|> either
 
         <\description>
           <item*|<math|y\<in\>\<bbb-R\>>>then by the properties of the reals
@@ -1291,12 +1721,13 @@
         <item*|<math|x=\<infty\>>>then <math|x+z=\<infty\>\<less\>y> a
         contradiction so this does not apply
 
-        <item*|<math|x=-\<infty\>>>then we have the following possibilities
-        for <math|y>
+        <item*|<math|x=-\<infty\>>>then we have as
+        <math|x+z\<nless\>-\<infty\>> the following possibilities for
+        <math|y>
 
         <\description>
           <item*|<math|y\<in\>\<bbb-R\>>>then
-          <math|x=-\<infty\>\<less\>y-z\<Rightarrow\>x\<less\>y+<around*|(|-z|)>>
+          <math|x=-\<infty\>\<less\>y+<around*|(|-z|)>\<Rightarrow\>x\<less\>y+<around*|(|-z|)>>
 
           <item*|<math|y=\<infty\>>>then <math|x=-\<infty\>\<less\>\<infty\>=\<infty\>+<around*|(|-z|)>=y+<around*|(|-z|)>\<Rightarrow\>x\<less\>y+<around*|(|-z|)>>
         </description>
@@ -1309,13 +1740,17 @@
 
       <\description>
         <item*|<math|x\<in\>\<bbb-R\>>>then for <math|y> we have the
-        following possibilities (as <math|-\<infty\>+z=-\<infty\>\<less\>x>)
+        following possibilities
 
         <\description>
           <item*|<math|y\<in\>\<bbb-R\>>>then
           <math|x+<around*|(|-z|)>\<leqslant\>y>
 
           <item*|<math|y=\<infty\>>>then <math|x+<around*|(|-z|)>\<leqslant\>\<infty\>=y\<Rightarrow\>x+<around*|(|-z|)>\<leqslant\>y>
+
+          <item*|<math|y=-\<infty\>>>then as <math|x\<in\>\<bbb-R\>> that
+          <math|x\<nleqslant\>-\<infty\>=y+z> a contradiction, so this case
+          does not applly.
         </description>
 
         <item*|<math|x=\<infty\>>>then <math|y+z=\<infty\>> so that
@@ -1327,14 +1762,41 @@
 
       so in all cases we have <math|x+<around*|(|-z|)>\<leqslant\>y>
 
-      <item>If <math|x\<less\>y+z> then for <math|x> we have the following
-      possibilities for <math|x> (as <math|\<infty\>\<nless\>y+z>)
+      <item>If <math|x\<less\>y+z> then we have the following possibilities
+      for <math|x>
 
       <\description>
-        <item*|<math|x\<in\>\<bbb-R\>>>then
-        <math|x+<around*|(|-z|)>\<less\>y>
+        <item*|<math|x\<in\>\<bbb-R\>>>then we have the following
+        possibilities for <math|y>
 
-        <item*|<math|x=-\<infty\>>>then <math|x+<around*|(|-z|)>=-\<infty\>\<less\>y\<Rightarrow\>x+<around*|(|-z|)>\<less\>y>
+        <\description>
+          <item*|<math|y\<in\>\<bbb-R\>>>then by the properties of the real
+          numbers we have <math|x+<around*|(|-z|)>\<less\>y>
+
+          <item*|<math|y=\<infty\>>>then as
+          <math|x+<around*|(|-z|)>\<in\>\<bbb-R\>> we have
+          <math|x+<around*|(|-z|)>\<less\>y>
+
+          <item*|<math|y=-\<infty\>>>then as <math|x\<in\>\<bbb-R\>> we have
+          <math|x\<nless\>-\<infty\>=y+z> so this case does not apply
+        </description>
+
+        <item*|<math|x=-\<infty\>>>then we have the following possibilities
+        for <math|y>
+
+        <\description>
+          <item*|<math|y\<in\>\<bbb-R\>>>then as
+          <math|x+<around*|(|-z|)>=-\<infty\>\<less\>y>\ 
+
+          <item*|<math|y=\<infty\>>>then <math|x+<around*|(|-z|)>=-\<infty\>\<less\>\<infty\>=y>
+
+          <item*|<math|y=-\<infty\>>>then
+          <math|x=-\<infty\>\<nless\>-\<infty\>=y+z> so this case does not
+          apply.
+        </description>
+
+        <item*|<math|x=\<infty\>>>then <math|x=\<infty\>\<nless\>y+z> so this
+        case does not apply
       </description>
 
       so in all cases we have <math|x+<around*|(|-z|)>\<less\>y>
@@ -1350,65 +1812,101 @@
   </theorem>
 
   <\proof>
-    As <math|x+z>, <math|y+z> must be well defined we have only the following
-    cases to consider (the others are not well defined)
+    We must consider the following possible cases (excluding the undefined
+    sums and the cases where <math|x\<nleqslant\>y>
 
     <\description>
       <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z\<in\>\<bbb-R\>>>then
-      using the properties of the real numbers we have that
-      <math|x\<leqslant\>y=x+z\<leqslant\>y+z>
+      using the properties of <math|\<bbb-R\>> we have
+      <math|x+z\<leqslant\>y+z>.
 
       <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z=\<infty\>>>then
-      <math|x+z=\<infty\>=y+z\<Rightarrowlim\>x+z\<leqslant\>y+z>
+      <math|x+y\<leqslant\>\<infty\>=y+z>.
 
       <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z=-\<infty\>>>then
-      <math|x+z=-\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>
+      <math|x+z=-\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>.
 
       <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>\<wedge\>z\<in\>\<bbb-R\>>>then
-      <math|x+z\<less\>\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>
+      <math|x+z\<leqslant\>\<infty\>=y+z>.
 
       <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>\<wedge\>z=\<infty\>>>then
-      <math|x+z\<less\>\<infty\>=y+z\<Rightarrow\>x+z\<less\>y+z>
+      <math|x+z=\<infty\>=y+z\<Rightarrow\>x+u\<leqslant\>y+z>.
 
-      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>\<wedge\>x\<in\>\<bbb-R\>>>then
-      <math|x\<nleqslant\>y> so this does not count
+      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>\<wedge\>z=-\<infty\>>>as
+      <math|y+z> is not well defined this does not apply.
 
-      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>\<wedge\>x=-\<infty\>>>then
-      <math|x\<nleqslant\>y> so this does not count
+      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>\<wedge\>z\<in\>\<bbb-R\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
 
-      <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z\<in\>\<bbb-R\>>>then
-      <math|x\<nleqslant\>y> so this does not count
+      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>\<wedge\>z=\<infty\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
 
-      <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z=\<infty\>>>then
-      <math|x+z=\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>
+      <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=-\<infty\>\<wedge\>z=-\<infty\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
+
+      <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z\<in\>\<bbb-R\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
+
+      <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z=\<infty\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
+
+      <item*|<math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z=-\<infty\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
 
       <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>\<wedge\>z\<in\>\<bbb-R\>>>then
-      <math|x+z=y+z\<Rightarrow\>x+z\<leqslant\>y+z>
+      <math|x+z=\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>.
 
-      <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>\<wedge\>z=\<infty\>>>then
-      <math|x+z\<leqslant\>y+z\<Rightarrow\>x+z\<leqslant\>y+z>
+      <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>\<wedge\>z=\<infty\>>><math|x+z=\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>.
 
-      <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>\<wedge\>z\<in\>\<bbb-R\>>>then
-      <math|x\<nleqslant\>y> this does not count
+      <item*|<math|x=\<infty\>\<wedge\>y=\<infty\>\<wedge\>z=-\<infty\>>>as
+      <math|y+z> is not well defined this does not apply.
+
+      <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>\<wedge\>z\<in\>\<bbb-R\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
+
+      <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>\<wedge\>z=\<infty\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
+
+      <item*|<math|x=\<infty\>\<wedge\>y=-\<infty\>\<wedge\>z=-\<infty\>>>as
+      <math|x\<nleqslant\>y> this does not apply.
+
+      <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z\<in\>\<bbb-R\>>>then
+      <math|x+z=-\<infty\>\<leqslant\>y+z>
+
+      <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z=\<infty\>>>then
+      <math|x+z=-\<infty\>\<less\>\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>.
 
       <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>\<wedge\>z=-\<infty\>>>then
       <math|x+z=-\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>
 
       <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>\<wedge\>z\<in\>\<bbb-R\>>>then
-      <math|x+z=-\<infty\>\<less\>\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>
+      <math|x+z=-\<infty\>\<less\>\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>.
+
+      <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>\<wedge\>z=\<infty\>>>as
+      <math|x+z> is not well defined this does not apply.
+
+      <item*|<math|x=-\<infty\>\<wedge\>y=\<infty\>\<wedge\>z=-\<infty\>>>as
+      <math|y+z> is not well defined this does not apply.
+
+      <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>\<wedge\>z\<in\>\<bbb-R\>>>then
+      <math|x+z=-\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>.
+
+      <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>\<wedge\>z=\<infty\>>>as
+      <math|y+z> is not well defined this does not apply.
 
       <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>\<wedge\>z=-\<infty\>>>then
-      <math|z+z=-\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>
+      <math|x+z=-\<infty\>=y+z\<Rightarrow\>x+z\<leqslant\>y+z>.
     </description>
 
-    proving the first part of the theorem.
-
-    For the second part if <math|x\<less\>y\<Rightarrow\>x\<leqslant\>y\<Rightarrowlim\><rsub|first
+    proving the first part of the theorem. For the second part if
+    <math|x\<less\>y\<Rightarrow\>x\<leqslant\>y\<Rightarrowlim\><rsub|first
     part>x+z\<leqslant\>y+z>. Assume now that <math|x+z=y+z> then as
-    <math|z\<in\>\<bbb-R\>> we have by the previous theorem (see
-    <reference|x+z=y+z=\<gtr\>x=y>) that <math|x=y> contradicting
+    <math|z\<in\>\<bbb-R\>> we have by the previous theorem [see
+    <reference|x+z=y+z=\<gtr\>x=y>] that <math|x=y> contradicting
     <math|x\<less\>y> so we must have that <math|x+z\<less\>y+z>.
   </proof>
+
+  TODO
 
   <\theorem>
     <label|difference in extented reals>Let
@@ -1557,11 +2055,6 @@
     </description>
   </proof>
 
-  <\note>
-    To simplify notations we adopt the notation <math|a-b> to mean
-    <math|a+<around*|(|-b|)>> so <math|a-\<infty\>=a+<around*|(|-\<infty\>|)>>
-  </note>
-
   Another combination that we need is the following
 
   <\theorem>
@@ -1673,12 +2166,10 @@
     </description>
   </proof>
 
-  \;
-
   Although <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>>,+|\<rangle\>>>
   is not a group we can prove that <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>><rsub|+>,+|\<rangle\>>>
   where <math|<wide|\<bbb-R\>|\<wide-bar\>><rsub|+>=<around*|{|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>\|x\<geqslant\>0|}>>
-  is a abelian semi-group (see <reference|semi-group>) which is import
+  is a abelian semi-group (see <reference|semi-group>) which is important
   because then all the theorems about generalized sums and semi-groups are
   valid.
 
@@ -11518,9 +12009,9 @@
 
 <\references>
   <\collection>
-    <associate|(a-b)+(c-d)=(a+c)-(b+d)|<tuple|17.26|616>>
-    <associate|-sup A=inf -A|<tuple|17.32|619>>
-    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.24|616>>
+    <associate|(a-b)+(c-d)=(a+c)-(b+d)|<tuple|17.27|616>>
+    <associate|-sup A=inf -A|<tuple|17.33|619>>
+    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.26|616>>
     <associate|0\<less\>cos(x),sin(x)|<tuple|18.49|701>>
     <associate|Abel-Dirichlet|<tuple|18.15|681>>
     <associate|Balls and convergence domains|<tuple|18.12|679>>
@@ -11529,17 +12020,18 @@
     <associate|Power series|<tuple|18.2|677>>
     <associate|Young's inequality|<tuple|18.42|694>>
     <associate|a serie of extented positive reals converges always and is
-    independent of the order|<tuple|17.125|666>>
-    <associate|a-b=c-d=\<gtr\>a+d=c+b|<tuple|17.27|616>>
-    <associate|absolute value in the extended reals|<tuple|17.33|620>>
+    independent of the order|<tuple|17.126|666>>
+    <associate|a-b=c-d=\<gtr\>a+d=c+b|<tuple|17.28|616>>
+    <associate|absolute value in the extended reals|<tuple|17.34|620>>
     <associate|absolute value on the extended real
-    properties|<tuple|17.35|620>>
-    <associate|adding of positive extented reals|<tuple|17.29|617>>
+    properties|<tuple|17.36|620>>
+    <associate|adding of positive extented reals|<tuple|17.30|617>>
     <associate|alternative definition of limit in the extented
-    reals|<tuple|17.93|653>>
-    <associate|alternative graph of sum of functions|<tuple|17.111|662>>
-    <associate|associativity of inifinite series|<tuple|17.131|672>>
-    <associate|associativity of series of extended reals|<tuple|17.129|670>>
+    reals|<tuple|17.94|653>>
+    <associate|alternative graph of sum of functions|<tuple|17.112|662>>
+    <associate|associativity of inifinite series|<tuple|17.132|672>>
+    <associate|associativity of series of extended reals|<tuple|17.130|670>>
+    <associate|associativity of the product of extnded reals|<tuple|17.20|?>>
     <associate|auto-1|<tuple|17|607>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|621>>
     <associate|auto-11|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|-\<infty\>>>|621>>
@@ -11589,27 +12081,27 @@
     <associate|auto-8|<tuple|17.2|620>>
     <associate|auto-9|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<bbb-R\>>>|621>>
     <associate|ball inclusion|<tuple|18.11|679>>
-    <associate|closed sets in the extended reals|<tuple|17.41|622>>
+    <associate|closed sets in the extended reals|<tuple|17.42|622>>
     <associate|condition for supremum (infinum) to be
     infinite|<tuple|17.13|609>>
     <associate|continuity in R is continuity of extended
-    reals|<tuple|17.43|623>>
+    reals|<tuple|17.44|623>>
     <associate|convention of sup inf|<tuple|17.16|?>>
     <associate|convergence domain and balls|<tuple|18.7|678>>
     <associate|convergence domain of exponential function|<tuple|18.18|682>>
     <associate|convergence in real implies that lim inferior = lim
-    superior|<tuple|17.82|650>>
+    superior|<tuple|17.83|650>>
     <associate|convergence of derived powerseries|<tuple|18.22|683>>
     <associate|convergence of powerseries (1)|<tuple|18.6|677>>
     <associate|convergence radius|<tuple|18.8|678>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.130|672>>
+    sum|<tuple|17.131|672>>
     <associate|d'Alembert|<tuple|18.17|681>>
-    <associate|definition of limit in the extented reals|<tuple|17.83|651>>
+    <associate|definition of limit in the extented reals|<tuple|17.84|651>>
     <associate|density of the extented reals|<tuple|17.9|609>>
     <associate|derivative of the exponential function|<tuple|18.24|686>>
-    <associate|difference in extented reals|<tuple|17.23|615>>
-    <associate|distributivity in the extented reals|<tuple|17.30|617>>
+    <associate|difference in extented reals|<tuple|17.25|615>>
+    <associate|distributivity in the extented reals|<tuple|17.31|617>>
     <associate|eq 13.1.300|<tuple|17.3|618>>
     <associate|eq 13.11.40|<tuple|17.31|654>>
     <associate|eq 13.12.40|<tuple|17.32|655>>
@@ -11697,10 +12189,10 @@
     <associate|eq 17.9.033|<tuple|17.11|?>>
     <associate|eq 17.9.515|<tuple|18.9|683>>
     <associate|equivalence of limits on increasing (decreasing) sequences of
-    extented reals|<tuple|17.89|652>>
+    extented reals|<tuple|17.90|652>>
     <associate|every non empty set in the extented reals has a
     limit|<tuple|17.12|609>>
-    <associate|existance of lim inf and lim sup|<tuple|17.71|647>>
+    <associate|existance of lim inf and lim sup|<tuple|17.72|647>>
     <associate|exp exceeds every number|<tuple|18.31|689>>
     <associate|exp is a bijection|<tuple|18.32|689>>
     <associate|exp is convex|<tuple|18.28|688>>
@@ -11709,78 +12201,78 @@
     <associate|exp(z)|<tuple|18.19|682>>
     <associate|exponential as power|<tuple|18.30|688>>
     <associate|extented reals|<tuple|17.2|607>>
-    <associate|finite infinite sum means finite terms|<tuple|17.122|665>>
+    <associate|finite infinite sum means finite terms|<tuple|17.123|665>>
     <associate|finite sum of constants in the extented
-    reals|<tuple|17.116|664>>
-    <associate|finite sum of denumerable sums|<tuple|17.128|669>>
-    <associate|finite sum of extented reals|<tuple|17.103|661>>
-    <associate|finite sum of extented reals properties|<tuple|17.115|664>>
-    <associate|finite sum of extented reals starting at n|<tuple|17.104|661>>
+    reals|<tuple|17.117|664>>
+    <associate|finite sum of denumerable sums|<tuple|17.129|669>>
+    <associate|finite sum of extented reals|<tuple|17.104|661>>
+    <associate|finite sum of extented reals properties|<tuple|17.116|664>>
+    <associate|finite sum of extented reals starting at n|<tuple|17.105|661>>
     <associate|finite sum of extented reals written as infinite
-    sum|<tuple|17.123|665>>
-    <associate|finite sum of limits of functions|<tuple|17.112|663>>
+    sum|<tuple|17.124|665>>
+    <associate|finite sum of limits of functions|<tuple|17.113|663>>
     <associate|finite sum of limits of scalar product with
-    functions|<tuple|17.114|663>>
+    functions|<tuple|17.115|663>>
     <associate|finite sum of non negative extented reals is non
-    negative|<tuple|17.105|661>>
+    negative|<tuple|17.106|661>>
     <associate|general strict positive powers|<tuple|18.38|692>>
     <associate|generalized power|<tuple|18.35|690>>
     <associate|generalized sequence of extended and remove
-    zeroes|<tuple|17.136|675>>
+    zeroes|<tuple|17.137|675>>
     <associate|generalized sequence of extended reals and
-    zeroes|<tuple|17.135|674>>
+    zeroes|<tuple|17.136|674>>
     <associate|generalized serie of extended positive
-    numbers|<tuple|17.134|674>>
-    <associate|generalized sum of the extended reals|<tuple|17.133|673>>
-    <associate|gnerating basis vor the extended reals|<tuple|17.38|?>>
-    <associate|graph of sum of functions|<tuple|17.110|662>>
-    <associate|increasing (decreasing) sequence|<tuple|17.68|646>>
-    <associate|increasing (decreasing) sequence converges|<tuple|17.70|646>>
+    numbers|<tuple|17.135|674>>
+    <associate|generalized sum of the extended reals|<tuple|17.134|673>>
+    <associate|gnerating basis vor the extended reals|<tuple|17.39|?>>
+    <associate|graph of sum of functions|<tuple|17.111|662>>
+    <associate|increasing (decreasing) sequence|<tuple|17.69|646>>
+    <associate|increasing (decreasing) sequence converges|<tuple|17.71|646>>
     <associate|independence of limit inf and limit sup of start
-    index|<tuple|17.73|648>>
+    index|<tuple|17.74|648>>
     <associate|inequality of Abel|<tuple|18.14|680>>
-    <associate|infinity can not be a right limit|<tuple|17.49|625>>
-    <associate|interchange infinite and finite sum|<tuple|17.127|668>>
-    <associate|left (right) continuity|<tuple|17.60|633>>
-    <associate|left and right limit implies limit|<tuple|17.56|632>>
-    <associate|left limit of a function|<tuple|17.50|625>>
-    <associate|left, right limit of sum and scalar product|<tuple|17.55|627>>
-    <associate|lemma 15.75|<tuple|17.98|660>>
+    <associate|infinity can not be a right limit|<tuple|17.50|625>>
+    <associate|interchange infinite and finite sum|<tuple|17.128|668>>
+    <associate|left (right) continuity|<tuple|17.61|633>>
+    <associate|left and right limit implies limit|<tuple|17.57|632>>
+    <associate|left limit of a function|<tuple|17.51|625>>
+    <associate|left, right limit of sum and scalar product|<tuple|17.56|627>>
+    <associate|lemma 15.75|<tuple|17.99|660>>
     <associate|lemma 17.2|<tuple|18.16|681>>
     <associate|lemma 17.38|<tuple|18.41|693>>
-    <associate|lim inf -xn|<tuple|17.78|648>>
-    <associate|lim inf and lim sup|<tuple|17.72|648>>
-    <associate|lim inf and lim sup inequality|<tuple|17.75|?>>
-    <associate|lim inf lim sup basic properties|<tuple|17.74|?>>
-    <associate|lim sup lim inf inequality (1)|<tuple|17.76|?>>
-    <associate|lim sup xn+x|<tuple|17.77|648>>
+    <associate|lim inf -xn|<tuple|17.79|648>>
+    <associate|lim inf and lim sup|<tuple|17.73|648>>
+    <associate|lim inf and lim sup inequality|<tuple|17.76|?>>
+    <associate|lim inf lim sup basic properties|<tuple|17.75|?>>
+    <associate|lim sup lim inf inequality (1)|<tuple|17.77|?>>
+    <associate|lim sup xn+x|<tuple|17.78|648>>
     <associate|liminf and limsup properties for sum
-    product|<tuple|17.80|649>>
-    <associate|limit and absolut value|<tuple|17.94|655>>
-    <associate|limit and continuity in the extented reals|<tuple|17.59|633>>
-    <associate|limit and translation of indexes|<tuple|17.86|?>>
+    product|<tuple|17.81|649>>
+    <associate|limit and absolut value|<tuple|17.95|655>>
+    <associate|limit and continuity in the extented reals|<tuple|17.60|633>>
+    <associate|limit and translation of indexes|<tuple|17.87|?>>
     <associate|limit at infinity of ascending (descending)
-    functions|<tuple|17.64|642>>
-    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.66|645>>
-    <associate|limit for f\<less\>=g|<tuple|17.65|643>>
-    <associate|limit n|<tuple|17.100|660>>
-    <associate|limit of 1/f|<tuple|17.99|660>>
-    <associate|limit of a constant function|<tuple|17.53|626>>
-    <associate|limit of a function|<tuple|17.52|626>>
-    <associate|limit of constant extented real|<tuple|17.85|651>>
-    <associate|limit of constants|<tuple|17.92|653>>
-    <associate|limit of finite sums in the extented reals|<tuple|17.108|662>>
-    <associate|limit of functions and sequences|<tuple|17.91|653>>
-    <associate|limit of monotone functions|<tuple|17.63|640>>
-    <associate|limit points|<tuple|17.47|625>>
-    <associate|limit points and plus or min infinity|<tuple|17.48|625>>
-    <associate|limit xi+x|<tuple|17.87|651>>
-    <associate|limits at infinity|<tuple|17.58|632>>
-    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.101|660>>
+    functions|<tuple|17.65|642>>
+    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.67|645>>
+    <associate|limit for f\<less\>=g|<tuple|17.66|643>>
+    <associate|limit n|<tuple|17.101|660>>
+    <associate|limit of 1/f|<tuple|17.100|660>>
+    <associate|limit of a constant function|<tuple|17.54|626>>
+    <associate|limit of a function|<tuple|17.53|626>>
+    <associate|limit of constant extented real|<tuple|17.86|651>>
+    <associate|limit of constants|<tuple|17.93|653>>
+    <associate|limit of finite sums in the extented reals|<tuple|17.109|662>>
+    <associate|limit of functions and sequences|<tuple|17.92|653>>
+    <associate|limit of monotone functions|<tuple|17.64|640>>
+    <associate|limit points|<tuple|17.48|625>>
+    <associate|limit points and plus or min infinity|<tuple|17.49|625>>
+    <associate|limit xi+x|<tuple|17.88|651>>
+    <associate|limits at infinity|<tuple|17.59|632>>
+    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.102|660>>
     <associate|notation for limit of increasing/decreasing
-    sequences|<tuple|17.90|653>>
+    sequences|<tuple|17.91|653>>
     <associate|open sets and addition scalar
-    multiplication|<tuple|17.44|623>>
+    multiplication|<tuple|17.45|623>>
     <associate|pi|<tuple|18.48|701>>
     <associate|power series 0|<tuple|18.3|677>>
     <associate|properties of exp (1)|<tuple|18.27|688>>
@@ -11789,47 +12281,48 @@
     <associate|properties of general strict power|<tuple|18.37|690>>
     <associate|properties of log|<tuple|18.34|689>>
     <associate|properties of the limit in the extented
-    reals|<tuple|17.95|655>>
-    <associate|right limit|<tuple|17.51|625>>
-    <associate|series and product with a scalar|<tuple|17.118|665>>
-    <associate|series are increasing|<tuple|17.106|661>>
-    <associate|series of extended reals and zeroes|<tuple|17.126|666>>
+    reals|<tuple|17.96|655>>
+    <associate|right limit|<tuple|17.52|625>>
+    <associate|series and product with a scalar|<tuple|17.119|665>>
+    <associate|series are increasing|<tuple|17.107|661>>
+    <associate|series of extended reals and zeroes|<tuple|17.127|666>>
     <associate|series of positive extented reals is
-    increasing|<tuple|17.119|665>>
+    increasing|<tuple|17.120|665>>
     <associate|sets for basis of topology on the extented
-    reals|<tuple|17.37|621>>
-    <associate|special cases of limits|<tuple|17.61|633>>
+    reals|<tuple|17.38|621>>
+    <associate|special cases of limits|<tuple|17.62|633>>
     <associate|sum and order relation in the extented
-    reals|<tuple|17.121|665>>
-    <associate|sum from -infinity to infinity|<tuple|17.132|673>>
-    <associate|sum of extented reals and product|<tuple|17.107|661>>
+    reals|<tuple|17.122|665>>
+    <associate|sum from -infinity to infinity|<tuple|17.133|673>>
+    <associate|sum of extented reals and product|<tuple|17.108|661>>
     <associate|sum of extented reals is indepenent of order the
-    reals|<tuple|17.124|665>>
-    <associate|sum of series in the extended reals|<tuple|17.120|?>>
+    reals|<tuple|17.125|665>>
+    <associate|sum of series in the extended reals|<tuple|17.121|?>>
     <associate|sup and inf in real and extended reals|<tuple|17.14|?>>
-    <associate|sup of set and sum|<tuple|17.31|618>>
-    <associate|sup,inf sum of monotone sequences|<tuple|17.79|649>>
+    <associate|sup of set and sum|<tuple|17.32|618>>
+    <associate|sup,inf sum of monotone sequences|<tuple|17.80|649>>
     <associate|supremum (infinum) of increasing (decreasing) sequence is
-    indpendent of start|<tuple|17.88|652>>
+    indpendent of start|<tuple|17.89|652>>
     <associate|supremum, infinum of extented real set|<tuple|17.11|609>>
     <associate|supremum, infinum of real set|<tuple|17.10|609>>
     <associate|the limit inferior is lower then limit
-    superior|<tuple|17.81|650>>
+    superior|<tuple|17.82|650>>
     <associate|the positive extented reals form a abelian
-    semi-group|<tuple|17.28|617>>
+    semi-group|<tuple|17.29|617>>
     <associate|the topology on the extented reals is
-    Hausdorff|<tuple|17.46|624>>
-    <associate|topology on extented reals|<tuple|17.39|621>>
-    <associate|topology on the extended reals properties|<tuple|17.40|?>>
+    Hausdorff|<tuple|17.47|624>>
+    <associate|topology on extented reals|<tuple|17.40|621>>
+    <associate|topology on the extended reals properties|<tuple|17.41|?>>
     <associate|trigoniometic properties|<tuple|18.45|696>>
     <associate|trigoniometric functions|<tuple|18.44|696>>
-    <associate|uniqueness of limits in extented reals|<tuple|17.54|626>>
+    <associate|uniqueness of limits in extented reals|<tuple|17.55|626>>
     <associate|usefull properties of open sets in the extented reals
-    |<tuple|17.62|640>>
-    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.21|612>>
-    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.19|611>>
-    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.20|612>>
-    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.22|614>>
+    |<tuple|17.63|640>>
+    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.23|612>>
+    <associate|x.y \<less\> 0 or \<gtr\> 0|<tuple|17.19|?>>
+    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.21|611>>
+    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.22|612>>
+    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.24|614>>
     <associate|x\<less\>y=\<gtr\>x+1/n\<less\>y|<tuple|17.8|?>>
     <associate|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf and
     y\<less\>\<gtr\>-inf|<tuple|17.7|?>>

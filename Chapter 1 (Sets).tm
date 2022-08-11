@@ -9293,10 +9293,10 @@
   <section|Groups>
 
   <\definition>
-    <index|semi-group><label|semi-group><label|semi-group>A semi-group is a
-    pair <math|<around*|\<langle\>|G,\<odot\>|\<rangle\>>> where <math|G> is
-    a set and <math|\<odot\>:G\<times\>G\<rightarrow\>G> a function such that
-    (here <math|\<odot\><around*|(|x,y|)>> is noted as <math|x\<odot\>y>)
+    <label|semi-group><index|semi-group>A semi-group is a pair
+    <math|<around*|\<langle\>|G,\<odot\>|\<rangle\>>> where <math|G> is a set
+    and <math|\<odot\>:G\<times\>G\<rightarrow\>G> a function such that (here
+    <math|\<odot\><around*|(|x,y|)>> is noted as <math|x\<odot\>y>)
 
     <\enumerate>
       <item><dueto|Neutral Element><math|\<exists\>e\<in\>G\<vdash\>\<forall\>x\<in\>G\<vdash\>x\<odot\>e=e\<odot\>x>
@@ -26872,7 +26872,7 @@
     <associate|section of a well ordered class|<tuple|2.195|74>>
     <associate|selfindexed family|<tuple|2.104|56>>
     <associate|selfindexed family image|<tuple|2.108|57>>
-    <associate|semi-group|<tuple|semi-group|87>>
+    <associate|semi-group|<tuple|3.1|87>>
     <associate|sequence|<tuple|5.75|133>>
     <associate|sequence of classes|<tuple|5.78|?>>
     <associate|set is included in its set of upper and lower
