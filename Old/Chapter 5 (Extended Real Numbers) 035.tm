@@ -2006,6 +2006,8 @@
     </description>
   </proof>
 
+  TODO
+
   We have also the distributive law in <math|<wide|\<bbb-R\>|\<wide-bar\>>>
   as is proved in the following theorem, but we have to be carefull because
   for example <math|\<infty\>\<cdot\><around*|(|1-3|)>=\<infty\>\<cdot\><around*|(|-2|)>=-\<infty\>>
@@ -2108,6 +2110,8 @@
 
     So in all cases we have <math|\<alpha\>\<cdot\><around*|(|x+y|)>=\<alpha\>\<cdot\>x+\<alpha\>\<cdot\>y>
   </proof>
+
+  TODO
 
   The next two theorems show how the supremum and infinum behaves when a sum
   or product is involved.
@@ -2698,6 +2702,8 @@
     </equation*>
   </proof>
 
+  TODO
+
   <\theorem>
     <label|closed sets in the extended reals>We have the following closed
     sets in <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> where
@@ -2726,18 +2732,16 @@
     <\enumerate>
       <item>As <math|y\<in\><wide|\<bbb-R\>|\<wide-bar\>>\\<around*|[|-\<infty\>,x|]>\<Leftrightarrow\>y\<in\>\<neg\><around*|(|-\<infty\>\<leqslant\>y\<wedge\>y\<leqslant\>x|)>\<Leftrightarrow\><around*|(|y\<less\>-\<infty\>\<vee\>x\<less\>y|)>\<Leftrightarrow\>x\<less\>y\<Leftrightarrow\>y\<in\><around*|]|x,\<infty\>|]>>
       we have that <math|<wide|\<bbb-R\>|\<wide-bar\>>\\<around*|[|-\<infty\>,x|]>=<around*|]|x,\<infty\>|]>>
-      by definition a open set, hence <math|<around*|[|-\<infty\>,x|]>> is
-      closed.
+      by definition a open set
 
       <item>As <math|y\<in\><wide|\<bbb-R\>|\<wide-bar\>>\\<around*|[|x,\<infty\>|]>\<Leftrightarrow\>y\<in\>\<neg\><around*|(|x\<leqslant\>y\<wedge\>y\<leqslant\>\<infty\>|)>\<Leftrightarrow\><around*|(|y\<less\>x\<vee\>\<infty\>\<less\>y|)>\<Leftrightarrow\>y\<less\>x\<Leftrightarrow\>y\<in\><around*|[|-\<infty\>,x|[>>
       we have that <math|<wide|\<bbb-R\>|\<wide-bar\>>\\<around*|[|x,\<infty\>|]>=<around*|[|-\<infty\>,x|[>>
-      by definiton a open set, hence <math|<around*|[|x,\<infty\>|]>> is a
-      closed set.
+      by definiton a open set.
 
       <item><math|<around*|{|x|}>=<around*|[|-\<infty\>,x|]><big|cap><around*|[|x,\<infty\>|]>>
-      by (1) and (2) a intersection of closed sets and thus closed.
+      by (1) and (2) a intersection of closed sets and thus closed
 
-      <item>This is trivial as <math|<wide|\<bbb-R\>|\<wide-bar\>>=<around*|[|-\<infty\>,\<infty\>|]>>,
+      <item>This is trivial as <math|<wide|\<bbb-R\>|\<wide-bar\>>=<around*|[|-\<infty\>,\<infty\>|]>>
 
       <item>As <math|<wide|\<bbb-R\>|\<wide-bar\>>\\<around*|{|-\<infty\>,\<infty\>|}>=\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
       <math|>we have that <math|<wide|\<bbb-R\>|\<wide-bar\>>\\<around*|{|-\<infty\>,\<infty\>|}>>
@@ -2755,9 +2759,8 @@
   <math|<wide|\<bbb-R\>|\<wide-bar\>>.>
 
   <\theorem>
-    <label|open sets in the extended reals condition>Let
-    <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> and <math|x\<in\>U> a open
-    set then we have\ 
+    Let <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> and <math|x\<in\>U> a
+    open set then we have\ 
 
     <\enumerate>
       <item>If <math|x\<in\>\<bbb-R\>> then there exists a
@@ -2779,10 +2782,10 @@
     open set then\ 
 
     <\enumerate>
-      <item>If <math|x\<in\>\<bbb-R\>> we have, as
+      <item>If <math|x\<in\>\<bbb-R\>> we have as
       <math|\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> is a basis for
-      <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>, the following
-      possible cases to consider
+      <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> the following
+      possible cases
 
       <\description>
         <item*|<math|\<exists\>\<delta\>\<gtr\>0,y\<in\>\<bbb-R\>\<vdash\>x\<in\><around*|]|y-\<delta\>,y+\<delta\>|[>>>then
@@ -2805,13 +2808,13 @@
         <math|\<varepsilon\>=\<delta\>-x\<gtr\>0> then we have
         <math|x+\<varepsilon\>\<less\>\<delta\>> and
         <math|-\<infty\>\<less\>x-\<varepsilon\>> so that
-        <math|x\<in\><around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>\<subseteq\><around*|[|-\<infty\>,\<delta\>|[>\<subseteq\>U>.
+        <math|x\<in\><around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>\<subseteq\><around*|[|-\<infty\>,\<delta\>|[>\<subseteq\>U>
       </description>
 
-      <item>If <math|x=\<infty\>> then we have, as
+      <item>If <math|x=\<infty\>> then we have as
       <math|\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> is a basis for
-      <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>, the following
-      possible cases to consider
+      <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> the following
+      possible cases
 
       <\description>
         <item*|<math|\<exists\>\<delta\>\<gtr\>0,y\<in\>\<bbb-R\>\<vdash\>x\<in\><around*|]|y-\<delta\>,y+\<delta\>|[>>>then
@@ -2819,14 +2822,14 @@
         so this will never happen.
 
         <item*|<math|\<exists\>\<delta\>\<in\>\<bbb-R\>\<vdash\>x\<in\><around*|]|\<delta\>,\<infty\>|]>>>then
-        as <math|1\<less\>\<infty\>=x=\<infty\>> we have, if we take
-        <math|\<varepsilon\>=max<around*|(|\<delta\>,1|)>\<gtr\>0>, that
+        as <math|1\<less\>\<infty\>=x\<leqslant\>\<infty\>> we have if we
+        take <math|\<varepsilon\>=max<around*|(|\<delta\>,1|)>> we have
         <math|\<delta\>\<leqslant\>\<varepsilon\>> so that
         <math|x\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
 
         <item*|<math|\<exists\>\<delta\>\<in\>\<bbb-R\>\<vdash\>x\<in\><around*|[|-\<infty\>,\<delta\>|[>>>then
         <math|\<infty\>=x\<less\>\<delta\>\<less\>\<infty\>> a contradiction
-        so this will not apply
+        so thiw will not apply
       </description>
 
       <item>If <math|x=-\<infty\>> then we have as
@@ -2841,7 +2844,7 @@
 
         <item*|<math|\<exists\>\<delta\>\<in\>\<bbb-R\>\<vdash\>x\<in\><around*|]|\<delta\>,\<infty\>|]>>>then
         <math|-\<infty\>\<less\>\<delta\>\<less\>x=-\<infty\>> a
-        contradiction.
+        contradiction
 
         <item*|<math|\<exists\>\<delta\>\<in\>\<bbb-R\>\<vdash\>x\<in\><around*|[|-\<infty\>,\<delta\>|[>>>then
         as <math|-\<infty\>\<less\>-1> we have if we take
@@ -2853,7 +2856,7 @@
   </proof>
 
   We show now that continuous functions to <math|\<bbb-R\>> are continuous in
-  <math|<wide|\<bbb-R\>|\<wide-bar\>>>.
+  <math|<wide|\<bbb-R\>|\<wide-bar\>>>
 
   <\theorem>
     <label|continuity in R is continuity of extended reals>Let
@@ -2865,12 +2868,12 @@
   </theorem>
 
   <\proof>
-    Let <math|x\<in\>X> and <math|f<around*|(|x|)>\<in\>U> then as
+    Let <math|x\<in\>X> and <math|U\<in\>f<around*|(|x|)>> then as
     <math|f<around*|(|x|)>\<in\>\<bbb-R\>> we have by the above theorem a
     <math|\<varepsilon\>\<gtr\>0> such that
-    <math|<around*|]|f<around*|(|x|)>-\<varepsilon\>,f<around*|(|x+\<varepsilon\>|)>|[>\<subseteq\>U>.
+    <math|<around*|]|f<around*|(|x|)>-\<varepsilon\>,f<around*|(|x+\<varepsilon\>|)>|[>>.
     As <math|f:X\<rightarrow\>\<bbb-R\>> is continuous there exists a
-    <math|V\<in\>\<cal-T\>> such that <math|f<around*|(|V|)>\<subseteq\><around*|]|f<around*|(|x|)>-\<varepsilon\>,f<around*|(|x0+\<varepsilon\>|)>|[>\<subseteq\>U>
+    <math|V\<in\>\<cal-T\>> such that <math|f<around*|(|X|)>\<subseteq\><around*|]|f<around*|(|x|)>-\<varepsilon\>,f<around*|(|x0+\<varepsilon\>|)>|[>\<subseteq\>U>
     proving that <math|f:X-<wide|\<bbb-R\>|\<wide-bar\>>> is continuous.
   </proof>
 
@@ -2878,179 +2881,162 @@
     <label|open sets and addition scalar multiplication>If
     <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> then if
     <math|\<delta\>\<in\>\<bbb-R\>> we have that
-
-    <\enumerate>
-      <item><math|\<delta\>+U=<around*|{|\<delta\>+x\|x\<in\>U|}>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>.
-
-      <item>If <math|\<delta\>\<neq\>0> we have
-      \ <math|\<delta\>\<cdot\>U=<around*|{|\<delta\>\<cdot\>x\|x\<in\>U|}>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>.
-    </enumerate>
+    <math|\<delta\>+U=<around*|{|\<delta\>+x\|x\<in\>U|}>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+    and if <math|\<delta\>\<neq\>0> we have
+    \ <math|\<delta\>\<cdot\>U=<around*|{|\<delta\>\<cdot\>x\|x\<in\>U|}>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
   </theorem>
 
   <\proof>
-    \ 
+    \ If <math|x\<in\>\<delta\>+U> then there exists a <math|u\<in\>U> such
+    that <math|x=\<delta\>+u> we have then for <math|u> the following
+    possibilities
 
-    <\enumerate>
-      <item>If <math|x\<in\>\<delta\>+U> then there exists a <math|u\<in\>U>
-      such that <math|x=\<delta\>+u>, \ we have now for <math|u> the
-      following possibilities
+    <\description>
+      <item*|<math|u\<in\>\<bbb-R\>>>then there exists a
+      <math|\<varepsilon\>\<gtr\>0> such that
+      <math|u\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>
+      then <math|u-\<varepsilon\>\<less\>u\<less\>u-\<varepsilon\>\<Rightarrow\><around*|(|u-\<varepsilon\>|)>+\<delta\>\<less\>u+\<delta\>\<less\><around*|(|u+\<varepsilon\>|)>+\<delta\>>
+      proving that <math|x=u+\<delta\>\<in\><around*|]|<around*|(|u-\<varepsilon\>|)>+\<delta\>,<around*|(|u+\<varepsilon\>|)>+\<delta\>|[>=<around*|]|<around*|(|u+\<delta\>|)>-\<varepsilon\>,<around*|(|u+\<delta\>|)>+\<varepsilon\>|[>>.
+      Also if <math|y\<in\><around*|]|<around*|(|u+\<delta\>|)>-\<varepsilon\>,<around*|(|u+\<delta\>|)>+\<varepsilon\>|[>>
+      then <math|<around*|(|u+\<delta\>|)>-\<varepsilon\>\<less\>y\<less\><around*|(|u+\<delta\>|)>+\<varepsilon\>\<Rightarrow\>u-\<varepsilon\>\<less\>y-\<delta\>\<less\>u+\<varepsilon\>\<Rightarrow\>y-\<delta\>\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>
+      so that <math|y=\<delta\>+<around*|(|y-\<delta\>|)>\<in\>\<delta\>+U>
+      proving that <math|x\<in\><around*|]|<around*|(|u+\<delta\>|)>-\<varepsilon\>,<around*|(|u+\<delta\>|)>+\<varepsilon\>|[>\<subseteq\>\<delta\>+U>.
+      This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|x\<in\>B\<subseteq\>\<delta\>+U>
+
+      <item*|<math|u=\<infty\>>>then there exists a
+      <math|\<varepsilon\>\<gtr\>0> such that
+      <math|u=\<infty\>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>,
+      take now <math|<around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>> then
+      <math|x=\<delta\>+\<infty\>=\<infty\>\<in\><around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>>.
+      If now <math|y\<in\><around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>>
+      then we have either <math|y=\<infty\>=\<delta\>+\<infty\>=\<delta\>+u\<in\>\<delta\>+U>
+      or <math|y\<in\>\<bbb-R\>> so that <math|\<varepsilon\>+\<delta\>\<less\>y\<less\>\<infty\>\<Rightarrow\>\<varepsilon\>\<less\>y-\<delta\>\<less\>\<infty\>\<Rightarrow\>y-\<delta\>\<subset\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U\<Rightarrow\>y=\<delta\>+y-\<delta\>\<in\>\<delta\>+U>
+      proving that <math|x\<in\><around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>\<subseteq\>\<delta\>+U>.
+      This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|x\<in\>B\<subseteq\>\<delta\>+U>.
+
+      <item*|<math|u=-\<infty\>>>then there exists a
+      <math|\<varepsilon\>\<gtr\>0> such that
+      <math|u=-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>,
+      take now <math|<around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>> then
+      <math|x=\<delta\>+<around*|(|-\<infty\>|)>=-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>>.
+      If now <math|y\<in\><around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>>
+      the we have either <math|y=-\<infty\>=\<delta\>+<around*|(|-\<infty\>|)>=\<delta\>+u\<in\>\<delta\>+U>
+      or <math|y\<in\>\<bbb-R\>> so that <math|-\<infty\>\<less\>y\<less\>-\<varepsilon\>+\<delta\>\<Rightarrow\>-\<infty\>\<less\>y-\<delta\>\<less\>-\<varepsilon\>\<Rightarrow\>y-\<delta\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>+<around*|(|y-\<delta\>|)>\<in\>\<delta\>+U>
+      proving that <math|x\<in\><around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>\<subseteq\>U>.
+      This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|x\<in\>B\<subseteq\>U>
+    </description>
+
+    As in all possible cases we have <math|\<forall\>x\<in\>\<delta\>+U> that
+    <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+    such that <math|x\<in\>B\<subseteq\>\<delta\>+U> proving that
+    <math|\<delta\>+U> is a open set.
+
+    If <math|x\<in\>\<delta\>\<cdot\>U> then there exists a <math|u\<in\>U>
+    such that <math|x=\<delta\>\<cdot\>u> we have then for <math|u> the
+    following possibilities
+
+    <\description>
+      <item*|<math|u\<in\>\<bbb-R\>>>then there exists a
+      <math|\<varepsilon\>\<gtr\>0> such that
+      <math|u\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>
+      so that <math|u-\<varepsilon\>\<less\>u\<less\>u+\<varepsilon\>>
+      consider then the following possibilities for <math|\<delta\>\<neq\>0>:
 
       <\description>
-        <item*|<math|u\<in\>\<bbb-R\>>>then using <reference|open sets in the
-        extended reals condition> there exists a
-        <math|\<varepsilon\>\<gtr\>0> such that
-        <math|u\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>,
-        then <math|u-\<varepsilon\>\<less\>u\<less\>u-\<varepsilon\>\<Rightarrow\><around*|(|u-\<varepsilon\>|)>+\<delta\>\<less\>u+\<delta\>\<less\><around*|(|u+\<varepsilon\>|)>+\<delta\>>
-        proving that <math|x=u+\<delta\>\<in\><around*|]|<around*|(|u-\<varepsilon\>|)>+\<delta\>,<around*|(|u+\<varepsilon\>|)>+\<delta\>|[>=<around*|]|<around*|(|u+\<delta\>|)>-\<varepsilon\>,<around*|(|u+\<delta\>|)>+\<varepsilon\>|[>>.
-        Also if <math|y\<in\><around*|]|<around*|(|u+\<delta\>|)>-\<varepsilon\>,<around*|(|u+\<delta\>|)>+\<varepsilon\>|[>>
-        then <math|<around*|(|u+\<delta\>|)>-\<varepsilon\>\<less\>y\<less\><around*|(|u+\<delta\>|)>+\<varepsilon\>\<Rightarrow\>u-\<varepsilon\>\<less\>y-\<delta\>\<less\>u+\<varepsilon\>\<Rightarrow\>y-\<delta\>\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>
-        so that <math|y=\<delta\>+<around*|(|y-\<delta\>|)>\<in\>\<delta\>+U>
-        proving that <math|x\<in\><around*|]|<around*|(|u+\<delta\>|)>-\<varepsilon\>,<around*|(|u+\<delta\>|)>+\<varepsilon\>|[>\<subseteq\>\<delta\>+U>.
+        <item*|<math|0\<less\>\<delta\>>>then
+        <math|\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>\<less\>\<delta\>\<cdot\>u\<less\>\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>>
+        so that <math|x=\<delta\>\<cdot\>u\<in\><around*|]|\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>,\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>|[>=<around*|]|u\<cdot\>\<delta\>-\<rho\>,u\<cdot\>\<delta\>+\<rho\>|[>>
+        where <math|\<rho\>=\<delta\>\<cdot\>\<varepsilon\>\<gtr\>0>. If now
+        <math|y\<in\><around*|]|u\<cdot\>\<delta\>-\<rho\>,u*\<cdot\>\<delta\>+\<rho\>|[>\<Rightarrow\>u\<cdot\>\<delta\>-\<rho\>\<less\>y\<less\>u\<cdot\>\<delta\>+\<rho\>\<Rightarrow\><frac|u\<cdot\>\<delta\>|\<delta\>>-<frac|\<rho\>|\<delta\>>\<less\><frac|y|\<delta\>>\<less\><frac|u\<cdot\>\<delta\>|\<delta\>>+<frac|\<rho\>|\<delta\>>\<Rightarrow\>u-\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>u+\<varepsilon\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
+        proving that <math|x\<in\><around*|]|\<delta\>\<cdot\>u-\<rho\>,\<delta\>\<cdot\>u+\<rho\>|[>\<subseteq\>\<delta\>\<cdot\>U>.
         This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-        such that <math|x\<in\>B\<subseteq\>\<delta\>+U>.
+        such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
 
-        <item*|<math|u=\<infty\>>>then using <reference|open sets in the
-        extended reals condition> there exists a
-        <math|\<varepsilon\>\<gtr\>0> such that
-        <math|u=\<infty\>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>,
-        take now <math|<around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>> then
-        <math|x=\<delta\>+\<infty\>=\<infty\>\<in\><around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>>.
-        If now <math|y\<in\><around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>>
-        then we have either <math|y=\<infty\>=\<delta\>+\<infty\>=\<delta\>+u\<in\>\<delta\>+U>
-        or <math|y\<in\>\<bbb-R\>> so that
-        <math|\<varepsilon\>+\<delta\>\<less\>y\<less\>\<infty\>\<Rightarrow\>\<varepsilon\>\<less\>y-\<delta\>\<less\>\<infty\>\<Rightarrow\>y-\<delta\>\<subset\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U\<Rightarrow\>y=\<delta\>+<around*|(|y-\<delta\>|)>\<in\>\<delta\>+U>
-        proving that <math|x\<in\><around*|]|\<varepsilon\>+\<delta\>,\<infty\>|]>\<subseteq\>\<delta\>+U>.
+        <item*|<math|\<delta\>\<less\>0>>then
+        <math|\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>\<less\>\<delta\>\<cdot\>u\<less\>\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>\<Rightarrow\>x=\<delta\>\<cdot\>u\<in\><around*|]|\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>,\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>|[>=<around*|]|\<delta\>\<cdot\>u-\<rho\>,\<delta\>\<cdot\>u+\<rho\>|[>>
+        where <math|\<rho\>=-\<delta\>\<cdot\>\<varepsilon\>\<gtr\>0>. If now
+        <math|y\<in\><around*|]|u\<cdot\>\<delta\>-\<rho\>,u\<cdot\>\<delta\>+\<rho\>|[>\<Rightarrow\>u\<cdot\>\<delta\>-\<rho\>\<less\>y\<less\>u\<cdot\>\<delta\>+\<rho\>\<Rightarrow\><frac|u\<cdot\>\<delta\>|\<delta\>>+<frac|\<rho\>|\<delta\>>\<less\><frac|y|\<delta\>>\<less\><frac|u\<cdot\>\<delta\>|y>-<frac|\<rho\>|\<delta\>>\<Rightarrow\>u-\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>u+\<varepsilon\>\<Rightarrow\><frac|y|\<rho\>>\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>
+        so that <math|y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
+        proving that <math|x\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>\<delta\>\<cdot\>U>.
         This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-        such that <math|x\<in\>B\<subseteq\>\<delta\>+U>.
-
-        <item*|<math|u=-\<infty\>>>then using <reference|open sets in the
-        extended reals condition> there exists a
-        <math|\<varepsilon\>\<gtr\>0> such that
-        <math|u=-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>,
-        take now <math|<around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>>
-        then <math|x=\<delta\>+<around*|(|-\<infty\>|)>=-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>>.
-        If now <math|y\<in\><around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>>
-        the we have either <math|y=-\<infty\>=\<delta\>+<around*|(|-\<infty\>|)>=\<delta\>+u\<in\>\<delta\>+U>
-        or <math|y\<in\>\<bbb-R\>> so that
-        <math|-\<infty\>\<less\>y\<less\>-\<varepsilon\>+\<delta\>\<Rightarrow\>-\<infty\>\<less\>y-\<delta\>\<less\>-\<varepsilon\>\<Rightarrow\>y-\<delta\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>+<around*|(|y-\<delta\>|)>\<in\>\<delta\>+U>
-        proving that <math|x\<in\><around*|[|-\<infty\>,-\<varepsilon\>+\<delta\>|[>\<subseteq\>\<delta\>+U>.
-        This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-        such that <math|x\<in\>B\<subseteq\>\<sigma\>+U>
+        such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
       </description>
 
-      As in all possible cases we have <math|\<forall\>x\<in\>\<delta\>+U>
-      that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-      such that <math|x\<in\>B\<subseteq\>\<delta\>+U> it follows that
-      <math|\<delta\>+U> is a open set.
-
-      <item>If <math|x\<in\>\<delta\>\<cdot\>U> then there exists a
-      <math|u\<in\>U> such that <math|x=\<delta\>\<cdot\>u> we have then for
-      <math|u> the following possibilities
+      <item*|<math|u=\<infty\>>>then there exists a
+      <math|\<varepsilon\>\<gtr\>0> such that
+      <math|u\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>, we
+      have to consider the following cases for <math|\<delta\>>
 
       <\description>
-        <item*|<math|u\<in\>\<bbb-R\>>>then using <reference|open sets in the
-        extended reals condition> \ there exists a
-        <math|\<varepsilon\>\<gtr\>0> such that
-        <math|u\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>
-        so that <math|u-\<varepsilon\>\<less\>u\<less\>u+\<varepsilon\>>
-        consider then the following possibilities for
-        <math|\<delta\>\<neq\>0>:
+        <item*|<math|0\<less\>\<delta\>>>then
+        <math|x=\<delta\>\<cdot\>u=\<infty\>\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>.
+        If <math|y\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>
+        then if <math|y=\<infty\>=\<delta\>\<cdot\>u> we have
+        <math|y=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U> and if
+        <math|y\<in\>\<bbb-R\>> we have that
+        <math|\<varepsilon\>\<cdot\>\<delta\>\<less\>y\<less\>\<infty\>> so
+        that <math|\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>\<infty\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>.
+        So we have proved that <math|x\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>\<subseteq\>U>
+        and thus that \ <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
 
-        <\description>
-          <item*|<math|0\<less\>\<delta\>>>then
-          <math|\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>\<less\>\<delta\>\<cdot\>u\<less\>\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>>
-          so that <math|x=\<delta\>\<cdot\>u\<in\><around*|]|\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>,\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>|[>=<around*|]|u\<cdot\>\<delta\>-\<rho\>,u\<cdot\>\<delta\>+\<rho\>|[>>
-          where <math|\<rho\>=\<delta\>\<cdot\>\<varepsilon\>\<gtr\>0>. If
-          now <math|y\<in\><around*|]|u\<cdot\>\<delta\>-\<rho\>,u*\<cdot\>\<delta\>+\<rho\>|[>\<Rightarrow\>u\<cdot\>\<delta\>-\<rho\>\<less\>y\<less\>u\<cdot\>\<delta\>+\<rho\>\<Rightarrow\><frac|u\<cdot\>\<delta\>|\<delta\>>-<frac|\<rho\>|\<delta\>>\<less\><frac|y|\<delta\>>\<less\><frac|u\<cdot\>\<delta\>|\<delta\>>+<frac|\<rho\>|\<delta\>>\<Rightarrow\>u-\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>u+\<varepsilon\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
-          proving that <math|x\<in\><around*|]|\<delta\>\<cdot\>u-\<rho\>,\<delta\>\<cdot\>u+\<rho\>|[>\<subseteq\>\<delta\>\<cdot\>U>.
-          This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-          such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
-
-          <item*|<math|\<delta\>\<less\>0>>then
-          <math|\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>\<less\>\<delta\>\<cdot\>u\<less\>\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>\<Rightarrow\>x=\<delta\>\<cdot\>u\<in\><around*|]|\<delta\>\<cdot\>u+\<delta\>\<cdot\>\<varepsilon\>,\<delta\>\<cdot\>u-\<delta\>\<cdot\>\<varepsilon\>|[>=<around*|]|\<delta\>\<cdot\>u-\<rho\>,\<delta\>\<cdot\>u+\<rho\>|[>>
-          where <math|\<rho\>=-\<delta\>\<cdot\>\<varepsilon\>\<gtr\>0>. If
-          now <math|y\<in\><around*|]|u\<cdot\>\<delta\>-\<rho\>,u\<cdot\>\<delta\>+\<rho\>|[>\<Rightarrow\>u\<cdot\>\<delta\>-\<rho\>\<less\>y\<less\>u\<cdot\>\<delta\>+\<rho\>\<Rightarrow\><frac|u\<cdot\>\<delta\>|\<delta\>>+<frac|\<rho\>|\<delta\>>\<less\><frac|y|\<delta\>>\<less\><frac|u\<cdot\>\<delta\>|y>-<frac|\<rho\>|\<delta\>>\<Rightarrow\>u-\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>u+\<varepsilon\>\<Rightarrow\><frac|y|\<rho\>>\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>U>
-          so that <math|y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
-          proving that <math|x\<in\><around*|]|u-\<varepsilon\>,u+\<varepsilon\>|[>\<subseteq\>\<delta\>\<cdot\>U>.
-          This proves that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-          such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
-        </description>
-
-        <item*|<math|u=\<infty\>>>then using <reference|open sets in the
-        extended reals condition> \ there exists a
-        <math|\<varepsilon\>\<gtr\>0> such that
-        <math|u\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>, we
-        have to consider the following cases for <math|\<delta\>>
-
-        <\description>
-          <item*|<math|0\<less\>\<delta\>>>then
-          <math|x=\<delta\>\<cdot\>u=\<infty\>\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>.
-          If <math|y\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>
-          then if <math|y=\<infty\>=\<delta\>\<cdot\>u> we have
-          <math|y=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U> and if
-          <math|y\<in\>\<bbb-R\>> we have that
-          <math|\<varepsilon\>\<cdot\>\<delta\>\<less\>y\<less\>\<infty\>> so
-          that <math|\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>\<infty\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>.
-          So we have proved that <math|x\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>\<subseteq\>U>
-          and thus that \ <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-          such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
-
-          <item*|<math|\<delta\>\<less\>0>>then
-          <math|x=\<delta\>\<cdot\>u=-\<infty\>\<in\><around*|[|-\<infty\>,\<varepsilon\>\<cdot\>\<delta\>|[>>.
-          If <math|y\<in\><around*|[|-\<infty\>,\<varepsilon\>\<cdot\>\<delta\>|[>>
-          then if <math|y=-\<infty\>=\<delta\>\<cdot\>u> we have
-          <math|y=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U> and if
-          <math|y\<in\>\<bbb-R\>> we have that
-          <math|-\<infty\>\<less\>y\<less\>\<varepsilon\>\<cdot\>\<delta\>>
-          so that <math|\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>\<infty\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
-          So we have proved that <math|x\<in\><around*|[|-\<infty\>,\<varepsilon\>\<cdot\>\<delta\>|[>\<subseteq\>\<delta\>\<cdot\>U>
-          and thus that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-          such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
-        </description>
-
-        <item*|<math|u=-\<infty\>>>then using <reference|open sets in the
-        extended reals condition> \ there exists a
-        <math|\<varepsilon\>\<gtr\>0> such that
-        <math|u\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>,
-        we have to consider the following cases for <math|\<delta\>>
-
-        <\description>
-          <item*|<math|0\<less\>\<delta\>>>then
-          <math|x=\<delta\>\<cdot\>u=-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>\<cdot\>\<delta\>|[>>.
-          If <math|y\<in\><around*|[|-\<infty\>,-\<varepsilon\>\<cdot\>\<delta\>|[>>
-          then if <math|y=-\<infty\>> we have
-          <math|y=\<delta\>\<cdot\><around*|(|-\<infty\>|)>=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U>
-          and if <math|y\<in\>\<bbb-R\>> we have that
-          <math|-\<infty\>\<less\>y\<less\>-\<varepsilon\>\<cdot\>\<delta\>>
-          so that <math|-\<infty\>\<less\><frac|y|\<delta\>>\<less\>-\<varepsilon\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>.
-          So we have proved that <math|x\<in\><around*|[|-\<infty\>,-\<varepsilon\>\<cdot\>\<delta\>|[>\<subseteq\>U>
-          and thus that \ <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-          such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
-
-          <item*|<math|\<delta\>\<less\>0>>then
-          <math|x=\<delta\>\<cdot\>u=\<infty\>\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>.
-          If <math|y\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>
-          then if <math|y=\<infty\>> we have
-          <math|y=\<delta\>\<cdot\>-\<infty\>=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U>
-          and if <math|y\<in\>\<bbb-R\>> we have that
-          <math|\<varepsilon\>\<cdot\>\<delta\>\<less\>y\<less\>\<infty\>> so
-          that <math|-\<infty\>\<less\><frac|y|\<delta\>>\<less\>\<varepsilon\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|[|-\<infty\>,\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
-          So we have proved that <math|x\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>\<subseteq\>\<delta\>\<cdot\>U>
-          and thus that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-          such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
-        </description>
+        <item*|<math|\<delta\>\<less\>0>>then
+        <math|x=\<delta\>\<cdot\>u=-\<infty\>\<in\><around*|[|-\<infty\>,\<varepsilon\>\<cdot\>\<delta\>|[>>.
+        If <math|y\<in\><around*|[|-\<infty\>,\<varepsilon\>\<cdot\>\<delta\>|[>>
+        then if <math|y=-\<infty\>=\<delta\>\<cdot\>u> we have
+        <math|y=\<delta\>\<cdot\>\<infty\>=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U>
+        and if <math|y\<in\>\<bbb-R\>> we have that
+        <math|-\<infty\>\<less\>y\<less\>\<varepsilon\>\<cdot\>\<delta\>> so
+        that <math|\<varepsilon\>\<less\><frac|y|\<delta\>>\<less\>\<infty\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
+        So we have proved that <math|x\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>\<delta\>\<cdot\>U>
+        and thus that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
       </description>
 
-      As in all possible cases we have <math|\<forall\>x\<in\>\<delta\>\<cdot\>U>
-      \ <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
-      such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U> which proves
-      that <math|\<delta\>\<cdot\>U> is open.
-    </enumerate>
+      <item*|<math|u=-\<infty\>>>then there exists a
+      <math|\<varepsilon\>\<gtr\>0> such that
+      <math|u\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>, we
+      have to consider the following cases for <math|\<delta\>>
+
+      <\description>
+        <item*|<math|0\<less\>\<delta\>>>then
+        <math|x=\<delta\>\<cdot\>u=-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>\<cdot\>\<delta\>|[>>.
+        If <math|y\<in\><around*|[|-\<infty\>,-\<varepsilon\>\<cdot\>\<delta\>|[>>
+        then if <math|y=-\<infty\>> we have
+        <math|y=\<delta\>\<cdot\><around*|(|-\<infty\>|)>=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U>
+        and if <math|y\<in\>\<bbb-R\>> we have that
+        <math|-\<infty\>\<less\>y\<less\>-\<varepsilon\>\<cdot\>\<delta\>> so
+        that <math|-\<infty\>\<less\><frac|y|\<delta\>>\<less\>-\<varepsilon\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>.
+        So we have proved that <math|x\<in\><around*|[|-\<infty\>,-\<varepsilon\>\<cdot\>\<delta\>|[>\<subseteq\>U>
+        and thus that \ <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
+
+        <item*|<math|\<delta\>\<less\>0>>then
+        <math|x=\<delta\>\<cdot\>u=\<infty\>\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>.
+        If <math|y\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>>
+        then if <math|y=\<infty\>> we have
+        <math|y=\<delta\>\<cdot\>-\<infty\>=\<delta\>\<cdot\>u\<in\>\<delta\>\<cdot\>U>
+        and if <math|y\<in\>\<bbb-R\>> we have that
+        <math|\<varepsilon\>\<cdot\>\<delta\>\<less\>y\<less\>\<infty\>> so
+        that <math|-\<infty\>\<less\><frac|y|\<delta\>>\<less\>\<varepsilon\>\<Rightarrow\><frac|y|\<delta\>>\<in\><around*|[|-\<infty\>,\<varepsilon\>|[>\<subseteq\>U\<Rightarrow\>y=\<delta\>\<cdot\><frac|y|\<delta\>>\<in\>\<delta\>\<cdot\>U>
+        So we have proved that <math|x\<in\><around*|]|\<varepsilon\>\<cdot\>\<delta\>,\<infty\>|]>\<subseteq\>\<delta\>\<cdot\>U>
+        and thus that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U>
+      </description>
+    </description>
+
+    As in all possible cases we have <math|\<forall\>x\<in\>\<delta\>\<cdot\>U>
+    that <math|\<exists\>B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+    such that <math|x\<in\>B\<subseteq\>\<delta\>\<cdot\>U> which proves that
+    <math|\<delta\>\<cdot\>U> is open.
   </proof>
 
   <\note>
-    The restrictions in the above theorem are needed, for example
-    <math|U=<around*|]|-1,1|[>> is a open set but
+    The restrictions in the above theorem are need for example is
+    <math|U=<around*|]|-1,1|[>> a open set then
     <math|0\<cdot\>U=0\<cdot\><around*|]|-1,1|[>=<around*|{|0|}>> a closed
     set. Also <math|\<infty\>+U=\<infty\>+<around*|]|-1,1|[>=<around*|{|\<infty\>|}>>
     a closed set.
@@ -3059,7 +3045,7 @@
   <\theorem>
     <label|the topology on the extented reals is
     Hausdorff><math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> is
-    Hausdorff (see <reference|Hausdorff spaces>).
+    Hausdorff (see <reference|Hausdorff spaces>)
   </theorem>
 
   <\proof>
@@ -3124,14 +3110,2785 @@
     Hausdorff.
   </proof>
 
-  <section|Sequences in <math|<wide|\<bbb-R\>|\<wide-bar\>>>>
+  <subsection|Limit of functions in <math|<wide|\<bbb-R\>|\<wide-bar\>>>>
 
-  \ 
+  <\definition>
+    <label|limit points><index|left limit point><index|right limit
+    point><index|limit point>Let <math|A\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have
+
+    <\enumerate>
+      <item><math|x> is a <with|font-series|bold|left limit point> of
+      <math|A> iff <math|\<forall\>V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|x\<in\>V> there exists a <math|y\<in\>A<big|cap>V> with
+      <math|y\<less\>x>
+
+      <item><math|y> is a <with|font-series|bold|right limit point> of
+      <math|A> iff <math|\<forall\>V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|x\<in\>V> there exists a <math|y\<in\>A<big|cap>V> with
+      <math|x\<less\>y>
+
+      <item><math|y> is a <with|font-series|bold|limit point> of <math|A> iff
+      <math|\<forall\>V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|x\<in\>V> there exists a <math|y\<in\>A<big|cap>V> with
+      <math|x\<neq\>y>
+    </enumerate>
+  </definition>
+
+  <\lemma>
+    <label|limit points and plus or min infinity>Let
+    <math|A\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> then we have\ 
+
+    <\enumerate>
+      <item>If <math|x> is a left limit point of <math|A> then
+      <math|-\<infty\>\<less\>x>
+
+      <item>If <math|x> is a right limit point of <math|A> then
+      <math|x\<less\>\<infty\>>
+    </enumerate>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|x> be a left limit point of <math|A> and assume that
+      <math|x=-\<infty\>> then for the open set
+      <math|<around*|[|-\<infty\>,1|[>> we have that
+      <math|x\<in\><around*|[|-\<infty\>,1|[>> and thus by definiton there
+      exists <math|y\<in\>A<big|cap><around*|[|-\<infty\>,1|[>> with
+      <math|y\<less\>x=-\<infty\>> a ontradiction.
+
+      <item>Let <math|x> be a right limit point of <math|A> and assume that
+      <math|x=\<infty\>> then for the open set
+      <math|<around*|]|1,\<infty\>|]>> we have that
+      <math|x\<in\><around*|]|1,\<infty\>|]>> and thus by definition there
+      exists <math|y\<in\>A<big|cap><around*|]|1,\<infty\>|]>> with
+      <math|\<infty\>=x\<less\>y> a contradiction.
+    </enumerate>
+  </proof>
+
+  <\remark>
+    <label|infinity can not be a right limit>If
+    <math|A\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> then \ <math|\<infty\>>
+    can not be a right limit point of <math|A> and <math|-\<infty\>> can not
+    be a left limit point of <math|A>
+  </remark>
+
+  <\proof>
+    This follows as there does not exists a
+    <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> with
+    <math|x\<less\>-\<infty\>> or <math|\<infty\>\<less\>x>
+  </proof>
+
+  <\definition>
+    <label|left limit of a function><index|left limit of a function>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function <math|x<rsub|0>,L\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+    then we say that <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+    if and only if <math|x<rsub|0>> is a left limit point of A and
+    <math|\<forall\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+    (see <reference|topology on extented reals>) with <math|L\<in\>U> there
+    exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+    <math|x<rsub|0>\<in\>V> so that <math|\<forall\>x\<in\>V<big|cap>A> with
+    <math|x\<less\>x<rsub|0>> we have <math|f<around*|(|x|)>\<in\>U>.
+    <math|L> is called the <with|font-series|bold|left limit of f at
+    <math|x<rsub|0>>.>
+  </definition>
+
+  <\definition>
+    <label|right limit><index|right limit of a function>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function <math|x<rsub|0>,L\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+    then we say that <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+    if and only if <math|x<rsub|0>> is a right limit point of <math|A> and
+    <math|\<forall\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+    (see <reference|topology on extented reals>) with <math|L\<in\>U> there
+    exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+    <math|x<rsub|0>\<in\>V> so that <math|\<forall\>x\<in\>V<big|cap>A> with
+    <math|x<rsub|0>\<less\>x> we have <math|f<around*|(|x|)>\<in\>U>.
+    <math|L> is called the <with|font-series|bold|right limit of f at
+    <math|x<rsub|0>>.>
+  </definition>
+
+  <\definition>
+    <label|limit of a function><index|limit of a function>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function <math|x<rsub|0>,L\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+    then we say that <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+    if and only if <math|x<rsub|0>> is a limit point of <math|A> and
+    <math|\<forall\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+    (see <reference|topology on extented reals>) with <math|L\<in\>U> there
+    exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+    <math|x<rsub|0>\<in\>V> so that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>x<rsub|0>>
+    we have <math|f<around*|(|x|)>\<in\>U>. <math|L> is called the
+    <with|font-series|bold|limit of f at <math|x<rsub|0>>.>
+  </definition>
+
+  Note that the limitation of limits of functions to left limit points, right
+  limit points or limit points is needed to have a unique limit (as is
+  suggested in the notation for a limit). For example if
+  <math|f:<around*|]|0,1|[>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is
+  defined by <math|x\<rightarrow\>2\<cdot\>x> so that <math|0> is not a left
+  limit point of <math|<around*|]|0,1|[>>, then if we take
+  <math|1,2\<in\><wide|\<bbb-R\>|\<wide-bar\>>> and
+  <math|U<rsub|1>,U<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+  with <math|1\<in\>U<rsub|1>,2\<in\>U<rsub|2>> we have for
+  <math|0\<in\><around*|]|-1,1|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+  that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>0> we have
+  <math|f<around*|(|x|)>\<in\>U<rsub|1>,U<rsub|2>> is satisfied vacuously.
+  The following theorem shows that the limits as defined above have indeed
+  unique limits and that the notation make sense.
+
+  <\example>
+    <label|limit of a constant function>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function,
+    <math|x<rsub|0>,L\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have
+
+    <\enumerate>
+      <item>If <math|x<rsub|0>> is a left limit point of <math|A>,
+      <math|x<rsub|0>\<in\>W> a open set and
+      <math|\<forall\>x\<in\>A<big|cap>W\<vdash\>x\<less\>x<rsub|0>> we have
+      <math|f<around*|(|x|)>=L> then <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+      <item>If <math|x<rsub|0>> is a a right limit point of <math|A>,
+      <math|x<rsub|0>\<in\>W> a open set and
+      <math|\<forall\>x\<in\>A<big|cap>W\<vdash\>x<rsub|0>\<less\>x> we have
+      <math|f<around*|(|x|)>=L> then <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+      <item>If <math|x<rsub|0>> is a limit point of <math|A>,
+      <math|x<rsub|0>\<in\>W> a open set and
+      <math|\<forall\>x\<in\>A<big|cap>W\<vdash\>x\<neq\>x<rsub|0>> we have
+      <math|f<around*|(|x|)>=L> then <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+    </enumerate>
+  </example>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>Let <math|U> be a open set in
+      <math|<wide|\<bbb-R\>|\<wide-bar\>>> such that <math|L\<in\>U> then if
+      <math|x\<in\>W<big|cap>A> with <math|x\<less\>x<rsub|0>> we have
+      <math|f<around*|(|x|)>=L\<in\>U> proving that
+      <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+      <item>Let <math|U> be a open set in
+      <math|<wide|\<bbb-R\>|\<wide-bar\>>> such that <math|L\<in\>U> then if
+      <math|x\<in\>W<big|cap>A> with <math|x<rsub|0>\<less\>x> we have
+      <math|f<around*|(|x|)>=L\<in\>U> proving that
+      <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+      <item>Let <math|U> be a open set in
+      <math|<wide|\<bbb-R\>|\<wide-bar\>>> such that <math|L\<in\>U> then if
+      <math|x\<in\>W<big|cap>A=A> with <math|x\<neq\>x<rsub|0>> we have
+      <math|f<around*|(|x|)>=L\<in\>U> proving that
+      <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+    </enumerate>
+  </proof>
+
+  <\theorem>
+    <label|uniqueness of limits in extented reals>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> and <math|L<rsub|1>,L<rsub|2>,x<rsub|0>\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+    then we have
+
+    <\enumerate>
+      <item>If <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L<rsub|1>>
+      and <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L<rsub|2>>
+      then <math|L<rsub|1>=L<rsub|2>>
+
+      <item>If <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L<rsub|1>>
+      and <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L<rsub|2>>
+      then <math|L<rsub|1>=L<rsub|2>>
+
+      <item>If <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L<rsub|1>>
+      and <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L<rsub|2>>
+      then <math|L<rsub|1>=L<rsub|2>>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    \ We prove this by contradiction
+
+    <\enumerate>
+      <item>Assume that <math|L<rsub|1>\<neq\>L<rsub|2>> then as
+      <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> is Hausdorff (see
+      <reference|the topology on the extented reals is Hausdorff>) there
+      exists <math|U<rsub|1>,U<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|L<rsub|1>\<in\>U<rsub|1>\<wedge\>L<rsub|2>\<in\>U<rsub|2>\<wedge\>U<rsub|1><big|cap>U<rsub|2>=\<emptyset\>>.
+      Then <math|\<exists\>V<rsub|1>,V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|x<rsub|0>\<in\>V<rsub|1>\<wedge\>x<rsub|0>\<in\>V<rsub|2>>
+      <math|\<wedge\>> <math|\<forall\>x\<in\>V<rsub|1><big|cap>A\<vdash\>x\<less\>x<rsub|0>>
+      we have <math|f<around*|(|x|)>\<in\>U<rsub|1>> <math|\<wedge\>>
+      <math|\<forall\>x\<in\>V<rsub|2><big|cap>A\<vdash\>x\<less\>x<rsub|0>>
+      we have <math|f<around*|(|x|)>\<in\>U<rsub|2>>. As <math|x<rsub|0>> is
+      a left limit point and <math|x<rsub|0>\<in\>V<rsub|1><big|cap>V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      there exists a <math|y\<in\><around*|(|V<rsub|1><big|cap>V<rsub|2>|)><big|cap>A>
+      with <math|y\<less\>x<rsub|0>> so that from the above we have
+      <math|f<around*|(|y|)>\<in\>U<rsub|1><big|cap>U<rsub|2>=\<emptyset\>> a
+      contradiction. So we must have <math|L<rsub|1>=L<rsub|2>>.
+
+      <item>Assume that <math|L<rsub|1>\<neq\>L<rsub|2>> then as
+      <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> is Hausdorff (see
+      <reference|the topology on the extented reals is Hausdorff>) there
+      exists <math|U<rsub|1>,U<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|L<rsub|1>\<in\>U<rsub|1>\<wedge\>L<rsub|2>\<in\>U<rsub|2>\<wedge\>U<rsub|1><big|cap>U<rsub|2>=\<emptyset\>>.
+      Then <math|\<exists\>V<rsub|1>,V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|x<rsub|0>\<in\>V<rsub|1>\<wedge\>x<rsub|0>\<in\>V<rsub|2>>
+      <math|\<wedge\>> <math|\<forall\>x\<in\>V<rsub|1><big|cap>A\<vdash\>x<rsub|0>\<less\>x>
+      we have <math|f<around*|(|x|)>\<in\>U<rsub|1>> <math|\<wedge\>>
+      <math|\<forall\>x\<in\>V<rsub|2><big|cap>A\<vdash\>x<rsub|0>\<less\>x>
+      we have <math|f<around*|(|x|)>\<in\>U<rsub|2>>. As <math|x<rsub|0>> is
+      a right limit point and <math|x<rsub|0>\<in\>V<rsub|1><big|cap>V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      there exists a <math|y\<in\><around*|(|V<rsub|1><big|cap>V<rsub|2>|)><big|cap>A>
+      with <math|x<rsub|0>\<less\>y> so that from the above we have
+      <math|f<around*|(|y|)>\<in\>U<rsub|1><big|cap>U<rsub|2>=\<emptyset\>> a
+      contradiction. So we must have <math|L<rsub|1>=L<rsub|2>>.
+
+      <item>Assume that <math|L<rsub|1>\<neq\>L<rsub|2>> then as
+      <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> is Hausdorff (see
+      <reference|the topology on the extented reals is Hausdorff>) there
+      exists <math|U<rsub|1>,U<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|L<rsub|1>\<in\>U<rsub|1>\<wedge\>L<rsub|2>\<in\>U<rsub|2>\<wedge\>U<rsub|1><big|cap>U<rsub|2>=\<emptyset\>>.
+      Then <math|\<exists\>V<rsub|1>,V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|x<rsub|0>\<in\>V<rsub|1>\<wedge\>x<rsub|0>\<in\>V<rsub|2>>
+      <math|\<wedge\>> <math|\<forall\>x\<in\>V<rsub|1><big|cap>A\<vdash\>x<rsub|0>\<neq\>x>
+      we have <math|f<around*|(|x|)>\<in\>U<rsub|1>> <math|\<wedge\>>
+      <math|\<forall\>x\<in\>V<rsub|2><big|cap>A\<vdash\>x<rsub|0>\<neq\>x>
+      we have <math|f<around*|(|x|)>\<in\>U<rsub|2>>. As <math|x<rsub|0>> is
+      a limit point and <math|x<rsub|0>\<in\>V<rsub|1><big|cap>V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      there exists a <math|y\<in\><around*|(|V<rsub|1><big|cap>V<rsub|2>|)><big|cap>A>
+      with <math|x<rsub|0>\<neq\>y> so that from the above we have
+      <math|f<around*|(|y|)>\<in\>U<rsub|1><big|cap>U<rsub|2>=\<emptyset\>> a
+      contradiction. So we must have <math|L<rsub|1>=L<rsub|2>>.
+    </enumerate>
+  </proof>
+
+  <\theorem>
+    <label|left, right limit of sum and scalar product>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|x<rsub|0>\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have\ 
+
+    <\enumerate>
+      <item>If <math|\<alpha\>\<in\>\<bbb-R\>>, <math|f:A\<rightarrow\>B> a
+      function with a left limit <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+      then for <math|\<alpha\>\<cdot\>f:A\<rightarrow\>C> defined by
+      <math|*<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>>
+      where <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|A|)>\<subseteq\>C>
+      we have <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\><below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+
+      <item>If <math|\<alpha\>\<in\>\<bbb-R\>>, <math|f:A\<rightarrow\>B> a
+      function with a right limit <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>
+      then for <math|\<alpha\>\<cdot\>f:A\<rightarrow\>C> defined by
+      <math|*<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>>
+      where <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|A|)>\<subseteq\>C>
+      we have <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\><below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>
+
+      <item>If <math|\<alpha\>\<in\>\<bbb-R\>>, <math|f:A\<rightarrow\>B> a
+      function with a limit <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+      then for <math|\<alpha\>\<cdot\>f:A\<rightarrow\>C> defined by
+      <math|*<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>>
+      where <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|A|)>\<subseteq\>C>
+      we have <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\><below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>
+
+      <item>If <math|f:A\<rightarrow\>B>, <math|g:A\<rightarrow\>B> are
+      functions with left limits <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>> such that
+      <math|\<forall\>x\<in\>A> we have that
+      <math|f<around*|(|x|)>+g<around*|(|x|)>> is defined and
+      <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>
+      is defined (so not <math|\<infty\>+<around*|(|-\<infty\>|)>>) then for
+      <math|f+g:A\<rightarrow\>C> defined by
+      <math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>>
+      where <math|<around*|(|f+g|)><around*|(|A|)>\<subseteq\>C> we have
+      <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>
+
+      <item>If <math|f:A\<rightarrow\>B>, <math|g:A\<rightarrow\>B> are
+      functions with left limits <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>> such that
+      <math|\<forall\>x\<in\>A> we have that
+      <math|f<around*|(|x|)>+g<around*|(|x|)>> is defined and
+      <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+      is defined \ (so not <math|\<infty\>+<around*|(|-\<infty\>|)>>) then
+      for <math|f+g:A\<rightarrow\>C> defined by
+      <math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>>
+      where <math|<around*|(|f+g|)><around*|(|A|)>\<subseteq\>C> we have
+      <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+
+      <item>If <math|f:A\<rightarrow\>B>, <math|g:A\<rightarrow\>B> are
+      functions with left limits <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>> such that
+      <math|\<forall\>x\<in\>A> we have that
+      <math|f<around*|(|x|)>+g<around*|(|x|)>> is defined and
+      <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>
+      is defined \ (so not <math|\<infty\>+<around*|(|-\<infty\>|)>>) then
+      for <math|f+g:A\<rightarrow\>C> defined by
+      <math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>>
+      where <math|<around*|(|f+g|)><around*|(|A|)>\<subseteq\>C> we have
+      <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    \;
+
+    <\enumerate>
+      <item>If <math|\<alpha\>=0> then <math|\<alpha\>\<cdot\>f> is the
+      constant function <math|0> so that <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=0=0\<cdot\><below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=\<alpha\>\<cdot\><below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>,
+      proving the case of <math|a=0>. So we are left with the case
+      <math|\<alpha\>\<neq\>0>. Let now <math|U> be a open set with
+      <math|\<alpha\>\<cdot\>L\<in\>U> then
+      <math|L\<in\><frac|1|\<alpha\>>\<cdot\>U> which is a open set (see
+      <reference|open sets and addition scalar multiplication>). Using the
+      definition of the right limit we have that <math|x<rsub|0>> is a right
+      limit point of <math|A> and there exists a open set <math|V> containing
+      <math|x<rsub|0>> such that <math|\<forall\>x\<in\>V<big|cap>A> with
+      <math|x<rsub|0>\<less\>x> we have <math|f<around*|(|x|)>\<in\><frac|1|\<alpha\>>\<cdot\>U\<Rightarrow\>\<alpha\>\<cdot\>f<around*|(|x|)>\<in\>U>
+      proving that <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>L>.
+
+      <item>If <math|\<alpha\>=0> then <math|\<alpha\>\<cdot\>f> is the
+      constant function <math|0> so that <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=0=0\<cdot\><below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=\<alpha\>\<cdot\><below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>,
+      proving the case of <math|a=0>. So we are left with the case
+      <math|\<alpha\>\<neq\>0>. Let now <math|U> be a open set with
+      <math|\<alpha\>\<cdot\>L\<in\>U> then
+      <math|L\<in\><frac|1|\<alpha\>>\<cdot\>U> which is a open set (see
+      <reference|open sets and addition scalar multiplication>). Using the
+      definition of the left limit we have that <math|x<rsub|0>> is a left
+      limit point of <math|A> and there exists a open set <math|V> containing
+      <math|x<rsub|0>> such that <math|\<forall\>x\<in\>V<big|cap>A> with
+      <math|x<rsub|0>\<less\>x> we have <math|f<around*|(|x|)>\<in\><frac|1|\<alpha\>>\<cdot\>U\<Rightarrow\>\<alpha\>\<cdot\>f<around*|(|x|)>\<in\>U>
+      proving that <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>L>.
+
+      <item>If <math|\<alpha\>=0> then <math|\<alpha\>\<cdot\>f> is the
+      constant function <math|0> so that <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=0=0\<cdot\><below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=\<alpha\>\<cdot\><below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>,
+      proving the case of <math|a=0>. So we are left with the case
+      <math|\<alpha\>\<neq\>0>. Let now <math|U> be a open set with
+      <math|\<alpha\>\<cdot\>L\<in\>U> then
+      <math|L\<in\><frac|1|\<alpha\>>\<cdot\>U> which is a open set (see
+      <reference|open sets and addition scalar multiplication>). Using the
+      definition of the limit we have that <math|x<rsub|0>> is a limit point
+      of <math|A> and there exists a open set <math|V> containing
+      <math|x<rsub|0>> such that <math|\<forall\>x\<in\>V<big|cap>A> with
+      <math|x<rsub|0>\<less\>x> we have <math|f<around*|(|x|)>\<in\><frac|1|\<alpha\>>\<cdot\>U\<Rightarrow\>\<alpha\>\<cdot\>f<around*|(|x|)>\<in\>U>
+      proving that <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>L>.
+
+      <item>Let <math|U> be a open set containing <math|L<rsub|1>+L<rsub|2>>
+      then we have the following cases to consider for
+      <math|L<rsub|1>+L<rsub|2>>\ 
+
+      <\description>
+        <item*|<math|L<rsub|1>+L<rsub|2>\<in\>\<bbb-R\>>>then we must have
+        <math|L<rsub|1>,L<rsub|2>\<in\>\<bbb-R\>>, If now
+        <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there exists a
+        <math|\<delta\>\<gtr\>0> such that
+        <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|L<rsub|1>+L<rsub|2>-\<varepsilon\>,L<rsub|1>+L<rsub|2>-\<varepsilon\>|[>\<subseteq\>U>.
+        From <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-<frac|\<varepsilon\>|2>,L<rsub|1>+<frac|\<varepsilon\>|2>|[>>,
+        <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-<frac|\<varepsilon\>|2>,L<rsub|2>+<frac|\<varepsilon\>|2>|[>>
+        and the definition of right limits we have that <math|x<rsub|0>> is a
+        right limit point of <math|A> and there exists open sets
+        <math|V<rsub|f>,V<rsub|g>> with <math|x<rsub|0>\<in\>V<rsub|f>,V<rsub|g>>
+        such that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-<frac|\<varepsilon\>|2>,L<rsub|2>-<frac|\<varepsilon\>|2>|[>>
+        and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-<frac|\<varepsilon\>|2>,L<rsub|2>+<frac|\<varepsilon\>|2>|[>>.
+        So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+        with <math|x<rsub|0>\<less\>x> then
+        <math|L<rsub|1>-<frac|\<varepsilon\>|2>\<less\>f<around*|(|x|)>\<less\>L<rsub|1>+<frac|\<varepsilon\>|2>\<wedge\>L<rsub|2>-<frac|\<varepsilon\>|2>\<less\>g<around*|(|x|)>\<less\>L<rsub|2>+<frac|\<varepsilon\>|2>\<Rightarrow\>L<rsub|1>+L<rsub|2>-\<varepsilon\>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>L<rsub|1>+L<rsub|2>+\<varepsilon\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|L<rsub|1>+L<rsub|2>+\<varepsilon\>,L<rsub|1>+L<rsub|2>-\<varepsilon\>|[>\<subseteq\>U>
+        which proves that <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+        <item*|<math|L<rsub|1>+L<rsub|2>=\<infty\>>>then we have either
+
+        <\description>
+          <item*|<math|L<rsub|1>,L<rsub|2>=\<infty\>>>Let <math|U> be a open
+          set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there
+          exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|1>,L<rsub|2>=\<infty\>> we have
+          <math|L<rsub|1>,L<rsub|2>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>
+          and by the definition of right limits we have that <math|x<rsub|0>>
+          is a right limit point of <math|A> and there exists open sets
+          <math|V<rsub|f>>,<math|V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x<rsub|0>\<less\>x> we have
+          <math|<frac|\<delta\>|2>\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>\<wedge\><frac|\<delta\>|2>\<less\>g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\>\<delta\>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+          <item*|<math|L<rsub|1>\<in\>\<bbb-R\>,L<rsub|2>=\<infty\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|2>=\<infty\>> we have
+          <math|L<rsub|2>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|1>,\<infty\>|]>>
+          and as <math|L<rsub|1>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>,
+          so by the definition of a right limit we have that <math|x<rsub|0>>
+          is the right limit point of <math|A> and that there exists open
+          sets <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|1>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x<rsub|0>\<less\>x> we have
+          <math|L<rsub|1>-\<delta\>+2\<cdot\>\<delta\>-L<rsub|1>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+
+          <item*|<math|L<rsub|1>=\<infty\>,L<rsub|2>\<in\>\<bbb-R\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|1>=\<infty\>> we have
+          <math|L<rsub|1>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|2>,\<infty\>|]>>
+          and as <math|L<rsub|2>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>,
+          so by the definition of a right limit we have that <math|x<rsub|0>>
+          is the right limit point of <math|A> and that there exists open
+          sets <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|2>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x<rsub|0>\<less\>x> we have
+          <math|L<rsub|2>-\<delta\>+2\<cdot\>\<delta\>-L<rsub|2>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+        </description>
+
+        <item*|<math|L<rsub|1>+L<rsub|2>=-\<infty\>>>then we have either
+
+        <\description>
+          <item*|<math|L<rsub|1>,L<rsub|2>=-\<infty\>>>Let <math|U> be a open
+          set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there
+          exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|1>,L<rsub|2>=-\<infty\>> we have
+          <math|L<rsub|1>,L<rsub|2>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>
+          and by the definition of right limits we have that <math|x<rsub|0>>
+          is a right limit point of <math|A> and there exists open sets
+          <math|V<rsub|f>>,<math|V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x<rsub|0>\<less\>x> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>\<less\>-<frac|\<delta\>|2>\<wedge\>-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>-<frac|\<delta\>|2>\<Rightarrow\>-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,\<delta\>|[>\<subseteq\>U>
+          which proves that <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+          <item*|<math|L<rsub|1>\<in\>\<bbb-R\>,L<rsub|2>=-\<infty\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|2>=-\<infty\>> we have
+          <math|L<rsub|2>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|1>|[>>
+          and as <math|L<rsub|1>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>,
+          so by the definition of a right limit we have that <math|x<rsub|0>>
+          is the right limit point of <math|A> and that there exists open
+          sets <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|1>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x<rsub|0>\<less\>x> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>L<rsub|1>+\<delta\>-2\<cdot\>\<delta\>-L<rsub|1>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+
+          <item*|<math|L<rsub|1>=-\<infty\>,L<rsub|2>\<in\>\<bbb-R\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|1>=\<infty\>> we have
+          <math|L<rsub|1>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|2>|[>>
+          and as <math|L<rsub|2>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>,
+          so by the definition of a right limit we have that <math|x<rsub|0>>
+          is the right limit point of <math|A> and that there exists open
+          sets <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|2>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x<rsub|0>\<less\>x> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>-2\<cdot\>\<delta\>-L<rsub|2>+L<rsub|2>+\<delta\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+        </description>
+      </description>
+
+      <item>Let <math|U> be a open set containing <math|L<rsub|1>+L<rsub|2>>
+      then we have the following cases to consider for
+      <math|L<rsub|1>+L<rsub|2>>\ 
+
+      <\description>
+        <item*|<math|L<rsub|1>+L<rsub|2>\<in\>\<bbb-R\>>>then we must have
+        <math|L<rsub|1>,L<rsub|2>\<in\>\<bbb-R\>>, If now
+        <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there exists a
+        <math|\<delta\>\<gtr\>0> such that
+        <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|L<rsub|1>+L<rsub|2>-\<varepsilon\>,L<rsub|1>+L<rsub|2>-\<varepsilon\>|[>\<subseteq\>U>.
+        From <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-<frac|\<varepsilon\>|2>,L<rsub|1>+<frac|\<varepsilon\>|2>|[>>,
+        <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-<frac|\<varepsilon\>|2>,L<rsub|2>+<frac|\<varepsilon\>|2>|[>>
+        and the definition of left limits we have that <math|x<rsub|0>> is a
+        left limit point of <math|A> and there exists open sets
+        <math|V<rsub|f>,V<rsub|g>> with <math|x<rsub|0>\<in\>V<rsub|f>,V<rsub|g>>
+        such that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-<frac|\<varepsilon\>|2>,L<rsub|2>-<frac|\<varepsilon\>|2>|[>>
+        and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-<frac|\<varepsilon\>|2>,L<rsub|2>+<frac|\<varepsilon\>|2>|[>>.
+        So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+        with <math|x\<less\>x<rsub|0>> then
+        <math|L<rsub|1>-<frac|\<varepsilon\>|2>\<less\>f<around*|(|x|)>\<less\>L<rsub|1>+<frac|\<varepsilon\>|2>\<wedge\>L<rsub|2>-<frac|\<varepsilon\>|2>\<less\>g<around*|(|x|)>\<less\>L<rsub|2>+<frac|\<varepsilon\>|2>\<Rightarrow\>L<rsub|1>+L<rsub|2>-\<varepsilon\>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>L<rsub|1>+L<rsub|2>+\<varepsilon\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|L<rsub|1>+L<rsub|2>+\<varepsilon\>,L<rsub|1>+L<rsub|2>-\<varepsilon\>|[>\<subseteq\>U>
+        which proves that <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+        <item*|<math|L<rsub|1>+L<rsub|2>=\<infty\>>>then we have either
+
+        <\description>
+          <item*|<math|L<rsub|1>,L<rsub|2>=\<infty\>>>Let <math|U> be a open
+          set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there
+          exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|1>,L<rsub|2>=\<infty\>> we have
+          <math|L<rsub|1>,L<rsub|2>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>
+          and by the definition of left limits we have that <math|x<rsub|0>>
+          is a left limit point of <math|A> and there exists open sets
+          <math|V<rsub|f>>,<math|V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<less\>x<rsub|0>> we have
+          <math|<frac|\<delta\>|2>\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>\<wedge\><frac|\<delta\>|2>\<less\>g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\>\<delta\>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+          <item*|<math|L<rsub|1>\<in\>\<bbb-R\>,L<rsub|2>=\<infty\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|2>=\<infty\>> we have
+          <math|L<rsub|2>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|1>,\<infty\>|]>>
+          and as <math|L<rsub|1>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>,
+          so by the definition of a left limit we have that <math|x<rsub|0>>
+          is the left limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|1>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<less\>x<rsub|0>> we have
+          <math|L<rsub|1>-\<delta\>+2\<cdot\>\<delta\>-L<rsub|1>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>
+
+          <item*|<math|L<rsub|1>=\<infty\>,L<rsub|2>\<in\>\<bbb-R\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|1>=\<infty\>> we have
+          <math|L<rsub|1>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|2>,\<infty\>|]>>
+          and as <math|L<rsub|2>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>,
+          so by the definition of a left limit we have that <math|x<rsub|0>>
+          is the left limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|2>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<less\>x<rsub|0>> we have
+          <math|L<rsub|2>-\<delta\>+2\<cdot\>\<delta\>-L<rsub|2>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>
+        </description>
+
+        <item*|<math|L<rsub|1>+L<rsub|2>=-\<infty\>>>then we have either
+
+        <\description>
+          <item*|<math|L<rsub|1>,L<rsub|2>=-\<infty\>>>Let <math|U> be a open
+          set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there
+          exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|1>,L<rsub|2>=-\<infty\>> we have
+          <math|L<rsub|1>,L<rsub|2>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>
+          and by the definition of left limits we have that <math|x<rsub|0>>
+          is a left limit point of <math|A> and there exists open sets
+          <math|V<rsub|f>>,<math|V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<less\>x<rsub|0>> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>\<less\>-<frac|\<delta\>|2>\<wedge\>-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>-<frac|\<delta\>|2>\<Rightarrow\>-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,\<delta\>|[>\<subseteq\>U>
+          which proves that <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+          <item*|<math|L<rsub|1>\<in\>\<bbb-R\>,L<rsub|2>=-\<infty\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|2>=-\<infty\>> we have
+          <math|L<rsub|2>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|1>|[>>
+          and as <math|L<rsub|1>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>,
+          so by the definition of a left limit we have that <math|x<rsub|0>>
+          is the left limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|1>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<less\>x<rsub|0>> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>L<rsub|1>+\<delta\>-2\<cdot\>\<delta\>-L<rsub|1>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>
+
+          <item*|<math|L<rsub|1>=-\<infty\>,L<rsub|2>\<in\>\<bbb-R\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|1>=\<infty\>> we have
+          <math|L<rsub|1>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|2>|[>>
+          and as <math|L<rsub|2>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>,
+          so by the definition of a left limit we have that <math|x<rsub|0>>
+          is the left limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|2>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<less\>x<rsub|0>> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>-2\<cdot\>\<delta\>-L<rsub|2>+L<rsub|2>+\<delta\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>
+        </description>
+      </description>
+
+      <item>Let <math|U> be a open set containing <math|L<rsub|1>+L<rsub|2>>
+      then we have the following cases to consider for
+      <math|L<rsub|1>+L<rsub|2>>\ 
+
+      <\description>
+        <item*|<math|L<rsub|1>+L<rsub|2>\<in\>\<bbb-R\>>>then we must have
+        <math|L<rsub|1>,L<rsub|2>\<in\>\<bbb-R\>>, If now
+        <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there exists a
+        <math|\<delta\>\<gtr\>0> such that
+        <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|L<rsub|1>+L<rsub|2>-\<varepsilon\>,L<rsub|1>+L<rsub|2>-\<varepsilon\>|[>\<subseteq\>U>.
+        From <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-<frac|\<varepsilon\>|2>,L<rsub|1>+<frac|\<varepsilon\>|2>|[>>,
+        <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-<frac|\<varepsilon\>|2>,L<rsub|2>+<frac|\<varepsilon\>|2>|[>>
+        and the definition of limits we have that <math|x<rsub|0>> is a limit
+        point of <math|A> and there exists open sets
+        <math|V<rsub|f>,V<rsub|g>> with <math|x<rsub|0>\<in\>V<rsub|f>,V<rsub|g>>
+        such that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x\<neq\>x<rsub|0>> we have <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-<frac|\<varepsilon\>|2>,L<rsub|2>-<frac|\<varepsilon\>|2>|[>>
+        and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x\<neq\>x<rsub|0>> we have <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-<frac|\<varepsilon\>|2>,L<rsub|2>+<frac|\<varepsilon\>|2>|[>>.
+        So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+        with <math|x\<neq\>x<rsub|0>> then
+        <math|L<rsub|1>-<frac|\<varepsilon\>|2>\<less\>f<around*|(|x|)>\<less\>L<rsub|1>+<frac|\<varepsilon\>|2>\<wedge\>L<rsub|2>-<frac|\<varepsilon\>|2>\<less\>g<around*|(|x|)>\<less\>L<rsub|2>+<frac|\<varepsilon\>|2>\<Rightarrow\>L<rsub|1>+L<rsub|2>-\<varepsilon\>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>L<rsub|1>+L<rsub|2>+\<varepsilon\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|L<rsub|1>+L<rsub|2>+\<varepsilon\>,L<rsub|1>+L<rsub|2>-\<varepsilon\>|[>\<subseteq\>U>
+        which proves that <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+        <item*|<math|L<rsub|1>+L<rsub|2>=\<infty\>>>then we have either
+
+        <\description>
+          <item*|<math|L<rsub|1>,L<rsub|2>=\<infty\>>>Let <math|U> be a open
+          set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there
+          exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|1>,L<rsub|2>=\<infty\>> we have
+          <math|L<rsub|1>,L<rsub|2>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>
+          and by the definition of limits we have that <math|x<rsub|0>> is a
+          \ limit point of <math|A> and there exists open sets
+          <math|V<rsub|f>>,<math|V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|<frac|\<delta\>|2>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<neq\>x<rsub|0>> we have
+          <math|<frac|\<delta\>|2>\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>\<wedge\><frac|\<delta\>|2>\<less\>g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\>\<delta\>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+          <item*|<math|L<rsub|1>\<in\>\<bbb-R\>,L<rsub|2>=\<infty\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|2>=\<infty\>> we have
+          <math|L<rsub|2>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|1>,\<infty\>|]>>
+          and as <math|L<rsub|1>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>,
+          so by the definition of a limit we have that <math|x<rsub|0>> is
+          the limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|1>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x<rsub|0>\<neq\>x> we have
+          <math|L<rsub|1>-\<delta\>+2\<cdot\>\<delta\>-L<rsub|1>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>
+
+          <item*|<math|L<rsub|1>=\<infty\>,L<rsub|2>\<in\>\<bbb-R\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          then as <math|L<rsub|1>=\<infty\>> we have
+          <math|L<rsub|1>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|2>,\<infty\>|]>>
+          and as <math|L<rsub|2>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>,
+          so by the definition of a limit we have that <math|x<rsub|0>> is
+          the limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|2\<cdot\>\<delta\>-L<rsub|2>,\<infty\>|]>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<neq\>x<rsub|0>> we have
+          <math|L<rsub|2>-\<delta\>+2\<cdot\>\<delta\>-L<rsub|2>\<less\>f<around*|(|x|)>+g<around*|(|x|)>\<leqslant\>\<infty\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>
+        </description>
+
+        <item*|<math|L<rsub|1>+L<rsub|2>=-\<infty\>>>then we have either
+
+        <\description>
+          <item*|<math|L<rsub|1>,L<rsub|2>=-\<infty\>>>Let <math|U> be a open
+          set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a open set then there
+          exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|1>,L<rsub|2>=-\<infty\>> we have
+          <math|L<rsub|1>,L<rsub|2>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>
+          and by the definition of limits we have that <math|x<rsub|0>> is a
+          limit point of <math|A> and there exists open sets
+          <math|V<rsub|f>>,<math|V<rsub|g>> containing <math|x<rsub|0>> such
+          that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<neq\>x<rsub|>> we have
+          <math|g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-<frac|\<delta\>|2>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<neq\>x<rsub|0>> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>\<less\>-<frac|\<delta\>|2>\<wedge\>-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>-<frac|\<delta\>|2>\<Rightarrow\>-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,\<delta\>|[>\<subseteq\>U>
+          which proves that <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>.
+
+          <item*|<math|L<rsub|1>\<in\>\<bbb-R\>,L<rsub|2>=-\<infty\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|2>=-\<infty\>> we have
+          <math|L<rsub|2>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|1>|[>>
+          and as <math|L<rsub|1>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|1>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>,
+          so by the definition of a limit we have that <math|x<rsub|0>> is
+          the limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|]|L<rsub|1>-\<delta\>,L<rsub|1>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<neq\>x<rsub|>> we have
+          <math|g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|1>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x\<neq\>x<rsub|0>> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>L<rsub|1>+\<delta\>-2\<cdot\>\<delta\>-L<rsub|1>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>
+
+          <item*|<math|L<rsub|1>=-\<infty\>,L<rsub|2>\<in\>\<bbb-R\>>>Let
+          <math|U> be a open set with <math|L<rsub|1>+L<rsub|2>\<in\>U> a
+          open set then there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|L<rsub|1>+L<rsub|2>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          then as <math|L<rsub|1>=\<infty\>> we have
+          <math|L<rsub|1>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|2>|[>>
+          and as <math|L<rsub|2>\<in\>\<bbb-R\>> we have that
+          <math|L<rsub|2>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>,
+          so by the definition of a limit we have that <math|x<rsub|0>> is
+          the limit point of <math|A> and that there exists open sets
+          <math|V<rsub|f>,V<rsub|g>> containing <math|x<rsub|0>> such that
+          <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|g<around*|(|x|)>\<in\><around*|]|L<rsub|2>-\<delta\>,L<rsub|2>+\<delta\>|[>>
+          and <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+          <math|x\<neq\>x<rsub|0>> we have
+          <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-2\<cdot\>\<delta\>-L<rsub|2>|[>>.
+          So if <math|x\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+          with <math|x=x<rsub|0>> we have
+          <math|-\<infty\>\<leqslant\>f<around*|(|x|)>+g<around*|(|x|)>\<less\>-2\<cdot\>\<delta\>-L<rsub|2>+L<rsub|2>+\<delta\>\<Rightarrow\><around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>U>
+          which proves that \ <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|f+g|)><around*|(|x|)>=L<rsub|1>+L<rsub|2>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>.
+        </description>
+      </description>
+    </enumerate>
+  </proof>
+
+  <\theorem>
+    <label|left and right limit implies limit>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function <math|x<rsub|0>,L\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+    then <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+    if and only if <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+    and <math|x<rsub|0>> is a left and right limit point of <math|A>.
+  </theorem>
+
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|\<Rightarrow\>>>From the fact that the left and right
+      limits exists we have that <math|x<rsub|0>> is a left and right limit
+      point of <math|A>. So if <math|U> open set contains <math|x<rsub|0>>
+      there exists a <math|x\<in\>U<big|cap>A> with
+      <math|x\<less\>x<rsub|0>\<Rightarrow\>x\<neq\>x<rsub|0>> proving that
+      <math|x<rsub|0>> is a limit point of <math|A>. Take
+      <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+      <math|L\<in\>U> then there exists a
+      <math|V<rsub|1>,V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      with <math|x<rsub|0>\<in\>V<rsub|1>,V<rsub|2>> such that
+      <math|\<forall\>x\<in\>V<rsub|1><big|cap>A\<vdash\>x\<less\>x<rsub|0>>
+      we have <math|f<around*|(|x|)>\<in\>U> and
+      <math|\<forall\>x\<in\>V<rsub|2><big|cap>A\<vdash\>x<rsub|0>\<less\>x>
+      we have <math|f<around*|(|x|)>\<in\>U>. So if we take
+      <math|W=V<rsub|1><big|cap>V<rsub|2>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      then <math|x<rsub|0>\<in\>W> and <math|\<forall\>x\<in\>W<big|cap>A\<vdash\>x\<neq\>x<rsub|0>>
+      we have <math|x\<less\>x<rsub|0>\<vee\>x<rsub|0>\<less\>x> giving as
+      <math|x<rsub|0>> is proven to be a limit point that
+      <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>.
+
+      <item*|<math|\<Leftarrow\>>>Take <math|U\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+      with <math|L\<in\>U> then there exists a
+      <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+      <math|x<rsub|0>\<in\>V> such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>x<rsub|0>>
+      we have <math|f<around*|(|x|)>\<in\>U> proving that
+      <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>x<rsub|0>> [or
+      <math|x<rsub|0>\<less\>x>] <math|\<Rightarrow\>x\<neq\>x<rsub|0>>
+      giving <math|f<around*|(|x|)>\<in\>U>. which proves, as we assume that
+      <math|x<rsub|0>> is a left and right limit point of <math|A>, that
+      <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>.
+    </description>
+  </proof>
+
+  <\note>
+    The extra condition on the right side of the above equivalence is needed
+    because the fact that <math|x<rsub|0>> is a limit point of <math|A> does
+    not guarantees that <math|x<rsub|0>> is a left and right limit point of
+    <math|A>. For example in <math|A=<around*|]|1,\<infty\>|]> > we have that
+    <math|\<infty\>> is a limit point of <math|A>, also a left limit point of
+    <math|A> but not a right limit point of <math|A>. So a well defined right
+    limit at <math|\<infty\>> can not exists. However we can have at
+    <math|\<infty\>> and <math|-\<infty\>> the following equivalences.
+  </note>
+
+  The following theorem essentially proves that limits preserver order on
+  functions.
+
+  <\theorem>
+    <label|limits at infinity>Let <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function,
+    <math|L\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have\ 
+
+    <\enumerate>
+      <item><math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=L> if
+      and only if <math|<below|lim|x\<downarrow\>-\<infty\>>f=L>
+
+      <item><math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=L> if
+      and onlyy if <math|<below|lim|x\<uparrow\>\<infty\>>f=L>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>As <math|-\<infty\>> is a limit point of
+        <math|A> we have that <math|\<forall\>U> open with
+        <math|-\<infty\>\<in\>U> there exists a <math|x\<in\>U<big|cap>A>
+        with <math|x\<neq\>-\<infty\>\<Rightarrow\>-\<infty\>\<less\>x>
+        proving that <math|-\<infty\>> is a right limit point of <math|A>.
+        Further \ if <math|U> is a open set containing <math|L> then we have
+        that there exists a open set <math|V> containing <math|-\<infty\>>
+        such that <math|\<forall\>x\<in\>V<big|cap>A> with
+        <math|x\<neq\>-\<infty\>> we have <math|f<around*|(|x|)>\<in\>U>, as
+        <math|x\<neq\>-\<infty\>> implies <math|-\<infty\>\<less\>x> we have
+        then proved that <math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=L>.
+
+        <item*|<math|\<Leftarrow\>>>As <math|-\<infty\>> is a right limit
+        point of <math|A> we have <math|\<forall\>U> open containing
+        <math|-\<infty\>> there exists a <math|x\<in\>U<big|cap>A> with
+        <math|-\<infty\>\<less\>x\<Rightarrow\>-\<infty\>\<neq\>x> proving
+        that <math|-\<infty\>> is a limit point of <math|A>. Further if
+        <math|U> is a open set containing <math|L> then there exists a open
+        set <math|V> containing <math|-\<infty\>> such that
+        <math|\<forall\>x\<in\>V<big|cap>A> with <math|-\<infty\>\<less\>x>
+        we have <math|f<around*|(|x|)>\<in\>U>, as <math|x\<less\>-\<infty\>>
+        implies <math|x\<neq\>-\<infty\>> we have
+        <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>>
+      </description>
+
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>As <math|\<infty\>> is a limit point of
+        <math|A> we have that <math|\<forall\>U> open with
+        <math|\<infty\>\<in\>U> there exists a <math|x\<in\>U<big|cap>A> with
+        <math|x\<neq\>\<infty\>\<Rightarrow\>x\<less\>\<infty\>> proving that
+        <math|\<infty\>> is a left limit point of <math|A>. Further \ if
+        <math|U> is a open set containing <math|L> then we have that there
+        exists a open set <math|V> containing <math|\<infty\>> such that
+        <math|\<forall\>x\<in\>V<big|cap>A> with <math|x\<neq\>\<infty\>> we
+        have <math|f<around*|(|x|)>\<in\>U>, as <math|x\<neq\>\<infty\>>
+        implies <math|x\<less\>\<infty\>> we have then proved that
+        <math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>.
+
+        <item*|<math|\<Leftarrow\>>>As <math|\<infty\>> is a left limit point
+        of <math|A> we have <math|\<forall\>U> open containing
+        <math|\<infty\>> there exists a <math|x\<in\>U<big|cap>A> with
+        <math|x\<less\>\<infty\>\<Rightarrow\>\<infty\>\<neq\>x> proving that
+        <math|\<infty\>> is a limit point of <math|A>. Further if <math|U> is
+        a open set containing <math|L> then there exists a open set <math|V>
+        containing <math|\<infty\>> such that
+        <math|\<forall\>x\<in\>V<big|cap>A> with <math|x\<less\>\<infty\>> we
+        have <math|f<around*|(|x|)>\<in\>U>, as <math|x\<less\>\<infty\>>
+        implies <math|x\<neq\>\<infty\>> we have
+        <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>>
+      </description>
+    </enumerate>
+  </proof>
+
+  Note that the limit of a function is related to continuity at a point in
+  the topology <math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> as the
+  following theorem shows.
+
+  <\theorem>
+    <label|limit and continuity in the extented reals>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function <math|x<rsub|0>\<in\>A> a limit
+    point of <math|x<rsub|0>> then <math|f> is continuous at <math|x<rsub|0>>
+    (see <reference|continuous function>) if and only if
+    <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=f<around*|(|x<rsub|0>|)>>
+  </theorem>
+
+  <\proof>
+    \ Let <math|\<cal-T\><rsub|A>=<around*|{|U<big|cap>A\|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|}>>
+    be the subspace topology of <math|A>, and
+    <math|\<cal-T\><rsub|B>=<around*|{|U<big|cap>B\|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>|}>>
+    be the subspace topology of <math|B>.
+
+    <\description>
+      <item*|<math|\<Rightarrow\>>>Take now
+      <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+      <math|f<around*|(|x<rsub|0>|)>\<in\>U\<Rightarrowlim\><rsub|f<around*|(|x<rsub|0>|)>\<in\>B>f<around*|(|x<rsub|0>|)>\<in\>U<big|cap>B\<in\>\<cal-T\><rsub|B>>,
+      so by continuity of <math|f> in the subspace topologies we have
+      <math|\<exists\>V\<in\>\<cal-T\><rsub|A>> such that
+      <math|x<rsub|0>\<in\>V\<wedge\>f<around*|(|V|)>\<subseteq\>U<big|cap>B>.
+      As <math|V\<in\>\<cal-T\><rsub|A>> there exists a
+      <math|V<rprime|'>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|V=V<rprime|'><big|cap>A>. So if
+      <math|x\<in\>A<big|cap>V<rprime|'>\<vdash\>x\<neq\>x<rsub|0>> we have
+      <math|x\<in\>V\<Rightarrow\>f<around*|(|x|)>\<in\>U<big|cap>B\<subseteq\>U>
+      proving that <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=f<around*|(|x<rsub|0>|)>>
+
+      <item*|<math|\<Leftarrow\>>>Take <math|U\<in\>\<cal-T\><rsub|B>> with
+      <math|f<around*|(|x<rsub|0>|)>\<in\>U> then
+      <math|\<exists\>U<rprime|'>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|U=U<rprime|'><big|cap>B> giving
+      <math|f<around*|(|x<rsub|0>|)>\<in\>U<rprime|'>> so there exists a
+      <math|V<rprime|'>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|x<rsub|0>\<in\>V<rprime|'>> and
+      <math|\<forall\>x\<in\>V<rprime|'><big|cap>A\<vdash\>x\<neq\>x<rsub|0>>
+      we have <math|f*<around*|(|x|)>\<in\>U<rprime|'>\<Rightarrow\>f<around*|(|x|)>\<in\>U>
+      [as <math|f<around*|(|x|)>\<in\>B>]. Take now
+      <math|V=V<rprime|'><big|cap>A\<in\>\<cal-T\><rsub|A>> then as
+      <math|x<rsub|0>\<in\>A> we have <math|x<rsub|0>\<in\>V> and
+      <math|f<around*|(|x<rsub|0>|)>\<in\>U> [as
+      <math|f<around*|(|x<rsub|0>|)>\<in\>B>, also if
+      <math|x\<in\>V\<vdash\>x\<neq\>x<rsub|0>> then
+      <math|f<around*|(|x|)>\<in\>U> so that
+      <math|f<around*|(|V|)>\<subseteq\>U> proving that <math|f> is
+      continuous a <math|x<rsub|0>>.
+    </description>
+  </proof>
+
+  The above theorem motivates the definition of left or right continuity
+
+  <\definition>
+    <label|left (right) continuity><index|left continuity><index|right
+    continuity>Let <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B>, <math|x<rsub|0>\<in\>A> a left [right] limit
+    point of <math|A> then <math|f> is left [right] continuous at
+    <math|x<rsub|0>> iff <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=f<around*|(|x<rsub|0>|)>>
+    [<math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=f<around*|(|x<rsub|0>|)>>]
+  </definition>
+
+  We now look at some special cases of limits where <math|x<rsub|0>> or
+  <math|L> where in <math|\<bbb-R\>> or equal to <math|\<infty\>>,
+  <math|-\<infty\>>
+
+  <\theorem>
+    <label|special cases of limits>:et <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> and <math|x<rsub|0>,L\<in\><wide|\<bbb-R\>|\<wide-bar\>>>
+    then we have the following possible cases for a left, right, limit
+
+    <\description>
+      <item*|<math|x<rsub|0>\<in\>\<bbb-R\>,L\<in\>\<bbb-R\>>>then we have
+      for the different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>><math|x<rsub|0>>
+        is a left limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0\<vDash\>\<exists\>\<delta\>\<gtr\>0>
+        such that <math|\<forall\>x\<in\>A\<vdash\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+        we have <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>
+
+        <item*|<math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>><math|x<rsub|0>>
+        is a right limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0\<vDash\>\<exists\>\<delta\>\<gtr\>0>
+        such that <math|\<forall\>x\<in\>A\<vdash\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+        we have <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>
+
+        <item*|<math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>><math|x<rsub|0>>
+        is a limit point of <math|A> and <math|\<forall\>\<varepsilon\>\<gtr\>0\<vDash\>\<exists\>\<delta\>\<gtr\>0>
+        such that <math|\<forall\>x\<in\>A\<vdash\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+        we have <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>
+      </description>
+
+      <item*|<math|x<rsub|0>\<in\>\<bbb-R\>,L=\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>>><math|x<rsub|0>>
+        is a left limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> such that if
+        <math|x\<in\>A\<wedge\>0\<less\>x<rsub|0>-x\<less\>\<delta\>> we have
+        <math|\<varepsilon\>\<less\>f<around*|(|x|)>>
+
+        <item*|<math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>>><math|x<rsub|0>>
+        is a right limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> such that if
+        <math|x\<in\>A\<wedge\>0\<less\>x-x<rsub|0>\<less\>\<delta\>> we have
+        <math|\<varepsilon\>\<less\>f<around*|(|x|)>>
+
+        <item*|<math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>>><math|x<rsub|0>>
+        is a limit point of <math|A> and <math|\<forall\>\<varepsilon\>\<gtr\>0>
+        there exists a <math|\<delta\>\<gtr\>0> such that if
+        <math|x\<in\>A\<wedge\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+        we have <math|\<varepsilon\>\<less\>f<around*|(|x|)>>
+      </description>
+
+      <item*|<math|x<rsub|0>\<in\>\<bbb-R\>,L=-\<infty\>>>then we have for
+      the different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>>><math|x<rsub|0>>
+        is a left limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> such that if
+        <math|x\<in\>A\<wedge\>0\<less\>x<rsub|0>-x\<less\>\<delta\>> we have
+        <math|f<around*|(|x|)>\<less\>-\<varepsilon\>>
+
+        <item*|<math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>>><math|x<rsub|0>>
+        is a right limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> such that if
+        <math|x\<in\>A\<wedge\>0\<less\>x-x<rsub|0>\<less\>\<delta\>> we have
+        <math|f<around*|(|x|)>\<less\>-\<varepsilon\>>
+
+        <item*|<math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>>><math|x<rsub|0>>
+        is a limit point of <math|A> and <math|\<forall\>\<varepsilon\>\<gtr\>0>
+        there exists a <math|\<delta\>\<gtr\>0> such that if
+        <math|x\<in\>A\<wedge\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+        we have <math|f<around*|(|x|)>\<less\>-\<varepsilon\>>
+      </description>
+
+      <item*|<math|x<rsub|0>=\<infty\>,L\<in\>\<bbb-R\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>><math|\<infty\>>
+        is a left limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> such that if
+        <math|x\<in\>A\<wedge\>\<delta\>\<less\>x\<less\>\<infty\>> we have
+        <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>
+
+        <item*|<math|<below|lim|x\<downarrow\>\<infty\>>f<around*|(|x|)>=L>>as
+        <math|\<infty\>> can not be a right limit point of any set <math|A>
+        this can not happen.
+
+        <item*|<math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=L>><math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>
+      </description>
+
+      <item*|<math|x<rsub|0>=\<infty\>,L=\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=\<infty\>>><math|\<infty\>>
+        is a left limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> so that if
+        <math|\<delta\>\<less\>x\<less\>\<infty\>> then
+        <math|\<varepsilon\>\<less\>f<around*|(|x|)>>
+
+        <item*|<math|<below|lim|x\<downarrow\>\<infty\>>f<around*|(|x|)>=\<infty\>>>as
+        <math|\<infty\>> can not be a right limit point of any set <math|A>
+        this can not happen.
+
+        <item*|<math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=\<infty\>>>
+        <math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=\<infty\>>
+      </description>
+
+      <item*|<math|x<rsub|0>=\<infty\>,L=-\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=-\<infty\>>><math|\<infty\>>
+        is a left limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> so that if
+        <math|\<delta\>\<less\>x\<less\>\<infty\>> then
+        <math|f<around*|(|x|)>\<less\>-\<varepsilon\>>
+
+        <item*|<math|<below|lim|x\<downarrow\>\<infty\>>f<around*|(|x|)>=-\<infty\>>>as
+        <math|\<infty\>> can not be a right limit point of any set <math|A>
+        this can not happen.
+
+        <item*|<math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=-\<infty\>>><math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=-\<infty\>>
+      </description>
+
+      <item*|<math|x<rsub|0>=-\<infty\>,L\<in\>\<bbb-R\>>>then we have for
+      the different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>-\<infty\>>f<around*|(|x|)>=L>>as
+        <math|-\<infty\>> can not be a left limit point of any set <math|A>
+        this can not happen.
+
+        <item*|<math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=L>><math|-\<infty\>>
+        is a right limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> so that if
+        <math|-\<infty\>\<less\>x\<less\>-\<infty\>> then
+        <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>
+
+        <item*|<math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=L>><math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>
+      </description>
+
+      <item*|<math|x<rsub|0>=-\<infty\>,L=\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>-\<infty\>>f<around*|(|x|)>=\<infty\>>>as
+        <math|-\<infty\>> can not be a left limit point of any set <math|A>
+        this can not happen.
+
+        <item*|<math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=\<infty\>>><math|-\<infty\>>
+        is a right limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> such that <math|\<forall\>x\<in\>A> with
+        <math|-\<infty\>\<less\>x\<less\>-\<delta\>> we have
+        <math|\<varepsilon\>\<less\>f<around*|(|x|)>>\ 
+
+        <item*|<math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=\<infty\>>><math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=\<infty\>>
+      </description>
+
+      <item*|<math|x<rsub|0>=-\<infty\>,L=-\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>-\<infty\>>f<around*|(|x|)>=-\<infty\>>>as
+        <math|-\<infty\>> can not be a left limit point of any set <math|A>
+        this can not happen.
+
+        <item*|<math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=-\<infty\>>><math|-\<infty\>>
+        is a left limit point of <math|A> and
+        <math|\<forall\>\<varepsilon\>\<gtr\>0> there exists a
+        <math|\<delta\>\<gtr\>0> such that <math|\<forall\>x\<in\>A> with
+        <math|-\<infty\>\<less\>x\<less\>-\<infty\>> we have
+        <math|f<around*|(|x|)>\<less\>-\<infty\>>
+
+        <item*|<math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=-\<infty\>>><math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=-\<infty\>>
+      </description>
+    </description>
+  </theorem>
+
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|x<rsub|0>\<in\>\<bbb-R\>,L\<in\>\<bbb-R\>>>then we have
+      for the different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>><math|>\ 
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          [as <math|L\<in\>\<bbb-R\>>] then there exists a
+          <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>x<rsub|0>> we
+          have <math|f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<Rightarrow\><around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>,
+          as <math|x<rsub|0>\<in\>V\<Rightarrowlim\><rsub|x<rsub|0>\<in\>\<bbb-R\>>x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>><text|
+          [using <reference|topology on extented reals>]
+          >\<Rightarrow\>\<exists\>\<delta\>\<gtr\>0\<vdash\>x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          So if <math|x\<in\>A\<vdash\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+          then <math|x\<in\>A<big|cap>V\<wedge\>x\<less\>x<rsub|0>> giving
+          <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<vdash\>L\<in\>U>
+          then as <math|L\<in\>\<bbb-R\>> we have
+          <math|L\<in\>U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U<big|cap>\<bbb-R\>>,
+          by the hypothese there <math|\<exists\>\<delta\>\<gtr\>0> such that
+          if <math|x\<in\>A\<vdash\>0\<less\>x<rsub|0>-x\<less\>\<delta\>> we
+          have <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U<big|cap>\<bbb-R\>\<subseteq\>U>.
+          So if we take <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then <math|x<rsub|0>\<in\>V> and if <math|x\<in\>A<big|cap>V> with
+          <math|x\<less\>x<rsub|0>> we have
+          <math|0\<less\>x<rsub|0>-x\<less\>\<delta\>\<wedge\>x\<in\>A>, so
+          that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>. <math|>
+        </description>
+
+        <item*|<math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          [as <math|L\<in\>\<bbb-R\>>] then there exists a
+          <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x<rsub|0>\<less\>x> we
+          have <math|f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<Rightarrow\><around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>,
+          as <math|x<rsub|0>\<in\>V\<Rightarrowlim\><rsub|x<rsub|0>\<in\>\<bbb-R\>>x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>><text|
+          [using <reference|topology on extented reals>]
+          >\<Rightarrow\>\<exists\>\<delta\>\<gtr\>0\<vdash\>x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          So if <math|x\<in\>A\<vdash\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+          then <math|x\<in\>A<big|cap>V\<wedge\>x<rsub|0>\<less\>x> giving
+          <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>\<vdash\>L\<in\>U>
+          then as <math|L\<in\>\<bbb-R\>> we have
+          <math|L\<in\>U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U<big|cap>\<bbb-R\>>,
+          by the hypothese there <math|\<exists\>\<delta\>\<gtr\>0> such that
+          if <math|x\<in\>A\<vdash\>0\<less\>x-x<rsub|0>\<less\>\<delta\>> we
+          have <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U<big|cap>\<bbb-R\>\<subseteq\>U>.
+          So if we take <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then <math|x<rsub|0>\<in\>V> and if <math|x\<in\>A<big|cap>V> with
+          <math|x<rsub|0>\<less\>x> we have
+          <math|0\<less\>x-x<rsub|0>\<less\>\<delta\>\<wedge\>x\<in\>A>, so
+          that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>. <math|>
+        </description>
+
+        <item*|<math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>>\ 
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          [as <math|L\<in\>\<bbb-R\>>] then there exists a
+          <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>V<big|cap>A> with <math|x\<neq\>x<rsub|0>>
+          we have <math|f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<Rightarrow\><around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>.
+          As <math|x<rsub|0>\<in\>\<bbb-R\>> we have
+          <math|x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] there exists a
+          <math|\<delta\>\<gtr\>0> such that
+          <math|x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          So if <math|x\<in\>A\<vdash\>0\<less\><around*|\||x-x<rsub|0>|\|>\<less\>\<delta\>>
+          we have <math|x\<in\>A\<wedge\>x\<in\>V> which gives that
+          <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>.\ 
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> then as <math|L\<in\>\<bbb-R\>> we have
+          <math|L\<in\>U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U<big|cap>\<bbb-R\>\<subseteq\>U>,
+          by the hypothese there exists a <math|\<delta\>\<gtr\>0> such that
+          <math|\<forall\>x\<in\>A\<vdash\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+          we have <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U>.
+          So if we take <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>>
+          then <math|x<rsub|0>\<in\>V> and if <math|x\<in\>A<big|cap>V> with
+          <math|x<rsub|0>\<neq\>x> we have
+          <math|0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>, so
+          that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>\<in\>\<bbb-R\>,L=\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V> with <math|x\<less\>x<rsub|0>>
+          we have <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>>.
+          As <math|x<rsub|0>\<in\>\<bbb-R\>> we have
+          <math|x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<delta\>\<gtr\>0> so that
+          <math|x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          If then <math|x\<in\>A\<wedge\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+          we have <math|x\<in\>A<big|cap>V\<wedge\>x\<less\>x<rsub|0>> so
+          that <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<Rightarrow\>\<varepsilon\>\<less\>f<around*|(|x|)>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L=\<infty\>> we have, using <reference|topology on
+          extented reals> and the fact that
+          <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|-\<infty\>>>
+          we have <math|\<infty\>\<nin\>B>, that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>.
+          Using the hypothese there exists a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<vdash\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+          we have <math|\<varepsilon\>\<less\>f<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          If we take then <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          we have <math|x<rsub|0>\<in\>V> and
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>x<rsub|0>> we
+          have <math|x\<in\>A\<wedge\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+          so that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>=L>.
+        </description>
+
+        <item*|<math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V> with <math|x<rsub|0>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>>.
+          As <math|x<rsub|0>\<in\>\<bbb-R\>> we have
+          <math|x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<delta\>\<gtr\>0> so that
+          <math|x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          If then <math|x\<in\>A\<wedge\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+          we have <math|x\<in\>A<big|cap>V\<wedge\>x<rsub|0>\<less\>x> so
+          that <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<Rightarrow\>\<varepsilon\>\<less\>f<around*|(|x|)>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L=\<infty\>> we have, using <reference|topology on
+          extented reals> and the fact that
+          <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|-\<bbb-R\>>>
+          we have <math|\<infty\>\<nin\>B>, that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>.
+          Using the hypothese there exists a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<vdash\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+          we have <math|\<varepsilon\>\<less\>f<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          If we take then <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          we have <math|x<rsub|0>\<in\>V> and
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x<rsub|0>\<less\>x> we
+          have <math|x\<in\>A\<wedge\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+          so that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>=L>.
+        </description>
+
+        <item*|<math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V> with <math|x\<neq\>x<rsub|0>>
+          we have <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>>.
+          As <math|x<rsub|0>\<in\>\<bbb-R\>> we have
+          <math|x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<delta\>\<gtr\>0> so that
+          <math|x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          If then <math|x\<in\>A\<wedge\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+          we have <math|x\<in\>A<big|cap>V\<wedge\>x\<neq\>x<rsub|0>> so that
+          <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<Rightarrow\>\<varepsilon\>\<less\>f<around*|(|x|)>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L=\<infty\>> we have, using <reference|topology on
+          extented reals> and the fact that
+          <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|-\<infty\>>>
+          we have <math|\<infty\>\<nin\>B>, that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>.
+          Using the hypothese there exists a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<vdash\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+          we have <math|\<varepsilon\>\<less\>f<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          If we take then <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          we have <math|x<rsub|0>\<in\>V> and
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>x<rsub|0>> we
+          have <math|x\<in\>A\<wedge\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+          so that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>=L>.
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>\<in\>\<bbb-R\>,L=-\<infty\>>>then we have for
+      the different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V> with <math|x\<less\>x<rsub|0>>
+          we have <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>>.
+          As <math|x<rsub|0>\<in\>\<bbb-R\>> we have
+          <math|x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<delta\>\<gtr\>0> so that
+          <math|x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          If then <math|x\<in\>A\<wedge\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+          we have <math|x\<in\>A<big|cap>V\<wedge\>x\<less\>x<rsub|0>> so
+          that <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,\<varepsilon\>|[>\<Rightarrow\>f<around*|(|x|)>\<less\>-\<varepsilon\>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L=-\<infty\>> we have, using <reference|topology on
+          extented reals> and the fact that
+          <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|\<infty\>>>
+          we have <math|-\<infty\>\<nin\>B>, that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>.
+          Using the hypothese there exists a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<vdash\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+          we have <math|f<around*|(|x|)>\<less\>-\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          If we take then <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          we have <math|x<rsub|0>\<in\>V> and
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>x<rsub|0>> we
+          have <math|x\<in\>A\<wedge\>0\<less\>x<rsub|0>-x\<less\>\<delta\>>
+          so that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>=L>.
+        </description>
+
+        <item*|<math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>>>\ 
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V> with <math|x<rsub|0>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>>.
+          As <math|x<rsub|0>\<in\>\<bbb-R\>> we have
+          <math|x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<delta\>\<gtr\>0> so that
+          <math|x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          If then <math|x\<in\>A\<wedge\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+          we have <math|x\<in\>A<big|cap>V\<wedge\>x<rsub|0>\<less\>x> so
+          that <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,\<varepsilon\>|[>\<Rightarrow\>f<around*|(|x|)>\<less\>-\<varepsilon\>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L=-\<infty\>> we have, using <reference|topology on
+          extented reals> and the fact that
+          <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|\<infty\>>>
+          we have <math|-\<infty\>\<nin\>B>, that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>.
+          Using the hypothese there exists a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<vdash\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+          we have <math|f<around*|(|x|)>\<less\>-\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          If we take then <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          we have <math|x<rsub|0>\<in\>V> and
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>x<rsub|0>> we
+          have <math|x\<in\>A\<wedge\>0\<less\>x-x<rsub|0>\<less\>\<delta\>>
+          so that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>=L>.
+        </description>
+
+        <item*|<math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0>
+          take <math|L\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|x<rsub|0>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V> with <math|x\<neq\>x<rsub|0>>
+          we have <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>>.
+          As <math|x<rsub|0>\<in\>\<bbb-R\>> we have
+          <math|x<rsub|0>\<in\>V<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<delta\>\<gtr\>0> so that
+          <math|x<rsub|0>\<in\><around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<subseteq\>V<big|cap>\<bbb-R\>\<subseteq\>V>.
+          If then <math|x\<in\>A\<wedge\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+          we have <math|x\<in\>A<big|cap>V\<wedge\>x\<neq\>x<rsub|0>> so that
+          <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,\<varepsilon\>|[>\<Rightarrow\>f<around*|(|x|)>\<less\>-\<varepsilon\>>.
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L=-\<infty\>> we have, using <reference|topology on
+          extented reals> and the fact that
+          <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|\<infty\>>>
+          we have <math|-\<infty\>\<nin\>B>, that
+          <math|\<exists\>\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>.
+          Using the hypothese there exists a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<vdash\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+          we have <math|f<around*|(|x|)>\<less\>-\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          If we take then <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          we have <math|x<rsub|0>\<in\>V> and
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>x<rsub|0>> we
+          have <math|x\<in\>A\<wedge\>0\<less\><around*|\||x<rsub|0>-x|\|>\<less\>\<delta\>>
+          so that <math|f<around*|(|x|)>\<in\>U>. Proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>=L>.
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>=\<infty\>,L\<in\>\<bbb-R\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>If <math|\<varepsilon\>\<gtr\>0> take
+          then <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          [as <math|L\<in\>\<bbb-R\>>]. We have then that there exists a
+          <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> such
+          that if <math|x\<in\>A<big|cap>V\<vdash\>x\<less\>\<infty\>> we
+          have <math|f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<Rightarrow\><around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>.
+          As <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|-\<infty\>>>
+          we have <math|\<infty\>\<nin\>B> we have that
+          <math|\<exists\>\<delta\>\<gtr\>0> such that
+          <math|\<infty\>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>V>,
+          so if <math|x\<in\>A> and <math|\<delta\>\<less\>x\<less\>\<infty\>>
+          we have <math|x\<in\>A<big|cap>V\<vdash\>x\<less\>\<infty\>> and
+          thus <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>
+
+          <item*|<math|\<Leftarrow\>>>Let
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L\<in\>\<bbb-R\>> we have
+          <math|L\<in\>U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U<big|cap>\<bbb-R\>\<subseteq\>U>.
+          By the hypothese there exists a <math|\<delta\>\<gtr\>0> such that
+          if <math|\<delta\>\<less\>x\<less\>\<infty\>> we have
+          <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U>.
+          Take now <math|V=<around*|]|\<delta\>,\<infty\>|]>> then if
+          <math|x\<in\>V<big|cap>A\<vdash\>x\<less\>\<infty\>> we have
+          <math|f<around*|(|x|)>\<in\>U> proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+        </description>
+
+        <item*|<math|<below|lim|x\<downarrow\>\<infty\>>f<around*|(|x|)>=L>>then
+        given <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        with <math|L\<in\>U> we have for <math|\<infty\>\<in\><around*|]|1,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        that \ <math|\<forall\>x\<in\><around*|]|1,\<infty\>|]>\<vdash\>x\<gtr\>\<infty\>>
+        that <math|f<around*|(|x|)>\<in\>U> is satisfied vacuously, so this
+        is always true.
+
+        <item*|<math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=L>>\ 
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>\<infty\>>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>\<infty\>> we
+          have <math|x\<neq\>\<infty\>> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>\<infty\>>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>\<infty\>> we
+          have <math|x\<less\>\<infty\>> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=L>
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>=\<infty\>,L=\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=\<infty\>>>\ 
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0> we
+          have that <math|L=\<infty\>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>>
+          so there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|\<infty\>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>x\<less\>\<infty\>> we
+          have <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<Rightarrow\>\<varepsilon\>\<less\>f<around*|(|x|)>>.
+          As <math|\<infty\>\<in\>V> there exists a <math|\<delta\>\<gtr\>0>
+          such that <math|\<infty\>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>V>.
+          So if <math|x\<in\>A\<vdash\>\<delta\>\<less\>x\<less\>\<infty\>>
+          then <math|\<varepsilon\>\<less\>f<around*|(|x|)>>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|\<varepsilon\>\<gtr\>0> such
+          that <math|\<infty\>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>,
+          by the hypothese there exists then a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<wedge\>\<delta\>\<less\>x\<less\>\<infty\>>
+          then <math|\<varepsilon\>\<less\>f<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          Take now <math|V=<around*|]|\<delta\>,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then we have <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>x\<less\>\<infty\>>
+          that <math|f<around*|(|x|)>\<in\>U>
+        </description>
+
+        <item*|<math|<below|lim|x\<downarrow\>\<infty\>>f<around*|(|x|)>=\<infty\>>>then
+        given <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        with <math|L\<in\>U> we have for <math|\<infty\>\<in\><around*|]|1,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        that \ <math|\<forall\>x\<in\><around*|]|1,\<infty\>|]>\<vdash\>x\<gtr\>\<infty\>>
+        that <math|f<around*|(|x|)>\<in\>U> is satisfied vacuously. So this
+        is always true.
+
+        <item*|<math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=\<infty\>>>\ 
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>\<infty\>>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>\<infty\>> we
+          have <math|x\<neq\>\<infty\>> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>\<infty\>>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>\<infty\>> we
+          have <math|x\<less\>\<infty\>> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=L>
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>=\<infty\>,L=-\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=-\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0> we
+          have that <math|L=-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>>
+          so there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|\<infty\>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>x\<less\>\<infty\>> we
+          have <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<Rightarrow\>f<around*|(|x|)>\<less\>-\<varepsilon\>>.
+          As <math|\<infty\>\<in\>V> there exists a <math|\<delta\>\<gtr\>0>
+          such that <math|\<infty\>\<in\><around*|]|\<delta\>,\<infty\>|]>\<subseteq\>V>.
+          So if <math|x\<in\>A\<vdash\>\<delta\>\<less\>x\<less\>\<infty\>>
+          then <math|f<around*|(|x|)>\<less\>-\<infty\>>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|\<varepsilon\>\<gtr\>0> such
+          that <math|-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>,
+          by the hypothese there exists then a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<wedge\>\<delta\>\<less\>x\<less\>\<infty\>>
+          then <math|f<around*|(|x|)>\<less\>-\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          Take now <math|V=<around*|]|\<delta\>,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then we have <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>x\<less\>\<infty\>>
+          that <math|f<around*|(|x|)>\<in\>U>
+        </description>
+
+        <item*|<math|<below|lim|x\<downarrow\>\<infty\>>f<around*|(|x|)>=-\<infty\>>>then
+        given <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        with <math|L\<in\>U> we have for <math|\<infty\>\<in\><around*|]|1,\<infty\>|]>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        that <math|\<forall\>x\<in\><around*|]|1,\<infty\>|]>\<vdash\>x\<gtr\>\<infty\>>
+        that <math|f<around*|(|x|)>\<in\>U> is satisfied vacuously. So this
+        is always true.
+
+        <item*|<math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=-\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>\<infty\>>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>\<infty\>> we
+          have <math|x\<less\>\<infty\>> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=L>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>\<infty\>>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<less\>\<infty\>> we
+          have <math|x\<neq\>\<infty\>> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=L>
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>=-\<infty\>,L\<in\>\<bbb-R\>>>then we have for
+      the different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>-\<infty\>>f<around*|(|x|)>=L>>then
+        given <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        with <math|L\<in\>U> we have for <math|-\<infty\>\<in\><around*|[|-\<infty\>,-1|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        that <math|\<forall\>x\<in\><around*|]|1,\<infty\>|]>\<vdash\>x\<gtr\>\<infty\>>
+        \ <math|f<around*|(|x|)>\<in\>U> is satisfied vacuously. So this is
+        always true.
+
+        <item*|<math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=L>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>If <math|\<varepsilon\>\<gtr\>0> take
+          then <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<in\>\<cal-T\><rsub|\<bbb-R\>>\<subseteq\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          [as <math|L\<in\>\<bbb-R\>>]. We have then that there exists a
+          <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> such
+          that if <math|x\<in\>A<big|cap>V\<vdash\>-\<infty\>\<less\>x> we
+          have <math|f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<Rightarrow\><around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>.
+          As <math|\<forall\>B\<in\>\<cal-B\><rsub|\<bbb-R\>><big|cup>\<cal-B\><rsub|\<infty\>>>
+          we have <math|-\<infty\>\<nin\>B> we have that
+          <math|\<exists\>\<delta\>\<gtr\>0> such that
+          <math|-\<infty\>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>V>,
+          so if <math|x\<in\>A> and <math|-\<infty\>\<less\>x\<less\>-\<delta\>>
+          we have <math|x\<in\>A<big|cap>V\<vdash\>-\<infty\>\<less\>x> and
+          thus <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>>
+
+          <item*|<math|\<Leftarrow\>>>Let
+          <math|L\<in\>U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then as <math|L\<in\>\<bbb-R\>> we have
+          <math|L\<in\>U<big|cap>\<bbb-R\>\<in\>\<cal-T\><rsub|\<bbb-R\>>>
+          [using <reference|topology on extented reals>] so there exists a
+          <math|\<varepsilon\>\<gtr\>0> such that
+          <math|L\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U<big|cap>\<bbb-R\>\<subseteq\>U>.
+          By the hypothese there exists a <math|\<delta\>\<gtr\>0> such that
+          if <math|-\<infty\>\<less\>x\<less\>-\<delta\>> we have
+          <math|<around*|\||f<around*|(|x|)>-L|\|>\<less\>\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|L-\<varepsilon\>,L+\<varepsilon\>|[>\<subseteq\>U>.
+          Take now <math|V=<around*|[|-\<infty\>,-\<delta\>|[>> then if
+          <math|x\<in\>V<big|cap>A\<vdash\>-\<infty\>\<less\>x> we have
+          <math|f<around*|(|x|)>\<in\>U> proving that
+          <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+        </description>
+
+        <item*|<math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=L>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>-\<infty\>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>-\<infty\>> we
+          have <math|-\<infty\>\<less\>x> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=L>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>-\<infty\>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>-\<infty\>> we
+          have <math|-\<infty\>\<less\>x> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=L>
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>=-\<infty\>,L=\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>-\<infty\>>f<around*|(|x|)>=\<infty\>>>then
+        given <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        with <math|L\<in\>U> we have for <math|-\<infty\>\<in\><around*|[|-\<infty\>,-1|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        that <math|\<forall\>x\<in\><around*|]|1,\<infty\>|]>\<vdash\>x\<gtr\>\<infty\>>
+        \ <math|f<around*|(|x|)>\<in\>U> is satisfied vacuously. So this is
+        always true.
+
+        <item*|<math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0> we
+          have that <math|L=\<infty\>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>>
+          so there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|-\<infty\>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>-\<infty\>\<less\>x> we
+          have <math|f<around*|(|x|)>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<Rightarrow\>\<varepsilon\>\<less\>f<around*|(|x|)>>.
+          As <math|-\<infty\>\<in\>V> there exists a <math|\<delta\>\<gtr\>0>
+          such that <math|-\<infty\>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>V>.
+          So if <math|x\<in\>A\<vdash\>-\<infty\>\<less\>x\<less\>-\<delta\>>
+          then <math|\<varepsilon\>\<less\>f<around*|(|x|)>>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|\<varepsilon\>\<gtr\>0> such
+          that <math|\<infty\>\<in\><around*|]|\<varepsilon\>,\<infty\>|]>\<subseteq\>U>,
+          by the hypothese there exists then a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<wedge\>-\<infty\>\<less\>x\<less\>-\<delta\>>
+          then <math|\<varepsilon\>\<less\>f<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          Take now <math|V=<around*|[|-\<infty\>,-\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then we have <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>-\<infty\>\<less\>x>
+          that <math|f<around*|(|x|)>\<in\>U>
+        </description>
+
+        <item*|<math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>-\<infty\>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>-\<infty\>> we
+          have <math|-\<infty\>\<less\>x> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=L>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>-\<infty\>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>-\<infty\>> we
+          have <math|-\<infty\>\<less\>x> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=L>
+        </description>
+      </description>
+
+      <item*|<math|x<rsub|0>=-\<infty\>,L=-\<infty\>>>then we have for the
+      different limits the following alternative definitions
+
+      <\description>
+        <item*|<math|<below|lim|x\<uparrow\>-\<infty\>>f<around*|(|x|)>=-\<infty\>>>then
+        given <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        with <math|L\<in\>U> we have for <math|-\<infty\>\<in\><around*|[|-\<infty\>,-1|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+        that <math|\<forall\>x\<in\><around*|]|1,\<infty\>|]>\<vdash\>x\<gtr\>\<infty\>>
+        \ <math|f<around*|(|x|)>\<in\>U> is satisfied vacuously. So this is
+        always true.
+
+        <item*|<math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=-\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given <math|\<varepsilon\>\<gtr\>0> we
+          have that <math|L=-\<infty\>\<in\><around*|[|-\<infty\>.-\<varepsilon\>|[>>
+          so there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          with <math|-\<infty\>\<in\>V> such that
+          <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>-\<infty\>\<less\>x> we
+          have <math|f<around*|(|x|)>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<Rightarrow\>f<around*|(|x|)>\<less\>-\<varepsilon\>>.
+          As <math|-\<infty\>\<in\>V> there exists a <math|\<delta\>\<gtr\>0>
+          such that <math|-\<infty\>\<in\><around*|[|-\<infty\>,-\<delta\>|[>\<subseteq\>V>.
+          So if <math|x\<in\>A\<vdash\>-\<infty\>\<less\>x\<less\>-\<delta\>>
+          then <math|f<around*|(|x|)>\<less\>-\<varepsilon\>>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L=-\<infty\>\<in\>U> there exists a
+          <math|\<varepsilon\>\<gtr\>0> such that
+          <math|-\<infty\>\<in\><around*|[|-\<infty\>,-\<varepsilon\>|[>\<subseteq\>U>,
+          by the hypothese there exists then a <math|\<delta\>\<gtr\>0> such
+          that if <math|x\<in\>A\<wedge\>-\<infty\>\<less\>x\<less\>-\<delta\>>
+          then <math|f<around*|(|x|)>\<less\>-\<varepsilon\>\<Rightarrow\>f<around*|(|x|)>\<in\>U>.
+          Take now <math|V=<around*|[|-\<infty\>,-\<delta\>|[>\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          then we have <math|\<forall\>x\<in\>A<big|cap>V\<vdash\>-\<infty\>\<less\>x>
+          that <math|f<around*|(|x|)>\<in\>U>
+        </description>
+
+        <item*|<math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=-\<infty\>>>
+
+        <\description>
+          <item*|<math|\<Rightarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>-\<infty\>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>-\<infty\>> we
+          have <math|-\<infty\>\<less\>x> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=L>
+
+          <item*|<math|\<Leftarrow\>>>Given
+          <math|U\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>> with
+          <math|L\<in\>U> there exists a <math|V\<in\>\<cal-T\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+          such that <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>-\<infty\>\<less\>x>
+          we have <math|f<around*|(|x|)>\<in\>U>, so
+          <math|\<forall\>x\<in\>V<big|cap>A\<vdash\>x\<neq\>-\<infty\>> we
+          have <math|-\<infty\>\<less\>x> giving that
+          <math|f<around*|(|x|)>\<in\>U>, proving that
+          <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=L>
+        </description>
+      </description>
+    </description>
+  </proof>
+
+  <\lemma>
+    <label|usefull properties of open sets in the extented reals >Let
+    <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> with <math|x\<in\>U> a open
+    set in <math|<wide|\<bbb-R\>|\<wide-bar\>>> then we have\ 
+
+    <\enumerate>
+      <item>If <math|-\<infty\>\<less\>x> then there exists a
+      <math|z\<in\>\<bbb-R\>> such that <math|z\<less\>x> and
+      <math|<around*|]|z,x|]>\<subseteq\>U>
+
+      <item>If <math|x\<less\>\<infty\>> then there exists a
+      <math|z\<in\>\<bbb-R\>> such that <math|x\<less\>z> and
+      <math|<around*|[|x,z|[>\<subseteq\>U>
+    </enumerate>
+
+    Note that if <math|x=\<infty\>> or <math|x=-\<infty\>> we must have the
+    inclusion <math|<around*|]|\<ldots\>x|]>> or
+    <math|<around*|[|x\<ldots\>|[>>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>If <math|-\<infty\>\<less\>x> and <math|U> a open set in
+      <math|<wide|\<bbb-R\>|\<wide-bar\>>> containing <math|x> then there
+      exists a <math|B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|x\<in\>B\<subseteq\>U> now for <math|B> we have the
+      following possibilities:
+
+      <\description>
+        <item*|<math|B=<around*|]|y-\<varepsilon\>,y+\<varepsilon\>|[> where
+        y\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<gtr\>0>>take then
+        <math|z=y-\<varepsilon\>> then as
+        <math|x\<in\>B=<around*|]|y-\<varepsilon\>,y+\<varepsilon\>|[>> we
+        have <math|z=y-\<varepsilon\>\<less\>x> and
+        <math|<around*|]|z,x|]>\<subseteq\><around*|]|y-\<varepsilon\>,y+\<varepsilon\>|[>\<subseteq\>U>.
+
+        <item*|<math|B=<around*|[|-\<infty\>,y|[> where
+        y\<in\>\<bbb-R\>>>then as <math|x\<in\>B> we have <math|x\<less\>y>,
+        from <math|-\<infty\>\<less\>x\<less\>y\<less\>\<infty\>> we have
+        then that <math|x\<in\>\<bbb-R\>>, take then <math|z=x-1> then we
+        have <math|z\<less\>x> and <math|<around*|]|z,x|]>\<subseteq\><around*|[|-\<infty\>,y|[>\<subseteq\>U>.
+
+        <item*|<math|B=<around*|]|y,\<infty\>|]>> where
+        <math|y\<in\>\<bbb-R\>>>then as <math|x\<in\>B> we have
+        <math|y\<less\>x> take then <math|z=y> then we have <math|z\<less\>x>
+        and <math|<around*|]|z,x|]>\<subseteq\><around*|]|y,\<infty\>|]>\<subseteq\>U>
+      </description>
+
+      <item>If <math|x\<less\>\<infty\>> and <math|U> a open set in
+      <math|<wide|\<bbb-R\>|\<wide-bar\>>> containing <math|x> then there
+      exists a <math|B\<in\>\<cal-B\><rsub|<wide|\<bbb-R\>|\<wide-bar\>>>>
+      such that <math|x\<in\>B\<subseteq\>U> now for <math|B> we have the
+      following possibilities:
+
+      <\description>
+        <item*|<math|B=<around*|]|y-\<varepsilon\>,y+\<varepsilon\>|[> where
+        y\<in\>\<bbb-R\>\<wedge\>\<varepsilon\>\<gtr\>0>>take then
+        <math|z=y+\<varepsilon\>> then as
+        <math|x\<in\>B=<around*|]|y-\<varepsilon\>,y+\<varepsilon\>|[>> we
+        have <math|x\<less\>y+\<varepsilon\>=z> and
+        <math|<around*|[|x,z|[>\<subseteq\><around*|]|y-\<varepsilon\>,y+\<varepsilon\>|[>\<subseteq\>U>.
+
+        <item*|<math|B=<around*|[|-\<infty\>,y|[> where
+        y\<in\>\<bbb-R\>>>then as <math|x\<in\>B> we have <math|x\<less\>y>,
+        take then <math|z=y> then we have <math|x\<less\>z> and
+        <math|<around*|[|x,z|[>\<subseteq\><around*|[|-\<infty\>,y|[>\<subseteq\>U>.
+
+        <item*|<math|B=<around*|]|y,\<infty\>|]>> where
+        <math|y\<in\>\<bbb-R\>>>then as <math|x\<in\>B> we have
+        <math|y\<less\>x>, from <math|-\<infty\>\<less\>y\<less\>x\<less\>\<infty\>>
+        we have <math|x\<in\>\<bbb-R\>>, take then <math|z=x+1> then we have
+        <math|x\<less\>z> and <math|<around*|[|x,z|[>\<subseteq\><around*|]|y,\<infty\>|]>\<subseteq\>U>
+      </description>
+    </enumerate>
+  </proof>
+
+  \;
+
+  <\theorem>
+    <label|limit of monotone functions>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function and
+    <math|x<rsub|0>\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then we have\ 
+
+    <\enumerate>
+      <item>If <math|f> is a increasing function and <math|x<rsub|0>> is a
+      left limit point of <math|A> then <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x\<less\>x<rsub|0>|}>|)>>
+
+      <item>If <math|f> is a increasing function and <math|x<rsub|0>> is a
+      right limit point of <math|A> then <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x<rsub|0>\<less\>x|}>|)>>
+
+      <item>If <math|f> is a decreasing function and <math|x<rsub|0>> is a
+      left limit point of <math|A> then <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x\<less\>x<rsub|0>|}>|)>>
+
+      <item>If <math|f> is a decreasing function and <math|x<rsub|0>> is a
+      right limit point of <math|A> then <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x<rsub|0>\<less\>x|}>|)>>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>As <math|x<rsub|0>> is a left limit point we must have by
+      <reference|limit points and plus or min infinity> that
+      <math|-\<infty\>\<less\>x<rsub|0>>. Take
+      <math|L=sup<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x\<less\>x<rsub|0>|}>|)>>
+      then we have the following cases to consider
+
+      <\description>
+        <item*|<math|\<forall\>x\<in\>A\<vdash\>x\<less\>x<rsub|0>\<vDash\>f<around*|(|x|)>=-\<infty\>>>then
+        using <reference|limit of a constant function> \ we have
+        <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>=sup<around*|(|<around*|{|-\<infty\>|}>|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x\<less\>x<rsub|0>|}>|)>=L>
+        so that <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+        <item*|<math|\<exists\>x<rsub|1>\<in\>A\<vdash\>x<rsub|1>\<less\>x<rsub|0>\<vDash\>f<around*|(|x<rsub|1>|)>\<gtr\>-\<infty\>>>then
+        <math|L\<gtr\>-\<infty\>>. If now <math|U> is a open set in
+        <math|<wide|\<bbb-R\>|\<wide-bar\>>> with <math|L\<in\>U>, then using
+        the previous lemma (see <reference|usefull properties of open sets in
+        the extented reals >) there exists a <math|z\<in\>\<bbb-R\>> such
+        that <math|z\<less\>L> and <math|<around*|]|z,L|]>\<subseteq\>U>.
+        From the definition of a supremum and <math|z\<less\>L> it follows
+        that there exists a <math|y\<in\>A> with <math|y\<less\>x<rsub|0>>
+        such that <math|z\<less\>f<around*|(|y|)>\<leqslant\>L>. We have now
+        to consider the following two cases for <math|x<rsub|0>>
+
+        <\description>
+          <item*|<math|x<rsub|0>=\<infty\>>>take then the open set
+          <math|V=<around*|]|y,x<rsub|0>+1|]>> containing
+          <math|x<rsub|0><rsub|>>, if now <math|x\<in\>V<big|cap>A> with
+          <math|x\<less\>x<rsub|0>> then <math|y\<less\>x> so as <math|f> is
+          increasing we have <math|z\<less\>f<around*|(|y|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>L\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|z,L|]>\<subseteq\>U>
+
+          <item*|<math|x<rsub|0>\<in\>\<bbb-R\>>>for <math|y> we have as
+          <math|y\<less\>x<rsub|0>> two possibilities\ 
+
+          <\description>
+            <item*|<math|y=-\<infty\>>>take the open set
+            <math|V>=<math|<around*|]|x<rsub|0>-1,y|]>> containing
+            <math|x<rsub|0>>, if now <math|x\<in\>V<big|cap>A> with
+            <math|x<rsub|0>\<less\>x> then <math|x\<leqslant\>y> so as
+            <math|f> is increasing we have
+            <math|L\<leqslant\>f<around*|(|x|)>\<leqslant\>f<around*|(|y|)>\<less\>z\<Rightarrow\>f<around*|(|x|)>\<in\><around*|[|L,z|[>\<subseteq\>U>
+
+            <item*|<math|y\<in\>\<bbb-R\>>>define then
+            <math|\<delta\>=x<rsub|0>-y> and take the open set
+            <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>>,
+            if now <math|x\<in\>V<big|cap>A> with <math|x<rsub|0>\<less\>x>
+            then <math|y=x<rsub|0>-\<delta\>\<less\>x> so as <math|f> is
+            increasing we have <math|z\<less\>f<around*|(|y|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>L\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|z,L|]>\<subseteq\>U>
+          </description>
+        </description>
+
+        This proves that given <math|U> open with <math|L\<in\>U> there
+        exists a <math|V> open containing <math|x<rsub|0>> such that
+        <math|\<forall\>x\<in\>V<big|cap>A> with <math|x\<less\>x<rsub|0>> we
+        have <math|f<around*|(|x|)>\<in\>U> proving that
+        <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+      </description>
+
+      <item>As <math|x<rsub|0>> is a right limit point we must have by
+      <reference|limit points and plus or min infinity> that
+      \ <math|x<rsub|0>\<less\>\<infty\>>. Take
+      <math|L=inf<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x<rsub|0>\<less\>x|}>|)>>
+      then we have the following cases to consider
+
+      <\description>
+        <item*|<math|\<forall\>x\<in\>A\<vdash\>x<rsub|0>\<less\>x we have
+        f<around*|(|x|)>=\<infty\>>>then using <reference|limit of a constant
+        function> we have <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=inf<around*|(|<around*|{|\<infty\>|}>|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x<rsub|0>\<less\>x|}>|)>=L>
+        so that <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+        <item*|<math|\<exists\>x<rsub|1>\<in\>A\<vdash\>x<rsub|0>\<less\>x<rsub|1>\<vDash\>f<around*|(|x|)>\<less\>\<infty\>>>then
+        <math|L\<less\>\<infty\>>. If now <math|U> is a open set in
+        <math|<wide|\<bbb-R\>|\<wide-bar\>>> with <math|L\<in\>U>, then using
+        the previous lemma (see <reference|usefull properties of open sets in
+        the extented reals >) there exists a
+        <math|z\<in\><wide|\<bbb-R\>|\<wide-bar\>>> such that
+        <math|L\<less\>z> and <math|<around*|[|L,z|[>\<subseteq\>U>. From the
+        definition of a infinum and <math|L\<less\>z> it follows that there
+        exists a <math|y\<in\>A> with <math|x<rsub|0>\<less\>y> such that
+        <math|L\<leqslant\>f<around*|(|y|)>\<less\>z>. We have now to
+        consider the following two cases for <math|x<rsub|0>>
+
+        <\description>
+          <item*|<math|x<rsub|0>=-\<infty\>>>take then the open set
+          <math|V=<around*|[|-\<infty\>,y|[>> containing
+          <math|x<rsub|0><rsub|>>, if now <math|x\<in\>V<big|cap>A> with
+          <math|x<rsub|0>\<less\>x> then <math|x\<less\>y> so as <math|f> is
+          increasing we have <math|L\<leqslant\>f<around*|(|x|)>\<leqslant\>f<around*|(|y|)>\<less\>z\<Rightarrow\>f<around*|(|x|)>\<in\><around*|[|L,z|[>\<subseteq\>U>
+
+          <item*|<math|x<rsub|0>\<in\>\<bbb-R\>>>for <math|y> we have as
+          <math|x<rsub|0>\<less\>y> two possibilities\ 
+
+          <\description>
+            <item*|<math|y=\<infty\>>>take the open set
+            <math|V>=<math|<around*|]|x<rsub|0>-1,y|]>> containing
+            <math|x<rsub|0>>, if now <math|x\<in\>V<big|cap>A> with
+            <math|x<rsub|0>\<less\>x> then <math|x\<leqslant\>y> so as
+            <math|f> is increasing we have
+            <math|L\<leqslant\>f<around*|(|x|)>\<leqslant\>f<around*|(|y|)>\<less\>z\<Rightarrow\>f<around*|(|x|)>\<in\><around*|[|L,z|[>\<subseteq\>U>
+
+            <item*|<math|y\<in\>\<bbb-R\>>>define then
+            <math|\<delta\>=y-x<rsub|0>> and take the open set
+            <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>>,
+            if now <math|x\<in\>V<big|cap>A> with <math|x<rsub|0>\<less\>x>
+            then <math|x\<less\>x<rsub|0>+\<delta\>=y> so as <math|f> is
+            increasing we have <math|L\<leqslant\>f<around*|(|x|)>\<leqslant\>f<around*|(|y|)>\<less\>z\<Rightarrow\>f<around*|(|x|)>\<in\><around*|[|L,z|[>\<subseteq\>U>
+          </description>
+        </description>
+
+        This proves that given <math|U> open with <math|L\<in\>U> there
+        exists a <math|V> open containing <math|x<rsub|0>> such that
+        <math|\<forall\>x\<in\>V<big|cap>A> with <math|x<rsub|0>\<less\>x> we
+        have <math|f<around*|(|x|)>\<in\>U> proving that
+        <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+      </description>
+
+      <item>As <math|x<rsub|0>> is a left limit point we must have by
+      <reference|limit points and plus or min infinity> that
+      <math|-\<infty\>\<less\>x<rsub|0>>. \ Take
+      <math|L=inf<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x\<less\>x<rsub|0>|}>|)>>
+      then we have the following cases to consider
+
+      <\description>
+        <item*|<math|\<forall\>x\<in\>A\<vdash\>x\<less\>x<rsub|0>\<vDash\>f<around*|(|x|)>=\<infty\>>>then
+        using <reference|limit of a constant function> \ we have
+        <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=\<infty\>=inf<around*|(|<around*|{|\<infty\>|}>|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x\<less\>x<rsub|0>|}>|)>=L>
+        so that <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+        <item*|<math|\<exists\>x<rsub|1>\<in\>A\<vdash\>x<rsub|1>\<less\>x<rsub|0>\<vDash\>f<around*|(|x<rsub|1>|)>\<less\>\<infty\>>>then
+        <math|L\<less\>\<infty\>>. If now <math|U> is a open set in
+        <math|<wide|\<bbb-R\>|\<wide-bar\>>> with <math|L\<in\>U>, then using
+        the previous lemma (see <reference|usefull properties of open sets in
+        the extented reals >) there exists a <math|z\<in\>\<bbb-R\>> such
+        that <math|L\<less\>z> and <math|<around*|[|L,z|[>\<subseteq\>U>.
+        From the definition of a infinum and <math|L\<less\>z> it follows
+        that there exists a <math|y\<in\>A> with <math|y\<less\>x<rsub|0>>
+        such that <math|L\<leqslant\>f<around*|(|y|)>\<less\>z>. We have now
+        to consider the following two cases for <math|x<rsub|0>>
+
+        <\description>
+          <item*|<math|x<rsub|0>=\<infty\>>>take then the open set
+          <math|V=<around*|]|y,x<rsub|0>|]>> containing
+          <math|x<rsub|0><rsub|>>, if now <math|x\<in\>V<big|cap>A> with
+          <math|x\<less\>x<rsub|0>> then <math|y\<less\>x> so as <math|f> is
+          decreasing we have <math|L\<leqslant\>f<around*|(|x|)>\<leqslant\>f<around*|(|y|)>\<less\>z\<Rightarrow\>f<around*|(|x|)>\<in\><around*|[|L,z|[>\<subseteq\>U>
+
+          <item*|<math|x<rsub|0>\<in\>\<bbb-R\>>>for <math|y> we have as
+          <math|y\<less\>x<rsub|0>> two possibilities\ 
+
+          <\description>
+            <item*|<math|y=-\<infty\>>>take the open set
+            <math|V=<around*|[|y,x<rsub|0>+1|[>> containing <math|x<rsub|0>>,
+            if now <math|x\<in\>V<big|cap>A> with <math|x\<less\>x<rsub|0>>
+            then <math|y\<leqslant\>x> so as <math|f> is decreasing we have
+            <math|L\<leqslant\>f<around*|(|x|)>\<leqslant\>f<around*|(|y|)>\<less\>z\<Rightarrow\>f<around*|(|x|)>\<in\><around*|[|L,z|[>\<subseteq\>U>
+
+            <item*|<math|y\<in\>\<bbb-R\>>>define then
+            <math|\<delta\>=x<rsub|0>-y> and take the open set
+            <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>>,
+            if now <math|x\<in\>V<big|cap>A> with <math|x<rsub|0>\<less\>x>
+            then <math|y=x<rsub|0>-\<delta\>\<less\>x> so as <math|f> is
+            decreasing we have <math|L\<leqslant\>f<around*|(|x|)>\<leqslant\>f<around*|(|y|)>\<less\>z\<Rightarrow\>f<around*|(|x|)>\<in\><around*|[|L,x|[>\<subseteq\>U>
+          </description>
+        </description>
+
+        This proves that given <math|U> open with <math|L\<in\>U> there
+        exists a <math|V> open containing <math|x<rsub|0>> such that
+        <math|\<forall\>x\<in\>V<big|cap>A> with <math|x\<less\>x<rsub|0>> we
+        have <math|f<around*|(|x|)>\<in\>U> proving that
+        <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>=L>.
+      </description>
+
+      <item>As <math|x<rsub|0>> is a right limit point we must have by
+      <reference|limit points and plus or min infinity> that
+      <math|x<rsub|0>\<less\>\<infty\>>. \ Take
+      <math|L=sup<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x<rsub|0>\<less\>x|}>|)>>
+      then we have the following cases to consider
+
+      <\description>
+        <item*|<math|\<forall\>x\<in\>A\<vdash\>x\<less\>x<rsub|0>\<vDash\>f<around*|(|x|)>=-\<infty\>>>then
+        using <reference|limit of a constant function> \ we have
+        <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=-\<infty\>=sup<around*|(|<around*|{|\<infty\>|}>|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|x\<in\>A\<wedge\>x<rsub|0>\<less\>x|}>|)>=L>
+        so that <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>
+
+        <item*|<math|\<exists\>x<rsub|1>\<in\>A\<vdash\>x<rsub|0>\<less\>x<rsub|1>\<vDash\>-\<infty\>\<less\>f<around*|(|x<rsub|1>|)>>>then
+        <math|-\<infty\>\<less\>L>. If now <math|U> is a open set in
+        <math|<wide|\<bbb-R\>|\<wide-bar\>>> with <math|L\<in\>U>, then using
+        the previous lemma (see <reference|usefull properties of open sets in
+        the extented reals >) there exists a <math|z\<in\>\<bbb-R\>> such
+        that <math|z\<less\>L> and <math|<around*|]|z,L|]>\<subseteq\>U>.
+        From the definition of a supremum and <math|z\<less\>L> it follows
+        that there exists a <math|y\<in\>A> with <math|x<rsub|0>\<less\>y>
+        such that <math|z\<less\>f<around*|(|y|)>\<leqslant\>L>. We have now
+        to consider the following two cases for <math|x<rsub|0>>
+
+        <\description>
+          <item*|<math|x<rsub|0>=-\<infty\>>>take then the open set
+          <math|V=<around*|[|x<rsub|0>,y|[>> containing
+          <math|x<rsub|0><rsub|>>, if now <math|x\<in\>V<big|cap>A> with
+          <math|x<rsub|0>\<less\>x> then <math|x\<less\>y> so as <math|f> is
+          decreasing we have <math|z\<less\>f<around*|(|y|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>L\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|z,L|]>\<subseteq\>U>
+
+          <item*|<math|x<rsub|0>\<in\>\<bbb-R\>>>for <math|y> we have as
+          <math|x<rsub|0>\<less\>y> two possibilities\ 
+
+          <\description>
+            <item*|<math|y=\<infty\>>>take the open set
+            <math|V=<around*|]|x<rsub|0>-1,y|]>> containing <math|x<rsub|0>>,
+            if now <math|x\<in\>V<big|cap>A> with <math|x<rsub|0>\<less\>x>
+            then <math|x\<leqslant\>y> so as <math|f> is decreasing we have
+            <math|z\<less\>f<around*|(|y|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>L\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|z,L|]>\<subseteq\>U>
+
+            <item*|<math|y\<in\>\<bbb-R\>>>define then
+            <math|\<delta\>=y-x<rsub|0>> and take the open set
+            <math|V=<around*|]|x<rsub|0>-\<delta\>,x<rsub|0>+\<delta\>|[>>,
+            if now <math|x\<in\>V<big|cap>A> with <math|x\<less\>x<rsub|0>>
+            then <math|x\<less\>x<rsub|0>+\<delta\>=y> so as <math|f> is
+            decreasing we have <math|z\<less\>f<around*|(|y|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>L\<Rightarrow\>f<around*|(|x|)>\<in\><around*|]|z,L|]>\<subseteq\>U>
+          </description>
+        </description>
+
+        This proves that given <math|U> open with <math|L\<in\>U> there
+        exists a <math|V> open containing <math|x<rsub|0>> such that
+        <math|\<forall\>x\<in\>V<big|cap>A> with <math|x\<less\>x<rsub|0>> we
+        have <math|f<around*|(|x|)>\<in\>U> proving that
+        <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>=L>.
+      </description>
+    </enumerate>
+  </proof>
+
+  Applying the above on limits at <math|\<infty\>> and <math|-\<infty\>>
+  gives the following corollary.
+
+  <\corollary>
+    <label|limit at infinity of ascending (descending) functions>Let
+    <math|B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> then we have that\ 
+
+    <\enumerate>
+      <item>If <math|f:<around*|[|-\<infty\>,a|]>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<leqslant\>a|}>|)>>
+
+      <item>If <math|f:<around*|[|-\<infty\>,a|[>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<less\>a|}>|)>>
+
+      <item>If <math|f:<around*|]|-\<infty\>,a|]>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<leqslant\>a|}>|)>>
+
+      <item>If <math|f:<around*|]|-\<infty\>,a|[>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<less\>a|}>|)>>
+
+      <item>If <math|f:<around*|[|-\<infty\>,a|]>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<leqslant\>a|}>|)>>
+
+      <item>If <math|f:<around*|[|-\<infty\>,a|[>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<less\>a|}>|)>>
+
+      <item>If <math|f:<around*|]|-\<infty\>,a|]>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<leqslant\>a|}>|)>>
+
+      <item>If <math|f:<around*|]|-\<infty\>,a|[>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>-\<infty\>>f<around*|(|x|)>=<below|lim|x\<downarrow\>-\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|-\<infty\>\<less\>x\<less\>a|}>|)>>
+
+      <item>If <math|f:<around*|[|a,\<infty\>|]>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|a\<leqslant\>x\<less\>\<infty\>|}>|)>>
+
+      <item>If <math|f:<around*|[|a,\<infty\>|[>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|a\<leqslant\>x\<less\>\<infty\>|}>|)>>
+
+      <item>If <math|f:<around*|]|a,\<infty\>|]>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|a\<less\>x\<less\>\<infty\>|}>|)>>
+
+      <item>If <math|f:<around*|]|a,\<infty\>|[>\<rightarrow\>B> is a
+      increasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|a\<less\>x\<less\>\<infty\>|}>|)>>
+
+      <item>If <math|f:<around*|[|a,\<infty\>|]>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|a\<leqslant\>x\<less\>\<infty\>|}>|)>>
+
+      <item>If <math|f:<around*|[|a,\<infty\>|[>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|a\<leqslant\>x\<less\>\<infty\>|}>|)>>
+
+      <item>If <math|f:<around*|]|a,\<infty\>|]>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|a\<less\>x\<less\>\<infty\>|}>|)>>
+
+      <item>If <math|f:<around*|]|a,\<infty\>|[>\<rightarrow\>B> is a
+      decreasing function where <math|a\<in\>\<bbb-R\><big|cup><around*|{|-\<infty\>|}>>
+      then <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|x\<uparrow\>\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|a\<less\>x\<less\>\<infty\>|}>|)>>
+    </enumerate>
+  </corollary>
+
+  <\proof>
+    This follows from the fact that in cases 1,2,3,4,5,7,8 <math|-\<infty\>>
+    is a left limit point of the domain of <math|f>, in cases
+    <math|9,10,11,12,13,14,15,16> is <math|\<infty\>> is a right limit point
+    of the domain of <math|f>, theorem <reference|limits at infinity> and the
+    previous theorem <reference|limit of monotone functions>.
+  </proof>
+
+  <\theorem>
+    <label|limit for f\<less\>=g>Let <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|x<rsub|0>\<in\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|x<rsub|0>\<in\>W> a open set and <math|f:A\<rightarrow\>B>,
+    <math|g:A\<rightarrow\>B> \ be functions so that
+    <math|\<forall\>x\<in\>A<big|cap>W> we have
+    <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>> then we have
+
+    <\enumerate>
+      <item>If <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>> exists then
+      we have <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\><below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+
+      <item>If <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|<below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>> exists then we
+      have <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\><below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>>
+
+      <item>If <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>> exists then
+      we have <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\><below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    The proofs for the the different cases are similar\ 
+
+    <\enumerate>
+      <item>Take <math|L<rsub|f>=<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|L<rsub|g>=<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+      and assume that <math|L<rsub|g>\<less\>L<rsub|f>>, the following
+      possibilities exists then for <math|L<rsub|f>,L<rsub|g>>
+
+      <\description>
+        <item*|<math|L<rsub|g>\<in\>\<bbb-R\>\<wedge\>L<rsub|f>=\<infty\>>>Then
+        <math|L<rsub|g>\<in\><around*|]|L<rsub|g>-1,L<rsub|g>+1|[>> a open
+        set so by the definition of the right limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|L<rsub|g>-1\<less\>g<around*|(|x|)>\<less\>L<rsub|g>+1>. Also
+        <math|<around*|]|L<rsub|g>+1,\<infty\>|]>> is a open set containing
+        <math|L<rsub|f>=\<infty\>> so by the definition of a right limit
+        there exists a open set <math|V<rsub|f>> containing <math|x<rsub|0>>
+        so that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x<rsub|0>\<less\>x<rsub|>> we have
+        <math|L<rsub|g>+1\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>>. Now
+        as <math|x<rsub|0>> is a right limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|x<rsub|0>\<less\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>L<rsub|g>+1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>
+
+        <item*|<math|L<rsub|g>=-\<infty\>\<wedge\>L<rsub|f>=\<infty\>>>Then
+        <math|-\<infty\>=L<rsub|g>\<in\><around*|[|-\<infty\>,1|[>> a open
+        set so by definition of the right limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>1>. Also
+        <math|<around*|]|1,\<infty\>|]>> is a open set containing
+        <math|L<rsub|f>=\<infty\>> so by the definition of a right limit
+        there exists a open set <math|V<rsub|f>> containing <math|x<rsub|0>>
+        so that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|1\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>>. Now as
+        <math|x<rsub|0>> is a right limit point and
+        <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        there exists a <math|y<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>A>
+        with <math|x<rsub|0>\<less\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>
+
+        <item*|<math|L<rsub|g>\<in\>\<bbb-R\>\<wedge\>L<rsub|f>\<in\>\<bbb-R\>>>Take
+        then <math|\<varepsilon\>=<frac|L<rsub|f>-L<rsub|g>|2>>. We have then
+        that <math|L<rsub|g>\<in\><around*|]|L<rsub|g>-\<varepsilon\>,L<rsub|g>+\<varepsilon\>|[>>
+        a open set so by definition of the right limit there exists a open
+        set <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|L<rsub|g>-\<varepsilon\>\<less\>g<around*|(|x|)>\<less\>L<rsub|g>+\<varepsilon\>=<frac|L<rsub|f>+L<rsub|g>|2>>.
+        Also <math|<around*|]|L<rsub|f>-\<varepsilon\>,L<rsub|f>+\<varepsilon\>|[>>
+        is a open set containing <math|L<rsub|f>> thus we have by the
+        definition of a right limit that there exists a open set
+        <math|V<rsub|f>> such that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A>
+        with <math|x<rsub|0>\<less\>x> we have
+        <math|<frac|L<rsub|f>+L<rsub|g>|2>=L<rsub|f>-\<varepsilon\>\<less\>f<around*|(|x|)>\<less\>L<rsub|f>+\<varepsilon\>>.
+        Now as <math|x<rsub|0>> is a right limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|x<rsub|0>\<less\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\><frac|L<rsub|f>+L<rsub|g>|2>\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>.
+
+        <item*|<math|L<rsub|g>=-\<infty\>\<wedge\>L<rsub|f>\<in\>\<bbb-R\>>>Then
+        <math|-\<infty\>=L<rsub|g>\<in\><around*|[|-\<infty\>,L<rsub|f>-1|[>>
+        a open set so by the definition of the right limit there exists a
+        open set <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>L<rsub|f>-1>.
+        Also <math|<around*|]|L<rsub|f>-1,L<rsub|f>+1|[>> is a open set
+        containing <math|L<rsub|f>> so by the definition of a right limit
+        there exists a open set <math|V<rsub|f>> such that
+        <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x<rsub|0>\<less\>x> we have
+        <math|L<rsub|f>-1\<less\>f<around*|(|x|)>\<less\>L<rsub|f>+1>. \ Now
+        as <math|x<rsub|0>> is a right limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|x<rsub|0>\<less\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>L<rsub|f>-1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>.
+      </description>
+
+      <item>Take <math|L<rsub|f>=<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|L<rsub|g>=<below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>>
+      and assume that <math|L<rsub|g>\<less\>L<rsub|f>>, the following
+      possibilities exists then for <math|L<rsub|f>,L<rsub|g>>
+
+      <\description>
+        <item*|<math|L<rsub|g>\<in\>\<bbb-R\>\<wedge\>L<rsub|f>=\<infty\>>>Then
+        <math|L<rsub|g>\<in\><around*|]|L<rsub|g>-1,L<rsub|g>+1|[>> a open
+        set so by the definition of the left limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|L<rsub|g>-1\<less\>g<around*|(|x|)>\<less\>L<rsub|g>+1>. Also
+        <math|<around*|]|L<rsub|g>+1,\<infty\>|]>> is a open set containing
+        <math|L<rsub|f>=\<infty\>> so by the definition of a left limit there
+        exists a open set <math|V<rsub|f>> containing <math|x<rsub|0>> so
+        that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x\<less\>x<rsub|0><rsub|>> we have
+        <math|L<rsub|g>+1\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>>. Now
+        as <math|x<rsub|0>> is a left limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|y<rsub|0>\<less\>x<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>L<rsub|g>+1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>
+
+        <item*|<math|L<rsub|g>=-\<infty\>\<wedge\>L<rsub|f>=\<infty\>>>Then
+        <math|-\<infty\>=L<rsub|g>\<in\><around*|[|-\<infty\>,1|[>> a open
+        set so by definition of the left limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>1>. Also
+        <math|<around*|]|1,\<infty\>|]>> is a open set containing
+        <math|L<rsub|f>=\<infty\>> so by the definition of a left limit there
+        exists a open set <math|V<rsub|f>> containing <math|x<rsub|0>> so
+        that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|1\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>>. Now as
+        <math|x<rsub|0>> is a left limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|y<rsub|0>\<less\>x<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>
+
+        <item*|<math|L<rsub|g>\<in\>\<bbb-R\>\<wedge\>L<rsub|f>\<in\>\<bbb-R\>>>Take
+        then <math|\<varepsilon\>=<frac|L<rsub|f>-L<rsub|g>|2>>. We have then
+        that <math|L<rsub|g>\<in\><around*|]|L<rsub|g>-\<varepsilon\>,L<rsub|g>+\<varepsilon\>|[>>
+        a open set so by definition of the left limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|L<rsub|g>-\<varepsilon\>\<less\>g<around*|(|x|)>\<less\>L<rsub|g>+\<varepsilon\>=<frac|L<rsub|f>+L<rsub|g>|2>>.
+        Also <math|<around*|]|L<rsub|f>-\<varepsilon\>,L<rsub|f>+\<varepsilon\>|[>>
+        is a open set containing <math|L<rsub|f>> thus we have by the
+        definition of a left limit that there exists a open set
+        <math|V<rsub|f>> such that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A>
+        with <math|x\<less\>x<rsub|0>> we have
+        <math|<frac|L<rsub|f>+L<rsub|g>|2>=L<rsub|f>-\<varepsilon\>\<less\>f<around*|(|x|)>\<less\>L<rsub|f>+\<varepsilon\>>.
+        Now as <math|x<rsub|0>> is a left limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|y<rsub|0>\<less\>x<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\><frac|L<rsub|f>+L<rsub|g>|2>\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>.
+
+        <item*|<math|L<rsub|g>=-\<infty\>\<wedge\>L<rsub|f>\<in\>\<bbb-R\>>>Then
+        <math|-\<infty\>=L<rsub|g>\<in\><around*|[|-\<infty\>,L<rsub|f>-1|[>>
+        a open set so by the definition of the left limit there exists a open
+        set <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>L<rsub|f>-1>.
+        Also <math|<around*|]|L<rsub|f>-1,L<rsub|f>+1|[>> is a open set
+        containing <math|L<rsub|f>> so by the definition of a left limit
+        there exists a open set <math|V<rsub|f>> such that
+        <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x\<less\>x<rsub|0>> we have
+        <math|L<rsub|f>-1\<less\>f<around*|(|x|)>\<less\>L<rsub|f>+1>. \ Now
+        as <math|x<rsub|0>> is a left limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|y<rsub|0>\<less\>x<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>L<rsub|f>-1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>.
+      </description>
+
+      <item>Take <math|L<rsub|f>=<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>,
+      <math|L<rsub|g>=<below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>>
+      and assume that <math|L<rsub|g>\<less\>L<rsub|f>>, the following
+      possibilities exists then for <math|L<rsub|f>,L<rsub|g>>
+
+      <\description>
+        <item*|<math|L<rsub|g>\<in\>\<bbb-R\>\<wedge\>L<rsub|f>=\<infty\>>>Then
+        <math|L<rsub|g>\<in\><around*|]|L<rsub|g>-1,L<rsub|g>+1|[>> a open
+        set so by the definition of the limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<neq\>x> we have <math|L<rsub|g>-1\<less\>g<around*|(|x|)>\<less\>L<rsub|g>+1>.
+        Also <math|<around*|]|L<rsub|g>+1,\<infty\>|]>> is a open set
+        containing <math|L<rsub|f>=\<infty\>> so by the definition of a limit
+        there exists a open set <math|V<rsub|f>> containing <math|x<rsub|0>>
+        so that <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        with <math|x<rsub|0>\<neq\>x<rsub|>> we have
+        <math|L<rsub|g>+1\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>>. Now
+        as <math|x<rsub|0>> is a limit point and
+        <math|x<rsub|0>\<in\>V<rsub|f><big|cap>V<rsub|g><rsub|>> there exists
+        a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|x<rsub|0>\<neq\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>L<rsub|g>+1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>
+
+        <item*|<math|L<rsub|g>=-\<infty\>\<wedge\>L<rsub|f>=\<infty\>>>Then
+        <math|-\<infty\>=L<rsub|g>\<in\><around*|[|-\<infty\>,1|[>> a open
+        set so by definition of the limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<neq\>x> we have <math|-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>1>.
+        Also <math|<around*|]|1,\<infty\>|]>> is a open set containing
+        <math|L<rsub|f>=\<infty\>> so by the definition of a limit there
+        exists a open set <math|V<rsub|f>> containing <math|x<rsub|0>> so
+        that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x<rsub|0>\<neq\>x> we have <math|1\<less\>f<around*|(|x|)>\<leqslant\>\<infty\>>.
+        Now as <math|x<rsub|0>> is a limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|x<rsub|0>\<neq\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>
+
+        <item*|<math|L<rsub|g>\<in\>\<bbb-R\>\<wedge\>L<rsub|f>\<in\>\<bbb-R\>>>Take
+        then <math|\<varepsilon\>=<frac|L<rsub|f>-L<rsub|g>|2>>. We have then
+        that <math|L<rsub|g>\<in\><around*|]|L<rsub|g>-\<varepsilon\>,L<rsub|g>+\<varepsilon\>|[>>
+        a open set so by definition of the limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<neq\>x> we have <math|L<rsub|g>-\<varepsilon\>\<less\>g<around*|(|x|)>\<less\>L<rsub|g>+\<varepsilon\>=<frac|L<rsub|f>+L<rsub|g>|2>>.
+        Also <math|<around*|]|L<rsub|f>-\<varepsilon\>,L<rsub|f>+\<varepsilon\>|[>>
+        is a open set containing <math|L<rsub|f>> thus we have by the
+        definition of a limit that there exists a open set <math|V<rsub|f>>
+        such that <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x<rsub|0>\<neq\>x> we have <math|<frac|L<rsub|f>+L<rsub|g>|2>=L<rsub|f>-\<varepsilon\>\<less\>f<around*|(|x|)>\<less\>L<rsub|f>+\<varepsilon\>>.
+        Now as <math|x<rsub|0>> is a limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|x<rsub|0>\<neq\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\><frac|L<rsub|f>+L<rsub|g>|2>\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>.
+
+        <item*|<math|L<rsub|g>=-\<infty\>\<wedge\>L<rsub|f>\<in\>\<bbb-R\>>>Then
+        <math|-\<infty\>=L<rsub|g>\<in\><around*|[|-\<infty\>,L<rsub|f>-1|[>>
+        a open set so by the definition of the limit there exists a open set
+        <math|V<rsub|g>> containing <math|x<rsub|0>> so that
+        <math|\<forall\>x\<in\>V<rsub|g><big|cap>A> with
+        <math|x<rsub|0>\<neq\>x> we have <math|-\<infty\>\<leqslant\>g<around*|(|x|)>\<less\>L<rsub|f>-1>.
+        Also <math|<around*|]|L<rsub|f>-1,L<rsub|f>+1|[>> is a open set
+        containing <math|L<rsub|f>> so by the definition of a limit there
+        exists a open set <math|V<rsub|f>> such that
+        <math|\<forall\>x\<in\>V<rsub|f><big|cap>A> with
+        <math|x<rsub|0>\<neq\>x> we have <math|L<rsub|f>-1\<less\>f<around*|(|x|)>\<less\>L<rsub|f>+1>.
+        \ Now as <math|x<rsub|0>> is a limit point and
+        <math|x<rsub|0>\<in\><around*|(|V<rsub|f><big|cap>V<rsub|g><rsub|>|)><big|cap>W>
+        there exists a <math|y<rsub|0>\<in\><around*|(|<around*|(|V<rsub|f><big|cap>V<rsub|g>|)><big|cap>W|)><big|cap>A>
+        with <math|x<rsub|0>\<neq\>y<rsub|0>> and thus by the above we have
+        <math|g<around*|(|y<rsub|0>|)>\<less\>L<rsub|f>-1\<less\>f<around*|(|y<rsub|0>|)>>
+        contradicting the fact that <math|f<around*|(|y<rsub|0>|)>\<leqslant\>g<around*|(|y<rsub|0>|)>>.
+        So we must have <math|L<rsub|f>\<leqslant\>L<rsub|g>>.
+      </description>
+    </enumerate>
+  </proof>
+
+  <\corollary>
+    <label|limit for f\<less\>=L or L\<less\>=f>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|x<rsub|0>,L\<in\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|x<rsub|0>\<in\>W> a open set and <math|f:A\<rightarrow\>B> then
+
+    <\enumerate>
+      <item>If <math|\<forall\>x\<in\>A<big|cap>W> we have
+      <math|f<around*|(|x|)>\<leqslant\>L> then\ 
+
+      <\enumerate>
+        <item>If <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>
+        exists then <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\>L>
+
+        <item>If <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+        exists then <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\>L>
+
+        <item>If <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>
+        exists then <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\>L>
+      </enumerate>
+
+      <item>If <math|\<forall\>x\<in\>A<big|cap>W> we have
+      <math|L\<leqslant\>f<around*|(|x|)>> then\ 
+
+      <\enumerate>
+        <item>If <math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>
+        exists then <math|<below|L\<leqslant\>lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>
+
+        <item>If <math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+        exists then <math|<below|L\<leqslant\>lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+
+        <item>If <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>
+        exists then <math|L\<leqslant\><below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>
+      </enumerate>
+    </enumerate>
+  </corollary>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item> In this define then <math|g:A\<rightarrow\>B> by
+      <math|x\<rightarrow\>L> so that <math|\<forall\>x\<in\>A<big|cap>W> we
+      have <math|f<around*|(|x|)>\<leqslant\>L=g<around*|(|x|)>>, applying
+      then the previous theorem (see <reference|limit for f\<less\>=g>) gives
+
+      <\enumerate>
+        <item><math|<below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\><below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>\<equallim\><rsub|<text|<reference|limit
+        of a constant function>>>L>
+
+        <item><math|<below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\><below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>\<equallim\><rsub|<text|<reference|limit
+        of a constant function>>>L>
+
+        <item><math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>\<leqslant\><below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>\<equallim\><rsub|<text|<reference|limit
+        of a constant function>>>L>
+      </enumerate>
+
+      <item>In this define then <math|g:A\<rightarrow\>B> by
+      <math|x\<rightarrow\>L> so that <math|\<forall\>x\<in\>A<big|cap>W> we
+      have <math|g<around*|(|x|)>=L\<leqslant\>f<around*|(|x|)>>, applying
+      then the previous theorem (see <reference|limit for f\<less\>=g>) gives
+
+      <\enumerate>
+        <item><math|L\<equallim\><rsub|<text|<reference|limit of a constant
+        function>>><below|lim|x\<downarrow\>x<rsub|0>>g<around*|(|x|)>\<leqslant\><below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>>
+
+        <item><math|L\<equallim\><rsub|<text|<reference|limit of a constant
+        function>>><below|lim|x\<uparrow\>x<rsub|0>>g<around*|(|x|)>\<leqslant\><below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>>
+
+        <item><math|L\<equallim\><rsub|<text|<reference|limit of a constant
+        function>>><below|lim|x\<rightarrow\>x<rsub|0>>g<around*|(|x|)>\<leqslant\><below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>
+      </enumerate>
+    </enumerate>
+  </proof>
+
+  <subsection|Sequences in <math|<wide|\<bbb-R\>|\<wide-bar\>>>>\ 
 
   Note that the sum in <math|<wide|\<bbb-R\>|\<wide-bar\>>> is not always
   defined so if we want to see how the supremum and infinum behaves on sums
   we have to be carefull, that is the reason that we restrict ourself to
-  positve extended reals in many cases.
+  positve extended reals.
 
   <\notation>
     Given <math|k\<in\>\<bbb-N\><rsub|0>> we note
@@ -3161,48 +5918,48 @@
   </lemma>
 
   <\proof>
-    The proof is trivial using mathematical induction. Let
+    The proof is trivial by mathematical induction, let
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
     be a increasing (or decreasing) sequence
     \ <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> and define
     <math|S<rsub|n>=<around*|{|m\<in\>\<bbb-N\>\|x<rsub|n>\<leqslant\>x<rsub|n+m>
-    <around*|[|or x<rsub|n+m>\<leqslant\>x<rsub|n>|]>|}>> then we have
+    <around*|(|or x<rsub|n+m>\<leqslant\>x<rsub|n>|)>|}>> then we have
 
     <\description>
       <item*|<math|0\<in\>S>>this is trivial as
-      <math|x<rsub|n>\<leqslant\>x<rsub|n>=x<rsub|n+0>> [or
-      <math|x<rsub|n+0>=x<rsub|n>\<leqslant\>x<rsub|n>>]
+      <math|x<rsub|n>\<leqslant\>x<rsub|n>=x<rsub|n+0>> (or
+      <math|x<rsub|n+0>=x<rsub|n>\<leqslant\>x<rsub|n>>)
 
       <item*|if <math|m\<in\>S\<Rightarrow\>m+1\<in\>S>>from <math|m\<in\>S>
       we have <math|x<rsub|n>\<leqslant\>x<rsub|n+m>\<leqslant\>x<rsub|n+m+1>\<Rightarrow\>x<rsub|n>\<leqslant\>x<rsub|n+m+1>>
-      [or <math|x<rsub|n+m+1>\<leqslant\>x<rsub|n+m>\<leqslant\>x<rsub|n>\<Rightarrow\>x<rsub|n+m+1>\<leqslant\>x<rsub|n>>]
+      (or <math|x<rsub|n+m+1>\<leqslant\>x<rsub|n+m>\<leqslant\>x<rsub|n>\<Rightarrow\>x<rsub|n+m+1>\<leqslant\>x<rsub|n>>)
       proving <math|m+1\<in\>S>
     </description>
 
     Let now <math|n,m\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> with
-    <math|n\<leqslant\>m> [or <math|m\<leqslant\>n>] then
+    <math|n\<leqslant\>m> (or <math|m\<leqslant\>n>) then
     <math|i=m-n\<in\>S<rsub|n>\<Rightarrow\>x<rsub|n>\<leqslant\>x<rsub|n+<around*|(|m-n|)>>=x<rsub|m>>
-    [or <math|x<rsub|m>=x<rsub|n+<around*|(|m-n|)>>\<leqslant\>x<rsub|n>>]
+    (or <math|x<rsub|m>=x<rsub|n+<around*|(|m-n|)>>\<leqslant\>x<rsub|n>>)
   </proof>
 
   Recap the following result for increasing/decreasing sequences \ of real
-  numbers [see <reference|condition for increasing sequence to convert>]
+  numbers (see <reference|condition for increasing sequence to convert>)
 
   <\lemma>
     <label|increasing (decreasing) sequence converges>Let
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
-    be a increasing [decreasing] sequence of real numbers then we have
+    be a increasing (decreasing) sequence of real numbers then we have
 
     <\enumerate>
       <item>If <math|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>>
-      has a supremum [infinum] then <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
+      has a supremum (infinum) then <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
       exists and <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
 
       <item>If <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>> exists
       then <math|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
-      [<math|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>]
+      (<math|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>)
       exists and <math|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>=<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
-      [<math|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>=<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>]
+      (<math|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>=<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>)
     </enumerate>
   </lemma>
 
@@ -3210,12 +5967,6 @@
     \ This is already proved in <reference|condition for increasing sequence
     to convert>
   </proof>
-
-  We want to extend the above lemma to the extended real numbers. As the
-  supremum and the infinum in <math|<wide|\<bbb-R\>|\<wide-bar\>>> always
-  exists this suggest that the limit always exists for increasing and
-  decreasing sequences of extended reals. However we must then first extend
-  also the limit of sequences to the set of the extended real numbers.\ 
 
   <\theorem>
     <label|existance of lim inf and lim sup>Let
@@ -3246,7 +5997,7 @@
       <\enumerate>
         <item><math|inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>=inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i+m>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>
 
-        <item><math|sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>=sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i+m>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>
+        <item><math|sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>=sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i+n>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>
       </enumerate>
     </enumerate>
   </theorem>
@@ -3257,13 +6008,13 @@
     <\enumerate>
       <item>The existence follows from the fact that in
       <math|<wide|\<bbb-R\>|\<wide-bar\>>> every non empty set has a sup and
-      inf [see <reference|every non empty set in the extented reals has a
-      limit>]
+      inf (see <reference|every non empty set in the extented reals has a
+      limit>)
 
       <item>The existence follows from the fact that in
       <math|<wide|\<bbb-R\>|\<wide-bar\>>> every non empty set has a sup and
-      inf [see <reference|every non empty set in the extented reals has a
-      limit>]
+      inf (see <reference|every non empty set in the extented reals has a
+      limit>)
 
       <item>Given <math|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>> take
       <math|S<rsub|k>=sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>.,\<infty\>|}>|}>|)>>
@@ -3276,10 +6027,10 @@
         <label|eq 17.10.001>inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|}>|)>
       </equation>
 
-      For the opposite inclusion, given <math|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>,
-      take <math|l=max<around*|(|k,m|)>>, then <math|k\<leqslant\>l> and
-      <math|l\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>. We have then that
-      <math|<around*|{|x<rsub|i>\|i\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>>
+      For the opposite inclusion, if <math|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
+      then take then <math|l=max<around*|(|k,m|)>> then <math|k\<leqslant\>l>
+      and <math|l\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>. We have then
+      that <math|<around*|{|x<rsub|i>\|i\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>>
       so that using <reference|inclusion and sup and inf>
       <math|S<rsub|l>=sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>=S<rsub|k>>.
       So for every <math|S<rsub|k>\<in\><around*|{|S<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>>
@@ -3287,7 +6038,7 @@
       such that <math|S<rsub|l>\<leqslant\>S<rsub|k>>. Using <reference|sup
       of set of bigger elements> we have then that
       <math|inf<around*|(|S<rsub|i>\|i\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|)>\<leqslant\>inf<around*|(|S<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|)>>
-      or <math|inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>.
+      or <math|inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>.
       Hence using <reference|eq 17.10.001> we have\ 
 
       <\equation*>
@@ -3298,15 +6049,15 @@
       <math|I<rsub|i>=inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
       then <math|<around*|{|I<rsub|i>\|i\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|I<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>>
       proving using <reference|inclusion and sup and inf> that
-      <math|sup<around*|(|<around*|{|S<rsub|k>\|k\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>sup<around*|(|<around*|{|S<rsub|k>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>,
-      hence\ 
+      <math|sup<around*|(|<around*|{|S<rsub|k>\|k\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>sup<around*|(|<around*|{|S<rsub|k>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>>
+      proving that\ 
 
       <\equation>
         <label|eq 17.11.001>sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|m,\<ldots\>,\<infty\>|}>|}>\<leqslant\>sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>|\<nobracket\>>
       </equation>
 
-      For the opposite inclusion, given <math|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
-      take <math|l=max<around*|(|k,m|)>> then <math|k\<leqslant\>l> and
+      For the opposite inclusion, ikf <math|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
+      take then <math|l=max<around*|(|k,m|)>> then <math|k\<leqslant\>l> and
       <math|l\<in\><around*|{|m,.,.,\<infty\>|}>>. We have then that
       <math|<around*|{|x<rsub|i>\|i\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>>
       so that using <reference|inclusion and sup and inf> we have
@@ -3348,7 +6099,7 @@
       <\eqnarray*>
         <tformat|<table|<row|<cell|x\<in\>B<rsub|k>>|<cell|\<Rightarrow\>>|<cell|\<exists\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>
         such that x=x<rsub|i+m>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|k+m\<leqslant\>i+m>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|x\<in\>A<rsub|k+m>>>|<row|<cell|x\<in\>A<rsub|k+m>>|<cell|\<Rightarrow\>>|<cell|\<exists\>i\<in\><around*|{|k+m,\<ldots\>,\<infty\>|}>
-        such that x=x<rsub|i>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|k+m\<leqslant\>i\<Rightarrow\>k\<leqslant\>i-m<infix-and>x<rsub|i>=x<rsub|<around*|(|i-m|)>+m>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|x\<in\>B<rsub|k>>>>>
+        such that x=x<rsub|i>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|k+m\<leqslant\>i\<Rightarrow\>k\<leqslant\>i-m\<Rightarrow\>x<rsub|<around*|(|i-m|)>+m>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|x\<in\>B<rsub|k>>>>>
       </eqnarray*>
 
       proving that\ 
@@ -3361,11 +6112,11 @@
       Now if <math|x\<in\><around*|{|sup<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>
       then <math|\<exists\>k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>> such
       that <math|x=sup<around*|(|A<rsub|k>|)>\<equallim\><rsub|<text|<reference|eq
-      17.12.001>>>sup<around*|(|B<rsub|k-m>|)>> where
-      <math|k-m\<in\><around*|{|n,\<ldots\>\<infty\>|}>>, hence
-      <math|><math|x\<in\><around*|{|sup<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>.,\<infty\>|}>|}>>
-      proving that <math|<around*|{|sup<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|sup<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>.,\<infty\>|}>|}>>.
-      Using <reference|inclusion and sup and inf> \ it follows that:
+      17.12.001>>>sup<around*|(|B<rsub|k-m>|)>>where
+      <math|k-m\<in\><around*|{|n,\<ldots\>\<infty\>|}>>, hence there exists
+      a <math|y=sup<around*|(|B<rsub|k-m>|)>\<in\><around*|{|sup<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>.,\<infty\>|}>|}>>
+      such that <math|x=y> which using <reference|sup of set of bigger
+      elements> proves that\ 
 
       <\equation>
         <label|eq 17.14.001>inf<around*|(|<around*|{|sup<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>inf<around*|(|<around*|{|sup<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>|)>
@@ -3375,10 +6126,10 @@
       then <math|\<exists\>k\<in\><around*|{|1,\<ldots\>,n|}>> such that
       <math|x=sup<around*|(|B<rsub|k>|)>\<equallim\><rsub|<text|<reference|eq
       17.13.001>>>sup<around*|(|A<rsub|k+m>|)>> where
-      <math|k+m\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>>, hence
-      <math|x\<in\><around*|{|sup<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>
-      proving that <math|<around*|{|sup<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|sup<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>.
-      Using <reference|inclusion and sup and inf> it follows that:
+      <math|k+m\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>>, hence there
+      exists a <math|y=sup<around*|(|A<rsub|k+m>|)>\<in\><around*|{|sup<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>
+      such that <math|x=y> which using <reference|sup of set of bigger
+      elements> proves that\ 
 
       <\equation>
         <label|eq 17.15.001>inf<around*|(|<around*|{|sup<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>inf<around*|(|<around*|{|sup<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>
@@ -3391,7 +6142,7 @@
         <label|eq 17.16.001>inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>|)>=<text|>inf<around*|(|<around*|{|sup<around*|(|x<rsub|i+m>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>
       </equation>
 
-      Using then (3) on the above proves:
+      Using then (3) on the above proves\ 
 
       <\equation>
         <label|eq 17.17.001>inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>=<text|>inf<around*|(|<around*|{|sup<around*|(|x<rsub|i+m>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>
@@ -3400,11 +6151,11 @@
       Now if <math|x\<in\><around*|{|inf<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>
       then <math|\<exists\>k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>> such
       that <math|x=inf<around*|(|A<rsub|k>|)>\<equallim\><rsub|<text|<reference|eq
-      17.12.001>>>inf<around*|(|B<rsub|k-m>|)>> where
-      <math|k-m\<in\><around*|{|n,\<ldots\>\<infty\>|}>>, hence
-      \ <math|x\<in\><around*|{|inf<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>.,\<infty\>|}>|}>>
-      proving that <math|<around*|{|inf<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>\<subseteq\>x\<in\><around*|{|inf<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>.,\<infty\>|}>|}>>.
-      Applying then <reference|inclusion and sup and inf> gives
+      17.12.001>>>inf<around*|(|B<rsub|k-m>|)>>where
+      <math|k-m\<in\><around*|{|n,\<ldots\>\<infty\>|}>>, hence there exists
+      a <math|y=sup<around*|(|B<rsub|k-m>|)>\<in\><around*|{|inf<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>.,\<infty\>|}>|}>>
+      such that <math|x=y> which using <reference|sup of set of bigger
+      elements> proves that\ 
 
       <\equation>
         <label|eq 17.18.001>sup<around*|(|<around*|{|inf<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>sup<around*|(|<around*|{|inf<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>
@@ -3414,10 +6165,10 @@
       then <math|\<exists\>k\<in\><around*|{|1,\<ldots\>,n|}>> such that
       <math|x=inf<around*|(|B<rsub|k>|)>\<equallim\><rsub|<text|<reference|eq
       17.13.001>>>inf<around*|(|A<rsub|k+m>|)>> where
-      <math|k+m\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>>, hence
-      <math|x\<in\><around*|{|inf<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>
-      proving that <math|<around*|{|inf<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|inf<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>.
-      Applying then <reference|inclusion and sup and inf> gives:
+      <math|k+m\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>>, hence there
+      exists a <math|y=inf<around*|(|A<rsub|k+m>|)>\<in\><around*|{|inf<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>>
+      such that <math|x=y> which using <reference|sup of set of bigger
+      elements> proves that\ 
 
       <\equation>
         <label|eq 17.19.001>sup<around*|(|<around*|{|inf<around*|(|B<rsub|k>|)>\|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\>sup<around*|(|<around*|{|inf<around*|(|A<rsub|k>|)>\|k\<in\><around*|{|n+m,\<ldots\>,\<infty\>|}>|}>|)>
@@ -3468,13 +6219,13 @@
     above above definition the starting index <math|k> is not mentioned in
     the notation <math|<below|lim sup|i\<rightarrow\>\<infty\>> x<rsub|i>>
     and <math|<below|lim inf|i\<rightarrow\>\<infty\>> x<rsub|i>> but this is
-    ok because of the previous theorem [see <reference|existance of lim inf
-    and lim sup>] we can use every number in
+    ok because of the previous theorem (see <reference|existance of lim inf
+    and lim sup>) we can use every number in
     <math|<around*|{|k,\<ldots\>,\<infty\>|}>> as the starting index.
   </note>
 
-  Using this definition and the previous theorem [see <reference|existance of
-  lim inf and lim sup>] we have the following:
+  Using this definition and the previous theorem (see <reference|existance of
+  lim inf and lim sup> we have the following:
 
   <\theorem>
     <label|lim inf lim sup basic properties>Let
@@ -3497,8 +6248,6 @@
       </enumerate>
     </enumerate>
   </theorem>
-
-  TODO
 
   <\proposition>
     <label|lim inf and lim sup inequality>Let
@@ -4311,6 +7060,72 @@
     and <math|x<rsub|n>\<downarrow\>x> is equivalen with
     <math|x=inf<around*|(|<around*|{|x<rsub|n>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
   </definition>
+
+  For functions <math|f:A\<rightarrow\>B> where
+  <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> and
+  <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>> a limit point we have also a
+  concept of a limit (see <reference|limit of a function>)
+  <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>>. We show now
+  the similarities between the two limits.
+
+  <\theorem>
+    <label|limit of functions and sequences>Let <math|A> be either
+    <math|<around*|[|1,\<infty\>|]>> or <math|<around*|[|1,\<infty\>|[>>,
+    <math|B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> and
+    <math|f:A\<rightarrow\>B> a increasing (decreasing function) then if we
+    define <math|<around*|{|f<rsub|n>|}><rsub|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>>>
+    by <math|f<rsub|n>=f<around*|(|n|)>> we have that
+    <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>>,
+    <math|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>> exists and
+    <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>>.
+    In other words if <math|f> is a increasing (descreasing function) then
+    <math|f<rsub|n>\<uparrow\><below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>>
+    (or <math|f<rsub|n>\<downarrow\><below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>>.
+  </theorem>
+
+  <\proof>
+    First of all using <reference|limit at infinity of ascending (descending)
+    functions> we have that <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>>
+    exists and is equal to <math|sup<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>>
+    if <math|f> is ascending and equal to
+    <math|inf<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>>
+    if <math|f> is descending. Also as <math|i\<less\>i+1> we have if
+    <math|f> is increasing that \ <math|f<rsub|i>=f<around*|(|i|)>\<leqslant\>f<around*|(|i+1|)>=f<rsub|i+1>>
+    and if <math|f> is decreasing then <math|f<rsub|i+1>=f<around*|(|i+1|)>\<leqslant\>f<around*|(|i|)>=f<rsub|i>>.
+    So that <math|<around*|{|f<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    is increasing (f increasing) or <math|<around*|{|f<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    <math|<around*|(|f decreasing|)>>. Using the previous theorem we have
+    then that <math|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>> exists and
+    is equal to <math|sup<around*|(|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>|)>>
+    if <math|f> is increasing and equal to
+    <math|inf<around*|(|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>|)>>
+    if <math|f> is decreasing. We prove now equality, consider now the
+    following cases
+
+    <\description>
+      <item*|<math|f is increasing>>As <math|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>=<around*|{|f<around*|(|n|)>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>>
+      we have that <math|sup<around*|(|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,n|}>|}>|)>\<leqslant\>sup<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>>.
+      Also if <math|y\<in\><around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>>
+      then there exists a <math|\<infty\>\<gtr\>x\<geqslant\>1> such that
+      <math|y=f<around*|(|x|)>>, so there exists a <math|m\<in\>\<bbb-N\>>
+      such that <math|m\<geqslant\>x> and then
+      <math|f<rsub|m>=f<around*|(|m|)>\<geqslant\>f<around*|(|x|)>=y> proving
+      by <reference|sup of set of bigger elements> that
+      <math|sup<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>\<leqslant\>sup<around*|(|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,n|}>|}>|)>>.
+      So we have <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=sup<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>=sup<around*|(|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|)>=<below|lim|n\<rightarrow\>1\<infty\>>f<rsub|n>>.
+
+      <item*|<math|f> is decreasing>As <math|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>=<around*|{|f<around*|(|n|)>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|}>\<subseteq\><around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>>
+      we have that <math|inf<around*|(|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,n|}>|}>|)>\<geqslant\>inf<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>>.
+      Also if <math|y\<in\><around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>>
+      then there exists a <math|\<infty\>\<gtr\>x\<geqslant\>1> such that
+      <math|y=f<around*|(|x|)>>, so there exists a <math|m\<in\>\<bbb-N\>>
+      such that <math|m\<geqslant\>x> and then
+      <math|f<rsub|m>=f<around*|(|m|)>\<leqslant\>f<around*|(|x|)>=y> proving
+      by <reference|sup of set of bigger elements> that
+      <math|inf<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>\<geqslant\>inf<around*|(|<around*|{|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,n|}>|}>|)>>.
+      So we have <math|<below|lim|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=inf<around*|(|<around*|{|f<around*|(|x|)>\|\<infty\>\<gtr\>x\<geqslant\>1|}>|)>=inf<around*|(|f<rsub|n>\|n\<in\><around*|{|1,\<ldots\>,\<infty\>|}>|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>>.
+    </description>
+  </proof>
 
   <\example>
     <label|limit of constants>Let <math|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>>,
@@ -5382,6 +8197,190 @@
   </proof>
 
   We have a similar theorem for limits of functions
+
+  <\definition>
+    If <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>
+    <math|f:A\<rightarrow\>B>, <math|g:A\<rightarrow\>B> functions then the
+    graph <math|<around*|(|f+g|)>\<subseteq\>A\<times\><wide|\<bbb-R\>|\<wide-bar\>>>
+    is defined by <math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g<around*|(|x|)>>
+    (assuming that the sum is well defined (so no
+    <math|\<infty\>+<around*|(|-\<infty\>|)>>)
+  </definition>
+
+  <\definition>
+    <label|graph of sum of functions>Let <math|A,B> sets
+    <math|<around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n|}>><rsub|>>
+    a finite family of functions then the graph
+    <math|<big|sum><rsub|i=l><rsup|n>f<rsub|i>\<subseteq\>A\<times\><wide|\<bbb-R\>|\<wide-bar\>>>
+    is defined by\ 
+
+    <\enumerate>
+      <item><math|<big|sum><rsub|i=l><rsup|l>f<rsub|i>=f<rsub|l>>
+
+      <item><math|<big|sum><rsub|i=l><rsup|n+1>f<rsub|i>=<around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)>+f<rsub|n+1>>
+      (assuming that the sum is well defined)
+    </enumerate>
+  </definition>
+
+  A alternative definition is then expressed in the following lemma
+
+  <\lemma>
+    <label|alternative graph of sum of functions>et <math|A,B> sets
+    <math|<around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n|}>><rsub|>>
+    a finite family of functions then the graph
+    <math|<big|sum><rsub|i=l><rsup|n>f<rsub|i>\<subseteq\>A\<times\><wide|\<bbb-R\>|\<wide-bar\>>>
+    is defined by <math|<around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n>f<rsub|i><around*|(|x|)>>
+  </lemma>
+
+  <\proof>
+    The trivial proof is by induction so let
+    <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\><rsub|0>\|If
+    <around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n|}>><text|
+    is a finite family of functions then ><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n>f<rsub|i><around*|(|x|)>|}>>
+    then we have\ 
+
+    <\description>
+      <item*|<math|l\<in\>\<cal-S\>>>This follows as
+      <math|<around*|(|<big|sum><rsub|i=l><rsup|l>f<rsub|i>|)><around*|(|x|)>=f<rsub|l><around*|(|x|)>=<big|sum><rsub|i=l><rsup|l>f<rsub|i><around*|(|x|)>>
+
+      <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>Let
+      <math|n\<in\>\<cal-S\>> and take <math|<around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n+1|}>>>
+      a finite family of functions then <math|<around*|(|<big|sum><rsub|i=l><rsup|n+1>f<rsub|i>|)><around*|(|x|)>=<around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>+f<rsub|n+1>|)><around*|(|x|)>=<around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>+f<rsub|n+1><around*|(|x|)>\<equallim\><rsub|n\<in\>\<cal-S\>><big|sum><rsub|i=l><rsup|n>f<rsub|i><around*|(|x|)>+f<rsub|n+1><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n+1>f<rsub|i><around*|(|x|)>>
+    </description>
+  </proof>
+
+  <\theorem>
+    <label|finite sum of limits of functions>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>,>
+    <math|x<rsub|0>\<in\><wide|\<bbb-R\>|\<wide-bar\>>> and
+    <math|<around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><rsub|>>
+    a finite family of functions then if <math|<around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|A|)>\<subseteq\>C>
+    we have for <math|<big|sum><rsub|i=l><rsup|n>f<rsub|i>:A\<rightarrow\>C>
+
+    <\enumerate>
+      <item>If <math|\<forall\>i\<in\><around*|{|l,\<ldots\>,n|}>>
+      <math|<below|lim|x\<downarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      exists then <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n><below|lim|x\<downarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      (assuming that the sum is well defined)
+
+      <item>If <math|\<forall\>i\<in\><around*|{|l,\<ldots\>,n|}>>
+      <math|<below|lim|x\<uparrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>> exists
+      then <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n><below|lim|x\<uparrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      (assuming that the sum is well defined)
+
+      <item>If <math|\<forall\>i\<in\><around*|{|l,\<ldots\>,n|}>>
+      <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      exists then <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n><below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      (assuming that the sum is well defined)
+    </enumerate>
+  </theorem>
+
+  <\proof>
+    This is proved by induction\ 
+
+    <\enumerate>
+      <item>Let <math|\<cal-S\>=<around*|{|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>\|for
+      <around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n|}>><text|
+      we have ><below|lim|x\<downarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n><below|lim|x\<downarrow\>x<rsub|0>>f<around*|(|x|)>|}>>
+      then we have\ 
+
+      <\description>
+        <item*|<math|l\<in\>\<cal-S\>>>If we have
+        <math|<around*|{|f<rsub|i><around*|\||A\<rightarrow\>B|\|>|}><rsub|i\<in\><around*|{|l,\<ldots\>,l|}>>>
+        then we have <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|l>f<rsub|i>|)><around*|(|x|)>=<below|lim|x\<downarrow\>x<rsub|0>>f<rsub|l><around*|(|x|)>=<big|sum><rsub|i=l><rsup|l><below|lim|x\<downarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+        proving that <math|l\<in\>\<cal-S\>>
+
+        <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>Take
+        <math|<around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n+1|}>>>
+        then we have that <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n+1>f<rsub|i>|)><around*|(|x|)>=<below|lim|x\<downarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>+f<rsub|n+1>|)><around*|(|x|)>\<equallim\><rsub|<text|<reference|left,
+        right limit of sum and scalar product>>><below|lim|x\<downarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>f<rsub|n+1><around*|(|x|)>\<equallim\><rsub|n\<in\>\<cal-S\>><big|sum><rsub|i=l><rsup|n><below|lim|x\<downarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>+<below|lim|x\<downarrow\>x<rsub|0>>f<rsub|n+1><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n+1><below|lim|x\<downarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+        proving that <math|n+1\<in\>\<cal-S\>>
+      </description>
+
+      <item>Let <math|\<cal-S\>=<around*|{|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>\|for
+      <around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n|}>><text|
+      we have ><below|lim|x\<uparrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n><below|lim|x\<uparrow\>x<rsub|0>>f<around*|(|x|)>|}>>
+      then we have\ 
+
+      <\description>
+        <item*|<math|l\<in\>\<cal-S\>>>If we have
+        <math|<around*|{|f<rsub|i><around*|\||A\<rightarrow\>B|\|>|}><rsub|i\<in\><around*|{|l,\<ldots\>,l|}>>>
+        then we have <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|l>f<rsub|i>|)><around*|(|x|)>=<below|lim|x\<uparrow\>x<rsub|0>>f<rsub|l><around*|(|x|)>=<big|sum><rsub|i=l><rsup|l><below|lim|x\<uparrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+        proving that <math|l\<in\>\<cal-S\>>
+
+        <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>Take
+        <math|<around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n+1|}>>>
+        then we have that <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n+1>f<rsub|i>|)><around*|(|x|)>=<below|lim|x\<uparrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>+f<rsub|n+1>|)><around*|(|x|)>\<equallim\><rsub|<text|<reference|left,
+        right limit of sum and scalar product>>><below|lim|x\<uparrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>f<rsub|n+1><around*|(|x|)>\<equallim\><rsub|n\<in\>\<cal-S\>><big|sum><rsub|i=l><rsup|n><below|lim|x\<uparrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>+<below|lim|x\<uparrow\>x<rsub|0>>f<rsub|n+1><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n+1><below|lim|x\<uparrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+        proving that <math|n+1\<in\>\<cal-S\>>
+      </description>
+
+      <item>Let <math|\<cal-S\>=<around*|{|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>\|for
+      <around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n|}>><text|
+      we have ><below|lim|x\<rightarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f|)><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n><below|lim|x\<rightarrow\>x<rsub|0>>f<around*|(|x|)>|}>>
+      then we have\ 
+
+      <\description>
+        <item*|<math|l\<in\>\<cal-S\>>>If we have
+        <math|<around*|{|f<rsub|i><around*|\||A\<rightarrow\>B|\|>|}><rsub|i\<in\><around*|{|l,\<ldots\>,l|}>>>
+        then we have <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|l>f<rsub|i>|)><around*|(|x|)>=<below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|l><around*|(|x|)>=<big|sum><rsub|i=l><rsup|l><below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+        proving that <math|l\<in\>\<cal-S\>>
+
+        <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>Take
+        <math|<around*|{|f<rsub|i>A\<rightarrow\>B|}><rsub|i\<in\><around*|{|l,\<ldots\>,n+1|}>>>
+        then we have that <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n+1>f<rsub|i>|)><around*|(|x|)>=<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>+f<rsub|n+1>|)><around*|(|x|)>\<equallim\><rsub|<text|<reference|left,
+        right limit of sum and scalar product>>><below|lim|x\<rightarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=l><rsup|n>f<rsub|i>|)><around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|n+1><around*|(|x|)>\<equallim\><rsub|n\<in\>\<cal-S\>><big|sum><rsub|i=l><rsup|n><below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>+<below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|n+1><around*|(|x|)>=<big|sum><rsub|i=l><rsup|n+1><below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+        proving that <math|n+1\<in\>\<cal-S\>>
+      </description>
+    </enumerate>
+  </proof>
+
+  <\definition>
+    Let <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>>,
+    <math|f:A\<rightarrow\>B> a function ,
+    <math|\<alpha\>\<in\><wide|\<bbb-R\>|\<wide-bar\>>> then the graph
+    <math|\<alpha\>\<cdot\>f\<subseteq\>A\<times\><wide|\<bbb-R\>|\<wide-bar\>>>
+    is defined by <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>=\<alpha\>\<cdot\>f<around*|(|x|)>>
+  </definition>
+
+  <\corollary>
+    <label|finite sum of limits of scalar product with functions>Let
+    <math|A,B\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>,>
+    <math|x<rsub|0>\<in\><wide|\<bbb-R\>|\<wide-bar\>>> and
+    <math|<around*|{|f<rsub|i>:A\<rightarrow\>B|}><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>><rsub|>>
+    a finite family of functions, <math|<around*|{|\<alpha\><rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>>>
+    a finite family of extended reals \ then if
+    <math|<around*|(|<big|sum><rsub|i=k><rsup|n>\<alpha\><rsub|i>\<cdot\>f<rsub|i>|)><around*|(|A|)>\<subseteq\>C>
+    we have for <math|<big|sum><rsub|i=k><rsup|n>\<alpha\>\<cdot\>f<rsub|i>:A\<rightarrow\>C>
+    that\ 
+
+    <\enumerate>
+      <item>If <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,n|}>>
+      <math|<below|lim|x\<downarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      exists then <math|<below|lim|x\<downarrow\>x<rsub|0>><around*|(|<big|sum><rsub|k=1><rsup|n>\<alpha\>\<cdot\>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=k><rsup|n>\<alpha\><rsub|i><below|\<cdot\>lim|x\<downarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      (assuming that the sum is well defined)
+
+      <item>If <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,n|}>>
+      <math|<below|lim|x\<uparrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>> exists
+      then <math|<below|lim|x\<uparrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=k><rsup|n>\<alpha\><rsub|i>\<cdot\>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=k><rsup|n>\<alpha\><rsub|i>\<cdot\><below|lim|x\<uparrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      (assuming that the sum is well defined)
+
+      <item>If <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,n|}>>
+      <math|<below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      exists then <math|<below|lim|x\<rightarrow\>x<rsub|0>><around*|(|<big|sum><rsub|i=k><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=k><rsup|n>\<alpha\><rsub|i>\<cdot\><below|lim|x\<rightarrow\>x<rsub|0>>f<rsub|i><around*|(|x|)>>
+      (assuming that the sum is well defined)
+    </enumerate>
+  </corollary>
+
+  <\proof>
+    This follows from applying <reference|left, right limit of sum and scalar
+    product> on the scalar product of a scalar and a function and the
+    previous theorem (see <reference|finite sum of limits of functions>)
+  </proof>
+
+  We prove now that if <math|\<infty\>\<nin\><around*|{|x<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,m|}>|}>>
+  then <math|<big|sum><rsub|i=n><rsup|m>x<rsub|i>> is finite and otherwise
+  <math|\<infty\>>
 
   <\theorem>
     <label|finite sum of extented reals properties>Let
@@ -8795,50 +11794,59 @@
     <associate|Power series|<tuple|18.2|677>>
     <associate|Young's inequality|<tuple|18.42|694>>
     <associate|a serie of extented positive reals converges always and is
-    independent of the order|<tuple|17.95|666>>
+    independent of the order|<tuple|17.122|666>>
     <associate|absolute value in the extended reals|<tuple|17.30|620>>
     <associate|absolute value on the extended real
     properties|<tuple|17.32|620>>
     <associate|alternative definition of limit in the extented
-    reals|<tuple|17.69|653>>
-    <associate|associativity of inifinite series|<tuple|17.101|672>>
-    <associate|associativity of series of extended reals|<tuple|17.99|670>>
+    reals|<tuple|17.90|653>>
+    <associate|alternative graph of sum of functions|<tuple|17.108|662>>
+    <associate|associativity of inifinite series|<tuple|17.128|672>>
+    <associate|associativity of series of extended reals|<tuple|17.126|670>>
     <associate|associativity of the product of extnded reals|<tuple|17.20|?>>
     <associate|auto-1|<tuple|17|607>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|621>>
     <associate|auto-11|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|-\<infty\>>>|621>>
     <associate|auto-12|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|621>>
     <associate|auto-13|<tuple|<with|mode|<quote|math>|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|621>>
-    <associate|auto-14|<tuple|17.3|621>>
-    <associate|auto-15|<tuple|increasing sequence|625>>
-    <associate|auto-16|<tuple|decreasing sequence|625>>
-    <associate|auto-17|<tuple|<with|mode|<quote|math>|<below|lim
-    inf|i\<rightarrow\>\<infty\>> x<rsub|i>>|625>>
-    <associate|auto-18|<tuple|<with|mode|<quote|math>|<below|lim
-    sup|i\<rightarrow\>\<infty\>> x<rsub|i>>|625>>
-    <associate|auto-19|<tuple|17.3.1|625>>
+    <associate|auto-14|<tuple|17.2.1|621>>
+    <associate|auto-15|<tuple|left limit point|625>>
+    <associate|auto-16|<tuple|right limit point|625>>
+    <associate|auto-17|<tuple|limit point|625>>
+    <associate|auto-18|<tuple|left limit of a function|625>>
+    <associate|auto-19|<tuple|right limit of a function|625>>
     <associate|auto-2|<tuple|17.1|607>>
-    <associate|auto-20|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>|625>>
-    <associate|auto-21|<tuple|17.3.2|626>>
-    <associate|auto-22|<tuple|18|633>>
-    <associate|auto-23|<tuple|18.1|633>>
-    <associate|auto-24|<tuple|18.1.1|646>>
-    <associate|auto-25|<tuple|convergence domain|646>>
-    <associate|auto-26|<tuple|absolute convergence domain|646>>
-    <associate|auto-27|<tuple|convergence radius|648>>
-    <associate|auto-28|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|648>>
-    <associate|auto-29|<tuple|18.1.2|661>>
+    <associate|auto-20|<tuple|limit of a function|625>>
+    <associate|auto-21|<tuple|left continuity|626>>
+    <associate|auto-22|<tuple|right continuity|633>>
+    <associate|auto-23|<tuple|17.2.2|633>>
+    <associate|auto-24|<tuple|increasing sequence|646>>
+    <associate|auto-25|<tuple|decreasing sequence|646>>
+    <associate|auto-26|<tuple|<with|mode|<quote|math>|<below|lim
+    inf|i\<rightarrow\>\<infty\>> x<rsub|i>>|646>>
+    <associate|auto-27|<tuple|<with|mode|<quote|math>|<below|lim
+    sup|i\<rightarrow\>\<infty\>> x<rsub|i>>|648>>
+    <associate|auto-28|<tuple|17.2.3|648>>
+    <associate|auto-29|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>|661>>
     <associate|auto-3|<tuple|extented reals|607>>
-    <associate|auto-30|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>|673>>
-    <associate|auto-31|<tuple|18.1.3|673>>
-    <associate|auto-32|<tuple|Euler's number|677>>
-    <associate|auto-33|<tuple|Napierian logarithm|677>>
-    <associate|auto-34|<tuple|<with|mode|<quote|math>|log>|677>>
-    <associate|auto-35|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|677>>
-    <associate|auto-36|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|677>>
-    <associate|auto-37|<tuple|<with|mode|<quote|math>|\<pi\>>|678>>
-    <associate|auto-38|<tuple|<with|mode|<quote|math>|\<pi\>>|?>>
+    <associate|auto-30|<tuple|17.2.4|673>>
+    <associate|auto-31|<tuple|18|673>>
+    <associate|auto-32|<tuple|18.1|677>>
+    <associate|auto-33|<tuple|18.1.1|677>>
+    <associate|auto-34|<tuple|convergence domain|677>>
+    <associate|auto-35|<tuple|absolute convergence domain|677>>
+    <associate|auto-36|<tuple|convergence radius|677>>
+    <associate|auto-37|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|678>>
+    <associate|auto-38|<tuple|18.1.2|678>>
+    <associate|auto-39|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>|679>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|sup<rsub|\<bbb-R\>>>|609>>
+    <associate|auto-40|<tuple|18.1.3|682>>
+    <associate|auto-41|<tuple|Euler's number|682>>
+    <associate|auto-42|<tuple|Napierian logarithm|688>>
+    <associate|auto-43|<tuple|<with|mode|<quote|math>|log>|689>>
+    <associate|auto-44|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|689>>
+    <associate|auto-45|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|696>>
+    <associate|auto-46|<tuple|<with|mode|<quote|math>|\<pi\>>|696>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|inf<rsub|\<bbb-R\>>>|609>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|sup>|609>>
     <associate|auto-7|<tuple|<with|mode|<quote|math>|inf>|609>>
@@ -8854,14 +11862,14 @@
     <associate|convergence domain and balls|<tuple|18.7|678>>
     <associate|convergence domain of exponential function|<tuple|18.18|682>>
     <associate|convergence in real implies that lim inferior = lim
-    superior|<tuple|17.59|650>>
+    superior|<tuple|17.79|650>>
     <associate|convergence of derived powerseries|<tuple|18.22|683>>
     <associate|convergence of powerseries (1)|<tuple|18.6|677>>
     <associate|convergence radius|<tuple|18.8|678>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.100|672>>
+    sum|<tuple|17.127|672>>
     <associate|d'Alembert|<tuple|18.17|681>>
-    <associate|definition of limit in the extented reals|<tuple|17.60|651>>
+    <associate|definition of limit in the extented reals|<tuple|17.80|651>>
     <associate|density of the extented reals|<tuple|17.9|609>>
     <associate|derivative of the exponential function|<tuple|18.24|686>>
     <associate|distributivity in the extented reals|<tuple|17.27|617>>
@@ -8952,10 +11960,10 @@
     <associate|eq 17.9.033|<tuple|17.11|?>>
     <associate|eq 17.9.515|<tuple|18.9|683>>
     <associate|equivalence of limits on increasing (decreasing) sequences of
-    extented reals|<tuple|17.66|652>>
+    extented reals|<tuple|17.86|652>>
     <associate|every non empty set in the extented reals has a
     limit|<tuple|17.12|609>>
-    <associate|existance of lim inf and lim sup|<tuple|17.48|647>>
+    <associate|existance of lim inf and lim sup|<tuple|17.68|647>>
     <associate|exp exceeds every number|<tuple|18.31|689>>
     <associate|exp is a bijection|<tuple|18.32|689>>
     <associate|exp is convex|<tuple|18.28|688>>
@@ -8964,58 +11972,78 @@
     <associate|exp(z)|<tuple|18.19|682>>
     <associate|exponential as power|<tuple|18.30|688>>
     <associate|extented reals|<tuple|17.2|607>>
-    <associate|finite infinite sum means finite terms|<tuple|17.92|665>>
+    <associate|finite infinite sum means finite terms|<tuple|17.119|665>>
     <associate|finite sum of constants in the extented
-    reals|<tuple|17.86|664>>
-    <associate|finite sum of denumerable sums|<tuple|17.98|669>>
-    <associate|finite sum of extented reals|<tuple|17.79|661>>
-    <associate|finite sum of extented reals properties|<tuple|17.85|664>>
-    <associate|finite sum of extented reals starting at n|<tuple|17.80|661>>
+    reals|<tuple|17.113|664>>
+    <associate|finite sum of denumerable sums|<tuple|17.125|669>>
+    <associate|finite sum of extented reals|<tuple|17.100|661>>
+    <associate|finite sum of extented reals properties|<tuple|17.112|664>>
+    <associate|finite sum of extented reals starting at n|<tuple|17.101|661>>
     <associate|finite sum of extented reals written as infinite
-    sum|<tuple|17.93|665>>
+    sum|<tuple|17.120|665>>
+    <associate|finite sum of limits of functions|<tuple|17.109|663>>
+    <associate|finite sum of limits of scalar product with
+    functions|<tuple|17.111|663>>
     <associate|finite sum of non negative extented reals is non
-    negative|<tuple|17.81|661>>
+    negative|<tuple|17.102|661>>
     <associate|general strict positive powers|<tuple|18.38|692>>
     <associate|generalized power|<tuple|18.35|690>>
     <associate|generalized sequence of extended and remove
-    zeroes|<tuple|17.106|675>>
+    zeroes|<tuple|17.133|675>>
     <associate|generalized sequence of extended reals and
-    zeroes|<tuple|17.105|674>>
+    zeroes|<tuple|17.132|674>>
     <associate|generalized serie of extended positive
-    numbers|<tuple|17.104|674>>
-    <associate|generalized sum of the extended reals|<tuple|17.103|673>>
+    numbers|<tuple|17.131|674>>
+    <associate|generalized sum of the extended reals|<tuple|17.130|673>>
     <associate|gnerating basis vor the extended reals|<tuple|17.35|?>>
-    <associate|increasing (decreasing) sequence|<tuple|17.45|646>>
-    <associate|increasing (decreasing) sequence converges|<tuple|17.47|646>>
+    <associate|graph of sum of functions|<tuple|17.107|662>>
+    <associate|increasing (decreasing) sequence|<tuple|17.65|646>>
+    <associate|increasing (decreasing) sequence converges|<tuple|17.67|646>>
     <associate|independence of limit inf and limit sup of start
-    index|<tuple|17.50|648>>
+    index|<tuple|17.70|648>>
     <associate|inequality of Abel|<tuple|18.14|680>>
-    <associate|interchange infinite and finite sum|<tuple|17.97|668>>
-    <associate|lemma 15.75|<tuple|17.74|660>>
+    <associate|infinity can not be a right limit|<tuple|17.46|625>>
+    <associate|interchange infinite and finite sum|<tuple|17.124|668>>
+    <associate|left (right) continuity|<tuple|17.57|633>>
+    <associate|left and right limit implies limit|<tuple|17.53|632>>
+    <associate|left limit of a function|<tuple|17.47|625>>
+    <associate|left, right limit of sum and scalar product|<tuple|17.52|627>>
+    <associate|lemma 15.75|<tuple|17.95|660>>
     <associate|lemma 17.2|<tuple|18.16|681>>
     <associate|lemma 17.38|<tuple|18.41|693>>
-    <associate|lim inf -xn|<tuple|17.55|648>>
-    <associate|lim inf and lim sup|<tuple|17.49|648>>
-    <associate|lim inf and lim sup inequality|<tuple|17.52|?>>
-    <associate|lim inf lim sup basic properties|<tuple|17.51|?>>
-    <associate|lim sup lim inf inequality (1)|<tuple|17.53|?>>
-    <associate|lim sup xn+x|<tuple|17.54|648>>
+    <associate|lim inf -xn|<tuple|17.75|648>>
+    <associate|lim inf and lim sup|<tuple|17.69|648>>
+    <associate|lim inf and lim sup inequality|<tuple|17.72|?>>
+    <associate|lim inf lim sup basic properties|<tuple|17.71|?>>
+    <associate|lim sup lim inf inequality (1)|<tuple|17.73|?>>
+    <associate|lim sup xn+x|<tuple|17.74|648>>
     <associate|liminf and limsup properties for sum
-    product|<tuple|17.57|649>>
-    <associate|limit and absolut value|<tuple|17.70|655>>
-    <associate|limit and translation of indexes|<tuple|17.63|?>>
-    <associate|limit n|<tuple|17.76|660>>
-    <associate|limit of 1/f|<tuple|17.75|660>>
-    <associate|limit of constant extented real|<tuple|17.62|651>>
-    <associate|limit of constants|<tuple|17.68|653>>
-    <associate|limit of finite sums in the extented reals|<tuple|17.84|662>>
-    <associate|limit xi+x|<tuple|17.64|651>>
-    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.77|660>>
+    product|<tuple|17.77|649>>
+    <associate|limit and absolut value|<tuple|17.91|655>>
+    <associate|limit and continuity in the extented reals|<tuple|17.56|633>>
+    <associate|limit and translation of indexes|<tuple|17.83|?>>
+    <associate|limit at infinity of ascending (descending)
+    functions|<tuple|17.61|642>>
+    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.63|645>>
+    <associate|limit for f\<less\>=g|<tuple|17.62|643>>
+    <associate|limit n|<tuple|17.97|660>>
+    <associate|limit of 1/f|<tuple|17.96|660>>
+    <associate|limit of a constant function|<tuple|17.50|626>>
+    <associate|limit of a function|<tuple|17.49|626>>
+    <associate|limit of constant extented real|<tuple|17.82|651>>
+    <associate|limit of constants|<tuple|17.89|653>>
+    <associate|limit of finite sums in the extented reals|<tuple|17.105|662>>
+    <associate|limit of functions and sequences|<tuple|17.88|653>>
+    <associate|limit of monotone functions|<tuple|17.60|640>>
+    <associate|limit points|<tuple|17.44|625>>
+    <associate|limit points and plus or min infinity|<tuple|17.45|625>>
+    <associate|limit xi+x|<tuple|17.84|651>>
+    <associate|limits at infinity|<tuple|17.55|632>>
+    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.98|660>>
     <associate|notation for limit of increasing/decreasing
-    sequences|<tuple|17.67|653>>
+    sequences|<tuple|17.87|653>>
     <associate|open sets and addition scalar
     multiplication|<tuple|17.41|623>>
-    <associate|open sets in the extended reals condition|<tuple|17.39|?>>
     <associate|pi|<tuple|18.48|701>>
     <associate|power series 0|<tuple|18.3|677>>
     <associate|properties of exp (1)|<tuple|18.27|688>>
@@ -9024,30 +12052,32 @@
     <associate|properties of general strict power|<tuple|18.37|690>>
     <associate|properties of log|<tuple|18.34|689>>
     <associate|properties of the limit in the extented
-    reals|<tuple|17.71|655>>
-    <associate|series and product with a scalar|<tuple|17.88|665>>
-    <associate|series are increasing|<tuple|17.82|661>>
-    <associate|series of extended reals and zeroes|<tuple|17.96|666>>
+    reals|<tuple|17.92|655>>
+    <associate|right limit|<tuple|17.48|625>>
+    <associate|series and product with a scalar|<tuple|17.115|665>>
+    <associate|series are increasing|<tuple|17.103|661>>
+    <associate|series of extended reals and zeroes|<tuple|17.123|666>>
     <associate|series of positive extented reals is
-    increasing|<tuple|17.89|665>>
+    increasing|<tuple|17.116|665>>
     <associate|sets for basis of topology on the extented
     reals|<tuple|17.34|621>>
+    <associate|special cases of limits|<tuple|17.58|633>>
     <associate|sum and order relation in the extented
-    reals|<tuple|17.91|665>>
-    <associate|sum from -infinity to infinity|<tuple|17.102|673>>
-    <associate|sum of extented reals and product|<tuple|17.83|661>>
+    reals|<tuple|17.118|665>>
+    <associate|sum from -infinity to infinity|<tuple|17.129|673>>
+    <associate|sum of extented reals and product|<tuple|17.104|661>>
     <associate|sum of extented reals is indepenent of order the
-    reals|<tuple|17.94|665>>
-    <associate|sum of series in the extended reals|<tuple|17.90|?>>
+    reals|<tuple|17.121|665>>
+    <associate|sum of series in the extended reals|<tuple|17.117|?>>
     <associate|sup and inf in real and extended reals|<tuple|17.14|?>>
     <associate|sup of set and sum|<tuple|17.28|618>>
-    <associate|sup,inf sum of monotone sequences|<tuple|17.56|649>>
+    <associate|sup,inf sum of monotone sequences|<tuple|17.76|649>>
     <associate|supremum (infinum) of increasing (decreasing) sequence is
-    indpendent of start|<tuple|17.65|652>>
+    indpendent of start|<tuple|17.85|652>>
     <associate|supremum, infinum of extented real set|<tuple|17.11|609>>
     <associate|supremum, infinum of real set|<tuple|17.10|609>>
     <associate|the limit inferior is lower then limit
-    superior|<tuple|17.58|650>>
+    superior|<tuple|17.78|650>>
     <associate|the positive extented reals form a abelian
     semi-group|<tuple|17.26|617>>
     <associate|the topology on the extented reals is
@@ -9056,6 +12086,9 @@
     <associate|topology on the extended reals properties|<tuple|17.37|?>>
     <associate|trigoniometic properties|<tuple|18.45|696>>
     <associate|trigoniometric functions|<tuple|18.44|696>>
+    <associate|uniqueness of limits in extented reals|<tuple|17.51|626>>
+    <associate|usefull properties of open sets in the extented reals
+    |<tuple|17.59|640>>
     <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.23|612>>
     <associate|x.y \<less\> 0 or \<gtr\> 0|<tuple|17.19|?>>
     <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.21|611>>
@@ -9093,39 +12126,55 @@
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>>|<pageref|auto-13>>
 
-      <tuple|<tuple|increasing sequence>|<pageref|auto-15>>
+      <tuple|<tuple|left limit point>|<pageref|auto-15>>
 
-      <tuple|<tuple|decreasing sequence>|<pageref|auto-16>>
+      <tuple|<tuple|right limit point>|<pageref|auto-16>>
+
+      <tuple|<tuple|limit point>|<pageref|auto-17>>
+
+      <tuple|<tuple|left limit of a function>|<pageref|auto-18>>
+
+      <tuple|<tuple|right limit of a function>|<pageref|auto-19>>
+
+      <tuple|<tuple|limit of a function>|<pageref|auto-20>>
+
+      <tuple|<tuple|left continuity>|<pageref|auto-21>>
+
+      <tuple|<tuple|right continuity>|<pageref|auto-22>>
+
+      <tuple|<tuple|increasing sequence>|<pageref|auto-24>>
+
+      <tuple|<tuple|decreasing sequence>|<pageref|auto-25>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<below|lim
-      inf|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-17>>
+      inf|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-26>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<below|lim
-      sup|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-18>>
+      sup|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-27>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>>|<pageref|auto-20>>
+      <tuple|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>>|<pageref|auto-29>>
 
-      <tuple|<tuple|convergence domain>|<pageref|auto-25>>
+      <tuple|<tuple|convergence domain>|<pageref|auto-34>>
 
-      <tuple|<tuple|absolute convergence domain>|<pageref|auto-26>>
+      <tuple|<tuple|absolute convergence domain>|<pageref|auto-35>>
 
-      <tuple|<tuple|convergence radius>|<pageref|auto-27>>
+      <tuple|<tuple|convergence radius>|<pageref|auto-36>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>>|<pageref|auto-28>>
+      <tuple|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>>|<pageref|auto-37>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>>|<pageref|auto-30>>
+      <tuple|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>>|<pageref|auto-39>>
 
-      <tuple|<tuple|Euler's number>|<pageref|auto-32>>
+      <tuple|<tuple|Euler's number>|<pageref|auto-41>>
 
-      <tuple|<tuple|Napierian logarithm>|<pageref|auto-33>>
+      <tuple|<tuple|Napierian logarithm>|<pageref|auto-42>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|log>>|<pageref|auto-34>>
+      <tuple|<tuple|<with|mode|<quote|math>|log>>|<pageref|auto-43>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>>|<pageref|auto-35>>
+      <tuple|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>>|<pageref|auto-44>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>>|<pageref|auto-36>>
+      <tuple|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>>|<pageref|auto-45>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<pi\>>>|<pageref|auto-37>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<pi\>>>|<pageref|auto-46>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|17<space|2spc>The
@@ -9139,38 +12188,43 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>
 
-      <with|par-left|<quote|1tab>|17.2.1<space|2spc>Sequences in
+      <with|par-left|<quote|1tab>|17.2.1<space|2spc>Limit of functions in
       <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14>>
 
-      <with|par-left|<quote|1tab>|17.2.2<space|2spc>Series in
+      <with|par-left|<quote|1tab>|17.2.2<space|2spc>Sequences in
+      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-23>>
+
+      <with|par-left|<quote|1tab>|17.2.3<space|2spc>Series in
       <with|mode|<quote|math>|<wide|\<bbb-R\><rsub|>|\<bar\>><rsub|+>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19>>
+      <no-break><pageref|auto-28>>
 
-      <with|par-left|<quote|1tab>|17.2.3<space|2spc>Generalized series of
+      <with|par-left|<quote|1tab>|17.2.4<space|2spc>Generalized series of
       positive extened reals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>
+      <no-break><pageref|auto-30>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>The
       exponential function> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22><vspace|0.5fn>
+      <no-break><pageref|auto-31><vspace|0.5fn>
 
       18.1<space|2spc>Power series <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-23>
+      <no-break><pageref|auto-32>
 
       <with|par-left|<quote|1tab>|18.1.1<space|2spc>Definition and
       convergence domains <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-24>>
+      <no-break><pageref|auto-33>>
 
       <with|par-left|<quote|1tab>|18.1.2<space|2spc>Convergence criteria
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>
+      <no-break><pageref|auto-38>>
 
       <with|par-left|<quote|1tab>|18.1.3<space|2spc>Differentiation of power
       series <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-40>>
     </associate>
   </collection>
 </auxiliary>
