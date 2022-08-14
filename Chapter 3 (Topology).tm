@@ -1977,7 +1977,7 @@
 
     <\equation*>
       B<rsub|<around*|\|||\|>><around*|(|x,\<varepsilon\>|)>=<around*|]|x-\<varepsilon\>,x+\<varepsilon\>|[>
-      </equation*>
+    </equation*>
 
     So\ 
 
@@ -6824,7 +6824,7 @@
           <math|<around*|(|z<rsub|1>,\<ldots\>,z<rsub|n>|)>\<in\><big|prod><rsub|j\<in\><around*|{|1,\<ldots\>n|}>\\<around*|{|i|}>>X<rsub|j>>
           and <math|w\<in\>X<rsub|n+1>> then
           <math|L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,\<alpha\>\<cdot\>x+\<beta\>\<cdot\>y,z<rsub|i+1>,\<ldots\>,z<rsub|n>|)><around*|(|w|)>=L<around*|(|z<rsub|1>,\<ldots\>,x<rsub|i-1>,\<alpha\>\<cdot\>x+\<beta\>\<cdot\>y,z<rsub|i+1>,\<ldots\>,z<rsub|n>,w|)>\<equallim\><rsub|L
-          is multilinear>\<alpha\>\<cdot\>L<around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,x,z<rsub|i+1>,\<ldots\>,z<rsub|n>,w|)>+\<beta\>\<cdot\>L<around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,y,z<rsub|i+1>,\<ldots\>,z<rsub|n>,w|)>=\<alpha\>\<cdot\>L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,x,z<rsub|i+1>,\<ldots\>.,z<rsub|n>|)><around*|(|w|)>+\<beta\>\<cdot\>L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,y,z<rsub|i+1>,\<ldots\>,z<rsub|n>|)><around*|(|w|)>>
+          is multilinear>\<alpha\>\<cdot\>L<around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,x,z<rsub|i+1>,\<ldots\>,z<rsub|n>,w|)>+\<beta\>\<cdot\>L<around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,y,z<rsub|i+1>,\<ldots\>,z<rsub|n>,w|)>=\<alpha\>\<cdot\>L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,x,z<rsub|i+1>,\<ldots\>,z<rsub|n>|)><around*|(|w|)>+\<beta\>\<cdot\>L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,y,z<rsub|i+1>,\<ldots\>,z<rsub|n>|)><around*|(|w|)>>
           proving as <math|w> is choosen arbitrary we have that
           <math|L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,\<alpha\>\<cdot\>x+\<beta\>\<cdot\>y,z<rsub|i+1>,\<ldots\>,z<rsub|n>|)>=\<alpha\>\<cdot\>L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,x,z<rsub|i+1>,\<ldots\>,z<rsub|n>|)>+\<beta\>\<cdot\>L<rsub|1><around*|(|z<rsub|1>,\<ldots\>,z<rsub|i-1>,y,z<rsub|i+1>,\<ldots\>,z<rsub|n>|)>>
 
@@ -9616,7 +9616,7 @@
   </lemma>
 
   <\proof>
-    This is proved by induction so let <math|n\<in\><around*|{|k,\<ldots\>.,\<infty\>|}>>
+    This is proved by induction so let <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
     and take <math|\<cal-S\><rsub|n>=<around*|{|i\<in\>\<bbb-N\>
     \|x<rsub|n>\<leqslant\>x<rsub|n+i>|}>> then we have
 
@@ -9937,7 +9937,7 @@
       converges to <math|x> in the metric sense.
 
       <item><dueto|<math|\<Leftarrow\>>>Let
-      <math|<around*|{|x<rsub|i><rsub|>|}><rsub|i\<in\><around*|{|m,\<ldots\>.,\<infty\>|}>>>
+      <math|<around*|{|x<rsub|i><rsub|>|}><rsub|i\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>>
       converges to <math|x> in the metric sense, then
       <math|\<forall\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>> there exists a
       <math|N\<in\><around*|{|m,\<ldots\>,\<infty\>|}>> such that
@@ -11039,7 +11039,7 @@
       by <reference|eq 11.19> we have that
       <math|<around*|\<\|\|\>|L<rsub|p><around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>-L<rsub|q><around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>|\<\|\|\>>=0\<less\>\<varepsilon\>>
       so if <math|p,q\<geqslant\>k\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
-      then <math|<around*|\<\|\|\>|L<rsub|p><around*|(|x<rsub|1>,\<ldots\>.,x<rsub|n>|)>-L<rsub|q><around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>|\<\|\|\>>\<less\>\<varepsilon\>>
+      then <math|<around*|\<\|\|\>|L<rsub|p><around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>-L<rsub|q><around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>|\<\|\|\>>\<less\>\<varepsilon\>>
 
       <item><dueto|<math|<big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>><rsub|i>\<neq\>0>>take
       then <math|\<varepsilon\><rprime|'>=<frac|\<varepsilon\>|<big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>><rsub|i>>>
@@ -11572,7 +11572,7 @@
   </proof>
 
   <\lemma>
-    <label|inf sup of xi+yi>Let <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>.,\<infty\>|}>>,<around*|{|y<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>\<bbb-R\>>
+    <label|inf sup of xi+yi>Let <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>,<around*|{|y<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>\<bbb-R\>>
     the we have\ 
 
     <\enumerate>
@@ -11971,7 +11971,7 @@
       \ <math|\<varepsilon\>\<gtr\>0> then
       <math|\<exists\>N\<in\><around|{|k,\<ldots\>,\<infty\>|}>> such that if
       <math|n\<geqslant\>N> we have <math|\<shortparallel\><big|sum><rsub|i=k><rsup|n>x<rsub|i>-<big|sum><rsub|i=k><rsup|\<infty\>>\<shortparallel\>\<less\>\<varepsilon\>>.
-      Now take <math|N<rprime|'>=N+<around|(|m-k|)>+1\<in\><around|{|m+1,\<ldots\>.,\<infty\>|}>>
+      Now take <math|N<rprime|'>=N+<around|(|m-k|)>+1\<in\><around|{|m+1,\<ldots\>,\<infty\>|}>>
       [as <math|N\<geqslant\>k>] and if <math|n\<geqslant\>N<rprime|'>\<geqslant\>N>
       [as <math|m\<geqslant\>k>] then <math|\<shortparallel\><big|sum><rsub|i=m+1><rsup|n>x<rsub|i>-<around|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>-<big|sum><rsub|i=k><rsup|m>x<rsub|i>|)>\<shortparallel\>=\<shortparallel\><big|sum><rsub|i=m+1><rsup|n>x<rsub|i>+<big|sum><rsub|i=k><rsup|m>x<rsub|i>-<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>\<shortparallel\>\<equallim\>\<shortparallel\><big|sum><rsub|i=k><rsup|n>x<rsub|i>-<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>\<shortparallel\>\<less\>\<varepsilon\>>
       proving that <math|<big|sum><rsub|i=m+1><rsup|\<infty\>>x<rsub|i>>
@@ -19366,7 +19366,7 @@
     <associate|info-flag|minimal>
     <associate|page-even-footer|>
     <associate|page-even-header|>
-    <associate|page-first|389>
+    <associate|page-first|391>
     <associate|page-height|auto>
     <associate|page-medium|papyrus>
     <associate|page-odd-footer|>

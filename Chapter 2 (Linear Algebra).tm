@@ -1139,7 +1139,7 @@
         Define then <math|\<beta\>:<around*|{|0,\<ldots\>,n<rsub|1>+n<rsub|2>+1|}>\<rightarrow\>I>
         by <math|\<beta\><around*|(|i|)>=<choice|<tformat|<table|<row|<cell|\<beta\><rsub|1><around*|(|i|)>
         if i\<in\><around*|{|0,\<ldots\>,n<rsub|1>|}>>>|<row|<cell|\<beta\><rsub|2><around*|(|i-n<rsub|1>-1|)>
-        if i\<in\><around*|{|n<rsub|1>+1,\<ldots\>.,n<rsub|1>+n<rsub|2>+1|}>>>>>>>then
+        if i\<in\><around*|{|n<rsub|1>+1,\<ldots\>,n<rsub|1>+n<rsub|2>+1|}>>>>>>>then
         we prove that <math|\<beta\>> is a bijection
 
         <\description>
@@ -2153,7 +2153,7 @@
   </lemma>
 
   <\proof>
-    We prove this by induction so let <math|\<cal-S\>=<around*|{|n\<in\><around*|{|2,\<ldots\>.,\<infty\>|}>\|Let
+    We prove this by induction so let <math|\<cal-S\>=<around*|{|n\<in\><around*|{|2,\<ldots\>,\<infty\>|}>\|Let
     <around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>\<in\>X<rsup|n><infix-and>
     \ f:X<rsup|n>\<rightarrow\>Y be such that
     \<forall\>i,j\<in\><around*|{|1,\<ldots\>,n|}>
@@ -10122,7 +10122,7 @@
     <math|det<around*|(|L|)>=\<alpha\>>
 
     <\proof>
-      <math|\<Delta\><rsub|L><around*|(|e<rsub|1>,\<ldots\>.,e<rsub|n>|)>=\<Delta\><around*|(|L<around*|(|e<rsub|1>|)>,\<ldots\>L<around*|(|e<rsub|i-1>|)>,L<around*|(|e<rsub|i>|)>,L<around*|(|e<rsub|i+1>|)>,\<ldots\>,L<around*|(|e<rsub|n>|)>|)>=\<Delta\><around*|(|e<rsub|1>,\<ldots\>e<rsub|i-1>,\<alpha\>\<cdot\>e<rsub|i>,e<rsub|i+1>,\<ldots\>,e<rsub|n>|)>=\<alpha\>\<cdot\>\<Delta\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>>
+      <math|\<Delta\><rsub|L><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>=\<Delta\><around*|(|L<around*|(|e<rsub|1>|)>,\<ldots\>L<around*|(|e<rsub|i-1>|)>,L<around*|(|e<rsub|i>|)>,L<around*|(|e<rsub|i+1>|)>,\<ldots\>,L<around*|(|e<rsub|n>|)>|)>=\<Delta\><around*|(|e<rsub|1>,\<ldots\>e<rsub|i-1>,\<alpha\>\<cdot\>e<rsub|i>,e<rsub|i+1>,\<ldots\>,e<rsub|n>|)>=\<alpha\>\<cdot\>\<Delta\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>>
       proving that <math|det<around*|(|L|)>=\<alpha\>>
     </proof>
   </example>
@@ -11609,7 +11609,7 @@
     So we have\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<Delta\><around*|(|col<around*|(|M,1|)>,\<ldots\>,col<around*|(|M,n|)>|)>>|<cell|=>|<cell|\<Delta\><around*|(|L<around*|(|\<varepsilon\><rsub|1>|)>,\<ldots\>.,L<around*|(|\<varepsilon\><rsub|n>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|\<Delta\><rsub|L><around*|(|\<varepsilon\><rsub|1>,\<ldots\>,\<varepsilon\><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|L|)>\<cdot\>\<Delta\><around*|(|\<varepsilon\><rsub|1>,\<ldots\>,\<varepsilon\><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|L|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|\<cal-M\><around*|(|L|)>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|\<cal-M\><around*|(|\<cal-M\><rsup|-1><around*|(|L|)>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|M|)>>>>>
+      <tformat|<table|<row|<cell|\<Delta\><around*|(|col<around*|(|M,1|)>,\<ldots\>,col<around*|(|M,n|)>|)>>|<cell|=>|<cell|\<Delta\><around*|(|L<around*|(|\<varepsilon\><rsub|1>|)>,\<ldots\>,L<around*|(|\<varepsilon\><rsub|n>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|\<Delta\><rsub|L><around*|(|\<varepsilon\><rsub|1>,\<ldots\>,\<varepsilon\><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|L|)>\<cdot\>\<Delta\><around*|(|\<varepsilon\><rsub|1>,\<ldots\>,\<varepsilon\><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|L|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|\<cal-M\><around*|(|L|)>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|\<cal-M\><around*|(|\<cal-M\><rsup|-1><around*|(|L|)>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|det<around*|(|M|)>>>>>
     </eqnarray*>
 
     This proves that <math|det<around*|(|M|)>=\<Delta\><around*|(|col<around*|(|M,1|)>,...,col<around*|(|M,n|)>|)>>.
@@ -12188,7 +12188,7 @@
     if i\<neq\>k>>|<row|<cell|e<rsub|j> ik i=k>>>>>>then we have that\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<Delta\><around*|(|e<rsub|j>,L<around*|(|e<rsub|1>|)>,\<ldots\>.,L<around*|(|e<rsub|k-1>|)>,L<around*|(|e<rsub|k+1>|)>,\<ldots\>,L<around*|(|e<rsub|n>|)>|)>>|<cell|=>|<cell|\<Delta\><around*|(|b<rsup|k,j><rsub|k>,b<rsup|k,j><rsub|1>,\<ldots\>,b<rsup|k,j><rsub|k-1>,b<rsup|k,j><rsub|k+1>,\<ldots\>,b<rsup|k,j><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|\<Delta\><around*|(|b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|1|)>>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|2|)>><rsub|>,\<ldots\>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|k|)>>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|k+1|)>>,\<ldots\>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n><around*|(|n|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|1\<rightsquigarrow\><rsub|n>k|)>\<Delta\><around*|(|b<rsup|k,j><rsub|1>,\<ldots\>,b<rsup|k,j><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-1|)><rsup|k-1>\<Delta\><around*|(|b<rsup|k,j><rsub|1>,\<ldots\>,b<rsup|k,j><rsub|n>|)>>>>>
+      <tformat|<table|<row|<cell|\<Delta\><around*|(|e<rsub|j>,L<around*|(|e<rsub|1>|)>,\<ldots\>,L<around*|(|e<rsub|k-1>|)>,L<around*|(|e<rsub|k+1>|)>,\<ldots\>,L<around*|(|e<rsub|n>|)>|)>>|<cell|=>|<cell|\<Delta\><around*|(|b<rsup|k,j><rsub|k>,b<rsup|k,j><rsub|1>,\<ldots\>,b<rsup|k,j><rsub|k-1>,b<rsup|k,j><rsub|k+1>,\<ldots\>,b<rsup|k,j><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|\<Delta\><around*|(|b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|1|)>>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|2|)>><rsub|>,\<ldots\>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|k|)>>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n>k<around*|(|k+1|)>>,\<ldots\>,b<rsup|k,j><rsub|1\<rightsquigarrow\><rsub|n><around*|(|n|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|1\<rightsquigarrow\><rsub|n>k|)>\<Delta\><around*|(|b<rsup|k,j><rsub|1>,\<ldots\>,b<rsup|k,j><rsub|n>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-1|)><rsup|k-1>\<Delta\><around*|(|b<rsup|k,j><rsub|1>,\<ldots\>,b<rsup|k,j><rsub|n>|)>>>>>
     </eqnarray*>
 
     Using the above and <reference|eq 10.94> we have
@@ -12938,8 +12938,8 @@
     <label|properties of composition of linear transformations>Let
     <math|n,m\<in\>\<bbb-N\><rsub|0>>, <math|X> a <math|n>-dimensional vector
     space over a field of characterization zero,
-    <math|<around*|{|L<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>.,n|}>>>
-    a family of linear transformations <math|L<rsub|i>:X\<rightarrow\>X> then
+    <math|<around*|{|L<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>> a
+    family of linear transformations <math|L<rsub|i>:X\<rightarrow\>X> then
     we have
 
     <\enumerate>
@@ -15679,7 +15679,7 @@
     <associate|info-flag|minimal>
     <associate|page-even-footer|>
     <associate|page-even-header|>
-    <associate|page-first|235>
+    <associate|page-first|237>
     <associate|page-height|auto>
     <associate|page-medium|papyrus>
     <associate|page-odd-footer|>

@@ -12933,7 +12933,7 @@
     </enumerate>
 
     Finally to prove that <math|T<rsub|-m>> is the inverse of
-    <math|T<rsub|m>>, take <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|0,\<ldots\>.,n|}>>>
+    <math|T<rsub|m>>, take <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>>
     then <math|T<rsub|-m><around*|(|T<rsub|m><around*|(|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>|)>|)>=T<rsub|-m><around*|(|<around*|{|<around*|(|T<rsub|m><around*|(|x<rsub|i>|)><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>|)><rsub|j>|}><rsub|j\<in\><around*|{|m,\<ldots\>,m+n|}>>|)>=<around*|{|<around*|(|T<rsub|-m><around*|(|<around*|{|<around*|(|T<rsub|m><around*|(|x<rsub|i>|)><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>|)><rsub|j>|}><rsub|j\<in\><around*|{|m,\<ldots\>,m+n|}>>|)>|)><rsub|k>|}><rsub|k\<in\><around*|{|0,\<ldots\>,<around*|(|m+n|)>-m|}>>=<around*|{|<around*|(|T<rsub|-m><around*|(|<around*|{|x<rsub|j-m>|}><rsub|j\<in\><around*|{|m,\<ldots\>,m+n|}>><rsub|>|)>|)><rsub|k>|}><rsub|k\<in\><around*|{|0,\<ldots\>,n|}>>=<around*|{|x<rsub|<around*|(|k-m|)>+m>|}><rsub|k\<in\><around*|{|0,\<ldots\>,n|}>>=<around*|{|x<rsub|k>|}><rsub|k\<in\><around*|{|0,\<ldots\>,k|}>>>
   </proof>
 
@@ -16235,7 +16235,7 @@
 
   <\theorem>
     <label|finite product of finite or denumerable sets>Let
-    <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>.,n|}>>>
+    <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
     be a finite family of sets then we have\ 
 
     <\enumerate>
