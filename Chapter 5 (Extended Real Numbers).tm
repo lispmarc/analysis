@@ -4786,11 +4786,16 @@
     <\enumerate>
       <item>Let <math|A\<in\><wide|\<bbb-R\>|\<wide-bar\>>>,
       <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
-      a sequence of extended reals with a limit so that
-      <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we have
-      <math|x<rsub|i>\<leqslant\>A> [or <math|A\<leqslant\>x<rsub|i>>] then
-      <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<leqslant\>A> [or
-      <math|A\<leqslant\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>]
+      a sequence of extended reals with a limit then\ 
+
+      <\enumerate>
+        <item>If <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+        <math|x<rsub|i>\<leqslant\>A> then
+        <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<leqslant\>A>
+
+        <item>If <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>
+        A\<leqslant\>x<rsub|i>> then <math|A\<leqslant\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
+      </enumerate>
 
       <item>Let <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>,
       <math|<around*|{|y<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
@@ -4884,18 +4889,19 @@
 
           <\description>
             <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=\<infty\>>>Let
-            now <math|C\<in\>\<bbb-R\><rsub|+>> then there exists a
+            <math|C\<in\>\<bbb-R\><rsub|+>> then using <reference|alternative
+            definition of limit in the extented reals> there exists a
             <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
             <math|\<forall\>n\<geqslant\>N> we have
             <math|x<rsub|n>\<gtr\><frac|C|\<alpha\>>\<Rightarrow\>\<alpha\>\<cdot\>x<rsub|n>\<gtr\>C>
-            proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<infty\>=\<alpha\>\<cdot\>\<infty\>>
+            proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<infty\>=\<alpha\>\<cdot\>\<infty\>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
             and thus <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
 
             <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=-\<infty\>>>Let
             now <math|C\<in\>\<bbb-R\><rsub|+>> then there exists a
             <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
             <math|\<forall\>n\<geqslant\>N> we have
-            <math|x<rsub|n>\<less\>-<frac|C|\<alpha\>>\<Rightarrow\>\<alpha\>\<cdot\>x<rsub|n>\<less\>-C\<Rightarrow\><below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=-\<infty\>=\<alpha\>\<cdot\><around*|(|-\<infty\>|)>>
+            <math|x<rsub|n>\<less\>-<frac|C|\<alpha\>>\<Rightarrow\>\<alpha\>\<cdot\>x<rsub|n>\<less\>-C\<Rightarrow\><below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=-\<infty\>=\<alpha\>\<cdot\><around*|(|-\<infty\>|)>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
             and thus <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
 
             <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<in\>\<bbb-R\>>>Take
@@ -4917,21 +4923,21 @@
             now <math|C\<in\>\<bbb-R\><rsub|+>> then there exists a
             <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
             <math|\<forall\>n\<geqslant\>N> we have
-            <math|x<rsub|n>\<gtr\><frac|C|-\<alpha\>>\<Rightarrow\>\<alpha\>\<cdot\>x<rsub|n>\<less\>-C\<Rightarrow\><below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=-\<infty\>=\<alpha\>\<cdot\>\<infty\>>
+            <math|x<rsub|n>\<gtr\><frac|C|-\<alpha\>>\<Rightarrow\>\<alpha\>\<cdot\>x<rsub|n>\<less\>-C\<Rightarrow\><below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=-\<infty\>=\<alpha\>\<cdot\>\<infty\>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
             proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
 
             <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=-\<infty\>>>Let
             now <math|C\<in\>\<bbb-R\><rsub|+>> then there exists a
             <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
             <math|\<forall\>n\<geqslant\>N> we have
-            <math|x<rsub|n>\<less\><frac|-C|-\<alpha\>>\<Rightarrow\>C\<less\>\<alpha\>\<cdot\>x<rsub|n>\<Rightarrow\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=\<infty\>=\<alpha\>\<cdot\><around*|(|-\<infty\>|)>>
+            <math|x<rsub|n>\<less\><frac|C|\<alpha\>>\<Rightarrow\>C\<less\>\<alpha\>\<cdot\>x<rsub|n>\<Rightarrow\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=\<infty\>=\<alpha\>\<cdot\><around*|(|-\<infty\>|)>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
             proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
 
             <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<in\>\<bbb-R\>>>Take
             <math|x=<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>> and let
             <math|\<varepsilon\>\<gtr\>0> then there exists a
             <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
-            <math|<around*|\||x-x<rsub|n>|\|>\<less\><frac|\<varepsilon\>|-\<alpha\>>\<Rightarrow\>x+<frac|\<varepsilon\>|\<alpha\>>\<less\>x<rsub|n>\<less\>x-<frac|\<varepsilon\>|\<alpha\>>\<Rightarrow\>\<alpha\>\<cdot\>x-\<varepsilon\>\<less\>x<rsub|n>\<less\>\<alpha\>\<cdot\>x+\<varepsilon\>\<Rightarrow\><around*|\||\<alpha\>\<cdot\>x-\<alpha\>\<cdot\>x<rsub|n>|\|>\<less\>\<varepsilon\>>
+            <math|<around*|\||x-x<rsub|n>|\|>\<less\><frac|\<varepsilon\>|-\<alpha\>>\<Rightarrow\>x+<frac|\<varepsilon\>|\<alpha\>>\<less\>x<rsub|n>\<less\>x-<frac|\<varepsilon\>|\<alpha\>>\<Rightarrow\>\<alpha\>\<cdot\>x-\<varepsilon\>\<less\>\<alpha\>\<cdot\>x<rsub|n>\<less\>\<alpha\>\<cdot\>x+\<varepsilon\>\<Rightarrow\><around*|\||\<alpha\>\<cdot\>x-\<alpha\>\<cdot\>x<rsub|n>|\|>\<less\>\<varepsilon\>>
             proving that <math|<below|lim|i<rsub|>\<rightarrow\>\<infty\>><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<alpha\>\<cdot\>x=\<alpha\>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>
           </description>
         </description>
@@ -4975,7 +4981,7 @@
         <math|\<forall\>i\<geqslant\>M<rsub|2>> we have
         <math|y<rsub|i>\<less\><frac|-C|2>> so that if
         <math|n\<geqslant\>max<around*|(|n,M<rsub|1>,M<rsub|2>|)>> we have
-        <math|x<rsub|i>+y<rsub|i>\<less\><frac|-C|2>+<frac|-C|2>=C> proving
+        <math|x<rsub|i>+y<rsub|i>\<less\><frac|-C|2>+<frac|-C|2>=-C> proving
         that for <math|<around*|{|x<rsub|i>+y<rsub|i>|}><rsub|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>>
         we have <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>+y<rsub|i>|)>=-\<infty\>=-\<infty\>+<around*|(|-\<infty\>|)>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>+<around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
 
@@ -4985,7 +4991,7 @@
         <math|\<forall\>i\<geqslant\>N<rsub|1>> we have
         <math|<around*|\||y-y<rsub|i>|\|>\<less\>1\<Rightarrow\>-\<infty\>\<less\>y-1\<less\>y<rsub|i>>.
         Also there exists a <math|N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
-        such that <math|\<forall\>i\<geqslant\>N<rsub|1>> we have
+        such that <math|\<forall\>i\<geqslant\>N<rsub|2>> we have
         <math|x<rsub|i>\<gtr\>1\<gtr\>-\<infty\>>. So if
         <math|n=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then we have
         <math|\<forall\>i\<geqslant\>n> that <math|x<rsub|i>+y<rsub|i>> is
@@ -5003,9 +5009,9 @@
         <math|y=<below|lim|i-.\<infty\>>y<rsub|i>> then there exists a
         <math|N<rsub|1>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
         <math|\<forall\>i\<geqslant\>N<rsub|1>> we have
-        <math|<around*|\||y-y<rsub|i>|\|>\<less\>1\<Rightarrow\>y<rsub|i>\<less\>y+1>.
+        <math|<around*|\||y-y<rsub|i>|\|>\<less\>1\<Rightarrow\>y<rsub|i>\<less\>y+1\<less\>\<infty\>>.
         Also there exists a <math|N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
-        such that <math|\<forall\>i\<geqslant\>N<rsub|1>> we have
+        such that <math|\<forall\>i\<geqslant\>N<rsub|2>> we have
         <math|x<rsub|i>\<less\>-1\<less\>\<infty\>>. So if
         <math|n=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then we have
         <math|\<forall\>i\<geqslant\>n> that <math|x<rsub|i>+y<rsub|i>> is
@@ -5030,8 +5036,8 @@
         if we interchage <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
         and <math|<around*|{|y<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
 
-        <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<in\>\<bbb-R\>\<wedge\><below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>\<in\>\<bbb-R\>>>Let
-        <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=x> and
+        <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<in\>\<bbb-R\>\<wedge\><below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>\<in\>\<bbb-R\>>>TODO
+        Let <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=x> and
         <math|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>=y>, then there
         exists a <math|N<rsub|1>,N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
         such that if <math|i\<geqslant\>N<rsub|1>> we have
@@ -9091,9 +9097,6 @@
     <associate|derivative of the exponential function|<tuple|18.24|686>>
     <associate|distributivity in the extented reals|<tuple|17.28|617>>
     <associate|eq 13.1.300|<tuple|17.3|618>>
-    <associate|eq 13.11.40|<tuple|17.40|654>>
-    <associate|eq 13.12.40|<tuple|17.41|655>>
-    <associate|eq 13.13.40|<tuple|17.42|655>>
     <associate|eq 13.14.41|<tuple|17.41|666>>
     <associate|eq 13.15.41|<tuple|17.50|669>>
     <associate|eq 13.16.41|<tuple|17.51|669>>
@@ -9175,7 +9178,6 @@
     <associate|eq 17.38.035|<tuple|17.38|?>>
     <associate|eq 17.39.035|<tuple|17.39|?>>
     <associate|eq 17.4.515.1|<tuple|18.4|681>>
-    <associate|eq 17.40.035|<tuple|17.40|?>>
     <associate|eq 17.49.001|<tuple|17.58|?>>
     <associate|eq 17.5.515|<tuple|18.5|681>>
     <associate|eq 17.50.001|<tuple|17.59|?>>
