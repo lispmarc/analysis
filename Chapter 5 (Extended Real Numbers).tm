@@ -5036,8 +5036,8 @@
         if we interchage <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
         and <math|<around*|{|y<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
 
-        <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<in\>\<bbb-R\>\<wedge\><below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>\<in\>\<bbb-R\>>>TODO
-        Let <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=x> and
+        <item*|<math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<in\>\<bbb-R\>\<wedge\><below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>\<in\>\<bbb-R\>>>Let
+        <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=x> and
         <math|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>=y>, then there
         exists a <math|N<rsub|1>,N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
         such that if <math|i\<geqslant\>N<rsub|1>> we have
@@ -5066,7 +5066,7 @@
       <item>Let <math|x=<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>> and
       <math|y=<below|lim|i\<rightarrow\>\<infty\>>> we have if <math|x=0>
       then <math|y\<neq\>\<infty\>,-\<infty\>> and if <math|y=0> then
-      <math|x\<neq\>\<infty\>,-\<infty\>> then we must consider the following
+      <math|x\<neq\>\<infty\>,-\<infty\>> so we must consider the following
       remaining cases:
 
       <\description>
@@ -5075,7 +5075,7 @@
         <math|N<rsub|1>,N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
         such that <math|\<forall\>i\<geqslant\>N<rsub|1>>,
         <math|\<forall\>j\<geqslant\>N<rsub|2>> we have
-        <math|1\<leqslant\>x<rsub|i>> and <math|C\<leqslant\>y<rsub|i>>. Take
+        <math|1\<leqslant\>x<rsub|i>> and <math|C\<leqslant\>y<rsub|j>>. Take
         <math|n=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then if
         <math|i\<geqslant\>n> we have <math|1\<leqslant\>x<rsub|i>\<wedge\>C\<leqslant\>y<rsub|i>\<Rightarrow\>C\<leqslant\>C\<cdot\>x<rsub|i>\<wedge\>C\<cdot\>x<rsub|i>\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>\<Rightarrow\>C\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>>.
         This proves that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>=\<infty\>=\<infty\>\<cdot\>\<infty\>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
@@ -5085,7 +5085,7 @@
         <math|N<rsub|1>,N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
         such that <math|\<forall\>i\<geqslant\>N<rsub|1>>,
         <math|\<forall\>j\<geqslant\>N<rsub|2>> we have
-        <math|1\<leqslant\>x<rsub|i>> and <math|y<rsub|i>\<leqslant\>-C>.
+        <math|1\<leqslant\>x<rsub|i>> and <math|y<rsub|j>\<leqslant\>-C>.
         Take <math|n=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then if
         <math|i\<geqslant\>n> we have <math|1\<leqslant\>x<rsub|i>\<wedge\>y<rsub|i>\<leqslant\>-C\<Rightarrow\>C\<leqslant\>C\<cdot\>x<rsub|i>\<wedge\>y<rsub|i>\<cdot\>x<rsub|i>\<leqslant\>-C\<cdot\>x<rsub|i>\<Rightarrow\>-C\<cdot\>x<rsub|i>\<leqslant\>-C\<wedge\>y<rsub|i>\<cdot\>x<rsub|i>\<leqslant\>-C\<cdot\>x<rsub|i>\<Rightarrow\>x<rsub|i>\<cdot\>y<rsub|i>\<leqslant\>-C>.
         This proves that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>=-\<infty\>=\<infty\>\<cdot\>-\<infty\>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
@@ -5100,10 +5100,10 @@
           such that <math|\<forall\>i\<geqslant\>N<rsub|1>,\<forall\>j\<geqslant\>N<rsub|2>>
           we have <math|y-\<varepsilon\>\<less\>y<rsub|i>\<less\>y+\<varepsilon\>\<wedge\><frac|2\<cdot\>C|y>\<leqslant\>x<rsub|i>>.
           Take <math|n=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then if
-          <math|n\<leqslant\>i> we have <math|<frac|y|2>\<less\>y<rsub|i>\<wedge\><frac|2\<cdot\>C|y>\<leqslant\>x<rsub|i>\<Rightarrowlim\><rsub|0\<less\><frac|2\<cdot\>C|y>\<wedge\>0\<less\><frac|y|2>\<less\>y<rsub|i>><around*|(|<frac|2\<cdot\>C|y>|)>\<cdot\><frac|y|2>\<leqslant\><frac|2\<cdot\>C|2>y<rsub|i>\<wedge\><frac|2\<cdot\>C|y>\<cdot\>y<rsub|i>\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>\<Rightarrow\>C\<leqslant\><frac|2\<cdot\>C|y>\<cdot\>y<rsub|i>\<wedge\><frac|2\<cdot\>C|y>\<cdot\>y<rsub|i>\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>\<Rightarrow\>C\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>>.
+          <math|n\<leqslant\>i> we have <math|<frac|y|2>\<less\>y<rsub|i>\<wedge\><frac|2\<cdot\>C|y>\<leqslant\>x<rsub|i>\<Rightarrowlim\><rsub|0\<less\><frac|2\<cdot\>C|y>\<wedge\>0\<less\><frac|y|2>\<less\>y<rsub|i>><around*|(|<frac|2\<cdot\>C|y>|)>\<cdot\><frac|y|2>\<leqslant\><frac|2\<cdot\>C|y>y<rsub|i>\<wedge\><frac|2\<cdot\>C|y>\<cdot\>y<rsub|i>\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>\<Rightarrow\>C\<leqslant\><frac|2\<cdot\>C|y>\<cdot\>y<rsub|i>\<wedge\><frac|2\<cdot\>C|y>\<cdot\>y<rsub|i>\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>\<Rightarrow\>C\<leqslant\>x<rsub|i>\<cdot\>y<rsub|i>>.
           So we have <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>=\<infty\>=x\<cdot\>\<infty\>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
 
-          <item*|<math|y\<less\>0>>Take <math|<around*|{|y<rprime|'><rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+          <item*|<math|y\<less\>0>>Let <math|<around*|{|y<rprime|'><rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
           defined by <math|y<rprime|'><rsub|i>=-y<rsub|i>> then
           <math|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i><rprime|'>=<below|lim|i\<rightarrow\>\<infty\>><around*|(|-y<rsub|i>|)>=-y\<gtr\>0>
           so by the previous case we have that
@@ -5115,7 +5115,7 @@
         <math|x=\<infty\>\<wedge\>y=-\<infty\>> with <math|x> and <math|y>
         exchanged.
 
-        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>Define
+        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>TODO Define
         <math|<around*|{|x<rsub|i><rprime|'>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>,
         <math|<around*|{|y<rprime|'><rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
         by <math|x<rprime|'><rsub|i>=-x<rsub|i>\<wedge\>y<rprime|'><rsub|i>=-y<rsub|i>>
