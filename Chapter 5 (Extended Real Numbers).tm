@@ -793,8 +793,9 @@
     course consistent with the above theorem.
   </convention>
 
-  The avoid any confusion we note the sum and product on <math|\<bbb-R\>> as
-  <math|+<rsub|\<bbb-R\>>> and <math|\<cdot\><rsub|\<bbb-R\>>>. We will
+  The avoid any confusion we note the sum, product and dvision on
+  <math|\<bbb-R\>> as <math|+<rsub|\<bbb-R\>>>,
+  <math|\<cdot\><rsub|\<bbb-R\>>>. and <math|/<rsub|\<bbb-R\>>> We will
   extend the algebraic operations on <math|\<bbb-R\>> to
   <math|<wide|\<bbb-R\>|\<wide-bar\>>>, however it will not be possible to
   define <math|+> fully on <math|<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>>.
@@ -852,8 +853,17 @@
         x=\<infty\>>>|<row|<cell|-x\<equallim\><rsub|def><around*|(|-1|)>\<cdot\><rsub|\<bbb-R\>>x>>>>>
       </equation*>
 
-      <item>Let <math|x,y\<in\><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>|)>\\<around*|{|<around*|(|\<infty\>,\<infty\>|)>,<around*|(|-\<infty\>,-\<infty\>|)>|}>>
+      <item>Let <math|<around*|(|x,y|)>\<in\><around*|(|<wide|\<bbb-R\>|\<wide-bar\>>\<times\><wide|\<bbb-R\>|\<wide-bar\>>|)>\\<around*|{|<around*|(|\<infty\>,\<infty\>|)>,<around*|(|-\<infty\>,-\<infty\>|)>|}>>
       then <math|x-y=x+<around*|(|-y|)>=x+<around*|(|<around*|(|-1|)>\<cdot\>y|)>>
+
+      <item>Let <math|x\<in\><wide||\<wide-bar\>><wide|\<bbb-R\>|\<wide-bar\>>\\<around*|{|0|}>>
+      then
+
+      <\equation*>
+        <frac|1|x>=<choice|<tformat|<table|<row|<cell|1/<rsub|\<bbb-R\>>x if
+        x\<in\>\<bbb-R\>\\<around*|{|0|}>>>|<row|<cell|0 if
+        x\<in\><around*|{|-\<infty\>,\<infty\>|}>>>>>>
+      </equation*>
     </enumerate>
 
     \ 
@@ -955,6 +965,8 @@
         <item*|<math|x\<in\>\<bbb-R\><rsub|+>\<wedge\>y\<in\>\<bbb-R\><rsub|->>>then
         <math|x\<cdot\>y=x\<cdot\><rsub|\<bbb-R\>>y\<less\>0>
       </description>
+
+      \ 
     </enumerate>
   </proof>
 
@@ -4545,7 +4557,7 @@
       <math|\<forall\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>> there exists a
       <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
       <math|\<forall\>n\<in\><around*|{|N,\<ldots\>m\<infty\>|}>> we have
-      that <math|x-\<varepsilon\>\<less\>x<rsub|n>\<less\>x+\<varepsilon\>>\ 
+      that <math|x-\<varepsilon\>\<less\>x<rsub|n>\<less\>x+\<varepsilon\>>
 
       <\note>
         as <math|x,\<varepsilon\>\<in\>\<bbb-R\>> we have that
@@ -4773,8 +4785,6 @@
       <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|n>=\<infty\>=<around*|\||x|\|>>
     </description>
   </proof>
-
-  TODO
 
   We show now that the limit in <math|<wide|\<bbb-R\>|\<wide-bar\>>> has
   similar properties as the limit in <math|\<bbb-R\>>
@@ -5115,7 +5125,7 @@
         <math|x=\<infty\>\<wedge\>y=-\<infty\>> with <math|x> and <math|y>
         exchanged.
 
-        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>TODO Define
+        <item*|<math|x=-\<infty\>\<wedge\>y=-\<infty\>>>Define
         <math|<around*|{|x<rsub|i><rprime|'>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>,
         <math|<around*|{|y<rprime|'><rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
         by <math|x<rprime|'><rsub|i>=-x<rsub|i>\<wedge\>y<rprime|'><rsub|i>=-y<rsub|i>>
@@ -5127,7 +5137,7 @@
         <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>\\<around*|{|0|}>>>As
         <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|-x<rsub|i>|)>\<equallim\><rsub|<around*|(|3|)>>\<infty\>>
         we can use the case <math|x=\<infty\><rsup|>\<wedge\>y\<in\>\<bbb-R\>\\<around*|{|0|}>>
-        giving <math|><math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|-x<rsub|i>\<cdot\>y<rsub|i>|)>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>><around*|(|-x<rsub|i>|)>|)>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>\<Rightarrow\>-<around*|(|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>|)>=-<around*|(|<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>|)>\<Rightarrow\>><math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
+        giving <math|><math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|<around*|(|-x<rsub|i>|)>\<cdot\>y<rsub|i>|)>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>><around*|(|-x<rsub|i>|)>|)>\<cdot\><below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>\<Rightarrow\>-<around*|(|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>|)>=-<around*|(|<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>|)>\<Rightarrow\>><math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
 
         <item*|<math|x\<in\>\<bbb-R\>\\<around*|{|0|}>\<wedge\>y=\<infty\>>>this
         is the same as <math|x=\<infty\><rsup|>\<wedge\>y\<in\>\<bbb-R\>\\<around*|{|0|}>>
@@ -5146,11 +5156,11 @@
         such that <math|\<forall\>i\<geqslant\>N<rsub|2>> we have
         <math|<around*|\||x<rsub|i>-x|\|>\<less\><frac|\<varepsilon\>|2\<cdot\><around*|(|1+<around*|\||y|\|>|)>>>
         and a <math|N<rsub|3>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such
-        that <math|<around*|\||y<rsub|i>-y<rsub|i>|\|>\<less\><frac|\<varepsilon\>|2\<cdot\><around*|(|1+<around*|\||x|\|>|)>>>.
-        Take now <math|n=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then if
-        <math|i\<geqslant\>n> we have tht
+        that <math|<around*|\||y<rsub|i>-y<rsub|>|\|>\<less\><frac|\<varepsilon\>|2\<cdot\><around*|(|1+<around*|\||x|\|>|)>>>.
+        Take now <math|n=max<around*|(|N<rsub|1>,N<rsub|2>,N<rsub|3>|)>> then
+        if <math|i\<geqslant\>n> we have tht
         <math|<around*|\||x<rsub|i>\<cdot\>y<rsub|i>-x\<cdot\>y|\|>=<around*|\||x<rsub|i>\<cdot\>y<rsub|i>-x<rsub|i>\<cdot\>y+x<rsub|i>\<cdot\>y-x\<cdot\>y|\|>=<around*|\||x<rsub|i>\<cdot\><around*|(|y<rsub|i>-y|)>+<around*|(|x<rsub|i>-x|)>\<cdot\>y|\|>\<leqslant\><around*|\||x<rsub|i>|\|>\<cdot\><around*|\||y<rsub|i>-y|\|>+<around*|\||y|\|>\<cdot\><around*|\||x<rsub|i>-x|\|>\<less\><around*|(|1+<around*|\||x|\|>|)>\<cdot\><frac|\<varepsilon\>|2\<cdot\><around*|(|1+<around*|\||x|\|>|)>>+<frac|\<varepsilon\>|2\<cdot\><around*|(|1+<around*|\||y|\|>|)>>\<cdot\><around*|\||y|\|>=<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>=\<varepsilon\>>
-        proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>=x\<cdot\>y=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
+        proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|x<rsub|i>\<cdot\>y<rsub|i>|)>=x\<cdot\>y=<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>|)>\<cdot\><around*|(|<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>.
       </description>
 
       <item>Let <math|x=<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>> and
@@ -5178,12 +5188,12 @@
         <math|C\<in\>\<bbb-R\><rsub|+>> there exists
         <math|N<rsub|1>,N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
         such that <math|\<forall\>i\<geqslant\>N<rsub|1>>,<math|\<forall\>j\<geqslant\>N<rsub|2>>
-        we have <math|C\<leqslant\>x<rsub|i>,y<rsub|j>\<leqslant\>-C\<Rightarrowlim\><rsub|-C\<leqslant\>C>y<rsub|j>\<leqslant\>-C\<leqslant\>C\<leqslant\>x<rsub|i>>.
-        Take <math|N=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then
+        we have <math|C\<leqslant\>x<rsub|i>,y<rsub|j>\<leqslant\>-C>. Take
+        <math|N=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then
         <math|\<forall\>i\<in\>\<bbb-N\>> we have
-        <math|C\<leqslant\>max<around*|(|x<rsub|i>,y<rsub|i>|)>> and
-        <math|min<around*|(|x<rsub|i>,y<rsub|i>|)>\<leqslant\>-C> proving
-        that\ 
+        <math|C\<leqslant\>x<rsub|i>\<leqslant\>max<around*|(|x<rsub|i>,y<rsub|i>|)>>
+        and <math|min<around*|(|x<rsub|i>,y<rsub|i>|)>\<leqslant\>y<rsub|i>\<leqslant\>-C>
+        proving that\ 
 
         <\enumerate>
           <item><math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|min<around*|(|x<rsub|i>,y<rsub|i>|)>|)>=-\<infty\>=min<around*|(|\<infty\>,-\<infty\>|)>=min<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>,<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
@@ -5196,9 +5206,11 @@
         there exists a <math|N<rsub|1>,N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
         such that <math|\<forall\>i\<geqslant\>N<rsub|1>>,
         <math|\<forall\>j\<geqslant\>N<rsub|2>> we have
-        <math|max<around*|(|C,<around*|\||y|\|>+\<varepsilon\>|)>\<leqslant\>x<rsub|i>\<wedge\><around*|\||y-y<rsub|i>|\|>\<less\>\<varepsilon\>\<Rightarrow\>C\<leqslant\>x<rsub|i>\<wedge\><around*|\||y-y<rsub|i>|\|>\<less\>\<varepsilon\>\<wedge\>y<rsub|i>\<less\>y+\<varepsilon\>\<leqslant\><around*|\||y|\|>+\<varepsilon\>\<leqslant\>x<rsub|i>>.
-        If we take then <math|N=max<around*|(|N<rsub|1>,N<rsub|2>|)>> we have
+        <math|max<around*|(|C,<around*|\||y|\|>+\<varepsilon\>|)>\<leqslant\>x<rsub|i>\<wedge\><around*|\||y-y<rsub|i>|\|>\<less\>\<varepsilon\><text|.
+        If we take <math|N=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then we have
         <math|\<forall\>i\<geqslant\>N> that
+        >C\<leqslant\>x<rsub|i>\<wedge\><around*|\||y-y<rsub|i>|\|>\<less\>\<varepsilon\>\<wedge\>y<rsub|i>\<less\>y+\<varepsilon\>\<leqslant\><around*|\||y|\|>+\<varepsilon\>\<leqslant\>x<rsub|i>>.
+        Hence
 
         <\enumerate>
           <item><math|<around*|\||min<around*|(|x<rsub|i>,y<rsub|i>|)>-x|\|>=<around*|\||y<rsub|i>-x|\|>\<less\>\<varepsilon\>>
@@ -5231,7 +5243,24 @@
           <item><math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|max<around*|(|x<rsub|i>,y<rsub|i>|)>|)>=-\<infty\>=max<around*|(|-\<infty\>,-\<infty\>|)>=max<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>,<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
         </enumerate>
 
-        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>
+        <item*|<math|x=-\<infty\>\<wedge\>y\<in\>\<bbb-R\>>>then given
+        <math|C\<in\>\<bbb-R\><rsub|+>> and <math|\<varepsilon\>\<gtr\>0>
+        there exists <math|N<rsub|1>,N<rsub|2>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+        such that <math|\<forall\>i\<geqslant\>N<rsub|1>,\<forall\>j\<geqslant\>N<rsub|2>>
+        we have <math|x<rsub|i>\<leqslant\>-max<around*|(|C,-y+\<varepsilon\>|)>>
+        and <math|<around*|\||y-y<rsub|i>|\|>\<less\>\<varepsilon\>>. Take
+        <math|N=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then we have
+        <math|\<forall\>i\<geqslant\>N> that
+        <math|x<rsub|i>\<leqslant\>-C\<wedge\><around*|\||y-y<rsub|i>|\|>\<less\>\<varepsilon\>\<wedge\>x<rsub|i>\<leqslant\>y-\<varepsilon\>\<less\>y<rsub|i>>,
+        hence\ 
+
+        <\enumerate>
+          <item><math|min<around*|(|x<rsub|i>,y<rsub|i>|)>=x<rsub|i>\<leqslant\>-C>
+          proving that <math|<below|lim|i\<rightarrow\>\<infty\>>min<around*|(|x<rsub|i>,y<rsub|i>|)>=-\<infty\>=min<around*|(|-\<infty\>,y|)>=min<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>,<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
+
+          <item><math|<around*|\||max<around*|(|x<rsub|i>,y<rsub|i>|)>-y|\|>=<around*|\||y<rsub|i>-y|\|>\<less\>\<varepsilon\>>
+          proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|min<around*|(|x<rsub|i>,y<rsub|i>|)>|)>=y=max<around*|(|-\<infty\>,y|)>=max<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>,<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
+        </enumerate>
 
         <item*|<math|x\<in\>\<bbb-R\>\<wedge\>y=\<infty\>>>this reduce to the
         case <math|x=\<infty\>\<wedge\>y\<in\>\<bbb-R\>> if we interchange
@@ -5251,7 +5280,7 @@
 
         <\enumerate>
           <item><math|min<around*|(|x,y|)>-\<varepsilon\>=min<around*|(|x-\<varepsilon\>,y-\<varepsilon\>|)>\<less\>x<rsub|i>,y<rsub|i>\<Rightarrow\>min<around*|(|x,y|)>-\<varepsilon\>\<less\>min<around*|(|x<rsub|i>,y<rsub|i>|)>>
-          and <math|min<around*|(|x<rsub|i>,y<rsub|i>|)>\<less\>x+\<varepsilon\>,y+\<varepsilon\>\<Rightarrow\>min<around*|(|x<rsub|i>,y<rsub|i>|)>\<less\>min*<around*|(|x+\<varepsilon\>,y+\<varepsilon\>|)>\<less\>min<around*|(|x,y|)>+\<varepsilon\>>
+          and <math|min<around*|(|x<rsub|i>,y<rsub|i>|)>\<less\>x+\<varepsilon\>,y+\<varepsilon\>\<Rightarrow\>min<around*|(|x<rsub|i>,y<rsub|i>|)>\<less\>min*<around*|(|x+\<varepsilon\>,y+\<varepsilon\>|)>=min<around*|(|x,y|)>+\<varepsilon\>>
           proving that <math|<around*|\||min<around*|(|x<rsub|i>,y<rsub|i>|)>-min<around*|(|x,y|)>|\|>\<less\>\<varepsilon\>>
           giving <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|min<around*|(|x<rsub|i>,y<rsub|i>|)>|)>=min<around*|(|x,y|)>=min<around*|(|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>,<below|lim|i\<rightarrow\>\<infty\>>y<rsub|i>|)>>
 
@@ -5305,17 +5334,25 @@
     <math|<around*|\||x|\|>=<around*|\||x-x<rsub|i>+x<rsub|i>|\|>\<leqslant\><around*|\||x-x<rsub|i>|\|>+<around*|\||x<rsub|i>|\|>\<less\>\<varepsilon\>+\<varepsilon\>=2\<cdot\>\<varepsilon\>=<around*|\||x|\|>\<Rightarrow\><around*|\||x|\|>\<less\><around*|\||x|\|>>
     a contradiction. So we must have\ 
 
-    <\equation*>
-      \<forall\>i\<geqslant\>N\<vDash\><around*|\||x<rsub|i>|\|>\<geqslant\>\<varepsilon\>
-    </equation*>
+    <\equation>
+      <label|eq 17.41.035>\<forall\>i\<geqslant\>N\<vDash\><around*|\||x<rsub|i>|\|>\<geqslant\>\<varepsilon\>
+    </equation>
 
-    If we take also <math|M<rprime|'>=min<around*|(|<around*|{|<around*|\||x<rsub|i>|\|>\|i\<in\><around*|{|k,\<ldots\>,N|}>|}>|)>\<gtr\>0>
+    If we take <math|M<rprime|'>=min<around*|(|<around*|{|<around*|\||x<rsub|i>|\|>\|i\<in\><around*|{|k,\<ldots\>,N|}>|}>|)>\<gtr\>0>
     [as <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}> we have
-    x<rsub|i>\<neq\>0>) and <math|M=min<around*|(|M<rprime|'>,\<varepsilon\>|)>\<gtr\>0>
+    x<rsub|i>\<neq\>0>] and <math|M=min<around*|(|M<rprime|'>,\<varepsilon\>|)>\<gtr\>0>
     then <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we have
-    <math|<around*|\||x<rsub|i>|\|>\<geqslant\>M\<gtr\>0> so that
-    <math|inf<around*|(|<around*|{|<around*|\||x<rsub|i>|\|>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\<geqslant\>M\<gtr\>0>
-    as we must prove.
+    either
+
+    <\description>
+      <item*|<math|i\<in\><around*|{|k,\<ldots\>,N|}>>>then
+      <math|<around*|\||x<rsub|i>|\|>\<geqslant\>\<varepsilon\>\<geqslant\>M>
+
+      <item*|<math|i\<in\><around*|{|N+1,\<ldots\>,\<infty\>|}>>><math|<around*|\||x<rsub|i>|\|>\<geqslant\>M<rprime|'>\<geqslant\>M>
+    </description>
+
+    \ \ giving <math|<around*|\||x<rsub|i>|\|>\<geqslant\>M\<gtr\>0> so that
+    <math|inf<around*|(|<around*|{|<around*|\||x<rsub|i>|\|>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\<geqslant\>M\<gtr\>0>.
   </proof>
 
   <\theorem>
@@ -5323,8 +5360,8 @@
     be a sequence of extended reals such that
     <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>\<neq\>0> then there
     exists a <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
-    <math|\<forall\>i\<in\><around*|{|h,\<ldots\>,\<infty\>|}>> we have
-    <math|x<rsub|i>\<neq\>0> and for <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|n,\<ldots\>,n|}>>>
+    <math|\<forall\>i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>> we have
+    <math|x<rsub|i>\<neq\>0> and for <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>>
     we have that <math|<below|lim|i\<rightarrow\>\<infty\>><frac|1|x<rsub|i>>=<frac|1|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>>
   </theorem>
 
@@ -5336,17 +5373,26 @@
       <item*|<math|x=\<infty\>>>First there exists a
       <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
       <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we have
-      <math|1\<leqslant\>x<rsub|i>\<Rightarrow\>\<forall\>i\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>
+      <math|1\<leqslant\>x<rsub|i>\<Rightarrow\>\<forall\>i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
       we have <math|x<rsub|i>\<neq\>0>. Take now
       <math|\<varepsilon\>\<gtr\>0> then by the Archimedean property of the
-      reals (see <reference|consequence of the archimedean property for the
-      reals>) \ there exists a <math|C\<in\>\<bbb-N\><rsub|0>> such that
+      reals [see <reference|consequence of the archimedean property for the
+      reals>] there exists a <math|C\<in\>\<bbb-N\><rsub|0>> such that
       <math|0\<less\><frac|1|C>\<less\>\<varepsilon\>>.<space|1em>As
       <math|x=\<infty\>> there exists a <math|N\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
       such that <math|\<forall\>i\<geqslant\>N> we have
-      <math|x<rsub|i>\<geqslant\>C\<gtr\>0> hence
-      <math|0\<less\><frac|1|x<rsub|i>>\<less\><frac|1|C>\<less\>\<varepsilon\>\<Rightarrow\><around*|\||<frac|1|x<rsub|i>>-0|\|>=<frac|1|x<rsub|i>>\<less\>\<varepsilon\>\<Rightarrow\>>
-      proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|<frac|1|x<rsub|i>>|)>=0=<frac|1|\<infty\>>=<frac|1|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>>-0
+      <math|x<rsub|i>\<geqslant\>C\<gtr\>0> . For <math|x<rsub|i>> we have
+      then either\ 
+
+      <\description>
+        <item*|<math|x<rsub|i>=\<infty\>>>then <math|<frac|1|x<rsub|i>>=0> so
+        that <math|<around*|\||<frac|1|x<rsub|i>>-0|\|>=0\<less\>\<varepsilon\>>
+
+        <item*|<math|x<rsub|i>\<less\>\<infty\>>>then
+        <math|0\<less\><frac|1|x<rsub|i>>\<leqslant\><frac|1|C>\<less\>\<varepsilon\>\<Rightarrow\><around*|\||<frac|1|x<rsub|i>>-0|\|>=<frac|1|x<rsub|i>>\<less\>\<varepsilon\>>
+      </description>
+
+      which proves that <math|<below|lim|i\<rightarrow\>\<infty\>><frac|1|x<rsub|i>>=0=<frac|1|\<infty\>>=<frac|1|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>>
 
       <item*|<math|x=-\<infty\>>>First there exists a
       <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
@@ -5359,9 +5405,19 @@
       <math|0\<less\><frac|1|C>\<less\>\<varepsilon\>\<Rightarrow\>-\<varepsilon\>\<less\><frac|1|-C>\<less\>0>.<space|1em>As
       <math|x=-\<infty\>> there exists a <math|N\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
       such that <math|\<forall\>i\<geqslant\>N> we have
-      <math|x<rsub|i>\<leqslant\>-C\<less\>0\<Rightarrow\>0\<less\>C\<leqslant\>-x<rsub|i>>
-      hence <math|0\<less\><frac|1|-x>\<leqslant\><frac|1|C>\<less\>\<varepsilon\>\<Rightarrow\>-\<varepsilon\>\<less\><frac|1|x<rsub|i>>\<less\>0\<Rightarrow\><frac|1|x<rsub|i>>\<in\><around*|]|0-\<varepsilon\>,0+\<varepsilon\>|[>>
-      proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|<frac|1|x<rsub|i>>|)>=0=<frac|1|-\<infty\>>=<frac|1|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>>
+      <math|x<rsub|i>\<leqslant\>-C\<less\>0\<Rightarrow\>0\<less\>C\<leqslant\>-x<rsub|i>>.
+      For <math|x<rsub|i>> we have then either\ 
+
+      <\description>
+        <item*|<math|x<rsub|i>=-\<infty\>>>then <math|<frac|1|x<rsub|i>>=0>
+        so that <math|<around*|\||<frac|1|x<rsub|i>>-0|\|>=0\<less\>\<varepsilon\>>
+
+        <item*|<math|-\<infty\>\<less\>x<rsub|i>>>then
+        <math|0\<less\><frac|1|-x<rsub|i>>\<leqslant\><frac|1|C>\<less\>\<varepsilon\>>
+        so that <math|<around*|\||<frac|1|x<rsub|i>>-0|\|>=<around*|\||<frac|1|x<rsub|i>>|\|>=<frac|1|-x<rsub|i>>\<less\>\<varepsilon\>>
+      </description>
+
+      which proves that <math|<below|lim|i\<rightarrow\>\<infty\>><frac|1|x<rsub|i>>=0=<frac|1|-\<infty\>>=<frac|1|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>>
 
       <item*|<math|x\<in\>\<bbb-R\>\\<around*|{|0|}>>>As <math|x\<neq\>0> we
       have that <math|0\<less\><around*|\||x|\|>> take
@@ -5373,13 +5429,13 @@
       <math|x<rsub|i>=0> then we have <math|<around*|\||x|\|>\<less\><frac|<around*|\||x|\|>|2>>
       a contradiction and if <math|<around*|\||x<rsub|i>|\|>=\<infty\>> we
       have <math|\<infty\>\<less\><frac|<around*|\||x|\|>|2>\<in\>\<bbb-R\>>
-      also a contradiction.. \ So <math|\<forall\>i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
+      also a contradiction.. So <math|\<forall\>i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>
       we have <math|0\<neq\>x<rsub|i>\<in\>\<bbb-R\>>. Using the above lemma
       <reference|lemma 15.75> we have that
       <math|m=inf<around*|(|<around*|{|<around*|\||x<rsub|i>|\|>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\<gtr\>0>
       hence <math|\<forall\>i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>> we
-      have that <math|x<rsub|i>\<geqslant\>m\<gtr\>0>. Take now
-      <math|\<varepsilon\>\<gtr\>0> then there exists a
+      have that <math|<around*|\||x<rsub|i>|\|>\<geqslant\>m\<gtr\>0>. Take
+      now <math|\<varepsilon\>\<gtr\>0> then there exists a
       <math|N\<in\><around*|{|n,\<ldots\>,\<infty\>|}>> such that
       <math|\<forall\>i\<geqslant\>N> we have
       <math|<around*|\||x-x<rsub|i>|\|>\<less\>\<varepsilon\>\<cdot\><around*|\||x|\|>\<cdot\>m>,
@@ -5387,6 +5443,8 @@
       proving that <math|<below|lim|i\<rightarrow\>\<infty\>><around*|(|<frac|1|x<rsub|i>>|)>=<frac|1|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>>
       <math|>
     </description>
+
+    \;
   </proof>
 
   <\example>
@@ -5399,12 +5457,11 @@
     <math|<below|lim|n\<rightarrow\>\<infty\>>n=sup<around*|(|<around*|{|n\|n\<in\>\<bbb-N\><rsub|0>|}>|)>=sup<around*|(|\<bbb-N\><rsub|0>|)>>
     which exists. Assume that <math|sup<around*|(|\<bbb-N\><rsub|0>|)>\<less\>\<infty\>>
     then there exists a <math|n\<in\>\<bbb-N\><rsub|0>> such that
-    <math|sup<around*|(|\<bbb-N\><rsub|n>|)>\<less\>n\<leqslant\>sup<around*|(|\<bbb-N\><rsub|0>|)>\<less\>n>
-    leading to the contradiction <math|n\<less\>n> hence we have
-    <math|<below|lim|n\<rightarrow\>\<infty\>>n=\<infty\>>. Using the
-    previous theorem <reference|limit of 1/f> we have then
+    <math|sup<around*|(|\<bbb-N\><rsub|0>|)>\<less\>n\<leqslant\>sup<around*|(|\<bbb-N\><rsub|0>|)>>
+    leading to the contradiction <math|sup<around*|(|N<rsub|0>|)>\<less\>sup<around*|(|\<bbb-N\><rsub|0>|)>>
+    hence we have <math|<below|lim|n\<rightarrow\>\<infty\>>n=\<infty\>>.
+    Using the previous theorem <reference|limit of 1/f> we have then
     <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|<frac|1|n>|)>=<frac|1|<below|lim|n\<rightarrow\>\<infty\>>n>=<frac|1|\<infty\>>=0>.
-    \ 
   </proof>
 
   <\theorem>
@@ -5449,8 +5506,8 @@
   </subsection>
 
   To avoid any problems with non defined sums in
-  <math|<wide|\<bbb-R\>|\<wide-bar\>>> (like <math|-\<infty\>+\<infty\>> and
-  <math|+\<infty\>+<around*|(|-\<infty\>|)>> we restrict ourself to
+  <math|<wide|\<bbb-R\>|\<wide-bar\>>> [like <math|-\<infty\>+\<infty\>> and
+  <math|+\<infty\>+<around*|(|-\<infty\>|)>>] we restrict ourself to
   <math|<wide|\<bbb-R\>|\<wide-bar\>><rsub|+>=<around*|{|x\<in\><wide|\<bbb-R\>|\<wide-bar\>>\|x\<geqslant\>0|}>>
   so that by <reference|the positive extented reals form a abelian
   semi-group> <math|<around*|\<langle\>|<wide|\<bbb-R\>|\<wide-bar\>><rsub|+>,+|\<rangle\>>>
@@ -5467,7 +5524,7 @@
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>>
     be a finite family of non negative extended reals
     [<math|\<forall\>i\<in\><around*|{|0,\<ldots\>,n|}>>
-    \ <math|x<rsub|i>\<in\><wide|\<bbb-R\>|\<wide-bar\>><rsub|+>>] then
+    \ <math|0\<leqslant\>x<rsub|i>>] then
     <math|<big|sum><rsub|i=0><rsup|n>x<rsub|i>=<choice|<tformat|<table|<row|<cell|x<rsub|0>
     if n=0>>|<row|<cell|<big|sum><rsub|i=0><rsup|n-1>x<rsub|i>+x<rsub|n> if
     n\<gtr\>0>>>>>>
@@ -5486,7 +5543,7 @@
   </theorem>
 
   Using the above we prove that the sum of a finite family of non negative
-  extended reals is non negative as expressed in the following theorem.
+  extended reals is non negative as expressed in the following theorem. TODO
 
   <\theorem>
     <label|finite sum of non negative extented reals is non negative>Let
@@ -9097,22 +9154,22 @@
     <associate|derivative of the exponential function|<tuple|18.24|686>>
     <associate|distributivity in the extented reals|<tuple|17.28|617>>
     <associate|eq 13.1.300|<tuple|17.3|618>>
-    <associate|eq 13.14.41|<tuple|17.41|666>>
-    <associate|eq 13.15.41|<tuple|17.50|669>>
-    <associate|eq 13.16.41|<tuple|17.51|669>>
+    <associate|eq 13.14.41|<tuple|17.42|666>>
+    <associate|eq 13.15.41|<tuple|17.51|669>>
+    <associate|eq 13.16.41|<tuple|17.52|669>>
     <associate|eq 13.2.300|<tuple|17.4|618>>
     <associate|eq 13.3.301|<tuple|17.5|619>>
     <associate|eq 13.5|<tuple|17.35|651>>
     <associate|eq 13.6|<tuple|17.36|651>>
-    <associate|eq 14.22.423|<tuple|17.52|669>>
-    <associate|eq 14.23.409|<tuple|17.61|672>>
-    <associate|eq 14.23.424|<tuple|17.54|670>>
-    <associate|eq 14.23.425|<tuple|17.53|670>>
-    <associate|eq 14.24.409|<tuple|17.62|673>>
-    <associate|eq 14.24.424|<tuple|17.55|671>>
-    <associate|eq 14.25.411|<tuple|17.63|673>>
-    <associate|eq 14.25.424|<tuple|17.56|671>>
-    <associate|eq 14.26.424|<tuple|17.57|671>>
+    <associate|eq 14.22.423|<tuple|17.53|669>>
+    <associate|eq 14.23.409|<tuple|17.62|672>>
+    <associate|eq 14.23.424|<tuple|17.55|670>>
+    <associate|eq 14.23.425|<tuple|17.54|670>>
+    <associate|eq 14.24.409|<tuple|17.63|673>>
+    <associate|eq 14.24.424|<tuple|17.56|671>>
+    <associate|eq 14.25.411|<tuple|17.64|673>>
+    <associate|eq 14.25.424|<tuple|17.57|671>>
+    <associate|eq 14.26.424|<tuple|17.58|671>>
     <associate|eq 14.4.472|<tuple|17.6|619>>
     <associate|eq 14.5.472|<tuple|17.7|620>>
     <associate|eq 17.1.514|<tuple|18.7|682>>
@@ -9140,17 +9197,17 @@
     <associate|eq 17.18.002|<tuple|18.18|689>>
     <associate|eq 17.19.001|<tuple|17.21|?>>
     <associate|eq 17.19.002|<tuple|18.19|689>>
-    <associate|eq 17.2.20.001|<tuple|17.42|666>>
-    <associate|eq 17.2.21.001|<tuple|17.43|666>>
-    <associate|eq 17.2.22.001.1|<tuple|17.44|666>>
-    <associate|eq 17.2.23.001|<tuple|17.45|667>>
-    <associate|eq 17.2.24.001|<tuple|17.46|667>>
-    <associate|eq 17.2.25.001|<tuple|17.47|667>>
-    <associate|eq 17.2.26.001|<tuple|17.48|668>>
-    <associate|eq 17.2.27.001|<tuple|17.49|668>>
-    <associate|eq 17.2.40.001|<tuple|17.64|674>>
-    <associate|eq 17.2.41.001|<tuple|17.65|674>>
-    <associate|eq 17.2.42.001|<tuple|17.66|674>>
+    <associate|eq 17.2.20.001|<tuple|17.43|666>>
+    <associate|eq 17.2.21.001|<tuple|17.44|666>>
+    <associate|eq 17.2.22.001.1|<tuple|17.45|666>>
+    <associate|eq 17.2.23.001|<tuple|17.46|667>>
+    <associate|eq 17.2.24.001|<tuple|17.47|667>>
+    <associate|eq 17.2.25.001|<tuple|17.48|667>>
+    <associate|eq 17.2.26.001|<tuple|17.49|668>>
+    <associate|eq 17.2.27.001|<tuple|17.50|668>>
+    <associate|eq 17.2.40.001|<tuple|17.65|674>>
+    <associate|eq 17.2.41.001|<tuple|17.66|674>>
+    <associate|eq 17.2.42.001|<tuple|17.67|674>>
     <associate|eq 17.2.514|<tuple|18.8|682>>
     <associate|eq 17.2.515|<tuple|18.2|677>>
     <associate|eq 17.20.001|<tuple|17.22|?>>
@@ -9178,10 +9235,11 @@
     <associate|eq 17.38.035|<tuple|17.38|?>>
     <associate|eq 17.39.035|<tuple|17.39|?>>
     <associate|eq 17.4.515.1|<tuple|18.4|681>>
-    <associate|eq 17.49.001|<tuple|17.58|?>>
+    <associate|eq 17.41.035|<tuple|17.41|?>>
+    <associate|eq 17.49.001|<tuple|17.59|?>>
     <associate|eq 17.5.515|<tuple|18.5|681>>
-    <associate|eq 17.50.001|<tuple|17.59|?>>
-    <associate|eq 17.51.001|<tuple|17.60|?>>
+    <associate|eq 17.50.001|<tuple|17.60|?>>
+    <associate|eq 17.51.001|<tuple|17.61|?>>
     <associate|eq 17.6.033|<tuple|17.8|?>>
     <associate|eq 17.6.515|<tuple|18.6|681>>
     <associate|eq 17.7.033|<tuple|17.9|?>>
