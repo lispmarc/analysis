@@ -6074,8 +6074,8 @@
   extended reals.
 
   <\theorem>
-    <label|series of extended reals and zeroes>Let
-    <math|k\<in\>\<bbb-N\><rsub|0>> and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    <label|series of extended reals and zeroes>Let <math|k\<in\>\<bbb-N\>>
+    and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
     be a family of extended positive reals and
     <math|S=<around*|{|i\<in\><around*|{|k,\<ldots\>,n|}>\|x<rsub|i>\<neq\>0|}>>
     then we have the following possibilities\ 
@@ -6242,23 +6242,22 @@
     \;
   </proof>
 
-  TODO
-
   The next theorem shows that we can interchange infinite sums.
 
   <\theorem>
-    <label|interchange infinite and finite sum>Let
-    <math|k,l\<in\>\<bbb-N\><rsub|0>>
+    <label|interchange infinite and finite sum>Let <math|k,l\<in\>\<bbb-N\>>
 
     <\enumerate>
-      <item> Let <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>>>
-      be a family of extended non negative real numbers then\ 
+      <item> Let <math|n,m\<in\>\<bbb-N\>> with
+      <math|k\<leqslant\>n\<wedge\>l\<leqslant\>m> and
+      \ <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>>>
+      a family of extended non negative real numbers then
 
       <\equation*>
-        <big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsup|\<infty\>><rsub|j=l>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
+        <big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>
       </equation*>
 
-      <item> Let <math|n\<in\>\<bbb-N\><rsub|0>> and
+      <item>Let <math|n\<in\>\<bbb-N\>> with <math|l\<leqslant\>n> and
       <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>\<times\><around*|{|l,\<ldots\>,n|}>>>
       a family of extended non negative real numbers then
 
@@ -6266,67 +6265,130 @@
         <big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|n>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|n><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
       </equation*>
 
-      <item>Let <math|n\<in\>\<bbb-N\><rsub|0>> and
-      \ <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>>>
+      <item>Let <math|n\<in\>\<bbb-N\>> with <math|l\<leqslant\>n> and
+      <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>>>
       a family of extended non negative real numbers then
+
+      <\equation*>
+        <big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>
+      </equation*>
+
+      <item>Let <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>>>
+      be a family of extended non negative real numbers then\ 
+
+      <\equation*>
+        <big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsup|\<infty\>><rsub|j=l>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
+      </equation*>
     </enumerate>
   </theorem>
 
   <\proof>
-    TODO\ 
+    \;
 
     <\enumerate>
-      <item>
+      <item>This follows from\ 
 
-      <item>
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>>|<cell|\<equallim\><rsub|<text|<reference|generalized
+        sum and finite sum>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,m|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
+        over product of sets>>>>|<cell|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,n|}>><around*|(|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,m|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j=l><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>>>>>
+      </eqnarray*>
 
-      <item>
+      <item>We prove this by induction so let
+      <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\>\|if
+      <around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>\<times\><around*|{|l,\<ldots\>,l+n|}>>\<subseteq\><around*|[|0,\<infty\>|]><text|
+      then ><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|l+n>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|l+n><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>|}>>
+      then we have\ 
+
+      <\description>
+        <item*|<math|0\<in\>\<cal-S\>>>If <math|n=0> then\ 
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|l+n>x<rsub|<around*|(|i,j|)>>|)>>|<cell|=>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|l>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,l|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j=l><rsup|l><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j=l><rsup|l+n><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>>>>
+        </eqnarray*>
+
+        proving that <math|0\<in\>\<cal-S\>>
+
+        <item*|<math|n\<in\>\<cal-S\>\<rightarrow\>n+1\<in\>\<cal-S\>>>Let
+        <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>\<times\><around*|{|l,\<ldots\>,l+<around*|(|n+1|)>|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
+        then we have\ 
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|l+n+1>x<rsub|<around*|(|i,j|)>>|)>>|<cell|=>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|l+n>x<rsub|<around*|(|i,j|)>>+x<rsub|<around*|(|i,l+n+1|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
+          of series in the extended reals>>>>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsup|l+n><rsub|j=l>x<rsub|<around*|(|i,j|)>>|)>+<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,l+n+1|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|n\<in\>\<cal-S\>>>|<cell|<big|sum><rsub|j=l><rsup|l+n><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>><rsub|>x<rsub|<around*|(|i,j|)>>|)>+<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,l+n+1|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j=1><rsup|l+n+1><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>>>>
+        </eqnarray*>
+
+        which proves that <math|n+1\<in\>\<cal-S\>>
+      </description>
+
+      Using mathematical induction we have then that
+      <math|\<cal-S\>=\<bbb-N\>>. If <math|l\<leqslant\>n> then
+      <math|n-l\<in\>\<bbb-N\>=\<cal-S\>> so that
+      <math|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|n>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|l+<around*|(|n-l|)>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|l+<around*|(|n-l|)>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|n><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
+      proving (2).
+
+      <item>Define <math|<around*|{|y<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>>>
+      by <math|y<rsub|<around*|(|i,j|)>>=x<rsub|<around*|(|j,i|)>>> then we
+      have\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>|<cell|=>|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>y<rsub|<around*|(|j,i|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<around*|(|2|)>>>|<cell|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>y<rsub|<around*|(|j,i|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>>>>>
+      </eqnarray*>
+
+      <item>Let <math|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> then\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>|<cell|\<equallim\><rsub|<around*|(|3|)>>>|<cell|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|sum
+        and order relation in the extented
+        reals>>>>|<cell|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|sup<around*|(|<around*|{|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>>>>
+      </eqnarray*>
+
+      hence <math|sup<around*|(|<around*|{|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\><big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
+      proving that\ 
+
+      <\equation>
+        <label|eq 17.53.035><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\><big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
+      </equation>
+
+      Futher take <math|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> then\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|sum><rsup|m><rsub|j=1><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)><rsup|>>|<cell|\<equallim\><rsub|<around*|(|2|)>>>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|sum
+        and order relation in the extented
+        reals>>>>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>\|m\<of\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>>>>
+      </eqnarray*>
+
+      hence <math|sup<around*|(|<around*|{|<big|sum><rsub|j=1><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
+      proving that <math|<big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>.
+      Combining this with <reference|eq 17.53.035> proves that
+
+      <\equation*>
+        <big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
+      </equation*>
+
+      \ 
     </enumerate>
   </proof>
 
-  <\proof>
-    Let <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>,
-    <math|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> then
-    <math|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>\<equallim\><rsub|<text|<reference|generalized
-    sum and finite sum>>><big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,m|}>>x<rsub|<around*|(|i,j|)>>|)>\<equallim\><rsub|<text|<reference|sum
-    over product of sets>>><big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,m|}>><around*|(|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|j=l><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\><big|sum><rsub|j=l><rsup|m><around*|(|sup<around*|(|<around*|{|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>\|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>|)>=<big|sum><rsub|j=l><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\>sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|n><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\|n\<in\><around*|{|l,\<ldots\>,m|}><rsub|>|}>|)>=<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
-    from which follows <math|sup<around*|(|<around*|{|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|)>|}>|)>\<leqslant\><big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<Rightarrowlim\><rsub|<text|<reference|sup
-    of set of bigger elements>>>sup<around*|(|<around*|{|<big|sum><rsub|i=k><rsup|n><around*|(|sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>\|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\><big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
-    giving\ 
-
-    <\equation>
-      <label|eq 13.15.41><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\><big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
-    </equation>
-
-    Likewise if <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>,
-    <math|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> then
-    <math|<big|sum><rsub|j=l><rsup|n><around*|(|<big|sum><rsub|i=k><rsup|m>x<rsub|<around*|(|i,j|)>>|)>\<equallim\><rsub|<text|<reference|generalized
-    sum and finite sum>>><big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,n|}>><around*|(|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,m|}>>x<rsub|<around*|(|i,j|)>>|)>\<equallim\><rsub|<text|<reference|sum
-    over product of sets>>><big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,m|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,n|}>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|i=k><rsup|m><around*|(|<big|sum><rsub|j=l><rsup|n>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\><big|sum><rsub|i=k><rsup|m><around*|(|sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|n>x<rsub|<around*|(|i,j|)>>\|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>|)>=<big|sum><rsub|i=k><rsup|m><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\>sup<around*|(|<around*|{|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\|n\<in\><around*|{|l,\<ldots\>,m|}><rsub|>|}>|)>=<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
-    from which follows <math|sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|n><around*|(|<big|sum><rsub|i=k><rsup|m>x<rsub|<around*|(|i,j|)>>\|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|)>|}>|)>\<leqslant\><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<Rightarrowlim\><rsub|<text|<reference|sup
-    of set of bigger elements>>>sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|n><around*|(|sup<around*|(|<around*|{|<big|sum><rsub|i=k><rsup|m>x<rsub|<around*|(|i,j|)>>\|m\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>|)>\|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
-    giving\ 
-
-    <\equation>
-      <label|eq 13.16.41><big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>\<leqslant\><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
-    </equation>
-
-    <reference|eq 13.15.41> and <reference|eq 13.16.41> proves then finally
-    the theorem.
-  </proof>
-
-  Every finite sum of a denumerable sums can be writen as a denumerable sum\ 
+  Every finite sum of a denumerable sums can be writen as a denumerable sum.
 
   <\theorem>
     <label|finite sum of denumerable sums>Let
     <math|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> and
     <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|[|l,\<ldots\>,\<infty\>|]>>>
     be a family of non negative extended real then if
-    <math|\<sigma\>:<around*|{|p,\<ldots\>,\<infty\>|}>\<rightarrow\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>>
+
+    <\equation*>
+      \<sigma\>:<around*|{|p,\<ldots\>,\<infty\>|}>\<rightarrow\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>
+    </equation*>
+
     is a bijection (which exist by <reference|product of a finite and
     denumerable set is denumerable>) then
-    <math|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>\<equallim\><rsub|<text|<reference|interchange
-    infinite and finite sum>>><big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>=<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|<around*|(|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>|)>>>
+
+    <\equation*>
+      <big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>\<equallim\><rsub|<text|<reference|interchange
+      infinite and finite sum>>><big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>=<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>=<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|<around*|(|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>|)>>
+    </equation*>
   </theorem>
 
   <\proof>
@@ -6342,7 +6404,7 @@
       are increasing>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,N<rsub|m>|}>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
       over product of sets>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,N<rsub|m>|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
       sum and finite sum>>>>|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|N<rsub|m>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|sum
-      and inequalities of family>>>>|<cell|<big|sum><rsub|i=k><rsup|n>sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>\|m\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>>>>
+      and inequalities of family>>>>|<cell|<big|sum><rsub|i=k><rsup|n>sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|r>x<rsub|<around*|(|i,j|)>>\|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>>>>
     </eqnarray*>
 
     From the above it follows that <math|<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>=sup<around*|(|<around*|{|<big|sum><rsub|i=p><rsup|m>x<rsub|\<sigma\><around*|(|i|)>>\|m\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\><big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
@@ -6361,109 +6423,117 @@
     It follows that\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>>|<cell|\<equallim\><rsub|<text|<reference|sum
+      <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>>|<cell|\<equallim\><rsub|<text|<reference|generalized
+      sum and finite sum>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,m|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
       over product of sets>>>>|<cell|<big|sum><rsub|*<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<reference|series
       are increasing>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\>\<sigma\><around*|(|<around*|{|p,\<ldots\>,N<rsub|m>|}>|)>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
-      sums and bijections>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|p,\<ldots\>,N<rsub|m>|}>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=p><rsup|N<rsub|m>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=p><rsup|m>x<rsub|\<sigma\><around*|(|i|)>>\|m\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>>>>>
+      sums and bijections>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|p,\<ldots\>,N<rsub|m>|}>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=p><rsup|N<rsub|m>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=p><rsup|m>x<rsub|\<sigma\><around*|(|i|)>>\|m\<in\><around*|{|p,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>><eq-number><label|eq
+      17.55.035>>>>>
     </eqnarray*>
 
     Then we have\ 
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>|<cell|\<equallim\><rsub|<text|<reference|interchange
-      infinite and finite sum>>>>|<cell|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|sup<around*|{|<around*|(|<big|sum><rsub|j=l><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>|)>\|m\<in\>\<bbb-N\><rsub|0>|}>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|interchange
-      infinite and finite sum>>>>|<cell|sup<around*|{|<around*|(|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>|)>\|m\<in\>\<bbb-N\><rsub|0>|}>>>|<row|<cell|>|<cell|\<leqslant\><rsub|>>|<cell|<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>>>>>
+      infinite and finite sum>>>>|<cell|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|sup<around*|(|<around*|{|<around*|(|<big|sum><rsub|j=l><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|<around*|(|i,j|)>>|)>|)>\|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|interchange
+      infinite and finite sum>>>>|<cell|sup<around*|{|<around*|(|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|<around*|(|i,j|)>>|)>|)>\|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|eq
+      17.55.035>>><rsub|>>|<cell|<big|sum><rsub|i=p><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>>>>>
     </eqnarray*>
 
     proving together with <reference|eq 14.22.423> that
-    <math|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>=<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>>
+
+    <\equation*>
+      <big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>=<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|<around*|(|i,j|)>>|)>
+    </equation*>
+
     and thus the theorem.
   </proof>
 
-  Every denumerable sum of finite sums can be written as a denumerable sun.
+  Next we extend the above theorem for arbitrary finite sums of different
+  size.
 
   <\theorem>
     <label|associativity of series of extended reals>Let
-    <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>>
+    <math|k\<in\>\<bbb-N\>> and <math|<around*|{|x<rsub|<around*|(|i,j|)>>|}><rsub|<around*|(|i,j|)>\<in\><big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
     [where <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we
-    have <math|m<rsub|i>\<leqslant\>n<rsub|i>>] we have <math|> then if
-    <math|\<sigma\>:<around*|{|l,\<ldots\>,\<infty\>|}>\<rightarrow\><big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>
-    is a bijection (which must exists by <reference|a denumerable family of
-    countable sets is countable>) we have
-    <math|<big|sum><rsub|i=l><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>=<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|i=m<rsub|i>><rsup|n<rsub|i>>x<rsub|<around*|(|i,j|)>>|)>>
+    have <math|m<rsub|i>\<leqslant\>n<rsub|i>>]<math|> then if
+
+    <\equation*>
+      \<sigma\>:<around*|{|l,\<ldots\>,\<infty\>|}>\<rightarrow\><big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>
+    </equation*>
+
+    is a bijection [which must exists by <reference|a denumerable family of
+    countable sets is countable>] we have
+
+    <\equation*>
+      <big|sum><rsub|i=l><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>=<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=m<rsub|i>><rsup|n<rsub|i>>x<rsub|<around*|(|i,j|)>>|)>
+    </equation*>
   </theorem>
 
   <\proof>
     First let <math|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> and define
     the bijection <math|\<tau\><rsub|i>:<around*|{|m<rsub|i>,\<ldots\>,n<rsub|i>|}>\<rightarrow\><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>
-    by <math|\<tau\><rsub|i><around*|(|k|)>=<around*|(|i,k|)>> so that by
-    <reference|generalized sums and bijections> we have
-    <math|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|i,1|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>x<rsub|<around*|(|i,j|)>>=<big|sum><rsub|k\<in\><around*|{|m<rsub|i>,\<ldots\>,n<rsub|i>|}>>x<rsub|\<tau\><rsub|i><around*|(|k|)>>=<big|sum><rsub|k\<in\><around*|{|m<rsub|i>,\<ldots\>,n<rsub|i>|}>>x<rsub|<around*|(|i,k|)>>=<big|sum><rsub|k=m<rsub|i>><rsup|n<rsub|i>>x<rsub|<around*|(|i,k|)>>>
-    proving that\ 
+    by <math|\<tau\><rsub|i><around*|(|j|)>=<around*|(|i,j|)>> so that\ 
 
-    <\equation>
-      <label|eq 14.23.425><big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>x<rsub|<around*|(|i,j|)>>=<big|sum><rsub|j\<in\><around*|{|m<rsub|i>,\<ldots\>,n<rsub|i>|}>>x<rsub|<around*|(|i,j|)>>=<big|sum><rsub|j=m<rsub|i>><rsup|n<rsub|j>>x<rsub|<around*|(|i,j|)>>
-    </equation>
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>x<rsub|<around*|(|i,j|)>>>|<cell|\<equallim\><rsub|<text|<reference|generalized
+      sums and bijections>>>>|<cell|<big|sum><rsub|j\<in\><around*|{|m<rsub|i>,\<ldots\>,n<rsub|i>|}>>x<rsub|\<tau\><rsub|i><around*|(|j|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j\<in\><around*|{|m<rsub|i>,\<ldots\>,n<rsub|i>|}>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j=m<rsub|i>><rsup|n<rsub|i>>x<rsub|<around*|(|i,j|)>><eq-number><label|eq
+      14.23.425>>>>>
+    </eqnarray*>
 
-    \ Let <math|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> define then
+    Let <math|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> define then
     <math|N<rsub|m>=max<around*|(|<around*|{|\<sigma\><around*|(|i|)><rsub|1>\|i\<in\><around*|{|l,\<ldots\>,m|}>|}>|)>>.
-    If <math|i\<in\><around*|{|l,\<ldots\>,m|}>> then
+    If <math|i\<in\><around*|{|l,\<ldots\>,m|}>> then as
     \ <math|\<sigma\><around*|(|i|)>\<in\><big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>>
     there exists a <math|j\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such
     that <math|\<sigma\><around*|(|i|)>\<in\><around*|{|<around*|(|j,m<rsub|j>|)>,\<ldots\>,<around*|(|j,n<rsub|j>|)>|}>>
-    so that as <math|\<sigma\><around*|(|i|)><rsub|1>=j\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>>
-    proving that
+    so as additional <math|\<sigma\><around*|(|i|)><rsub|1>=j\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>>
+    it follows that
 
     <\equation>
-      <label|eq 14.23.424>\<sigma\><around*|(|<around*|{|l,\<ldots\>,m|}>|)>\<subseteq\><big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}><text|>
-      <around*|(|<text|a pairwise disjoint union>|)>
+      <label|eq 14.23.424>\<sigma\><around*|(|<around*|{|l,\<ldots\>,m|}>|)>\<subseteq\><big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}><text|
+      [a pairwise disjoint union]>
     </equation>
 
     Next
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|<big|sum><rsub|i=l><rsup|m>x<rsub|\<sigma\><around*|(|i|)>>>|<cell|\<equallim\><rsub|<text|<reference|generalized
-      sum and finite sum>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|l,\<ldots\>,m|}>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\>\<sigma\><around*|(|<around*|{|l,\<ldots\>,m|}>|)>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<reference|eq
+      sum and finite sum>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|l,\<ldots\>,m|}>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
+      sums and bijections>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\>\<sigma\><around*|(|<around*|{|l,\<ldots\>,m|}>|)>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<reference|eq
       14.23.424> and <text|<reference|series are
-      increasing>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><big|cup><rsub|r\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<reference|general
-      associativity of general sum>>>|<cell|<big|sum><rsub|r\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>><around*|(|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|r=k><rsup|N<rsub|m>><around*|(|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>|)>>>>>
+      increasing>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><big|sqcup><rsub|r\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<reference|general
+      associativity of general sum>>>|<cell|<big|sum><rsub|r\<in\><around*|{|k,\<ldots\>,N<rsub|m>|}>><around*|(|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|r=k><rsup|N<rsub|m>><around*|(|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
+      14.23.425>>>>|<cell|<big|sum><rsub|r=k><rsup|N<rsub|m>><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|
+      <text|<reference|series are increasing>>>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|r=k><rsup|n><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|r=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>>>>>
     </eqnarray*>
 
-    \ proving using the above and <reference|eq 14.23.425> that\ 
-
-    <\equation>
-      <label|eq 14.24.424><big|sum><rsub|i=l><rsup|m>x<rsub|\<sigma\><around*|(|i|)>>\<leqslant\><big|sum><rsub|r=k><rsup|N<rsub|m>><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>
-    </equation>
-
-    Now <math|\<forall\>m\<in\>\<bbb-N\><rsub|0>> we have
-    <math|<big|sum><rsub|r=k><rsup|N<rsub|m>><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>\<leqslant\>sup<around*|(|<around*|{|<big|sum><rsub|r=k><rsup|n><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>=<big|sum><rsub|r=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>>
-    proving by the definition of a supremum together with <reference|eq
-    14.24.424> that\ 
+    So <math|sup<around*|(|<around*|{|<big|sum><rsub|i=l><rsup|n>x<rsub|\<sigma\><around*|(|i|)>>\|n\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>\<leqslant\><big|sum><rsub|r=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>>\ 
 
     <\equation>
       <label|eq 14.25.424><big|sum><rsub|i=l><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>\<leqslant\><big|sum><rsub|r=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|r>>x<rsub|<around*|(|r,j|)>>|)>
     </equation>
 
     For the opposite inequality take <math|m\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
-    and take <math|N<rsub|m>=max<around*|(|\<sigma\><rsup|-1><around*|(|<big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>|)>|)>>
-    then if <math|i\<in\>\<sigma\><rsup|-1><around*|(|<big|cup><rsub|j\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|j,m<rsub|j>|)>,\<ldots\>,<around*|(|j,n<rsub|j>|)>|}>|)>>
+    and take <math|N<rsub|m>=max<around*|(|\<sigma\><rsup|-1><around*|(|<big|sqcup><rsub|i\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|i,m<rsub|i>|)>,\<ldots\>,<around*|(|i,n<rsub|i>|)>|}>|)>|)>>.
+    Let <math|i\<in\>\<sigma\><rsup|-1><around*|(|<big|cup><rsub|j\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|j,m<rsub|j>|)>,\<ldots\>,<around*|(|j,n<rsub|j>|)>|}>|)>>
     then <math|i\<in\><around*|{|l,\<ldots\>,N<rsub|m>|}>> so that
-    <math|\<sigma\><rsup|-1><around*|(|<big|sqcup><rsub|j\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|j,m<rsub|j>|)>,\<ldots\>,<around*|(|j,n<rsub|j>|)>|}>|)>\<subseteq\><around*|{|l,\<ldots\>,N<rsub|m>|}>>
+    <math|\<sigma\><rsup|-1><around*|(|<big|sqcup><rsub|j\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|j,m<rsub|j>|)>,\<ldots\>,<around*|(|j,n<rsub|j>|)>|}>|)>\<subseteq\><around*|{|l,\<ldots\>,N<rsub|m>|}>>,
     giving as <math|\<sigma\>> is a bijection that
 
     <\equation>
       <label|eq 14.26.424><big|sqcup><rsub|j\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|j,m<rsub|j>|)>,\<ldots\>,<around*|(|j,n<rsub|j>|)>|}>\<subseteq\>\<sigma\><around*|(|<around*|{|l,\<ldots\>,N<rsub|m><rsub|>|}>|)>
     </equation>
 
-    Now we have
+    Next
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|m><around*|(|<big|sum><rsub|j=m<rsub|i>><rsup|n<rsub|i>>x<rsub|<around*|(|i,j|)>>|)>>|<cell|\<equallim\><rsub|<text|<reference|eq
+      <tformat|<table|<row|<cell|<big|sum><rsub|r=k><rsup|m><around*|(|<big|sum><rsub|j=m<rsub|r>><rsup|n<rsub|i>>x<rsub|<around*|(|r,j|)>>|)>>|<cell|\<equallim\><rsub|<text|<reference|eq
       14.23.425>>>>|<cell|<big|sum><rsub|r=k><rsup|m><around*|(|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|general
       associativity of general sum>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><big|sqcup><rsub|r\<in\><around*|{|k,\<ldots\>,m|}>><around*|{|<around*|(|r,m<rsub|r>|)>,\<ldots\>,<around*|(|r,n<rsub|r>|)>|}>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|series
       are increasing> together with <reference|eq
       14.26.424>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\>\<sigma\><around*|(|<around*|{|l,\<ldots\>,N<rsub|m>|}>|)>>x<rsub|<around*|(|i,j|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
-      sums and bijections>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|l,\<ldots\>,N<rsub|m>|}>><rsup|>x<rsub|\<sigma\><around*|(|i|)>>=<big|sum><rsub|i=l><rsup|N<rsub|m>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=l><rsup|n>x<rsub|\<sigma\><around*|(|i|)>>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=l><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>>>>>
+      sums and bijections>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|l,\<ldots\>,N<rsub|m>|}>><rsup|>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=l><rsup|N<rsub|m>>x<rsub|\<sigma\><around*|(|i|)>>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=l><rsup|n>x<rsub|\<sigma\><around*|(|i|)>>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=l><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)>>>>>>
     </eqnarray*>
 
     Using the definition of a supremum we have then
@@ -6477,34 +6547,47 @@
     \;
   </proof>
 
-  We prove that a denumerable sum of denumerable sums may be written by as a
-  denumerable sum.\ 
+  <\note>
+    To simplify or terminology we write <math|x<rsub|i,j>> instead of
+    <math|x<rsub|<around*|(|i,j|)>>> from now on, unless want express that
+    <math|<around*|(|i,j|)>> is a couple.
+  </note>
+
+  The next theorem shows that a denumerable sum of denumerable sums can be
+  written as one single denumerable sum.
 
   <\theorem>
     <label|countable sum of countable sums is a countable sum>Let
-    <math|<around*|{|<around*|{|x<rsub|i,j>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>|}><rsub|j\<in\>\<bbb-N\><rsub|0>>>
-    a sequence of sequences of extended positive reals and
-    <math|\<sigma\>:\<bbb-N\><rsub|0>\<rightarrow\>\<bbb-N\>\<times\>\<bbb-N\><rsub|0>>
-    a bijection (which exists as by <reference|product of enumerable sets is
-    enumerable> <math|\<bbb-N\><rsub|0>\<times\>\<bbb-N\><rsub|0>> is
-    denumerable) then <math|<big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>=<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>\<equallim\><rsub|<text|<reference|interchange
-    infinite and finite sum>>><big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i,j>|)>>
+    <math|k,l\<in\>\<bbb-N\>> and <math|<around*|{|<around*|{|x<rsub|i,j>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>|}><rsub|j\<in\><around*|{|l,\<ldots\>,\<infty\>|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
+    a sequence of sequences of extended non negative reals and
+    <math|\<sigma\>:\<bbb-N\><rsub|0>\<rightarrow\><around*|{|k,\<ldots\>,\<infty\>|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>>
+    a bijection [which exists as by <reference|product of enumerable sets is
+    enumerable> <math|<around*|{|k,\<ldots\>,\<infty\>|}>\<times\><around*|{|l,\<ldots\>,\<infty\>|}>>
+    is denumerable] then
+
+    <\equation*>
+      <big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>=<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|i,j>|)>\<equallim\><rsub|<text|<reference|interchange
+      infinite and finite sum>>><big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i,j>|)>
+    </equation*>
   </theorem>
+
+  \;
 
   <\proof>
     Let <math|n\<in\>\<bbb-N\><rsub|0>> take then
     <math|N<rsub|n>=max<around*|(|<around*|{|\<sigma\><around*|(|i|)><rsub|1>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>|)>>,
     <math|M<rsub|n>=max<around*|(|<around*|{|\<sigma\><around*|(|i|)><rsub|2>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>|)>>
-    then we have that <math|\<sigma\><around*|(|<around*|{|1,\<ldots\>,n|}>|)>\<subseteq\><around*|{|1,\<ldots\>,N<rsub|n>|}>\<times\><around*|{|1,\<ldots\>,M<rsub|n>|}>>
+    then we have that <math|\<sigma\><around*|(|<around*|{|1,\<ldots\>,n|}>|)>\<subseteq\><around*|{|k,\<ldots\>,N<rsub|n>|}>\<times\><around*|{|l,\<ldots\>,M<rsub|n>|}>>
     and thus\ 
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|n>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>|<cell|\<equallim\><rsub|<text|<reference|generalized
       sum and finite sum>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
       sums and bijections>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\>\<sigma\><around*|{|1,\<ldots\>,n|}>>x<rsub|i,j>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|series
-      are increasing>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|1,\<ldots\>,N<rsub|n>|}>\<times\><around*|{|1,\<ldots\>,M<rsub|n>|}>>x<rsub|i,j>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
-      over product of sets>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,N<rsub|n>|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|1,\<ldots\>,M<rsub|n>|}>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|N<rsub|n>><around*|(|<big|sum><rsub|j=1><rsup|M<rsub|n>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|N<rsub|n>>sup<around*|(|<around*|{|<big|sum><rsub|j=1><rsup|m>x<rsub|i,j>\|m\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|series
-      of positive extented reals is increasing>>>>|<cell|<big|sum><rsub|i=1><rsup|N<rsub|n>><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|series
+      are increasing>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,N<rsub|n>|}>\<times\><around*|{|l,\<ldots\>,M<rsub|n>|}>>x<rsub|i,j>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
+      over product of sets>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,N<rsub|n>|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,M<rsub|n>|}>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
+      sum and finite sum>>>>|<cell|<big|sum><rsub|i=k><rsup|N<rsub|n>><around*|(|<big|sum><rsub|j=l><rsup|M<rsub|n>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=k><rsup|N<rsub|n>>sup<around*|(|<around*|{|<big|sum><rsub|j=1><rsup|m>x<rsub|i,j>\|m\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|series
+      of positive extented reals is increasing>>>>|<cell|<big|sum><rsub|i=1><rsup|N<rsub|n>><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=><rsup|r><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>\|r\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|series
       of positive extented reals is increasing>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>>>>>
     </eqnarray*>
 
@@ -6512,24 +6595,25 @@
     or using <reference|series of positive extented reals is increasing>
 
     <\equation>
-      <label|eq 17.49.001><big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>
+      <label|eq 17.49.001><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>\<leqslant\><big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|i,j>|)>
     </equation>
 
-    Let now take <math|n,m\<in\>\<bbb-N\><rsub|0>> and take
-    <math|N=max<around*|(|\<sigma\><rsup|-1><around*|(|<around*|{|1,\<ldots\>,n|}>\<times\><around*|{|1,\<ldots\>,m|}>|)>|)>>
-    then if <math|i\<in\>\<sigma\><rsup|-1><around*|(|<around*|{|1,\<ldots\>,n|}>\<times\><around*|{|1,\<ldots\>,m|}>|)>>
+    Let now take <math|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>,
+    <math|m\<in\><around*|{|l,\<ldots\>,\<infty\>|}>> and take
+    <math|N=max<around*|(|\<sigma\><rsup|-1><around*|(|<around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>|)>|)>>
+    then if <math|i\<in\>\<sigma\><rsup|-1><around*|(|<around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>|)>>
     we have <math|1\<leqslant\>i\<leqslant\>N> proving that
-    <math|\<sigma\><rsup|-1><around*|(|<around*|{|1,\<ldots\>,n|}>\<times\><around*|{|1,\<ldots\>,m|}>|)>\<subseteq\><around*|{|1,\<ldots\>,N|}>>.
-    Hence as <math|\<sigma\>> is a bijection we have that
-    <math|<around*|{|1,\<ldots\>,n|}>\<times\><around*|{|1,\<ldots\>,m|}>\<subseteq\>\<sigma\><around*|(|<around*|{|1,\<ldots\>,N|}>|)>>.
+    <math|\<sigma\><rsup|-1><around*|(|<around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>|)>\<subseteq\><around*|{|1,\<ldots\>,N|}>>.
+    Hence as <math|\<sigma\>> is a bijection it follows that
+    <math|<around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>\<subseteq\>\<sigma\><around*|(|<around*|{|1,\<ldots\>,N|}>|)>>.
     So\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|i,j>|)>>|<cell|\<equallim\><rsub|<text|<reference|generalized
-      sum and finite sum>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|1,\<ldots\>,m|}>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
-      over product of sets>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|1,\<ldots\>,n|}>\<times\><around*|{|1,\<ldots\>,m|}>>x<rsub|i,j>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|series
+      <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|n><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|i,j>|)>>|<cell|\<equallim\><rsub|<text|<reference|generalized
+      sum and finite sum>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|k,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|l,\<ldots\>,m|}>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
+      over product of sets>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\><around*|{|k,\<ldots\>,n|}>\<times\><around*|{|l,\<ldots\>,m|}>>x<rsub|i,j>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|series
       are increasing>>>>|<cell|<big|sum><rsub|<around*|(|i,j|)>\<in\>\<sigma\><around*|(|<around*|{|1,\<ldots\>,N|}>|)>>x<rsub|i,j>>>|<row|<cell|>|<cell|<math|\<equallim\><rsub|<text|<reference|generalized
-      sums and bijections>>>>>|<cell|<big|sum><rsub|i=1><rsup|N>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=1><rsup|k>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>\|k\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|series
+      sums and bijections>>>>>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,N|}>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|N>x<rsub|\<sigma\><around*|(|i|)><rsub|1>\<sigma\><around*|(|i|)><rsub|2>>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=1><rsup|r>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>\|r\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|series
       of positive extented reals is increasing>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>><eq-number><label|eq
       17.50.001>>>>>
     </eqnarray*>
@@ -6537,100 +6621,35 @@
     Further\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|i,j>|)>>|<cell|\<equallim\><rsub|<text|<reference|series
+      <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|i,j>|)>>|<cell|\<equallim\><rsub|<text|<reference|series
       of positive extented reals is increasing>>>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|i,j>|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<reference|eq
       17.50.001>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>><eq-number><label|eq
       17.51.001>>>>>
     </eqnarray*>
 
-    Switching the sums (see <reference|interchange infinite and finite sum>)
-    we have then that <math|<big|sum><rsub|j=1><rsup|m><around*|(|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i,j>|)>=<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|i,j>|)>\<leqslant\><rsub|<reference|eq
-    17.51.001>><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>
-    so that <math|<big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i,j>|)>=sup<around*|(|<around*|{|<big|sum><rsub|j=1><rsup|n><around*|(|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i,j>|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>.
-    Hence <math|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>\<equallim\><rsub|<text|<reference|interchange
-    infinite and finite sum>>><big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i,j>|)>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>.
-    Finally this with <reference|eq 17.49.001> we have \ 
+    Next we have
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|sum><rsub|j=l><rsup|m><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i,j>|)>>|<cell|\<equallim\><rsub|<text|<reference|interchange
+      infinite and finite sum>>>>|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|m>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|eq
+      17.51.001>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>><eq-number><label|eq
+      17.63.035>>>>>
+    </eqnarray*>
+
+    So that\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|sum><rsub|i=k><rsup|\<infty\>><around*|(|<big|sum><rsub|j=l><rsup|\<infty\>>x<rsub|i,j>|)>>|<cell|\<equallim\><rsub|<text|<reference|interchange
+      infinite and finite sum>>>>|<cell|<big|sum><rsub|j=l><rsup|\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i,j>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|series
+      of positive extented reals is increasing>>>>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|j=l><rsup|r><around*|(|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i,>|)>\|r\<in\><around*|{|l,\<ldots\>,\<infty\>|}>|}>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|eq
+      17.63.035>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>>>>>
+    </eqnarray*>
+
+    Finally combining the above with <reference|eq 17.49.001> proves \ 
 
     <\equation*>
       <big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<sigma\><around*|(|i|)><rsub|1>,\<sigma\><around*|(|i|)><rsub|2>>=<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|i,j>|)>
     </equation*>
-  </proof>
-
-  <\theorem>
-    <label|associativity of inifinite series>Let
-    <math|n\<in\>\<bbb-N\><rsub|0>>, <math|<around*|{|\<sigma\><rsub|i>:\<bbb-N\><rsub|0>\<rightarrow\>\<sigma\><around*|(|\<bbb-N\><rsub|0>|)>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
-    a set of bijections so that <math|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|i><around*|(|\<bbb-N\><rsub|0>|)>=\<bbb-N\><rsub|0>>
-    and <math|\<forall\>i,j\<in\><around*|{|1,\<ldots\>,n|}>> with
-    <math|i\<neq\>j> we have <math|\<sigma\><rsub|i><around*|(|\<bbb-N\><rsub|0>|)><big|cap>\<sigma\><rsub|j><around*|(|\<bbb-N\><rsub|0>|)>=\<emptyset\>>
-    and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> a
-    sequence of non-negative extended reals then
-    <math|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>=<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i>>
-  </theorem>
-
-  <\proof>
-    First we prove that <math|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i>>.
-    Given <math|m\<in\>\<bbb-N\><rsub|0>> we have
-    <math|\<forall\>i,j\<in\><around*|{|1,\<ldots\>,n|}>\<vdash\>i\<neq\>j>
-    that <math|\<sigma\><rsub|i><around*|(|<around*|{|1,\<ldots\>,m|}>|)><big|cap>\<sigma\><rsub|j><around*|(|<around*|{|1,\<ldots\>,m|}>|)>\<subseteq\>\<sigma\><rsub|i><around*|(|\<bbb-N\><rsub|0>|)><big|cap>\<sigma\><rsub|j><around*|(|\<bbb-N\><rsub|0>|)>=\<emptyset\>>
-    and thus applying <reference|general associativity of general sum> we
-    have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|<big|sum><rsub|j\<in\>\<sigma\><rsub|i><around*|(|<around*|{|1,\<ldots\>,m|}>|)>>x<rsub|j>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|general
-      associativity of general sum>>>>|<cell|<big|sum><rsub|i\<in\><big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|j><around*|(|<around*|{|1,\<ldots\>,m|}>|)>>x<rsub|i><rsub|>>>>>
-    </eqnarray*>
-
-    \ \ proving\ 
-
-    <\equation>
-      <label|eq 14.23.409>\<forall\>m\<in\>\<bbb-N\><rsub|0><text| we have
-      ><big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>=<big|sum><rsub|i\<in\><big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|j><around*|(|<around*|{|1,\<ldots\>,m|}>|)>>x<rsub|i>
-    </equation>
-
-    Take now <math|N<rsub|m>=max<around*|(|<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|j><around*|(|<around*|{|1,\<ldots\>,m|}>|)>|)>>
-    then <math|<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|j><around*|(|<around*|{|1,\<ldots\>,m|}>|)>\<subseteq\><around*|{|1,\<ldots\>,N|}>>
-    and by <reference|series are increasing> we have
-    <math|<big|sum><rsub|i\<in\><big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|j><around*|(|<around*|{|1,\<ldots\>,m|}>|)>>x<rsub|i>\<leqslant\><big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,N<rsub|m>|}>>x<rsub|i>=<big|sum><rsub|i=1><rsup|N<rsub|m>>x<rsub|i>>.
-    So using <reference|eq 14.23.409> we have
-    <math|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>\<leqslant\><big|sum><rsub|i=1><rsup|N<rsub|m>>x<rsub|i>\<leqslant\>sup<around*|(|<big|sum><rsub|i=1><rsup|m>x<rsub|i>\|m\<in\>\<bbb-N\><rsub|0>|)>\<equallim\><rsub|<text|<reference|series
-    of positive extented reals is increasing>>><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i>>
-    proving, as by <reference|interchange infinite and finite sum> we have
-    <math|<big|sum><rsub|j=1><rsup|m><around*|(|<big|sum><rsub|i=1><rsup|n>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>=<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>>
-    that <math|<big|sum><rsub|j=1><rsup|m><around*|(|<big|sum><rsub|i=1><rsup|n>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i>>.
-    Using the definition of the supremum we have then that
-    <math|<big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=1><rsup|n>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>=sup<around*|(|<around*|{|<big|sum><rsub|j=1><rsup|m><around*|(|<big|sum><rsub|i=1><rsup|n>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>\|m\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i>>
-    giving\ 
-
-    <\equation>
-      <label|eq 14.24.409><big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>\<equallim\><rsub|<text|<reference|interchange
-      infinite and finite sum>>><big|sum><rsub|j=1><rsup|\<infty\>><around*|(|<big|sum><rsub|i=1><rsup|n>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>\<leqslant\><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i>
-    </equation>
-
-    For the opposite inequality let <math|m\<in\>\<bbb-N\><rsub|0>> then
-    <math|\<forall\>k\<in\><around*|{|1,\<ldots\>,m|}>> we have, as
-    <math|\<bbb-N\><rsub|0>=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|i><around*|(|\<bbb-N\><rsub|0>|)>>,
-    that there exists a <math|i<rsub|k>\<in\><around*|{|1,\<ldots\>,n|}>>
-    such that <math|k\<in\>\<sigma\><rsub|i<rsub|k>><around*|(|\<bbb-N\><rsub|0>|)>>
-    and thus a <math|l<rsub|k>\<in\>\<bbb-N\><rsub|0>> such that
-    <math|k=\<sigma\><rsub|i<rsub|k>><around*|(|l<rsub|k>|)>>. Take now
-    <math|N<rsub|m>=max<around*|(|<around*|{|l<rsub|k>\|k\<in\><around*|{|1,\<ldots\>,m|}>|}>|)>>
-    then, as <math|\<forall\>k\<in\><around*|{|1,\<ldots\>,m|}>> we have
-    <math|1\<leqslant\>l<rsub|k>\<leqslant\>N<rsub|m>\<Rightarrow\>l<rsub|k>\<in\><around*|{|1,\<ldots\>,N<rsub|m>|}>>,
-    we have <math|k=\<sigma\><rsub|i<rsub|k>><around*|(|l<rsub|k>|)>\<in\>\<sigma\><rsub|i<rsub|k>><around*|(|<around*|{|1,\<ldots\>,N<rsub|m>|}>|)>\<subseteq\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|i><around*|(|<around*|{|1,\<ldots\>,N<rsub|m>|}>|)>>
-    proving that\ 
-
-    <\equation>
-      <label|eq 14.25.411><around*|{|1,\<ldots\>,m|}>\<subseteq\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|i><around*|(|<around*|{|1,\<ldots\>,N<rsub|m>|}>|)>
-    </equation>
-
-    So using <reference|series are increasing> we have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|m>x<rsub|i>=<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,m|}>>x<rsub|i>>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i\<in\><big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<sigma\><rsub|j><around*|(|<around*|{|1,\<ldots\>,N<rsub|m>|}>|)>>x<rsub|i>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
-      14.23.409>>>>|<cell|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|N<rsub|m>>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|n>sup<around*|(|<around*|{|<around*|(|<big|sum><rsub|j=1><rsup|m>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>\|m\<in\>\<bbb-N\><rsub|0>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n><around*|(|<big|sum><rsub|j=1><rsup|\<infty\>>x<rsub|\<sigma\><rsub|i><around*|(|j|)>>|)>>>>>
-    </eqnarray*>
-
-    which together with <reference|eq 14.24.409> proves the theorem.
   </proof>
 
   \;
@@ -6643,163 +6662,6 @@
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-Z\>>> then
     <math|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>=<big|sum><rsub|i=0><rsup|\<infty\>>x<rsub|i>+<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|-i>>
   </definition>
-
-  <subsection|Generalized series of positive extened reals>
-
-  In the above section we had to introduce bijections and make distinctions
-  between the finite case and the infinite case, to simplify notation we
-  introduce the following definition.
-
-  <\definition>
-    <label|generalized sum of the extended reals>Let <math|I> be a countable
-    set and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>\<subseteq\><around*|[|0,\<infty\>|]>>
-    a family of extended positive reals then we define
-    <math|<big|sum><rsub|i\<in\>I>x<rsub|i>> as follows, using the possible
-    cases of <math|I> (see <reference|countable sets>)\ 
-
-    <\description>
-      <item*|<math|I=\<emptyset\>>><math|<big|sum><rsub|i\<in\>I>x<rsub|i>=0>
-
-      <item*|<math|I is finite non empty>>then
-      <math|<big|sum><rsub|\<in\>I>x<rsub|i>> is defined by
-      <reference|generalized sum>
-
-      <item*|<math|I is infinite countable>>then there exists a bijection
-      <math|\<beta\>:\<bbb-N\><rsub|0>\<rightarrow\>I> and we define
-      <math|<big|sum><rsub|i\<in\>I>x<rsub|i>=<big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<beta\><around*|(|i|)>>=sup<around*|(|<around*|{|<big|sum><rsub|i=1><rsup|n>x<rsub|i>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>>
-      (converges by <reference|a serie of extented positive reals converges
-      always and is independent of the order>)
-    </description>
-  </definition>
-
-  We must of course proof that this is well defined, more specifically for
-  the infinite case (as the finite case is already proved in
-  <reference|generalized sum>.
-
-  <\proof>
-    Let <math|\<alpha\>:\<bbb-N\><rsub|0>\<rightarrow\>I> be a another
-    bijection then <math|\<sigma\>:\<bbb-N\><rsub|0>\<rightarrow\>\<bbb-N\>>
-    defined by <math|\<sigma\>=\<alpha\>\<circ\>\<beta\><rsup|-1>> then we
-    have <math|<big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<beta\><around*|(|i|)>>\<equallim\><rsub|<text|<reference|a
-    serie of extented positive reals converges always and is independent of
-    the order>>><big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<sigma\><around*|(|\<beta\><around*|(|i|)>|)>>=<big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<alpha\><around*|(|i|)>>>
-  </proof>
-
-  As <math|\<bbb-1\><rsub|\<bbb-N\><rsub|0>>:\<bbb-N\><rsub|0>\<rightarrow\>\<bbb-N\><rsub|0>>
-  is a bijection we have by the above definiton that\ 
-
-  <\example>
-    <label|generalized serie of extended positive numbers>if
-    <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> is a family
-    of extended positive reals that <math|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|i>=<big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<bbb-1\><rsub|\<bbb-N\><rsub|0>><around*|(|i|)>>=<big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|i>>
-  </example>
-
-  We show now that we can always remove zeroes from the sum.
-
-  <\theorem>
-    <label|generalized sequence of extended reals and zeroes>Let <math|I> be
-    a countable set, <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>> a family
-    of extended positive reals and <math|J=<around*|{|i\<in\>I\|x<rsub|i>\<neq\>0|}>>
-    then <math|<big|sum><rsub|i\<in\>I>x<rsub|i>=<big|sum><rsub|i\<in\>I>x<rsub|i>>
-  </theorem>
-
-  <\proof>
-    We have to consider three cases for <math|I>\ 
-
-    <\description>
-      <item*|<math|I is finite>>Then as <math|I=I\\J<big|cup>J> and
-      <math|I<big|cap><around*|(|I\\J|)>=\<emptyset\>> we have
-      <math|<big|sum><rsub|i\<in\>I>x<rsub|i>\<equallim\><rsub|<text|<reference|generalized
-      sum and union>>><big|sum><rsub|i\<in\>I\\J>x<rsub|i>+<big|sum><rsub|i\<in\>J>x<rsub|i>\<equallim\><rsub|<text|<reference|generalized
-      sum>>>0+<big|sum><rsub|i\<in\>I\\J>x<rsub|i>=<big|sum><rsub|J>x<rsub|i>>
-
-      <item*|<math|I is infinite countable>>Then there exists a bijection
-      <math|\<beta\>:\<bbb-N\><rsub|0>\<rightarrow\>I> such that
-      <math|<big|sum><rsub|i\<in\>I>x<rsub|i>=<big|sum><rsub|i=1><rsup|n>x<rsub|\<beta\><around*|(|i|)>>>
-      then we have\ 
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|i\<in\>\<beta\><rsup|-1><around*|(|J|)>>|<cell|\<Leftrightarrow\>>|<cell|
-        \<beta\><around*|(|i|)>\<in\>J>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x<rsub|\<beta\><around*|(|i|)>>\<neq\>0>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|i\<in\><around*|{|i\<in\>\<bbb-N\><rsub|0>\|x<rsub|\<beta\><around*|(|i|)>>\<neq\>0|\<nobracket\>>>>>>
-      </eqnarray*>
-
-      so that\ 
-
-      <\equation>
-        <label|eq 17.2.40.001>\<beta\><rsup|-1><around*|(|J|)>=<around*|{|i\<in\>\<bbb-N\><rsub|0>\|x<rsub|\<beta\><around*|(|i|)>>\<neq\>0|}>
-      </equation>
-
-      \ then using <reference|series of extended reals and zeroes> on
-      <math|<around*|{|x<rsub|\<beta\><around*|(|i|)>>|}><rsub|i\<in\>\<bbb-N\><rsub|0>><rsub|>>
-      we have either that\ 
-
-      <\description>
-        <item*|<math|\<beta\><rsup|-1><around*|(|J|)>=\<emptyset\>>>then
-        <math|J=\<emptyset\>> [for if <math|j\<in\>J> then as <math|\<beta\>>
-        is surjective there exists a <math|i\<in\>\<bbb-N\><rsub|0>> such
-        that <math|\<beta\><around*|(|i|)>=j\<Rightarrow\>i\<in\>\<beta\><rsup|-1><around*|(|J|)>=\<emptyset\>>
-        a contradiction] and <math|<big|sum><rsub|i\<in\>I>x<rsub|i>=<big|sum><rsub|i\<in\>\<bbb-N\><rsub|0>>x<rsub|\<beta\><around*|(|i|)>>=0\<equallim\><rsub|definition><big|sum><rsub|i\<in\>\<emptyset\>>x<rsub|i>\<equallim\><rsub|J=\<emptyset\>><big|sum><rsub|i\<in\>J>x<rsub|i>>.
-
-        <item*|<math|\<emptyset\>\<neq\>\<beta\><rsup|-1><around*|(|J|)> is
-        finite>>then there exists a <math|n\<in\>\<bbb-N\><rsub|0>> and a
-        bijection <math|\<alpha\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>\<beta\><rsup|-1><around*|(|J|)>>
-        such that
-
-        <\equation>
-          <label|eq 17.2.41.001><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<beta\><around*|(|i|)>>=<big|sum><rsub|i=1><rsup|n>x<rsub|\<beta\><around*|(|a\<alpha\><around*|(|i|)>|)>>
-        </equation>
-
-        Further as \ <math|\<beta\>\<circ\>\<alpha\>:<around*|{|1,\<ldots\>,n|}>\<rightarrow\>\<beta\><around*|(|\<beta\><rsup|-1><around*|(|J|)>|)>\<equallim\><rsub|\<beta\>
-        i s \ a bijection>J> we have that
-
-        <\eqnarray*>
-          <tformat|<table|<row|<cell|<big|sum><rsub|i\<in\>J>x<rsub|i>>|<cell|\<equallim\><rsub|def>>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>x<rsub|<around*|(|\<beta\>\<circ\>\<alpha\>|)><around*|(|i|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>x<rsub|\<beta\><around*|(|\<alpha\><around*|(|i|)>|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
-          17.2.41.001>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<beta\><around*|(|i|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|def>>|<cell|<big|sum><rsub|i\<in\>I>x<rsub|i>>>>>
-        </eqnarray*>
-
-        <item*|<math|\<beta\><rsup|-1><around*|(|J|)> is infinite
-        countable>>then there exists a bijection
-        <math|\<alpha\>:\<bbb-N\><rsub|0>\<rightarrow\>\<beta\><rsup|-1><around*|(|J|)>>
-        such that
-
-        <\equation>
-          <label|eq 17.2.42.001><big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<beta\><around*|(|i|)>>=<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<beta\><around*|(|\<alpha\><around*|(|i|)>|)>>
-        </equation>
-
-        Further as <math|\<beta\>\<circ\>\<alpha\>:\<bbb-N\><rsub|0>\<rightarrow\>\<beta\><around*|(|\<beta\><rsup|-1><around*|(|J|)>|)>\<equallim\><rsub|\<beta\>
-        is bijective>J> we have that\ 
-
-        <\eqnarray*>
-          <tformat|<table|<row|<cell|<big|sum><rsub|i\<in\>J>x<rsub|i>>|<cell|\<equallim\><rsub|def>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|<around*|(|\<beta\>\<circ\>\<alpha\>|)>><around*|(|i|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<beta\><around*|(|\<alpha\><around*|(|i|)>|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
-          17.2.42.001>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>x<rsub|\<beta\><around*|(|i|)>>>>|<row|<cell|>|<cell|\<equallim\><rsub|def>>|<cell|<big|sum><rsub|i\<in\>I>x<rsub|i>>>>>
-        </eqnarray*>
-      </description>
-
-      So in all cases we have <math|<big|sum><rsub|i\<in\>I>x<rsub|i>=<big|sum><rsub|i\<in\>J>x<rsub|i>>.
-    </description>
-  </proof>
-
-  <\corollary>
-    <label|generalized sequence of extended and remove zeroes>Let <math|I> be
-    a countable set and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>> a set
-    of extended positive reals, <math|J\<subseteq\>I> such that
-    <math|\<forall\>j\<in\>J> we have <math|x<rsub|j>=\<emptyset\>> then
-    <math|<big|sum><rsub|i\<in\>I>x<rsub|i>=<big|sum><rsub|i\<in\>I\\J>x<rsub|i>>
-  </corollary>
-
-  <\proof>
-    First as <math|I\\J\<subseteq\>I> we have that
-    <math|<around*|{|i\<in\>I\\J\|x<rsub|i>\<neq\>0|}>\<subseteq\><around*|{|i\<in\>I\|x<rsub|i>\<neq\>0|}>>.
-    Second if <math|i\<in\><around*|{|i\<in\>I\|x<rsub|i>|}>> then
-    <math|i\<in\>I\<wedge\>x<rsub|i>\<neq\>0>, if now <math|i\<in\>J> then
-    <math|x<rsub|i>=0> a contradiction so that <math|i\<in\>I\\J> proving
-    that <math|i\<in\><around*|{|i\<in\>I\\J\|x<rsub|i>\<neq\>0|}>>. So we
-    have that <math|<around*|{|i\<in\>I\|x<rsub|i>\<neq\>0|}>=<around*|{|i\<in\>I\\J\|x<rsub|i>\<neq\>0|}>>
-    hence <math|<big|sum><rsub|i\<in\>I>x<rsub|i>\<equallim\><rsub|<text|<reference|generalized
-    sequence of extended reals and zeroes>>><big|sum><rsub|i\<in\><around*|{|i\<in\>I\|x<rsub|i>\<neq\>0|}>>x<rsub|i>=<big|sum><rsub|i\<in\><around*|{|i\<in\>I\\J\|x<rsub|i>\<neq\>0|}>>x<rsub|i>=<big|sum><rsub|i\<in\>I\\J>x<rsub|i>>.
-  </proof>
-
-  \;
 
   <chapter|The exponential function>
 
@@ -9175,7 +9037,6 @@
     properties|<tuple|17.34|620>>
     <associate|alternative definition of limit in the extented
     reals|<tuple|17.72|653>>
-    <associate|associativity of inifinite series|<tuple|17.105|672>>
     <associate|associativity of series of extended reals|<tuple|17.103|670>>
     <associate|associativity of the product of extnded reals|<tuple|17.21|?>>
     <associate|auto-1|<tuple|17|607>>
@@ -9193,23 +9054,23 @@
     <associate|auto-19|<tuple|17.3.1|625>>
     <associate|auto-2|<tuple|17.1|607>>
     <associate|auto-20|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>|625>>
-    <associate|auto-21|<tuple|17.3.2|626>>
-    <associate|auto-22|<tuple|18|633>>
-    <associate|auto-23|<tuple|18.1|633>>
-    <associate|auto-24|<tuple|18.1.1|646>>
-    <associate|auto-25|<tuple|convergence domain|646>>
-    <associate|auto-26|<tuple|absolute convergence domain|646>>
-    <associate|auto-27|<tuple|convergence radius|648>>
-    <associate|auto-28|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|648>>
-    <associate|auto-29|<tuple|18.1.2|661>>
+    <associate|auto-21|<tuple|18|626>>
+    <associate|auto-22|<tuple|18.1|633>>
+    <associate|auto-23|<tuple|18.1.1|633>>
+    <associate|auto-24|<tuple|convergence domain|646>>
+    <associate|auto-25|<tuple|absolute convergence domain|646>>
+    <associate|auto-26|<tuple|convergence radius|646>>
+    <associate|auto-27|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|648>>
+    <associate|auto-28|<tuple|18.1.2|648>>
+    <associate|auto-29|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>|661>>
     <associate|auto-3|<tuple|extented reals|607>>
-    <associate|auto-30|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>|673>>
-    <associate|auto-31|<tuple|18.1.3|673>>
-    <associate|auto-32|<tuple|Euler's number|677>>
-    <associate|auto-33|<tuple|Napierian logarithm|677>>
-    <associate|auto-34|<tuple|<with|mode|<quote|math>|log>|677>>
-    <associate|auto-35|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|677>>
-    <associate|auto-36|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|677>>
+    <associate|auto-30|<tuple|18.1.3|673>>
+    <associate|auto-31|<tuple|Euler's number|673>>
+    <associate|auto-32|<tuple|Napierian logarithm|677>>
+    <associate|auto-33|<tuple|<with|mode|<quote|math>|log>|677>>
+    <associate|auto-34|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|677>>
+    <associate|auto-35|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|677>>
+    <associate|auto-36|<tuple|<with|mode|<quote|math>|\<pi\>>|677>>
     <associate|auto-37|<tuple|<with|mode|<quote|math>|\<pi\>>|678>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|sup<rsub|\<bbb-R\>>>|609>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|inf<rsub|\<bbb-R\>>>|609>>
@@ -9232,28 +9093,22 @@
     <associate|convergence of powerseries (1)|<tuple|18.6|677>>
     <associate|convergence radius|<tuple|18.8|678>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.104|672>>
+    sum|<tuple|17.105|672>>
     <associate|d'Alembert|<tuple|18.17|681>>
     <associate|definition of limit in the extented reals|<tuple|17.62|651>>
     <associate|density of the extented reals|<tuple|17.9|609>>
     <associate|derivative of the exponential function|<tuple|18.24|686>>
     <associate|distributivity in the extented reals|<tuple|17.29|617>>
     <associate|eq 13.1.300|<tuple|17.3|618>>
-    <associate|eq 13.15.41|<tuple|17.53|669>>
-    <associate|eq 13.16.41|<tuple|17.54|669>>
     <associate|eq 13.2.300|<tuple|17.4|618>>
     <associate|eq 13.3.301|<tuple|17.5|619>>
     <associate|eq 13.5|<tuple|17.35|651>>
     <associate|eq 13.6|<tuple|17.36|651>>
-    <associate|eq 14.22.423|<tuple|17.55|669>>
-    <associate|eq 14.23.409|<tuple|17.64|672>>
+    <associate|eq 14.22.423|<tuple|17.54|669>>
     <associate|eq 14.23.424|<tuple|17.57|670>>
     <associate|eq 14.23.425|<tuple|17.56|670>>
-    <associate|eq 14.24.409|<tuple|17.65|673>>
-    <associate|eq 14.24.424|<tuple|17.58|671>>
-    <associate|eq 14.25.411|<tuple|17.66|673>>
-    <associate|eq 14.25.424|<tuple|17.59|671>>
-    <associate|eq 14.26.424|<tuple|17.60|671>>
+    <associate|eq 14.25.424|<tuple|17.58|671>>
+    <associate|eq 14.26.424|<tuple|17.59|671>>
     <associate|eq 14.4.472|<tuple|17.6|619>>
     <associate|eq 14.5.472|<tuple|17.7|620>>
     <associate|eq 17.1.514|<tuple|18.7|682>>
@@ -9289,9 +9144,9 @@
     <associate|eq 17.2.25.001|<tuple|17.50|667>>
     <associate|eq 17.2.26.001|<tuple|17.51|668>>
     <associate|eq 17.2.27.001|<tuple|17.52|668>>
-    <associate|eq 17.2.40.001|<tuple|17.67|674>>
-    <associate|eq 17.2.41.001|<tuple|17.68|674>>
-    <associate|eq 17.2.42.001|<tuple|17.69|674>>
+    <associate|eq 17.2.40.001|<tuple|17.64|674>>
+    <associate|eq 17.2.41.001|<tuple|17.65|674>>
+    <associate|eq 17.2.42.001|<tuple|17.66|674>>
     <associate|eq 17.2.514|<tuple|18.8|682>>
     <associate|eq 17.2.515|<tuple|18.2|677>>
     <associate|eq 17.20.001|<tuple|17.22|?>>
@@ -9323,12 +9178,15 @@
     <associate|eq 17.42.035|<tuple|17.42|?>>
     <associate|eq 17.43.035|<tuple|17.43|?>>
     <associate|eq 17.47.035|<tuple|17.47|?>>
-    <associate|eq 17.49.001|<tuple|17.61|?>>
+    <associate|eq 17.49.001|<tuple|17.60|?>>
     <associate|eq 17.5.515|<tuple|18.5|681>>
-    <associate|eq 17.50.001|<tuple|17.62|?>>
-    <associate|eq 17.51.001|<tuple|17.63|?>>
+    <associate|eq 17.50.001|<tuple|17.61|?>>
+    <associate|eq 17.51.001|<tuple|17.62|?>>
+    <associate|eq 17.53.035|<tuple|17.53|?>>
+    <associate|eq 17.55.035|<tuple|17.55|?>>
     <associate|eq 17.6.033|<tuple|17.8|?>>
     <associate|eq 17.6.515|<tuple|18.6|681>>
+    <associate|eq 17.63.035|<tuple|17.63|?>>
     <associate|eq 17.7.033|<tuple|17.9|?>>
     <associate|eq 17.8.033|<tuple|17.10|?>>
     <associate|eq 17.9.033|<tuple|17.11|?>>
