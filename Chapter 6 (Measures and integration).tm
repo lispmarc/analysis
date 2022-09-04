@@ -9553,7 +9553,7 @@
     <label|simple function>Let <math|X> be a set then a function
     <math|f\<of\>X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is a
     <with|font-series|bold|simple function> if <math|f<around*|(|X|)>> is
-    finite and not empty.
+    finite
   </definition>
 
   <\proposition>
@@ -9601,8 +9601,7 @@
         proving that <math|\<alpha\><rsub|f> is a surjection.> So using
         <reference|surjection f:A-\<gtr\>B B is finite if A is finite> we
         have that <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|X|)>> is
-        finite (and non empty as <math|<around*|{|1,\<ldots\>,n|}>> is non
-        empty).
+        finite.
       </description>
 
       so in all cases <math|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|X|)>>
@@ -9610,45 +9609,55 @@
       simple function.
 
       <item>As <math|f> and <math|g> are simple functions we have that
-      <math|f<around*|(|X|)>> and <math|g<around*|(|X|)>> are finite and non
-      empty. As the product of finite sets is finite [see <reference|product
-      of finite sets is finite>] we have that
-      <math|f<around*|(|X|)>\<times\>g<around*|(|X|)>> is a non empty finite
-      set. Define <math|<around*|(|+|)>:f<around*|(|X|)>\<times\>g<around*|(|X|)>\<rightarrow\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
-      by <math|<around*|(|+|)><around*|(|x,y|)>=x+y> then if
-      <math|z\<in\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
-      there exists a <math|x\<in\>f<around*|(|X|)>> and
-      <math|y\<in\>g<around*|(|X|)>> such that
-      <math|x+y=<around*|(|+|)><around*|(|x,y|)>> proving that
-      <math|<around*|(|+|)>> is a surjection. Applying then
-      <reference|surjection f:A-\<gtr\>B B is finite if A is finite> proves
-      that <math|><math|<around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
-      is finite. Let <math|y\<in\><around*|(|f+g|)><around*|(|X|)>> then
-      there exists a <math|x\<in\>X> such that
-      <math|y=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>.
+      <math|f<around*|(|X|)>> and <math|g<around*|(|X|)>> are finite. As the
+      product of finite sets is finite [see <reference|product of finite sets
+      is finite>] we have that
+
+      <\equation*>
+        f<around*|(|X|)>\<times\>g<around*|(|X|)><text| is finite>
+      </equation*>
+
+      Define now
+
+      <\equation*>
+        p:f<around*|(|X|)>\<times\>g<around*|(|Y|)>\<rightarrow\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|Y|)>|}><text|
+        by >p<around*|(|x,y|)>=x+y
+      </equation*>
+
+      Then if <math|z\<in\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|Y|)>|}>>
+      there exists a <math|x\<in\>f<around*|(|X|)>> and a
+      <math|y\<in\>f<around*|(|Y|)>> such that
+      <math|z=x+y=p<around*|(|x,y|)>> which proves that <math|p> is
+      surjective. Applying then <reference|surjection f:A-\<gtr\>B B is
+      finite if A is finite> proves that <math|>
+
+      <\equation*>
+        <around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}><text|
+        is finite>
+      </equation*>
+
+      Let <math|y\<in\><around*|(|f+g|)><around*|(|X|)>> then there exists a
+      <math|x\<in\>X> such that <math|y=f<around*|(|x|)>+g<around*|(|x|)>\<in\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>.
       Hence <math|<around*|(|f+g|)><around*|(|X|)>\<subseteq\><around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
       which, as we have proved that <math|<around*|{|x+y\|<around*|(|x,y|)>\<in\>f<around*|(|X|)>\<times\>g<around*|(|X|)>|}>>
-      is finite, proves using it follows from <reference|subsets of finite
-      sets are finite> that <math|<around*|(|f+g|)><around*|(|X|)>> is
-      finite. Finally as <math|f<around*|(|X|)>\<neq\>\<emptyset\>>
-      \ <math|X\<neq\>\<emptyset\>> proving that
-      <math|<around*|(|f+g|)><around*|(|X|)>> is non empty. This proves that
-      <math|f+g> is a simple function.
+      is finite, proves using <reference|subsets of finite sets are finite>
+      that <math|<around*|(|f+g|)><around*|(|X|)>> is finite.. This proves
+      that <math|f+g> is a simple function.
     </enumerate>
   </proof>
 
   <\example>
     <label|simple functions are measurable>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
-    and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a simple
-    function then <math|f> is <math|\<cal-A\>>-measurable if
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|A\<in\>\<cal-A\>> and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    a simple function then <math|f> is <math|\<cal-A\>>-measurable if
     <math|\<forall\>y\<in\>f<around*|(|X|)>> we have that
-    <math|<around*|{|f=y|}>=f<rsup|-1><around*|(|<around*|{|y|}>|)>\<in\>\<cal-A\>>
+    <math|<around*|{|f=y|}>=f<rsup|-1><around*|(|<around*|{|y|}>|)>\<in\>\<cal-A\>>.
   </example>
 
   <\proof>
     As <math|f> is a simple function we have that <math|f<around*|(|A|)>> is
-    finite and not empty.. Let <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
+    finite. Let <math|B\<in\>\<cal-B\><around*|[|<wide|\<bbb-R\>|\<wide-bar\>>|]>>
     then <math|f<rsup|-1><around*|(|B<big|cap>f<around*|(|A|)>|)>\<equallim\><rsub|<text|<reference|image
     (preimage) of union , intersections>>>f<rsup|-1><around*|(|B|)><big|cap>f<rsup|-1><around*|(|f<around*|(|A|)>|)>=f<rsup|-1><around*|(|B|)><big|cap>A=f<rsup|-1><around*|(|B|)>>
     proving that\ 
@@ -9665,7 +9674,7 @@
       <math|f<rsup|-1><around*|(|B|)>\<equallim\><rsub|<text|<reference|eq
       18.310.033>>>f<rsup|-1><around*|(|B<big|cap>f<around*|(|A|)>|)>=f<rsup|-1><around*|(|\<emptyset\>|)>=\<emptyset\>\<in\>\<cal-A\>>
 
-      <item*|<math|B<big|cap>f<around*|(|A|)>\<neq\>\<emptyset\>>>then\ 
+      <item*|<math|B<big|cap>f<around*|(|A|)>\<neq\>\<emptyset\>>>then
 
       <\eqnarray*>
         <tformat|<table|<row|<cell|f<rsup|-1><around*|(|B|)>>|<cell|\<equallim\><rsub|<text|<reference|eq
@@ -10163,7 +10172,7 @@
         proving that <math|<around*|{|\<alpha\>\<cdot\>f\<less\>x|}>=<around*|{|f\<less\><frac|x|\<alpha\>>|}>\<in\>\<cal-A\>>
         [as <math|f> is <math|\<cal-A\>>-measurable]. Using
         <reference|measurable function condition (1)> we have then that
-        <math|f>is <math|\<cal-A\>>-measurable.
+        <math|f> is <math|\<cal-A\>>-measurable.
       </description>
     </enumerate>
   </proof>
@@ -11565,7 +11574,7 @@
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|\<cal-S\><around*|[|X,\<cal-A\>|]>>|<cell|=>|<cell|<around*|{|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>\|f
-      <text|is a simple function and measureble>|}>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|simple
+      <text|is a simple function and <math|\<cal-A\>>-measureble>|}>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|simple
       function> and <reference|simple functions are
       measurable>>>>|<cell|<around*|{|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>\|f<around*|(|X|)><text|
       is finite and >\<forall\>y\<in\>f<around*|(|X|)>
@@ -11643,9 +11652,9 @@
   We have also the opposite of the previous proposition.
 
   <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
-    space, <math|n\<in\>\<bbb-N\><rsub|0>>,
-    <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
+    <label|simple function condition (2)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|n\<in\>\<bbb-N\><rsub|0>>, <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
     a pairwise disjoint family and <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
     then for <math|f=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>>>
     we have\ 
@@ -11666,10 +11675,10 @@
     \ 
 
     <\enumerate>
-      <item>Let <math|i\<in\><around*|{|1,\<ldots\>,n|}>> then if
-      \ <math|x\<in\>A<rsub|i>\<Rightarrow\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>=1>
+      <item>Let <math|i\<in\><around*|{|1,\<ldots\>,n|}>> then
+      <math|x\<in\>A<rsub|i>\<Rightarrow\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>=1>
       and <math|\<forall\>j\<in\><around*|{|1,\<ldots\>,n|}>\\<around*|{|i|}>>
-      <math|x\<nin\>A<rsub|j>=\<cal-X\><rsub|A<rsub|j>><around*|(|x|)>=0>.
+      <math|x\<nin\>A<rsub|j>\<Rightarrow\>\<cal-X\><rsub|A<rsub|j>><around*|(|x|)>=0>.
       Hence\ 
 
       <\eqnarray*>
@@ -11681,8 +11690,20 @@
       <math|x\<nin\>A<rsub|i>\<Rightarrow\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>=0>
       so that <math|f<around*|(|x|)>=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>=<big|sum><rsub|i=1><rsup|n>0=0>.
 
-      <item>Let <math|y\<in\>f<around*|(|X|)>>. For <math|y> we have then
-      either
+      <item>Let <math|x\<in\>X> then we have either
+      <math|x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>>
+      so that <math|f<around*|(|x|)>=0> or
+      <math|x\<in\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>
+      so that <math|\<exists\>i\<in\><around*|{|1,\<ldots\>,n|}>> with
+      <math|x\<in\>A<rsub|i>\<Rightarrowlim\><rsub|<around*|(|1|)>>f<around*|(|x|)>=a<rsub|i>>.
+      Hence <math|f<around*|(|X|)>\<subseteq\><around*|{|a<rsub|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}><big|cup><around*|{|0|}>>
+      a finite set proving that\ 
+
+      <\equation>
+        <label|eq 18.364.35.2>f is a simple function
+      </equation>
+
+      Let <math|y\<in\>f<around*|(|X|)>>. For <math|y> we have then either\ 
 
       <\description>
         <item*|<math|y=0>>Define <math|><math|J=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|a<rsub|i>\<neq\>0|}>>
@@ -11712,7 +11733,7 @@
           <label|eq 18.365.035.1>A\<subseteq\>f<rsup|-1><around*|(|<around*|{|0|}>|)>
         </equation>
 
-        For the opposite inclusion take <math|x\<in\>f<rsup|-1><around*|(|<around*|{|0|}>|)>>
+        For the opposite inclusion, take <math|x\<in\>f<rsup|-1><around*|(|<around*|{|0|}>|)>>
         so that <math|f<around*|(|x|)>=0>. Assume that <math|x\<nin\>A> then
         <math|x\<in\><big|cup><rsub|i\<in\>J>A<rsub|i>> so that
         <math|\<exists\>i\<in\>J> so that <math|x\<in\>A<rsub|i>>, which by
@@ -11726,13 +11747,63 @@
           18.364.035.1>>>\<cal-A\>
         </equation*>
 
-        <item*|<math|y\<neq\>0>>Then <math|\<exists\>x\<in\>X> \ 
+        <item*|<math|y\<neq\>0>>Let <math|K=<around*|{|i\<in\>J\|a<rsub|i>=y|}>>
+        and define <math|B=<big|cup><rsub|i\<in\>K>A<rsub|i>> \ then as
+        <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
+        we have that
+
+        <\equation>
+          <label|eq 18.366.035.1>B\<in\>\<cal-A\>
+        </equation>
+
+        \ If <math|x\<in\>B> then there exists a <math|i\<in\>K> such that
+        <math|x\<in\>A<rsub|i>> hence <math|f<around*|(|x|)>\<equallim\><rsub|<around*|(|1|)>>a<rsub|i>\<equallim\><rsub|i\<in\>K>y>
+        proving that\ 
+
+        <\equation>
+          <label|eq 18.367.035.1>B\<subseteq\>f<rsup|-1><around*|(|<around*|{|y|}>|)>
+        </equation>
+
+        For the opposite inclusion let <math|x\<in\>f<rsup|-1><around*|(|<around*|{|y|}>|)>>
+        then <math|f<around*|(|x|)>=y>. Assume that <math|x\<nin\>B> then
+        either\ 
+
+        <\description>
+          <item*|<math|x\<in\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>>so
+          that <math|\<exists\>i\<in\><around*|{|1,\<ldots\>,n|}>\\K> such
+          that <math|x\<in\>A<rsub|i><rsub|>> hence
+          <math|f<around*|(|x|)>=a<rsub|i>\<neq\>y> a contradiction.
+
+          <item*|<math|x\<in\>X\\<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>>>
+          then <math|f<around*|(|x|)>=0\<neq\>y> a contradiction.
+        </description>
+
+        As in all cases we reach a contradiction it follows that
+        <math|x\<in\>B> proving that <math|f<rsup|-1><around*|(|<around*|{|y|}>|)>\<subseteq\>B>
+        which combined with <reference|eq 18.367.035.1> proves\ 
+
+        <\equation*>
+          f<rsup|-1><around*|(|<around*|{|y|}>|)>=B\<in\><rsub|<text|<reference|eq
+          18.366.035.1>>>\<cal-A\>
+        </equation*>
       </description>
 
-      \;
-    </enumerate>
+      Hence we have\ 
 
-    \;
+      <\equation>
+        <label|eq 18.369.035.1>\<forall\>y\<in\>f<around*|(|X|)> <text| we
+        have >f<rsup|-1><around*|(|<around*|{|y|}>|)>\<in\>\<cal-S\>
+      </equation>
+
+      As <math|f> is a simple function [see <reference|eq 18.364.35.2>],
+      <math|\<cal-A\>>-measurable [see <reference|eq 18.369.035.1>] and
+      <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
+      it follows that\ 
+
+      <\equation*>
+        f\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>
+      </equation*>
+    </enumerate>
   </proof>
 
   <\proposition>
@@ -11872,27 +11943,232 @@
     </equation*>
   </definition>
 
+  To compare two simple functions we need the following lemma.
+
+  <\lemma>
+    <label|simple function condition (3)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measure space and
+    <math|f,g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> then there
+    exists a <math|n\<in\>\<bbb-N\><rsub|0>>,
+    <math|<around*|{|C<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
+    of pairwise disjoint measurable sets and
+    <math|<around*|{|f<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>,
+    <math|<around*|{|g<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
+    such that
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|X=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>>|<cell|>>|<row|<cell|>|<cell|f=<big|sum><rsub|i=1><rsup|n>f<rsub|i>\<cdot\>\<cal-X\><rsub|C<rsub|i>>>|<cell|>>|<row|<cell|>|<cell|g=<big|sum><rsub|i=1><rsup|n>g<rsub|i>\<cdot\>\<cal-X\><rsub|C<rsub|i>>>|<cell|>>>>
+    </eqnarray*>
+  </lemma>
+
+  <\proof>
+    As <math|f,g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> we have
+    using <reference|set of simple functions> the existance of two pairwsise
+    disjoint measurable sets <math|<around*|{|A<rprime|'><rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>\<subseteq\>\<cal-A\>>,
+    <math|<around*|{|B<rprime|'><rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,m<rprime|'>|}>>\<subseteq\>\<cal-A\>>
+    and two families of non neaative numbers
+    <math|a<rprime|'><around*|\<nobracket\>|<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>\<subseteq\><around*|[|0,\<infty\>|]>>,
+    <math|<around*|{|b<rprime|'><rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,m<rprime|'>|}>>>
+    such that\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|f>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n<rprime|'>>a<rsub|i><rprime|'>\<cdot\>\<cal-X\><rsub|A<rprime|'><rsub|i>>>>|<row|<cell|g>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|m<rprime|'>>b<rsub|i><rprime|'>\<cdot\>\<cal-X\><rsub|B<rprime|'><rsub|i>>>>>>
+    </eqnarray*>
+
+    Define now <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>>\<subseteq\>\<cal-A\>>,
+    <math|<around*|{|B<rsub|i>|}><rsub|i\<in\><around*|{|1\<ldots\>,m<rprime|'>+1|}>>\<subseteq\>\<cal-A\>>
+    and <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>>\<subseteq\><around*|[|0,\<infty\>|]>>,
+    <math|<around*|{|b<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,m<rprime|'>+1|}>>>
+    as follows:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|A<rsub|i>>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|X\\<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>A<rprime|'><rsub|i><text|
+      if >i=n<rprime|'>+1>>|<row|<cell|A<rprime|'><rsub|i><text| if
+      >i\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>>>>>>>|<row|<cell|B<rsub|i>>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|X\\<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,m<rprime|'>|}>>B<rprime|'><rsub|i><text|
+      if >i=m<rprime|'>+1>>|<row|<cell|B<rprime|'><rsub|i><text| if
+      >i\<in\><around*|{|1,\<ldots\>,m<rprime|'>|}>>>>>>>>|<row|<cell|a<rsub|i>>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|0<text|
+      if >i=n<rprime|'>+1>>|<row|<cell|a<rprime|'><rsub|i><text| if
+      >i\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>>>>>>>|<row|<cell|b<rsub|i>>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|0
+      <text|if >i=m<rprime|'>+1>>|<row|<cell|b<rprime|'><rsub|i><text| if
+      >i\<in\><around*|{|1,\<ldots\>,m<rprime|'>|}>>>>>>>>>>
+    </eqnarray*>
+
+    then clearly <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>>>,
+    <math|<around*|{|B<rsub|i>|}><rsub|i\<in\><around*|{|1\<ldots\>,m<rprime|'>+1|}>>>
+    are pairwise disjoint and\ 
+
+    <\equation>
+      <label|eq 18.375.035.3>X=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>>A<rsub|i>=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,m<rprime|'>+1|}>>B<rsub|i>
+    </equation>
+
+    From the above we have then that\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<forall\>i\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}><text|
+      >A<rsub|i>>|<cell|=>|<cell|A<rsub|i><big|cap>X=<big|sqcup><rsub|j\<in\><around*|{|1,\<ldots\>,m<rprime|'>+|}>><around*|(|A<rsub|i><big|cap>B<rsub|j>|)><eq-number><label|eq
+      18.376.035.3>>>|<row|<cell|\<forall\>i\<in\><around*|{|1,\<ldots\>,m<rprime|'>+1|}><text|
+      B_i>>|<cell|=>|<cell|B<rsub|i><big|cap>X=<big|sqcup><rsub|j\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>><around*|(|A<rsub|j><big|cap>B<rsub|i>|)><eq-number><label|eq
+      18.377.035.3>>>>>
+    </eqnarray*>
+
+    so that\ 
+
+    <\equation>
+      X=<big|sqcup><rsub|i=1><rsup|n<rprime|'>+1><around*|(|<big|sqcup><rsub|j=1><rsup|m<rprime|'>+1><around*|(|A<rsub|i><big|cap>B<rsub|j>|)>|)>=<big|sqcup><rsub|i=1><rsup|m<rprime|'>+1><around*|(|<big|sqcup><rsub|j=1><rsup|n<rprime|'>+1><around*|(|A<rsub|j><big|cap>B<rsub|i>|)>|)>
+    </equation>
+
+    <label|eq 18.378.035.3>Using <reference|product of finite sets is finite>
+    we have that <math|<around*|{|1,\<ldots\>,n<rprime|'>+1|}>\<times\><around*|{|1,\<ldots\>,m<rprime|'>+1|}>>
+    is finite and there exists a bijection
+
+    <\equation*>
+      \<beta\>:<around*|{|1,\<ldots\>,<around*|(|n<rprime|'>+1|)>\<cdot\><around*|(|m<rprime|'>+1|)>|}>\<rightarrow\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>\<cdot\><around*|{|1,\<ldots\>,m<rprime|'>+1|}>
+    </equation*>
+
+    Using the above bijection take <math|n=<around*|(|n<rprime|'>+1|)>\<cdot\><around*|(|m<rprime|'>+1|)>>
+    and define <math|<around*|{|C<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>,
+    <math|<around*|{|f<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+    and <math|<around*|{|g<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>n|}>>>
+    by\ 
+
+    <\equation*>
+      C<rsub|i>=A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>><text|,
+      >f<rsub|i>=a<rsub|\<beta\><around*|(|i|)>1><text|,
+      >g<rsub|i>=b<rsub|\<beta\><around*|(|i|)><rsub|2>>
+    </equation*>
+
+    Take <math|x\<in\>X> then by <reference|eq 18.378.035.3> there exists a
+    <math|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>> such that
+    <math|x\<in\><big|sqcup><rsub|j\<in\><around*|{|1,\<ldots\>,m<rprime|'>+1|}>><around*|(|A<rsub|i><big|cap>B<rsub|j>|)>>,
+    hence there exists a <math|j\<in\><around*|{|1,\<ldots\>,m<rprime|'>+1|}>>
+    such that <math|x\<in\>A<rsub|i><big|cap>B<rsub|j>>. As <math|\<beta\>>
+    is a bijection there exists a <math|k\<in\><around*|{|1,\<ldots\>,n|}>>
+    such that <math|\<beta\><around*|(|k|)>=<around*|(|i,j|)>>, hence
+    <math|x\<in\>A<rsub|\<beta\><around*|(|k|)><rsub|1>,\<beta\><around*|(|k|)><rsub|2>>=C<rsub|k>>.
+    This proves that <math|X\<subseteq\><big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>>
+    which as trivially <math|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>\<subseteq\>X>
+    proves that
+
+    <\equation>
+      <label|eq 18.379.035.3>X=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>C<rsub|i>.
+    </equation>
+
+    Further if <math|k,l\<in\><around*|{|1,\<ldots\>,n|}>> with
+    <math|k\<neq\>l> then as <math|\<beta\>> is a bijection we have that
+    <math|\<beta\><around*|(|k|)>\<neq\>\<beta\><around*|(|l|)>>. If now
+    <math|x\<in\>C<rsub|k><big|cap>C<rsub|l>> then
+    <math|x\<in\><around*|(|A<rsub|\<beta\><around*|(|k|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|k|)><rsub|2>>|)><big|cap><around*|(|A<rsub|\<beta\><around*|(|l|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|l|)><rsub|2>>|)>>
+    so that <math|x\<in\>A<rsub|\<beta\><around*|(|k|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|l|)><rsub|2>>\<wedge\>x\<in\>A<rsub|\<beta\><around*|(|l|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|l|)><rsub|2>>>,
+    as <math|><math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>+1|}>>>,
+    <math|<around*|{|B<rsub|i>|}><rsub|i\<in\><around*|{|1\<ldots\>,m<rprime|'>+1|}>>>
+    are pairwise disjoint we have that <math|\<beta\><around*|(|k|)><rsub|1>=\<beta\><around*|(|l|)><rsub|1>\<wedge\>\<beta\><around*|(|k|)><rsub|2>=\<beta\><around*|(|l|)><rsub|2>>,
+    leading to the contradiction <math|\<beta\><around*|(|k|)>=\<beta\><around*|(|l|)>>.
+    Hence we have that\ 
+
+    <\equation>
+      <label|eq 18.380.035.3><around*|{|C<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\><text|
+      is pairwise disjoint>
+    </equation>
+
+    Let <math|x\<in\>X> then by <reference|eq 18.379.035.3> there exists a
+    <math|k\<in\><around*|{|1,\<ldots\>,n|}>> such that
+    <math|x\<in\>C<rsub|k>> and take <math|\<beta\><around*|(|k|)>=<around*|(|i,j|)>>,
+    then <math|C<rsub|k>=A<rsub|i><big|cap>B<rsub|j>>. For <math|i> we must
+    consider the following cases:
+
+    <\description>
+      <item*|<math|i=n<rprime|'>+1>>then <math|x\<in\>A<rsub|n<rprime|'>+1>=X\\<around*|(|<big|cup><rsub|r\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>A<rprime|'><rsub|i>|)>>
+      so that using <reference|simple function condition (2)>
+      <math|f<around*|(|x|)>=0>. Further using <reference|simple function
+      condition (2)> again, it follow from <math|x\<in\>C<rsub|k>> that
+      <math|<around*|(|<big|sum><rsub|r=1><rsup|n>f<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>=f<rsub|k>=a<rsub|\<beta\><around*|(|k|)><rsub|1>>=a<rsub|n<rprime|'>+1>=0>
+      proving that\ 
+
+      <\equation*>
+        <around*|(|<big|sum><rsub|r=1><rsup|n>f<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>=f<around*|(|x|)>
+      </equation*>
+
+      <item*|<math|i\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>>then
+      <math|x\<in\>A<rsub|i>> so using <reference|simple function condition
+      (2)> we have <math|f<around*|(|x|)>=a<rprime|'><rsub|i>> and
+      <math|><math|<around*|(|<big|sum><rsub|r=1><rsup|n>f<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>\<equallim\><rsub|k\<in\>C<rsub|k>>f<rsub|k>=a<rsub|\<beta\><around*|(|k|)><rsub|1>>=a<rsub|i>=a<rprime|'><rsub|i>>,
+      Hence\ 
+
+      <\equation*>
+        <around*|(|<big|sum><rsub|r=1><rsup|n>f<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>=f<around*|(|x|)>
+      </equation*>
+    </description>
+
+    So we conclude that\ 
+
+    <\equation>
+      <label|eq 18.381.035.3>f=<big|sum><rsub|r=1><rsup|n>f<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>
+    </equation>
+
+    For <math|j> we must consider the following cases:
+
+    <\description>
+      <item*|<math|j=m<rprime|'>+1>>then <math|x\<in\>B<rsub|m<rprime|'>+1>=X\\<around*|(|<big|cup><rsub|r\<in\><around*|{|1,\<ldots\>,n<rprime|'>|}>>B<rprime|'><rsub|i>|)>>
+      so that using <reference|simple function condition (2)>
+      <math|g<around*|(|x|)>=0>. Further using <reference|simple function
+      condition (2)> again it, follow from <math|x\<in\>C<rsub|k>> that
+      <math|<around*|(|<big|sum><rsub|r=1><rsup|n>g<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>=g<rsub|k>=b<rsub|\<beta\><around*|(|k|)><rsub|2>>=b<rsub|m<rprime|'>+1>=0>
+      proving that\ 
+
+      <\equation*>
+        <around*|(|<big|sum><rsub|r=1><rsup|n>g<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>=g<around*|(|x|)>
+      </equation*>
+
+      <item*|<math|j\<in\><around*|{|1,\<ldots\>,m<rprime|'>|}>>>then
+      <math|x\<in\>B<rsub|i>> so using <reference|simple function condition
+      (2)> we have <math|g<around*|(|x|)>=b<rprime|'><rsub|j>> and
+      <math|><math|<around*|(|<big|sum><rsub|r=1><rsup|n>g<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>\<equallim\><rsub|k\<in\>C<rsub|k>>g<rsub|k>=b<rsub|\<beta\><around*|(|k|)><rsub|2>>=b<rsub|j>=b<rprime|'><rsub|j>>,
+      Hence\ 
+
+      <\equation*>
+        <around*|(|<big|sum><rsub|r=1><rsup|n>g<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>|)><around*|(|x|)>=g<around*|(|x|)>
+      </equation*>
+    </description>
+
+    So we conclude that\ 
+
+    <\equation>
+      <label|eq 18.382.035.3>g=<big|sum><rsub|r=1><rsup|n>g<rsub|r>\<cdot\>\<cal-X\><rsub|C<rsub|r>>
+    </equation>
+
+    The lemma is then proved by <reference|eq 18.379.035.3>, <reference|eq
+    18.380.035.3>, <reference|eq 18.381.035.3> and <reference|eq
+    18.382.035.3>.
+  </proof>
+
   For the integral of positive simple functions we have the following
   properties
 
   <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
-    measure space then we have\ 
+    <label|simple functions integral properties (1)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
+    space then we have\ 
 
     <\enumerate>
       <item>If <math|\<alpha\>\<in\><around*|[|0,\<infty\>|[>> and
       <math|f\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> then
-      <math|<big|int><rsup|\<cal-S\>><around*|(|\<alpha\>\<cdot\>f|)>
+      <math|\<alpha\>\<cdot\>f\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>>
+      and \ <math|<big|int><rsup|\<cal-S\>><around*|(|\<alpha\>\<cdot\>f|)>
       d\<mu\>=\<alpha\>\<cdot\><big|int><rsup|\<cal-S\>>f d\<mu\>>
 
       <item>If <math|f,g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>>
-      then <math|<big|int><rsup|\<cal-S\>><around*|(|f+g|)>d\<mu\>=<big|int><rsup|\<cal-S\>>f
-      d\<mu\>+<big|int><rsup|\<cal-S\>>g d\<mu\>>
+      then\ 
 
-      <item>If <math|f,g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>>
-      then if <math|\<forall\>x\<in\>X> <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>>
-      then <math|<big|int><rsup|\<cal-S\>>f
-      d\<mu\>\<leqslant\><big|int><rsup|\<cal-S\>>g d\<mu\>>
+      <\enumerate>
+        <item><math|f+g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> and
+        <math|<big|int><rsup|\<cal-S\>><around*|(|f+g|)>d\<mu\>=<big|int><rsup|\<cal-S\>>f
+        d\<mu\>+<big|int><rsup|\<cal-S\>>g d\<mu\>>
+
+        <item>if <math|\<forall\>x\<in\>X>
+        <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>> then
+        <math|<big|int><rsup|\<cal-S\>>f d\<mu\>\<leqslant\><big|int><rsup|\<cal-S\>>g
+        d\<mu\>>
+      </enumerate>
     </enumerate>
   </proposition>
 
@@ -11901,19 +12177,181 @@
 
     <\enumerate>
       <item>As <math|f\<in\>\<cal-S\><rsup|+><around*|(|X,\<cal-A\>|)>> there
-      exists a <math|n\<in\>\<bbb-N\><rsub|0>>, a pairwise disjoint family
+      exists by <reference|set of simple functions> a
+      <math|n\<in\>\<bbb-N\><rsub|0>>, a pairwise disjoint family
       <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
       and a <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
-      such that\ 
+      such that <math|f=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>>>.
+      Then \ <math|<around*|{|\<alpha\>\<cdot\>a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+      and <math|\<forall\>x\<in\>X> we have
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>>|<cell|=>|<cell|\<alpha\>\<cdot\>f<around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|\<alpha\>\<cdot\><big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n><around*|(|\<alpha\>\<cdot\>a<rsub|i>|)>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|n><around*|(|\<alpha\>\<cdot\>a<rsub|i>|)>\<cdot\>\<cal-X\><rsub|A<rsub|i><rsub|>>|)><around*|(|x|)>>>>>
+      </eqnarray*>
+
+      proving that
 
       <\equation*>
-        f=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>
+        \<alpha\>\<cdot\>f=<big|sum><rsub|i=1><rsup|n><around*|(|\<alpha\>\<cdot\>a<rsub|i>|)>\<cdot\>\<cal-X\><rsub|A<rsub|i><text|>>
       </equation*>
 
-      <item>
+      Using <reference|simple function condition (2)> it follows then that\ 
 
-      <item>
+      <\equation*>
+        \<alpha\>\<cdot\>f\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>
+      </equation*>
+
+      Finally we have\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int><rsup|\<cal-S\>>\<alpha\>\<cdot\>f
+        d\<mu\>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n>*<around*|(|\<alpha\>\<cdot\>a<rsub|i>|)>\<cdot\>\<mu\><around*|(|A<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|a\<cdot\><big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<mu\><around*|(|A<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|\<alpha\>\<cdot\><big|int><rsup|\<cal-S\>>f
+        d\<mu\>>>>>
+      </eqnarray*>
+
+      <item>As <math|f,g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> we
+      have, using the previous lemma [see <reference|simple function
+      condition (3)>], that there exists a pairwise disjoint family of
+      measurable sets <math|<around*|{|C<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+      and families of non negative numbers
+      <math|<around*|{|f<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>,
+      <math|<around*|{|g<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+      such that\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|>|<cell|X=<big|sqcup><rsub|i=1><rsup|n>C<rsub|i>>|<cell|>>|<row|<cell|>|<cell|f=<big|sum><rsub|i=1><rsup|n>f<rsub|i>\<cdot\>\<cal-X\><rsub|C<rsub|i>>>|<cell|>>|<row|<cell|>|<cell|g=<big|sum><rsub|i=1><rsup|n>g<rsub|i>\<cdot\>\<cal-X\><rsub|C<rsub|i>>>|<cell|>>>>
+      </eqnarray*>
+
+      <\enumerate>
+        <item>Consider now <math|<around*|{|f<rsub|i>+g<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
+        then using <reference|simple function condition (2)> we have that\ 
+
+        <\equation>
+          <big|sum><rsub|i=1><rsup|n><around*|(|f<rsub|i>+g<rsub|i>|)>\<cdot\>\<cal-X\><rsub|C<rsub|i>>\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>
+        </equation>
+
+        Further if <math|x\<in\>X> then there exists a
+        <math|i\<in\><around*|{|1,\<ldots\>,n|}>> such that
+        <math|x\<in\>C<rsub|k>>. Hence\ 
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<around*|(|<big|sum><rsub|i=1><rsup|n><around*|(|f<rsub|i>+g<rsub|i>|)>\<cdot\>\<cal-X\><rsub|C<rsub|i>>|)><around*|(|x|)>>|<cell|\<equallim\><rsub|<text|<reference|simple
+          function condition (2)>>>>|<cell|f<rsub|i>+g<rsub|i>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|simple
+          function condition (2)>>>>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|n>f<rsub|i>\<cdot\>\<cal-X\><rsub|C<rsub|i>>|)><around*|(|x|)>+<around*|(|<big|sum><rsub|i=1><rsup|n>g<rsub|i>\<cdot\>\<cal-X\><rsub|C<rsub|I>>|)><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<around*|(|x|)>+g<around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|def>>|<cell|<around*|(|f+g|)><around*|(|x|)>>>>>
+        </eqnarray*>
+
+        proving that
+
+        <\equation>
+          <label|eq 18.384.035.3>f+g=<big|sum><rsub|i=1><rsup|n><around*|(|f<rsub|i>+g<rsub|i>|)>\<cdot\>\<cal-X\><rsub|C<rsub|i>>\<in\>\<cal-S\><around*|[|X,\<cal-A\>|]>
+        </equation>
+
+        Finally we have that
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<big|int><rsup|\<cal-S\>><around*|(|f+g|)>d\<mu\>>|<cell|\<equallim\><rsub|<text|<reference|eq
+          18.384.035.3>>>>|<cell|<big|sum><rsub|i=1><rsup|n><around*|(|f<rsub|i>+g<rsub|i>|)>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n>f<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>+<big|sum><rsub|i=1><rsup|n>g<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsup|\<cal-S\>>f
+          d\<mu\>+<big|int><rsup|\<cal-S\>>g d\<mu\>>>>>
+        </eqnarray*>
+
+        <item>Assume that <math|\<forall\>x\<in\>X> we have that
+        <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>>. Define
+        <math|I=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|C<rsub|i>\<neq\>\<emptyset\>|}>>
+        then <math|\<forall\>i\<in\>I> we have that there exists a
+        <math|x\<in\>C<rsub|i>> so that
+
+        <\equation>
+          <label|eq 18.385.035>f<rsub|i>\<equallim\><rsub|<text|<reference|simple
+          function condition (2)>>>f<around*|(|x|)>\<leqslant\>g*<around*|(|x|)>\<equallim\><rsub|<text|<reference|simple
+          function condition (2)>>>g<rsub|i>.
+        </equation>
+
+        Next
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<big|int><rsup|\<cal-S\>>f
+          d\<mu\>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n>f<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\I>f<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>+<big|sum><rsub|i\<in\>I>f<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|0+<big|sum><rsub|i\<in\>I>f<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|eq
+          18.385.035>>>>|<cell|<big|sum><rsub|i\<in\>I>g<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\>I>g<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>+0>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\I>g<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>+<big|sum><rsub|i\<in\>I>g<rsub|i>\<cdot\>\<mu\><around*|(|C<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsup|\<cal-S\>>g
+          d\<mu\>>>>>
+        </eqnarray*>
+      </enumerate>
     </enumerate>
+  </proof>
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
+    measure space and let <math|f\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>>
+    and <math|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>>
+    such that <math|\<forall\>x\<in\>X> we have
+    <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>> that
+
+    <\equation*>
+      f<rsub|i><around*|(|x|)>\<leqslant\>f<rsub|i+1><around*|(|x|)>
+    </equation*>
+
+    and
+
+    <\equation*>
+      f<around*|(|x|)>=<below|lim|i\<rightarrow\>\<infty\>>f<rsub|i><around*|(|x|)>
+    </equation*>
+
+    then\ 
+
+    <\equation*>
+      <big|int><rsup|\<cal-S\>>f \ d\<mu\>=<below|lim|n\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i
+      > d\<mu\>
+    </equation*>
+  </proposition>
+
+  <\proof>
+    Let <math|x\<in\>X> then <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>> we
+    have <math|f<rsub|i><around*|(|x|)>\<leqslant\>f<rsub|i<rsub|+1>><around*|(|x|)>>
+    so that by the previous proposition <reference|simple functions integral
+    properties (1)> it follows that <math|<big|int><rsup|\<cal-S\>>f<rsub|i>d\<mu\>\<leqslant\><big|int><rsup|\<cal-S\>>f<rsub|i+1>d\<mu\>>.
+    So we have that\ 
+
+    <\equation>
+      <label|eq 18.386.035>\<forall\>x\<in\>X
+      <around*|{|f<rsub|i><around*|(|x|)>|}><rsub|i\<in\>\<bbb-N\><rsub|n>>
+      and <around*|{|<big|int><rsup|\<cal-S\>>f<rsub|i>
+      d\<mu\>|}><rsub|i\<in\>\<bbb-N\><rsub|0>><text| are increasing
+      sequences>
+    </equation>
+
+    Applying then <reference|equivalence of limits on increasing (decreasing)
+    sequences of extented reals> on the above we have that\ 
+
+    <\equation>
+      <label|eq 18.67.035><below|<below|lim|i\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i>
+      d\<mu\>=sup<around*|(|<around*|{|<big|int><rsup|\<cal-S\>>f<rsub|i>
+      d\<mu\>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>|>
+    </equation>
+
+    and
+
+    <\equation>
+      <label|eq 18.388.035>\<forall\>x\<in\>X<text| we have
+      >f<around*|(|x|)>=<below|lim|i\<rightarrow\>\<infty\>>f<rsub|i><around*|(|x|)>=sup<around*|(|<around*|{|f<rsub|i><around*|(|x|)>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>
+    </equation>
+
+    From the above we have that given <math|x\<in\>X>
+    <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
+    \ <math|f<rsub|i><around*|(|x|)>\<leqslant\>f<around*|(|x|)>> so that
+    using <reference|simple functions integral properties (1)>
+    <math|<big|int><rsup|\<cal-S\>>f<rsub|i>
+    d\<mu\>\<leqslant\><big|int><rsup|\<cal-S\>>f d\<mu\>> hence
+    <math|sup<around*|(|<around*|{|<big|int><rsup|\<cal-S\>>f<rsub|i>
+    d\<mu\>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\><big|int><rsup|\<cal-S\>>f
+    d\<mu\>>, combining this with <reference|eq 18.386.035> gives\ 
+
+    <\equation>
+      <label|eq 18.89.035><below|lim|i\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i>
+      d\<mu\>\<leqslant\><big|int><rsup|\<cal-S\>>f d\<mu\>
+    </equation>
+
+    <\equation*>
+      \;
+    </equation*>
 
     \;
   </proof>
@@ -12085,6 +12523,7 @@
     <associate|corollary 18.29|<tuple|18.29|?>>
     <associate|countable additivity implies additivity|<tuple|18.63|?>>
     <associate|empty rectaangles|<tuple|18.35|?>>
+    <associate|eq 148.384.035.3|<tuple|18.384|?>>
     <associate|eq 18.1.014|<tuple|18.10|?>>
     <associate|eq 18.1.016|<tuple|18.4|?>>
     <associate|eq 18.1.033|<tuple|18.1|?>>
@@ -12352,18 +12791,39 @@
     <associate|eq 18.361.034|<tuple|18.361|?>>
     <associate|eq 18.362.034|<tuple|18.362|?>>
     <associate|eq 18.363.034|<tuple|18.363|?>>
-    <associate|eq 18.364.035|<tuple|18.366|?>>
-    <associate|eq 18.364.035.1|<tuple|18.364|?>>
-    <associate|eq 18.364.036|<tuple|18.364|?>>
-    <associate|eq 18.365.035|<tuple|18.367|?>>
-    <associate|eq 18.365.035.1|<tuple|18.365|?>>
-    <associate|eq 18.366.035|<tuple|18.368|?>>
-    <associate|eq 18.367.035|<tuple|18.369|?>>
-    <associate|eq 18.368.035|<tuple|18.370|?>>
+    <associate|eq 18.364.035|<tuple|18.370|?>>
+    <associate|eq 18.364.035.1|<tuple|18.365|?>>
+    <associate|eq 18.364.35.2|<tuple|18.364|?>>
+    <associate|eq 18.365.035|<tuple|18.371|?>>
+    <associate|eq 18.365.035.1|<tuple|18.366|?>>
+    <associate|eq 18.366.035|<tuple|18.372|?>>
+    <associate|eq 18.366.035.1|<tuple|18.367|?>>
+    <associate|eq 18.367.035|<tuple|18.373|?>>
+    <associate|eq 18.367.035.1|<tuple|18.368|?>>
+    <associate|eq 18.368.035|<tuple|18.374|?>>
+    <associate|eq 18.369.035.1|<tuple|18.369|?>>
     <associate|eq 18.37.016|<tuple|18.86|?>>
     <associate|eq 18.37.021|<tuple|18.42|?>>
+    <associate|eq 18.375.035|<tuple|18.384|?>>
+    <associate|eq 18.375.035.3|<tuple|18.375|?>>
+    <associate|eq 18.376.035|<tuple|18.387|?>>
+    <associate|eq 18.376.035.1|<tuple|18.385|?>>
+    <associate|eq 18.376.035.3|<tuple|18.376|?>>
+    <associate|eq 18.377.035|<tuple|18.388|?>>
+    <associate|eq 18.377.035.1|<tuple|18.386|?>>
+    <associate|eq 18.377.035.3|<tuple|18.377|?>>
+    <associate|eq 18.378.035|<tuple|18.389|?>>
+    <associate|eq 18.378.035.3|<tuple|18.378|?>>
+    <associate|eq 18.379.035.3|<tuple|18.379|?>>
     <associate|eq 18.38.016|<tuple|18.87|?>>
     <associate|eq 18.38.021|<tuple|18.43|?>>
+    <associate|eq 18.380.035.3|<tuple|18.380|?>>
+    <associate|eq 18.381.035.3|<tuple|18.381|?>>
+    <associate|eq 18.382.035.3|<tuple|18.382|?>>
+    <associate|eq 18.384.035.3|<tuple|18.384|?>>
+    <associate|eq 18.385.035|<tuple|18.385|?>>
+    <associate|eq 18.386.035|<tuple|18.386|?>>
+    <associate|eq 18.388.035|<tuple|18.388|?>>
     <associate|eq 18.39.016|<tuple|18.87|?>>
     <associate|eq 18.39.022|<tuple|18.61|?>>
     <associate|eq 18.4.016|<tuple|18.7|?>>
@@ -12442,6 +12902,7 @@
     <associate|eq 18.61.023|<tuple|18.83|?>>
     <associate|eq 18.62.016|<tuple|18.120|?>>
     <associate|eq 18.62.032|<tuple|18.84|?>>
+    <associate|eq 18.67.035|<tuple|18.387|?>>
     <associate|eq 18.74.018|<tuple|18.121|?>>
     <associate|eq 18.75.018|<tuple|18.122|?>>
     <associate|eq 18.76.018|<tuple|18.123|?>>
@@ -12456,7 +12917,9 @@
     <associate|eq 18.84.018|<tuple|18.131|?>>
     <associate|eq 18.85.018|<tuple|18.132|?>>
     <associate|eq 18.86.018|<tuple|18.133|?>>
+    <associate|eq 18.89.035|<tuple|18.389|?>>
     <associate|eq 18.9.020|<tuple|18.14|?>>
+    <associate|eq18.386.035|<tuple|18.386|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|18.50|?>>
     <associate|f=g almost everywhere property|<tuple|18.178|?>>
@@ -12537,10 +13000,13 @@
     <associate|sigma algebras are Dynkin classes|<tuple|18.127|?>>
     <associate|simple function|<tuple|18.157|?>>
     <associate|simple function as a finite sum|<tuple|18.180|?>>
+    <associate|simple function condition (2)|<tuple|18.186|?>>
+    <associate|simple function condition (3)|<tuple|18.190|?>>
     <associate|simple function properties|<tuple|18.181|?>>
     <associate|simple function properties (1)|<tuple|18.158|?>>
     <associate|simple functions are measurable|<tuple|18.159|?>>
     <associate|simple functions integral (1)|<tuple|18.187|?>>
+    <associate|simple functions integral properties (1)|<tuple|18.191|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|18.49|?>>
     <associate|translation properties|<tuple|18.95|?>>
     <associate|union intersection union of families|<tuple|18.3|?>>
