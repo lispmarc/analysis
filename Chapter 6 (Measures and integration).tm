@@ -12324,7 +12324,7 @@
     <\equation>
       <label|eq 18.67.035><below|<below|lim|i\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i>
       d\<mu\>=sup<around*|(|<around*|{|<big|int><rsup|\<cal-S\>>f<rsub|i>
-      d\<mu\>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>|>
+      d\<mu\>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>\<geqslant\>0|>
     </equation>
 
     and
@@ -12345,9 +12345,140 @@
     d\<mu\>>, combining this with <reference|eq 18.386.035> gives\ 
 
     <\equation>
-      <label|eq 18.89.035><below|lim|i\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i>
+      <label|eq 18.389.035>0\<leqslant\><below|lim|i\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i>
       d\<mu\>\<leqslant\><big|int><rsup|\<cal-S\>>f d\<mu\>
     </equation>
+
+    For the oppositve inequality, let <math|\<varepsilon\>\<in\>\<bbb-R\>> be
+    such that <math|0\<less\>\<varepsilon\>\<less\>1> so that
+    <math|0\<less\>1-\<varepsilon\>\<less\>1>. As
+    <math|f\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> there exists by
+    <reference|set of simple functions> a <math|n\<in\>\<bbb-N\><rsub|0>,> a
+    pairwise disjoint family of measurable sets
+    <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+    and a family of non negative extended real numbers
+    <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+    so that <math|f=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>>>.
+    Then we have two caes to consider for
+    <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>:
+
+    <\description>
+      <item*|<math|\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}>
+      a<rsub|i>=0>>then <math|<big|int><rsup|\<cal-S\>>f
+      d\<mu\>=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<mu\><around*|(|A<rsub|i>|)>=0>
+      so that using <reference|eq 18.389.035> we have
+      <math|><math|<below|lim|i\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i>
+      d\<mu\>=0> so that\ 
+
+      <\equation*>
+        <below|lim|i\<rightarrow\>\<infty\>><big|int><rsup|\<cal-S\>>f<rsub|i>
+        d\<mu\>=<big|int><rsup|\<cal-S\>>f d\<mu\>=0
+      </equation*>
+
+      <item*|<math|\<exists\>i\<in\><around*|{|1,\<ldots\>,n|}> <text|with
+      >a<rsub|i>\<neq\>0>>then <math|I=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|a<rsub|i>\<neq\>0|}>\<neq\>\<emptyset\>>
+      and as it is finite we have a <math|m\<in\>\<bbb-N\><rsub|0>> and a
+      bijection <math|\<beta\>:<around*|{|1,\<ldots\>,m|}>\<rightarrow\>I>.
+      Let <math|x\<in\>X> then\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|f<around*|(|x|)>>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\I>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>+<big|sum><rsub|i\<in\>I>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\>I>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
+        sums and bijections>>>>|<cell|<big|sum><rsub|i\<in\>J>a<rsub|\<beta\><around*|(|i|)>>\<cdot\>\<cal-X\><rsub|A<rsub|\<beta\><around*|(|i|)>>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|m>a<rsub|\<beta\><around*|(|i|)>>\<cdot\>\<cal-X\><rsub|A<rsub|\<beta\><around*|(|i|)>>><around*|(|x|)>>>>>
+      </eqnarray*>
+
+      proving if we define <math|b<rsub|i>=a<rsub|\<beta\><around*|(|i|)>>>
+      and <math|B<rsub|i>=A<rsub|\<beta\><around*|(|i|)>>> that
+
+      <\equation>
+        <label|eq 18.390.035>f=<big|sum><rsub|i=1><rsup|m>b<rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|i>><text|
+        and >\<forall\>i\<in\><around*|{|1,\<ldots\>,m|}><text|
+        >b<rsub|i>\<gtr\>0
+      </equation>
+
+      Take <math|\<varepsilon\>\<in\>\<bbb-R\>> such that
+      <math|0\<less\>\<varepsilon\>\<less\>1> so that
+      <math|0\<less\>1-\<varepsilon\>\<less\>1>. Let
+      <math|j\<in\><around*|{|1,\<ldots\>,m|}>> and define
+      <math|<around*|{|B<rsub|i,j>|}><rsub|i\<in\>\<bbb-N\><rsub|0>><text| by
+      >>
+
+      <\equation>
+        <label|eq 18.391.035>B<rsub|i,j>=<around*|{|x\<in\>B<rsub|i>\|f<rsub|j><around*|(|x|)>\<geqslant\><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|i>|}>=B<rsub|i><big|cap><around*|{|f<rsub|j>\<geqslant\><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|i>|}>\<in\>\<cal-A\>
+        <text|[see <reference|measurable function condition (2)>]>
+      </equation>
+
+      Next if <math|x\<in\>B<rsub|i>> then
+      <math|sup<around*|(|<around*|{|f<rsub|i><around*|(|x|)>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>=f<around*|(|x|)>\<equallim\><rsub|<text|<reference|simple
+      function condition (2)>>>b<rsub|i>\<gtr\><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|i>>
+      [as <math|0\<less\>b<rsub|i>\<wedge\>0\<less\>1-\<varepsilon\>\<less\>1>],
+      hence using the definition of a supremum there exists a
+      <math|k\<in\>\<bbb-N\><rsub|0>> such that
+      <math|f<rsub|k><around*|(|x|)>\<gtr\><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|i>>
+      or <math|x\<in\>B<rsub|k,i>>. This together with the fact that
+      <math|B<rsub|k,i>\<subseteq\>B<rsub|i>> gives\ 
+
+      <\equation>
+        <label|eq 18.392.035>\<forall\>i\<in\><around*|{|1,\<ldots\>,m|}><text|
+        we have that >B<rsub|i>=<big|sqcup><rsub|k\<in\>\<bbb-N\><rsub|0>>B<rsub|k,i>
+      </equation>
+
+      Let <math|i\<in\><around*|{|1,\<ldots\>,m|}>> and
+      <math|k\<in\>\<bbb-N\><rsub|0>> then if <math|x\<in\>B<rsub|k,i>> we
+      have that
+
+      <\equation*>
+        f<rsub|i><around*|(|x|)>\<geqslant\><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|i>\<Rightarrowlim\><rsub|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>
+        is increasing>f<rsub|i+1><around*|(|x|)>\<geqslant\><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|i>
+      </equation*>
+
+      proving that <math|x\<in\>B<rsub|k+1,i>>, hence
+
+      <\equation>
+        <label|eq 18.393.035>\<forall\>k\<in\>\<bbb-N\><rsub|0><text|
+        >B<rsub|k>\<subseteq\>B<rsub|k+1>
+      </equation>
+
+      The conclusions <reference|eq 18.390.035> <reference|eq 18.393.035>
+      allows us to use <reference|measure properties (2)> (1) to give
+
+      <\equation*>
+        \<mu\><around*|(|<big|sqcup><rsub|k\<in\>\<bbb-N\><rsub|0>>A<rsub|k,i>|)>=<below|lim|k\<rightarrow\>\<infty\>>\<mu\><around*|(|A<rsub|k,i>|)>=sup<around*|(|<around*|{|\<mu\><around*|(|A<rsub|k,u>|)>\|k\<in\>\<bbb-N\><rsub|0>|}>|)>
+      </equation*>
+
+      proving using <reference|eq 18.392.035> that\ 
+
+      <\equation>
+        <label|eq 18.394.035>\<mu\><around*|(|<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|k,i>|)>=<below|lim|k\<rightarrow\>\<infty\>>\<mu\><around*|(|A<rsub|k,i>|)>=sup<around*|(|<around*|{|\<mu\><around*|(|A<rsub|k,u>|)>\|k\<in\>\<bbb-N\><rsub|0>|}>|)>
+      </equation>
+
+      Given <math|k\<in\>\<bbb-N\><rsub|0>> define <math|g<rsub|k>> by\ 
+
+      <\equation>
+        <label|eq 18.395.035>g<rsub|k>=<big|sum><rsub|i=1><rsup|m><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|i>\<cdot\>\<cal-X\><rsub|B<rsub|k,i>>
+      </equation>
+
+      Using <reference|simple function condition (2)> together with the fact
+      that <math|B<rsub|k,i>\<in\>\<cal-A\>> [see <reference|eq 18.391.035>]
+      proves \ 
+
+      <\equation>
+        <label|eq 18.396.035><around*|{|g<rsub|k>|}><rsub|k\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>
+      </equation>
+
+      Further if <math|x\<in\>X> and <math|k\<in\>\<bbb-N\><rsub|0>> then
+
+      <\equation>
+        <label|eq 18.397.035>g<rsub|k><around*|(|x|)>\<equallim\><rsub|<text|<reference|simple
+        function condition (2)>>><around*|(|1-\<varepsilon\>|)>\<cdot\>b<rsub|k>\<less\>b<rsub|k>\<equallim\><rsub|<text|<reference|simple
+        function condition (2)>>>f<rsub|k><around*|(|x|)>
+      </equation>
+
+      TODO
+
+      <\equation*>
+        \;
+      </equation*>
+    </description>
 
     <\equation*>
       \;
@@ -12523,7 +12654,6 @@
     <associate|corollary 18.29|<tuple|18.29|?>>
     <associate|countable additivity implies additivity|<tuple|18.63|?>>
     <associate|empty rectaangles|<tuple|18.35|?>>
-    <associate|eq 148.384.035.3|<tuple|18.384|?>>
     <associate|eq 18.1.014|<tuple|18.10|?>>
     <associate|eq 18.1.016|<tuple|18.4|?>>
     <associate|eq 18.1.033|<tuple|18.1|?>>
@@ -12804,15 +12934,9 @@
     <associate|eq 18.369.035.1|<tuple|18.369|?>>
     <associate|eq 18.37.016|<tuple|18.86|?>>
     <associate|eq 18.37.021|<tuple|18.42|?>>
-    <associate|eq 18.375.035|<tuple|18.384|?>>
     <associate|eq 18.375.035.3|<tuple|18.375|?>>
-    <associate|eq 18.376.035|<tuple|18.387|?>>
-    <associate|eq 18.376.035.1|<tuple|18.385|?>>
     <associate|eq 18.376.035.3|<tuple|18.376|?>>
-    <associate|eq 18.377.035|<tuple|18.388|?>>
-    <associate|eq 18.377.035.1|<tuple|18.386|?>>
     <associate|eq 18.377.035.3|<tuple|18.377|?>>
-    <associate|eq 18.378.035|<tuple|18.389|?>>
     <associate|eq 18.378.035.3|<tuple|18.378|?>>
     <associate|eq 18.379.035.3|<tuple|18.379|?>>
     <associate|eq 18.38.016|<tuple|18.87|?>>
@@ -12824,8 +12948,17 @@
     <associate|eq 18.385.035|<tuple|18.385|?>>
     <associate|eq 18.386.035|<tuple|18.386|?>>
     <associate|eq 18.388.035|<tuple|18.388|?>>
+    <associate|eq 18.389.035|<tuple|18.389|?>>
     <associate|eq 18.39.016|<tuple|18.87|?>>
     <associate|eq 18.39.022|<tuple|18.61|?>>
+    <associate|eq 18.390.035|<tuple|18.390|?>>
+    <associate|eq 18.391.035|<tuple|18.391|?>>
+    <associate|eq 18.392.035|<tuple|18.392|?>>
+    <associate|eq 18.393.035|<tuple|18.393|?>>
+    <associate|eq 18.394.035|<tuple|18.394|?>>
+    <associate|eq 18.395.035|<tuple|18.395|?>>
+    <associate|eq 18.396.035|<tuple|18.396|?>>
+    <associate|eq 18.397.035|<tuple|18.397|?>>
     <associate|eq 18.4.016|<tuple|18.7|?>>
     <associate|eq 18.40.016|<tuple|18.89|?>>
     <associate|eq 18.40.022|<tuple|18.62|?>>
@@ -12917,9 +13050,7 @@
     <associate|eq 18.84.018|<tuple|18.131|?>>
     <associate|eq 18.85.018|<tuple|18.132|?>>
     <associate|eq 18.86.018|<tuple|18.133|?>>
-    <associate|eq 18.89.035|<tuple|18.389|?>>
     <associate|eq 18.9.020|<tuple|18.14|?>>
-    <associate|eq18.386.035|<tuple|18.386|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|18.50|?>>
     <associate|f=g almost everywhere property|<tuple|18.178|?>>
