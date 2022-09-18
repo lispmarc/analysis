@@ -10511,12 +10511,6 @@
 
           <item><math|<around*|(|f+g|)><rsup|-><around*|(|x|)>\<leqslant\>f<rsup|-><around*|(|x|)>+g<rsup|-><around*|(|x|)>=<around*|(|f<rsup|->+g<rsup|->|)><around*|(|x|)>>
         </enumerate>
-
-        <item><math|\<forall\>x\<in\>X> we have
-        <math|f<rsup|+><around*|(|x|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>>
-
-        <item><math|\<forall\>x\<in\>X> we have
-        <math|f<rsup|-><around*|(|x\<leqslant\><around*|\||f<around*|(|x|)>|\|>|)>>
       </enumerate>
 
       \ 
@@ -10645,15 +10639,6 @@
             <tformat|<table|<row|<cell|<around*|(|f+g|)><rsup|-><around*|(|x|)>>|<cell|=>|<cell|-min<around*|(|<around*|(|f+g|)><around*|(|x|)>,0|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|f<rsup|-><around*|(|x|)>+g<rsup|-><around*|(|x|)>>>>>
           </eqnarray*>
         </enumerate>
-
-        <item>Let <math|x\<in\>X> then <math|f<around*|(|x|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>>
-        and <math|0\<leqslant\><around*|\||f<around*|(|x|)>|\|>> so that
-        <math|f<rsup|+><around*|(|x|)>=max<around*|(|f<around*|(|x|)>,0|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>>
-
-        <item>Let <math|x\<in\>X> then <math|-f<around*|(|x|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>\<Rightarrow\>-<around*|\||f<around*|(|x|)>|\|>\<leqslant\>f<around*|(|x|)>>
-        and <math|-<around*|\||f<around*|(|x|)>|\|>\<leqslant\>0> so that
-        <math|min<around*|(|f<around*|(|x|)>,0|)>\<geqslant\>-<around*|\||f<around*|(|x|)>|\|>>.
-        Hence <math|f<rsup|-><around*|(|x|)>=-min<around*|(|f<around*|(|x|)>,0|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>>
       </enumerate>
     </proof>
   </definition>
@@ -12468,70 +12453,8 @@
         </equation*>
       </enumerate>
 
-      <item>As <math|f=0> <math|\<mu\>>-almost everywhere we have
-
-      <\equation*>
-        \<exists\>N\<in\>\<cal-A\><text| with >\<mu\><around*|(|N|)>=0<text|
-        such that ><around*|{|x\<in\>X\|0\<less\>f<around*|(|x|)>|}>\<subseteq\>N
-      </equation*>
-
-      there exists a <math|N\<in\>\<cal-A\>> with
-      <math|\<mu\><around*|(|N|)>=0> such that
-      <math|<around*|{|x\<in\>X\|0\<less\>f<around*|(|x|)>|}>\<subseteq\>N>.
-      As <math|f\<in\>\<cal-S\><rsup|+><around*|(|X,\<cal-A\>|)>> there
-      exists by <reference|set of simple functions> a
-      <math|n\<in\>\<bbb-N\><rsub|0>>, a pairwise disjoint family
-      <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
-      and a <math|<around*|{|a<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\><around*|[|0,\<infty\>|]>>
-      such that <math|f=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>>>.
-      Take <math|I=<around*|{|i\<in\><around*|{|1,\<ldots\>,n|}>\|0\<less\>a<rsub|i>|}>\<subseteq\><around*|{|1,\<ldots\>,n|}>>
-      a finite set. Then we have either\ 
-
-      <\description>
-        <item*|<math|I=\<emptyset\>>>then
-        <math|\<forall\>i\<in\><around*|{|1,\<ldots\>n|}>> we have
-        <math|a<rsub|i>=0> so that\ 
-
-        <\equation*>
-          <big|int>f d\<mu\>=<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<mu\><around*|(|A<rsub|i>|)>=<big|sum><rsub|i=1><rsup|n>0\<cdot\>\<mu\><around*|(|A<rsub|i>|)>=0
-        </equation*>
-
-        <item*|<math|I\<neq\>\<emptyset\>>>then there exists a
-        <math|m\<in\>\<bbb-N\><rsub|0>> and a bijection
-        <math|\<beta\>:<around*|{|1,\<ldots\>,m|}>\<rightarrow\>I>. Let
-        <math|x\<in\>X> then\ 
-
-        <\eqnarray*>
-          <tformat|<table|<row|<cell|f<around*|(|x|)>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\>I>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\I>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>+<big|sum><rsub|i\<in\>I>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i\<in\>I>a<rsub|i>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|generalized
-          sums and bijections>>>>|<cell|<big|sum><rsub|i=1><rsup|m>a<rsub|\<beta\><around*|(|i|)>>\<cdot\>\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>>>>>
-        </eqnarray*>
-
-        proving that\ 
-
-        <\equation>
-          <label|eq 18.387.035>f=<big|sum><rsub|i=1><rsup|m>a<rsub|\<beta\><around*|(|i|)>>\<cdot\>\<cal-X\><rsub|A<rsub|\<beta\><around*|(|i|)>>><around*|(|x|)>
-        </equation>
-
-        If <math|i\<in\><around*|{|1,\<ldots\>,m|}>> then if
-        <math|x\<in\>A<rsub|\<beta\><around*|(|i|)>>> we have that
-        <math|f<around*|(|x|)>=a<rsub|\<beta\><around*|(|i|)>>\<gtr\>0>
-        proving that <math|A<rsub|\<beta\><around*|(|i|)>>\<subseteq\>N> so
-        that <math|\<mu\><around*|(|A<rsub|\<beta\><around*|(|i|)>>|)>\<leqslant\>\<mu\><around*|(|N|)>=0>
-
-        <\equation>
-          <label|eq 18.388.035>\<forall\>i\<in\><around*|{|1,\<ldots\>,m|}>
-          \<mu\><around*|(|A<rsub|\<beta\><around*|(|i|)>>|)>=0
-        </equation>
-
-        Finally\ 
-
-        <\eqnarray*>
-          <tformat|<table|<row|<cell|<big|int><rsup|S>f
-          d\<mu\>>|<cell|\<equallim\><rsub|<text|<reference|eq
-          18.387.035>>>>|<cell|<big|sum><rsub|i=1><rsup|m>\<alpha\><rsub|\<beta\><around*|(|i|)>>\<cdot\>\<mu\><around*|(|A<rsub|\<beta\><around*|(|i|)>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
-          18.388.035>>>>|<cell|<big|sum><rsub|i=1><rsup|m>\<alpha\><rsub|\<beta\><around*|(|i|)>>\<cdot\>0>>|<row|<cell|>|<cell|=>|<cell|0>>>>
-        </eqnarray*>
-      </description>
+      <item>As <math|f=0> <math|\<mu\>>-almost everywhere there exists a
+      <math|TODO>
     </enumerate>
 
     \;
@@ -12881,9 +12804,9 @@
 
   <\example>
     <label|integral of the null function>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
-    space then for <math|C<rsub|0>:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
-    defined by <math|C<rsub|0><around*|(|x|)>=0> we have that
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> then for
+    <math|C<rsub|0>:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> defined by
+    <math|C<rsub|0><around*|(|x|)>=0> we have that
     <math|<big|int><rsup|+>C<rsub|0> d\<mu\>>=0
   </example>
 
@@ -12906,42 +12829,6 @@
       integral extension>>>>|<cell|<big|int><rsup|S>C<rsub|0>
       d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|1>a<rsub|i>\<cdot\>\<mu\><around*|(|A<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|1>\<cdot\>\<mu\><around*|(|A<rsub|1>|)>>>|<row|<cell|>|<cell|=>|<cell|0\<cdot\>\<mu\><around*|(|X|)>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
     </eqnarray*>
-  </proof>
-
-  <\example>
-    <label|integral of everywhere zero function>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measiure
-    space and <math|f\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f=0> <math|\<mu\>>-almost everywhere then
-    <math|<big|int>f d\<mu\>=0>
-  </example>
-
-  <\proof>
-    As <math|f=0> <math|\<mu\>>-almost everywhere there exists a
-    <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> such that
-    <math|<around*|{|x\<in\>X\|0\<less\>f<around*|(|x|)>|}>\<subseteq\>N>.
-    Let now <math|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> be such
-    that <math|g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>> then if
-    <math|x\<in\><around*|{|x\<in\>X\|0\<less\>g<around*|(|x|)>|}>> we have
-    <math|0\<less\>g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>> so that
-    <math|x\<in\><around*|{|x\<in\>X\|0\<less\>f<around*|(|x|)>|}>\<subseteq\>N>.
-    Hence we have that <math|<around*|{|x\<in\>X\|0\<less\>g<around*|(|x|)>|}>\<subseteq\>N>
-    proving that <math|g=0> <math|\<mu\>>-almost everywhere. Applying then
-    <reference|simple functions integral properties (1)> proves that
-    <math|<big|int><rsup|+>g d\<mu\>=0>. So
-
-    <\equation*>
-      <around*|{|<big|int>g d\<mu\>\|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]><text|
-      with >\<forall\>x\<in\>X g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>|}>=<around*|{|0|}>
-    </equation*>
-
-    which finally gives\ 
-
-    <\equation*>
-      <big|int><rsup|+>f d\<mu\>=sup<around*|(|<big|int>g
-      d\<mu\>\|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]><text| with
-      >\<forall\>x\<in\>X g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>|)>=0
-    </equation*>
   </proof>
 
   \ 
@@ -13327,8 +13214,6 @@
     </enumerate>
   </proof>
 
-  <subsection|Integral of measurable functions>
-
   Now we can define the integral on functions that can have positive or
   negative values. First note that if <math|f\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
   then by <reference|measurable functions properties (5)> we have that
@@ -13680,8 +13565,6 @@
     \;
   </proof>
 
-  \;
-
   The following proposition shows that <math|<big|int>> is a extension of
   <math|<big|int><rsup|+>>
 
@@ -13734,60 +13617,6 @@
       d\<mu\>-0>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsup|+>f d\<mu\>>>>>
     </eqnarray*>
   </proof>
-
-  <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
-    measure space and <math|f\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f=0> <math|\<mu\>>-almast everywhere then <math|f> is
-    <math|\<mu\>>-integrable and <math|<big|int>f d\<mu\>=0>
-  </proposition>
-
-  <\proof>
-    As <math|f=0> <math|\<mu\>>-almost everywhere we have\ 
-
-    <\equation*>
-      \<exists\>N\<in\>\<cal-A\><text| with >\<mu\><around*|(|N|)>=0<text|
-      such that ><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>0|}>\<subseteq\>N
-    </equation*>
-
-    If <math|x\<in\><around*|{|x\<in\>X\|f<rsup|+><around*|(|x|)>\<neq\>0|}>>
-    then <math|max<around*|(|f<around*|(|x|)>,0|)>\<neq\>0> so that
-    <math|f<around*|(|x|)>\<neq\>0> proving that
-    <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>0|}>\<subseteq\>N>.
-    Hence <math|\<mu\><around*|(|<around*|{|x\<in\>X\|f<rsup|+><around*|(|x|)>\<neq\>0|}>|)>\<leqslant\>\<mu\><around*|(|N|)>=0>
-    from which it follows that <math|f<rsup|+>=0> <math|\<mu\>>-almost
-    everywhere. From <reference|integral of everywhere zero function> we have
-    that\ 
-
-    <\equation>
-      <label|eq 18.428.035><big|int><rsup|+>f<rsup|+>
-      d\<mu\>=0\<less\>\<infty\>
-    </equation>
-
-    If <math|x\<in\><around*|{|x\<in\>X\|f<rsup|-><around*|(|x|)>\<neq\>0|}>>
-    then <math|-min<around*|(|f<around*|(|x|)>,0|)>\<neq\>0> so that
-    <math|f<around*|(|x|)>\<neq\>0> proving that
-    <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>0|}>\<subseteq\>N>.
-    Hence <math|\<mu\><around*|(|<around*|{|x\<in\>X\|f<rsup|-><around*|(|x|)>\<neq\>0|}>|)>\<leqslant\>\<mu\><around*|(|N|)>=0>
-    from which it follows that <math|f<rsup|->=0> <math|\<mu\>>-almost
-    everywhere. From <reference|integral of everywhere zero function> we have
-    that
-
-    <\equation>
-      <label|eq 18.429.035><big|int><rsup|+>f<rsup|->
-      d\<mu\>=0\<less\>\<infty\>
-    </equation>
-
-    From <reference|eq 18.428.035> and <reference|eq 18.429.035> it follows
-    that\ 
-
-    <\equation*>
-      f<text| is >\<mu\><text|-integrable and ><big|int>f
-      d\<mu\>=<big|int><rsup|+>f<rsup|+> d\<mu\>-<big|int><rsup|+>f<rsup|->d\<mu\>=0-0=0
-    </equation*>
-  </proof>
-
-  <subsection|Properties of the integral>
 
   <\lemma>
     <label|integral difference>Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>>
@@ -13865,8 +13694,8 @@
   </proof>
 
   <\proposition>
-    <label|integral properties (10)>Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>>
-    be a measure space and let <math|f,g\<in\>\<cal-L\><rsup|1>> [real valued
+    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
+    measure space and let <math|f,g\<in\>\<cal-L\><rsup|1>> [real valued
     <math|\<mu\>>-integrable functions] then\ 
 
     <\enumerate>
@@ -14100,68 +13929,9 @@
     </enumerate>
   </proof>
 
-  <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
-    measure space and <math|f\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    then <math|f> is <math|\<mu\>>-integrable if and only if
-    <math|<around*|\||f|\|>> is <math|\<mu\>>-integrable. If <math|f> or
-    <math|<around*|\||f|\|>> is <math|\<mu\>>-integrable then
-    <math|<around*|\||<big|int>f d\<mu\>|\|>\<leqslant\><big|int><around*|\||f|\|>
-    d\<mu\>>
-  </proposition>
+  \;
 
-  <\proof>
-    \ First we prove the equivalence:
-
-    <\description>
-      <item*|<math|\<Rightarrow\>>>If <math|f> is <math|\<mu\>>-integrable
-      then <math|<big|int><rsup|+>f<rsup|+>d\<mu\>\<less\>\<infty\>> and
-      <math|<big|int><rsup|+>f<rsup|-> d\<mu\>\<less\>\<infty\>> so that by
-      <reference|integrability of non negative functions (2)>
-      <math|f<rsup|+><infix-and>f<rsup|->> are <math|\<mu\>>-integrable with
-      <math|<big|int><rsup|+>f<rsup|+>d\<mu\>=<big|int>f<rsup|+> d\<mu\>> and
-      <math|<big|int><rsup|+>f<rsup|->d\<mu\>=<big|int>f<rsup|->d\<mu\>>. As
-      <math|<around*|\||f|\|>\<equallim\><rsub|<text|<reference|\|f(x)\| as
-      f+ f->>>f<rsup|+>+f<rsup|->> it follows from <reference|integral
-      properties (10)> we have that <math|<around*|\||f|\|>> is
-      <math|\<mu\>>-integrable.\ 
-
-      <item*|<math|\<Leftarrow\>>>Assume that <math|<around*|\||f|\|>> is
-      <math|\<mu\>>-integrable then as <math|<around*|\||f|\|>> is non
-      negative we have by <reference|integrability of non negative functions
-      (2)> that <math|<big|int><rsup|+><around*|\||f|\|>d\<mu\>\<less\>\<infty\>>.
-      If <math|x\<in\>X> then by <reference|\|f(x)\| as f+ f-> we have
-      <math|f<rsup|+><around*|(|x|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>>
-      and <math|f<rsup|-><around*|(|x|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>>,
-      so using <reference|integral of positive function properties (2)> we
-      have that <math|<big|int><rsup|+>f<rsup|+>d\<mu\>\<leqslant\><big|int><rsup|+><around*|\||f|\|>d\<mu\>\<less\>0>
-      and <math|<big|int><rsup|+>f<rsup|->d\<mu\>\<leqslant\><big|int><rsup|+><around*|\||f|\|>d\<mu\>\<less\>\<infty\>>,
-      proving that <math|f> is <math|\<mu\>>-integrable.\ 
-    </description>
-
-    Finally\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<around*|\||<big|int>f
-      d\<mu\>|\|>>|<cell|=>|<cell|<around*|\||<big|int><rsup|+>f<rsup|+>d\<mu\>-<big|int><rsup|+>f<rsup|->d\<mu\>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<around*|\||<big|int><rsup|+>f<rsup|+>d\<mu\>|\|>+<around*|\||<big|int><rsup|+>f<rsup|->d\<mu\>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|int><rsup|+>f<rsup|+>d\<mu\>+<big|int><rsup|+>f<rsup|->d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|integral
-      of positive function properties (2)>>>>|<cell|<big|int><rsup|+><around*|(|f<rsup|+>+f<rsup|->|)>
-      d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsup|+><around*|\||f|\|>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|
-      <reference|integrability of non negative functions
-      (2)>>>>|<cell|<big|int><around*|\||f|\|> d\<mu\>>>>>
-    </eqnarray*>
-  </proof>
-
-  <\proposition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
-    measure space and let <math|f,g\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f=g> <math|\<mu\>>-almost everywhere. If either <math|f>
-    is <math|\<mu\>>-integrable then <math|g> is <math|\<mu\>>-integrable and
-    <math|<big|int>f d\<mu\>=<big|int>g d\<mu\>>
-  </proposition>
-
-  <\proof>
-    \;
-  </proof>
+  \;
 
   \ 
 
@@ -14307,16 +14077,14 @@
     <associate|auto-60|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>|?>>
     <associate|auto-61|<tuple|<with|mode|<quote|math>|<big|int><rsup|+>f
     d\<mu\>>|?>>
-    <associate|auto-62|<tuple|18.6.3|?>>
-    <associate|auto-63|<tuple|integrable functions on a measure space|?>>
+    <associate|auto-62|<tuple|integrable functions on a measure space|?>>
+    <associate|auto-63|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    d\<mu\>>|?>>
     <associate|auto-64|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
     d\<mu\>>|?>>
-    <associate|auto-65|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    <associate|auto-65|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>|?>>
+    <associate|auto-66|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
     d\<mu\>>|?>>
-    <associate|auto-66|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>|?>>
-    <associate|auto-67|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
-    d\<mu\>>|?>>
-    <associate|auto-68|<tuple|18.6.4|?>>
     <associate|auto-7|<tuple|Borel algebra|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
     <associate|auto-9|<tuple|18.2.1|?>>
@@ -14633,57 +14401,54 @@
     <associate|eq 18.382.035.3|<tuple|18.382|?>>
     <associate|eq 18.384.035.3|<tuple|18.384|?>>
     <associate|eq 18.385.035|<tuple|18.385|?>>
-    <associate|eq 18.386.035|<tuple|18.389|?>>
+    <associate|eq 18.386.035|<tuple|18.387|?>>
     <associate|eq 18.386.035.4|<tuple|18.386|?>>
-    <associate|eq 18.387.035|<tuple|18.387|?>>
-    <associate|eq 18.388.035|<tuple|18.391|?>>
-    <associate|eq 18.389.035|<tuple|18.392|?>>
+    <associate|eq 18.388.035|<tuple|18.389|?>>
+    <associate|eq 18.389.035|<tuple|18.390|?>>
     <associate|eq 18.39.016|<tuple|18.87|?>>
     <associate|eq 18.39.022|<tuple|18.61|?>>
-    <associate|eq 18.390.035|<tuple|18.393|?>>
-    <associate|eq 18.391.035|<tuple|18.394|?>>
-    <associate|eq 18.392.035|<tuple|18.395|?>>
-    <associate|eq 18.393.035|<tuple|18.396|?>>
-    <associate|eq 18.394.035|<tuple|18.397|?>>
-    <associate|eq 18.395.035|<tuple|18.398|?>>
-    <associate|eq 18.396.035|<tuple|18.399|?>>
-    <associate|eq 18.397.035|<tuple|18.400|?>>
-    <associate|eq 18.398.035|<tuple|18.401|?>>
-    <associate|eq 18.399.035|<tuple|18.402|?>>
+    <associate|eq 18.390.035|<tuple|18.391|?>>
+    <associate|eq 18.391.035|<tuple|18.392|?>>
+    <associate|eq 18.392.035|<tuple|18.393|?>>
+    <associate|eq 18.393.035|<tuple|18.394|?>>
+    <associate|eq 18.394.035|<tuple|18.395|?>>
+    <associate|eq 18.395.035|<tuple|18.396|?>>
+    <associate|eq 18.396.035|<tuple|18.397|?>>
+    <associate|eq 18.397.035|<tuple|18.398|?>>
+    <associate|eq 18.398.035|<tuple|18.399|?>>
+    <associate|eq 18.399.035|<tuple|18.400|?>>
     <associate|eq 18.4.016|<tuple|18.7|?>>
     <associate|eq 18.40.016|<tuple|18.89|?>>
     <associate|eq 18.40.022|<tuple|18.62|?>>
-    <associate|eq 18.400.035|<tuple|18.403|?>>
-    <associate|eq 18.401.035|<tuple|18.404|?>>
-    <associate|eq 18.403.35|<tuple|18.405|?>>
-    <associate|eq 18.404.035|<tuple|18.406|?>>
-    <associate|eq 18.405.35|<tuple|18.407|?>>
-    <associate|eq 18.406.035|<tuple|18.408|?>>
-    <associate|eq 18.407.035|<tuple|18.409|?>>
-    <associate|eq 18.408.035|<tuple|18.410|?>>
-    <associate|eq 18.409.035|<tuple|18.411|?>>
+    <associate|eq 18.400.035|<tuple|18.401|?>>
+    <associate|eq 18.401.035|<tuple|18.402|?>>
+    <associate|eq 18.403.35|<tuple|18.403|?>>
+    <associate|eq 18.404.035|<tuple|18.404|?>>
+    <associate|eq 18.405.35|<tuple|18.405|?>>
+    <associate|eq 18.406.035|<tuple|18.406|?>>
+    <associate|eq 18.407.035|<tuple|18.407|?>>
+    <associate|eq 18.408.035|<tuple|18.408|?>>
+    <associate|eq 18.409.035|<tuple|18.409|?>>
     <associate|eq 18.41.016|<tuple|18.90|?>>
     <associate|eq 18.41.022|<tuple|18.63|?>>
-    <associate|eq 18.410.035|<tuple|18.413|?>>
-    <associate|eq 18.410.35.1|<tuple|18.412|?>>
-    <associate|eq 18.412.035|<tuple|18.414|?>>
-    <associate|eq 18.413.035|<tuple|18.415|?>>
-    <associate|eq 18.414.035|<tuple|18.418|?>>
-    <associate|eq 18.415.035|<tuple|18.419|?>>
-    <associate|eq 18.416.035|<tuple|18.420|?>>
-    <associate|eq 18.417.035|<tuple|18.421|?>>
-    <associate|eq 18.418.035|<tuple|18.422|?>>
-    <associate|eq 18.419.035|<tuple|18.423|?>>
+    <associate|eq 18.410.035|<tuple|18.411|?>>
+    <associate|eq 18.410.35.1|<tuple|18.410|?>>
+    <associate|eq 18.412.035|<tuple|18.412|?>>
+    <associate|eq 18.413.035|<tuple|18.413|?>>
+    <associate|eq 18.414.035|<tuple|18.414|?>>
+    <associate|eq 18.415.035|<tuple|18.415|?>>
+    <associate|eq 18.416.035|<tuple|18.416|?>>
+    <associate|eq 18.417.035|<tuple|18.417|?>>
+    <associate|eq 18.418.035|<tuple|18.418|?>>
+    <associate|eq 18.419.035|<tuple|18.419|?>>
     <associate|eq 18.42.016|<tuple|18.91|?>>
     <associate|eq 18.42.022|<tuple|18.64|?>>
-    <associate|eq 18.420.035|<tuple|18.424|?>>
-    <associate|eq 18.421.035|<tuple|18.425|?>>
-    <associate|eq 18.422.035|<tuple|18.426|?>>
-    <associate|eq 18.423.035|<tuple|18.427|?>>
-    <associate|eq 18.424.035|<tuple|18.428|?>>
-    <associate|eq 18.425.035|<tuple|18.429|?>>
-    <associate|eq 18.428.035|<tuple|18.416|?>>
-    <associate|eq 18.429.035|<tuple|18.417|?>>
+    <associate|eq 18.420.035|<tuple|18.420|?>>
+    <associate|eq 18.421.035|<tuple|18.421|?>>
+    <associate|eq 18.422.035|<tuple|18.422|?>>
+    <associate|eq 18.423.035|<tuple|18.423|?>>
+    <associate|eq 18.424.035|<tuple|18.424|?>>
+    <associate|eq 18.425.035|<tuple|18.425|?>>
     <associate|eq 18.43.016|<tuple|18.92|?>>
     <associate|eq 18.43.022|<tuple|18.65|?>>
     <associate|eq 18.44.016|<tuple|18.93|?>>
@@ -14753,7 +14518,7 @@
     <associate|eq 18.61.023|<tuple|18.83|?>>
     <associate|eq 18.62.016|<tuple|18.120|?>>
     <associate|eq 18.62.032|<tuple|18.84|?>>
-    <associate|eq 18.67.035|<tuple|18.390|?>>
+    <associate|eq 18.67.035|<tuple|18.388|?>>
     <associate|eq 18.74.018|<tuple|18.121|?>>
     <associate|eq 18.75.018|<tuple|18.122|?>>
     <associate|eq 18.76.018|<tuple|18.123|?>>
@@ -14786,20 +14551,18 @@
     <associate|induced outer inner measure|<tuple|18.114|?>>
     <associate|induced outer measure is a outer measure|<tuple|18.116|?>>
     <associate|inner/outer regularity|<tuple|18.118|?>>
-    <associate|integrability of function with domain A|<tuple|18.207|?>>
-    <associate|integrability of function with domain X on A|<tuple|18.204|?>>
-    <associate|integrability of non negative functions (2)|<tuple|18.211|?>>
-    <associate|integrability where X is A|<tuple|18.210|?>>
-    <associate|integrable functions|<tuple|18.203|?>>
-    <associate|integral difference|<tuple|18.213|?>>
-    <associate|integral of everywhere zero function|<tuple|18.199|?>>
-    <associate|integral of positive function properties (2)|<tuple|18.202|?>>
-    <associate|integral of positive functions (1)|<tuple|18.201|?>>
+    <associate|integrability of function with domain A|<tuple|18.206|?>>
+    <associate|integrability of function with domain X on A|<tuple|18.203|?>>
+    <associate|integrability of non negative functions (2)|<tuple|18.210|?>>
+    <associate|integrability where X is A|<tuple|18.209|?>>
+    <associate|integrable functions|<tuple|18.202|?>>
+    <associate|integral difference|<tuple|18.211|?>>
+    <associate|integral of positive function properties (2)|<tuple|18.201|?>>
+    <associate|integral of positive functions (1)|<tuple|18.200|?>>
     <associate|integral of positive functions properties
-    (1)|<tuple|18.200|?>>
+    (1)|<tuple|18.199|?>>
     <associate|integral of positive measurable functions|<tuple|18.195|?>>
     <associate|integral of the null function|<tuple|18.198|?>>
-    <associate|integral properties (10)|<tuple|18.214|?>>
     <associate|intersection of a class of Dynkin classes is a Dynkin
     class|<tuple|18.129|?>>
     <associate|intersection of sigma algebras is a sigma
@@ -14810,7 +14573,7 @@
     <associate|liminf or limsup of functions|<tuple|18.163|?>>
     <associate|lower half open spaces|<tuple|18.53|?>>
     <associate|lower half open spaces are open|<tuple|18.54|?>>
-    <associate|measurability of extension of a function|<tuple|18.208|?>>
+    <associate|measurability of extension of a function|<tuple|18.207|?>>
     <associate|measurable extended function space|<tuple|18.145|?>>
     <associate|measurable function|<tuple|18.137|?>>
     <associate|measurable function and limit|<tuple|18.179|?>>
