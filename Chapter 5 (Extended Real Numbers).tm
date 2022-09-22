@@ -4781,6 +4781,21 @@
   </proof>
 
   <\corollary>
+    <label|limit n to infinite>Let <math|<around*|{|x<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    be defined by <math|x<rsub|n>=n> then
+    <math|<below|lim|n-\<less\>\<infty\>>x<rsub|n>> exists and is equal to
+    <math|\<infty\>>. In there words <math|<below|lim|n\<rightarrow\>\<infty\>>n=\<infty\>>
+  </corollary>
+
+  <\proof>
+    Let <math|C\<in\>\<bbb-R\><rsub|+>> then by <reference|consequence of the
+    archimedean property for the reals> there exist a
+    <math|n\<in\>\<bbb-N\><rsub|0>> such that <math|C\<less\>N> which by the
+    previous theorem <reference|alternative definition of limit in the
+    extented reals> proves that <math|<below|lim|n\<rightarrow\>\<infty\>>x<rsub|i>=\<infty\>>
+  </proof>
+
+  <\corollary>
     <label|limit and absolut value>Let <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
     be a sequence of extended reals with <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=x>
     then <math|<below|lim|i\<rightarrow\>\<infty\>><around*|\||x<rsub|i>|\|>=<around*|\||x|\|>>
@@ -9031,13 +9046,13 @@
     <associate|Power series|<tuple|18.2|677>>
     <associate|Young's inequality|<tuple|18.42|694>>
     <associate|a serie of extented positive reals converges always and is
-    independent of the order|<tuple|17.99|666>>
+    independent of the order|<tuple|17.100|666>>
     <associate|absolute value in the extended reals|<tuple|17.32|620>>
     <associate|absolute value on the extended real
     properties|<tuple|17.34|620>>
     <associate|alternative definition of limit in the extented
     reals|<tuple|17.72|653>>
-    <associate|associativity of series of extended reals|<tuple|17.103|670>>
+    <associate|associativity of series of extended reals|<tuple|17.104|670>>
     <associate|associativity of the product of extnded reals|<tuple|17.21|?>>
     <associate|auto-1|<tuple|17|607>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|621>>
@@ -9071,7 +9086,6 @@
     <associate|auto-34|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|677>>
     <associate|auto-35|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|677>>
     <associate|auto-36|<tuple|<with|mode|<quote|math>|\<pi\>>|677>>
-    <associate|auto-37|<tuple|<with|mode|<quote|math>|\<pi\>>|678>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|sup<rsub|\<bbb-R\>>>|609>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|inf<rsub|\<bbb-R\>>>|609>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|sup>|609>>
@@ -9093,7 +9107,7 @@
     <associate|convergence of powerseries (1)|<tuple|18.6|677>>
     <associate|convergence radius|<tuple|18.8|678>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.105|672>>
+    sum|<tuple|17.106|672>>
     <associate|d'Alembert|<tuple|18.17|681>>
     <associate|definition of limit in the extented reals|<tuple|17.62|651>>
     <associate|density of the extented reals|<tuple|17.9|609>>
@@ -9144,9 +9158,6 @@
     <associate|eq 17.2.25.001|<tuple|17.50|667>>
     <associate|eq 17.2.26.001|<tuple|17.51|668>>
     <associate|eq 17.2.27.001|<tuple|17.52|668>>
-    <associate|eq 17.2.40.001|<tuple|17.64|674>>
-    <associate|eq 17.2.41.001|<tuple|17.65|674>>
-    <associate|eq 17.2.42.001|<tuple|17.66|674>>
     <associate|eq 17.2.514|<tuple|18.8|682>>
     <associate|eq 17.2.515|<tuple|18.2|677>>
     <associate|eq 17.20.001|<tuple|17.22|?>>
@@ -9204,34 +9215,27 @@
     <associate|exp(z)|<tuple|18.19|682>>
     <associate|exponential as power|<tuple|18.30|688>>
     <associate|extented reals|<tuple|17.2|607>>
-    <associate|finite infinite sum means finite terms|<tuple|17.96|665>>
+    <associate|finite infinite sum means finite terms|<tuple|17.97|665>>
     <associate|finite sum of constants in the extented
-    reals|<tuple|17.90|664>>
-    <associate|finite sum of denumerable sums|<tuple|17.102|669>>
-    <associate|finite sum of extented reals|<tuple|17.83|661>>
-    <associate|finite sum of extented reals properties|<tuple|17.89|664>>
-    <associate|finite sum of extented reals starting at n|<tuple|17.84|661>>
+    reals|<tuple|17.91|664>>
+    <associate|finite sum of denumerable sums|<tuple|17.103|669>>
+    <associate|finite sum of extented reals|<tuple|17.84|661>>
+    <associate|finite sum of extented reals properties|<tuple|17.90|664>>
+    <associate|finite sum of extented reals starting at n|<tuple|17.85|661>>
     <associate|finite sum of extented reals written as infinite
-    sum|<tuple|17.97|665>>
+    sum|<tuple|17.98|665>>
     <associate|finite sum of non negative extented reals is non
-    negative|<tuple|17.85|661>>
+    negative|<tuple|17.86|661>>
     <associate|general strict positive powers|<tuple|18.38|692>>
     <associate|generalized power|<tuple|18.35|690>>
-    <associate|generalized sequence of extended and remove
-    zeroes|<tuple|17.110|675>>
-    <associate|generalized sequence of extended reals and
-    zeroes|<tuple|17.109|674>>
-    <associate|generalized serie of extended positive
-    numbers|<tuple|17.108|674>>
-    <associate|generalized sum of the extended reals|<tuple|17.107|673>>
     <associate|gnerating basis vor the extended reals|<tuple|17.37|?>>
     <associate|increasing (decreasing) sequence|<tuple|17.47|646>>
     <associate|increasing (decreasing) sequence converges|<tuple|17.49|646>>
     <associate|independence of limit inf and limit sup of start
     index|<tuple|17.52|648>>
     <associate|inequality of Abel|<tuple|18.14|680>>
-    <associate|interchange infinite and finite sum|<tuple|17.101|668>>
-    <associate|lemma 15.75|<tuple|17.78|660>>
+    <associate|interchange infinite and finite sum|<tuple|17.102|668>>
+    <associate|lemma 15.75|<tuple|17.79|660>>
     <associate|lemma 17.2|<tuple|18.16|681>>
     <associate|lemma 17.38|<tuple|18.41|693>>
     <associate|lim inf -xn|<tuple|17.57|648>>
@@ -9242,14 +9246,15 @@
     <associate|lim sup xn+x|<tuple|17.56|648>>
     <associate|liminf and limsup properties for sum
     product|<tuple|17.59|649>>
-    <associate|limit and absolut value|<tuple|17.74|655>>
+    <associate|limit and absolut value|<tuple|17.75|655>>
     <associate|limit and translation of indexes|<tuple|17.67|?>>
-    <associate|limit n|<tuple|17.80|660>>
-    <associate|limit of 1/f|<tuple|17.79|660>>
+    <associate|limit n|<tuple|17.81|660>>
+    <associate|limit n to infinite|<tuple|17.74|?>>
+    <associate|limit of 1/f|<tuple|17.80|660>>
     <associate|limit of constant extented real|<tuple|17.66|651>>
-    <associate|limit of finite sums in the extented reals|<tuple|17.88|662>>
+    <associate|limit of finite sums in the extented reals|<tuple|17.89|662>>
     <associate|limit xi+x|<tuple|17.68|651>>
-    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.81|660>>
+    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.82|660>>
     <associate|notation for limit of increasing/decreasing
     sequences|<tuple|17.71|653>>
     <associate|open sets and addition scalar
@@ -9263,23 +9268,23 @@
     <associate|properties of general strict power|<tuple|18.37|690>>
     <associate|properties of log|<tuple|18.34|689>>
     <associate|properties of the limit in the extented
-    reals|<tuple|17.75|655>>
-    <associate|series and product with a scalar|<tuple|17.93|665>>
-    <associate|series are increasing|<tuple|17.86|661>>
-    <associate|series of extended reals and zeroes|<tuple|17.100|666>>
+    reals|<tuple|17.76|655>>
+    <associate|series and product with a scalar|<tuple|17.94|665>>
+    <associate|series are increasing|<tuple|17.87|661>>
+    <associate|series of extended reals and zeroes|<tuple|17.101|666>>
     <associate|series of positive extented reals is
-    increasing|<tuple|17.92|665>>
+    increasing|<tuple|17.93|665>>
     <associate|series of positive extented reals is increasing
-    (1)|<tuple|17.91|?>>
+    (1)|<tuple|17.92|?>>
     <associate|sets for basis of topology on the extented
     reals|<tuple|17.36|621>>
     <associate|sum and order relation in the extented
-    reals|<tuple|17.95|665>>
-    <associate|sum from -infinity to infinity|<tuple|17.106|673>>
-    <associate|sum of extented reals and product|<tuple|17.87|661>>
+    reals|<tuple|17.96|665>>
+    <associate|sum from -infinity to infinity|<tuple|17.107|673>>
+    <associate|sum of extented reals and product|<tuple|17.88|661>>
     <associate|sum of extented reals is indepenent of order the
-    reals|<tuple|17.98|665>>
-    <associate|sum of series in the extended reals|<tuple|17.94|?>>
+    reals|<tuple|17.99|665>>
+    <associate|sum of series in the extended reals|<tuple|17.95|?>>
     <associate|sup and inf in real and extended reals|<tuple|17.15|?>>
     <associate|sup of set and sum|<tuple|17.30|618>>
     <associate|sup,inf sum of monotone sequences|<tuple|17.58|649>>
@@ -9348,27 +9353,27 @@
 
       <tuple|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>>|<pageref|auto-20>>
 
-      <tuple|<tuple|convergence domain>|<pageref|auto-25>>
+      <tuple|<tuple|convergence domain>|<pageref|auto-24>>
 
-      <tuple|<tuple|absolute convergence domain>|<pageref|auto-26>>
+      <tuple|<tuple|absolute convergence domain>|<pageref|auto-25>>
 
-      <tuple|<tuple|convergence radius>|<pageref|auto-27>>
+      <tuple|<tuple|convergence radius>|<pageref|auto-26>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>>|<pageref|auto-28>>
+      <tuple|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>>|<pageref|auto-27>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>>|<pageref|auto-30>>
+      <tuple|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>>|<pageref|auto-29>>
 
-      <tuple|<tuple|Euler's number>|<pageref|auto-32>>
+      <tuple|<tuple|Euler's number>|<pageref|auto-31>>
 
-      <tuple|<tuple|Napierian logarithm>|<pageref|auto-33>>
+      <tuple|<tuple|Napierian logarithm>|<pageref|auto-32>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|log>>|<pageref|auto-34>>
+      <tuple|<tuple|<with|mode|<quote|math>|log>>|<pageref|auto-33>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>>|<pageref|auto-35>>
+      <tuple|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>>|<pageref|auto-34>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>>|<pageref|auto-36>>
+      <tuple|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>>|<pageref|auto-35>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<pi\>>>|<pageref|auto-37>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<pi\>>>|<pageref|auto-36>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|17<space|2spc>The
@@ -9391,28 +9396,24 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-19>>
 
-      <with|par-left|<quote|1tab>|17.3.2<space|2spc>Generalized series of
-      positive extened reals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>
-
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>The
       exponential function> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22><vspace|0.5fn>
+      <no-break><pageref|auto-21><vspace|0.5fn>
 
       18.1<space|2spc>Power series <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-23>
+      <no-break><pageref|auto-22>
 
       <with|par-left|<quote|1tab>|18.1.1<space|2spc>Definition and
       convergence domains <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-24>>
+      <no-break><pageref|auto-23>>
 
       <with|par-left|<quote|1tab>|18.1.2<space|2spc>Convergence criteria
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>
+      <no-break><pageref|auto-28>>
 
       <with|par-left|<quote|1tab>|18.1.3<space|2spc>Differentiation of power
       series <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-30>>
     </associate>
   </collection>
 </auxiliary>
