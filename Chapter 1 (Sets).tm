@@ -23817,7 +23817,7 @@
   </note>
 
   <\definition>
-    If <math|z=<around*|(|x,y|)>\<in\>\<bbb-C\>> we have
+    <label|Re,Img>If <math|z=<around*|(|x,y|)>\<in\>\<bbb-C\>> we have
     <math|Re<around*|(|z|)>=<around*|(|x,0|)>\<in\>\<bbb-R\><rsub|\<bbb-C\>>>
     and <math|Img<around*|(|z|)>=<around*|(|y,0|)>\<in\>\<bbb-R\><rsub|\<bbb-C\>>>
   </definition>
@@ -24181,8 +24181,9 @@
   <section|Norm on <math|\<bbb-C\>>>
 
   <\definition>
-    <index|complex norm>Given <math|<around*|(|x,y|)>\<in\>\<bbb-C\>> we
-    define <math|<around*|\||<around*|(|x,y|)>|\|>=<around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>\<in\>\<bbb-R\><rsub|\<bbb-C\>>>
+    <label|norm on the complex numbers><index|complex norm>Given
+    <math|<around*|(|x,y|)>\<in\>\<bbb-C\>> we define
+    <math|<around*|\||<around*|(|x,y|)>|\|>=<around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>\<in\>\<bbb-R\><rsub|\<bbb-C\>>>
     (which is defined as <math|0\<leqslant\>x<rsup|2>+y<rsup|2>\<in\>\<bbb-R\>>)
     and this is called the <with|font-series|bold|complex norm>
   </definition>
@@ -26052,6 +26053,7 @@
     <associate|QC is not conditional complete|<tuple|9.50|218>>
     <associate|R is isomorph to R embedded in the reals|<tuple|9.14|209>>
     <associate|R^2 is bijective with C|<tuple|9.39|215>>
+    <associate|Re,Img|<tuple|9.17|?>>
     <associate|Recursion step form|<tuple|4.26|100>>
     <associate|Sn|<tuple|5.15|113>>
     <associate|The natural numbers are fully ordered|<tuple|4.53|105>>
@@ -26752,6 +26754,7 @@
     <associate|neutral element of naturals|<tuple|4.29|101>>
     <associate|non zero element is a successor|<tuple|4.17|95>>
     <associate|norm in real space|<tuple|8.65|202>>
+    <associate|norm on the complex numbers|<tuple|9.32|?>>
     <associate|notation for a tuple|<tuple|2.88|53>>
     <associate|null function|<tuple|2.11|?>>
     <associate|number of elements in a finite set|<tuple|5.42|122>>

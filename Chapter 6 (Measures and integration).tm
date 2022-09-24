@@ -15802,9 +15802,28 @@
     </equation*>
   </proof>
 
+  <subsection|Integral of complex functions>
+
+  Using the defintion of the complex numbers [see <reference|complex
+  numbers>] we see that as a set <math|\<bbb-C\>> is defined as
+  <math|\<bbb-R\>\<times\>\<bbb-R\>=\<bbb-R\><rsup|2>>. Further as all the
+  norms on <math|\<bbb-C\>> are equivalent [see <reference|norms in R and C
+  are equivalent>] and generate the same topology, so the topology based on
+  the maximum norm <math|\<cal-T\><rsub|\<bbb-R\><rsup|2>>> is also the
+  canonical topology <math|\<cal-T\><rsub|\<bbb-C\>>> on <math|\<bbb-C\>>
+  based on the the complex norm <math|<around*|\||z|\|>=<sqrt|Re<around*|(|z|)><rsup|2>+Img<around*|(|z|)><rsup|2>>>
+  [see <reference|norm on the complex numbers>, <reference|Re,Img>]. Hence we
+  have\ 
+
+  <\definition>
+    The measurable space for the complex numbers iis defined by \ as
+    <math|<around*|\<langle\>|\<bbb-C\>,\<cal-B\><around*|[|\<bbb-C\>|]>|\<rangle\>>>
+    <math|>where <math|\<bbb-C\>=\<bbb-R\><rsup|2><infix-and>\<cal-B\><around*|[|\<bbb-C\>|]>=\<sigma\><around*|[|\<cal-T\><rsub|\<bbb-C\>>|]>=\<sigma\><around*|[|\<cal-T\><rsub|\<bbb-R\><rsup|2>>|]>=\<cal-B\><around*|[|\<bbb-R\><rsup|2>|]>>
+  </definition>
+
   \;
 
-  \ 
+  \;
 
   \;
 
@@ -15967,6 +15986,7 @@
     <associate|auto-68|<tuple|18.6.4|?>>
     <associate|auto-69|<tuple|18.6.5|?>>
     <associate|auto-7|<tuple|Borel algebra|?>>
+    <associate|auto-70|<tuple|18.6.6|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
     <associate|auto-9|<tuple|18.2.1|?>>
     <associate|borel algebra on the extebded reals (1)|<tuple|18.30|?>>
@@ -16391,7 +16411,6 @@
     <associate|eq 18.471.036|<tuple|18.470|?>>
     <associate|eq 18.472.036|<tuple|18.472|?>>
     <associate|eq 18.473.036|<tuple|18.473|?>>
-    <associate|eq 18.474.036|<tuple|18.474|?>>
     <associate|eq 18.48.016|<tuple|18.97|?>>
     <associate|eq 18.48.022|<tuple|18.70|?>>
     <associate|eq 18.48.033|<tuple|18.52|?>>
@@ -16810,6 +16829,10 @@
       <with|par-left|<quote|1tab>|18.6.5<space|2spc>Limit theorems for
       integrable functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-69>>
+
+      <with|par-left|<quote|1tab>|18.6.6<space|2spc>Integral of complex
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-70>>
     </associate>
   </collection>
 </auxiliary>

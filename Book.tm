@@ -536,99 +536,147 @@
     17.1<space|2spc>Extented reals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-626>
 
-    17.2<space|2spc>Topology on <with|mode|math|<wide|\<bbb-R\>|\<bar\>>>
+    17.2<space|2spc>Topology on <with|mode|math|<wide|\<bbb-R\>|\<wide-bar\>>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-632>
 
-    <with|par-left|1tab|17.2.1<space|2spc>Limit of functions in
-    <with|mode|math|<wide|\<bbb-R\>|\<bar\>>>
+    17.3<space|2spc>Sequences in <with|mode|math|<wide|\<bbb-R\>|\<wide-bar\>>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-639>>
+    <no-break><pageref|auto-638>
 
-    <with|par-left|1tab|17.2.2<space|2spc>Sequences in
-    <with|mode|math|<wide|\<bbb-R\>|\<bar\>>>
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-648>>
-
-    <with|par-left|1tab|17.2.3<space|2spc>Series in
+    <with|par-left|1tab|17.3.1<space|2spc>Series in
     <with|mode|math|<wide|\<bbb-R\><rsub|>|\<bar\>><rsub|+>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-653>>
-
-    <with|par-left|1tab|17.2.4<space|2spc>Generalized series of positive
-    extened reals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-655>>
+    <no-break><pageref|auto-643>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|18<space|2spc>The
     exponential function> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-656><vspace|0.5fn>
+    <no-break><pageref|auto-645><vspace|0.5fn>
 
     18.1<space|2spc>Power series <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-657>
+    <no-break><pageref|auto-646>
 
     <with|par-left|1tab|18.1.1<space|2spc>Definition and convergence domains
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-658>>
+    <no-break><pageref|auto-647>>
 
     <with|par-left|1tab|18.1.2<space|2spc>Convergence criteria
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-663>>
+    <no-break><pageref|auto-652>>
 
     <with|par-left|1tab|18.1.3<space|2spc>Differentiation of power series
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-665>>
+    <no-break><pageref|auto-654>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|18<space|2spc>Measure
     Theory> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-672><vspace|0.5fn>
+    <no-break><pageref|auto-661><vspace|0.5fn>
 
     18.1<space|2spc>Prerequisites <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-673>
+    <no-break><pageref|auto-662>
 
     18.2<space|2spc>Algebras and <with|mode|math|\<sigma\>>-algebras
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-674>
+    <no-break><pageref|auto-663>
 
     <with|par-left|1tab|18.2.1<space|2spc>Borel algebra on
     <with|mode|math|\<bbb-R\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-680>>
+    <no-break><pageref|auto-669>>
 
     <with|par-left|1tab|18.2.2<space|2spc>Borel algebra on
+    <with|mode|math|<wide|\<bbb-R\>|\<wide-bar\>>>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-670>>
+
+    <with|par-left|1tab|18.2.3<space|2spc>Borel algebra on
     <with|mode|math|\<bbb-R\><rsup|n>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-681>>
+    <no-break><pageref|auto-671>>
 
     18.3<space|2spc>Measures <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-689>
+    <no-break><pageref|auto-679>
 
     <with|par-left|1tab|18.3.1<space|2spc>Measure definition and properties
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-690>>
+    <no-break><pageref|auto-680>>
 
     <with|par-left|1tab|18.3.2<space|2spc>Carathéodory theorem
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-691>>
+    <no-break><pageref|auto-681>>
 
     <with|par-left|1tab|18.3.3<space|2spc>The Carathéodory theorem and the
     set of real numbers <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-693>>
+    <no-break><pageref|auto-683>>
 
     <with|par-left|1tab|18.3.4<space|2spc>The Carathéodory theorem and
     <with|mode|math|\<bbb-R\><rsup|n>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-697>>
+    <no-break><pageref|auto-687>>
 
-    <with|par-left|2tab|18.3.4.1<space|2spc>Properties of
+    <with|par-left|1tab|18.3.5<space|2spc>Properties of
     <with|mode|math|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><rsup|n>,\<lambda\><rsup|n>|\<rangle\>>>
     and <with|mode|math|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>,<around*|(|\<lambda\><rsup|n>|)><rsub|\|\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>|\<rangle\>>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-699>>
+    <no-break><pageref|auto-689>>
 
-    <with|par-left|1tab|18.3.5<space|2spc><with|mode|math|Negligibity,Completeness<syntax|<with|mode|text|
+    <with|par-left|1tab|18.3.6<space|2spc><with|mode|math|Negligibity,Completeness<syntax|<with|mode|text|
     and >|\<wedge\>>Regularity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-700>>
+    <no-break><pageref|auto-690>>
+
+    18.4<space|2spc>Measurable functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-701>
+
+    <with|par-left|1tab|18.4.1<space|2spc>Dynkin Classes
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-702>>
+
+    18.5<space|2spc>Measurable functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-706>
+
+    <with|par-left|1tab|18.5.1<space|2spc>Measurable functions
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-707>>
+
+    <with|par-left|1tab|18.5.2<space|2spc>Example of measurable functions
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-712>>
+
+    <with|par-left|1tab|18.5.3<space|2spc>Properties of measurable functions
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-713>>
+
+    <with|par-left|1tab|18.5.4<space|2spc>Properties that hold everywhere
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-714>>
+
+    18.6<space|2spc>The measure integral <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-716>
+
+    <with|par-left|1tab|18.6.1<space|2spc>Integral of simple functions
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-717>>
+
+    <with|par-left|1tab|18.6.2<space|2spc>Integral of non negative functions
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-718>>
+
+    <with|par-left|1tab|18.6.3<space|2spc>Integral of integrable functions
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-722>>
+
+    <with|par-left|1tab|18.6.4<space|2spc>Properties of the integral
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-728>>
+
+    <with|par-left|1tab|18.6.5<space|2spc>Limit theorems for integrable
+    functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-729>>
+
+    <with|par-left|1tab|18.6.6<space|2spc>Integral of complex functions
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-730>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|Index>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-705><vspace|0.5fn>
+    <no-break><pageref|auto-731><vspace|0.5fn>
   </table-of-contents>
 
   <include|Chapter 1 (Sets).tm>
@@ -674,7 +722,11 @@
 
     <index+1|<with|mode|math|<around*|(|i\<rightarrow\>x|)>>|<pageref|auto-590>>
 
-    <index+1|<with|mode|math|<around*|]|-\<infty\>,a|[><rsub|i>>|<pageref|auto-687>>
+    <index+1|<with|mode|math|<around*|]|-\<infty\>,a|[><rsub|i>>|<pageref|auto-677>>
+
+    <index+1|<with|mode|math|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|<pageref|auto-711>>
+
+    <index+1|<with|mode|math|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>|<pageref|auto-720>>
 
     <index+1|<with|mode|math|<around*|\<langle\>|x,y,z|\<rangle\>>>|<pageref|auto-37>>
 
@@ -704,10 +756,10 @@
     x<rsub|n>>|<pageref|auto-527>>
 
     <index+1|<with|mode|math|<below|lim inf|i\<rightarrow\>\<infty\>>
-    x<rsub|i>>|<pageref|auto-651>>
+    x<rsub|i>>|<pageref|auto-641>>
 
     <index+1|<with|mode|math|<below|lim sup|i\<rightarrow\>\<infty\>>
-    x<rsub|i>>|<pageref|auto-652>>
+    x<rsub|i>>|<pageref|auto-642>>
 
     <index+1|<with|mode|math|#<around*|(|A|)>>|<pageref|auto-186>>
 
@@ -772,9 +824,11 @@
 
     <index+1|<with|mode|math|\<cal-C\>>|<pageref|auto-413>>
 
-    <index+1|<with|mode|math|\<cal-D\><rsup|n>>|<pageref|auto-685>>
+    <index+1|<with|mode|math|\<cal-d\><around*|(|\<cal-A\>|)>>|<pageref|auto-705>>
 
-    <index+1|<with|mode|math|\<cal-D\><rsup|n><rsub|m>>|<pageref|auto-684>>
+    <index+1|<with|mode|math|\<cal-D\><rsup|n>>|<pageref|auto-675>>
+
+    <index+1|<with|mode|math|\<cal-D\><rsup|n><rsub|m>>|<pageref|auto-674>>
 
     <index+1|<with|mode|math|\<cal-F\><around*|(|X,F|)>>|<pageref|auto-320>>
 
@@ -783,6 +837,8 @@
     <index+1|<with|mode|math|\<cal-M\><around*|(|L|)>>|<pageref|auto-372>>
 
     <index+1|<with|font-family|tt|language|verbatim|<with|mode|math|\<cal-M\><around*|(|L,<around*|{|e<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>,<around*|{|f<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,m|}>>|)>>>|<pageref|auto-373>>
+
+    <index+1|<with|mode|math|\<cal-M\><rsup|+><around*|[|X,A|]>>|<pageref|auto-719>>
 
     <index+1|<with|mode|math|\<cal-M\><around*|(|n\<times\>m,F|)>>|<pageref|auto-363>>
 
@@ -794,11 +850,11 @@
 
     <index+1|<with|mode|math|\<cal-P\><rsub|1>\<boxplus\>\<cal-P\><rsub|2>>|<pageref|auto-538>>
 
-    <index+1|<with|mode|math|\<cal-R\><rsup|n>>|<pageref|auto-682>>
+    <index+1|<with|mode|math|\<cal-R\><rsup|n>>|<pageref|auto-672>>
 
     <index+1|<with|font-family|tt|language|verbatim|<with|mode|math|\<cal-S\><around*|(|f,\<bbb-P\>|)>>>|<pageref|auto-544>>
 
-    <index+1|<with|mode|math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|<pageref|auto-638>>
+    <index+1|<with|mode|math|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|<pageref|auto-637>>
 
     <index+1|<with|mode|math|\<cal-T\><rsub|box>>|<pageref|auto-422>>
 
@@ -824,6 +880,10 @@
 
     <index+1|<with|mode|math|\<mu\><around*|(|\<cal-P\>|)>>|<pageref|auto-540>>
 
+    <index+1|<with|mode|math|\<mu\><rsup|\<ast\>>>|<pageref|auto-697>>
+
+    <index+1|<with|mode|math|\<mu\><rsub|\<ast\>>>|<pageref|auto-698>>
+
     <index+1|<with|mode|math|\<nin\>>|<pageref|auto-4>>
 
     <index+1|<with|mode|math|\<oplus\><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>>|<pageref|auto-391>>
@@ -833,13 +893,13 @@
     <index+1|<with|mode|math|\<pi\><rsub|i>>|<pageref|auto-70>,
     <pageref|auto-194>>
 
-    <index+1|<with|mode|math|\<pi\>>|<pageref|auto-671>>
+    <index+1|<with|mode|math|\<pi\>>|<pageref|auto-660>>
 
     <index+1|<with|mode|math|\<preccurlyeq\>>|<pageref|auto-314>>
 
     <index+1|<with|mode|math|\<sigma\><rsup|<around*|[|i|]>>>|<pageref|auto-290>>
 
-    <index+1|<with|mode|math|\<sigma\><around*|[|\<cal-A\>|]>>|<pageref|auto-677>>
+    <index+1|<with|mode|math|\<sigma\><around*|[|\<cal-A\>|]>>|<pageref|auto-666>>
 
     <index+1|<with|mode|math|\<sigma\>f>|<pageref|auto-291>>
 
@@ -848,11 +908,11 @@
     <index+1|<with|mode|math|\<subseteq\>>|<pageref|auto-7>,
     <pageref|auto-73>>
 
-    <index+1|<with|mode|math|\<varphi\><rsup|n>>|<pageref|auto-698>>
+    <index+1|<with|mode|math|\<varphi\><rsup|n>>|<pageref|auto-688>>
 
     <index+1|<with|mode|math|A<rsup|\<circ\>>>|<pageref|auto-410>>
 
-    <index+1|<with|mode|math|A<rsub|\<mu\>>>|<pageref|auto-704>>
+    <index+1|<with|mode|math|A<rsub|\<mu\>>>|<pageref|auto-693>>
 
     <index+1|<with|mode|math|A<rsup|c>>|<pageref|auto-13>>
 
@@ -872,7 +932,7 @@
 
     <index+1|abelian semi-group|<pageref|auto-132>>
 
-    <index+1|absolute convergence domain|<pageref|auto-660>>
+    <index+1|absolute convergence domain|<pageref|auto-649>>
 
     <index+1|absolute value|<pageref|auto-209>, <pageref|auto-255>>
 
@@ -894,11 +954,11 @@
 
     <index+1|adjoint of a matrix|<pageref|auto-380>>
 
-    <index+1|algebra|<pageref|auto-675>>
+    <index+1|algebra|<pageref|auto-664>>
 
-    <index+1|<with|mode|math|\<sigma\>>-algebra|<pageref|auto-676>>
+    <index+1|<with|mode|math|\<sigma\>>-algebra|<pageref|auto-665>>
 
-    <index+1|almost everyware|<pageref|auto-702>>
+    <index+1|almost everyware|<pageref|auto-715>>
 
     <index+1|anti-symmetric|<pageref|auto-79>>
 
@@ -944,7 +1004,9 @@
 
     <index+1|binomial constant|<pageref|auto-559>>
 
-    <index+1|Borel algebra|<pageref|auto-678>>
+    <index+1|Borel algebra|<pageref|auto-667>>
+
+    <index+1|Borel function|<pageref|auto-709>>
 
     <index+1|bounded function|<pageref|auto-521>>
 
@@ -960,11 +1022,11 @@
 
     <index+1|<with|mode|math|C<rsub|B>>|<pageref|auto-53>>
 
-    <index+1|\<cal-B\><around*|[|X,\<cal-T\>|]>|<pageref|auto-679>>
+    <index+1|\<cal-B\><around*|[|X,\<cal-T\>|]>|<pageref|auto-668>>
 
     <index+1|canonical decomposition of a function|<pageref|auto-86>>
 
-    <index+1|Carathéodory theorem|<pageref|auto-692>>
+    <index+1|Carathéodory theorem|<pageref|auto-682>>
 
     <index+1|cartesian power of sets|<pageref|auto-295>>
 
@@ -996,9 +1058,11 @@
 
     <index+1|comparability|<pageref|auto-95>>
 
-    <index+1|complete measures|<pageref|auto-703>>
+    <index+1|complete measures|<pageref|auto-692>>
 
     <index+1|complete metric space|<pageref|auto-519>>
+
+    <index+1|completion of a measure space|<pageref|auto-694>>
 
     <index+1|complex inner spaces|<pageref|auto-449>>
 
@@ -1030,11 +1094,11 @@
 
     <index+1|contraction of tensors|<pageref|auto-401>>
 
-    <index+1|convergence domain|<pageref|auto-659>>
+    <index+1|convergence domain|<pageref|auto-648>>
 
     <index+1|convergence in a metric space|<pageref|auto-515>>
 
-    <index+1|convergence radius|<pageref|auto-661>>
+    <index+1|convergence radius|<pageref|auto-650>>
 
     <index+1|convergency in a topological space|<pageref|auto-514>>
 
@@ -1044,13 +1108,15 @@
 
     <index+1|convex sets|<pageref|auto-615>>
 
-    <index+1|<with|mode|math|cos<around*|(|x|)>>|<pageref|auto-669>>
+    <index+1|<with|mode|math|cos<around*|(|x|)>>|<pageref|auto-658>>
 
     <index+1|countable compact class|<pageref|auto-500>>
 
     <index+1|countable set|<pageref|auto-185>>
 
-    <index+1|decreasing sequence|<pageref|auto-513>, <pageref|auto-650>>
+    <index+1|<with|font-family|tt|language|verbatim|D>|<pageref|auto-704>>
+
+    <index+1|decreasing sequence|<pageref|auto-513>, <pageref|auto-640>>
 
     <index+1|Dedekind's Cut|<pageref|auto-233>>
 
@@ -1104,7 +1170,9 @@
 
     <index+1|dual space|<pageref|auto-327>>
 
-    <index+1|Dyadic cubes|<pageref|auto-683>>
+    <index+1|Dyadic cubes|<pageref|auto-673>>
+
+    <index+1|Dynkin class|<pageref|auto-703>>
 
     <index+1|<with|mode|math|e<rsub|A>>|<pageref|auto-59>>
 
@@ -1124,11 +1192,11 @@
 
     <index+1|equivalent norms|<pageref|auto-445>>
 
-    <index+1|Euler's number|<pageref|auto-666>>
+    <index+1|Euler's number|<pageref|auto-655>>
 
     <index+1|even numbers|<pageref|auto-215>>
 
-    <index+1|<with|mode|math|exp<around*|(|z|)>>|<pageref|auto-664>>
+    <index+1|<with|mode|math|exp<around*|(|z|)>>|<pageref|auto-653>>
 
     <index+1|extented reals|<pageref|auto-627>>
 
@@ -1139,6 +1207,8 @@
     <index+1|<with|mode|math|f<around*|(|C|)>>|<pageref|auto-47>>
 
     <index+1|<with|mode|math|f<rsup|-1><around*|(|D|)>>|<pageref|auto-48>>
+
+    <index+1|<with|mode|math|f<rsub|X\<rightarrow\>A>>|<pageref|auto-726>>
 
     <index+1|<with|mode|math|<big|int><rsub|a><rsup|b>f>|<pageref|auto-546>>
 
@@ -1155,6 +1225,11 @@
     <index+1|<with|mode|math|f<rprime|'><rsub|+>>|<pageref|auto-603>>
 
     <index+1|<with|mode|math|f<rprime|'><rsub|->>|<pageref|auto-604>>
+
+    <index+1|<with|mode|math|<big|int><rsup|+>f d\<mu\>>|<pageref|auto-721>>
+
+    <index+1|<with|mode|math|<big|int><rsub|A>f d\<mu\>>|<pageref|auto-724>,
+    <pageref|auto-725>, <pageref|auto-727>>
 
     <index+1|<with|mode|math|f<rsub|n>\<circ\>\<ldots\>\<circ\>f<rsub|1>>|<pageref|auto-171>>
 
@@ -1239,7 +1314,7 @@
 
     <index+1|increasing seqeunce|<pageref|auto-512>>
 
-    <index+1|increasing sequence|<pageref|auto-649>>
+    <index+1|increasing sequence|<pageref|auto-639>>
 
     <index+1|induced order relation|<pageref|auto-94>>
 
@@ -1257,7 +1332,13 @@
 
     <index+1|initial segment|<pageref|auto-100>>
 
+    <index+1|inner measure induced|<pageref|auto-696>>
+
+    <index+1|inner regular sets|<pageref|auto-699>>
+
     <index+1|inner set|<pageref|auto-409>>
+
+    <index+1|integrable functions on a measure space|<pageref|auto-723>>
 
     <index+1|integral domain|<pageref|auto-144>>
 
@@ -1297,25 +1378,17 @@
 
     <index+1|least element|<pageref|auto-110>>
 
-    <index+1|Lebesgue measurable set|<pageref|auto-696>>
+    <index+1|Lebesgue measurable set|<pageref|auto-686>>
 
-    <index+1|Lebesgue measurable space|<pageref|auto-694>>
+    <index+1|Lebesgue measurable space|<pageref|auto-684>>
 
-    <index+1|Lebesgue measure|<pageref|auto-695>>
+    <index+1|Lebesgue measure|<pageref|auto-685>>
 
     <index+1|left action|<pageref|auto-137>>
 
-    <index+1|left continuity|<pageref|auto-646>>
-
-    <index+1|left limit of a function|<pageref|auto-643>>
-
-    <index+1|left limit point|<pageref|auto-640>>
-
-    <index+1|limit of a function|<pageref|auto-645>>
-
     <index+1|limit of a partial function|<pageref|auto-428>>
 
-    <index+1|limit point|<pageref|auto-414>, <pageref|auto-642>>
+    <index+1|limit point|<pageref|auto-414>>
 
     <index+1|line segment|<pageref|auto-616>>
 
@@ -1345,13 +1418,13 @@
 
     <index+1|local weak minimum|<pageref|auto-606>>
 
-    <index+1|<with|mode|math|log>|<pageref|auto-668>>
+    <index+1|<with|mode|math|log>|<pageref|auto-657>>
 
     <index+1|lower bound|<pageref|auto-114>>
 
-    <index+1|lower half open space|<pageref|auto-686>>
+    <index+1|lower half open space|<pageref|auto-676>>
 
-    <index+1|Lower half spaces|<pageref|auto-688>>
+    <index+1|Lower half spaces|<pageref|auto-678>>
 
     <index+1|<with|mode|math|M<rsup|T>>|<pageref|auto-365>,
     <pageref|auto-455>>
@@ -1378,6 +1451,11 @@
 
     <index+1|maximal element|<pageref|auto-107>>
 
+    <index+1|measurable function|<pageref|auto-708>>
+
+    <index+1|<with|mode|math|\<cal-A\>>-measurable
+    function|<pageref|auto-710>>
+
     <index+1|metric topology|<pageref|auto-433>>
 
     <index+1|minimal element|<pageref|auto-108>>
@@ -1388,7 +1466,7 @@
 
     <index+1|<with|mode|math|n!>|<pageref|auto-178>>
 
-    <index+1|Napierian logarithm|<pageref|auto-667>>
+    <index+1|Napierian logarithm|<pageref|auto-656>>
 
     <index+1|natural numbers|<pageref|auto-153>>
 
@@ -1396,7 +1474,7 @@
 
     <index+1|negative whole numbers|<pageref|auto-206>>
 
-    <index+1|<with|mode|math|\<mu\>>-negligible|<pageref|auto-701>>
+    <index+1|<with|mode|math|\<mu\>>-negligible|<pageref|auto-691>>
 
     <index+1|neighborhood|<pageref|auto-487>>
 
@@ -1439,6 +1517,10 @@
     <index+1|orthogonality|<pageref|auto-450>>
 
     <index+1|orthonormality|<pageref|auto-451>>
+
+    <index+1|outer measure induced|<pageref|auto-695>>
+
+    <index+1|outer regular sets|<pageref|auto-700>>
 
     <index+1|<with|mode|math|P<rsub|n>>|<pageref|auto-288>>
 
@@ -1484,7 +1566,7 @@
 
     <index+1|quotient vector space|<pageref|auto-332>>
 
-    <index+1|<with|mode|math|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|<pageref|auto-662>>
+    <index+1|<with|mode|math|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|<pageref|auto-651>>
 
     <index+1|range|<pageref|auto-22>>
 
@@ -1534,12 +1616,6 @@
 
     <index+1|right action|<pageref|auto-138>>
 
-    <index+1|right continuity|<pageref|auto-647>>
-
-    <index+1|right limit of a function|<pageref|auto-644>>
-
-    <index+1|right limit point|<pageref|auto-641>>
-
     <index+1|ring|<pageref|auto-142>>
 
     <index+1|ring homomorphism|<pageref|auto-146>>
@@ -1574,7 +1650,7 @@
 
     <index+1|<with|mode|math|sign<around*|(|\<sigma\>|)>>|<pageref|auto-292>>
 
-    <index+1|<with|mode|math|sin<around*|(|x|)>>|<pageref|auto-670>>
+    <index+1|<with|mode|math|sin<around*|(|x|)>>|<pageref|auto-659>>
 
     <index+1|skew symmetry|<pageref|auto-346>>
 
@@ -1631,8 +1707,6 @@
     <index+1|topological vector space|<pageref|auto-493>>
 
     <index+1|topology|<pageref|auto-406>>
-
-    <index+1|topology on <with|mode|math|<wide|\<bbb-R\>|\<bar\>>>|<pageref|auto-637>>
 
     <index+1|transfinite induction|<pageref|auto-121>>
 
@@ -1698,7 +1772,7 @@
 
     <index+1|<with|mode|math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>>|<pageref|auto-516>>
 
-    <index+1|<with|mode|math|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>|<pageref|auto-654>>
+    <index+1|<with|mode|math|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>|<pageref|auto-644>>
 
     <index+1|<with|mode|math|X<rsup|n>>|<pageref|auto-294>>
 
@@ -1733,11 +1807,11 @@
     (Differentiation).tm>>
     <associate|(1+i)^2|<tuple|12.17|520|Chapter 3 (Topology).tm>>
     <associate|(1+i/k)^2*k|<tuple|12.28|524|Chapter 3 (Topology).tm>>
+    <associate|(A except B) interect C|<tuple|18.2|751|Chapter 6 (Measures
+    and integration).tm>>
     <associate|(L1@L2)*=L2*@L1*|<tuple|11.126|418|Chapter 3 (Topology).tm>>
     <associate|(a+n)(b+n)-\<gtr\>1|<tuple|11.331|466|Chapter 3
     (Topology).tm>>
-    <associate|(a-b)+(c-d)=(a+c)-(b+d)|<tuple|17.24|675|Chapter 5 (Extended
-    Real Numbers).tm>>
     <associate|(f1,..fn)|<tuple|14.42|576|Chapter 4 (Differentiation).tm>>
     <associate|(i-\<gtr\>x)-1(A)|<tuple|14.28|570|Chapter 4
     (Differentiation).tm>>
@@ -1752,7 +1826,7 @@
     <associate|-(n.m)=(-n).m=n.(-m) n,m are integers|<tuple|6.14|156|Chapter
     1 (Sets).tm>>
     <associate|-n=(-1).n n is integer|<tuple|6.13|156|Chapter 1 (Sets).tm>>
-    <associate|-sup A=inf -A|<tuple|17.30|678|Chapter 5 (Extended Real
+    <associate|-sup A=inf -A|<tuple|17.31|682|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|0 is a natural number|<tuple|4.6|99|Chapter 1 (Sets).tm>>
     <associate|0 part of A|<tuple|1.15|9|Chapter 1 (Sets).tm>>
@@ -1762,11 +1836,11 @@
     1 (Sets).tm>>
     <associate|0\<less\>=q\<less\>=0=\<gtr\>q=0 q
     rational|<tuple|7.18|172|Chapter 1 (Sets).tm>>
-    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.22|674|Chapter
+    <associate|0\<less\>=y then z=x+y=\<gtr\>z\<less\>=y|<tuple|17.27|680|Chapter
     5 (Extended Real Numbers).tm>>
     <associate|0\<less\>a,b=\<less\>0\<less\>a+b,a.b a,b
     reals|<tuple|8.34|201|Chapter 1 (Sets).tm>>
-    <associate|0\<less\>cos(x),sin(x)|<tuple|18.49|761|Chapter 5 (Extended
+    <associate|0\<less\>cos(x),sin(x)|<tuple|18.49|747|Chapter 5 (Extended
     Real Numbers).tm>>
     <associate|0\<less\>m=\<gtr\>1\<less\>=m if m is a
     integer|<tuple|6.46|163|Chapter 1 (Sets).tm>>
@@ -1780,6 +1854,8 @@
     0\<less\>s r,s rational|<tuple|7.27|173|Chapter 1 (Sets).tm>>
     <associate|0\<less\>s=\<gtr\>0\<less\>s^-1|<tuple|7.34|175|Chapter 1
     (Sets).tm>>
+    <associate|0\<less\>x and 0\<less\>y gives
+    0\<less\>x+y|<tuple|17.26|680|Chapter 5 (Extended Real Numbers).tm>>
     <associate|0\<less\>x=\<gtr\>0\<less\>x^n|<tuple|9.69|233|Chapter 1
     (Sets).tm>>
     <associate|0\<less\>x^n\<less\>e|<tuple|9.67|233|Chapter 1 (Sets).tm>>
@@ -1796,56 +1872,62 @@
     (complex)|<tuple|12.73|550|Chapter 3 (Topology).tm>>
     <associate|\<less\>x,y\<gtr\>=\<less\>x,z\<gtr\>=\<gtr\>y=z|<tuple|11.100|411|Chapter
     3 (Topology).tm>>
-    <associate|@ product|<tuple|11.222|444|Chapter 3 (Topology).tm>>
-    <associate|@ prouct property|<tuple|11.223|444|Chapter 3 (Topology).tm>>
+    <associate|@ product|<tuple|11.222|445|Chapter 3 (Topology).tm>>
+    <associate|@ prouct property|<tuple|11.223|445|Chapter 3 (Topology).tm>>
     <associate|A\SB and injection|<tuple|5.4|117|Chapter 1 (Sets).tm>>
-    <associate|A/R R is a equivalence relation|<tuple|2.121|61|Chapter 1
+    <associate|A except B is (X except B) intersect A
+    |<tuple|18.1|751|Chapter 6 (Measures and integration).tm>>
+    <associate|A/R R is a equivalence relation|<tuple|2.123|61|Chapter 1
     (Sets).tm>>
     <associate|A\<less\>~B and surjectivity|<tuple|5.9|118|Chapter 1
     (Sets).tm>>
-    <associate|Abel-Dirichlet|<tuple|18.15|741|Chapter 5 (Extended Real
+    <associate|Abel-Dirichlet|<tuple|18.15|727|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|Acc=A|<tuple|1.19|9|Chapter 1 (Sets).tm>>
     <associate|B(0,d)=B(x,d)_x|<tuple|14.3|561|Chapter 4
     (Differentiation).tm>>
     <associate|B(X,Y) is a Banach space if Y is|<tuple|11.343|468|Chapter 3
     (Topology).tm>>
-    <associate|B^A is a set if B and A are sets|<tuple|2.74|52|Chapter 1
+    <associate|B^A is a set if B and A are sets|<tuple|2.76|53|Chapter 1
     (Sets).tm>>
     <associate|Baire Category Theorem|<tuple|11.418|498|Chapter 3
     (Topology).tm>>
     <associate|Baire space|<tuple|11.42|397|Chapter 3 (Topology).tm>>
-    <associate|Balls and convergence domains|<tuple|18.12|739|Chapter 5
+    <associate|Balls and convergence domains|<tuple|18.12|725|Chapter 5
     (Extended Real Numbers).tm>>
+    <associate|Beppo Levi's Theorem|<tuple|18.233|889|Chapter 6 (Measures and
+    integration).tm>>
     <associate|Borel algebra is generated by closed
-    sets|<tuple|18.18|772|Chapter 6 (Measures and integration).tm>>
-    <associate|Borel algebra on R|<tuple|18.16|772|Chapter 6 (Measures and
+    sets|<tuple|18.21|759|Chapter 6 (Measures and integration).tm>>
+    <associate|Borel algebra on R|<tuple|18.19|759|Chapter 6 (Measures and
     integration).tm>>
-    <associate|Borel algebra on R^n|<tuple|18.17|772|Chapter 6 (Measures and
+    <associate|Borel algebra on R^n|<tuple|18.20|759|Chapter 6 (Measures and
     integration).tm>>
-    <associate|Borel algebra on R^n (1)|<tuple|18.43|786|Chapter 6 (Measures
+    <associate|Borel algebra on R^n (1)|<tuple|18.52|777|Chapter 6 (Measures
     and integration).tm>>
-    <associate|Borel algebra on R^n (2)|<tuple|18.48|787|Chapter 6 (Measures
+    <associate|Borel algebra on R^n (2)|<tuple|18.57|778|Chapter 6 (Measures
     and integration).tm>>
-    <associate|Borel algebra on R^n equivalences|<tuple|18.49|787|Chapter 6
+    <associate|Borel algebra on R^n equivalences|<tuple|18.58|778|Chapter 6
     (Measures and integration).tm>>
-    <associate|Borel algebras on R|<tuple|18.23|777|Chapter 6 (Measures and
+    <associate|Borel algebras on R|<tuple|18.26|764|Chapter 6 (Measures and
     integration).tm>>
-    <associate|Borel measure space|<tuple|18.80|813|Chapter 6 (Measures and
+    <associate|Borel function|<tuple|18.139|831|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|Borel measure space|<tuple|18.89|806|Chapter 6 (Measures and
     integration).tm>>
     <associate|Borel sets in R^n are transaltion
-    invariant|<tuple|18.91|821|Chapter 6 (Measures and integration).tm>>
-    <associate|C is a real vector space|<tuple|10.114|275|Chapter 2 (Linear
+    invariant|<tuple|18.100|813|Chapter 6 (Measures and integration).tm>>
+    <associate|C is a real vector space|<tuple|10.114|277|Chapter 2 (Linear
     Algebra).tm>>
     <associate|C1 of real or complex function|<tuple|14.58|582|Chapter 4
     (Differentiation).tm>>
     <associate|C^2 differential is symmetric|<tuple|14.122|620|Chapter 4
     (Differentiation).tm>>
-    <associate|C^@@=@@-times differentiable|<tuple|14.61|585|Chapter 4
+    <associate|C^@@=@@-times differentiable|<tuple|14.61|586|Chapter 4
     (Differentiation).tm>>
     <associate|C^n implies C^m|<tuple|14.63|586|Chapter 4
     (Differentiation).tm>>
-    <associate|C^n is a local property|<tuple|14.70|588|Chapter 4
+    <associate|C^n is a local property|<tuple|14.70|589|Chapter 4
     (Differentiation).tm>>
     <associate|C^n of multivalued functions|<tuple|14.81|593|Chapter 4
     (Differentiation).tm>>
@@ -1853,7 +1935,7 @@
     (Differentiation).tm>>
     <associate|C^n=\<gtr\>C^n is C^1|<tuple|14.65|587|Chapter 4
     (Differentiation).tm>>
-    <associate|Caratheodore|<tuple|18.66|796|Chapter 6 (Measures and
+    <associate|Caratheodore|<tuple|18.75|788|Chapter 6 (Measures and
     integration).tm>>
     <associate|Cauchy condition for convergence of a
     serie|<tuple|11.376|480|Chapter 3 (Topology).tm>>
@@ -1869,55 +1951,65 @@
     product|<tuple|11.150|423|Chapter 3 (Topology).tm>>
     <associate|D(g@f) where g is multivalued|<tuple|14.44|577|Chapter 4
     (Differentiation).tm>>
-    <associate|D1 and composition|<tuple|14.82|593|Chapter 4
+    <associate|D1 and composition|<tuple|14.82|594|Chapter 4
     (Differentiation).tm>>
-    <associate|D^2g(x)(u)(v)=D^nf(x)(v:u:v1..vn-2)|<tuple|14.126|623|Chapter
+    <associate|D^2g(x)(u)(v)=D^nf(x)(v:u:v1..vn-2)|<tuple|14.126|624|Chapter
     4 (Differentiation).tm>>
-    <associate|D^nf(x)(h1:..hn)=D^(n-1)f(x)(h1:..hn-1)(hn)|<tuple|14.85|595|Chapter
+    <associate|D^nf(x)(h1:..hn)=D^(n-1)f(x)(h1:..hn-1)(hn)|<tuple|14.85|596|Chapter
     4 (Differentiation).tm>>
     <associate|DeMorgan's Laws|<tuple|1.23|10|Chapter 1 (Sets).tm>>
-    <associate|Dyadic cube properties|<tuple|18.39|782|Chapter 6 (Measures
+    <associate|Dunkin class|<tuple|18.126|828|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|Dyadic cube properties|<tuple|18.48|774|Chapter 6 (Measures
     and integration).tm>>
-    <associate|Dyadic cubes|<tuple|18.37|782|Chapter 6 (Measures and
+    <associate|Dyadic cubes|<tuple|18.46|774|Chapter 6 (Measures and
     integration).tm>>
-    <associate|Dyadic interval basic property|<tuple|18.36|782|Chapter 6
+    <associate|Dyadic interval basic property|<tuple|18.45|773|Chapter 6
     (Measures and integration).tm>>
-    <associate|Dyadic intervals|<tuple|18.35|781|Chapter 6 (Measures and
+    <associate|Dyadic intervals|<tuple|18.44|773|Chapter 6 (Measures and
     integration).tm>>
-    <associate|Euler's number|<tuple|18.29|748|Chapter 5 (Extended Real
+    <associate|Dynkin class and uniqueness of
+    measures|<tuple|18.135|830|Chapter 6 (Measures and integration).tm>>
+    <associate|Dynkin class generated|<tuple|18.130|828|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|Dynkin classes and sigma algebra|<tuple|18.134|829|Chapter 6
+    (Measures and integration).tm>>
+    <associate|Euler's number|<tuple|18.29|734|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|F^n has a orthonormal basis|<tuple|11.116|414|Chapter 3
+    <associate|F^n has a orthonormal basis|<tuple|11.116|415|Chapter 3
     (Topology).tm>>
-    <associate|GL(X)|<tuple|10.190|294|Chapter 2 (Linear Algebra).tm>>
+    <associate|Fatou's Lemma|<tuple|18.234|889|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|GL(X)|<tuple|10.190|295|Chapter 2 (Linear Algebra).tm>>
     <associate|GL(X) is a group|<tuple|14.142|635|Chapter 4
     (Differentiation).tm>>
     <associate|Hausdorff spaces|<tuple|11.226|445|Chapter 3 (Topology).tm>>
-    <associate|Hausdorff's maximal principle|<tuple|2.220|86|Chapter 1
+    <associate|Hausdorff's maximal principle|<tuple|2.222|87|Chapter 1
     (Sets).tm>>
     <associate|Hermitian matrix|<tuple|11.130|419|Chapter 3 (Topology).tm>>
-    <associate|Hom(X,Y)|<tuple|10.186|293|Chapter 2 (Linear Algebra).tm>>
-    <associate|Hom(X,Y) is a vector space|<tuple|10.187|293|Chapter 2 (Linear
+    <associate|Hom(X,Y)|<tuple|10.186|294|Chapter 2 (Linear Algebra).tm>>
+    <associate|Hom(X,Y) is a vector space|<tuple|10.187|294|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|Hom(X1,..,Xn,Y)|<tuple|10.234|307|Chapter 2 (Linear
+    <associate|Hom(X1,..,Xn,Y)|<tuple|10.234|308|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|Hom(X1,..,Xn,Y) is a vector space|<tuple|10.235|307|Chapter 2
+    <associate|Hom(X1,..,Xn,Y) is a vector space|<tuple|10.235|308|Chapter 2
     (Linear Algebra).tm>>
     <associate|I+H has inverse if norm of H is less then
     1|<tuple|14.149|642|Chapter 4 (Differentiation).tm>>
-    <associate|Jacobian Matrix|<tuple|14.45|577|Chapter 4
+    <associate|Jacobian Matrix|<tuple|14.45|578|Chapter 4
     (Differentiation).tm>>
     <associate|Jacobian of linear map|<tuple|14.46|578|Chapter 4
     (Differentiation).tm>>
-    <associate|Kronicker Delta|<tuple|10.161|286|Chapter 2 (Linear
+    <associate|Kronicker Delta|<tuple|10.161|287|Chapter 2 (Linear
     Algebra).tm>>
     <associate|L restricted to orthogonal complement|<tuple|12.84|557|Chapter
     3 (Topology).tm>>
     <associate|L(X,Y)|<tuple|11.188|432|Chapter 3 (Topology).tm>>
     <associate|L(X^n;Y)|<tuple|11.201|438|Chapter 3 (Topology).tm>>
-    <associate|L(v1:..vn)=L(1::1)*v1..vn|<tuple|11.213|440|Chapter 3
+    <associate|L(v1:..vn)=L(1::1)*v1..vn|<tuple|11.213|441|Chapter 3
     (Topology).tm>>
-    <associate|L(x1)(x2:..:xn)|<tuple|11.212|440|Chapter 3 (Topology).tm>>
-    <associate|L(x1,..,xm) is in Ln-m(X;Y)|<tuple|11.210|439|Chapter 3
+    <associate|L(x1)(x2:..:xn)|<tuple|11.212|441|Chapter 3 (Topology).tm>>
+    <associate|L(x1,..,xm) is in Ln-m(X;Y)|<tuple|11.210|440|Chapter 3
     (Topology).tm>>
     <associate|L**=L|<tuple|11.124|418|Chapter 3 (Topology).tm>>
     <associate|L0,1=[0,1]|<tuple|14.113|615|Chapter 4 (Differentiation).tm>>
@@ -1928,31 +2020,35 @@
     <associate|L^n(X1,..,Xn;),L(Xn+1,Y))=L^n+1(X1,..,Xn+1;Y)|<tuple|11.207|439|Chapter
     3 (Topology).tm>>
     <associate|L^n(X1,...,Xn;Y)|<tuple|11.203|439|Chapter 3 (Topology).tm>>
-    <associate|L^n(X;L(X,Y))=L^n(X;Y)|<tuple|11.208|439|Chapter 3
+    <associate|L^n(X;L(X,Y))=L^n(X;Y)|<tuple|11.208|440|Chapter 3
     (Topology).tm>>
     <associate|L^n(X;Y)|<tuple|11.205|439|Chapter 3 (Topology).tm>>
     <associate|L^n(X;Y) is a Banach space if Y is a Banach
     space|<tuple|11.364|474|Chapter 3 (Topology).tm>>
     <associate|L^n@L^m=L^n+m|<tuple|12.39|538|Chapter 3 (Topology).tm>>
     <associate|Lebesgue measurability is transalation
-    invariant|<tuple|18.89|820|Chapter 6 (Measures and integration).tm>>
-    <associate|Lebesgue measurable sets alternatives|<tuple|18.79|813|Chapter
+    invariant|<tuple|18.98|813|Chapter 6 (Measures and integration).tm>>
+    <associate|Lebesgue measurable sets alternatives|<tuple|18.88|806|Chapter
     6 (Measures and integration).tm>>
+    <associate|Lebesgue measure is regular|<tuple|18.121|823|Chapter 6
+    (Measures and integration).tm>>
     <associate|Lebesgue measure is translation
-    invariant|<tuple|18.90|821|Chapter 6 (Measures and integration).tm>>
-    <associate|Lebesgue measure space|<tuple|18.72|802|Chapter 6 (Measures
+    invariant|<tuple|18.99|813|Chapter 6 (Measures and integration).tm>>
+    <associate|Lebesgue measure space|<tuple|18.81|793|Chapter 6 (Measures
     and integration).tm>>
-    <associate|Lebesgue measure space on R^n|<tuple|18.77|811|Chapter 6
+    <associate|Lebesgue measure space on R^n|<tuple|18.86|803|Chapter 6
     (Measures and integration).tm>>
-    <associate|Lebesgue measure spaces are complete|<tuple|18.100|825|Chapter
+    <associate|Lebesgue measure spaces are complete|<tuple|18.108|817|Chapter
     6 (Measures and integration).tm>>
-    <associate|Lebesgue space and compact sets|<tuple|18.83|816|Chapter 6
+    <associate|Lebesgue space and compact sets|<tuple|18.92|808|Chapter 6
     (Measures and integration).tm>>
+    <associate|Lebesgue's Dominated Convergence
+    Theorem|<tuple|18.237|890|Chapter 6 (Measures and integration).tm>>
     <associate|Lipschitz continuous functions are uniform
     continuous|<tuple|11.158|425|Chapter 3 (Topology).tm>>
     <associate|Lischitz continuity|<tuple|11.157|425|Chapter 3
     (Topology).tm>>
-    <associate|Lower half spaces|<tuple|18.46|786|Chapter 6 (Measures and
+    <associate|Lower half spaces|<tuple|18.55|778|Chapter 6 (Measures and
     integration).tm>>
     <associate|Mean Value Theorem 3|<tuple|14.115|615|Chapter 4
     (Differentiation).tm>>
@@ -1968,35 +2064,35 @@
     <associate|N_Q forms positive integers|<tuple|7.32|174|Chapter 1
     (Sets).tm>>
     <associate|N_Q is semi group|<tuple|7.30|174|Chapter 1 (Sets).tm>>
-    <associate|Napierian|<tuple|18.33|749|Chapter 5 (Extended Real
+    <associate|Napierian|<tuple|18.33|735|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|P'(X)|<tuple|1.65|21|Chapter 1 (Sets).tm>>
-    <associate|P(A) and 2^A are bijective|<tuple|2.75|52|Chapter 1
+    <associate|P(A) and 2^A are bijective|<tuple|2.77|53|Chapter 1
     (Sets).tm>>
-    <associate|PHI function|<tuple|10.86|262|Chapter 2 (Linear Algebra).tm>>
-    <associate|Pn|<tuple|10.64|252|Chapter 2 (Linear Algebra).tm>>
+    <associate|PHI function|<tuple|10.86|264|Chapter 2 (Linear Algebra).tm>>
+    <associate|Pn|<tuple|10.64|254|Chapter 2 (Linear Algebra).tm>>
     <associate|Pn(L) definition|<tuple|11.217|442|Chapter 3 (Topology).tm>>
-    <associate|Pn(L) is multi linear|<tuple|11.219|442|Chapter 3
+    <associate|Pn(L) is multi linear|<tuple|11.219|443|Chapter 3
     (Topology).tm>>
     <associate|Pn(L)(x1,..,xn)=Pn-1(L)(x1,..,xn-1)(xn)|<tuple|11.218|442|Chapter
     3 (Topology).tm>>
-    <associate|Power series|<tuple|18.2|737|Chapter 5 (Extended Real
+    <associate|Power series|<tuple|18.2|723|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|QC is a sub field of C|<tuple|9.37|224|Chapter 1 (Sets).tm>>
     <associate|QC is not conditional complete|<tuple|9.50|229|Chapter 1
     (Sets).tm>>
-    <associate|R can be covered by open intervals|<tuple|18.69|799|Chapter 6
+    <associate|R can be covered by open intervals|<tuple|18.78|791|Chapter 6
     (Measures and integration).tm>>
     <associate|R is isomorph to R embedded in the
     reals|<tuple|9.14|219|Chapter 1 (Sets).tm>>
     <associate|R^2 is bijective with C|<tuple|9.39|225|Chapter 1 (Sets).tm>>
-    <associate|R^2 is homeomorphism to C|<tuple|11.172|427|Chapter 3
+    <associate|R^2 is homeomorphism to C|<tuple|11.172|428|Chapter 3
     (Topology).tm>>
     <associate|R^2 is isometric with C|<tuple|11.112|414|Chapter 3
     (Topology).tm>>
-    <associate|R^2 is isomorph to C|<tuple|10.182|292|Chapter 2 (Linear
+    <associate|R^2 is isomorph to C|<tuple|10.182|293|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|R^n is a unin of rectangles|<tuple|18.73|805|Chapter 6
+    <associate|R^n is a unin of rectangles|<tuple|18.82|797|Chapter 6
     (Measures and integration).tm>>
     <associate|Recursion step form|<tuple|4.26|106|Chapter 1 (Sets).tm>>
     <associate|Rieman Integral|<tuple|11.436|505|Chapter 3 (Topology).tm>>
@@ -2008,42 +2104,42 @@
     (Topology).tm>>
     <associate|Schur's Theorem|<tuple|12.57|543|Chapter 3 (Topology).tm>>
     <associate|Sn|<tuple|5.15|119|Chapter 1 (Sets).tm>>
-    <associate|T(n_1,..,n_k)|<tuple|10.390|379|Chapter 2 (Linear
+    <associate|T(n_1,..,n_k)|<tuple|10.390|380|Chapter 2 (Linear
     Algebra).tm>>
     <associate|T,S|<tuple|14.168|657|Chapter 4 (Differentiation).tm>>
     <associate|The natural numbers are fully ordered|<tuple|4.53|111|Chapter
     1 (Sets).tm>>
     <associate|The rational numbers are denumerable|<tuple|7.40|177|Chapter 1
     (Sets).tm>>
-    <associate|Tsigma is a bijection|<tuple|10.99|272|Chapter 2 (Linear
+    <associate|Tsigma is a bijection|<tuple|10.99|274|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|Tychonoff|<tuple|11.296|459|Chapter 3 (Topology).tm>>
+    <associate|Tychonoff|<tuple|11.296|460|Chapter 3 (Topology).tm>>
     <associate|Unitary matrix|<tuple|11.131|419|Chapter 3 (Topology).tm>>
     <associate|Ux definition|<tuple|14.2|561|Chapter 4 (Differentiation).tm>>
     <associate|Ux is open|<tuple|14.5|562|Chapter 4 (Differentiation).tm>>
-    <associate|X/Y|<tuple|10.193|294|Chapter 2 (Linear Algebra).tm>>
-    <associate|X^n|<tuple|10.100|272|Chapter 2 (Linear Algebra).tm>>
-    <associate|Young's inequality|<tuple|18.42|753|Chapter 5 (Extended Real
+    <associate|X/Y|<tuple|10.193|296|Chapter 2 (Linear Algebra).tm>>
+    <associate|X^n|<tuple|10.100|274|Chapter 2 (Linear Algebra).tm>>
+    <associate|Young's inequality|<tuple|18.42|740|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|Zorn' lemma for pre-ordered sets|<tuple|2.233|91|Chapter 1
+    <associate|Zorn' lemma for pre-ordered sets|<tuple|2.235|91|Chapter 1
     (Sets).tm>>
-    <associate|Zorn's lemma|<tuple|2.223|87|Chapter 1 (Sets).tm>>
-    <associate|[0,1[ as a union of Dyadic intervals|<tuple|18.92|822|Chapter
+    <associate|Zorn's lemma|<tuple|2.225|87|Chapter 1 (Sets).tm>>
+    <associate|[0,1[ as a union of Dyadic intervals|<tuple|18.101|814|Chapter
     6 (Measures and integration).tm>>
     <associate|[0,1[^n as a union of half open
-    rectangles|<tuple|18.93|822|Chapter 6 (Measures and integration).tm>>
+    rectangles|<tuple|18.102|814|Chapter 6 (Measures and integration).tm>>
     <associate|[a,@@[ is closed|<tuple|11.74|404|Chapter 3 (Topology).tm>>
-    <associate|[a,b] is compact|<tuple|11.266|452|Chapter 3 (Topology).tm>>
+    <associate|[a,b] is compact|<tuple|11.266|453|Chapter 3 (Topology).tm>>
     <associate|^2 is a bijection|<tuple|8.75|213|Chapter 1 (Sets).tm>>
     <associate|a class is not isomorph to a subclass of a initial segment of
-    itself|<tuple|2.198|80|Chapter 1 (Sets).tm>>
+    itself|<tuple|2.200|81|Chapter 1 (Sets).tm>>
     <associate|a closed set is equal to its closurer|<tuple|11.17|392|Chapter
     3 (Topology).tm>>
     <associate|a contraction mapping is continuous|<tuple|11.412|495|Chapter
     3 (Topology).tm>>
     <associate|a denumerable family of countable sets is
     countable|<tuple|5.73|138|Chapter 1 (Sets).tm>>
-    <associate|a isometry is a homeomorphism|<tuple|11.171|427|Chapter 3
+    <associate|a isometry is a homeomorphism|<tuple|11.171|428|Chapter 3
     (Topology).tm>>
     <associate|a natural number does not comtains a countable
     subset|<tuple|5.33|125|Chapter 1 (Sets).tm>>
@@ -2051,16 +2147,14 @@
     successor|<tuple|4.14|100|Chapter 1 (Sets).tm>>
     <associate|a open set in R is a countable union of open finite
     intervals|<tuple|11.76|406|Chapter 3 (Topology).tm>>
-    <associate|a permutation set is a semigroup|<tuple|10.20|239|Chapter 2
+    <associate|a permutation set is a semigroup|<tuple|10.20|241|Chapter 2
     (Linear Algebra).tm>>
     <associate|a second countable basis is first
-    countable|<tuple|11.239|446|Chapter 3 (Topology).tm>>
+    countable|<tuple|11.239|447|Chapter 3 (Topology).tm>>
     <associate|a serie of extented positive reals converges always and is
-    independent of the order|<tuple|17.119|726|Chapter 5 (Extended Real
+    independent of the order|<tuple|17.101|712|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|a-b=c-d=\<gtr\>a+d=c+b|<tuple|17.25|675|Chapter 5 (Extended
-    Real Numbers).tm>>
-    <associate|a.x=0=\<gtr\>x=0 in vector space|<tuple|10.109|274|Chapter 2
+    <associate|a.x=0=\<gtr\>x=0 in vector space|<tuple|10.109|276|Chapter 2
     (Linear Algebra).tm>>
     <associate|a/b=a.k/b.k if k\<less\>\<gtr\>0|<tuple|7.6|167|Chapter 1
     (Sets).tm>>
@@ -2076,92 +2170,92 @@
     commutative|<tuple|11.400|489|Chapter 3 (Topology).tm>>
     <associate|absolute series sum scalar product|<tuple|11.408|492|Chapter 3
     (Topology).tm>>
-    <associate|absolute value in the extended reals|<tuple|17.31|679|Chapter
+    <associate|absolute value in the extended reals|<tuple|17.32|683|Chapter
     5 (Extended Real Numbers).tm>>
     <associate|absolute value is a norm|<tuple|8.66|211|Chapter 1 (Sets).tm>>
-    <associate|absolute value of integers|<tuple|6.44|163|Chapter 1
+    <associate|absolute value of integers|<tuple|6.44|162|Chapter 1
     (Sets).tm>>
     <associate|absolute value on the extended real
-    properties|<tuple|17.33|679|Chapter 5 (Extended Real Numbers).tm>>
+    properties|<tuple|17.34|683|Chapter 5 (Extended Real Numbers).tm>>
     <associate|absorbing element|<tuple|3.25|96|Chapter 1 (Sets).tm>>
     <associate|absorbing element of natural numbers|<tuple|4.37|108|Chapter 1
     (Sets).tm>>
     <associate|absorbing element of the integers|<tuple|6.12|155|Chapter 1
     (Sets).tm>>
     <associate|absorption laws|<tuple|1.22|10|Chapter 1 (Sets).tm>>
-    <associate|accumulation and closure|<tuple|11.276|454|Chapter 3
+    <associate|accumulation and closure|<tuple|11.276|455|Chapter 3
     (Topology).tm>>
-    <associate|add to end and change|<tuple|10.238|307|Chapter 2 (Linear
+    <associate|add to end and change|<tuple|10.238|308|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|adding of positive extented reals|<tuple|17.27|676|Chapter 5
-    (Extended Real Numbers).tm>>
     <associate|addition of natural number|<tuple|4.27|107|Chapter 1
     (Sets).tm>>
     <associate|addition of natural numbers is
     associative|<tuple|4.32|107|Chapter 1 (Sets).tm>>
     <associate|addition of rational numbers|<tuple|7.5|167|Chapter 1
     (Sets).tm>>
-    <associate|adjoint and det of matrix of mapping|<tuple|10.341|351|Chapter
+    <associate|adjoint and det of matrix of mapping|<tuple|10.341|352|Chapter
     2 (Linear Algebra).tm>>
     <associate|adjoint is a linear|<tuple|11.125|418|Chapter 3
     (Topology).tm>>
-    <associate|adjoint of a linear function|<tuple|11.123|417|Chapter 3
+    <associate|adjoint of a linear function|<tuple|11.123|418|Chapter 3
     (Topology).tm>>
-    <associate|adjoint of a matrix|<tuple|10.338|350|Chapter 2 (Linear
+    <associate|adjoint of a matrix|<tuple|10.338|351|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|adjoint of matrix of dimension 1|<tuple|10.339|350|Chapter 2
+    <associate|adjoint of matrix of dimension 1|<tuple|10.339|351|Chapter 2
     (Linear Algebra).tm>>
-    <associate|adjoint(L)|<tuple|10.287|331|Chapter 2 (Linear Algebra).tm>>
-    <associate|algebra equivalent definitions|<tuple|18.6|767|Chapter 6
+    <associate|adjoint(L)|<tuple|10.287|332|Chapter 2 (Linear Algebra).tm>>
+    <associate|algebra equivalent definitions|<tuple|18.9|754|Chapter 6
     (Measures and integration).tm>>
-    <associate|algebra of sets|<tuple|18.5|767|Chapter 6 (Measures and
+    <associate|algebra of sets|<tuple|18.8|754|Chapter 6 (Measures and
     integration).tm>>
-    <associate|all tensorproducts are isomorph|<tuple|10.376|370|Chapter 2
+    <associate|all tensorproducts are isomorph|<tuple|10.376|371|Chapter 2
     (Linear Algebra).tm>>
-    <associate|almost complete|<tuple|18.97|825|Chapter 6 (Measures and
+    <associate|almost complete|<tuple|18.178|852|Chapter 6 (Measures and
     integration).tm>>
+    <associate|almost everywhere equality and characteristic
+    function|<tuple|18.180|852|Chapter 6 (Measures and integration).tm>>
+    <associate|almost everywhere properties|<tuple|18.181|852|Chapter 6
+    (Measures and integration).tm>>
     <associate|alternate definition of a compact
-    subset|<tuple|11.246|447|Chapter 3 (Topology).tm>>
+    subset|<tuple|11.246|448|Chapter 3 (Topology).tm>>
     <associate|alternate definition of closed set|<tuple|11.21|392|Chapter 3
     (Topology).tm>>
     <associate|alternative definition for conditional
-    completeness|<tuple|2.178|72|Chapter 1 (Sets).tm>>
+    completeness|<tuple|2.180|72|Chapter 1 (Sets).tm>>
     <associate|alternative definition of Baire sets|<tuple|11.44|397|Chapter
     3 (Topology).tm>>
     <associate|alternative definition of Riemann
     Integral|<tuple|11.439|505|Chapter 3 (Topology).tm>>
-    <associate|alternative definition of Ux|<tuple|14.4|561|Chapter 4
+    <associate|alternative definition of Ux|<tuple|14.4|562|Chapter 4
     (Differentiation).tm>>
     <associate|alternative definition of a bounded
     function|<tuple|11.339|467|Chapter 3 (Topology).tm>>
-    <associate|alternative definition of a function (1)|<tuple|2.9|36|Chapter
-    1 (Sets).tm>>
+    <associate|alternative definition of a function
+    (1)|<tuple|2.10|37|Chapter 1 (Sets).tm>>
     <associate|alternative definition of differentiability
     (2)|<tuple|14.14|565|Chapter 4 (Differentiation).tm>>
     <associate|alternative definition of limit in the extented
-    reals|<tuple|17.87|714|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.73|700|Chapter 5 (Extended Real Numbers).tm>>
     <associate|alternative definition of partial
     function|<tuple|2.3|35|Chapter 1 (Sets).tm>>
     <associate|alternative definitions of
     differentiability|<tuple|14.12|564|Chapter 4 (Differentiation).tm>>
     <associate|alternative formule for lebesgue measure
-    (1)|<tuple|18.82|815|Chapter 6 (Measures and integration).tm>>
-    <associate|alternative graph of sum of
-    functions|<tuple|17.105|723|Chapter 5 (Extended Real Numbers).tm>>
+    (1)|<tuple|18.91|807|Chapter 6 (Measures and integration).tm>>
     <associate|another characterization of Cauchy|<tuple|11.319|464|Chapter 3
     (Topology).tm>>
-    <associate|application of axiom of choice|<tuple|2.210|84|Chapter 1
+    <associate|application of axiom of choice|<tuple|2.212|84|Chapter 1
     (Sets).tm>>
-    <associate|apply ^[n+1]|<tuple|10.77|259|Chapter 2 (Linear Algebra).tm>>
-    <associate|apply permutations|<tuple|10.85|262|Chapter 2 (Linear
+    <associate|apply ^[n+1]|<tuple|10.77|261|Chapter 2 (Linear Algebra).tm>>
+    <associate|apply permutations|<tuple|10.85|264|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|apply transposition|<tuple|10.88|263|Chapter 2 (Linear
+    <associate|apply transposition|<tuple|10.88|265|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|aproximate halfopen by open|<tuple|18.81|814|Chapter 6
+    <associate|aproximate halfopen by open|<tuple|18.90|806|Chapter 6
     (Measures and integration).tm>>
     <associate|archimedean property of natural
     numbers|<tuple|4.73|114|Chapter 1 (Sets).tm>>
-    <associate|archimedean property of the rationals|<tuple|7.33|174|Chapter
+    <associate|archimedean property of the rationals|<tuple|7.33|175|Chapter
     1 (Sets).tm>>
     <associate|archimedean property of the reals|<tuple|9.55|230|Chapter 1
     (Sets).tm>>
@@ -2175,12 +2269,12 @@
     families|<tuple|11.409|493|Chapter 3 (Topology).tm>>
     <associate|associativity of general composition|<tuple|4.81|116|Chapter 1
     (Sets).tm>>
-    <associate|associativity of inifinite series|<tuple|17.125|734|Chapter 5
-    (Extended Real Numbers).tm>>
     <associate|associativity of series of extended
-    reals|<tuple|17.123|731|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.105|719|Chapter 5 (Extended Real Numbers).tm>>
     <associate|associativity of summable families of positive
     terms|<tuple|11.391|486|Chapter 3 (Topology).tm>>
+    <associate|associativity of the product of extnded
+    reals|<tuple|17.21|672|Chapter 5 (Extended Real Numbers).tm>>
     <associate|auto-1|<tuple|1|7|Chapter 1 (Sets).tm>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|<big|cup>>|8|Chapter 1
     (Sets).tm>>
@@ -2195,12 +2289,12 @@
     1 (Sets).tm>>
     <associate|auto-106|<tuple|<with|mode|<quote|math>|\<cong\>>|68|Chapter 1
     (Sets).tm>>
-    <associate|auto-107|<tuple|maximal element|69|Chapter 1 (Sets).tm>>
-    <associate|auto-108|<tuple|minimal element|69|Chapter 1 (Sets).tm>>
-    <associate|auto-109|<tuple|greatest element|69|Chapter 1 (Sets).tm>>
+    <associate|auto-107|<tuple|maximal element|70|Chapter 1 (Sets).tm>>
+    <associate|auto-108|<tuple|minimal element|70|Chapter 1 (Sets).tm>>
+    <associate|auto-109|<tuple|greatest element|70|Chapter 1 (Sets).tm>>
     <associate|auto-11|<tuple|<with|mode|<quote|math>|<big|cap>>|8|Chapter 1
     (Sets).tm>>
-    <associate|auto-110|<tuple|least element|69|Chapter 1 (Sets).tm>>
+    <associate|auto-110|<tuple|least element|70|Chapter 1 (Sets).tm>>
     <associate|auto-111|<tuple|upper bound|70|Chapter 1 (Sets).tm>>
     <associate|auto-112|<tuple|<with|mode|<quote|math>|sup<around*|(|A|)>>|70|Chapter
     1 (Sets).tm>>
@@ -2209,20 +2303,20 @@
     <associate|auto-114|<tuple|lower bound|70|Chapter 1 (Sets).tm>>
     <associate|auto-115|<tuple|conditional complete classes|72|Chapter 1
     (Sets).tm>>
-    <associate|auto-116|<tuple|generalized interval|73|Chapter 1 (Sets).tm>>
+    <associate|auto-116|<tuple|generalized interval|74|Chapter 1 (Sets).tm>>
     <associate|auto-117|<tuple|2.3.2|79|Chapter 1 (Sets).tm>>
     <associate|auto-118|<tuple|well-ordered class|79|Chapter 1 (Sets).tm>>
-    <associate|auto-119|<tuple|immediate successor|79|Chapter 1 (Sets).tm>>
+    <associate|auto-119|<tuple|immediate successor|80|Chapter 1 (Sets).tm>>
     <associate|auto-12|<tuple|<with|mode|<quote|math>|\<emptyset\>>|8|Chapter
     1 (Sets).tm>>
-    <associate|auto-120|<tuple|section|79|Chapter 1 (Sets).tm>>
+    <associate|auto-120|<tuple|section|80|Chapter 1 (Sets).tm>>
     <associate|auto-121|<tuple|transfinite induction|80|Chapter 1 (Sets).tm>>
-    <associate|auto-122|<tuple|2.3.3|82|Chapter 1 (Sets).tm>>
+    <associate|auto-122|<tuple|2.3.3|83|Chapter 1 (Sets).tm>>
     <associate|auto-123|<tuple|axiom of choice|83|Chapter 1 (Sets).tm>>
-    <associate|auto-124|<tuple|Hausdorff's maximal principle|86|Chapter 1
+    <associate|auto-124|<tuple|Hausdorff's maximal principle|87|Chapter 1
     (Sets).tm>>
     <associate|auto-125|<tuple|Zorn's Lemma|87|Chapter 1 (Sets).tm>>
-    <associate|auto-126|<tuple|well-ordering theorem|87|Chapter 1 (Sets).tm>>
+    <associate|auto-126|<tuple|well-ordering theorem|88|Chapter 1 (Sets).tm>>
     <associate|auto-127|<tuple|3|93|Chapter 1 (Sets).tm>>
     <associate|auto-128|<tuple|3.1|93|Chapter 1 (Sets).tm>>
     <associate|auto-129|<tuple|semi-group|93|Chapter 1 (Sets).tm>>
@@ -2322,8 +2416,8 @@
     <associate|auto-193|<tuple|product tuple|141|Chapter 1 (Sets).tm>>
     <associate|auto-194|<tuple|<with|mode|<quote|math>|\<pi\><rsub|i>>|143|Chapter
     1 (Sets).tm>>
-    <associate|auto-195|<tuple|5.6.1|148|Chapter 1 (Sets).tm>>
-    <associate|auto-196|<tuple|5.6.2|149|Chapter 1 (Sets).tm>>
+    <associate|auto-195|<tuple|5.6.1|147|Chapter 1 (Sets).tm>>
+    <associate|auto-196|<tuple|5.6.2|148|Chapter 1 (Sets).tm>>
     <associate|auto-197|<tuple|6|153|Chapter 1 (Sets).tm>>
     <associate|auto-198|<tuple|6.1|153|Chapter 1 (Sets).tm>>
     <associate|auto-199|<tuple|<with|mode|<quote|math>|\<bbb-Z\>>|153|Chapter
@@ -2346,16 +2440,16 @@
     <with|mode|<quote|math>|\<bbb-Z\>>|158|Chapter 1 (Sets).tm>>
     <associate|auto-208|<tuple|Archimedean property of
     <with|mode|<quote|math>|\<bbb-Z\>>|162|Chapter 1 (Sets).tm>>
-    <associate|auto-209|<tuple|absolute value|163|Chapter 1 (Sets).tm>>
+    <associate|auto-209|<tuple|absolute value|162|Chapter 1 (Sets).tm>>
     <associate|auto-21|<tuple|domain|18|Chapter 1 (Sets).tm>>
-    <associate|auto-210|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>|163|Chapter
+    <associate|auto-210|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>|162|Chapter
     1 (Sets).tm>>
     <associate|auto-211|<tuple|division algorithm|163|Chapter 1 (Sets).tm>>
     <associate|auto-212|<tuple|divides|164|Chapter 1 (Sets).tm>>
     <associate|auto-213|<tuple|common divisor|164|Chapter 1 (Sets).tm>>
     <associate|auto-214|<tuple|gcd|164|Chapter 1 (Sets).tm>>
-    <associate|auto-215|<tuple|even numbers|165|Chapter 1 (Sets).tm>>
-    <associate|auto-216|<tuple|odd numbers|165|Chapter 1 (Sets).tm>>
+    <associate|auto-215|<tuple|even numbers|164|Chapter 1 (Sets).tm>>
+    <associate|auto-216|<tuple|odd numbers|164|Chapter 1 (Sets).tm>>
     <associate|auto-217|<tuple|6.3|165|Chapter 1 (Sets).tm>>
     <associate|auto-218|<tuple|7|167|Chapter 1 (Sets).tm>>
     <associate|auto-219|<tuple|7.1|167|Chapter 1 (Sets).tm>>
@@ -2366,18 +2460,18 @@
     1 (Sets).tm>>
     <associate|auto-222|<tuple|<with|mode|<quote|math>|<frac|n|k>>|167|Chapter
     1 (Sets).tm>>
-    <associate|auto-223|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-Q\>,\<upl\>|\<rangle\>>>|167|Chapter
+    <associate|auto-223|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-Q\>,\<upl\>|\<rangle\>>>|168|Chapter
     1 (Sets).tm>>
     <associate|auto-224|<tuple|7.2|170|Chapter 1 (Sets).tm>>
     <associate|auto-225|<tuple|7.3|171|Chapter 1 (Sets).tm>>
     <associate|auto-226|<tuple|order relation on rational numbers|172|Chapter
     1 (Sets).tm>>
-    <associate|auto-227|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-Q\>>>|172|Chapter
+    <associate|auto-227|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-Q\>>>|173|Chapter
     1 (Sets).tm>>
     <associate|auto-228|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Q\>>>|174|Chapter
     1 (Sets).tm>>
     <associate|auto-229|<tuple|Archimedean property of
-    <with|mode|<quote|math>|\<bbb-Q\>>|174|Chapter 1 (Sets).tm>>
+    <with|mode|<quote|math>|\<bbb-Q\>>|175|Chapter 1 (Sets).tm>>
     <associate|auto-23|<tuple|function graph|20|Chapter 1 (Sets).tm>>
     <associate|auto-230|<tuple|7.4|177|Chapter 1 (Sets).tm>>
     <associate|auto-231|<tuple|8|179|Chapter 1 (Sets).tm>>
@@ -2398,7 +2492,7 @@
     1 (Sets).tm>>
     <associate|auto-243|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|->>|183|Chapter
     1 (Sets).tm>>
-    <associate|auto-244|<tuple|reciprocal cut|187|Chapter 1 (Sets).tm>>
+    <associate|auto-244|<tuple|reciprocal cut|186|Chapter 1 (Sets).tm>>
     <associate|auto-245|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\>,+,\<cdot\>|\<rangle\>>
     is a field>|188|Chapter 1 (Sets).tm>>
     <associate|auto-246|<tuple|8.2.3|200|Chapter 1 (Sets).tm>>
@@ -2411,14 +2505,14 @@
     <associate|auto-250|<tuple|<with|mode|<quote|math>|\<bbb-R\> is
     conditional complete>|204|Chapter 1 (Sets).tm>>
     <associate|auto-251|<tuple|irrational numbers|206|Chapter 1 (Sets).tm>>
-    <associate|auto-252|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-R\>>>|207|Chapter
+    <associate|auto-252|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-R\>>>|206|Chapter
     1 (Sets).tm>>
     <associate|auto-253|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-R\>>>|207|Chapter
     1 (Sets).tm>>
-    <associate|auto-254|<tuple|density theorem|211|Chapter 1 (Sets).tm>>
+    <associate|auto-254|<tuple|density theorem|210|Chapter 1 (Sets).tm>>
     <associate|auto-255|<tuple|absolute value|211|Chapter 1 (Sets).tm>>
     <associate|auto-256|<tuple|8.4|213|Chapter 1 (Sets).tm>>
-    <associate|auto-257|<tuple|<with|mode|<quote|math>|<sqrt|x>>|215|Chapter
+    <associate|auto-257|<tuple|<with|mode|<quote|math>|<sqrt|x>>|214|Chapter
     1 (Sets).tm>>
     <associate|auto-258|<tuple|9|217|Chapter 1 (Sets).tm>>
     <associate|auto-259|<tuple|9.1|217|Chapter 1 (Sets).tm>>
@@ -2443,198 +2537,198 @@
     <associate|auto-271|<tuple|density theorem|231|Chapter 1 (Sets).tm>>
     <associate|auto-272|<tuple|9.4.3|233|Chapter 1 (Sets).tm>>
     <associate|auto-273|<tuple|9.5|234|Chapter 1 (Sets).tm>>
-    <associate|auto-274|<tuple|10|235|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-275|<tuple|10.1|235|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-276|<tuple|<with|mode|<quote|math>|<around*|{|n,\<ldots\>,m|}>>|235|Chapter
+    <associate|auto-274|<tuple|10|237|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-275|<tuple|10.1|237|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-276|<tuple|<with|mode|<quote|math>|<around*|{|n,\<ldots\>,m|}>>|237|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-277|<tuple|finite sum|235|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-278|<tuple|10.1.1|237|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-279|<tuple|10.1.2|239|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-277|<tuple|finite sum|237|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-278|<tuple|10.1.1|239|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-279|<tuple|10.1.2|241|Chapter 2 (Linear Algebra).tm>>
     <associate|auto-28|<tuple|<with|mode|<quote|math>|\<cal-P\><around*|(|A|)>>|21|Chapter
     1 (Sets).tm>>
-    <associate|auto-280|<tuple|permutation|239|Chapter 2 (Linear
+    <associate|auto-280|<tuple|permutation|241|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-281|<tuple|transposition|239|Chapter 2 (Linear
+    <associate|auto-281|<tuple|transposition|241|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-282|<tuple|support of a family of elements|243|Chapter 2
+    <associate|auto-282|<tuple|support of a family of elements|245|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-283|<tuple|<with|mode|<quote|math>|support<around*|(|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>|)>>|243|Chapter
+    <associate|auto-283|<tuple|<with|mode|<quote|math>|support<around*|(|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>|)>>|245|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-284|<tuple|family of elements with finite
-    support|244|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-285|<tuple|generalized sum|244|Chapter 2 (Linear
+    support|246|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-285|<tuple|generalized sum|246|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-286|<tuple|generalized sum|244|Chapter 2 (Linear
+    <associate|auto-286|<tuple|generalized sum|246|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-287|<tuple|10.2|252|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-288|<tuple|<with|mode|<quote|math>|P<rsub|n>>|252|Chapter
+    <associate|auto-287|<tuple|10.2|254|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-288|<tuple|<with|mode|<quote|math>|P<rsub|n>>|254|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-289|<tuple|permutation group|253|Chapter 2 (Linear
+    <associate|auto-289|<tuple|permutation group|255|Chapter 2 (Linear
     Algebra).tm>>
     <associate|auto-29|<tuple|<with|mode|<quote|math>|\<cal-P\><rprime|'><around*|(|A|)>>|21|Chapter
     1 (Sets).tm>>
-    <associate|auto-290|<tuple|<with|mode|<quote|math>|\<sigma\><rsup|<around*|[|i|]>>>|257|Chapter
+    <associate|auto-290|<tuple|<with|mode|<quote|math>|\<sigma\><rsup|<around*|[|i|]>>>|259|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-291|<tuple|<with|mode|<quote|math>|\<sigma\>f>|262|Chapter
+    <associate|auto-291|<tuple|<with|mode|<quote|math>|\<sigma\>f>|264|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-292|<tuple|<with|mode|<quote|math>|sign<around*|(|\<sigma\>|)>>|267|Chapter
+    <associate|auto-292|<tuple|<with|mode|<quote|math>|sign<around*|(|\<sigma\>|)>>|269|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-293|<tuple|10.3|272|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-294|<tuple|<with|mode|<quote|math>|X<rsup|n>>|272|Chapter
+    <associate|auto-293|<tuple|10.3|274|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-294|<tuple|<with|mode|<quote|math>|X<rsup|n>>|274|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-295|<tuple|cartesian power of sets|272|Chapter 2 (Linear
+    <associate|auto-295|<tuple|cartesian power of sets|274|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-296|<tuple|10.4|273|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-297|<tuple|10.4.1|273|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-298|<tuple|vector space|273|Chapter 2 (Linear
+    <associate|auto-296|<tuple|10.4|275|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-297|<tuple|10.4.1|275|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-298|<tuple|vector space|275|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-299|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|V,\<oplus\>,\<odot\>|\<rangle\>>>|273|Chapter
+    <associate|auto-299|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|V,\<oplus\>,\<odot\>|\<rangle\>>>|275|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-3|<tuple|<with|mode|<quote|math>|\<in\>>|7|Chapter 1
     (Sets).tm>>
     <associate|auto-30|<tuple|successor|21|Chapter 1 (Sets).tm>>
-    <associate|auto-300|<tuple|subspace of a vector space|274|Chapter 2
+    <associate|auto-300|<tuple|subspace of a vector space|276|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-301|<tuple|<with|mode|<quote|math>|M<around*|(|X,V|)>>|275|Chapter
+    <associate|auto-301|<tuple|<with|mode|<quote|math>|M<around*|(|X,V|)>>|277|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-302|<tuple|<with|mode|<quote|math>|\<alpha\>\<cdot\>A>|277|Chapter
+    <associate|auto-302|<tuple|<with|mode|<quote|math>|\<alpha\>\<cdot\>A>|279|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-303|<tuple|<with|mode|<quote|math>|x+A>|277|Chapter 2
+    <associate|auto-303|<tuple|<with|mode|<quote|math>|x+A>|279|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-304|<tuple|<with|mode|<quote|math>|A+B>|277|Chapter 2
+    <associate|auto-304|<tuple|<with|mode|<quote|math>|A+B>|279|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-305|<tuple|<with|mode|<quote|math>|A-B>|277|Chapter 2
+    <associate|auto-305|<tuple|<with|mode|<quote|math>|A-B>|279|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-306|<tuple|10.4.2|278|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-307|<tuple|linear combination|279|Chapter 2 (Linear
+    <associate|auto-306|<tuple|10.4.2|279|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-307|<tuple|linear combination|280|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-308|<tuple|linear span|279|Chapter 2 (Linear
+    <associate|auto-308|<tuple|linear span|280|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-309|<tuple|linear independent family|280|Chapter 2
+    <associate|auto-309|<tuple|linear independent family|282|Chapter 2
     (Linear Algebra).tm>>
     <associate|auto-31|<tuple|successor set|21|Chapter 1 (Sets).tm>>
-    <associate|auto-310|<tuple|linear dependent family|280|Chapter 2 (Linear
+    <associate|auto-310|<tuple|linear dependent family|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-311|<tuple|linear independence|280|Chapter 2 (Linear
+    <associate|auto-311|<tuple|linear independence|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-312|<tuple|linear dependent set|280|Chapter 2 (Linear
+    <associate|auto-312|<tuple|linear dependent set|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-313|<tuple|linear independent set|280|Chapter 2 (Linear
+    <associate|auto-313|<tuple|linear independent set|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-314|<tuple|<with|mode|<quote|math>|\<preccurlyeq\>>|282|Chapter
+    <associate|auto-314|<tuple|<with|mode|<quote|math>|\<preccurlyeq\>>|284|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-315|<tuple|basis of a vector space|283|Chapter 2 (Linear
+    <associate|auto-315|<tuple|basis of a vector space|284|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-316|<tuple|<with|mode|<quote|math>|v<rsub|i>>|283|Chapter
+    <associate|auto-316|<tuple|<with|mode|<quote|math>|v<rsub|i>>|285|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-317|<tuple|i-<no-break>the coordinate|283|Chapter 2
+    <associate|auto-317|<tuple|i-<no-break>the coordinate|285|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-318|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|<with|mode|<quote|math>|\<delta\><rsub|n><around*|(|i,j|)>>>|286|Chapter
+    <associate|auto-318|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|<with|mode|<quote|math>|\<delta\><rsub|n><around*|(|i,j|)>>>|287|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-319|<tuple|10.5|288|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-319|<tuple|10.5|290|Chapter 2 (Linear Algebra).tm>>
     <associate|auto-32|<tuple|axiom of infinity|21|Chapter 1 (Sets).tm>>
-    <associate|auto-320|<tuple|<with|mode|<quote|math>|\<cal-F\><around*|(|X,F|)>>|288|Chapter
+    <associate|auto-320|<tuple|<with|mode|<quote|math>|\<cal-F\><around*|(|X,F|)>>|290|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-321|<tuple|10.6|290|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-322|<tuple|linear mapping|290|Chapter 2 (Linear
+    <associate|auto-321|<tuple|10.6|291|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-322|<tuple|linear mapping|291|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-323|<tuple|regular linear mapping|290|Chapter 2 (Linear
+    <associate|auto-323|<tuple|regular linear mapping|292|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-324|<tuple|linear isomorphism|292|Chapter 2 (Linear
+    <associate|auto-324|<tuple|linear isomorphism|293|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-325|<tuple|isomorphism|292|Chapter 2 (Linear
+    <associate|auto-325|<tuple|isomorphism|293|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-326|<tuple|<with|mode|<quote|math>|Hom<around*|(|X,Y|)>>|293|Chapter
+    <associate|auto-326|<tuple|<with|mode|<quote|math>|Hom<around*|(|X,Y|)>>|294|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-327|<tuple|dual space|293|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-328|<tuple|<with|mode|<quote|math>|V<rsup|\<ast\>>>|293|Chapter
+    <associate|auto-327|<tuple|dual space|295|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-328|<tuple|<with|mode|<quote|math>|V<rsup|\<ast\>>>|295|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-329|<tuple|<with|mode|<quote|math>|GL<around*|(|X|)>>|294|Chapter
+    <associate|auto-329|<tuple|<with|mode|<quote|math>|GL<around*|(|X|)>>|295|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-33|<tuple|1.6|22|Chapter 1 (Sets).tm>>
-    <associate|auto-330|<tuple|general linear group|294|Chapter 2 (Linear
+    <associate|auto-330|<tuple|general linear group|295|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-331|<tuple|X/Y|294|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-332|<tuple|quotient vector space|294|Chapter 2 (Linear
+    <associate|auto-331|<tuple|X/Y|296|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-332|<tuple|quotient vector space|296|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-333|<tuple|direct internal sum of subspaces|295|Chapter 2
+    <associate|auto-333|<tuple|direct internal sum of subspaces|297|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-334|<tuple|<with|mode|<quote|math>|X\<oplus\>Y>|295|Chapter
+    <associate|auto-334|<tuple|<with|mode|<quote|math>|X\<oplus\>Y>|297|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-335|<tuple|<with|mode|<quote|math>|rank<around*|(|L|)>>|301|Chapter
+    <associate|auto-335|<tuple|<with|mode|<quote|math>|rank<around*|(|L|)>>|302|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-336|<tuple|rank of a linear mapping|301|Chapter 2 (Linear
+    <associate|auto-336|<tuple|rank of a linear mapping|302|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-337|<tuple|10.7|305|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-338|<tuple|<with|mode|<quote|math>|<around*|{|1,\<ldots\>,i-1,i+1,\<ldots\>,n|}>>|305|Chapter
+    <associate|auto-337|<tuple|10.7|306|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-338|<tuple|<with|mode|<quote|math>|<around*|{|1,\<ldots\>,i-1,i+1,\<ldots\>,n|}>>|306|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-339|<tuple|<with|mode|<quote|math>|x<rsub|i\<rightarrow\>a>>|305|Chapter
+    <associate|auto-339|<tuple|<with|mode|<quote|math>|x<rsub|i\<rightarrow\>a>>|307|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-34|<tuple|pair of classes|22|Chapter 1 (Sets).tm>>
-    <associate|auto-340|<tuple|multilinear mapping|306|Chapter 2 (Linear
+    <associate|auto-340|<tuple|multilinear mapping|307|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-341|<tuple|<with|mode|<quote|math>|Hom<around*|(|X<rsub|1>,\<ldots\>,X<rsub|n>;Y|)>>|307|Chapter
+    <associate|auto-341|<tuple|<with|mode|<quote|math>|Hom<around*|(|X<rsub|1>,\<ldots\>,X<rsub|n>;Y|)>>|308|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-342|<tuple|<with|mode|<quote|math>|x<rsub|\<ldots\>a>>|307|Chapter
+    <associate|auto-342|<tuple|<with|mode|<quote|math>|x<rsub|\<ldots\>a>>|308|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-343|<tuple|<with|mode|<quote|math>|L<rsub|<around*|(|\<ldots\>a|)>>>|307|Chapter
+    <associate|auto-343|<tuple|<with|mode|<quote|math>|L<rsub|<around*|(|\<ldots\>a|)>>>|308|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-344|<tuple|10.8|310|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-345|<tuple|<with|mode|<quote|math>|Hom<around*|(|X<rsup|n>;Y|)>>|311|Chapter
+    <associate|auto-344|<tuple|10.8|311|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-345|<tuple|<with|mode|<quote|math>|Hom<around*|(|X<rsup|n>;Y|)>>|312|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-346|<tuple|skew symmetry|312|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-347|<tuple|determinant function|317|Chapter 2 (Linear
+    <associate|auto-347|<tuple|determinant function|318|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-348|<tuple|<with|mode|<quote|math>|\<Delta\>>|317|Chapter
+    <associate|auto-348|<tuple|<with|mode|<quote|math>|\<Delta\>>|318|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-349|<tuple|<with|mode|<quote|math>|<wide|\<Delta\>|^>>|321|Chapter
+    <associate|auto-349|<tuple|<with|mode|<quote|math>|<wide|\<Delta\>|^>>|322|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-35|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|x,y|\<rangle\>>>|22|Chapter
     1 (Sets).tm>>
-    <associate|auto-350|<tuple|<with|mode|<quote|math>|\<Delta\><rsub|L>>|325|Chapter
+    <associate|auto-350|<tuple|<with|mode|<quote|math>|\<Delta\><rsub|L>>|326|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-351|<tuple|determinant|325|Chapter 2 (Linear
+    <associate|auto-351|<tuple|determinant|326|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-352|<tuple|<with|mode|<quote|math>|det<around*|(|L|)>>|325|Chapter
+    <associate|auto-352|<tuple|<with|mode|<quote|math>|det<around*|(|L|)>>|326|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-353|<tuple|<with|mode|<quote|math>|<wide|\<Delta\><rsub|>|^><rsub|L>>|327|Chapter
+    <associate|auto-353|<tuple|<with|mode|<quote|math>|<wide|\<Delta\><rsub|>|^><rsub|L>>|328|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-354|<tuple|<with|mode|<quote|math>|adjoint<around*|(|L|)>>|331|Chapter
+    <associate|auto-354|<tuple|<with|mode|<quote|math>|adjoint<around*|(|L|)>>|332|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-355|<tuple|10.9|333|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-356|<tuple|matrix|333|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-357|<tuple|row matrix|333|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-358|<tuple|column matrix|333|Chapter 2 (Linear
+    <associate|auto-355|<tuple|10.9|334|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-356|<tuple|matrix|334|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-357|<tuple|row matrix|334|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-358|<tuple|column matrix|334|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-359|<tuple|unit matrix|334|Chapter 2 (Linear
+    <associate|auto-359|<tuple|unit matrix|335|Chapter 2 (Linear
     Algebra).tm>>
     <associate|auto-36|<tuple|tripple of classes|23|Chapter 1 (Sets).tm>>
-    <associate|auto-360|<tuple|sum of matrices|334|Chapter 2 (Linear
+    <associate|auto-360|<tuple|sum of matrices|335|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-361|<tuple|scalair product of matrices|334|Chapter 2
+    <associate|auto-361|<tuple|scalair product of matrices|335|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-362|<tuple|product of matrices|334|Chapter 2 (Linear
+    <associate|auto-362|<tuple|product of matrices|335|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-363|<tuple|<with|mode|<quote|math>|\<cal-M\><around*|(|n\<times\>m,F|)>>|334|Chapter
+    <associate|auto-363|<tuple|<with|mode|<quote|math>|\<cal-M\><around*|(|n\<times\>m,F|)>>|335|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-364|<tuple|transpose of a matrix|335|Chapter 2 (Linear
+    <associate|auto-364|<tuple|transpose of a matrix|336|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-365|<tuple|<with|mode|<quote|math>|M<rsup|T>>|335|Chapter
+    <associate|auto-365|<tuple|<with|mode|<quote|math>|M<rsup|T>>|336|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-366|<tuple|<with|mode|<quote|math>|rows<around*|(|M|)>>|336|Chapter
+    <associate|auto-366|<tuple|<with|mode|<quote|math>|rows<around*|(|M|)>>|337|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-367|<tuple|<with|mode|<quote|math>|cols<around*|(|M|)>>|336|Chapter
+    <associate|auto-367|<tuple|<with|mode|<quote|math>|cols<around*|(|M|)>>|337|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-368|<tuple|row rank of a matrix|336|Chapter 2 (Linear
+    <associate|auto-368|<tuple|row rank of a matrix|337|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-369|<tuple|column rank of a matrix|336|Chapter 2 (Linear
+    <associate|auto-369|<tuple|column rank of a matrix|337|Chapter 2 (Linear
     Algebra).tm>>
     <associate|auto-37|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|x,y,z|\<rangle\>>>|23|Chapter
     1 (Sets).tm>>
-    <associate|auto-370|<tuple|rank of a matrix|336|Chapter 2 (Linear
+    <associate|auto-370|<tuple|rank of a matrix|337|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-371|<tuple|<with|mode|<quote|math>|rank<around*|(|M|)>>|336|Chapter
+    <associate|auto-371|<tuple|<with|mode|<quote|math>|rank<around*|(|M|)>>|337|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-372|<tuple|<with|mode|<quote|math>|\<cal-M\><around*|(|L|)>>|337|Chapter
     2 (Linear Algebra).tm>>
@@ -2644,62 +2738,62 @@
     Algebra).tm>>
     <associate|auto-375|<tuple|<with|mode|<quote|math>|det<around*|(|M|)>>|342|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-376|<tuple|<with|mode|<quote|math>|<around*|[|i\<boxplus\>j|]>M>|345|Chapter
+    <associate|auto-376|<tuple|<with|mode|<quote|math>|<around*|[|i\<boxplus\>j|]>M>|346|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-377|<tuple|<with|mode|<quote|math>|<around|[|\<less\>m|]>M>|349|Chapter
+    <associate|auto-377|<tuple|<with|mode|<quote|math>|<around|[|\<less\>m|]>M>|350|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-378|<tuple|<with|mode|<quote|math>|<around|[|\<gtr\>m|]>M>|349|Chapter
+    <associate|auto-378|<tuple|<with|mode|<quote|math>|<around|[|\<gtr\>m|]>M>|350|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-379|<tuple|<with|mode|<quote|math>|<around*|[|i\<oplus\>j|]>M>|350|Chapter
+    <associate|auto-379|<tuple|<with|mode|<quote|math>|<around*|[|i\<oplus\>j|]>M>|351|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-38|<tuple|1.7|24|Chapter 1 (Sets).tm>>
-    <associate|auto-380|<tuple|adjoint of a matrix|350|Chapter 2 (Linear
+    <associate|auto-380|<tuple|adjoint of a matrix|351|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-381|<tuple|<with|mode|<quote|math>|adjoint<around*|(|M|)>>|350|Chapter
+    <associate|auto-381|<tuple|<with|mode|<quote|math>|adjoint<around*|(|M|)>>|351|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-382|<tuple|10.10|357|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-383|<tuple|elementair transformations|357|Chapter 2
+    <associate|auto-382|<tuple|10.10|358|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-383|<tuple|elementair transformations|358|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-384|<tuple|10.11|366|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-385|<tuple|sum of subspaces|366|Chapter 2 (Linear
+    <associate|auto-384|<tuple|10.11|367|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-385|<tuple|sum of subspaces|367|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-386|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>>|366|Chapter
+    <associate|auto-386|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>>|367|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-387|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i\<in\>I><rsup|\<oplus\>>V<rsub|i>>|367|Chapter
+    <associate|auto-387|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i\<in\>I><rsup|\<oplus\>>V<rsub|i>>|368|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-388|<tuple|<with|mode|<quote|math>|V<rsub|1>\<oplus\>\<ldots\>\<oplus\>V<rsub|n>>|367|Chapter
+    <associate|auto-388|<tuple|<with|mode|<quote|math>|V<rsub|1>\<oplus\>\<ldots\>\<oplus\>V<rsub|n>>|368|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-389|<tuple|<with|mode|<quote|math>|V<rsub|1>\<oplus\>\<ldots\>\<oplus\>V<rsub|n>>|367|Chapter
+    <associate|auto-389|<tuple|<with|mode|<quote|math>|V<rsub|1>\<oplus\>\<ldots\>\<oplus\>V<rsub|n>>|368|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-39|<tuple|family of classes|24|Chapter 1 (Sets).tm>>
-    <associate|auto-390|<tuple|direct internal sum|367|Chapter 2 (Linear
+    <associate|auto-390|<tuple|direct internal sum|368|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-391|<tuple|<with|mode|<quote|math>|\<oplus\><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>>|367|Chapter
+    <associate|auto-391|<tuple|<with|mode|<quote|math>|\<oplus\><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>>|368|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-392|<tuple|10.12|370|Chapter 2 (Linear Algebra).tm>>
-    <associate|auto-393|<tuple|tensor product|370|Chapter 2 (Linear
+    <associate|auto-392|<tuple|10.12|371|Chapter 2 (Linear Algebra).tm>>
+    <associate|auto-393|<tuple|tensor product|371|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-394|<tuple|<with|mode|<quote|math>|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|n>>|371|Chapter
+    <associate|auto-394|<tuple|<with|mode|<quote|math>|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|n>>|372|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-395|<tuple|<with|mode|<quote|math>|x<rsub|1>\<otimes\>\<ldots\>\<otimes\>x<rsub|n>>|371|Chapter
+    <associate|auto-395|<tuple|<with|mode|<quote|math>|x<rsub|1>\<otimes\>\<ldots\>\<otimes\>x<rsub|n>>|372|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-396|<tuple|<with|mode|<quote|math>|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|n>>|372|Chapter
+    <associate|auto-396|<tuple|<with|mode|<quote|math>|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|n>>|373|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-397|<tuple|tensor product of vectors|372|Chapter 2
+    <associate|auto-397|<tuple|tensor product of vectors|373|Chapter 2
     (Linear Algebra).tm>>
-    <associate|auto-398|<tuple|<with|mode|<quote|math>|v<rsub|1>\<otimes\>\<ldots\>\<otimes\>v<rsub|n>>|372|Chapter
+    <associate|auto-398|<tuple|<with|mode|<quote|math>|v<rsub|1>\<otimes\>\<ldots\>\<otimes\>v<rsub|n>>|373|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-399|<tuple|<with|mode|<quote|math>|\<Gamma\><around*|(|n<rsub|1>,\<ldots\>,n<rsub|k>|)>>|379|Chapter
+    <associate|auto-399|<tuple|<with|mode|<quote|math>|\<Gamma\><around*|(|n<rsub|1>,\<ldots\>,n<rsub|k>|)>>|380|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|\<nin\>>|7|Chapter 1
     (Sets).tm>>
     <associate|auto-40|<tuple|<with|mode|<quote|math>|<around*|{|G<rsub|i>|}><rsub|i\<in\>I>>|24|Chapter
     1 (Sets).tm>>
-    <associate|auto-400|<tuple|p-contravariant,q-covariant tensor|386|Chapter
+    <associate|auto-400|<tuple|p-contravariant,q-covariant tensor|387|Chapter
     2 (Linear Algebra).tm>>
-    <associate|auto-401|<tuple|contraction of tensors|387|Chapter 2 (Linear
+    <associate|auto-401|<tuple|contraction of tensors|388|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|auto-402|<tuple|<with|mode|<quote|math>|c<rsub|s,t>>|387|Chapter
+    <associate|auto-402|<tuple|<with|mode|<quote|math>|c<rsub|s,t>>|388|Chapter
     2 (Linear Algebra).tm>>
     <associate|auto-403|<tuple|11|389|Chapter 3 (Topology).tm>>
     <associate|auto-404|<tuple|11.1|389|Chapter 3 (Topology).tm>>
@@ -2776,11 +2870,11 @@
     <associate|auto-449|<tuple|complex inner spaces|410|Chapter 3
     (Topology).tm>>
     <associate|auto-45|<tuple|partial function|35|Chapter 1 (Sets).tm>>
-    <associate|auto-450|<tuple|orthogonality|414|Chapter 3 (Topology).tm>>
-    <associate|auto-451|<tuple|orthonormality|414|Chapter 3 (Topology).tm>>
+    <associate|auto-450|<tuple|orthogonality|415|Chapter 3 (Topology).tm>>
+    <associate|auto-451|<tuple|orthonormality|415|Chapter 3 (Topology).tm>>
     <associate|auto-452|<tuple|Riesz Representation theorem|417|Chapter 3
     (Topology).tm>>
-    <associate|auto-453|<tuple|adjoint of a linear function|417|Chapter 3
+    <associate|auto-453|<tuple|adjoint of a linear function|418|Chapter 3
     (Topology).tm>>
     <associate|auto-454|<tuple|transpose of a matrix|419|Chapter 3
     (Topology).tm>>
@@ -2791,11 +2885,11 @@
     <associate|auto-457|<tuple|<with|mode|<quote|math>|M<rsup|H>>|419|Chapter
     3 (Topology).tm>>
     <associate|auto-458|<tuple|unary matrix|419|Chapter 3 (Topology).tm>>
-    <associate|auto-459|<tuple|11.5|420|Chapter 3 (Topology).tm>>
+    <associate|auto-459|<tuple|11.5|421|Chapter 3 (Topology).tm>>
     <associate|auto-46|<tuple|partial mapping|35|Chapter 1 (Sets).tm>>
-    <associate|auto-460|<tuple|continuous function at a point|420|Chapter 3
+    <associate|auto-460|<tuple|continuous function at a point|421|Chapter 3
     (Topology).tm>>
-    <associate|auto-461|<tuple|continuous mapping ay a point|420|Chapter 3
+    <associate|auto-461|<tuple|continuous mapping ay a point|421|Chapter 3
     (Topology).tm>>
     <associate|auto-462|<tuple|continuous functions|421|Chapter 3
     (Topology).tm>>
@@ -2816,14 +2910,14 @@
     <associate|auto-470|<tuple|induced topology|427|Chapter 3 (Topology).tm>>
     <associate|auto-471|<tuple|inverse induced topology|427|Chapter 3
     (Topology).tm>>
-    <associate|auto-472|<tuple|11.6|429|Chapter 3 (Topology).tm>>
+    <associate|auto-472|<tuple|11.6|430|Chapter 3 (Topology).tm>>
     <associate|auto-473|<tuple|norm of a continuous linear
     function|431|Chapter 3 (Topology).tm>>
     <associate|auto-474|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>|L|\<\|\|\>>>|431|Chapter
     3 (Topology).tm>>
     <associate|auto-475|<tuple|<with|mode|<quote|math>|L<around*|(|X,Y|)>>|432|Chapter
     3 (Topology).tm>>
-    <associate|auto-476|<tuple|11.7|433|Chapter 3 (Topology).tm>>
+    <associate|auto-476|<tuple|11.7|434|Chapter 3 (Topology).tm>>
     <associate|auto-477|<tuple|<with|mode|<quote|math>|L<around*|(|X<rsub|1>,\<ldots\>,X<rsub|n>;Y|)>>|437|Chapter
     3 (Topology).tm>>
     <associate|auto-478|<tuple|<with|mode|<quote|math>|L<around*|(|X<rsup|n>;Y|)>>|438|Chapter
@@ -2836,11 +2930,11 @@
     3 (Topology).tm>>
     <associate|auto-481|<tuple|<with|mode|<quote|math>|\<cal-P\><rsub|n><around*|(|L|)>>|442|Chapter
     3 (Topology).tm>>
-    <associate|auto-482|<tuple|<with|mode|<quote|math>|\<bullet\><rsub|n>>|444|Chapter
+    <associate|auto-482|<tuple|<with|mode|<quote|math>|\<bullet\><rsub|n>>|445|Chapter
     3 (Topology).tm>>
     <associate|auto-483|<tuple|11.8|445|Chapter 3 (Topology).tm>>
     <associate|auto-484|<tuple|Hausdorff space|445|Chapter 3 (Topology).tm>>
-    <associate|auto-485|<tuple|regular space|445|Chapter 3 (Topology).tm>>
+    <associate|auto-485|<tuple|regular space|446|Chapter 3 (Topology).tm>>
     <associate|auto-486|<tuple|normal space|446|Chapter 3 (Topology).tm>>
     <associate|auto-487|<tuple|neighborhood|446|Chapter 3 (Topology).tm>>
     <associate|auto-488|<tuple|open neighborhood|446|Chapter 3
@@ -2850,17 +2944,17 @@
     <associate|auto-49|<tuple|2.1.2|36|Chapter 1 (Sets).tm>>
     <associate|auto-490|<tuple|first countable topological space|446|Chapter
     3 (Topology).tm>>
-    <associate|auto-491|<tuple|second countable topological space|446|Chapter
+    <associate|auto-491|<tuple|second countable topological space|447|Chapter
     3 (Topology).tm>>
-    <associate|auto-492|<tuple|11.9|446|Chapter 3 (Topology).tm>>
-    <associate|auto-493|<tuple|topological vector space|446|Chapter 3
+    <associate|auto-492|<tuple|11.9|447|Chapter 3 (Topology).tm>>
+    <associate|auto-493|<tuple|topological vector space|447|Chapter 3
     (Topology).tm>>
     <associate|auto-494|<tuple|toplinear isomorphism|447|Chapter 3
     (Topology).tm>>
     <associate|auto-495|<tuple|11.10|447|Chapter 3 (Topology).tm>>
     <associate|auto-496|<tuple|compact topological space|447|Chapter 3
     (Topology).tm>>
-    <associate|auto-497|<tuple|compact subsets|447|Chapter 3 (Topology).tm>>
+    <associate|auto-497|<tuple|compact subsets|448|Chapter 3 (Topology).tm>>
     <associate|auto-498|<tuple|extreme value theorem|449|Chapter 3
     (Topology).tm>>
     <associate|auto-499|<tuple|sequential compact space|450|Chapter 3
@@ -2868,29 +2962,29 @@
     <associate|auto-5|<tuple|<with|mode|<quote|math>|A=B>|7|Chapter 1
     (Sets).tm>>
     <associate|auto-50|<tuple|function|36|Chapter 1 (Sets).tm>>
-    <associate|auto-500|<tuple|countable compact class|451|Chapter 3
+    <associate|auto-500|<tuple|countable compact class|452|Chapter 3
     (Topology).tm>>
     <associate|auto-501|<tuple|11.10.1|453|Chapter 3 (Topology).tm>>
-    <associate|auto-502|<tuple|<with|mode|<quote|math>|\<frak-U\><around*|(|x|)>>|453|Chapter
+    <associate|auto-502|<tuple|<with|mode|<quote|math>|\<frak-U\><around*|(|x|)>>|454|Chapter
     3 (Topology).tm>>
-    <associate|auto-503|<tuple|convergent filterbase|454|Chapter 3
+    <associate|auto-503|<tuple|convergent filterbase|455|Chapter 3
     (Topology).tm>>
-    <associate|auto-504|<tuple|accumulation point of a filterbase|454|Chapter
+    <associate|auto-504|<tuple|accumulation point of a filterbase|455|Chapter
     3 (Topology).tm>>
     <associate|auto-505|<tuple|filterbase on a set|456|Chapter 3
     (Topology).tm>>
     <associate|auto-506|<tuple|ultra filter|457|Chapter 3 (Topology).tm>>
-    <associate|auto-507|<tuple|11.10.2|459|Chapter 3 (Topology).tm>>
-    <associate|auto-508|<tuple|Tychonoff's theorem|459|Chapter 3
+    <associate|auto-507|<tuple|11.10.2|460|Chapter 3 (Topology).tm>>
+    <associate|auto-508|<tuple|Tychonoff's theorem|460|Chapter 3
     (Topology).tm>>
     <associate|auto-509|<tuple|Heine-Borel theorem|460|Chapter 3
     (Topology).tm>>
     <associate|auto-51|<tuple|mapping|36|Chapter 1 (Sets).tm>>
     <associate|auto-510|<tuple|11.11|462|Chapter 3 (Topology).tm>>
     <associate|auto-511|<tuple|11.11.1|462|Chapter 3 (Topology).tm>>
-    <associate|auto-512|<tuple|increasing seqeunce|462|Chapter 3
+    <associate|auto-512|<tuple|increasing seqeunce|463|Chapter 3
     (Topology).tm>>
-    <associate|auto-513|<tuple|decreasing sequence|462|Chapter 3
+    <associate|auto-513|<tuple|decreasing sequence|463|Chapter 3
     (Topology).tm>>
     <associate|auto-514|<tuple|convergency in a topological space|463|Chapter
     3 (Topology).tm>>
@@ -2998,7 +3092,7 @@
     <associate|auto-579|<tuple|<with|mode|<quote|math>|U<rsub|x>>|561|Chapter
     4 (Differentiation).tm>>
     <associate|auto-58|<tuple|inclusion function|39|Chapter 1 (Sets).tm>>
-    <associate|auto-580|<tuple|<with|mode|<quote|math>|Df<around*|(|x|)>>|562|Chapter
+    <associate|auto-580|<tuple|<with|mode|<quote|math>|Df<around*|(|x|)>>|563|Chapter
     4 (Differentiation).tm>>
     <associate|auto-581|<tuple|<with|mode|<quote|math>|\<varepsilon\>>-mapping|564|Chapter
     4 (Differentiation).tm>>
@@ -3006,32 +3100,32 @@
     function|566|Chapter 4 (Differentiation).tm>>
     <associate|auto-583|<tuple|differential of a linear
     \ function|566|Chapter 4 (Differentiation).tm>>
-    <associate|auto-584|<tuple|14.1.2|566|Chapter 4 (Differentiation).tm>>
-    <associate|auto-585|<tuple|derivative|566|Chapter 4
+    <associate|auto-584|<tuple|14.1.2|567|Chapter 4 (Differentiation).tm>>
+    <associate|auto-585|<tuple|derivative|567|Chapter 4
     (Differentiation).tm>>
-    <associate|auto-586|<tuple|<with|mode|<quote|math>|f<rprime|'>>|566|Chapter
+    <associate|auto-586|<tuple|<with|mode|<quote|math>|f<rprime|'>>|567|Chapter
     4 (Differentiation).tm>>
     <associate|auto-587|<tuple|14.1.3|567|Chapter 4 (Differentiation).tm>>
-    <associate|auto-588|<tuple|chain rule|567|Chapter 4
+    <associate|auto-588|<tuple|chain rule|568|Chapter 4
     (Differentiation).tm>>
     <associate|auto-589|<tuple|14.1.4|570|Chapter 4 (Differentiation).tm>>
     <associate|auto-59|<tuple|<with|mode|<quote|math>|e<rsub|A>>|39|Chapter 1
     (Sets).tm>>
     <associate|auto-590|<tuple|<with|mode|<quote|math>|<around*|(|i\<rightarrow\>x|)>>|570|Chapter
     4 (Differentiation).tm>>
-    <associate|auto-591|<tuple|<with|mode|<quote|math>|\<partial\><rsub|i>f<around*|(|x|)>>|574|Chapter
+    <associate|auto-591|<tuple|<with|mode|<quote|math>|\<partial\><rsub|i>f<around*|(|x|)>>|575|Chapter
     4 (Differentiation).tm>>
-    <associate|auto-592|<tuple|Jacobian|577|Chapter 4 (Differentiation).tm>>
+    <associate|auto-592|<tuple|Jacobian|578|Chapter 4 (Differentiation).tm>>
     <associate|auto-593|<tuple|14.2|581|Chapter 4 (Differentiation).tm>>
     <associate|auto-594|<tuple|<with|mode|<quote|math>|D<rsup|n>f>|581|Chapter
     4 (Differentiation).tm>>
     <associate|auto-595|<tuple|<with|mode|<quote|math>|\<infty\>>-differentiability|581|Chapter
     4 (Differentiation).tm>>
-    <associate|auto-596|<tuple|<with|mode|<quote|math>|C<rsup|n>>|581|Chapter
+    <associate|auto-596|<tuple|<with|mode|<quote|math>|C<rsup|n>>|582|Chapter
     4 (Differentiation).tm>>
-    <associate|auto-597|<tuple|<with|mode|<quote|math>|C<rsup|\<infty\>>>|581|Chapter
+    <associate|auto-597|<tuple|<with|mode|<quote|math>|C<rsup|\<infty\>>>|582|Chapter
     4 (Differentiation).tm>>
-    <associate|auto-598|<tuple|smooth functions|581|Chapter 4
+    <associate|auto-598|<tuple|smooth functions|582|Chapter 4
     (Differentiation).tm>>
     <associate|auto-599|<tuple|<with|mode|<quote|math>|f<rsup|<around*|(|n|)>>>|582|Chapter
     4 (Differentiation).tm>>
@@ -3089,189 +3183,230 @@
     Numbers).tm>>
     <associate|auto-627|<tuple|extented reals|665|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-628|<tuple|<with|mode|<quote|math>|sup<rsub|\<bbb-R\>>>|667|Chapter
+    <associate|auto-628|<tuple|<with|mode|<quote|math>|sup<rsub|\<bbb-R\>>>|668|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-629|<tuple|<with|mode|<quote|math>|inf<rsub|\<bbb-R\>>>|667|Chapter
+    <associate|auto-629|<tuple|<with|mode|<quote|math>|inf<rsub|\<bbb-R\>>>|668|Chapter
     5 (Extended Real Numbers).tm>>
     <associate|auto-63|<tuple|2.1.6|51|Chapter 1 (Sets).tm>>
-    <associate|auto-630|<tuple|<with|mode|<quote|math>|sup>|667|Chapter 5
+    <associate|auto-630|<tuple|<with|mode|<quote|math>|sup>|668|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|auto-631|<tuple|<with|mode|<quote|math>|inf>|667|Chapter 5
+    <associate|auto-631|<tuple|<with|mode|<quote|math>|inf>|668|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|auto-632|<tuple|17.2|679|Chapter 5 (Extended Real
+    <associate|auto-632|<tuple|17.2|683|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-633|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<bbb-R\>>>|680|Chapter
+    <associate|auto-633|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<bbb-R\>>>|684|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-634|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|680|Chapter
+    <associate|auto-634|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|684|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-635|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|-\<infty\>>>|680|Chapter
+    <associate|auto-635|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|-\<infty\>>>|684|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-636|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|680|Chapter
+    <associate|auto-636|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|684|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-637|<tuple|topology on
-    <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>|680|Chapter 5 (Extended
+    <associate|auto-637|<tuple|<with|mode|<quote|math>|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|685|Chapter
+    5 (Extended Real Numbers).tm>>
+    <associate|auto-638|<tuple|17.3|689|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|auto-639|<tuple|increasing sequence|689|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|auto-638|<tuple|<with|mode|<quote|math>|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>|680|Chapter
-    5 (Extended Real Numbers).tm>>
-    <associate|auto-639|<tuple|17.2.1|684|Chapter 5 (Extended Real
-    Numbers).tm>>
     <associate|auto-64|<tuple|reindexing of a family|51|Chapter 1 (Sets).tm>>
-    <associate|auto-640|<tuple|left limit point|684|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|auto-641|<tuple|right limit point|684|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|auto-642|<tuple|limit point|684|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|auto-643|<tuple|left limit of a function|684|Chapter 5
-    (Extended Real Numbers).tm>>
-    <associate|auto-644|<tuple|right limit of a function|684|Chapter 5
-    (Extended Real Numbers).tm>>
-    <associate|auto-645|<tuple|limit of a function|685|Chapter 5 (Extended
+    <associate|auto-640|<tuple|decreasing sequence|689|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|auto-646|<tuple|left continuity|692|Chapter 5 (Extended Real
+    <associate|auto-641|<tuple|<with|mode|<quote|math>|<below|lim
+    inf|i\<rightarrow\>\<infty\>> x<rsub|i>>|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-647|<tuple|right continuity|692|Chapter 5 (Extended Real
+    <associate|auto-642|<tuple|<with|mode|<quote|math>|<below|lim
+    sup|i\<rightarrow\>\<infty\>> x<rsub|i>>|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-648|<tuple|17.2.2|705|Chapter 5 (Extended Real
+    <associate|auto-643|<tuple|17.3.1|708|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-649|<tuple|increasing sequence|705|Chapter 5 (Extended
-    Real Numbers).tm>>
-    <associate|auto-65|<tuple|2.1.7|51|Chapter 1 (Sets).tm>>
-    <associate|auto-650|<tuple|decreasing sequence|705|Chapter 5 (Extended
-    Real Numbers).tm>>
-    <associate|auto-651|<tuple|<with|mode|<quote|math>|<below|lim
-    inf|i\<rightarrow\>\<infty\>> x<rsub|i>>|707|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|auto-652|<tuple|<with|mode|<quote|math>|<below|lim
-    sup|i\<rightarrow\>\<infty\>> x<rsub|i>>|707|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|auto-653|<tuple|17.2.3|721|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|auto-654|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>|735|Chapter
+    <associate|auto-644|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>|722|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-655|<tuple|17.2.4|735|Chapter 5 (Extended Real
+    <associate|auto-645|<tuple|18|723|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|auto-646|<tuple|18.1|723|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-656|<tuple|18|737|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|auto-657|<tuple|18.1|737|Chapter 5 (Extended Real
+    <associate|auto-647|<tuple|18.1.1|723|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-658|<tuple|18.1.1|737|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|auto-659|<tuple|convergence domain|737|Chapter 5 (Extended
+    <associate|auto-648|<tuple|convergence domain|723|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|auto-66|<tuple|axiom of replacement|51|Chapter 1 (Sets).tm>>
-    <associate|auto-660|<tuple|absolute convergence domain|737|Chapter 5
+    <associate|auto-649|<tuple|absolute convergence domain|723|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|auto-661|<tuple|convergence radius|738|Chapter 5 (Extended
+    <associate|auto-65|<tuple|2.1.7|52|Chapter 1 (Sets).tm>>
+    <associate|auto-650|<tuple|convergence radius|724|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|auto-662|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|738|Chapter
+    <associate|auto-651|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>|724|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-663|<tuple|18.1.2|739|Chapter 5 (Extended Real
+    <associate|auto-652|<tuple|18.1.2|725|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-664|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>|742|Chapter
+    <associate|auto-653|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>|728|Chapter
     5 (Extended Real Numbers).tm>>
-    <associate|auto-665|<tuple|18.1.3|742|Chapter 5 (Extended Real
+    <associate|auto-654|<tuple|18.1.3|728|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-666|<tuple|Euler's number|748|Chapter 5 (Extended Real
+    <associate|auto-655|<tuple|Euler's number|734|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|auto-667|<tuple|Napierian logarithm|749|Chapter 5 (Extended
+    <associate|auto-656|<tuple|Napierian logarithm|735|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|auto-668|<tuple|<with|mode|<quote|math>|log>|749|Chapter 5
+    <associate|auto-657|<tuple|<with|mode|<quote|math>|log>|735|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|auto-669|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|756|Chapter
+    <associate|auto-658|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|743|Chapter
     5 (Extended Real Numbers).tm>>
+    <associate|auto-659|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|743|Chapter
+    5 (Extended Real Numbers).tm>>
+    <associate|auto-66|<tuple|axiom of replacement|52|Chapter 1 (Sets).tm>>
+    <associate|auto-660|<tuple|<with|mode|<quote|math>|\<pi\>>|747|Chapter 5
+    (Extended Real Numbers).tm>>
+    <associate|auto-661|<tuple|18|751|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-662|<tuple|18.1|751|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-663|<tuple|18.2|754|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-664|<tuple|algebra|754|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-665|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|756|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-666|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>|759|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-667|<tuple|Borel algebra|759|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-668|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|759|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-669|<tuple|18.2.1|759|Chapter 6 (Measures and
+    integration).tm>>
     <associate|auto-67|<tuple|<with|mode|<quote|math>|B<rsup|A>>|52|Chapter 1
     (Sets).tm>>
-    <associate|auto-670|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|756|Chapter
-    5 (Extended Real Numbers).tm>>
-    <associate|auto-671|<tuple|<with|mode|<quote|math>|\<pi\>>|761|Chapter 5
-    (Extended Real Numbers).tm>>
-    <associate|auto-672|<tuple|18|765|Chapter 6 (Measures and
+    <associate|auto-670|<tuple|18.2.2|766|Chapter 6 (Measures and
     integration).tm>>
-    <associate|auto-673|<tuple|18.1|765|Chapter 6 (Measures and
+    <associate|auto-671|<tuple|18.2.3|769|Chapter 6 (Measures and
     integration).tm>>
-    <associate|auto-674|<tuple|18.2|767|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-675|<tuple|algebra|767|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-676|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|769|Chapter
+    <associate|auto-672|<tuple|<with|mode|<quote|math>|\<cal-R\><rsup|n>>|771|Chapter
     6 (Measures and integration).tm>>
-    <associate|auto-677|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>|771|Chapter
-    6 (Measures and integration).tm>>
-    <associate|auto-678|<tuple|Borel algebra|772|Chapter 6 (Measures and
+    <associate|auto-673|<tuple|Dyadic cubes|774|Chapter 6 (Measures and
     integration).tm>>
-    <associate|auto-679|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|772|Chapter
+    <associate|auto-674|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n><rsub|m>>|774|Chapter
     6 (Measures and integration).tm>>
-    <associate|auto-68|<tuple|pretuple|53|Chapter 1 (Sets).tm>>
-    <associate|auto-680|<tuple|18.2.1|772|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-681|<tuple|18.2.2|778|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-682|<tuple|<with|mode|<quote|math>|\<cal-R\><rsup|n>>|780|Chapter
+    <associate|auto-675|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n>>|774|Chapter
     6 (Measures and integration).tm>>
-    <associate|auto-683|<tuple|Dyadic cubes|782|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-684|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n><rsub|m>>|782|Chapter
-    6 (Measures and integration).tm>>
-    <associate|auto-685|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n>>|782|Chapter
-    6 (Measures and integration).tm>>
-    <associate|auto-686|<tuple|lower half open space|786|Chapter 6 (Measures
+    <associate|auto-676|<tuple|lower half open space|778|Chapter 6 (Measures
     and integration).tm>>
-    <associate|auto-687|<tuple|<with|mode|<quote|math>|<around*|]|-\<infty\>,a|[><rsub|i>>|786|Chapter
+    <associate|auto-677|<tuple|<with|mode|<quote|math>|<around*|]|-\<infty\>,a|[><rsub|i>>|778|Chapter
     6 (Measures and integration).tm>>
-    <associate|auto-688|<tuple|Lower half spaces|786|Chapter 6 (Measures and
+    <associate|auto-678|<tuple|Lower half spaces|778|Chapter 6 (Measures and
     integration).tm>>
-    <associate|auto-689|<tuple|18.3|788|Chapter 6 (Measures and
+    <associate|auto-679|<tuple|18.3|779|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-68|<tuple|pretuple|53|Chapter 1 (Sets).tm>>
+    <associate|auto-680|<tuple|18.3.1|779|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-681|<tuple|18.3.2|785|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-682|<tuple|Carathéodory theorem|788|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|auto-683|<tuple|18.3.3|791|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-684|<tuple|Lebesgue measurable space|793|Chapter 6
+    (Measures and integration).tm>>
+    <associate|auto-685|<tuple|Lebesgue measure|793|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-686|<tuple|Lebesgue measurable set|793|Chapter 6
+    (Measures and integration).tm>>
+    <associate|auto-687|<tuple|18.3.4|797|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-688|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>|803|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-689|<tuple|18.3.5|806|Chapter 6 (Measures and
     integration).tm>>
     <associate|auto-69|<tuple|projection function|55|Chapter 1 (Sets).tm>>
-    <associate|auto-690|<tuple|18.3.1|788|Chapter 6 (Measures and
+    <associate|auto-690|<tuple|18.3.6|817|Chapter 6 (Measures and
     integration).tm>>
-    <associate|auto-691|<tuple|18.3.2|793|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-692|<tuple|Carathéodory theorem|796|Chapter 6 (Measures
-    and integration).tm>>
-    <associate|auto-693|<tuple|18.3.3|799|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-694|<tuple|Lebesgue measurable space|802|Chapter 6
-    (Measures and integration).tm>>
-    <associate|auto-695|<tuple|Lebesgue measure|802|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-696|<tuple|Lebesgue measurable set|802|Chapter 6
-    (Measures and integration).tm>>
-    <associate|auto-697|<tuple|18.3.4|805|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-698|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>|810|Chapter
+    <associate|auto-691|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible|817|Chapter
     6 (Measures and integration).tm>>
-    <associate|auto-699|<tuple|18.3.4.1|814|Chapter 6 (Measures and
+    <associate|auto-692|<tuple|complete measures|817|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-693|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>|818|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-694|<tuple|completion of a measure space|818|Chapter 6
+    (Measures and integration).tm>>
+    <associate|auto-695|<tuple|outer measure induced|821|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|auto-696|<tuple|inner measure induced|821|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|auto-697|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>|821|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-698|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>|821|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-699|<tuple|inner regular sets|823|Chapter 6 (Measures and
     integration).tm>>
     <associate|auto-7|<tuple|<with|mode|<quote|math>|\<subseteq\>>|7|Chapter
     1 (Sets).tm>>
     <associate|auto-70|<tuple|<with|mode|<quote|math>|\<pi\><rsub|i>>|55|Chapter
     1 (Sets).tm>>
-    <associate|auto-700|<tuple|18.3.5|825|Chapter 6 (Measures and
+    <associate|auto-700|<tuple|outer regular sets|823|Chapter 6 (Measures and
     integration).tm>>
-    <associate|auto-701|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible|825|Chapter
+    <associate|auto-701|<tuple|18.4|827|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-702|<tuple|18.4.1|827|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-703|<tuple|Dynkin class|828|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-704|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>|828|Chapter
     6 (Measures and integration).tm>>
-    <associate|auto-702|<tuple|almost everyware|825|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-703|<tuple|complete measures|825|Chapter 6 (Measures and
-    integration).tm>>
-    <associate|auto-704|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>|826|Chapter
+    <associate|auto-705|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>|828|Chapter
     6 (Measures and integration).tm>>
-    <associate|auto-705|<tuple|completion of a measure space|826|Chapter 6
-    (Measures and integration).tm>>
-    <associate|auto-706|<tuple|outer measure induced|829|Chapter 6 (Measures
+    <associate|auto-706|<tuple|18.5|831|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-707|<tuple|18.5.1|831|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-708|<tuple|measurable function|831|Chapter 6 (Measures
     and integration).tm>>
-    <associate|auto-707|<tuple|inner measure induced|829|Chapter 6 (Measures
-    and integration).tm>>
-    <associate|auto-708|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>|829|Chapter
-    6 (Measures and integration).tm>>
-    <associate|auto-709|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>|829|Chapter
-    6 (Measures and integration).tm>>
+    <associate|auto-709|<tuple|Borel function|831|Chapter 6 (Measures and
+    integration).tm>>
     <associate|auto-71|<tuple|2.1.8|58|Chapter 1 (Sets).tm>>
-    <associate|auto-710|<tuple|18.238|833>>
+    <associate|auto-710|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
+    function|833|Chapter 6 (Measures and integration).tm>>
+    <associate|auto-711|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|833|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-712|<tuple|18.5.2|836|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-713|<tuple|18.5.3|838|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-714|<tuple|18.5.4|852|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-715|<tuple|almost everyware|852|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-716|<tuple|18.6|858|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-717|<tuple|18.6.1|858|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-718|<tuple|18.6.2|869|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-719|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>|869|Chapter
+    6 (Measures and integration).tm>>
     <associate|auto-72|<tuple|family of elements|58|Chapter 1 (Sets).tm>>
+    <associate|auto-720|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>|869|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-721|<tuple|<with|mode|<quote|math>|<big|int><rsup|+>f
+    d\<mu\>>|869|Chapter 6 (Measures and integration).tm>>
+    <associate|auto-722|<tuple|18.6.3|874|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-723|<tuple|integrable functions on a measure
+    space|875|Chapter 6 (Measures and integration).tm>>
+    <associate|auto-724|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    d\<mu\>>|875|Chapter 6 (Measures and integration).tm>>
+    <associate|auto-725|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    d\<mu\>>|875|Chapter 6 (Measures and integration).tm>>
+    <associate|auto-726|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>|875|Chapter
+    6 (Measures and integration).tm>>
+    <associate|auto-727|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    d\<mu\>>|875|Chapter 6 (Measures and integration).tm>>
+    <associate|auto-728|<tuple|18.6.4|878|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-729|<tuple|18.6.5|886|Chapter 6 (Measures and
+    integration).tm>>
     <associate|auto-73|<tuple|<with|mode|<quote|math>|\<subseteq\>>|59|Chapter
     1 (Sets).tm>>
+    <associate|auto-730|<tuple|18.6.6|893|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|auto-731|<tuple|18.6.6|895>>
     <associate|auto-74|<tuple|2.2|59|Chapter 1 (Sets).tm>>
     <associate|auto-75|<tuple|2.2.1|59|Chapter 1 (Sets).tm>>
     <associate|auto-76|<tuple|relation|59|Chapter 1 (Sets).tm>>
@@ -3281,100 +3416,106 @@
     <associate|auto-8|<tuple|<with|mode|<quote|math>|\<subset\>>|7|Chapter 1
     (Sets).tm>>
     <associate|auto-80|<tuple|transitive|59|Chapter 1 (Sets).tm>>
-    <associate|auto-81|<tuple|2.2.2|59|Chapter 1 (Sets).tm>>
-    <associate|auto-82|<tuple|equivalence relation|59|Chapter 1 (Sets).tm>>
+    <associate|auto-81|<tuple|2.2.2|60|Chapter 1 (Sets).tm>>
+    <associate|auto-82|<tuple|equivalence relation|60|Chapter 1 (Sets).tm>>
     <associate|auto-83|<tuple|<with|mode|<quote|math>|A/R>|61|Chapter 1
     (Sets).tm>>
     <associate|auto-84|<tuple|restriction of a equivalence
     relation|61|Chapter 1 (Sets).tm>>
-    <associate|auto-85|<tuple|2.2.3|61|Chapter 1 (Sets).tm>>
+    <associate|auto-85|<tuple|2.2.3|62|Chapter 1 (Sets).tm>>
     <associate|auto-86|<tuple|canonical decomposition of a
     function|62|Chapter 1 (Sets).tm>>
-    <associate|auto-87|<tuple|2.3|63|Chapter 1 (Sets).tm>>
-    <associate|auto-88|<tuple|2.3.1|63|Chapter 1 (Sets).tm>>
-    <associate|auto-89|<tuple|pre-order|63|Chapter 1 (Sets).tm>>
+    <associate|auto-87|<tuple|2.3|64|Chapter 1 (Sets).tm>>
+    <associate|auto-88|<tuple|2.3.1|64|Chapter 1 (Sets).tm>>
+    <associate|auto-89|<tuple|pre-order|64|Chapter 1 (Sets).tm>>
     <associate|auto-9|<tuple|axiom of class construction|8|Chapter 1
     (Sets).tm>>
-    <associate|auto-90|<tuple|pre-ordered class|63|Chapter 1 (Sets).tm>>
+    <associate|auto-90|<tuple|pre-ordered class|64|Chapter 1 (Sets).tm>>
     <associate|auto-91|<tuple|order relation|64|Chapter 1 (Sets).tm>>
-    <associate|auto-92|<tuple|partial ordered set|64|Chapter 1 (Sets).tm>>
-    <associate|auto-93|<tuple|poset|64|Chapter 1 (Sets).tm>>
+    <associate|auto-92|<tuple|partial ordered set|65|Chapter 1 (Sets).tm>>
+    <associate|auto-93|<tuple|poset|65|Chapter 1 (Sets).tm>>
     <associate|auto-94|<tuple|induced order relation|66|Chapter 1 (Sets).tm>>
-    <associate|auto-95|<tuple|comparability|66|Chapter 1 (Sets).tm>>
+    <associate|auto-95|<tuple|comparability|67|Chapter 1 (Sets).tm>>
     <associate|auto-96|<tuple|linear ordered class|67|Chapter 1 (Sets).tm>>
     <associate|auto-97|<tuple|fully ordered class|67|Chapter 1 (Sets).tm>>
     <associate|auto-98|<tuple|chain|67|Chapter 1 (Sets).tm>>
     <associate|auto-99|<tuple|chain|67|Chapter 1 (Sets).tm>>
-    <associate|axiom of choice|<tuple|2.205|83|Chapter 1 (Sets).tm>>
+    <associate|axiom of choice|<tuple|2.207|83|Chapter 1 (Sets).tm>>
     <associate|axiom of construction|<tuple|1.9|8|Chapter 1 (Sets).tm>>
     <associate|axiom of extent|<tuple|1.5|7|Chapter 1 (Sets).tm>>
     <associate|axiom of infinity|<tuple|1.68|21|Chapter 1 (Sets).tm>>
     <associate|axiom of pairing|<tuple|1.57|20|Chapter 1 (Sets).tm>>
     <associate|axiom of power sets|<tuple|1.63|21|Chapter 1 (Sets).tm>>
-    <associate|axiom of replacements|<tuple|2.67|51|Chapter 1 (Sets).tm>>
+    <associate|axiom of replacements|<tuple|2.69|52|Chapter 1 (Sets).tm>>
     <associate|axiom of subsets|<tuple|1.58|20|Chapter 1 (Sets).tm>>
     <associate|axiom of unions|<tuple|1.60|20|Chapter 1 (Sets).tm>>
     <associate|ball cover of a metric space|<tuple|11.261|450|Chapter 3
     (Topology).tm>>
     <associate|ball in balls|<tuple|11.53|399|Chapter 3 (Topology).tm>>
-    <associate|ball inclusion|<tuple|18.11|739|Chapter 5 (Extended Real
+    <associate|ball inclusion|<tuple|18.11|725|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|balls are convex|<tuple|14.110|614|Chapter 4
     (Differentiation).tm>>
-    <associate|basic binomial property|<tuple|12.21|520|Chapter 3
+    <associate|basic binomial property|<tuple|12.21|521|Chapter 3
     (Topology).tm>>
     <associate|basic property of gcd(n,m)|<tuple|6.54|164|Chapter 1
     (Sets).tm>>
-    <associate|basis and bijections|<tuple|10.151|283|Chapter 2 (Linear
+    <associate|basis and bijections|<tuple|10.151|284|Chapter 2 (Linear
     Algebra).tm>>
     <associate|basis for the product topology|<tuple|11.37|396|Chapter 3
     (Topology).tm>>
-    <associate|basis of F^n|<tuple|10.164|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|basis of F^n|<tuple|10.164|288|Chapter 2 (Linear Algebra).tm>>
     <associate|basis of a finite product of finite vector
-    spaces|<tuple|10.168|287|Chapter 2 (Linear Algebra).tm>>
+    spaces|<tuple|10.168|289|Chapter 2 (Linear Algebra).tm>>
     <associate|basis of a topology|<tuple|11.23|392|Chapter 3 (Topology).tm>>
-    <associate|basis of a vector space|<tuple|10.150|283|Chapter 2 (Linear
+    <associate|basis of a vector space|<tuple|10.150|284|Chapter 2 (Linear
     Algebra).tm>>
     <associate|basis of product topology|<tuple|11.38|396|Chapter 3
     (Topology).tm>>
-    <associate|basis of tensorproduct|<tuple|10.399|386|Chapter 2 (Linear
+    <associate|basis of tensorproduct|<tuple|10.399|387|Chapter 2 (Linear
     Algebra).tm>>
     <associate|basis of the subspace topology|<tuple|11.25|393|Chapter 3
     (Topology).tm>>
-    <associate|bijection and its inverse|<tuple|2.39|43|Chapter 1 (Sets).tm>>
-    <associate|bijection between Pn and Pn+1|<tuple|10.75|257|Chapter 2
+    <associate|bijection and its inverse|<tuple|2.41|43|Chapter 1 (Sets).tm>>
+    <associate|bijection between Pn and Pn+1|<tuple|10.75|259|Chapter 2
     (Linear Algebra).tm>>
-    <associate|bijections and exclusions|<tuple|2.53|47|Chapter 1 (Sets).tm>>
+    <associate|bijections and exclusions|<tuple|2.55|47|Chapter 1 (Sets).tm>>
     <associate|binomial constant|<tuple|12.19|520|Chapter 3 (Topology).tm>>
     <associate|binomial formula|<tuple|12.22|521|Chapter 3 (Topology).tm>>
+    <associate|borel algebra on the extebded reals
+    (1)|<tuple|18.30|768|Chapter 6 (Measures and integration).tm>>
+    <associate|borel algebra on the extended real numbers
+    (2)|<tuple|18.31|768|Chapter 6 (Measures and integration).tm>>
+    <associate|borel algebra on the extended reals
+    (3)|<tuple|18.32|769|Chapter 6 (Measures and integration).tm>>
     <associate|bound sets in a normed space|<tuple|11.77|407|Chapter 3
     (Topology).tm>>
-    <associate|boundaries of a rectangle are unique|<tuple|18.30|780|Chapter
+    <associate|boundaries of a rectangle are unique|<tuple|18.39|771|Chapter
     6 (Measures and integration).tm>>
     <associate|bounded function|<tuple|11.338|467|Chapter 3 (Topology).tm>>
-    <associate|bounded intervals|<tuple|18.19|772|Chapter 6 (Measures and
+    <associate|bounded intervals|<tuple|18.22|760|Chapter 6 (Measures and
     integration).tm>>
     <associate|box topology|<tuple|11.34|395|Chapter 3 (Topology).tm>>
     <associate|box topology and base|<tuple|11.35|395|Chapter 3
     (Topology).tm>>
-    <associate|canonical basis|<tuple|10.163|286|Chapter 2 (Linear
+    <associate|canonical basis|<tuple|10.163|288|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|canonical decomposition of a function|<tuple|2.130|62|Chapter
+    <associate|canonical decomposition of a function|<tuple|2.132|62|Chapter
     1 (Sets).tm>>
     <associate|canonical function of a equivalence
-    relation|<tuple|2.129|62|Chapter 1 (Sets).tm>>
+    relation|<tuple|2.131|62|Chapter 1 (Sets).tm>>
     <associate|canonical inner product|<tuple|11.104|412|Chapter 3
     (Topology).tm>>
-    <associate|cartesian power of sets|<tuple|10.102|272|Chapter 2 (Linear
+    <associate|cartesian power of sets|<tuple|10.102|274|Chapter 2 (Linear
     Algebra).tm>>
     <associate|cartesian product|<tuple|1.38|15|Chapter 1 (Sets).tm>>
     <associate|cartesian product and general union|<tuple|5.98|147|Chapter 1
     (Sets).tm>>
-    <associate|cartesian product and unions|<tuple|5.99|148|Chapter 1
+    <associate|cartesian product and unions|<tuple|5.99|147|Chapter 1
     (Sets).tm>>
     <associate|cartesian product of empty sets is
     empty|<tuple|5.90|143|Chapter 1 (Sets).tm>>
-    <associate|cartesian product of subsets|<tuple|5.84|141|Chapter 1
+    <associate|cartesian product of subsets|<tuple|5.84|140|Chapter 1
     (Sets).tm>>
     <associate|cartesion product and intersection|<tuple|5.97|147|Chapter 1
     (Sets).tm>>
@@ -3382,15 +3523,17 @@
     1 (Sets).tm>>
     <associate|cauchy and uniqueness|<tuple|11.357|471|Chapter 3
     (Topology).tm>>
-    <associate|chain rule|<tuple|14.22|567|Chapter 4 (Differentiation).tm>>
+    <associate|chain rule|<tuple|14.22|568|Chapter 4 (Differentiation).tm>>
     <associate|chain rule (1)|<tuple|14.23|569|Chapter 4
     (Differentiation).tm>>
     <associate|chain rules of partial differentiable
     functions|<tuple|14.36|573|Chapter 4 (Differentiation).tm>>
-    <associate|characteristics function|<tuple|2.13|37|Chapter 1 (Sets).tm>>
+    <associate|characteristic function is
+    measurable|<tuple|18.156|837|Chapter 6 (Measures and integration).tm>>
+    <associate|characteristics function|<tuple|2.14|37|Chapter 1 (Sets).tm>>
     <associate|characterization of a basis in a
     topology|<tuple|11.26|393|Chapter 3 (Topology).tm>>
-    <associate|characterization of a bijective mapping|<tuple|2.41|43|Chapter
+    <associate|characterization of a bijective mapping|<tuple|2.43|43|Chapter
     1 (Sets).tm>>
     <associate|characterization of closure|<tuple|11.19|392|Chapter 3
     (Topology).tm>>
@@ -3401,39 +3544,41 @@
     <associate|characterization of closure of a set
     2|<tuple|11.31|394|Chapter 3 (Topology).tm>>
     <associate|charasterics of elements of a
-    tensorproduct|<tuple|10.380|371|Chapter 2 (Linear Algebra).tm>>
+    tensorproduct|<tuple|10.380|372|Chapter 2 (Linear Algebra).tm>>
     <associate|closed ball|<tuple|11.50|398|Chapter 3 (Topology).tm>>
     <associate|closed balls are closed|<tuple|11.56|399|Chapter 3
     (Topology).tm>>
     <associate|closed rectangles are compact in the norm
     topology|<tuple|11.298|460|Chapter 3 (Topology).tm>>
+    <associate|closed set properties|<tuple|11.13|391|Chapter 3
+    (Topology).tm>>
     <associate|closed sets|<tuple|11.11|390|Chapter 3 (Topology).tm>>
-    <associate|closed sets in the extended reals|<tuple|17.37|681|Chapter 5
+    <associate|closed sets and limits|<tuple|11.323|465|Chapter 3
+    (Topology).tm>>
+    <associate|closed sets in the extended reals|<tuple|17.40|686|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|closed subset of a complete space is
     complete|<tuple|11.347|469|Chapter 3 (Topology).tm>>
-    <associate|clsoed sets and limits|<tuple|11.323|464|Chapter 3
-    (Topology).tm>>
     <associate|coefficients of a polynomial are
     unique|<tuple|12.3|514|Chapter 3 (Topology).tm>>
     <associate|combined partition|<tuple|11.426|502|Chapter 3 (Topology).tm>>
     <associate|common divisior and gcd|<tuple|6.52|164|Chapter 1 (Sets).tm>>
     <associate|commutative laws of union and
     intersection|<tuple|1.24|10|Chapter 1 (Sets).tm>>
-    <associate|commutativity of general sum|<tuple|10.26|240|Chapter 2
+    <associate|commutativity of general sum|<tuple|10.26|242|Chapter 2
     (Linear Algebra).tm>>
     <associate|compact Hausdorf space is regular and
-    normal|<tuple|11.257|449|Chapter 3 (Topology).tm>>
+    normal|<tuple|11.257|450|Chapter 3 (Topology).tm>>
     <associate|compact sets in a normed spaces are
-    bounded|<tuple|11.251|448|Chapter 3 (Topology).tm>>
+    bounded|<tuple|11.251|449|Chapter 3 (Topology).tm>>
     <associate|compact space in a metric space is
     bounded|<tuple|11.250|448|Chapter 3 (Topology).tm>>
-    <associate|compact subsets|<tuple|11.245|447|Chapter 3 (Topology).tm>>
+    <associate|compact subsets|<tuple|11.245|448|Chapter 3 (Topology).tm>>
     <associate|compact subsets of subsets|<tuple|11.249|448|Chapter 3
     (Topology).tm>>
     <associate|compact subsets of the reals|<tuple|11.299|460|Chapter 3
     (Topology).tm>>
-    <associate|compact subspaces are closed|<tuple|11.253|448|Chapter 3
+    <associate|compact subspaces are closed|<tuple|11.253|449|Chapter 3
     (Topology).tm>>
     <associate|compact subspaces are sequential
     compact|<tuple|11.260|450|Chapter 3 (Topology).tm>>
@@ -3441,24 +3586,24 @@
     (Topology).tm>>
     <associate|compactness and base|<tuple|11.258|450|Chapter 3
     (Topology).tm>>
-    <associate|compactness and closed sets|<tuple|11.254|448|Chapter 3
+    <associate|compactness and closed sets|<tuple|11.254|449|Chapter 3
     (Topology).tm>>
     <associate|compactness and linear isometry|<tuple|11.303|461|Chapter 3
     (Topology).tm>>
     <associate|compactness and sequential
-    compactness|<tuple|11.262|450|Chapter 3 (Topology).tm>>
-    <associate|comparability|<tuple|comparability|66|Chapter 1 (Sets).tm>>
-    <associate|comparable elements and relations|<tuple|2.145|66|Chapter 1
+    compactness|<tuple|11.262|451|Chapter 3 (Topology).tm>>
+    <associate|comparability|<tuple|comparability|67|Chapter 1 (Sets).tm>>
+    <associate|comparable elements and relations|<tuple|2.147|67|Chapter 1
     (Sets).tm>>
-    <associate|complete measures|<tuple|18.98|825|Chapter 6 (Measures and
+    <associate|complete measures|<tuple|18.106|817|Chapter 6 (Measures and
     integration).tm>>
-    <associate|completion lemma|<tuple|18.101|825|Chapter 6 (Measures and
+    <associate|completion lemma|<tuple|18.109|818|Chapter 6 (Measures and
     integration).tm>>
-    <associate|completion of Borelset label|<tuple|18.104|827|Chapter 6
+    <associate|completion of Borelset label|<tuple|18.112|819|Chapter 6
     (Measures and integration).tm>>
-    <associate|completion of a measure|<tuple|18.102|826|Chapter 6 (Measures
+    <associate|completion of a measure|<tuple|18.110|818|Chapter 6 (Measures
     and integration).tm>>
-    <associate|completion of a measure space|<tuple|18.103|826|Chapter 6
+    <associate|completion of a measure space|<tuple|18.111|818|Chapter 6
     (Measures and integration).tm>>
     <associate|complex conjugate is positive|<tuple|9.5|218|Chapter 1
     (Sets).tm>>
@@ -3473,15 +3618,15 @@
     <associate|complex numbers|<tuple|9.1|217|Chapter 1 (Sets).tm>>
     <associate|complex spectral theorem|<tuple|12.77|552|Chapter 3
     (Topology).tm>>
-    <associate|components of a tensor|<tuple|10.400|386|Chapter 2 (Linear
+    <associate|components of a tensor|<tuple|10.400|387|Chapter 2 (Linear
     Algebra).tm>>
     <associate|composition of a continuous linear mapping and a continuous
     multilinear mapping is a continuous linear
-    mapping|<tuple|11.199|437|Chapter 3 (Topology).tm>>
-    <associate|composition of a restricted function|<tuple|2.49|46|Chapter 1
+    mapping|<tuple|11.199|438|Chapter 3 (Topology).tm>>
+    <associate|composition of a restricted function|<tuple|2.51|46|Chapter 1
     (Sets).tm>>
     <associate|composition of continuous functions is
-    continuous|<tuple|11.147|422|Chapter 3 (Topology).tm>>
+    continuous|<tuple|11.147|423|Chapter 3 (Topology).tm>>
     <associate|composition of continuous linear mapping is continuous and
     multilinear|<tuple|11.202|438|Chapter 3 (Topology).tm>>
     <associate|composition of diffeomorphism is a
@@ -3490,76 +3635,80 @@
     sets|<tuple|14.89|598|Chapter 4 (Differentiation).tm>>
     <associate|composition of function graphs is a function
     graph|<tuple|1.55|20|Chapter 1 (Sets).tm>>
-    <associate|composition of functions|<tuple|2.34|42|Chapter 1 (Sets).tm>>
-    <associate|composition of functions (3)|<tuple|2.33|41|Chapter 1
+    <associate|composition of functions|<tuple|2.36|41|Chapter 1 (Sets).tm>>
+    <associate|composition of functions (3)|<tuple|2.35|41|Chapter 1
     (Sets).tm>>
     <associate|composition of functions and function
-    application|<tuple|2.36|42|Chapter 1 (Sets).tm>>
+    application|<tuple|2.38|42|Chapter 1 (Sets).tm>>
     <associate|composition of homeomorphisms is a
-    homeomorphism|<tuple|11.168|426|Chapter 3 (Topology).tm>>
-    <associate|composition of increasing functions|<tuple|2.153|68|Chapter 1
+    homeomorphism|<tuple|11.168|427|Chapter 3 (Topology).tm>>
+    <associate|composition of increasing functions|<tuple|2.155|68|Chapter 1
     (Sets).tm>>
     <associate|composition of injective partial
-    functions|<tuple|2.17|38|Chapter 1 (Sets).tm>>
+    functions|<tuple|2.18|38|Chapter 1 (Sets).tm>>
     <associate|composition of isometries metric|<tuple|11.62|400|Chapter 3
     (Topology).tm>>
-    <associate|composition of isometries norm|<tuple|11.89|409|Chapter 3
+    <associate|composition of isometries norm|<tuple|11.89|410|Chapter 3
     (Topology).tm>>
     <associate|composition of linear and multilinear mapping over the same
-    field|<tuple|10.236|307|Chapter 2 (Linear Algebra).tm>>
-    <associate|composition of linear mappings|<tuple|10.184|292|Chapter 2
+    field|<tuple|10.236|308|Chapter 2 (Linear Algebra).tm>>
+    <associate|composition of linear mappings|<tuple|10.184|293|Chapter 2
     (Linear Algebra).tm>>
+    <associate|composition of measurable functions is
+    measurable|<tuple|18.144|832|Chapter 6 (Measures and integration).tm>>
     <associate|composition of n functions|<tuple|4.80|116|Chapter 1
     (Sets).tm>>
-    <associate|composition of n permutations|<tuple|10.68|253|Chapter 2
+    <associate|composition of n permutations|<tuple|10.68|255|Chapter 2
     (Linear Algebra).tm>>
     <associate|composition of open functions is
-    open|<tuple|11.146|422|Chapter 3 (Topology).tm>>
+    open|<tuple|11.146|423|Chapter 3 (Topology).tm>>
     <associate|composition of partial functions|<tuple|2.5|35|Chapter 1
     (Sets).tm>>
     <associate|composition of relations|<tuple|1.47|18|Chapter 1 (Sets).tm>>
     <associate|condition 1 for positive integers|<tuple|6.28|159|Chapter 1
     (Sets).tm>>
-    <associate|condition 2 for positive integers|<tuple|6.29|160|Chapter 1
+    <associate|condition 2 for positive integers|<tuple|6.29|159|Chapter 1
     (Sets).tm>>
-    <associate|condition for R[x]=R[y]|<tuple|2.118|60|Chapter 1 (Sets).tm>>
+    <associate|condition for R[x]=R[y]|<tuple|2.120|60|Chapter 1 (Sets).tm>>
+    <associate|condition for a Dynkin class to be a sigma
+    algebra|<tuple|18.133|828|Chapter 6 (Measures and integration).tm>>
     <associate|condition for a multilinear mapping to be
-    zero|<tuple|10.242|308|Chapter 2 (Linear Algebra).tm>>
+    zero|<tuple|10.242|309|Chapter 2 (Linear Algebra).tm>>
     <associate|condition for beeing a inversible
-    function|<tuple|2.42|44|Chapter 1 (Sets).tm>>
-    <associate|condition for bijection to be isomorph|<tuple|2.158|68|Chapter
+    function|<tuple|2.44|44|Chapter 1 (Sets).tm>>
+    <associate|condition for bijection to be isomorph|<tuple|2.160|69|Chapter
     1 (Sets).tm>>
     <associate|condition for concavity (convexitivity)|<tuple|14.103|606|Chapter
     4 (Differentiation).tm>>
-    <associate|condition for equality of functions|<tuple|2.12|37|Chapter 1
+    <associate|condition for equality of functions|<tuple|2.13|37|Chapter 1
     (Sets).tm>>
     <associate|condition for increasing sequence to
     convert|<tuple|11.365|474|Chapter 3 (Topology).tm>>
-    <associate|condition for interval to be empty|<tuple|2.182|73|Chapter 1
+    <associate|condition for interval to be empty|<tuple|2.184|74|Chapter 1
     (Sets).tm>>
-    <associate|condition for invertable function|<tuple|2.20|38|Chapter 1
+    <associate|condition for invertable function|<tuple|2.21|38|Chapter 1
     (Sets).tm>>
     <associate|condition for invertible partial
-    functions|<tuple|2.19|38|Chapter 1 (Sets).tm>>
+    functions|<tuple|2.20|38|Chapter 1 (Sets).tm>>
     <associate|condition for isomorphism in a full ordered
-    set|<tuple|2.161|69|Chapter 1 (Sets).tm>>
-    <associate|condition for linear dependency|<tuple|10.146|282|Chapter 2
+    set|<tuple|2.163|69|Chapter 1 (Sets).tm>>
+    <associate|condition for linear dependency|<tuple|10.146|284|Chapter 2
     (Linear Algebra).tm>>
     <associate|condition for polynomial to be zero|<tuple|12.2|513|Chapter 3
     (Topology).tm>>
     <associate|condition for self-adjoint operator to be
     zero|<tuple|12.74|550|Chapter 3 (Topology).tm>>
     <associate|condition for supremum (infinum) to be
-    infinite|<tuple|17.11|667|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|condition of partition|<tuple|2.116|59|Chapter 1 (Sets).tm>>
+    infinite|<tuple|17.14|670|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|condition of partition|<tuple|2.118|60|Chapter 1 (Sets).tm>>
     <associate|condition to belong to a product of
-    sets|<tuple|2.82|54|Chapter 1 (Sets).tm>>
-    <associate|condition to have direct sum|<tuple|10.368|367|Chapter 2
+    sets|<tuple|2.84|54|Chapter 1 (Sets).tm>>
+    <associate|condition to have direct sum|<tuple|10.368|368|Chapter 2
     (Linear Algebra).tm>>
     <associate|condition to have non zero
-    determinant|<tuple|10.326|344|Chapter 2 (Linear Algebra).tm>>
+    determinant|<tuple|10.326|345|Chapter 2 (Linear Algebra).tm>>
     <associate|conditional completeness preserved by
-    isomorphism|<tuple|2.180|73|Chapter 1 (Sets).tm>>
+    isomorphism|<tuple|2.182|73|Chapter 1 (Sets).tm>>
     <associate|conditions for countability|<tuple|5.67|136|Chapter 1
     (Sets).tm>>
     <associate|conditions for minimum,maximum of a
@@ -3568,7 +3717,7 @@
     triangular|<tuple|12.55|542|Chapter 3 (Topology).tm>>
     <associate|conditions to make a basis|<tuple|11.27|393|Chapter 3
     (Topology).tm>>
-    <associate|conditonal complete classes|<tuple|2.177|72|Chapter 1
+    <associate|conditonal complete classes|<tuple|2.179|72|Chapter 1
     (Sets).tm>>
     <associate|conjugate of a complex number|<tuple|9.4|218|Chapter 1
     (Sets).tm>>
@@ -3577,10 +3726,12 @@
     (Topology).tm>>
     <associate|connected space|<tuple|11.448|509|Chapter 3 (Topology).tm>>
     <associate|connected subset|<tuple|11.450|510|Chapter 3 (Topology).tm>>
+    <associate|consequence of a pi-system|<tuple|18.132|828|Chapter 6
+    (Measures and integration).tm>>
     <associate|consequence of cartesian product
     subsets|<tuple|5.95|146|Chapter 1 (Sets).tm>>
     <associate|consequence of generalized product
-    subsets|<tuple|2.93|56|Chapter 1 (Sets).tm>>
+    subsets|<tuple|2.95|56|Chapter 1 (Sets).tm>>
     <associate|consequence of mean value theorem
     (2)|<tuple|14.121|620|Chapter 4 (Differentiation).tm>>
     <associate|consequence of the Archimedean property
@@ -3591,27 +3742,27 @@
     reals|<tuple|9.56|230|Chapter 1 (Sets).tm>>
     <associate|consequence of the archimedean property for the reals
     (R)|<tuple|8.62|209|Chapter 1 (Sets).tm>>
-    <associate|constant function|<tuple|2.14|38|Chapter 1 (Sets).tm>>
+    <associate|constant function|<tuple|2.15|38|Chapter 1 (Sets).tm>>
     <associate|constant functions are C^infinite|<tuple|14.74|590|Chapter 4
     (Differentiation).tm>>
     <associate|constant functions are continuous|<tuple|11.140|421|Chapter 3
     (Topology).tm>>
     <associate|construction of a function using Axiom of
-    choice|<tuple|2.209|84|Chapter 1 (Sets).tm>>
+    choice|<tuple|2.211|84|Chapter 1 (Sets).tm>>
     <associate|construction of a skew symmetric
-    mapping|<tuple|10.258|312|Chapter 2 (Linear Algebra).tm>>
+    mapping|<tuple|10.258|313|Chapter 2 (Linear Algebra).tm>>
     <associate|construction of new filterbases|<tuple|11.273|454|Chapter 3
     (Topology).tm>>
-    <associate|continuity and connectness|<tuple|11.453|510|Chapter 3
+    <associate|continuity and connectness|<tuple|11.453|511|Chapter 3
     (Topology).tm>>
     <associate|continuity and multilinearity|<tuple|11.193|434|Chapter 3
     (Topology).tm>>
     <associate|continuity at a point and topological
     basis|<tuple|11.136|421|Chapter 3 (Topology).tm>>
-    <associate|continuity characterization|<tuple|11.142|421|Chapter 3
+    <associate|continuity characterization|<tuple|11.142|422|Chapter 3
     (Topology).tm>>
     <associate|continuity in R is continuity of extended
-    reals|<tuple|17.39|682|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.42|687|Chapter 5 (Extended Real Numbers).tm>>
     <associate|continuity in metric spaces|<tuple|11.151|424|Chapter 3
     (Topology).tm>>
     <associate|continuity is local|<tuple|11.143|422|Chapter 3
@@ -3619,7 +3770,7 @@
     <associate|continuity of a function in a subspace of a metric
     space|<tuple|11.152|424|Chapter 3 (Topology).tm>>
     <associate|continuity of a function on a normed
-    subspace|<tuple|11.156|424|Chapter 3 (Topology).tm>>
+    subspace|<tuple|11.156|425|Chapter 3 (Topology).tm>>
     <associate|continuity of function in a normed
     space|<tuple|11.155|424|Chapter 3 (Topology).tm>>
     <associate|continuity of partial derivates|<tuple|14.130|626|Chapter 4
@@ -3632,29 +3783,31 @@
     (Topology).tm>>
     <associate|continuous billinear functions are
     C^infinity|<tuple|14.78|592|Chapter 4 (Differentiation).tm>>
-    <associate|continuous function|<tuple|11.134|420|Chapter 3
+    <associate|continuous function|<tuple|11.134|421|Chapter 3
     (Topology).tm>>
+    <associate|continuous functions are measurable
+    (4)|<tuple|18.155|837|Chapter 6 (Measures and integration).tm>>
     <associate|continuous functions on a compact set are uniform
     continue|<tuple|11.267|453|Chapter 3 (Topology).tm>>
     <associate|continuous functions to a product
     space|<tuple|11.149|423|Chapter 3 (Topology).tm>>
-    <associate|continuous image of compact set|<tuple|11.252|448|Chapter 3
+    <associate|continuous image of compact set|<tuple|11.252|449|Chapter 3
     (Topology).tm>>
     <associate|continuous linear maps in a normed
-    space|<tuple|11.179|429|Chapter 3 (Topology).tm>>
+    space|<tuple|11.179|430|Chapter 3 (Topology).tm>>
     <associate|continuous mapping in [a,b]|<tuple|11.454|511|Chapter 3
     (Topology).tm>>
     <associate|contraction|<tuple|11.411|495|Chapter 3 (Topology).tm>>
-    <associate|contraction mapping|<tuple|10.402|387|Chapter 2 (Linear
+    <associate|contraction mapping|<tuple|10.402|388|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|convention of sup inf|<tuple|17.14|668|Chapter 5 (Extended
+    <associate|convention of sup inf|<tuple|17.17|671|Chapter 5 (Extended
     Real Numbers).tm>>
     <associate|conventions for product of sets|<tuple|5.103|149|Chapter 1
     (Sets).tm>>
-    <associate|convergence domain and balls|<tuple|18.7|738|Chapter 5
+    <associate|convergence domain and balls|<tuple|18.7|724|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|convergence domain of exponential
-    function|<tuple|18.18|742|Chapter 5 (Extended Real Numbers).tm>>
+    function|<tuple|18.18|728|Chapter 5 (Extended Real Numbers).tm>>
     <associate|convergence in a metric space|<tuple|11.314|463|Chapter 3
     (Topology).tm>>
     <associate|convergence in a normed space|<tuple|11.321|464|Chapter 3
@@ -3662,122 +3815,124 @@
     <associate|convergence in normed space|<tuple|11.321|464|Chapter 3
     (Topology).tm>>
     <associate|convergence in real implies that lim inferior = lim
-    superior|<tuple|17.76|711|Chapter 5 (Extended Real Numbers).tm>>
+    superior|<tuple|17.62|696|Chapter 5 (Extended Real Numbers).tm>>
     <associate|convergence in topological and metric
-    space|<tuple|11.315|463|Chapter 3 (Topology).tm>>
+    space|<tuple|11.315|464|Chapter 3 (Topology).tm>>
     <associate|convergence is independent of start of
     sequence|<tuple|11.313|463|Chapter 3 (Topology).tm>>
-    <associate|convergence of derived powerseries|<tuple|18.22|743|Chapter 5
+    <associate|convergence of derived powerseries|<tuple|18.22|729|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|convergence of powersequence|<tuple|11.329|465|Chapter 3
+    <associate|convergence of powersequence|<tuple|11.329|466|Chapter 3
     (Topology).tm>>
-    <associate|convergence of powerseries (1)|<tuple|18.6|737|Chapter 5
+    <associate|convergence of powerseries (1)|<tuple|18.6|723|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|convergence radius|<tuple|18.8|738|Chapter 5 (Extended Real
+    <associate|convergence radius|<tuple|18.8|724|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|convergency in a topological space|<tuple|11.311|463|Chapter 3
     (Topology).tm>>
     <associate|convergent criteria of a serie in a Banach
     space|<tuple|11.392|487|Chapter 3 (Topology).tm>>
-    <associate|convergent filterbase|<tuple|11.275|454|Chapter 3
+    <associate|convergent filterbase|<tuple|11.275|455|Chapter 3
     (Topology).tm>>
-    <associate|convergent sequence are bounded|<tuple|11.335|466|Chapter 3
+    <associate|convergent sequence are bounded|<tuple|11.335|467|Chapter 3
     (Topology).tm>>
     <associate|convergent sequences are Cauchy|<tuple|11.320|464|Chapter 3
     (Topology).tm>>
-    <associate|convergent sequences are Cauchy (1)|<tuple|11.328|465|Chapter
+    <associate|convergent sequences are Cauchy (1)|<tuple|11.328|466|Chapter
     3 (Topology).tm>>
-    <associate|converging and accumulation|<tuple|11.282|455|Chapter 3
+    <associate|converging and accumulation|<tuple|11.282|456|Chapter 3
     (Topology).tm>>
     <associate|converging of upper serie|<tuple|11.379|480|Chapter 3
     (Topology).tm>>
     <associate|convex, concave functions|<tuple|14.101|605|Chapter 4
     (Differentiation).tm>>
     <associate|corollary 12.340|<tuple|11.393|487|Chapter 3 (Topology).tm>>
+    <associate|corollary 18.29|<tuple|18.29|767|Chapter 6 (Measures and
+    integration).tm>>
     <associate|countable additivity implies
-    additivity|<tuple|18.54|788|Chapter 6 (Measures and integration).tm>>
-    <associate|countable compact class|<tuple|11.263|451|Chapter 3
+    additivity|<tuple|18.63|780|Chapter 6 (Measures and integration).tm>>
+    <associate|countable compact class|<tuple|11.263|452|Chapter 3
     (Topology).tm>>
     <associate|countable set minus one element is
     countable|<tuple|5.32|124|Chapter 1 (Sets).tm>>
     <associate|countable sets|<tuple|5.30|124|Chapter 1 (Sets).tm>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.124|732|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|d'Alembert|<tuple|18.17|741|Chapter 5 (Extended Real
+    sum|<tuple|17.107|721|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|d'Alembert|<tuple|18.17|727|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|decomposition of inserting into|<tuple|10.98|269|Chapter 2
+    <associate|decomposition of inserting into|<tuple|10.98|271|Chapter 2
     (Linear Algebra).tm>>
     <associate|decreasing sequence property|<tuple|5.77|139|Chapter 1
     (Sets).tm>>
     <associate|dedekind's cut|<tuple|8.1|179|Chapter 1 (Sets).tm>>
-    <associate|defining property of finite sum|<tuple|10.6|235|Chapter 2
+    <associate|defining property of finite sum|<tuple|10.6|237|Chapter 2
     (Linear Algebra).tm>>
     <associate|definition of a serie|<tuple|11.374|479|Chapter 3
     (Topology).tm>>
-    <associate|definition of a tensorproduct|<tuple|10.375|370|Chapter 2
+    <associate|definition of a tensorproduct|<tuple|10.375|371|Chapter 2
     (Linear Algebra).tm>>
     <associate|definition of limit in the extented
-    reals|<tuple|17.77|711|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.63|698|Chapter 5 (Extended Real Numbers).tm>>
     <associate|definition of summable family of poitive
     temrs|<tuple|11.384|483|Chapter 3 (Topology).tm>>
     <associate|definition of the operator norm of a multilinear
     mapping|<tuple|11.196|436|Chapter 3 (Topology).tm>>
     <associate|dense subset|<tuple|11.41|397|Chapter 3 (Topology).tm>>
-    <associate|density of the extented reals|<tuple|17.7|667|Chapter 5
+    <associate|density of the extented reals|<tuple|17.9|667|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|density theorem for the reals|<tuple|9.58|231|Chapter 1
     (Sets).tm>>
-    <associate|density theorem for the reals (R)|<tuple|8.64|211|Chapter 1
+    <associate|density theorem for the reals (R)|<tuple|8.64|210|Chapter 1
     (Sets).tm>>
     <associate|denumerable union of denumerable sets is
     denumerable|<tuple|5.60|135|Chapter 1 (Sets).tm>>
-    <associate|derivative|<tuple|14.18|566|Chapter 4 (Differentiation).tm>>
-    <associate|derivative and composition|<tuple|14.24|569|Chapter 4
+    <associate|derivative|<tuple|14.18|567|Chapter 4 (Differentiation).tm>>
+    <associate|derivative and composition|<tuple|14.24|570|Chapter 4
     (Differentiation).tm>>
     <associate|derivative and local minimum
     (maximum)|<tuple|14.104|607|Chapter 4 (Differentiation).tm>>
     <associate|derivative is local|<tuple|14.20|567|Chapter 4
     (Differentiation).tm>>
-    <associate|derivative of product|<tuple|14.49|579|Chapter 4
+    <associate|derivative of product|<tuple|14.49|580|Chapter 4
     (Differentiation).tm>>
     <associate|derivative of the exponential
-    function|<tuple|18.24|746|Chapter 5 (Extended Real Numbers).tm>>
+    function|<tuple|18.24|732|Chapter 5 (Extended Real Numbers).tm>>
     <associate|derivative on a closed interval|<tuple|14.92|600|Chapter 4
     (Differentiation).tm>>
-    <associate|determinant|<tuple|10.276|325|Chapter 2 (Linear Algebra).tm>>
-    <associate|determinant and identity|<tuple|10.277|326|Chapter 2 (Linear
+    <associate|determinant|<tuple|10.276|326|Chapter 2 (Linear Algebra).tm>>
+    <associate|determinant and identity|<tuple|10.277|327|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|determinant and permutation|<tuple|10.325|344|Chapter 2
+    <associate|determinant and permutation|<tuple|10.325|345|Chapter 2
     (Linear Algebra).tm>>
-    <associate|determinant and rows,columns|<tuple|10.323|343|Chapter 2
+    <associate|determinant and rows,columns|<tuple|10.323|344|Chapter 2
     (Linear Algebra).tm>>
-    <associate|determinant function|<tuple|10.264|317|Chapter 2 (Linear
+    <associate|determinant function|<tuple|10.264|318|Chapter 2 (Linear
     Algebra).tm>>
     <associate|determinant of 1x1 matrix|<tuple|10.317|342|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|determinant of a diagonal matrix|<tuple|10.318|342|Chapter 2
+    <associate|determinant of a diagonal matrix|<tuple|10.318|343|Chapter 2
     (Linear Algebra).tm>>
-    <associate|determinant of a linear isomorphism|<tuple|10.290|333|Chapter
+    <associate|determinant of a linear isomorphism|<tuple|10.290|334|Chapter
     2 (Linear Algebra).tm>>
     <associate|determinant of a matrix|<tuple|10.316|342|Chapter 2 (Linear
     Algebra).tm>>
     <associate|determinant of adjoint mapping|<tuple|11.133|420|Chapter 3
     (Topology).tm>>
-    <associate|determinant of elementair functions|<tuple|10.349|357|Chapter
+    <associate|determinant of elementair functions|<tuple|10.349|358|Chapter
     2 (Linear Algebra).tm>>
     <associate|determinant of linear mapping and its determinant is the
-    same|<tuple|10.321|342|Chapter 2 (Linear Algebra).tm>>
+    same|<tuple|10.321|343|Chapter 2 (Linear Algebra).tm>>
     <associate|determinant of matrix where first row and first column is
-    unit|<tuple|10.332|345|Chapter 2 (Linear Algebra).tm>>
+    unit|<tuple|10.332|346|Chapter 2 (Linear Algebra).tm>>
     <associate|determinant of matrix where first row is
     unit|<tuple|10.333|346|Chapter 2 (Linear Algebra).tm>>
-    <associate|determinant of product of matrices|<tuple|10.322|343|Chapter 2
+    <associate|determinant of product of matrices|<tuple|10.322|344|Chapter 2
     (Linear Algebra).tm>>
-    <associate|determinant of simplified matrices|<tuple|10.345|355|Chapter 2
+    <associate|determinant of simplified matrices|<tuple|10.345|356|Chapter 2
     (Linear Algebra).tm>>
-    <associate|determinant of special matrix|<tuple|10.334|347|Chapter 2
+    <associate|determinant of special matrix|<tuple|10.334|348|Chapter 2
     (Linear Algebra).tm>>
-    <associate|determinant of transpose matrix|<tuple|10.320|342|Chapter 2
+    <associate|determinant of transpose matrix|<tuple|10.320|343|Chapter 2
     (Linear Algebra).tm>>
     <associate|determinant of unitary operator|<tuple|12.63|544|Chapter 3
     (Topology).tm>>
@@ -3795,8 +3950,6 @@
     (Differentiation).tm>>
     <associate|diffeomorphism is a local property|<tuple|14.154|649|Chapter 4
     (Differentiation).tm>>
-    <associate|difference in extented reals|<tuple|17.21|673|Chapter 5
-    (Extended Real Numbers).tm>>
     <associate|difference of Riemann sums|<tuple|11.433|504|Chapter 3
     (Topology).tm>>
     <associate|difference of finte sets|<tuple|5.45|129|Chapter 1 (Sets).tm>>
@@ -3805,7 +3958,7 @@
     <associate|differentiability and restricted
     mapping|<tuple|14.10|563|Chapter 4 (Differentiation).tm>>
     <associate|differentiability at x implies continuity at
-    x|<tuple|14.15|565|Chapter 4 (Differentiation).tm>>
+    x|<tuple|14.15|566|Chapter 4 (Differentiation).tm>>
     <associate|differentiability at x is independent of
     norms|<tuple|14.9|563|Chapter 4 (Differentiation).tm>>
     <associate|differentiability definition one|<tuple|14.6|562|Chapter 4
@@ -3825,12 +3978,12 @@
     <associate|differentiability on [a,b]
     equivalences|<tuple|14.93|600|Chapter 4 (Differentiation).tm>>
     <associate|differentiability on products of metric
-    spaces|<tuple|14.35|572|Chapter 4 (Differentiation).tm>>
+    spaces|<tuple|14.35|573|Chapter 4 (Differentiation).tm>>
     <associate|differential and partial differentials|<tuple|14.132|627|Chapter
     4 (Differentiation).tm>>
-    <associate|differential of a billinear mapping|<tuple|14.47|578|Chapter 4
+    <associate|differential of a billinear mapping|<tuple|14.47|579|Chapter 4
     (Differentiation).tm>>
-    <associate|differential of a function|<tuple|14.8|562|Chapter 4
+    <associate|differential of a function|<tuple|14.8|563|Chapter 4
     (Differentiation).tm>>
     <associate|differential of a linear function|<tuple|14.17|566|Chapter 4
     (Differentiation).tm>>
@@ -3840,25 +3993,25 @@
     4 (Differentiation).tm>>
     <associate|differentias and derivates|<tuple|14.19|567|Chapter 4
     (Differentiation).tm>>
-    <associate|dimension of a subspace|<tuple|10.210|300|Chapter 2 (Linear
+    <associate|dimension of a subspace|<tuple|10.210|301|Chapter 2 (Linear
     Algebra).tm>>
     <associate|dimension of direct sum of two vector
-    spaces|<tuple|10.371|368|Chapter 2 (Linear Algebra).tm>>
+    spaces|<tuple|10.371|369|Chapter 2 (Linear Algebra).tm>>
     <associate|dimension of direct sum of vector
-    spaces|<tuple|10.372|368|Chapter 2 (Linear Algebra).tm>>
+    spaces|<tuple|10.372|369|Chapter 2 (Linear Algebra).tm>>
     <associate|dimension of product of finite vector
-    spaces|<tuple|10.204|299|Chapter 2 (Linear Algebra).tm>>
-    <associate|direct internal sum of subspaces|<tuple|<with|mode|<quote|math>|\<oplus\><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>>|367|Chapter
+    spaces|<tuple|10.204|300|Chapter 2 (Linear Algebra).tm>>
+    <associate|direct internal sum of subspaces|<tuple|<with|mode|<quote|math>|\<oplus\><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>>|368|Chapter
     2 (Linear Algebra).tm>>
-    <associate|direct sum of subspaces|<tuple|10.366|367|Chapter 2 (Linear
+    <associate|direct sum of subspaces|<tuple|10.366|368|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|direct sum of two subspaces|<tuple|10.194|295|Chapter 2
+    <associate|direct sum of two subspaces|<tuple|10.194|297|Chapter 2
     (Linear Algebra).tm>>
-    <associate|direct sum over distinct partitions|<tuple|10.374|369|Chapter
+    <associate|direct sum over distinct partitions|<tuple|10.374|370|Chapter
     2 (Linear Algebra).tm>>
-    <associate|direct sum over partitions|<tuple|10.373|369|Chapter 2 (Linear
+    <associate|direct sum over partitions|<tuple|10.373|370|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|direct sums and bijections|<tuple|10.369|367|Chapter 2 (Linear
+    <associate|direct sums and bijections|<tuple|10.369|368|Chapter 2 (Linear
     Algebra).tm>>
     <associate|disjoint union of reals|<tuple|8.15|183|Chapter 1 (Sets).tm>>
     <associate|disjoint union of {..}x{..}|<tuple|12.7|514|Chapter 3
@@ -3866,11 +4019,11 @@
     <associate|distance functions|<tuple|11.159|425|Chapter 3 (Topology).tm>>
     <associate|distributivity in natural numbers|<tuple|4.40|108|Chapter 1
     (Sets).tm>>
-    <associate|distributivity in the extented reals|<tuple|17.28|676|Chapter
+    <associate|distributivity in the extented reals|<tuple|17.29|681|Chapter
     5 (Extended Real Numbers).tm>>
     <associate|distributivity of absolute convergetn
     series|<tuple|11.410|494|Chapter 3 (Topology).tm>>
-    <associate|distributivity of finite sums|<tuple|10.59|251|Chapter 2
+    <associate|distributivity of finite sums|<tuple|10.59|253|Chapter 2
     (Linear Algebra).tm>>
     <associate|distributivity of union or intersection|<tuple|1.28|11|Chapter
     1 (Sets).tm>>
@@ -3893,8 +4046,8 @@
     (Sets).tm>>
     <associate|dominant convergence|<tuple|11.406|491|Chapter 3
     (Topology).tm>>
-    <associate|dual space|<tuple|10.188|293|Chapter 2 (Linear Algebra).tm>>
-    <associate|duplicates means linear dependency|<tuple|10.142|281|Chapter 2
+    <associate|dual space|<tuple|10.188|295|Chapter 2 (Linear Algebra).tm>>
+    <associate|duplicates means linear dependency|<tuple|10.142|283|Chapter 2
     (Linear Algebra).tm>>
     <associate|e-mappings|<tuple|14.11|564|Chapter 4 (Differentiation).tm>>
     <associate|each filterbase converges to exactly one
@@ -3905,7 +4058,7 @@
     real|<tuple|12.62|544|Chapter 3 (Topology).tm>>
     <associate|eigenvector of a linear operator|<tuple|12.51|541|Chapter 3
     (Topology).tm>>
-    <associate|elementair transformations|<tuple|10.347|357|Chapter 2 (Linear
+    <associate|elementair transformations|<tuple|10.347|358|Chapter 2 (Linear
     Algebra).tm>>
     <associate|elemination of non zero common factor in natural
     numbers|<tuple|4.72|114|Chapter 1 (Sets).tm>>
@@ -3915,7 +4068,7 @@
     rationals|<tuple|7.25|173|Chapter 1 (Sets).tm>>
     <associate|empty family|<tuple|1.78|24|Chapter 1 (Sets).tm>>
     <associate|empty product of sets|<tuple|1.40|15|Chapter 1 (Sets).tm>>
-    <associate|empty rectaangles|<tuple|18.26|779|Chapter 6 (Measures and
+    <associate|empty rectaangles|<tuple|18.35|771|Chapter 6 (Measures and
     integration).tm>>
     <associate|empty set is a set|<tuple|1.69|21|Chapter 1 (Sets).tm>>
     <associate|eq 0.2.1|<tuple|2.1|36|Chapter 1 (Sets).tm>>
@@ -3923,185 +4076,185 @@
     <associate|eq 0.2.3|<tuple|2.3|36|Chapter 1 (Sets).tm>>
     <associate|eq 0.2.4|<tuple|2.4|36|Chapter 1 (Sets).tm>>
     <associate|eq 1.476|<tuple|12.6|527|Chapter 3 (Topology).tm>>
-    <associate|eq 10.1|<tuple|10.22|282|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.1.030|<tuple|10.1|238|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.10|<tuple|10.31|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.100|<tuple|10.119|353|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.100x|<tuple|10.5|247|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.101|<tuple|10.120|353|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.102|<tuple|10.121|355|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.105|<tuple|10.145|370|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.106|<tuple|10.146|370|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.107|<tuple|10.147|370|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.107.91|<tuple|10.123|361|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.107.93|<tuple|10.122|358|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.108|<tuple|10.148|370|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.108.91|<tuple|10.124|361|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.109|<tuple|10.149|370|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.109.91|<tuple|10.126|361|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.109.92|<tuple|10.125|361|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.11|<tuple|10.32|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.110|<tuple|10.150|370|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.110.91|<tuple|10.127|362|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.111|<tuple|10.151|374|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.111.91|<tuple|10.128|362|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.112|<tuple|10.152|374|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.113|<tuple|10.153|374|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.113.92|<tuple|10.129|362|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.114|<tuple|10.166|379|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.115|<tuple|10.167|380|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.115.92|<tuple|10.132|362|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.115.94|<tuple|10.131|362|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.115.95|<tuple|10.130|362|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.116|<tuple|10.168|380|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.117|<tuple|10.169|380|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.117.93|<tuple|10.133|363|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.118|<tuple|10.170|381|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.118.93|<tuple|10.134|363|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.119.93|<tuple|10.135|363|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.12|<tuple|10.33|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.120|<tuple|10.172|381|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.120.93|<tuple|10.137|364|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.121|<tuple|10.173|382|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.121.94|<tuple|10.136|363|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.122|<tuple|10.174|382|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.122.93|<tuple|10.139|364|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.123|<tuple|10.175|382|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.123.94|<tuple|10.140|364|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.123.95|<tuple|10.138|364|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.124.94|<tuple|10.141|365|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.125.94|<tuple|10.142|365|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.126.94|<tuple|10.143|365|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.127.94|<tuple|10.144|365|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.13|<tuple|10.34|285|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.14|<tuple|10.35|285|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.14.030|<tuple|10.14|254|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.15|<tuple|10.42|293|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.15.030|<tuple|10.15|255|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.151|<tuple|10.41|293|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.16|<tuple|10.43|293|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.16.030|<tuple|10.16|255|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.17.030|<tuple|10.17|255|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.18|<tuple|10.44|295|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.18.030|<tuple|10.18|256|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.19|<tuple|10.45|296|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.19.030|<tuple|10.19|256|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.1x|<tuple|10.4|243|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.2|<tuple|10.23|282|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.2.030|<tuple|10.2|238|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.20|<tuple|10.46|296|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.200x|<tuple|10.5|247|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.21|<tuple|10.47|297|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.22|<tuple|10.48|297|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.24|<tuple|10.50|297|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.25|<tuple|10.51|297|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.26|<tuple|10.52|301|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.26.021|<tuple|10.36|287|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.27|<tuple|10.53|301|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.27.022|<tuple|10.37|287|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.28|<tuple|10.54|301|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.28.022|<tuple|10.39|288|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.28.023|<tuple|10.38|288|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.29|<tuple|10.55|302|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.29.22|<tuple|10.40|288|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.3|<tuple|10.24|283|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.3.030|<tuple|10.3|241|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.31|<tuple|10.57|302|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.32|<tuple|10.58|302|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.33|<tuple|10.59|303|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.34|<tuple|10.60|303|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.35|<tuple|10.61|303|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.36|<tuple|10.62|303|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.38|<tuple|10.64|304|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.39|<tuple|10.65|304|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.3x|<tuple|10.7|247|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.40|<tuple|10.66|304|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.400|<tuple|10.8|247|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.41|<tuple|10.68|304|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.43|<tuple|10.69|304|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.44|<tuple|10.70|313|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.45|<tuple|10.71|313|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.46|<tuple|10.72|313|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.47|<tuple|10.73|313|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.48|<tuple|10.74|313|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.49|<tuple|10.75|313|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.4x|<tuple|10.25|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.5|<tuple|10.26|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.50|<tuple|10.76|313|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.500|<tuple|10.9|248|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.52|<tuple|1|314|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.521|<tuple|1|314|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.5300|<tuple|10.78|315|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.54|<tuple|10.79|315|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.54x|<tuple|10.80|315|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.56|<tuple|10.82|315|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.56x|<tuple|10.81|315|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.58|<tuple|10.84|322|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.58x|<tuple|10.265|317|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.59|<tuple|10.85|322|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.59x|<tuple|10.265|317|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.6|<tuple|10.27|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.60|<tuple|10.86|322|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.600|<tuple|10.11|248|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.601|<tuple|10.10|248|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.1|<tuple|10.22|284|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.1.030|<tuple|10.1|240|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.10|<tuple|10.31|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.100|<tuple|10.119|354|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.100x|<tuple|10.5|249|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.101|<tuple|10.120|354|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.102|<tuple|10.121|356|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.105|<tuple|10.145|371|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.106|<tuple|10.146|371|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.107|<tuple|10.147|371|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.107.91|<tuple|10.123|362|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.107.93|<tuple|10.122|359|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.108|<tuple|10.148|371|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.108.91|<tuple|10.124|362|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.109|<tuple|10.149|371|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.109.91|<tuple|10.126|362|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.109.92|<tuple|10.125|362|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.11|<tuple|10.32|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.110|<tuple|10.150|371|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.110.91|<tuple|10.127|363|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.111|<tuple|10.151|375|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.111.91|<tuple|10.128|363|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.112|<tuple|10.152|375|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.113|<tuple|10.153|375|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.113.92|<tuple|10.129|363|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.114|<tuple|10.166|380|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.115|<tuple|10.167|381|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.115.92|<tuple|10.132|363|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.115.94|<tuple|10.131|363|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.115.95|<tuple|10.130|363|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.116|<tuple|10.168|381|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.117|<tuple|10.169|381|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.117.93|<tuple|10.133|364|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.118|<tuple|10.170|382|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.118.93|<tuple|10.134|364|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.119.93|<tuple|10.135|364|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.12|<tuple|10.33|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.120|<tuple|10.172|382|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.120.93|<tuple|10.137|365|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.121|<tuple|10.173|383|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.121.94|<tuple|10.136|364|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.122|<tuple|10.174|383|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.122.93|<tuple|10.139|365|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.123|<tuple|10.175|383|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.123.94|<tuple|10.140|365|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.123.95|<tuple|10.138|365|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.124.94|<tuple|10.141|366|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.125.94|<tuple|10.142|366|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.126.94|<tuple|10.143|366|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.127.94|<tuple|10.144|366|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.13|<tuple|10.34|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.14|<tuple|10.35|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.14.030|<tuple|10.14|256|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.15|<tuple|10.42|294|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.15.030|<tuple|10.15|257|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.151|<tuple|10.41|294|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.16|<tuple|10.43|294|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.16.030|<tuple|10.16|257|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.17.030|<tuple|10.17|257|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.18|<tuple|10.44|296|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.18.030|<tuple|10.18|258|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.19|<tuple|10.45|297|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.19.030|<tuple|10.19|258|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.1x|<tuple|10.4|245|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.2|<tuple|10.23|284|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.2.030|<tuple|10.2|240|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.20|<tuple|10.46|297|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.200x|<tuple|10.5|249|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.21|<tuple|10.47|298|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.22|<tuple|10.48|298|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.24|<tuple|10.50|298|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.25|<tuple|10.51|298|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.26|<tuple|10.52|302|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.26.021|<tuple|10.36|288|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.27|<tuple|10.53|302|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.27.022|<tuple|10.37|289|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.28|<tuple|10.54|303|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.28.022|<tuple|10.39|289|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.28.023|<tuple|10.38|289|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.29|<tuple|10.55|303|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.29.22|<tuple|10.40|290|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.3|<tuple|10.24|285|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.3.030|<tuple|10.3|243|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.31|<tuple|10.57|304|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.32|<tuple|10.58|304|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.33|<tuple|10.59|304|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.34|<tuple|10.60|304|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.35|<tuple|10.61|304|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.36|<tuple|10.62|304|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.38|<tuple|10.64|305|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.39|<tuple|10.65|305|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.3x|<tuple|10.7|249|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.40|<tuple|10.66|305|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.400|<tuple|10.8|249|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.41|<tuple|10.68|305|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.43|<tuple|10.69|306|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.44|<tuple|10.70|314|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.45|<tuple|10.71|314|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.46|<tuple|10.72|314|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.47|<tuple|10.73|314|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.48|<tuple|10.74|314|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.49|<tuple|10.75|314|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.4x|<tuple|10.25|285|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.5|<tuple|10.26|285|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.50|<tuple|10.76|314|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.500|<tuple|10.9|250|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.52|<tuple|1|315|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.521|<tuple|1|315|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.5300|<tuple|10.78|316|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.54|<tuple|10.79|316|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.54x|<tuple|10.80|316|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.56|<tuple|10.82|316|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.56x|<tuple|10.81|316|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.58|<tuple|10.84|323|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.58x|<tuple|10.265|318|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.59|<tuple|10.85|323|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.59x|<tuple|10.265|318|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.6|<tuple|10.27|285|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.60|<tuple|10.86|323|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.600|<tuple|10.11|250|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.601|<tuple|10.10|250|Chapter 2 (Linear Algebra).tm>>
     <associate|eq 10.60x|<tuple|10.265|318|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.61|<tuple|10.87|322|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.62|<tuple|10.88|323|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.63|<tuple|10.89|323|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.64x|<tuple|10.90|323|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.66|<tuple|10.92|323|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.67|<tuple|10.93|324|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.68|<tuple|10.94|324|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.69|<tuple|10.95|324|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.7|<tuple|10.28|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.70|<tuple|10.96|324|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.71|<tuple|10.97|330|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.72|<tuple|10.98|330|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.73|<tuple|10.99|331|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.74|<tuple|10.100|331|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.75|<tuple|10.101|336|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.76|<tuple|10.102|336|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.8|<tuple|10.29|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.84|<tuple|10.103|338|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.85|<tuple|10.104|338|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.86|<tuple|10.105|338|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.87|<tuple|10.106|338|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.88|<tuple|10.107|342|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.89|<tuple|10.108|343|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.8x|<tuple|10.20|279|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.9|<tuple|10.30|284|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.9.601|<tuple|10.12|248|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.90|<tuple|10.109|346|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.91|<tuple|10.110|347|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.61|<tuple|10.87|323|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.62|<tuple|10.88|324|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.63|<tuple|10.89|324|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.64x|<tuple|10.90|324|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.66|<tuple|10.92|324|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.67|<tuple|10.93|325|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.68|<tuple|10.94|325|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.69|<tuple|10.95|325|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.7|<tuple|10.28|285|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.70|<tuple|10.96|325|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.71|<tuple|10.97|331|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.72|<tuple|10.98|331|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.73|<tuple|10.99|332|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.74|<tuple|10.100|332|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.75|<tuple|10.101|337|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.76|<tuple|10.102|337|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.8|<tuple|10.29|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.84|<tuple|10.103|339|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.85|<tuple|10.104|339|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.86|<tuple|10.105|339|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.87|<tuple|10.106|339|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.88|<tuple|10.107|343|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.89|<tuple|10.108|344|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.8x|<tuple|10.20|281|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.9|<tuple|10.30|286|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.9.601|<tuple|10.12|250|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.90|<tuple|10.109|347|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.91|<tuple|10.110|348|Chapter 2 (Linear Algebra).tm>>
     <associate|eq 10.92|<tuple|10.111|348|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.93|<tuple|10.112|348|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.94|<tuple|10.113|350|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.95|<tuple|10.114|350|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.960|<tuple|10.115|351|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.97|<tuple|10.116|351|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.98|<tuple|10.117|353|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.99|<tuple|10.118|353|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 10.9x|<tuple|10.21|280|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 1065|<tuple|10.91|323|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq 109|<tuple|10.13|252|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.93|<tuple|10.112|349|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.94|<tuple|10.113|351|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.95|<tuple|10.114|351|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.960|<tuple|10.115|352|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.97|<tuple|10.116|352|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.98|<tuple|10.117|354|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.99|<tuple|10.118|354|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 10.9x|<tuple|10.21|281|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 1065|<tuple|10.91|324|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 109|<tuple|10.13|254|Chapter 2 (Linear Algebra).tm>>
     <associate|eq 11.1|<tuple|11.1|394|Chapter 3 (Topology).tm>>
-    <associate|eq 11.10|<tuple|11.20|407|Chapter 3 (Topology).tm>>
+    <associate|eq 11.10|<tuple|11.20|408|Chapter 3 (Topology).tm>>
     <associate|eq 11.11|<tuple|11.24|425|Chapter 3 (Topology).tm>>
     <associate|eq 11.11.014|<tuple|11.11|405|Chapter 3 (Topology).tm>>
     <associate|eq 11.12|<tuple|11.25|426|Chapter 3 (Topology).tm>>
     <associate|eq 11.13|<tuple|11.26|432|Chapter 3 (Topology).tm>>
     <associate|eq 11.13.014|<tuple|11.13|405|Chapter 3 (Topology).tm>>
     <associate|eq 11.14|<tuple|11.27|432|Chapter 3 (Topology).tm>>
-    <associate|eq 11.14.014|<tuple|11.14|405|Chapter 3 (Topology).tm>>
+    <associate|eq 11.14.014|<tuple|11.14|406|Chapter 3 (Topology).tm>>
     <associate|eq 11.15|<tuple|11.28|432|Chapter 3 (Topology).tm>>
-    <associate|eq 11.15.014|<tuple|11.15|405|Chapter 3 (Topology).tm>>
+    <associate|eq 11.15.014|<tuple|11.15|406|Chapter 3 (Topology).tm>>
     <associate|eq 11.16|<tuple|11.29|437|Chapter 3 (Topology).tm>>
     <associate|eq 11.16.014|<tuple|11.16|406|Chapter 3 (Topology).tm>>
     <associate|eq 11.17|<tuple|11.31|451|Chapter 3 (Topology).tm>>
     <associate|eq 11.17 bis|<tuple|11.30|442|Chapter 3 (Topology).tm>>
-    <associate|eq 11.17.014|<tuple|11.17|406|Chapter 3 (Topology).tm>>
+    <associate|eq 11.17.014|<tuple|11.17|407|Chapter 3 (Topology).tm>>
     <associate|eq 11.18|<tuple|11.32|451|Chapter 3 (Topology).tm>>
-    <associate|eq 11.18.014|<tuple|11.18|406|Chapter 3 (Topology).tm>>
+    <associate|eq 11.18.014|<tuple|11.18|407|Chapter 3 (Topology).tm>>
     <associate|eq 11.19|<tuple|11.36|473|Chapter 3 (Topology).tm>>
     <associate|eq 11.2|<tuple|11.2|394|Chapter 3 (Topology).tm>>
     <associate|eq 11.2.014|<tuple|11.12|405|Chapter 3 (Topology).tm>>
@@ -4141,7 +4294,7 @@
     <associate|eq 11.7|<tuple|11.7|401|Chapter 3 (Topology).tm>>
     <associate|eq 11.8|<tuple|11.8|402|Chapter 3 (Topology).tm>>
     <associate|eq 11.9|<tuple|11.19|407|Chapter 3 (Topology).tm>>
-    <associate|eq 119|<tuple|10.171|381|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq 119|<tuple|10.171|382|Chapter 2 (Linear Algebra).tm>>
     <associate|eq 12.026|<tuple|11.22|416|Chapter 3 (Topology).tm>>
     <associate|eq 12.1|<tuple|14.4|564|Chapter 4 (Differentiation).tm>>
     <associate|eq 12.100|<tuple|14.210|652|Chapter 4 (Differentiation).tm>>
@@ -4164,7 +4317,7 @@
     <associate|eq 12.108|<tuple|14.218|653|Chapter 4 (Differentiation).tm>>
     <associate|eq 12.108.045|<tuple|12.54|555|Chapter 3 (Topology).tm>>
     <associate|eq 12.109|<tuple|14.220|653|Chapter 4 (Differentiation).tm>>
-    <associate|eq 12.11.026|<tuple|11.21|415|Chapter 3 (Topology).tm>>
+    <associate|eq 12.11.026|<tuple|11.21|416|Chapter 3 (Topology).tm>>
     <associate|eq 12.111.049|<tuple|12.55|556|Chapter 3 (Topology).tm>>
     <associate|eq 12.112.050|<tuple|12.56|556|Chapter 3 (Topology).tm>>
     <associate|eq 12.113.051|<tuple|12.57|556|Chapter 3 (Topology).tm>>
@@ -4178,8 +4331,8 @@
     <associate|eq 12.132|<tuple|14.262|660|Chapter 4 (Differentiation).tm>>
     <associate|eq 12.133|<tuple|14.263|660|Chapter 4 (Differentiation).tm>>
     <associate|eq 12.2|<tuple|14.5|564|Chapter 4 (Differentiation).tm>>
-    <associate|eq 12.21.032|<tuple|11.34|461|Chapter 3 (Topology).tm>>
-    <associate|eq 12.22.032|<tuple|11.35|461|Chapter 3 (Topology).tm>>
+    <associate|eq 12.21.032|<tuple|11.34|462|Chapter 3 (Topology).tm>>
+    <associate|eq 12.22.032|<tuple|11.35|462|Chapter 3 (Topology).tm>>
     <associate|eq 12.26.065|<tuple|11.51|481|Chapter 3 (Topology).tm>>
     <associate|eq 12.27.063|<tuple|11.52|481|Chapter 3 (Topology).tm>>
     <associate|eq 12.27.064|<tuple|11.53|481|Chapter 3 (Topology).tm>>
@@ -4286,33 +4439,13 @@
     <associate|eq 12.98.043|<tuple|12.44|551|Chapter 3 (Topology).tm>>
     <associate|eq 12.99|<tuple|14.209|652|Chapter 4 (Differentiation).tm>>
     <associate|eq 12.99.043|<tuple|12.45|552|Chapter 3 (Topology).tm>>
-    <associate|eq 13.1.123|<tuple|17.6|681|Chapter 5 (Extended Real
+    <associate|eq 13.1.300|<tuple|17.3|681|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 13.1.300|<tuple|17.1|677|Chapter 5 (Extended Real
+    <associate|eq 13.2.300|<tuple|17.4|682|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 13.11.40|<tuple|17.27|715|Chapter 5 (Extended Real
+    <associate|eq 13.3.301|<tuple|17.5|682|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 13.12.40|<tuple|17.28|715|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.13.40|<tuple|17.29|715|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.14.41|<tuple|17.30|726|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.15.41|<tuple|17.39|729|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.16.41|<tuple|17.40|729|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.2.123|<tuple|17.7|681|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.2.300|<tuple|17.2|677|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.3|<tuple|17.23|711|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.3.301|<tuple|17.3|678|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.4|<tuple|17.24|711|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 13.5|<tuple|17.25|711|Chapter 5 (Extended Real
+    <associate|eq 13.5|<tuple|17.35|698|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 13.50.317|<tuple|14.93|617|Chapter 4 (Differentiation).tm>>
     <associate|eq 13.51.317|<tuple|14.94|617|Chapter 4 (Differentiation).tm>>
@@ -4322,12 +4455,12 @@
     <associate|eq 13.55.317|<tuple|14.99|618|Chapter 4 (Differentiation).tm>>
     <associate|eq 13.56.317|<tuple|14.102|618|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 13.57.317|<tuple|14.103|618|Chapter 4
+    <associate|eq 13.57.317|<tuple|14.103|619|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 13.6|<tuple|17.26|711|Chapter 5 (Extended Real
+    <associate|eq 13.6|<tuple|17.36|698|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 14.1.100|<tuple|14.1|562|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.100.103|<tuple|14.114|621|Chapter 4
+    <associate|eq 14.100.103|<tuple|14.114|622|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.101.103|<tuple|14.115|622|Chapter 4
     (Differentiation).tm>>
@@ -4373,7 +4506,7 @@
     (Differentiation).tm>>
     <associate|eq 14.122.105|<tuple|14.34|584|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 14.123.105|<tuple|14.35|584|Chapter 4
+    <associate|eq 14.123.105|<tuple|14.35|585|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.124.105|<tuple|14.36|585|Chapter 4
     (Differentiation).tm>>
@@ -4452,7 +4585,7 @@
     (Differentiation).tm>>
     <associate|eq 14.167.107|<tuple|14.175|644|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 14.17.100|<tuple|14.17|568|Chapter 4 (Differentiation).tm>>
+    <associate|eq 14.17.100|<tuple|14.17|569|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.170.108|<tuple|14.173|644|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.171.108|<tuple|14.177|644|Chapter 4
@@ -4477,7 +4610,7 @@
     (Differentiation).tm>>
     <associate|eq 14.179.109|<tuple|14.186|646|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 14.18.100|<tuple|14.18|568|Chapter 4 (Differentiation).tm>>
+    <associate|eq 14.18.100|<tuple|14.18|569|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.180.109|<tuple|14.187|647|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.181.109|<tuple|14.188|647|Chapter 4
@@ -4503,10 +4636,10 @@
     <associate|eq 14.20.100|<tuple|14.20|569|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.207.111|<tuple|14.208|652|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 14.21.100|<tuple|14.22|575|Chapter 4 (Differentiation).tm>>
+    <associate|eq 14.21.100|<tuple|14.22|576|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.219.111.1|<tuple|14.219|653|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 14.22.423|<tuple|17.41|730|Chapter 5 (Extended Real
+    <associate|eq 14.22.423|<tuple|17.54|718|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 14.221.111|<tuple|14.223|654|Chapter 4
     (Differentiation).tm>>
@@ -4531,12 +4664,10 @@
     <associate|eq 14.229.111|<tuple|14.231|655|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.23.014|<tuple|14.39|587|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.23.110|<tuple|14.23|576|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.23.409|<tuple|17.50|734|Chapter 5 (Extended Real
+    <associate|eq 14.23.110|<tuple|14.23|577|Chapter 4 (Differentiation).tm>>
+    <associate|eq 14.23.424|<tuple|17.57|719|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 14.23.424|<tuple|17.43|731|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 14.23.425|<tuple|17.42|731|Chapter 5 (Extended Real
+    <associate|eq 14.23.425|<tuple|17.56|719|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 14.230.111|<tuple|14.232|655|Chapter 4
     (Differentiation).tm>>
@@ -4555,12 +4686,8 @@
     <associate|eq 14.239.112|<tuple|14.239|657|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.24.101|<tuple|14.40|591|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.24.104|<tuple|14.38|586|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.24.110|<tuple|14.24|577|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.24.409|<tuple|17.51|734|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 14.24.424|<tuple|17.44|731|Chapter 5 (Extended Real
-    Numbers).tm>>
+    <associate|eq 14.24.104|<tuple|14.38|587|Chapter 4 (Differentiation).tm>>
+    <associate|eq 14.24.110|<tuple|14.24|578|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.240.114|<tuple|14.240|658|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.242.112|<tuple|14.242|659|Chapter 4
@@ -4576,10 +4703,8 @@
     <associate|eq 14.249.112|<tuple|14.252|660|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.25.101|<tuple|14.41|592|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.25.110|<tuple|14.25|577|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.25.411|<tuple|17.52|734|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|eq 14.25.424|<tuple|17.45|732|Chapter 5 (Extended Real
+    <associate|eq 14.25.110|<tuple|14.25|578|Chapter 4 (Differentiation).tm>>
+    <associate|eq 14.25.424|<tuple|17.58|720|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 14.252.112.2|<tuple|14.254|660|Chapter 4
     (Differentiation).tm>>
@@ -4592,7 +4717,7 @@
     <associate|eq 14.259.112.4|<tuple|14.259|660|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.26.101|<tuple|14.42|592|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.26.424|<tuple|17.46|732|Chapter 5 (Extended Real
+    <associate|eq 14.26.424|<tuple|17.59|720|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 14.260.112|<tuple|14.265|661|Chapter 4
     (Differentiation).tm>>
@@ -4632,12 +4757,12 @@
     <associate|eq 14.33.101|<tuple|14.49|596|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.34.101|<tuple|14.50|596|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.35.101|<tuple|14.51|596|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.36.101|<tuple|14.52|596|Chapter 4 (Differentiation).tm>>
+    <associate|eq 14.36.101|<tuple|14.52|597|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.37.101|<tuple|14.53|597|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.39.102.3|<tuple|14.54|600|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.4.100|<tuple|14.8|566|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.4.472|<tuple|17.4|678|Chapter 5 (Extended Real
+    <associate|eq 14.4.472|<tuple|17.6|683|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 14.40.102|<tuple|14.56|600|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.40.102.1|<tuple|14.55|600|Chapter 4
@@ -4653,7 +4778,7 @@
     <associate|eq 14.46.102|<tuple|14.61|602|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.48.103|<tuple|14.63|607|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.5.100|<tuple|14.9|566|Chapter 4 (Differentiation).tm>>
-    <associate|eq 14.5.472|<tuple|17.5|678|Chapter 5 (Extended Real
+    <associate|eq 14.5.472|<tuple|17.7|683|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|eq 14.50.103|<tuple|14.65|608|Chapter 4 (Differentiation).tm>>
     <associate|eq 14.51.103|<tuple|14.66|608|Chapter 4 (Differentiation).tm>>
@@ -4696,7 +4821,7 @@
     (Differentiation).tm>>
     <associate|eq 14.93.103|<tuple|14.107|620|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 14.94.103|<tuple|14.108|620|Chapter 4
+    <associate|eq 14.94.103|<tuple|14.108|621|Chapter 4
     (Differentiation).tm>>
     <associate|eq 14.95.103|<tuple|14.109|621|Chapter 4
     (Differentiation).tm>>
@@ -4708,625 +4833,1131 @@
     (Differentiation).tm>>
     <associate|eq 14.99.103.1|<tuple|14.113|621|Chapter 4
     (Differentiation).tm>>
-    <associate|eq 17.1.514|<tuple|18.7|742|Chapter 5 (Extended Real
+    <associate|eq 17.1.514|<tuple|18.7|728|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.1.515|<tuple|18.1|737|Chapter 5 (Extended Real
+    <associate|eq 17.1.515|<tuple|18.1|723|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.10.001|<tuple|17.8|706|Chapter 5 (Extended Real
+    <associate|eq 17.10.001|<tuple|17.12|690|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.10.515|<tuple|18.10|743|Chapter 5 (Extended Real
+    <associate|eq 17.10.515|<tuple|18.10|729|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.11.001|<tuple|17.9|706|Chapter 5 (Extended Real
+    <associate|eq 17.11.001|<tuple|17.13|690|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.11.515|<tuple|18.11|743|Chapter 5 (Extended Real
+    <associate|eq 17.11.515|<tuple|18.11|729|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.12.001|<tuple|17.10|706|Chapter 5 (Extended Real
+    <associate|eq 17.12.001|<tuple|17.14|690|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.12.073|<tuple|18.12|745|Chapter 5 (Extended Real
+    <associate|eq 17.12.073|<tuple|18.12|731|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.13.001|<tuple|17.11|706|Chapter 5 (Extended Real
+    <associate|eq 17.13.001|<tuple|17.15|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.13.073|<tuple|18.13|746|Chapter 5 (Extended Real
+    <associate|eq 17.13.073|<tuple|18.13|732|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.14.001|<tuple|17.12|707|Chapter 5 (Extended Real
+    <associate|eq 17.14.001|<tuple|17.16|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.14.006|<tuple|17.20|709|Chapter 5 (Extended Real
+    <associate|eq 17.14.006|<tuple|17.24|694|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.14.073|<tuple|18.14|746|Chapter 5 (Extended Real
+    <associate|eq 17.14.073|<tuple|18.14|732|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.15.001|<tuple|17.13|707|Chapter 5 (Extended Real
+    <associate|eq 17.15.001|<tuple|17.17|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.15.006|<tuple|17.21|709|Chapter 5 (Extended Real
+    <associate|eq 17.15.006|<tuple|17.25|694|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.15.073|<tuple|18.15|747|Chapter 5 (Extended Real
+    <associate|eq 17.15.073|<tuple|18.15|733|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.16.001|<tuple|17.14|707|Chapter 5 (Extended Real
+    <associate|eq 17.16.001|<tuple|17.18|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.16.002|<tuple|18.16|747|Chapter 5 (Extended Real
+    <associate|eq 17.16.002|<tuple|18.16|733|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.16.006|<tuple|17.22|710|Chapter 5 (Extended Real
+    <associate|eq 17.16.006|<tuple|17.26|695|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.17.001|<tuple|17.15|707|Chapter 5 (Extended Real
+    <associate|eq 17.17.001|<tuple|17.19|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.17.002.1|<tuple|18.17|748|Chapter 5 (Extended Real
+    <associate|eq 17.17.002.1|<tuple|18.17|734|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.18.001|<tuple|17.16|707|Chapter 5 (Extended Real
+    <associate|eq 17.18.001|<tuple|17.20|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.18.002|<tuple|18.18|749|Chapter 5 (Extended Real
+    <associate|eq 17.18.002|<tuple|18.18|735|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.19.001|<tuple|17.17|707|Chapter 5 (Extended Real
+    <associate|eq 17.19.001|<tuple|17.21|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.19.002|<tuple|18.19|749|Chapter 5 (Extended Real
+    <associate|eq 17.19.002|<tuple|18.19|735|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.20.001|<tuple|17.31|727|Chapter 5 (Extended Real
+    <associate|eq 17.2.20.001|<tuple|17.44|713|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.21.001|<tuple|17.32|727|Chapter 5 (Extended Real
+    <associate|eq 17.2.21.001|<tuple|17.45|713|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.22.001.1|<tuple|17.33|727|Chapter 5 (Extended Real
+    <associate|eq 17.2.22.001.1|<tuple|17.46|713|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.23.001|<tuple|17.34|728|Chapter 5 (Extended Real
+    <associate|eq 17.2.23.001|<tuple|17.48|714|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.24.001|<tuple|17.35|728|Chapter 5 (Extended Real
+    <associate|eq 17.2.24.001|<tuple|17.49|714|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.25.001|<tuple|17.36|728|Chapter 5 (Extended Real
+    <associate|eq 17.2.25.001|<tuple|17.50|714|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.26.001|<tuple|17.37|728|Chapter 5 (Extended Real
+    <associate|eq 17.2.26.001|<tuple|17.51|714|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.27.001|<tuple|17.38|728|Chapter 5 (Extended Real
+    <associate|eq 17.2.27.001|<tuple|17.52|714|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.40.001|<tuple|17.53|735|Chapter 5 (Extended Real
+    <associate|eq 17.2.514|<tuple|18.8|728|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.41.001|<tuple|17.54|736|Chapter 5 (Extended Real
+    <associate|eq 17.2.515|<tuple|18.2|723|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.42.001|<tuple|17.55|736|Chapter 5 (Extended Real
+    <associate|eq 17.20.001|<tuple|17.22|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.514|<tuple|18.8|742|Chapter 5 (Extended Real
+    <associate|eq 17.20.003|<tuple|18.25|746|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.2.515|<tuple|18.2|737|Chapter 5 (Extended Real
+    <associate|eq 17.20.020|<tuple|18.20|739|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.20.001|<tuple|17.18|707|Chapter 5 (Extended Real
+    <associate|eq 17.21.001|<tuple|17.23|691|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.20.003|<tuple|18.25|760|Chapter 5 (Extended Real
+    <associate|eq 17.21.003|<tuple|18.26|746|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.20.020|<tuple|18.20|753|Chapter 5 (Extended Real
+    <associate|eq 17.21.020|<tuple|18.21|740|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.21.001|<tuple|17.19|707|Chapter 5 (Extended Real
+    <associate|eq 17.22.003|<tuple|18.27|746|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.21.003|<tuple|18.26|760|Chapter 5 (Extended Real
+    <associate|eq 17.22.020|<tuple|18.22|740|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.21.020|<tuple|18.21|753|Chapter 5 (Extended Real
+    <associate|eq 17.23.003|<tuple|18.28|747|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.22.003|<tuple|18.27|760|Chapter 5 (Extended Real
+    <associate|eq 17.23.020|<tuple|18.23|740|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.22.020|<tuple|18.22|754|Chapter 5 (Extended Real
+    <associate|eq 17.24.004|<tuple|18.29|747|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.23.003|<tuple|18.28|760|Chapter 5 (Extended Real
+    <associate|eq 17.24.020|<tuple|18.24|741|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.23.020|<tuple|18.23|754|Chapter 5 (Extended Real
+    <associate|eq 17.27.035|<tuple|17.27|696|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.24.004|<tuple|18.29|761|Chapter 5 (Extended Real
+    <associate|eq 17.28.035|<tuple|17.28|696|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.24.020|<tuple|18.24|755|Chapter 5 (Extended Real
+    <associate|eq 17.29.035|<tuple|17.29|697|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.3.515|<tuple|18.3|738|Chapter 5 (Extended Real
+    <associate|eq 17.3.515|<tuple|18.3|724|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.4.515.1|<tuple|18.4|741|Chapter 5 (Extended Real
+    <associate|eq 17.30.0.35|<tuple|17.30|697|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.49.001|<tuple|17.47|733|Chapter 5 (Extended Real
+    <associate|eq 17.31.035|<tuple|17.31|697|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.5.515|<tuple|18.5|741|Chapter 5 (Extended Real
+    <associate|eq 17.32.035|<tuple|17.32|697|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.50.001|<tuple|17.48|733|Chapter 5 (Extended Real
+    <associate|eq 17.33.035|<tuple|17.33|697|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.51.001|<tuple|17.49|733|Chapter 5 (Extended Real
+    <associate|eq 17.34.035|<tuple|17.34|697|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.6.515|<tuple|18.6|741|Chapter 5 (Extended Real
+    <associate|eq 17.37.035|<tuple|17.37|699|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 17.9.515|<tuple|18.9|743|Chapter 5 (Extended Real
+    <associate|eq 17.38.035|<tuple|17.38|700|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|eq 18.1.014|<tuple|18.5|771|Chapter 6 (Measures and
+    <associate|eq 17.39.035|<tuple|17.39|700|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.4.515.1|<tuple|18.4|727|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.41.035|<tuple|17.41|707|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.42.035|<tuple|17.42|712|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.43.035|<tuple|17.43|712|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.47.035|<tuple|17.47|713|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.49.001|<tuple|17.60|721|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.5.515|<tuple|18.5|727|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.50.001|<tuple|17.61|722|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.51.001|<tuple|17.62|722|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.53.035|<tuple|17.53|717|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.55.035|<tuple|17.55|718|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.6.033|<tuple|17.8|684|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.6.515|<tuple|18.6|727|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.63.035|<tuple|17.63|722|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.7.033|<tuple|17.9|685|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.8.033|<tuple|17.10|685|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.9.033|<tuple|17.11|685|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 17.9.515|<tuple|18.9|729|Chapter 5 (Extended Real
+    Numbers).tm>>
+    <associate|eq 18.1.014|<tuple|18.10|759|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.1.016|<tuple|18.1|766|Chapter 6 (Measures and
+    <associate|eq 18.1.016|<tuple|18.4|753|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.10.021|<tuple|18.10|774|Chapter 6 (Measures and
+    <associate|eq 18.1.033|<tuple|18.1|752|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.108.021|<tuple|18.112|802|Chapter 6 (Measures and
+    <associate|eq 18.10.021|<tuple|18.15|761|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.109.021|<tuple|18.113|802|Chapter 6 (Measures and
+    <associate|eq 18.108.021|<tuple|18.134|794|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.11.021|<tuple|18.11|774|Chapter 6 (Measures and
+    <associate|eq 18.109.021|<tuple|18.135|794|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.111.021|<tuple|18.114|802|Chapter 6 (Measures and
+    <associate|eq 18.11.021|<tuple|18.16|761|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.112.021|<tuple|18.116|803|Chapter 6 (Measures and
+    <associate|eq 18.111.021|<tuple|18.136|794|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.112.021.1|<tuple|18.115|803|Chapter 6 (Measures and
+    <associate|eq 18.112.021|<tuple|18.138|795|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.113.021|<tuple|18.117|803|Chapter 6 (Measures and
+    <associate|eq 18.112.021.1|<tuple|18.137|794|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.114.021|<tuple|18.118|803|Chapter 6 (Measures and
+    <associate|eq 18.113.021|<tuple|18.139|795|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.115.021|<tuple|18.119|804|Chapter 6 (Measures and
+    <associate|eq 18.114.021|<tuple|18.140|795|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.116.021|<tuple|18.120|804|Chapter 6 (Measures and
+    <associate|eq 18.115.021|<tuple|18.141|795|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.117.021|<tuple|18.121|804|Chapter 6 (Measures and
+    <associate|eq 18.116.021|<tuple|18.142|796|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.118.021|<tuple|18.122|804|Chapter 6 (Measures and
+    <associate|eq 18.117.021|<tuple|18.143|796|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.119.021|<tuple|18.123|804|Chapter 6 (Measures and
+    <associate|eq 18.118.021|<tuple|18.144|796|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.12.021|<tuple|18.12|774|Chapter 6 (Measures and
+    <associate|eq 18.119.021|<tuple|18.145|796|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.120.021|<tuple|18.124|805|Chapter 6 (Measures and
+    <associate|eq 18.12.021|<tuple|18.17|762|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.121.021|<tuple|18.125|805|Chapter 6 (Measures and
+    <associate|eq 18.120.021|<tuple|18.146|796|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.122.021|<tuple|18.126|805|Chapter 6 (Measures and
+    <associate|eq 18.121.021|<tuple|18.147|797|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.123.021|<tuple|18.127|805|Chapter 6 (Measures and
+    <associate|eq 18.122.021|<tuple|18.148|797|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.127.025|<tuple|18.128|805|Chapter 6 (Measures and
+    <associate|eq 18.123.021|<tuple|18.149|797|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.128.025|<tuple|18.129|806|Chapter 6 (Measures and
+    <associate|eq 18.127.025|<tuple|18.150|797|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.129.025|<tuple|18.130|806|Chapter 6 (Measures and
+    <associate|eq 18.128.025|<tuple|18.151|797|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.13.021|<tuple|18.13|774|Chapter 6 (Measures and
+    <associate|eq 18.129.025|<tuple|18.152|798|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.130.025|<tuple|18.131|806|Chapter 6 (Measures and
+    <associate|eq 18.13.021|<tuple|18.18|762|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.131.025|<tuple|18.132|806|Chapter 6 (Measures and
+    <associate|eq 18.130.025|<tuple|18.153|798|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.132.025|<tuple|18.133|806|Chapter 6 (Measures and
+    <associate|eq 18.131.025|<tuple|18.154|798|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.133.025|<tuple|18.134|806|Chapter 6 (Measures and
+    <associate|eq 18.132.025|<tuple|18.155|798|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.134.025|<tuple|18.135|806|Chapter 6 (Measures and
+    <associate|eq 18.133.025|<tuple|18.156|798|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.135.025|<tuple|18.136|806|Chapter 6 (Measures and
+    <associate|eq 18.133.033|<tuple|18.313|842|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.136.025|<tuple|18.137|807|Chapter 6 (Measures and
+    <associate|eq 18.134.025|<tuple|18.157|798|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.137.025|<tuple|18.138|807|Chapter 6 (Measures and
+    <associate|eq 18.135.025|<tuple|18.158|798|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.138.025|<tuple|18.139|807|Chapter 6 (Measures and
+    <associate|eq 18.136.025|<tuple|18.159|799|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.139.025|<tuple|18.140|807|Chapter 6 (Measures and
+    <associate|eq 18.137.025|<tuple|18.160|799|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.14.021|<tuple|18.14|775|Chapter 6 (Measures and
+    <associate|eq 18.138.025|<tuple|18.161|799|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.140.025|<tuple|18.141|807|Chapter 6 (Measures and
+    <associate|eq 18.139.025|<tuple|18.162|799|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.141.025|<tuple|18.142|807|Chapter 6 (Measures and
+    <associate|eq 18.14.021|<tuple|18.19|762|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.142.025|<tuple|18.143|808|Chapter 6 (Measures and
+    <associate|eq 18.140.025|<tuple|18.163|799|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.143.025|<tuple|18.144|808|Chapter 6 (Measures and
+    <associate|eq 18.141.025|<tuple|18.164|799|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.144.025|<tuple|18.145|808|Chapter 6 (Measures and
+    <associate|eq 18.142.025|<tuple|18.165|800|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.145.025|<tuple|18.146|808|Chapter 6 (Measures and
+    <associate|eq 18.143.025|<tuple|18.166|800|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.146.025|<tuple|18.147|808|Chapter 6 (Measures and
+    <associate|eq 18.144.025|<tuple|18.167|800|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.147.025|<tuple|18.148|808|Chapter 6 (Measures and
+    <associate|eq 18.145.025|<tuple|18.168|800|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.148.025|<tuple|18.149|808|Chapter 6 (Measures and
+    <associate|eq 18.146.025|<tuple|18.169|800|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.149.025|<tuple|18.150|808|Chapter 6 (Measures and
+    <associate|eq 18.147.025|<tuple|18.170|800|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.15.021|<tuple|18.15|775|Chapter 6 (Measures and
+    <associate|eq 18.148.025|<tuple|18.171|800|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.150.025|<tuple|18.151|809|Chapter 6 (Measures and
+    <associate|eq 18.149.025|<tuple|18.172|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.151.025|<tuple|18.152|809|Chapter 6 (Measures and
+    <associate|eq 18.15.021|<tuple|18.20|762|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.152.025|<tuple|18.153|809|Chapter 6 (Measures and
+    <associate|eq 18.150.025|<tuple|18.173|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.153.025|<tuple|18.154|809|Chapter 6 (Measures and
+    <associate|eq 18.151.025|<tuple|18.174|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.154.025|<tuple|18.155|809|Chapter 6 (Measures and
+    <associate|eq 18.152.025|<tuple|18.175|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.155.025|<tuple|18.156|809|Chapter 6 (Measures and
+    <associate|eq 18.153.025|<tuple|18.176|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.156.025|<tuple|18.157|809|Chapter 6 (Measures and
+    <associate|eq 18.154.025|<tuple|18.177|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.157.025|<tuple|18.158|809|Chapter 6 (Measures and
+    <associate|eq 18.155.025|<tuple|18.178|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.158.025|<tuple|18.159|810|Chapter 6 (Measures and
+    <associate|eq 18.156.025|<tuple|18.179|801|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.159.025|<tuple|18.160|810|Chapter 6 (Measures and
+    <associate|eq 18.157.025|<tuple|18.180|802|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.16.021|<tuple|18.16|775|Chapter 6 (Measures and
+    <associate|eq 18.158.025|<tuple|18.181|802|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.160.025|<tuple|18.161|811|Chapter 6 (Measures and
+    <associate|eq 18.159.025|<tuple|18.182|802|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.161.025|<tuple|18.162|812|Chapter 6 (Measures and
+    <associate|eq 18.16.021|<tuple|18.21|762|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.162.025|<tuple|18.163|812|Chapter 6 (Measures and
+    <associate|eq 18.160.025|<tuple|18.183|803|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.163.025|<tuple|18.164|812|Chapter 6 (Measures and
+    <associate|eq 18.161.025|<tuple|18.184|804|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.164.025|<tuple|18.165|812|Chapter 6 (Measures and
+    <associate|eq 18.162.025|<tuple|18.185|804|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.165.025|<tuple|18.166|812|Chapter 6 (Measures and
+    <associate|eq 18.163.025|<tuple|18.186|804|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.166.025|<tuple|18.167|813|Chapter 6 (Measures and
+    <associate|eq 18.164.025|<tuple|18.187|804|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.167.026|<tuple|18.209|826|Chapter 6 (Measures and
+    <associate|eq 18.165.025|<tuple|18.188|804|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.167.027|<tuple|18.172|815|Chapter 6 (Measures and
+    <associate|eq 18.166.025|<tuple|18.189|805|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.167.028|<tuple|18.168|814|Chapter 6 (Measures and
+    <associate|eq 18.167.026|<tuple|18.231|818|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.168.026|<tuple|18.210|826|Chapter 6 (Measures and
+    <associate|eq 18.167.027|<tuple|18.194|807|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.168.027|<tuple|18.177|816|Chapter 6 (Measures and
+    <associate|eq 18.167.028|<tuple|18.190|806|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.168.028|<tuple|18.169|814|Chapter 6 (Measures and
+    <associate|eq 18.168.026|<tuple|18.232|818|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.169.026|<tuple|18.211|826|Chapter 6 (Measures and
+    <associate|eq 18.168.027|<tuple|18.199|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.169.027|<tuple|18.178|816|Chapter 6 (Measures and
+    <associate|eq 18.168.028|<tuple|18.191|806|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.169.028|<tuple|18.170|814|Chapter 6 (Measures and
+    <associate|eq 18.169.026|<tuple|18.233|818|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.17.021|<tuple|18.17|775|Chapter 6 (Measures and
+    <associate|eq 18.169.027|<tuple|18.200|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.170.026|<tuple|18.212|826|Chapter 6 (Measures and
+    <associate|eq 18.169.028|<tuple|18.192|806|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.170.027|<tuple|18.179|816|Chapter 6 (Measures and
+    <associate|eq 18.17.021|<tuple|18.22|763|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.170.028|<tuple|18.171|814|Chapter 6 (Measures and
+    <associate|eq 18.170.026|<tuple|18.234|818|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.171.026|<tuple|18.213|826|Chapter 6 (Measures and
+    <associate|eq 18.170.027|<tuple|18.201|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.171.027|<tuple|18.180|816|Chapter 6 (Measures and
+    <associate|eq 18.170.028|<tuple|18.193|806|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.172.026|<tuple|18.214|827|Chapter 6 (Measures and
+    <associate|eq 18.171.026|<tuple|18.235|818|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.172.027|<tuple|18.181|816|Chapter 6 (Measures and
+    <associate|eq 18.171.027|<tuple|18.202|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.172.028|<tuple|18.173|815|Chapter 6 (Measures and
+    <associate|eq 18.172.026|<tuple|18.236|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.173.026|<tuple|18.215|827|Chapter 6 (Measures and
+    <associate|eq 18.172.027|<tuple|18.203|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.173.027|<tuple|18.182|816|Chapter 6 (Measures and
+    <associate|eq 18.172.028|<tuple|18.195|807|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.173list|<tuple|18.174|815|Chapter 6 (Measures and
+    <associate|eq 18.173.026|<tuple|18.237|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.174.026|<tuple|18.216|827|Chapter 6 (Measures and
+    <associate|eq 18.173.027|<tuple|18.204|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.174.027|<tuple|18.183|816|Chapter 6 (Measures and
+    <associate|eq 18.173list|<tuple|18.196|807|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.174.028|<tuple|18.175|815|Chapter 6 (Measures and
+    <associate|eq 18.174.026|<tuple|18.238|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.175.026|<tuple|18.217|827|Chapter 6 (Measures and
+    <associate|eq 18.174.027|<tuple|18.205|809|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.175.027|<tuple|18.184|816|Chapter 6 (Measures and
+    <associate|eq 18.174.028|<tuple|18.197|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.175.028|<tuple|18.176|815|Chapter 6 (Measures and
+    <associate|eq 18.175.026|<tuple|18.239|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.176.026|<tuple|18.218|827|Chapter 6 (Measures and
+    <associate|eq 18.175.027|<tuple|18.206|809|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.176.027|<tuple|18.185|817|Chapter 6 (Measures and
+    <associate|eq 18.175.028|<tuple|18.198|808|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.177.026|<tuple|18.219|827|Chapter 6 (Measures and
+    <associate|eq 18.176.026|<tuple|18.240|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.177.027|<tuple|18.186|817|Chapter 6 (Measures and
+    <associate|eq 18.176.027|<tuple|18.207|809|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.18.021|<tuple|18.18|775|Chapter 6 (Measures and
+    <associate|eq 18.177.026|<tuple|18.241|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.186.030.1|<tuple|18.187|817|Chapter 6 (Measures and
+    <associate|eq 18.177.027|<tuple|18.208|809|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.187.030.1|<tuple|18.188|817|Chapter 6 (Measures and
+    <associate|eq 18.18.021|<tuple|18.23|763|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.188.028|<tuple|18.194|820|Chapter 6 (Measures and
+    <associate|eq 18.186.030.1|<tuple|18.209|809|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.189.028|<tuple|18.195|820|Chapter 6 (Measures and
+    <associate|eq 18.187.030.1|<tuple|18.210|809|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.19.021|<tuple|18.19|776|Chapter 6 (Measures and
+    <associate|eq 18.188.028|<tuple|18.216|812|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.190.028|<tuple|18.189|818|Chapter 6 (Measures and
+    <associate|eq 18.189.028|<tuple|18.217|813|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.191.028|<tuple|18.190|818|Chapter 6 (Measures and
+    <associate|eq 18.19.021|<tuple|18.24|763|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.192.028|<tuple|18.191|818|Chapter 6 (Measures and
+    <associate|eq 18.190.028|<tuple|18.211|810|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.193.028|<tuple|18.192|818|Chapter 6 (Measures and
+    <associate|eq 18.191.028|<tuple|18.212|810|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.194.028|<tuple|18.193|818|Chapter 6 (Measures and
+    <associate|eq 18.192.028|<tuple|18.213|810|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.195.028|<tuple|18.196|821|Chapter 6 (Measures and
+    <associate|eq 18.193.028|<tuple|18.214|810|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.196.028|<tuple|18.197|821|Chapter 6 (Measures and
+    <associate|eq 18.194.028|<tuple|18.215|810|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.197.028|<tuple|18.203|823|Chapter 6 (Measures and
+    <associate|eq 18.195.028|<tuple|18.218|813|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.197.029|<tuple|18.198|822|Chapter 6 (Measures and
+    <associate|eq 18.196.028|<tuple|18.219|814|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.198.028|<tuple|18.204|823|Chapter 6 (Measures and
+    <associate|eq 18.197.028|<tuple|18.225|815|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.198.029|<tuple|18.199|822|Chapter 6 (Measures and
+    <associate|eq 18.197.029|<tuple|18.220|814|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.199.029|<tuple|18.200|822|Chapter 6 (Measures and
+    <associate|eq 18.198.028|<tuple|18.226|815|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.2.014|<tuple|18.6|771|Chapter 6 (Measures and
+    <associate|eq 18.198.029|<tuple|18.221|814|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.2.016|<tuple|18.2|766|Chapter 6 (Measures and
+    <associate|eq 18.199.029|<tuple|18.222|814|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.20.021|<tuple|18.20|776|Chapter 6 (Measures and
+    <associate|eq 18.2.014|<tuple|18.11|759|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.200.029|<tuple|18.201|822|Chapter 6 (Measures and
+    <associate|eq 18.2.016|<tuple|18.5|753|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.201.029|<tuple|18.202|823|Chapter 6 (Measures and
+    <associate|eq 18.2.033|<tuple|18.2|753|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.204.029|<tuple|18.206|823|Chapter 6 (Measures and
+    <associate|eq 18.20.021|<tuple|18.25|763|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.206.029|<tuple|18.207|824|Chapter 6 (Measures and
+    <associate|eq 18.200.029|<tuple|18.223|815|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.207.029|<tuple|18.208|824|Chapter 6 (Measures and
+    <associate|eq 18.201.029|<tuple|18.224|815|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.21.021|<tuple|18.21|776|Chapter 6 (Measures and
+    <associate|eq 18.204.029|<tuple|18.228|816|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.219.030|<tuple|18.220|827|Chapter 6 (Measures and
+    <associate|eq 18.206.029|<tuple|18.229|816|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.22.021|<tuple|18.22|776|Chapter 6 (Measures and
+    <associate|eq 18.207.029|<tuple|18.230|817|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.220.030|<tuple|18.221|827|Chapter 6 (Measures and
+    <associate|eq 18.21.021|<tuple|18.26|764|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.221.030.1|<tuple|18.222|828|Chapter 6 (Measures and
+    <associate|eq 18.219.030|<tuple|18.242|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.222.030|<tuple|18.223|828|Chapter 6 (Measures and
+    <associate|eq 18.22.021|<tuple|18.27|764|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.223.030|<tuple|18.224|828|Chapter 6 (Measures and
+    <associate|eq 18.220.030|<tuple|18.243|819|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.224.030|<tuple|18.225|828|Chapter 6 (Measures and
+    <associate|eq 18.221.030.1|<tuple|18.244|820|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.225.030|<tuple|18.226|828|Chapter 6 (Measures and
+    <associate|eq 18.222.030|<tuple|18.245|820|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.226.030|<tuple|18.227|829|Chapter 6 (Measures and
+    <associate|eq 18.223.030|<tuple|18.246|820|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.227.030|<tuple|18.229|829|Chapter 6 (Measures and
+    <associate|eq 18.224.030|<tuple|18.247|820|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.228.030.1|<tuple|18.228|829|Chapter 6 (Measures and
+    <associate|eq 18.225.030|<tuple|18.248|820|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.23.021|<tuple|18.23|777|Chapter 6 (Measures and
+    <associate|eq 18.226.030|<tuple|18.249|821|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.230.030|<tuple|18.230|829|Chapter 6 (Measures and
+    <associate|eq 18.227.030|<tuple|18.251|821|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.231.030|<tuple|18.231|830|Chapter 6 (Measures and
+    <associate|eq 18.228.030.1|<tuple|18.250|821|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.232.030|<tuple|18.232|830|Chapter 6 (Measures and
+    <associate|eq 18.23.021|<tuple|18.28|764|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.233.030|<tuple|18.233|830|Chapter 6 (Measures and
+    <associate|eq 18.230.030|<tuple|18.252|821|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.234.031|<tuple|18.234|831|Chapter 6 (Measures and
+    <associate|eq 18.231.030|<tuple|18.253|822|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.235.031|<tuple|18.235|831|Chapter 6 (Measures and
+    <associate|eq 18.232.030|<tuple|18.254|822|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.235.031.1|<tuple|18.236|831|Chapter 6 (Measures and
+    <associate|eq 18.233.030|<tuple|18.255|822|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.236.031|<tuple|18.237|831|Chapter 6 (Measures and
+    <associate|eq 18.234.031|<tuple|18.256|823|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.237.031|<tuple|18.238|831|Chapter 6 (Measures and
+    <associate|eq 18.235.031|<tuple|18.257|823|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.24.021|<tuple|18.24|777|Chapter 6 (Measures and
+    <associate|eq 18.235.031.1|<tuple|18.258|823|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.25.020|<tuple|18.25|777|Chapter 6 (Measures and
+    <associate|eq 18.236.031|<tuple|18.259|823|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.26.021|<tuple|18.26|777|Chapter 6 (Measures and
+    <associate|eq 18.237.031|<tuple|18.260|823|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.27.021|<tuple|18.27|777|Chapter 6 (Measures and
+    <associate|eq 18.239.032|<tuple|18.261|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.28.021|<tuple|18.28|777|Chapter 6 (Measures and
+    <associate|eq 18.24.021|<tuple|18.29|764|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.29.021|<tuple|18.29|777|Chapter 6 (Measures and
+    <associate|eq 18.240.032|<tuple|18.262|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.3.014|<tuple|18.7|772|Chapter 6 (Measures and
+    <associate|eq 18.241.032|<tuple|18.263|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.3.016|<tuple|18.3|766|Chapter 6 (Measures and
+    <associate|eq 18.242.032|<tuple|18.264|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.30.021|<tuple|18.30|777|Chapter 6 (Measures and
+    <associate|eq 18.243.032|<tuple|18.265|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.31.021|<tuple|18.31|778|Chapter 6 (Measures and
+    <associate|eq 18.244.032|<tuple|18.266|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.32.021|<tuple|18.32|778|Chapter 6 (Measures and
+    <associate|eq 18.245.032|<tuple|18.267|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.33.021|<tuple|18.33|778|Chapter 6 (Measures and
+    <associate|eq 18.246.032|<tuple|18.268|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.34.021|<tuple|18.34|778|Chapter 6 (Measures and
+    <associate|eq 18.247.032|<tuple|18.269|824|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.35.021|<tuple|18.35|778|Chapter 6 (Measures and
+    <associate|eq 18.248.032|<tuple|18.270|825|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.36.016|<tuple|18.63|790|Chapter 6 (Measures and
+    <associate|eq 18.249.032|<tuple|18.271|825|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.36.021|<tuple|18.36|778|Chapter 6 (Measures and
+    <associate|eq 18.25.020|<tuple|18.30|764|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.37.016|<tuple|18.64|790|Chapter 6 (Measures and
+    <associate|eq 18.250.032|<tuple|18.272|825|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.37.021|<tuple|18.37|778|Chapter 6 (Measures and
+    <associate|eq 18.251.032|<tuple|18.273|825|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.38.016|<tuple|18.65|790|Chapter 6 (Measures and
+    <associate|eq 18.252.032|<tuple|18.274|825|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.38.021|<tuple|18.38|778|Chapter 6 (Measures and
+    <associate|eq 18.253.032|<tuple|18.275|825|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.39.016|<tuple|18.65|790|Chapter 6 (Measures and
+    <associate|eq 18.254.032|<tuple|18.276|825|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.39.022|<tuple|18.39|782|Chapter 6 (Measures and
+    <associate|eq 18.255.032|<tuple|18.277|826|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.4.016|<tuple|18.4|767|Chapter 6 (Measures and
+    <associate|eq 18.256.032|<tuple|18.278|826|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.40.016|<tuple|18.67|790|Chapter 6 (Measures and
+    <associate|eq 18.257.032|<tuple|18.279|826|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.40.022|<tuple|18.40|782|Chapter 6 (Measures and
+    <associate|eq 18.258.032|<tuple|18.280|826|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.41.016|<tuple|18.68|791|Chapter 6 (Measures and
+    <associate|eq 18.258.032.1|<tuple|18.279|826|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.41.022|<tuple|18.41|782|Chapter 6 (Measures and
+    <associate|eq 18.259.032|<tuple|18.281|827|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.42.016|<tuple|18.69|791|Chapter 6 (Measures and
+    <associate|eq 18.259.032.1|<tuple|18.279|826|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.42.022|<tuple|18.42|782|Chapter 6 (Measures and
+    <associate|eq 18.26.021|<tuple|18.31|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.43.016|<tuple|18.70|791|Chapter 6 (Measures and
+    <associate|eq 18.260.032|<tuple|18.282|827|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.43.022|<tuple|18.43|782|Chapter 6 (Measures and
+    <associate|eq 18.261.032|<tuple|18.283|827|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.44.016|<tuple|18.71|791|Chapter 6 (Measures and
+    <associate|eq 18.262.032|<tuple|18.284|827|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.44.022|<tuple|18.44|784|Chapter 6 (Measures and
+    <associate|eq 18.263.032|<tuple|18.285|827|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.45.016|<tuple|18.72|791|Chapter 6 (Measures and
+    <associate|eq 18.266.033|<tuple|18.286|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.45.022|<tuple|18.45|784|Chapter 6 (Measures and
+    <associate|eq 18.267.033|<tuple|18.287|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.46.016|<tuple|18.73|791|Chapter 6 (Measures and
+    <associate|eq 18.268.033|<tuple|18.288|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.46.022|<tuple|18.46|784|Chapter 6 (Measures and
+    <associate|eq 18.269.033|<tuple|18.289|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.47.016|<tuple|18.74|792|Chapter 6 (Measures and
+    <associate|eq 18.27.021|<tuple|18.32|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.47.022|<tuple|18.47|784|Chapter 6 (Measures and
+    <associate|eq 18.270.033|<tuple|18.290|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.48.016|<tuple|18.75|793|Chapter 6 (Measures and
+    <associate|eq 18.271.033|<tuple|18.291|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.48.022|<tuple|18.48|784|Chapter 6 (Measures and
+    <associate|eq 18.272.033|<tuple|18.292|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.49.016|<tuple|18.76|793|Chapter 6 (Measures and
+    <associate|eq 18.273.033|<tuple|18.293|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.49.022|<tuple|18.49|784|Chapter 6 (Measures and
+    <associate|eq 18.274.033|<tuple|18.294|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.50.016|<tuple|18.77|793|Chapter 6 (Measures and
+    <associate|eq 18.276.033|<tuple|18.296|830|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.50.022|<tuple|18.50|784|Chapter 6 (Measures and
+    <associate|eq 18.277.033|<tuple|18.297|830|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.51.016|<tuple|18.78|793|Chapter 6 (Measures and
+    <associate|eq 18.278.033|<tuple|18.295|829|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.51.022|<tuple|18.51|785|Chapter 6 (Measures and
+    <associate|eq 18.28.021|<tuple|18.33|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.52.016|<tuple|18.88|796|Chapter 6 (Measures and
+    <associate|eq 18.281.033|<tuple|18.298|830|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.52.018|<tuple|18.79|794|Chapter 6 (Measures and
+    <associate|eq 18.282.033|<tuple|18.299|830|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.52.022|<tuple|18.52|785|Chapter 6 (Measures and
+    <associate|eq 18.283.033|<tuple|18.300|831|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.53.016|<tuple|18.89|797|Chapter 6 (Measures and
+    <associate|eq 18.284.033|<tuple|18.301|831|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.53.018|<tuple|18.80|794|Chapter 6 (Measures and
+    <associate|eq 18.29.021|<tuple|18.34|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.53.022|<tuple|18.53|785|Chapter 6 (Measures and
+    <associate|eq 18.293.033|<tuple|18.302|832|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.54.016|<tuple|18.90|797|Chapter 6 (Measures and
+    <associate|eq 18.294.033|<tuple|18.303|832|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.54.018|<tuple|18.81|794|Chapter 6 (Measures and
+    <associate|eq 18.295.033|<tuple|18.304|832|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.54.022|<tuple|18.54|785|Chapter 6 (Measures and
+    <associate|eq 18.296.033|<tuple|18.305|832|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.55.016|<tuple|18.91|797|Chapter 6 (Measures and
+    <associate|eq 18.3.014|<tuple|18.12|759|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.55.018|<tuple|18.82|794|Chapter 6 (Measures and
+    <associate|eq 18.3.016|<tuple|18.6|753|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.55.022|<tuple|18.55|785|Chapter 6 (Measures and
+    <associate|eq 18.3.033|<tuple|18.3|753|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.56.016|<tuple|18.92|797|Chapter 6 (Measures and
+    <associate|eq 18.30.021|<tuple|18.35|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.56.018|<tuple|18.83|795|Chapter 6 (Measures and
+    <associate|eq 18.306.033|<tuple|18.306|834|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.56.022|<tuple|18.56|785|Chapter 6 (Measures and
+    <associate|eq 18.307.033|<tuple|18.307|835|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.57.016|<tuple|18.93|797|Chapter 6 (Measures and
+    <associate|eq 18.308.033|<tuple|18.308|836|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.57.018|<tuple|18.84|795|Chapter 6 (Measures and
+    <associate|eq 18.309.033|<tuple|18.309|836|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.57.022|<tuple|18.57|785|Chapter 6 (Measures and
+    <associate|eq 18.31.021|<tuple|18.36|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.58.016|<tuple|18.94|798|Chapter 6 (Measures and
+    <associate|eq 18.310.033|<tuple|18.310|838|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.58.018|<tuple|18.85|795|Chapter 6 (Measures and
+    <associate|eq 18.311.033|<tuple|18.311|838|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.58.022|<tuple|18.58|786|Chapter 6 (Measures and
+    <associate|eq 18.312.033|<tuple|18.312|839|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.59.016|<tuple|18.95|798|Chapter 6 (Measures and
+    <associate|eq 18.314.033|<tuple|18.314|842|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.59.018|<tuple|18.86|795|Chapter 6 (Measures and
+    <associate|eq 18.315.033|<tuple|18.315|842|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.59.022|<tuple|18.59|786|Chapter 6 (Measures and
+    <associate|eq 18.316.033|<tuple|18.316|842|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.60.016|<tuple|18.96|798|Chapter 6 (Measures and
+    <associate|eq 18.317.033|<tuple|18.317|843|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.60.018|<tuple|18.87|795|Chapter 6 (Measures and
+    <associate|eq 18.318.033|<tuple|18.318|843|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.60.023|<tuple|18.60|787|Chapter 6 (Measures and
+    <associate|eq 18.319.033|<tuple|18.319|843|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.61.016|<tuple|18.97|798|Chapter 6 (Measures and
+    <associate|eq 18.32.021|<tuple|18.37|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.61.023|<tuple|18.61|787|Chapter 6 (Measures and
+    <associate|eq 18.320.033|<tuple|18.320|844|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.62.016|<tuple|18.98|798|Chapter 6 (Measures and
+    <associate|eq 18.321.033|<tuple|18.321|844|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.62.032|<tuple|18.62|787|Chapter 6 (Measures and
+    <associate|eq 18.322.033|<tuple|18.322|845|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.74.018|<tuple|18.99|800|Chapter 6 (Measures and
+    <associate|eq 18.323.033|<tuple|18.323|846|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.75.018|<tuple|18.100|800|Chapter 6 (Measures and
+    <associate|eq 18.324.033|<tuple|18.324|846|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.76.018|<tuple|18.101|800|Chapter 6 (Measures and
+    <associate|eq 18.325.033|<tuple|18.325|849|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.77.018|<tuple|18.102|800|Chapter 6 (Measures and
+    <associate|eq 18.326.033|<tuple|18.326|849|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.78.018|<tuple|18.103|800|Chapter 6 (Measures and
+    <associate|eq 18.327.033|<tuple|18.327|849|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.79.018|<tuple|18.104|800|Chapter 6 (Measures and
+    <associate|eq 18.328.033|<tuple|18.328|849|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.8.020|<tuple|18.8|773|Chapter 6 (Measures and
+    <associate|eq 18.329.033|<tuple|18.329|850|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.80.018|<tuple|18.105|800|Chapter 6 (Measures and
+    <associate|eq 18.33.021|<tuple|18.38|765|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.81.018|<tuple|18.106|801|Chapter 6 (Measures and
+    <associate|eq 18.330.033|<tuple|18.330|850|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.82.018|<tuple|18.107|801|Chapter 6 (Measures and
+    <associate|eq 18.331.033|<tuple|18.332|850|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.83.018|<tuple|18.108|801|Chapter 6 (Measures and
+    <associate|eq 18.331.033.1|<tuple|18.331|850|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.84.018|<tuple|18.109|801|Chapter 6 (Measures and
+    <associate|eq 18.332.033|<tuple|18.333|850|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.85.018|<tuple|18.110|801|Chapter 6 (Measures and
+    <associate|eq 18.333.033|<tuple|18.334|850|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.86.018|<tuple|18.111|801|Chapter 6 (Measures and
+    <associate|eq 18.334.033|<tuple|18.335|851|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 18.9.020|<tuple|18.9|774|Chapter 6 (Measures and
+    <associate|eq 18.335.033|<tuple|18.336|851|Chapter 6 (Measures and
     integration).tm>>
-    <associate|eq 2.1|<tuple|2.14|56|Chapter 1 (Sets).tm>>
+    <associate|eq 18.336.033|<tuple|18.337|851|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.337.033|<tuple|18.338|851|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.338.033|<tuple|18.339|851|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.34.021|<tuple|18.39|765|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.340.033|<tuple|18.340|853|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.341.034|<tuple|18.341|854|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.342.034|<tuple|18.342|854|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.343.0.34|<tuple|18.343|855|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.345.034|<tuple|18.345|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.346.033|<tuple|18.346|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.347.033|<tuple|18.347|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.348.034|<tuple|18.348|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.349.034|<tuple|18.349|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.35.021|<tuple|18.40|765|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.350.0.34|<tuple|18.350|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.351.034|<tuple|18.351|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.352.034|<tuple|18.352|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.353.034|<tuple|18.353|856|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.354.034|<tuple|18.354|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.355.034|<tuple|18.355|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.356.034|<tuple|18.356|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.357.034|<tuple|18.357|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.358.034|<tuple|18.358|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.359.034|<tuple|18.359|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.36.016|<tuple|18.85|781|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.36.021|<tuple|18.41|765|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.360.034|<tuple|18.360|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.361.034|<tuple|18.361|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.362.034|<tuple|18.362|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.363.034|<tuple|18.363|857|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.364.035|<tuple|18.370|860|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.364.035.1|<tuple|18.365|859|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.364.35.2|<tuple|18.364|859|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.365.035|<tuple|18.371|860|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.365.035.1|<tuple|18.366|859|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.366.035|<tuple|18.372|860|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.366.035.1|<tuple|18.367|859|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.367.035|<tuple|18.373|860|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.367.035.1|<tuple|18.368|859|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.368.035|<tuple|18.374|860|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.369.035.1|<tuple|18.369|859|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.37.016|<tuple|18.86|782|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.37.021|<tuple|18.42|765|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.375.035.3|<tuple|18.375|862|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.376.035.3|<tuple|18.376|862|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.377.035.3|<tuple|18.377|862|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.378.035.3|<tuple|18.378|863|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.379.035.3|<tuple|18.379|863|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.38.016|<tuple|18.87|782|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.38.021|<tuple|18.43|765|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.380.035.3|<tuple|18.380|863|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.381.035.3|<tuple|18.381|863|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.382.035.3|<tuple|18.382|863|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.384.035.3|<tuple|18.384|865|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.385.035|<tuple|18.385|865|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.386.035|<tuple|18.389|867|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.386.035.4|<tuple|18.386|865|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.387.035|<tuple|18.387|866|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.388.035|<tuple|18.391|867|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.388.035.11|<tuple|18.388|866|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.389.035|<tuple|18.392|867|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.39.016|<tuple|18.87|782|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.39.022|<tuple|18.61|773|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.390.035|<tuple|18.393|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.391.035|<tuple|18.394|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.392.035|<tuple|18.395|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.393.035|<tuple|18.396|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.394.035|<tuple|18.397|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.395.035|<tuple|18.398|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.396.035|<tuple|18.399|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.397.035|<tuple|18.400|868|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.398.035|<tuple|18.401|869|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.399.035|<tuple|18.402|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.4.016|<tuple|18.7|753|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.40.016|<tuple|18.89|782|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.40.022|<tuple|18.62|773|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.400.035|<tuple|18.403|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.401.035|<tuple|18.404|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.403.35|<tuple|18.405|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.404.035|<tuple|18.406|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.405.35|<tuple|18.407|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.406.035|<tuple|18.408|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.407.035|<tuple|18.409|871|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.408.035|<tuple|18.410|872|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.409.035|<tuple|18.411|872|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.41.016|<tuple|18.90|782|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.41.022|<tuple|18.63|773|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.410.035|<tuple|18.413|876|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.410.35.1|<tuple|18.412|876|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.412.035|<tuple|18.414|877|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.413.035|<tuple|18.415|877|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.414.035|<tuple|18.418|878|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.415.035|<tuple|18.419|879|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.416.035|<tuple|18.420|879|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.417.035|<tuple|18.421|879|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.418.035|<tuple|18.422|879|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.419.035|<tuple|18.423|880|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.42.016|<tuple|18.91|782|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.42.022|<tuple|18.64|773|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.420.035|<tuple|18.424|880|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.421.035|<tuple|18.425|880|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.422.035|<tuple|18.426|880|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.423.035|<tuple|18.427|880|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.424.035|<tuple|18.428|881|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.425.035|<tuple|18.429|881|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.428.035|<tuple|18.416|878|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.429.035|<tuple|18.417|878|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.43.016|<tuple|18.92|782|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.43.022|<tuple|18.65|773|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.430.036.1|<tuple|18.430|882|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.432.036|<tuple|18.433|882|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.433.036|<tuple|18.434|882|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.434.036|<tuple|18.435|883|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.436.036|<tuple|18.436|883|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.437.036.1|<tuple|18.437|883|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.438.036|<tuple|18.438|883|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.439.036|<tuple|18.439|884|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.44.016|<tuple|18.93|783|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.44.022|<tuple|18.66|775|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.44.033|<tuple|18.44|766|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.44.034|<tuple|18.344|855|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.440.036|<tuple|18.440|884|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.441.036|<tuple|18.441|885|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.442.036|<tuple|18.442|885|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.443.036|<tuple|18.443|885|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.444.036|<tuple|18.444|886|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.445.036|<tuple|18.445|886|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.446.036|<tuple|18.446|886|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.447.036|<tuple|18.447|886|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.448.036|<tuple|18.448|886|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.449.036|<tuple|18.449|886|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.45.016|<tuple|18.94|783|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.45.022|<tuple|18.67|775|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.45.033|<tuple|18.45|766|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.450.036|<tuple|18.450|886|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.451.036|<tuple|18.451|887|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.452.036|<tuple|18.452|887|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.453.036|<tuple|18.453|887|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.454.036|<tuple|18.454|887|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.455.036|<tuple|18.455|887|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.456.036|<tuple|18.456|887|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.457.036|<tuple|18.457|887|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.458.036|<tuple|18.458|888|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.459.036|<tuple|18.459|889|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.46.016|<tuple|18.95|783|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.46.022|<tuple|18.68|775|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.46.033|<tuple|18.46|767|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.460.036|<tuple|18.460|889|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.461.036|<tuple|18.461|890|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.463.036|<tuple|18.462|890|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.463.036.1|<tuple|18.463|890|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.464.036|<tuple|18.464|890|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.465.036|<tuple|18.465|891|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.466.036|<tuple|18.466|891|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.467.036|<tuple|18.467|891|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.468.036|<tuple|18.468|891|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.469.036|<tuple|18.469|891|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.47.016|<tuple|18.96|784|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.47.022|<tuple|18.69|775|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.47.033|<tuple|18.47|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.470.036|<tuple|18.470|891|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.471.036|<tuple|18.470|892|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.472.036|<tuple|18.472|892|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.473.036|<tuple|18.473|892|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.48.016|<tuple|18.97|784|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.48.022|<tuple|18.70|775|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.48.033|<tuple|18.52|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.48.033.1|<tuple|18.48|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.49.016|<tuple|18.98|784|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.49.022|<tuple|18.71|775|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.49.033.1|<tuple|18.49|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.5.033|<tuple|18.8|754|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.50.016|<tuple|18.99|784|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.50.022|<tuple|18.72|776|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.50.033.1|<tuple|18.50|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.51.016|<tuple|18.100|785|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.51.022|<tuple|18.73|776|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.51.033.1|<tuple|18.51|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.52.016|<tuple|18.110|788|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.52.018|<tuple|18.101|786|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.52.022|<tuple|18.74|776|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.53.016|<tuple|18.111|788|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.53.018|<tuple|18.102|786|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.53.022|<tuple|18.75|776|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.53.033.2|<tuple|18.53|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.54.016|<tuple|18.112|788|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.54.018|<tuple|18.103|786|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.54.022|<tuple|18.76|776|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.54.033.1|<tuple|18.55|769|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.54.033.2|<tuple|18.54|768|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.55.016|<tuple|18.113|789|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.55.018|<tuple|18.104|786|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.55.022|<tuple|18.77|776|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.55.033.1|<tuple|18.56|769|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.56.016|<tuple|18.114|789|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.56.018|<tuple|18.105|786|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.56.022|<tuple|18.78|777|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.56.033.1|<tuple|18.57|769|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.57.016|<tuple|18.115|789|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.57.018|<tuple|18.106|786|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.57.022|<tuple|18.79|777|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.57.033.1|<tuple|18.58|769|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.58.016|<tuple|18.116|789|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.58.018|<tuple|18.107|787|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.58.022|<tuple|18.80|777|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.58.033.1|<tuple|18.59|769|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.59.016|<tuple|18.117|790|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.59.018|<tuple|18.108|787|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.59.022|<tuple|18.81|777|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.59.033.1|<tuple|18.60|769|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.6.033|<tuple|18.9|754|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.60.016|<tuple|18.118|790|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.60.018|<tuple|18.109|787|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.60.023|<tuple|18.82|778|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.61.016|<tuple|18.119|790|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.61.023|<tuple|18.83|778|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.62.016|<tuple|18.120|790|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.62.032|<tuple|18.84|779|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.67.035|<tuple|18.390|867|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.74.018|<tuple|18.121|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.75.018|<tuple|18.122|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.76.018|<tuple|18.123|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.77.018|<tuple|18.124|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.78.018|<tuple|18.125|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.79.018|<tuple|18.126|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.8.020|<tuple|18.13|761|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.80.018|<tuple|18.127|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.81.018|<tuple|18.128|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.82.018|<tuple|18.129|792|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.83.018|<tuple|18.130|793|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.84.018|<tuple|18.131|793|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.85.018|<tuple|18.132|793|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.86.018|<tuple|18.133|793|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 18.9.020|<tuple|18.14|761|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|eq 2.1|<tuple|2.14|57|Chapter 1 (Sets).tm>>
     <associate|eq 2.10.028|<tuple|2.19|73|Chapter 1 (Sets).tm>>
     <associate|eq 2.10.050|<tuple|2.10|50|Chapter 1 (Sets).tm>>
     <associate|eq 2.11.050|<tuple|2.11|50|Chapter 1 (Sets).tm>>
     <associate|eq 2.12.050|<tuple|2.12|50|Chapter 1 (Sets).tm>>
-    <associate|eq 2.13.050|<tuple|2.13|50|Chapter 1 (Sets).tm>>
+    <associate|eq 2.13.050|<tuple|2.13|51|Chapter 1 (Sets).tm>>
     <associate|eq 2.20.052|<tuple|2.29|78|Chapter 1 (Sets).tm>>
     <associate|eq 2.20.053|<tuple|2.20|75|Chapter 1 (Sets).tm>>
     <associate|eq 2.21.052|<tuple|2.28|78|Chapter 1 (Sets).tm>>
     <associate|eq 2.21.053|<tuple|2.21|75|Chapter 1 (Sets).tm>>
-    <associate|eq 2.22.052|<tuple|2.30|78|Chapter 1 (Sets).tm>>
+    <associate|eq 2.22.052|<tuple|2.30|79|Chapter 1 (Sets).tm>>
     <associate|eq 2.22.053|<tuple|2.22|75|Chapter 1 (Sets).tm>>
-    <associate|eq 2.23.052|<tuple|2.31|78|Chapter 1 (Sets).tm>>
-    <associate|eq 2.23.053|<tuple|2.23|75|Chapter 1 (Sets).tm>>
-    <associate|eq 2.24.053|<tuple|2.24|75|Chapter 1 (Sets).tm>>
-    <associate|eq 2.25.052|<tuple|2.32|78|Chapter 1 (Sets).tm>>
-    <associate|eq 2.25.053|<tuple|2.25|75|Chapter 1 (Sets).tm>>
+    <associate|eq 2.23.052|<tuple|2.31|79|Chapter 1 (Sets).tm>>
+    <associate|eq 2.23.053|<tuple|2.23|76|Chapter 1 (Sets).tm>>
+    <associate|eq 2.24.053|<tuple|2.24|76|Chapter 1 (Sets).tm>>
+    <associate|eq 2.25.052|<tuple|2.32|79|Chapter 1 (Sets).tm>>
+    <associate|eq 2.25.053|<tuple|2.25|76|Chapter 1 (Sets).tm>>
     <associate|eq 2.26.053|<tuple|2.26|76|Chapter 1 (Sets).tm>>
     <associate|eq 2.27.053|<tuple|2.27|76|Chapter 1 (Sets).tm>>
     <associate|eq 2.5.050|<tuple|2.5|40|Chapter 1 (Sets).tm>>
     <associate|eq 2.6.050|<tuple|2.6|40|Chapter 1 (Sets).tm>>
-    <associate|eq 2.6.1|<tuple|2.15|56|Chapter 1 (Sets).tm>>
-    <associate|eq 2.7.050|<tuple|2.7|41|Chapter 1 (Sets).tm>>
+    <associate|eq 2.6.1|<tuple|2.15|57|Chapter 1 (Sets).tm>>
+    <associate|eq 2.7.050|<tuple|2.7|40|Chapter 1 (Sets).tm>>
     <associate|eq 2.7.68|<tuple|2.16|57|Chapter 1 (Sets).tm>>
     <associate|eq 2.746|<tuple|12.7|527|Chapter 3 (Topology).tm>>
     <associate|eq 2.8.050|<tuple|2.8|49|Chapter 1 (Sets).tm>>
     <associate|eq 2.8.68|<tuple|2.17|57|Chapter 1 (Sets).tm>>
-    <associate|eq 2.9.028|<tuple|2.18|72|Chapter 1 (Sets).tm>>
-    <associate|eq 2.9.050|<tuple|2.9|49|Chapter 1 (Sets).tm>>
+    <associate|eq 2.9.028|<tuple|2.18|73|Chapter 1 (Sets).tm>>
+    <associate|eq 2.9.050|<tuple|2.9|50|Chapter 1 (Sets).tm>>
     <associate|eq 3.476|<tuple|12.8|528|Chapter 3 (Topology).tm>>
     <associate|eq 4.476|<tuple|12.9|529|Chapter 3 (Topology).tm>>
     <associate|eq 5.1.23|<tuple|5.1|136|Chapter 1 (Sets).tm>>
@@ -5348,11 +5979,11 @@
     <associate|eq 7.476|<tuple|12.12|529|Chapter 3 (Topology).tm>>
     <associate|eq 8.1|<tuple|8.6|214|Chapter 1 (Sets).tm>>
     <associate|eq 8.1.075|<tuple|8.3|205|Chapter 1 (Sets).tm>>
-    <associate|eq 8.1.076|<tuple|8.1|205|Chapter 1 (Sets).tm>>
+    <associate|eq 8.1.076|<tuple|8.1|204|Chapter 1 (Sets).tm>>
     <associate|eq 8.10|<tuple|8.5|214|Chapter 1 (Sets).tm>>
     <associate|eq 8.2|<tuple|8.7|214|Chapter 1 (Sets).tm>>
-    <associate|eq 8.2.075|<tuple|8.4|206|Chapter 1 (Sets).tm>>
-    <associate|eq 8.2.076|<tuple|8.2|205|Chapter 1 (Sets).tm>>
+    <associate|eq 8.2.075|<tuple|8.4|205|Chapter 1 (Sets).tm>>
+    <associate|eq 8.2.076|<tuple|8.2|204|Chapter 1 (Sets).tm>>
     <associate|eq 8.3|<tuple|8.8|214|Chapter 1 (Sets).tm>>
     <associate|eq 8.4|<tuple|8.9|214|Chapter 1 (Sets).tm>>
     <associate|eq 8.6|<tuple|8.10|214|Chapter 1 (Sets).tm>>
@@ -5360,23 +5991,23 @@
     <associate|eq 9.1.076|<tuple|9.1|228|Chapter 1 (Sets).tm>>
     <associate|eq 9.2.075|<tuple|9.4|229|Chapter 1 (Sets).tm>>
     <associate|eq 9.2.076|<tuple|9.2|228|Chapter 1 (Sets).tm>>
-    <associate|eq10.114|<tuple|10.154|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.115|<tuple|10.155|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.116|<tuple|10.156|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.117|<tuple|10.157|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.118|<tuple|10.159|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.1180|<tuple|10.158|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.119|<tuple|10.160|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.120|<tuple|10.161|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.122|<tuple|10.162|377|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.123|<tuple|10.163|377|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.124|<tuple|10.176|383|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.124x|<tuple|10.164|377|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.125|<tuple|10.177|383|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.138|<tuple|10.178|384|Chapter 2 (Linear Algebra).tm>>
-    <associate|eq10.139|<tuple|10.179|385|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.114|<tuple|10.154|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.115|<tuple|10.155|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.116|<tuple|10.156|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.117|<tuple|10.157|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.118|<tuple|10.159|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.1180|<tuple|10.158|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.119|<tuple|10.160|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.120|<tuple|10.161|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.122|<tuple|10.162|378|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.123|<tuple|10.163|378|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.124|<tuple|10.176|384|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.124x|<tuple|10.164|378|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.125|<tuple|10.177|384|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.138|<tuple|10.178|385|Chapter 2 (Linear Algebra).tm>>
+    <associate|eq10.139|<tuple|10.179|386|Chapter 2 (Linear Algebra).tm>>
     <associate|equality of classes|<tuple|1.4|7|Chapter 1 (Sets).tm>>
-    <associate|equality of product of sets|<tuple|2.95|56|Chapter 1
+    <associate|equality of product of sets|<tuple|2.97|56|Chapter 1
     (Sets).tm>>
     <associate|equality of product of sets (1)|<tuple|5.104|150|Chapter 1
     (Sets).tm>>
@@ -5388,19 +6019,19 @@
     <associate|equipotent is the same as equal in the natural
     numbers|<tuple|5.41|128|Chapter 1 (Sets).tm>>
     <associate|equivalence of limits on increasing (decreasing) sequences of
-    extented reals|<tuple|17.83|713|Chapter 5 (Extended Real Numbers).tm>>
+    extented reals|<tuple|17.71|699|Chapter 5 (Extended Real Numbers).tm>>
     <associate|equivalence of norms|<tuple|11.85|409|Chapter 3
     (Topology).tm>>
     <associate|equivalence of norms on product of real
-    numbers|<tuple|11.302|460|Chapter 3 (Topology).tm>>
+    numbers|<tuple|11.302|461|Chapter 3 (Topology).tm>>
     <associate|equivalence of operator norm
-    (multilinear)|<tuple|11.200|437|Chapter 3 (Topology).tm>>
+    (multilinear)|<tuple|11.200|438|Chapter 3 (Topology).tm>>
     <associate|equivalence of order and subset in the
     reals|<tuple|8.37|201|Chapter 1 (Sets).tm>>
-    <associate|equivalence of power of sets|<tuple|10.104|273|Chapter 2
+    <associate|equivalence of power of sets|<tuple|10.104|275|Chapter 2
     (Linear Algebra).tm>>
-    <associate|equivalence relation|<tuple|2.114|59|Chapter 1 (Sets).tm>>
-    <associate|equivalence relation determined by f|<tuple|2.128|61|Chapter 1
+    <associate|equivalence relation|<tuple|2.116|60|Chapter 1 (Sets).tm>>
+    <associate|equivalence relation determined by f|<tuple|2.130|62|Chapter 1
     (Sets).tm>>
     <associate|equivalences of absolute convergence|<tuple|11.396|487|Chapter
     3 (Topology).tm>>
@@ -5408,7 +6039,7 @@
     (1)|<tuple|11.404|490|Chapter 3 (Topology).tm>>
     <associate|equivalences of absolute convergence of
     families|<tuple|11.405|491|Chapter 3 (Topology).tm>>
-    <associate|equivalences of axiom of choice|<tuple|2.208|83|Chapter 1
+    <associate|equivalences of axiom of choice|<tuple|2.210|83|Chapter 1
     (Sets).tm>>
     <associate|equivalences of convergence of summable familie of positive
     numbers|<tuple|11.386|483|Chapter 3 (Topology).tm>>
@@ -5423,15 +6054,15 @@
     <associate|equivalent metric|<tuple|11.58|400|Chapter 3 (Topology).tm>>
     <associate|equivalent norms|<tuple|11.84|409|Chapter 3 (Topology).tm>>
     <associate|eucledan norm|<tuple|11.110|414|Chapter 3 (Topology).tm>>
-    <associate|ev_L is linear and continuous|<tuple|11.224|444|Chapter 3
+    <associate|ev_L is linear and continuous|<tuple|11.224|445|Chapter 3
     (Topology).tm>>
     <associate|ev_l + @|<tuple|11.225|445|Chapter 3 (Topology).tm>>
     <associate|evaluation operator (1)|<tuple|14.124|623|Chapter 4
     (Differentiation).tm>>
-    <associate|even and odd|<tuple|6.55|165|Chapter 1 (Sets).tm>>
-    <associate|even and odd numbers|<tuple|6.56|165|Chapter 1 (Sets).tm>>
+    <associate|even and odd|<tuple|6.55|164|Chapter 1 (Sets).tm>>
+    <associate|even and odd numbers|<tuple|6.56|164|Chapter 1 (Sets).tm>>
     <associate|every basis has the same number of
-    elements|<tuple|10.201|298|Chapter 2 (Linear Algebra).tm>>
+    elements|<tuple|10.201|299|Chapter 2 (Linear Algebra).tm>>
     <associate|every closed bounded set in C is
     compact|<tuple|11.304|462|Chapter 3 (Topology).tm>>
     <associate|every closed, open ball is bounded|<tuple|11.66|401|Chapter 3
@@ -5439,13 +6070,13 @@
     <associate|every compact metric space is
     complete|<tuple|11.358|471|Chapter 3 (Topology).tm>>
     <associate|every field is a vectorspace over
-    itself|<tuple|10.112|275|Chapter 2 (Linear Algebra).tm>>
+    itself|<tuple|10.112|277|Chapter 2 (Linear Algebra).tm>>
     <associate|every finite dimensional space is
     Banach|<tuple|11.362|472|Chapter 3 (Topology).tm>>
     <associate|every finite subset of a Hausdorff is
-    closed|<tuple|11.228|445|Chapter 3 (Topology).tm>>
+    closed|<tuple|11.228|446|Chapter 3 (Topology).tm>>
     <associate|every linear independent set can be extented to a
-    basis|<tuple|10.159|285|Chapter 2 (Linear Algebra).tm>>
+    basis|<tuple|10.159|287|Chapter 2 (Linear Algebra).tm>>
     <associate|every linear operator in a complex space have a upper
     triangular|<tuple|12.56|542|Chapter 3 (Topology).tm>>
     <associate|every natural number is bigger or equal to
@@ -5453,82 +6084,82 @@
     <associate|every natural number is transitive|<tuple|4.13|100|Chapter 1
     (Sets).tm>>
     <associate|every non empty set in the extented reals has a
-    limit|<tuple|17.10|667|Chapter 5 (Extended Real Numbers).tm>>
+    limit|<tuple|17.12|668|Chapter 5 (Extended Real Numbers).tm>>
     <associate|every open set in R^n is a countable union of dyadic
-    cubes|<tuple|18.41|784|Chapter 6 (Measures and integration).tm>>
+    cubes|<tuple|18.50|775|Chapter 6 (Measures and integration).tm>>
     <associate|every permutation can be written as the product of
-    transpositions|<tuple|10.80|260|Chapter 2 (Linear Algebra).tm>>
+    transpositions|<tuple|10.80|262|Chapter 2 (Linear Algebra).tm>>
     <associate|every set with a infinite subset is
-    finite|<tuple|5.35|126|Chapter 1 (Sets).tm>>
+    finite|<tuple|5.35|125|Chapter 1 (Sets).tm>>
     <associate|every span of a vector space contains a
-    basis|<tuple|10.157|285|Chapter 2 (Linear Algebra).tm>>
+    basis|<tuple|10.157|287|Chapter 2 (Linear Algebra).tm>>
     <associate|every spanning family contains a
-    basis|<tuple|10.158|285|Chapter 2 (Linear Algebra).tm>>
+    basis|<tuple|10.158|287|Chapter 2 (Linear Algebra).tm>>
     <associate|every subclass of a well ordered class is isomorphic to the
-    class or a segment|<tuple|2.203|82|Chapter 1 (Sets).tm>>
+    class or a segment|<tuple|2.205|83|Chapter 1 (Sets).tm>>
     <associate|every subset of N is finite or
     denumerable|<tuple|5.54|133|Chapter 1 (Sets).tm>>
-    <associate|example 10.210|<tuple|10.269|318|Chapter 2 (Linear
+    <associate|example 10.210|<tuple|10.269|319|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|example 10.223|<tuple|10.278|326|Chapter 2 (Linear
+    <associate|example 10.223|<tuple|10.278|327|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|example 10.267|<tuple|10.281|326|Chapter 2 (Linear
+    <associate|example 10.267|<tuple|10.281|327|Chapter 2 (Linear
     Algebra).tm>>
     <associate|example of continuous mappings in a topological vector
     space|<tuple|11.243|447|Chapter 3 (Topology).tm>>
-    <associate|example of product of contants|<tuple|10.8|236|Chapter 2
+    <associate|example of product of contants|<tuple|10.8|238|Chapter 2
     (Linear Algebra).tm>>
-    <associate|example sum of constants|<tuple|10.7|235|Chapter 2 (Linear
+    <associate|example sum of constants|<tuple|10.7|237|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|examples 10.225|<tuple|10.284|327|Chapter 2 (Linear
+    <associate|examples 10.225|<tuple|10.284|328|Chapter 2 (Linear
     Algebra).tm>>
     <associate|exaple of a convergent serie|<tuple|11.414|496|Chapter 3
     (Topology).tm>>
     <associate|exchange infinite sum and finite sum|<tuple|11.398|488|Chapter
     3 (Topology).tm>>
-    <associate|exchange sum|<tuple|10.12|237|Chapter 2 (Linear Algebra).tm>>
+    <associate|exchange sum|<tuple|10.12|239|Chapter 2 (Linear Algebra).tm>>
     <associate|existance of Riemann integral for continuous
     function|<tuple|11.441|506|Chapter 3 (Topology).tm>>
     <associate|existance of a non zero linear
-    mapping|<tuple|10.178|291|Chapter 2 (Linear Algebra).tm>>
+    mapping|<tuple|10.178|292|Chapter 2 (Linear Algebra).tm>>
     <associate|existance of converging tagged
     partititions|<tuple|11.438|505|Chapter 3 (Topology).tm>>
-    <associate|existance of direct sum and subspace|<tuple|10.196|295|Chapter
+    <associate|existance of direct sum and subspace|<tuple|10.196|297|Chapter
     2 (Linear Algebra).tm>>
     <associate|existance of isometry,isomorphism,homeomorphism|<tuple|11.173|428|Chapter
     3 (Topology).tm>>
-    <associate|existance of lim inf and lim sup|<tuple|17.67|705|Chapter 5
+    <associate|existance of lim inf and lim sup|<tuple|17.50|689|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|existance of maximal filterbase|<tuple|11.292|457|Chapter 3
+    <associate|existance of maximal filterbase|<tuple|11.292|458|Chapter 3
     (Topology).tm>>
     <associate|existance of maximum and minimum in the image of a continuous
-    function of a compact set|<tuple|11.301|460|Chapter 3 (Topology).tm>>
-    <associate|exmpty set is compact|<tuple|11.247|447|Chapter 3
+    function of a compact set|<tuple|11.301|461|Chapter 3 (Topology).tm>>
+    <associate|exmpty set is compact|<tuple|11.247|448|Chapter 3
     (Topology).tm>>
-    <associate|exp exceeds every number|<tuple|18.31|748|Chapter 5 (Extended
+    <associate|exp exceeds every number|<tuple|18.31|735|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|exp is a bijection|<tuple|18.32|749|Chapter 5 (Extended Real
+    <associate|exp is a bijection|<tuple|18.32|735|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|exp is convex|<tuple|18.28|748|Chapter 5 (Extended Real
+    <associate|exp is convex|<tuple|18.28|734|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|exp(x) is continuous|<tuple|18.25|746|Chapter 5 (Extended Real
+    <associate|exp(x) is continuous|<tuple|18.25|732|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|exp(x+y)=exp(x)exp(y)|<tuple|18.26|746|Chapter 5 (Extended
+    <associate|exp(x+y)=exp(x)exp(y)|<tuple|18.26|732|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|exp(z)|<tuple|18.19|742|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|exponential as power|<tuple|18.30|748|Chapter 5 (Extended Real
+    <associate|exp(z)|<tuple|18.19|728|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|exponential as power|<tuple|18.30|734|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|extending a family|<tuple|10.148|282|Chapter 2 (Linear
+    <associate|extending a family|<tuple|10.148|284|Chapter 2 (Linear
     Algebra).tm>>
     <associate|extending a family of independendent vectors to a
-    basis|<tuple|10.205|299|Chapter 2 (Linear Algebra).tm>>
+    basis|<tuple|10.205|300|Chapter 2 (Linear Algebra).tm>>
     <associate|extending linear independent subset of a spanning set to a
-    basis|<tuple|10.156|283|Chapter 2 (Linear Algebra).tm>>
+    basis|<tuple|10.156|285|Chapter 2 (Linear Algebra).tm>>
     <associate|extending the domain of a generalized
-    function|<tuple|10.41|245|Chapter 2 (Linear Algebra).tm>>
+    function|<tuple|10.41|247|Chapter 2 (Linear Algebra).tm>>
     <associate|extension of a linear dependent family is linear
-    dependent|<tuple|10.149|282|Chapter 2 (Linear Algebra).tm>>
-    <associate|extension of multilinear mapping|<tuple|10.246|310|Chapter 2
+    dependent|<tuple|10.149|284|Chapter 2 (Linear Algebra).tm>>
+    <associate|extension of multilinear mapping|<tuple|10.246|311|Chapter 2
     (Linear Algebra).tm>>
     <associate|extented reals|<tuple|17.2|665|Chapter 5 (Extended Real
     Numbers).tm>>
@@ -5538,10 +6169,14 @@
     (Differentiation).tm>>
     <associate|f is C infinite if D1f is c infinite|<tuple|14.68|588|Chapter
     4 (Differentiation).tm>>
-    <associate|f@g^-1|<tuple|2.62|50|Chapter 1 (Sets).tm>>
+    <associate|f+ and f-|<tuple|18.173|846|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|f=g almost everywhere property|<tuple|18.182|853|Chapter 6
+    (Measures and integration).tm>>
+    <associate|f@g^-1|<tuple|2.64|50|Chapter 1 (Sets).tm>>
     <associate|f_v is differentiable|<tuple|14.84|595|Chapter 4
     (Differentiation).tm>>
-    <associate|factor space is universal|<tuple|10.225|305|Chapter 2 (Linear
+    <associate|factor space is universal|<tuple|10.225|306|Chapter 2 (Linear
     Algebra).tm>>
     <associate|factorization of a polynomal with real
     coeficients|<tuple|12.33|537|Chapter 3 (Topology).tm>>
@@ -5552,9 +6187,9 @@
     <associate|faculty|<tuple|5.20|120|Chapter 1 (Sets).tm>>
     <associate|faithful, trasitive action|<tuple|3.19|95|Chapter 1
     (Sets).tm>>
-    <associate|family and subset|<tuple|2.109|59|Chapter 1 (Sets).tm>>
+    <associate|family and subset|<tuple|2.111|59|Chapter 1 (Sets).tm>>
     <associate|family of classes|<tuple|1.77|24|Chapter 1 (Sets).tm>>
-    <associate|family of classes as a set function|<tuple|2.65|51|Chapter 1
+    <associate|family of classes as a set function|<tuple|2.67|51|Chapter 1
     (Sets).tm>>
     <associate|family of classes indexed by itself|<tuple|1.96|28|Chapter 1
     (Sets).tm>>
@@ -5562,10 +6197,10 @@
     (Sets).tm>>
     <associate|family of classes properties (2)|<tuple|1.99|29|Chapter 1
     (Sets).tm>>
-    <associate|family of elements|<tuple|2.102|58|Chapter 1 (Sets).tm>>
+    <associate|family of elements|<tuple|2.104|58|Chapter 1 (Sets).tm>>
     <associate|family of elements with finite
-    support|<tuple|10.34|244|Chapter 2 (Linear Algebra).tm>>
-    <associate|family of sets defined by set function|<tuple|2.64|51|Chapter
+    support|<tuple|10.34|246|Chapter 2 (Linear Algebra).tm>>
+    <associate|family of sets defined by set function|<tuple|2.66|51|Chapter
     1 (Sets).tm>>
     <associate|field|<tuple|3.29|97|Chapter 1 (Sets).tm>>
     <associate|field homomorphism|<tuple|3.33|98|Chapter 1 (Sets).tm>>
@@ -5577,13 +6212,13 @@
     property|<tuple|11.274|454|Chapter 3 (Topology).tm>>
     <associate|filterbase and closure|<tuple|11.285|456|Chapter 3
     (Topology).tm>>
-    <associate|filterbase and continuity 1|<tuple|11.287|456|Chapter 3
+    <associate|filterbase and continuity 1|<tuple|11.287|457|Chapter 3
     (Topology).tm>>
     <associate|filterbase and continuity 2|<tuple|11.288|457|Chapter 3
     (Topology).tm>>
     <associate|filterbase on a set|<tuple|11.284|456|Chapter 3
     (Topology).tm>>
-    <associate|filterbases and compactness|<tuple|11.295|458|Chapter 3
+    <associate|filterbases and compactness|<tuple|11.295|459|Chapter 3
     (Topology).tm>>
     <associate|filterbases and products|<tuple|11.289|457|Chapter 3
     (Topology).tm>>
@@ -5595,51 +6230,51 @@
     bijective|<tuple|5.89|142|Chapter 1 (Sets).tm>>
     <associate|finite dimensional inner product space has a orthonormal
     asis|<tuple|11.120|417|Chapter 3 (Topology).tm>>
-    <associate|finite general sum|<tuple|10.39|244|Chapter 2 (Linear
+    <associate|finite general sum|<tuple|10.39|246|Chapter 2 (Linear
     Algebra).tm>>
     <associate|finite infinite sum means finite
-    terms|<tuple|17.116|726|Chapter 5 (Extended Real Numbers).tm>>
+    terms|<tuple|17.98|711|Chapter 5 (Extended Real Numbers).tm>>
     <associate|finite ordered sets have a maximum|<tuple|5.50|131|Chapter 1
     (Sets).tm>>
     <associate|finite power of a finite set is
-    finite|<tuple|10.106|273|Chapter 2 (Linear Algebra).tm>>
-    <associate|finite power of a set|<tuple|10.101|272|Chapter 2 (Linear
+    finite|<tuple|10.106|275|Chapter 2 (Linear Algebra).tm>>
+    <associate|finite power of a set|<tuple|10.101|274|Chapter 2 (Linear
     Algebra).tm>>
     <associate|finite product of finite or denumerable
     sets|<tuple|5.102|148|Chapter 1 (Sets).tm>>
     <associate|finite product of finite sets is
-    finite|<tuple|10.103|273|Chapter 2 (Linear Algebra).tm>>
+    finite|<tuple|10.103|274|Chapter 2 (Linear Algebra).tm>>
     <associate|finite product of finite,denumerable
-    sets|<tuple|5.101|148|Chapter 1 (Sets).tm>>
+    sets|<tuple|5.101|147|Chapter 1 (Sets).tm>>
     <associate|finite product topology is box
     topology|<tuple|11.39|397|Chapter 3 (Topology).tm>>
-    <associate|finite subset of filterbase|<tuple|11.269|453|Chapter 3
+    <associate|finite subset of filterbase|<tuple|11.269|454|Chapter 3
     (Topology).tm>>
     <associate|finite sum of constants in the extented
-    reals|<tuple|17.110|725|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.92|710|Chapter 5 (Extended Real Numbers).tm>>
     <associate|finite sum of continuous functions is
-    continuous|<tuple|11.175|428|Chapter 3 (Topology).tm>>
-    <associate|finite sum of denumerable sums|<tuple|17.122|730|Chapter 5
+    continuous|<tuple|11.175|429|Chapter 3 (Topology).tm>>
+    <associate|finite sum of denumerable sums|<tuple|17.104|717|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|finite sum of extented reals|<tuple|17.97|721|Chapter 5
+    <associate|finite sum of extented reals|<tuple|17.85|708|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|finite sum of extented reals
-    properties|<tuple|17.109|724|Chapter 5 (Extended Real Numbers).tm>>
+    properties|<tuple|17.91|710|Chapter 5 (Extended Real Numbers).tm>>
     <associate|finite sum of extented reals starting at
-    n|<tuple|17.98|721|Chapter 5 (Extended Real Numbers).tm>>
+    n|<tuple|17.86|708|Chapter 5 (Extended Real Numbers).tm>>
     <associate|finite sum of extented reals written as infinite
-    sum|<tuple|17.117|726|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|finite sum of limits of functions|<tuple|17.106|723|Chapter 5
-    (Extended Real Numbers).tm>>
-    <associate|finite sum of limits of scalar product with
-    functions|<tuple|17.108|724|Chapter 5 (Extended Real Numbers).tm>>
+    sum|<tuple|17.99|711|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|finite sum of mesaurable functions is measurable
+    (1)|<tuple|18.170|844|Chapter 6 (Measures and integration).tm>>
+    <associate|finite sum of mesaurable functions is measurable
+    (2)|<tuple|18.172|846|Chapter 6 (Measures and integration).tm>>
     <associate|finite sum of neutral elements is neutral
-    element|<tuple|10.49|249|Chapter 2 (Linear Algebra).tm>>
+    element|<tuple|10.49|251|Chapter 2 (Linear Algebra).tm>>
     <associate|finite sum of non negative extented reals is non
-    negative|<tuple|17.99|721|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|finite sum of sums|<tuple|10.48|248|Chapter 2 (Linear
+    negative|<tuple|17.87|708|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|finite sum of sums|<tuple|10.48|250|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|finite sum starting at n|<tuple|10.13|237|Chapter 2 (Linear
+    <associate|finite sum starting at n|<tuple|10.13|239|Chapter 2 (Linear
     Algebra).tm>>
     <associate|finite union of compact subsets are
     compact|<tuple|11.248|448|Chapter 3 (Topology).tm>>
@@ -5649,41 +6284,47 @@
     1 (Sets).tm>>
     <associate|finite union of finite sets is finite
     (2)|<tuple|5.38|126|Chapter 1 (Sets).tm>>
+    <associate|finite unions and intersections|<tuple|18.7|754|Chapter 6
+    (Measures and integration).tm>>
     <associate|first countable topological space|<tuple|11.236|446|Chapter 3
     (Topology).tm>>
     <associate|first factor of a polynomal|<tuple|12.31|535|Chapter 3
     (Topology).tm>>
-    <associate|free vector space over a set|<tuple|10.171|289|Chapter 2
+    <associate|free vector space over a set|<tuple|10.171|290|Chapter 2
     (Linear Algebra).tm>>
+    <associate|function comparizatons are
+    measurable|<tuple|18.160|838|Chapter 6 (Measures and integration).tm>>
     <associate|function graph|<tuple|1.54|20|Chapter 1 (Sets).tm>>
-    <associate|function notation|<tuple|2.11|37|Chapter 1 (Sets).tm>>
-    <associate|function space|<tuple|2.71|52|Chapter 1 (Sets).tm>>
+    <associate|function graph sets inclusion|<tuple|2.9|36|Chapter 1
+    (Sets).tm>>
+    <associate|function notation|<tuple|2.12|37|Chapter 1 (Sets).tm>>
+    <associate|function space|<tuple|2.73|52|Chapter 1 (Sets).tm>>
     <associate|fundamental system of neighborhoods|<tuple|11.235|446|Chapter
     3 (Topology).tm>>
     <associate|fundamental theorem of algebra|<tuple|12.29|531|Chapter 3
     (Topology).tm>>
     <associate|fundamental theorem of calculus|<tuple|14.107|612|Chapter 4
     (Differentiation).tm>>
-    <associate|f\|C is bijective if f is injective|<tuple|2.50|46|Chapter 1
+    <associate|f\|C is bijective if f is injective|<tuple|2.52|46|Chapter 1
     (Sets).tm>>
     <associate|g is differentiable|<tuple|14.164|652|Chapter 4
     (Differentiation).tm>>
     <associate|gap theorem|<tuple|8.7|180|Chapter 1 (Sets).tm>>
-    <associate|general associativity of general sum|<tuple|10.45|246|Chapter
+    <associate|general associativity of general sum|<tuple|10.45|248|Chapter
     2 (Linear Algebra).tm>>
     <associate|general associativity of general sums
-    (generals)|<tuple|10.46|247|Chapter 2 (Linear Algebra).tm>>
-    <associate|general linear group|<tuple|10.191|294|Chapter 2 (Linear
+    (generals)|<tuple|10.46|249|Chapter 2 (Linear Algebra).tm>>
+    <associate|general linear group|<tuple|10.191|295|Chapter 2 (Linear
     Algebra).tm>>
     <associate|general product of polynomial
     operators|<tuple|12.43|540|Chapter 3 (Topology).tm>>
-    <associate|general product of sets and subsets|<tuple|2.87|55|Chapter 1
+    <associate|general product of sets and subsets|<tuple|2.89|55|Chapter 1
     (Sets).tm>>
-    <associate|general product of sets is a set|<tuple|2.80|53|Chapter 1
+    <associate|general product of sets is a set|<tuple|2.82|54|Chapter 1
     (Sets).tm>>
-    <associate|general strict positive powers|<tuple|18.38|752|Chapter 5
+    <associate|general strict positive powers|<tuple|18.38|738|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|generalized associativity|<tuple|10.18|238|Chapter 2 (Linear
+    <associate|generalized associativity|<tuple|10.18|240|Chapter 2 (Linear
     Algebra).tm>>
     <associate|generalized chain rule|<tuple|14.83|594|Chapter 4
     (Differentiation).tm>>
@@ -5692,69 +6333,61 @@
     <associate|generalized difference|<tuple|1.102|31|Chapter 1 (Sets).tm>>
     <associate|generalized distributive laws|<tuple|1.101|31|Chapter 1
     (Sets).tm>>
-    <associate|generalized fnite sum|<tuple|10.3|235|Chapter 2 (Linear
+    <associate|generalized fnite sum|<tuple|10.3|237|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|generalized interval|<tuple|2.183|73|Chapter 1 (Sets).tm>>
-    <associate|generalized intervals and boundaries|<tuple|2.187|77|Chapter 1
+    <associate|generalized interval|<tuple|2.185|74|Chapter 1 (Sets).tm>>
+    <associate|generalized intervals and boundaries|<tuple|2.189|78|Chapter 1
     (Sets).tm>>
     <associate|generalized intervals and connectness|<tuple|11.452|510|Chapter
     3 (Topology).tm>>
-    <associate|generalized intervals and intervals|<tuple|2.185|74|Chapter 1
+    <associate|generalized intervals and intervals|<tuple|2.187|74|Chapter 1
     (Sets).tm>>
-    <associate|generalized intervals condition|<tuple|2.186|76|Chapter 1
+    <associate|generalized intervals condition|<tuple|2.188|77|Chapter 1
     (Sets).tm>>
-    <associate|generalized power|<tuple|18.35|750|Chapter 5 (Extended Real
+    <associate|generalized power|<tuple|18.35|736|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|generalized product|<tuple|10.38|244|Chapter 2 (Linear
+    <associate|generalized product|<tuple|10.38|246|Chapter 2 (Linear
     Algebra).tm>>
     <associate|generalized product of empty set is
-    empty|<tuple|2.88|55|Chapter 1 (Sets).tm>>
+    empty|<tuple|2.90|55|Chapter 1 (Sets).tm>>
     <associate|generalized product of generalized
-    sums|<tuple|10.60|251|Chapter 2 (Linear Algebra).tm>>
-    <associate|generalized product of sets|<tuple|2.79|53|Chapter 1
+    sums|<tuple|10.60|253|Chapter 2 (Linear Algebra).tm>>
+    <associate|generalized product of sets|<tuple|2.81|54|Chapter 1
     (Sets).tm>>
     <associate|generalized product of sets and
-    bijections|<tuple|2.83|54|Chapter 1 (Sets).tm>>
-    <associate|generalized sequence of extended and remove
-    zeroes|<tuple|17.130|736|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|generalized sequence of extended reals and
-    zeroes|<tuple|17.129|735|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|generalized serie of extended positive
-    numbers|<tuple|17.128|735|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|generalized sum|<tuple|10.36|244|Chapter 2 (Linear
+    bijections|<tuple|2.85|54|Chapter 1 (Sets).tm>>
+    <associate|generalized sum|<tuple|10.36|246|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|generalized sum and finite sum|<tuple|10.40|245|Chapter 2
+    <associate|generalized sum and finite sum|<tuple|10.40|247|Chapter 2
     (Linear Algebra).tm>>
-    <associate|generalized sum and order of families|<tuple|10.62|252|Chapter
+    <associate|generalized sum and order of families|<tuple|10.62|254|Chapter
     2 (Linear Algebra).tm>>
-    <associate|generalized sum and union|<tuple|10.44|246|Chapter 2 (Linear
+    <associate|generalized sum and union|<tuple|10.44|248|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|generalized sum in a field|<tuple|10.58|251|Chapter 2 (Linear
+    <associate|generalized sum in a field|<tuple|10.58|253|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|generalized sum of constants|<tuple|10.57|251|Chapter 2
+    <associate|generalized sum of constants|<tuple|10.57|253|Chapter 2
     (Linear Algebra).tm>>
     <associate|generalized sum of reals and order to
-    0|<tuple|10.61|252|Chapter 2 (Linear Algebra).tm>>
-    <associate|generalized sum of sum's|<tuple|10.52|249|Chapter 2 (Linear
+    0|<tuple|10.61|254|Chapter 2 (Linear Algebra).tm>>
+    <associate|generalized sum of sum's|<tuple|10.52|251|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|generalized sum of the extended
-    reals|<tuple|17.127|735|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|generalized sum of zeroes|<tuple|10.37|244|Chapter 2 (Linear
+    <associate|generalized sum of zeroes|<tuple|10.37|246|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|generalized sum over extented domain|<tuple|10.51|249|Chapter
+    <associate|generalized sum over extented domain|<tuple|10.51|251|Chapter
     2 (Linear Algebra).tm>>
-    <associate|generalized sums and bijections|<tuple|10.43|245|Chapter 2
+    <associate|generalized sums and bijections|<tuple|10.43|247|Chapter 2
     (Linear Algebra).tm>>
-    <associate|generated sigma algebra|<tuple|18.14|771|Chapter 6 (Measures
+    <associate|generated sigma algebra|<tuple|18.17|759|Chapter 6 (Measures
     and integration).tm>>
     <associate|generating basis of a topology|<tuple|11.28|393|Chapter 3
     (Topology).tm>>
-    <associate|generlized sum and scalair product|<tuple|10.125|278|Chapter 2
+    <associate|generlized sum and scalair product|<tuple|10.125|280|Chapter 2
     (Linear Algebra).tm>>
+    <associate|gnerating basis vor the extended
+    reals|<tuple|17.37|684|Chapter 5 (Extended Real Numbers).tm>>
     <associate|gram-schmidt procedure|<tuple|11.119|415|Chapter 3
     (Topology).tm>>
-    <associate|graph of sum of functions|<tuple|17.104|723|Chapter 5
-    (Extended Real Numbers).tm>>
     <associate|group|<tuple|group|93|Chapter 1 (Sets).tm>>
     <associate|group homomorphism and neutral and inverse
     elements|<tuple|3.13|94|Chapter 1 (Sets).tm>>
@@ -5762,118 +6395,117 @@
     <associate|group is not empty|<tuple|3.2|93|Chapter 1 (Sets).tm>>
     <associate|group ismorphism|<tuple|3.14|94|Chapter 1 (Sets).tm>>
     <associate|half open rectangle as intersection of open
-    sets|<tuple|18.42|785|Chapter 6 (Measures and integration).tm>>
+    sets|<tuple|18.51|777|Chapter 6 (Measures and integration).tm>>
     <associate|half spaces are Lebesgue measurable in
-    R^n|<tuple|18.78|811|Chapter 6 (Measures and integration).tm>>
+    R^n|<tuple|18.87|803|Chapter 6 (Measures and integration).tm>>
     <associate|higher order differential and partial
     derivates|<tuple|14.138|635|Chapter 4 (Differentiation).tm>>
     <associate|homeomorphism|<tuple|11.164|426|Chapter 3 (Topology).tm>>
     <associate|homeomorphism on subset|<tuple|11.166|426|Chapter 3
     (Topology).tm>>
-    <associate|hood delta|<tuple|10.271|321|Chapter 2 (Linear Algebra).tm>>
+    <associate|hood delta|<tuple|10.271|322|Chapter 2 (Linear Algebra).tm>>
     <associate|i the substitution|<tuple|14.29|570|Chapter 4
     (Differentiation).tm>>
     <associate|i-H has inverse if norm of H is lower then
     1|<tuple|14.148|637|Chapter 4 (Differentiation).tm>>
-    <associate|i-the coordinate in a basis|<tuple|10.154|283|Chapter 2
+    <associate|i-the coordinate in a basis|<tuple|10.154|285|Chapter 2
     (Linear Algebra).tm>>
     <associate|iQ is a order preserving field
     isomorphism|<tuple|8.42|204|Chapter 1 (Sets).tm>>
     <associate|iR is order preservince|<tuple|9.28|221|Chapter 1 (Sets).tm>>
     <associate|i_N is order preserving|<tuple|6.31|160|Chapter 1 (Sets).tm>>
     <associate|idempotent laws|<tuple|1.25|11|Chapter 1 (Sets).tm>>
-    <associate|identity function|<tuple|2.25|39|Chapter 1 (Sets).tm>>
+    <associate|identity function|<tuple|2.26|39|Chapter 1 (Sets).tm>>
     <associate|identity function is continuous|<tuple|11.141|421|Chapter 3
     (Topology).tm>>
     <associate|identity function is linear and
     continuous|<tuple|11.181|430|Chapter 3 (Topology).tm>>
     <associate|if A is isomorph with a segment of B then B is not isomorph
-    with a sublcass of A|<tuple|2.200|80|Chapter 1 (Sets).tm>>
+    with a sublcass of A|<tuple|2.202|81|Chapter 1 (Sets).tm>>
     <associate|if a family contains 0 it is linear
-    dependent|<tuple|10.147|282|Chapter 2 (Linear Algebra).tm>>
+    dependent|<tuple|10.147|284|Chapter 2 (Linear Algebra).tm>>
     <associate|if a set is equipotent with a proper subset then it is
     infinite|<tuple|5.40|127|Chapter 1 (Sets).tm>>
-    <associate|if f is C^n then D^1f is C^n-1|<tuple|14.67|587|Chapter 4
+    <associate|if f is C^n then D^1f is C^n-1|<tuple|14.67|588|Chapter 4
     (Differentiation).tm>>
     <associate|if successors are equal numbers are
     equal|<tuple|4.15|100|Chapter 1 (Sets).tm>>
     <associate|if z is a zero of p then the conjugate is also a zero of
     p|<tuple|12.30|535|Chapter 3 (Topology).tm>>
     <associate|image (preimage) of union ,
-    intersections|<tuple|2.60|48|Chapter 1 (Sets).tm>>
-    <associate|image restricted function|<tuple|2.63|51|Chapter 1 (Sets).tm>>
+    intersections|<tuple|2.62|49|Chapter 1 (Sets).tm>>
+    <associate|image and inverse image|<tuple|2.4|35|Chapter 1 (Sets).tm>>
+    <associate|image restricted function|<tuple|2.65|51|Chapter 1 (Sets).tm>>
     <associate|image restriction of a function is a
-    function|<tuple|2.43|44|Chapter 1 (Sets).tm>>
+    function|<tuple|2.45|44|Chapter 1 (Sets).tm>>
     <associate|imaginair (real part of generic
-    sum))|<tuple|10.177|291|Chapter 2 (Linear Algebra).tm>>
-    <associate|immediate successor|<tuple|2.192|79|Chapter 1 (Sets).tm>>
+    sum))|<tuple|10.177|292|Chapter 2 (Linear Algebra).tm>>
+    <associate|immediate successor|<tuple|2.194|80|Chapter 1 (Sets).tm>>
     <associate|implicit function theorem|<tuple|14.169|658|Chapter 4
     (Differentiation).tm>>
     <associate|in Banach spaces linear continuous mappings are
     toplinear|<tuple|14.140|635|Chapter 4 (Differentiation).tm>>
     <associate|in a n-dimensional space every n family of independent sets is
-    a basis|<tuple|10.209|299|Chapter 2 (Linear Algebra).tm>>
+    a basis|<tuple|10.209|301|Chapter 2 (Linear Algebra).tm>>
     <associate|in a normed space the sum,product with scalar is
     ontinuous|<tuple|11.174|428|Chapter 3 (Topology).tm>>
     <associate|in a well ordered set every element has a immediate
-    succesor|<tuple|2.193|79|Chapter 1 (Sets).tm>>
+    succesor|<tuple|2.195|80|Chapter 1 (Sets).tm>>
     <associate|in a well-ordered class there is no isomorphism to a initial
-    segment|<tuple|2.199|80|Chapter 1 (Sets).tm>>
-    <associate|in permutation|<tuple|10.65|252|Chapter 2 (Linear
+    segment|<tuple|2.201|81|Chapter 1 (Sets).tm>>
+    <associate|in permutation|<tuple|10.65|254|Chapter 2 (Linear
     Algebra).tm>>
     <associate|inclusion and greatest and least
-    element|<tuple|2.171|71|Chapter 1 (Sets).tm>>
-    <associate|inclusion and sup and inf|<tuple|2.173|71|Chapter 1
+    element|<tuple|2.173|71|Chapter 1 (Sets).tm>>
+    <associate|inclusion and sup and inf|<tuple|2.175|71|Chapter 1
     (Sets).tm>>
-    <associate|inclusion and upper and lower bounds|<tuple|2.172|71|Chapter 1
+    <associate|inclusion and upper and lower bounds|<tuple|2.174|71|Chapter 1
     (Sets).tm>>
-    <associate|inclusion function|<tuple|2.26|39|Chapter 1 (Sets).tm>>
-    <associate|inclusion is partial order|<tuple|2.135|64|Chapter 1
+    <associate|inclusion function|<tuple|2.27|39|Chapter 1 (Sets).tm>>
+    <associate|inclusion is partial order|<tuple|2.137|64|Chapter 1
     (Sets).tm>>
-    <associate|increasing (decreasing) sequence|<tuple|17.64|705|Chapter 5
+    <associate|increasing (decreasing) sequence|<tuple|17.47|689|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|increasing (decreasing) sequence
-    converges|<tuple|17.66|705|Chapter 5 (Extended Real Numbers).tm>>
+    converges|<tuple|17.49|689|Chapter 5 (Extended Real Numbers).tm>>
     <associate|increasing function|<tuple|increasing function|68|Chapter 1
     (Sets).tm>>
     <associate|increasing sequence property|<tuple|5.76|139|Chapter 1
     (Sets).tm>>
     <associate|independence of limit inf and limit sup of start
-    index|<tuple|17.69|707|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|independent set and finite basis|<tuple|10.198|298|Chapter 2
+    index|<tuple|17.52|691|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|independent set and finite basis|<tuple|10.198|299|Chapter 2
     (Linear Algebra).tm>>
-    <associate|index insert|<tuple|10.95|267|Chapter 2 (Linear Algebra).tm>>
-    <associate|induced order relation|<tuple|2.141|66|Chapter 1 (Sets).tm>>
-    <associate|induced outer inner measure|<tuple|18.106|829|Chapter 6
+    <associate|index insert|<tuple|10.95|269|Chapter 2 (Linear Algebra).tm>>
+    <associate|induced order relation|<tuple|2.143|66|Chapter 1 (Sets).tm>>
+    <associate|induced outer inner measure|<tuple|18.114|821|Chapter 6
     (Measures and integration).tm>>
     <associate|induced outer measure is a outer
-    measure|<tuple|18.108|829|Chapter 6 (Measures and integration).tm>>
+    measure|<tuple|18.116|821|Chapter 6 (Measures and integration).tm>>
     <associate|induced topology|<tuple|11.169|427|Chapter 3 (Topology).tm>>
-    <associate|inequality of Abel|<tuple|18.14|740|Chapter 5 (Extended Real
+    <associate|inequality of Abel|<tuple|18.14|726|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|inf sup of xi+yi|<tuple|11.372|477|Chapter 3 (Topology).tm>>
     <associate|inf(S+T)|<tuple|9.48|229|Chapter 1 (Sets).tm>>
-    <associate|inf(S+T)(R)|<tuple|8.48|206|Chapter 1 (Sets).tm>>
+    <associate|inf(S+T)(R)|<tuple|8.48|205|Chapter 1 (Sets).tm>>
     <associate|inf(S+x)|<tuple|9.49|229|Chapter 1 (Sets).tm>>
     <associate|inf(S+x) (R)|<tuple|8.49|206|Chapter 1 (Sets).tm>>
-    <associate|inf, sup in class ordered by inclusion|<tuple|2.170|70|Chapter
+    <associate|inf, sup in class ordered by inclusion|<tuple|2.172|71|Chapter
     1 (Sets).tm>>
     <associate|infinite sets have countable subset|<tuple|5.34|125|Chapter 1
     (Sets).tm>>
     <associate|infinite sum of zeroes|<tuple|11.387|484|Chapter 3
     (Topology).tm>>
-    <associate|infinity can not be a right limit|<tuple|17.45|684|Chapter 5
-    (Extended Real Numbers).tm>>
     <associate|infinum 1/n|<tuple|11.366|475|Chapter 3 (Topology).tm>>
-    <associate|initial segment|<tuple|2.149|67|Chapter 1 (Sets).tm>>
+    <associate|initial segment|<tuple|2.151|67|Chapter 1 (Sets).tm>>
     <associate|injection from a infinite set|<tuple|5.49|131|Chapter 1
     (Sets).tm>>
-    <associate|injective function and preimage/image|<tuple|2.55|47|Chapter 1
+    <associate|injective function and preimage/image|<tuple|2.57|48|Chapter 1
     (Sets).tm>>
     <associate|injective function implies function in other
-    directory|<tuple|2.45|45|Chapter 1 (Sets).tm>>
+    directory|<tuple|2.47|45|Chapter 1 (Sets).tm>>
     <associate|injective functions preserve set
-    difference|<tuple|2.61|49|Chapter 1 (Sets).tm>>
+    difference|<tuple|2.63|50|Chapter 1 (Sets).tm>>
     <associate|inner product and general sum|<tuple|11.98|411|Chapter 3
     (Topology).tm>>
     <associate|inner product norm|<tuple|11.105|412|Chapter 3 (Topology).tm>>
@@ -5881,57 +6513,108 @@
     spaces|<tuple|11.111|414|Chapter 3 (Topology).tm>>
     <associate|inner product of neutral elements|<tuple|11.99|411|Chapter 3
     (Topology).tm>>
-    <associate|inner product on C^n|<tuple|11.97|410|Chapter 3
+    <associate|inner product on C^n|<tuple|11.97|411|Chapter 3
     (Topology).tm>>
     <associate|inner product on R^n|<tuple|11.93|410|Chapter 3
     (Topology).tm>>
     <associate|inner set|<tuple|11.9|390|Chapter 3 (Topology).tm>>
+    <associate|inner/outer regularity|<tuple|18.118|823|Chapter 6 (Measures
+    and integration).tm>>
     <associate|integer numbers|<tuple|6.3|153|Chapter 1 (Sets).tm>>
     <associate|integer numbers form a ring|<tuple|6.10|155|Chapter 1
     (Sets).tm>>
-    <associate|integers embedded in the reals|<tuple|8.52|207|Chapter 1
+    <associate|integers embedded in the reals|<tuple|8.52|206|Chapter 1
     (Sets).tm>>
+    <associate|integrability of function with domain
+    A|<tuple|18.213|875|Chapter 6 (Measures and integration).tm>>
+    <associate|integrability of function with domain X on
+    A|<tuple|18.210|875|Chapter 6 (Measures and integration).tm>>
+    <associate|integrability of non negative functions
+    (2)|<tuple|18.217|877|Chapter 6 (Measures and integration).tm>>
+    <associate|integrability where X is A|<tuple|18.216|877|Chapter 6
+    (Measures and integration).tm>>
+    <associate|integrable functions|<tuple|18.208|875|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|integral difference|<tuple|18.219|878|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|integral of everywhere zero function|<tuple|18.203|870|Chapter
+    6 (Measures and integration).tm>>
     <associate|integral of function to linear
     operators|<tuple|11.447|509|Chapter 3 (Topology).tm>>
-    <associate|interchange infinite and finite sum|<tuple|17.121|729|Chapter
+    <associate|integral of positive function properties
+    (2)|<tuple|18.206|872|Chapter 6 (Measures and integration).tm>>
+    <associate|integral of positive functions (1)|<tuple|18.205|872|Chapter 6
+    (Measures and integration).tm>>
+    <associate|integral of positive functions properties
+    (1)|<tuple|18.204|871|Chapter 6 (Measures and integration).tm>>
+    <associate|integral of positive measurable
+    functions|<tuple|18.199|869|Chapter 6 (Measures and integration).tm>>
+    <associate|integral of sum non negative positive
+    functions|<tuple|18.207|874|Chapter 6 (Measures and integration).tm>>
+    <associate|integral of the null function|<tuple|18.202|870|Chapter 6
+    (Measures and integration).tm>>
+    <associate|integral properties (10)|<tuple|18.220|879|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|integral properties (11)|<tuple|18.221|881|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|integral properties (11.1)|<tuple|18.222|882|Chapter 6
+    (Measures and integration).tm>>
+    <associate|integral properties (12)|<tuple|18.223|883|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|integral properties (14)|<tuple|18.224|883|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|integral properties (15|<tuple|18.226|884|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|integral properties (16)|<tuple|18.227|884|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|integral properties (17)|<tuple|18.228|885|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|integral properties (18)|<tuple|18.229|885|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|interchange infinite and finite sum|<tuple|17.103|715|Chapter
     5 (Extended Real Numbers).tm>>
     <associate|intermediate value theorem|<tuple|11.455|511|Chapter 3
     (Topology).tm>>
-    <associate|intersection of a product|<tuple|2.98|57|Chapter 1 (Sets).tm>>
+    <associate|intersection of a class of Dynkin classes is a Dynkin
+    class|<tuple|18.129|828|Chapter 6 (Measures and integration).tm>>
+    <associate|intersection of a product|<tuple|2.100|57|Chapter 1
+    (Sets).tm>>
     <associate|intersection of balls|<tuple|11.52|398|Chapter 3
     (Topology).tm>>
     <associate|intersection of finite open sets is
     open|<tuple|11.4|389|Chapter 3 (Topology).tm>>
-    <associate|intersection of general product of sets|<tuple|2.97|56|Chapter
+    <associate|intersection of general product of sets|<tuple|2.99|57|Chapter
     1 (Sets).tm>>
     <associate|intersection of sigma algebras is a sigma
-    algebra|<tuple|18.13|771|Chapter 6 (Measures and integration).tm>>
-    <associate|interval identities|<tuple|18.22|773|Chapter 6 (Measures and
+    algebra|<tuple|18.16|759|Chapter 6 (Measures and integration).tm>>
+    <associate|interval identities|<tuple|18.25|760|Chapter 6 (Measures and
     integration).tm>>
-    <associate|introduction of the multilinear norm|<tuple|11.195|435|Chapter
+    <associate|introduction of the multilinear norm|<tuple|11.195|436|Chapter
     3 (Topology).tm>>
     <associate|invariant subspace|<tuple|12.52|542|Chapter 3 (Topology).tm>>
     <associate|inverse and order in integers|<tuple|6.27|159|Chapter 1
     (Sets).tm>>
-    <associate|inverse for multiplication of reals|<tuple|8.23|188|Chapter 1
+    <associate|inverse for multiplication of reals|<tuple|8.23|187|Chapter 1
     (Sets).tm>>
     <associate|inverse function theorem|<tuple|14.159|650|Chapter 4
     (Differentiation).tm>>
     <associate|inverse image of a composition of
-    functions|<tuple|2.57|48|Chapter 1 (Sets).tm>>
+    functions|<tuple|2.59|48|Chapter 1 (Sets).tm>>
+    <associate|inverse image of a restricted function|<tuple|2.30|39|Chapter
+    1 (Sets).tm>>
     <associate|inverse induced topology|<tuple|11.170|427|Chapter 3
     (Topology).tm>>
     <associate|inverse mapping is c-infinite|<tuple|14.150|642|Chapter 4
     (Differentiation).tm>>
     <associate|inverse of a field isomorphism is a field
     isomorphism|<tuple|3.34|98|Chapter 1 (Sets).tm>>
-    <associate|inverse of a homeomorphisme|<tuple|11.167|426|Chapter 3
+    <associate|inverse of a homeomorphisme|<tuple|11.167|427|Chapter 3
     (Topology).tm>>
     <associate|inverse of continuous linear mappings between Banach space is
     continuous|<tuple|11.420|501|Chapter 3 (Topology).tm>>
     <associate|inverse of derivative|<tuple|14.167|656|Chapter 4
     (Differentiation).tm>>
-    <associate|inverse of element in Q in R|<tuple|8.24|188|Chapter 1
+    <associate|inverse of element in Q in R|<tuple|8.24|187|Chapter 1
     (Sets).tm>>
     <associate|inverse of inverse|<tuple|3.6|93|Chapter 1 (Sets).tm>>
     <associate|inverse of inverse of matrix|<tuple|10.313|341|Chapter 2
@@ -5941,45 +6624,37 @@
     <associate|inverse of isometry norm|<tuple|11.88|409|Chapter 3
     (Topology).tm>>
     <associate|inverse of linear isomorphism is a
-    isomorphism|<tuple|10.183|292|Chapter 2 (Linear Algebra).tm>>
+    isomorphism|<tuple|10.183|293|Chapter 2 (Linear Algebra).tm>>
     <associate|inverse of open map is continuous|<tuple|11.145|422|Chapter 3
     (Topology).tm>>
-    <associate|inverse of transposition|<tuple|10.25|240|Chapter 2 (Linear
+    <associate|inverse of transposition|<tuple|10.25|242|Chapter 2 (Linear
     Algebra).tm>>
     <associate|inverse theorem for Df(0)=1X|<tuple|14.160|650|Chapter 4
     (Differentiation).tm>>
     <associate|irrationals|<tuple|8.51|206|Chapter 1 (Sets).tm>>
     <associate|isometry and balls|<tuple|11.63|400|Chapter 3 (Topology).tm>>
     <associate|isometry norm|<tuple|11.87|409|Chapter 3 (Topology).tm>>
-    <associate|isomorph classes|<tuple|2.156|68|Chapter 1 (Sets).tm>>
+    <associate|isomorph classes|<tuple|2.158|68|Chapter 1 (Sets).tm>>
     <associate|isomorphism|<tuple|isomorphism|68|Chapter 1 (Sets).tm>>
     <associate|isomorphism between matrices and linear
-    mappings|<tuple|10.309|340|Chapter 2 (Linear Algebra).tm>>
-    <associate|isomorphism is strictly increasing|<tuple|2.157|68|Chapter 1
+    mappings|<tuple|10.309|341|Chapter 2 (Linear Algebra).tm>>
+    <associate|isomorphism is strictly increasing|<tuple|2.159|68|Chapter 1
     (Sets).tm>>
-    <associate|isomorphism preserves sup and inf|<tuple|2.179|72|Chapter 1
+    <associate|isomorphism preserves sup and inf|<tuple|2.181|73|Chapter 1
     (Sets).tm>>
     <associate|iteration|<tuple|4.21|104|Chapter 1 (Sets).tm>>
     <associate|iteration over a group|<tuple|4.22|105|Chapter 1 (Sets).tm>>
     <associate|lagranges theorem|<tuple|14.98|605|Chapter 4
     (Differentiation).tm>>
     <associate|left (right action)|<tuple|3.16|95|Chapter 1 (Sets).tm>>
-    <associate|left (right) continuity|<tuple|17.56|692|Chapter 5 (Extended
-    Real Numbers).tm>>
-    <associate|left and right limit implies limit|<tuple|17.52|691|Chapter 5
-    (Extended Real Numbers).tm>>
-    <associate|left limit of a function|<tuple|17.46|684|Chapter 5 (Extended
-    Real Numbers).tm>>
-    <associate|left, right limit of sum and scalar
-    product|<tuple|17.51|686|Chapter 5 (Extended Real Numbers).tm>>
     <associate|left,right derivatives|<tuple|14.91|598|Chapter 4
     (Differentiation).tm>>
-    <associate|lemma 1.60|<tuple|10.167|286|Chapter 2 (Linear Algebra).tm>>
-    <associate|lemma 10.209|<tuple|10.270|318|Chapter 2 (Linear Algebra).tm>>
-    <associate|lemma 10.328|<tuple|10.354|359|Chapter 2 (Linear Algebra).tm>>
-    <associate|lemma 10.329|<tuple|10.355|359|Chapter 2 (Linear Algebra).tm>>
-    <associate|lemma 10.330|<tuple|10.356|360|Chapter 2 (Linear Algebra).tm>>
-    <associate|lemma 10.331|<tuple|10.357|360|Chapter 2 (Linear Algebra).tm>>
+    <associate|lemma 1.60|<tuple|10.167|288|Chapter 2 (Linear Algebra).tm>>
+    <associate|lemma 10.209|<tuple|10.270|319|Chapter 2 (Linear Algebra).tm>>
+    <associate|lemma 10.328|<tuple|10.354|360|Chapter 2 (Linear Algebra).tm>>
+    <associate|lemma 10.329|<tuple|10.355|360|Chapter 2 (Linear Algebra).tm>>
+    <associate|lemma 10.330|<tuple|10.356|361|Chapter 2 (Linear Algebra).tm>>
+    <associate|lemma 10.331|<tuple|10.357|361|Chapter 2 (Linear Algebra).tm>>
     <associate|lemma 12.355|<tuple|11.388|484|Chapter 3 (Topology).tm>>
     <associate|lemma 12.356|<tuple|11.389|484|Chapter 3 (Topology).tm>>
     <associate|lemma 12.358|<tuple|11.390|485|Chapter 3 (Topology).tm>>
@@ -5990,142 +6665,132 @@
     (Differentiation).tm>>
     <associate|lemma 14.121|<tuple|14.127|624|Chapter 4
     (Differentiation).tm>>
-    <associate|lemma 15.75|<tuple|17.92|720|Chapter 5 (Extended Real
+    <associate|lemma 15.75|<tuple|17.80|707|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|lemma 17.2|<tuple|18.16|741|Chapter 5 (Extended Real
+    <associate|lemma 17.2|<tuple|18.16|727|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|lemma 17.38|<tuple|18.41|753|Chapter 5 (Extended Real
+    <associate|lemma 17.38|<tuple|18.41|739|Chapter 5 (Extended Real
     Numbers).tm>>
+    <associate|lemma 18.28 set relations|<tuple|18.28|766|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|lemma for almost everywhere monotone convergence
+    theorem|<tuple|18.231|886|Chapter 6 (Measures and integration).tm>>
     <associate|lemma for archimedean of rationals|<tuple|7.26|173|Chapter 1
     (Sets).tm>>
     <associate|lemma for diedonne main value|<tuple|14.118|616|Chapter 4
     (Differentiation).tm>>
-    <associate|lemma for sum of reals|<tuple|8.11|182|Chapter 1 (Sets).tm>>
+    <associate|lemma for sum of reals|<tuple|8.11|181|Chapter 1 (Sets).tm>>
     <associate|lemma to help prove that the reals forms a
     field|<tuple|8.20|185|Chapter 1 (Sets).tm>>
-    <associate|length of interval is increasing|<tuple|18.33|781|Chapter 6
+    <associate|length of interval is increasing|<tuple|18.42|772|Chapter 6
     (Measures and integration).tm>>
-    <associate|lexical order|<tuple|2.143|66|Chapter 1 (Sets).tm>>
-    <associate|lexical order and fully ordering|<tuple|2.148|67|Chapter 1
+    <associate|lexical order|<tuple|2.145|66|Chapter 1 (Sets).tm>>
+    <associate|lexical order and fully ordering|<tuple|2.150|67|Chapter 1
     (Sets).tm>>
-    <associate|lim inf -xn|<tuple|17.72|708|Chapter 5 (Extended Real
+    <associate|lim inf -xn|<tuple|17.58|694|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|lim inf \<less\>= lim sup (R)|<tuple|11.370|476|Chapter 3
     (Topology).tm>>
     <associate|lim inf = lim sup = lim|<tuple|11.371|476|Chapter 3
     (Topology).tm>>
-    <associate|lim inf and lim sup|<tuple|17.68|707|Chapter 5 (Extended Real
+    <associate|lim inf and lim sup|<tuple|17.51|691|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|lim inf and lim sup alternative|<tuple|11.368|475|Chapter 3
     (Topology).tm>>
+    <associate|lim inf and lim sup inequality|<tuple|17.55|692|Chapter 5
+    (Extended Real Numbers).tm>>
     <associate|lim inf and lim sup properties|<tuple|11.373|477|Chapter 3
     (Topology).tm>>
     <associate|lim inf and lim sup real numbers|<tuple|11.367|475|Chapter 3
     (Topology).tm>>
-    <associate|lim inf lim sup basic properties|<tuple|17.70|708|Chapter 5
+    <associate|lim inf lim sup basic properties|<tuple|17.54|692|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|lim inf lim sup constant sequence|<tuple|11.369|476|Chapter 3
     (Topology).tm>>
-    <associate|lim sup xn+x|<tuple|17.71|708|Chapter 5 (Extended Real
+    <associate|lim sup lim inf inequality (1)|<tuple|17.56|692|Chapter 5
+    (Extended Real Numbers).tm>>
+    <associate|lim sup xn+x|<tuple|17.57|693|Chapter 5 (Extended Real
     Numbers).tm>>
+    <associate|liminf and limsup of a constant|<tuple|17.53|692|Chapter 5
+    (Extended Real Numbers).tm>>
     <associate|liminf and limsup properties for sum
-    product|<tuple|17.74|709|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|limit and absolut value|<tuple|17.88|715|Chapter 5 (Extended
+    product|<tuple|17.60|695|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|liminf or limsup of functions|<tuple|18.163|840|Chapter 6
+    (Measures and integration).tm>>
+    <associate|limit and absolut value|<tuple|17.76|702|Chapter 5 (Extended
     Real Numbers).tm>>
     <associate|limit and continuity|<tuple|11.333|466|Chapter 3
     (Topology).tm>>
-    <associate|limit and continuity in the extented
-    reals|<tuple|17.55|692|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|limit and translation of indexes|<tuple|17.80|712|Chapter 5
+    <associate|limit and translation of indexes|<tuple|17.68|698|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|limit at infinity of ascending (descending)
-    functions|<tuple|17.60|701|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|limit for f\<less\>=L or L\<less\>=f|<tuple|17.62|704|Chapter
-    5 (Extended Real Numbers).tm>>
-    <associate|limit for f\<less\>=g|<tuple|17.61|702|Chapter 5 (Extended
-    Real Numbers).tm>>
     <associate|limit in a Hausdorff space is unique|<tuple|11.312|463|Chapter
     3 (Topology).tm>>
-    <associate|limit n|<tuple|17.94|721|Chapter 5 (Extended Real
+    <associate|limit n|<tuple|17.82|708|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|limit of 1/f|<tuple|17.93|720|Chapter 5 (Extended Real
+    <associate|limit n to infinite|<tuple|17.75|702|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|limit of a constant function|<tuple|17.49|685|Chapter 5
-    (Extended Real Numbers).tm>>
+    <associate|limit of 1/f|<tuple|17.81|707|Chapter 5 (Extended Real
+    Numbers).tm>>
     <associate|limit of a convergent sequence is unique in a metric
     space|<tuple|11.316|464|Chapter 3 (Topology).tm>>
-    <associate|limit of a function|<tuple|17.48|685|Chapter 5 (Extended Real
-    Numbers).tm>>
     <associate|limit of a partial function|<tuple|11.47|398|Chapter 3
     (Topology).tm>>
     <associate|limit of a sequence in a metric
     space|<tuple|11.317|464|Chapter 3 (Topology).tm>>
     <associate|limit of a sum|<tuple|11.352|470|Chapter 3 (Topology).tm>>
-    <associate|limit of constant extented real|<tuple|17.79|712|Chapter 5
+    <associate|limit of constant extented real|<tuple|17.67|698|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|limit of constant seqeunce|<tuple|11.322|464|Chapter 3
+    <associate|limit of constant seqeunce|<tuple|11.322|465|Chapter 3
     (Topology).tm>>
-    <associate|limit of constants|<tuple|17.86|713|Chapter 5 (Extended Real
-    Numbers).tm>>
     <associate|limit of finite sums in the extented
-    reals|<tuple|17.102|722|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|limit of functions and sequences|<tuple|17.85|713|Chapter 5
-    (Extended Real Numbers).tm>>
-    <associate|limit of monotone functions|<tuple|17.59|699|Chapter 5
-    (Extended Real Numbers).tm>>
+    reals|<tuple|17.90|709|Chapter 5 (Extended Real Numbers).tm>>
     <associate|limit point|<tuple|11.18|392|Chapter 3 (Topology).tm>>
     <associate|limit point of sequences|<tuple|11.356|471|Chapter 3
     (Topology).tm>>
-    <associate|limit points|<tuple|17.43|684|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|limit points and plus or min infinity|<tuple|17.44|684|Chapter
-    5 (Extended Real Numbers).tm>>
     <associate|limit preserve inequality|<tuple|11.348|469|Chapter 3
     (Topology).tm>>
     <associate|limit preserves inequality (2)|<tuple|11.350|469|Chapter 3
     (Topology).tm>>
     <associate|limit preserves inequality (3)|<tuple|11.349|469|Chapter 3
     (Topology).tm>>
-    <associate|limit xi+x|<tuple|17.81|712|Chapter 5 (Extended Real
+    <associate|limit xi+x|<tuple|17.69|699|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|limit xn+a|<tuple|11.351|470|Chapter 3 (Topology).tm>>
-    <associate|limits at infinity|<tuple|17.54|691|Chapter 5 (Extended Real
-    Numbers).tm>>
-    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.95|721|Chapter 5
+    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.83|708|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|linear combination|<tuple|10.129|279|Chapter 2 (Linear
+    <associate|linear combination|<tuple|10.129|280|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|linear combination of a subspace|<tuple|10.133|279|Chapter 2
+    <associate|linear combination of a subspace|<tuple|10.133|281|Chapter 2
     (Linear Algebra).tm>>
     <associate|linear combination of convergent
     series|<tuple|11.380|480|Chapter 3 (Topology).tm>>
     <associate|linear continuous mappings and +,.|<tuple|11.185|431|Chapter 3
     (Topology).tm>>
     <associate|linear continuous mappings are
-    C^infinity|<tuple|14.75|590|Chapter 4 (Differentiation).tm>>
-    <associate|linear dependency and bijections|<tuple|10.141|281|Chapter 2
+    C^infinity|<tuple|14.75|591|Chapter 4 (Differentiation).tm>>
+    <associate|linear dependency and bijections|<tuple|10.141|282|Chapter 2
     (Linear Algebra).tm>>
-    <associate|linear dependent set|<tuple|10.140|280|Chapter 2 (Linear
+    <associate|linear dependent set|<tuple|10.140|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|linear independence|<tuple|10.139|280|Chapter 2 (Linear
+    <associate|linear independence|<tuple|10.139|282|Chapter 2 (Linear
     Algebra).tm>>
     <associate|linear independent family and their
-    set|<tuple|10.144|281|Chapter 2 (Linear Algebra).tm>>
-    <associate|linear independent set is bijection|<tuple|10.143|281|Chapter
+    set|<tuple|10.144|283|Chapter 2 (Linear Algebra).tm>>
+    <associate|linear independent set is bijection|<tuple|10.143|283|Chapter
     2 (Linear Algebra).tm>>
-    <associate|linear isomorphism|<tuple|10.181|292|Chapter 2 (Linear
+    <associate|linear isomorphism|<tuple|10.181|293|Chapter 2 (Linear
     Algebra).tm>>
     <associate|linear isomorphism between R^n is a
-    homeomorphism|<tuple|11.182|430|Chapter 3 (Topology).tm>>
+    homeomorphism|<tuple|11.182|431|Chapter 3 (Topology).tm>>
     <associate|linear isomrophisms between b=Banach spaces are
     C^oo|<tuple|14.153|649|Chapter 4 (Differentiation).tm>>
-    <associate|linear map applied to 0 gives 0|<tuple|10.175|290|Chapter 2
+    <associate|linear map applied to 0 gives 0|<tuple|10.175|292|Chapter 2
     (Linear Algebra).tm>>
-    <associate|linear mapping|<tuple|10.172|290|Chapter 2 (Linear
+    <associate|linear mapping|<tuple|10.172|291|Chapter 2 (Linear
     Algebra).tm>>
     <associate|linear mapping of a space is a
-    subspace|<tuple|10.216|301|Chapter 2 (Linear Algebra).tm>>
-    <associate|linear mapping of generalized sum|<tuple|10.176|290|Chapter 2
+    subspace|<tuple|10.216|302|Chapter 2 (Linear Algebra).tm>>
+    <associate|linear mapping of generalized sum|<tuple|10.176|292|Chapter 2
     (Linear Algebra).tm>>
     <associate|linear mappins between products of the real spaces are
     continuous|<tuple|11.180|430|Chapter 3 (Topology).tm>>
@@ -6134,19 +6799,19 @@
     <associate|linear open mappings|<tuple|11.192|433|Chapter 3
     (Topology).tm>>
     <associate|linear operator|<tuple|12.34|538|Chapter 3 (Topology).tm>>
-    <associate|linear ordered class|<tuple|2.146|67|Chapter 1 (Sets).tm>>
-    <associate|linear span|<tuple|10.130|279|Chapter 2 (Linear Algebra).tm>>
+    <associate|linear ordered class|<tuple|2.148|67|Chapter 1 (Sets).tm>>
+    <associate|linear span|<tuple|10.130|280|Chapter 2 (Linear Algebra).tm>>
     <associate|linearity of (01,...*,...0n)|<tuple|14.30|571|Chapter 4
     (Differentiation).tm>>
     <associate|linearity of integral|<tuple|11.443|506|Chapter 3
     (Topology).tm>>
-    <associate|linearity of sigma L if L is linear|<tuple|10.224|305|Chapter
+    <associate|linearity of sigma L if L is linear|<tuple|10.224|306|Chapter
     2 (Linear Algebra).tm>>
     <associate|local property of open sets|<tuple|11.5|389|Chapter 3
     (Topology).tm>>
-    <associate|lower half open spaces|<tuple|18.44|786|Chapter 6 (Measures
+    <associate|lower half open spaces|<tuple|18.53|778|Chapter 6 (Measures
     and integration).tm>>
-    <associate|lower half open spaces are open|<tuple|18.45|786|Chapter 6
+    <associate|lower half open spaces are open|<tuple|18.54|778|Chapter 6
     (Measures and integration).tm>>
     <associate|m*m is even then m is even|<tuple|6.57|165|Chapter 1
     (Sets).tm>>
@@ -6157,33 +6822,33 @@
     (Topology).tm>>
     <associate|mapping of N into a finite set|<tuple|5.52|131|Chapter 1
     (Sets).tm>>
-    <associate|mapping of a filterbase|<tuple|11.286|456|Chapter 3
+    <associate|mapping of a filterbase|<tuple|11.286|457|Chapter 3
     (Topology).tm>>
     <associate|mathematical induction|<tuple|4.10|100|Chapter 1 (Sets).tm>>
     <associate|mathematical induction form 2|<tuple|4.77|115|Chapter 1
     (Sets).tm>>
-    <associate|mathematical induction form 3|<tuple|4.78|116|Chapter 1
+    <associate|mathematical induction form 3|<tuple|4.78|115|Chapter 1
     (Sets).tm>>
-    <associate|matrix|<tuple|10.291|333|Chapter 2 (Linear Algebra).tm>>
+    <associate|matrix|<tuple|10.291|334|Chapter 2 (Linear Algebra).tm>>
     <associate|matrix of a adjoint operator|<tuple|11.132|419|Chapter 3
     (Topology).tm>>
     <associate|matrix of a linear mapping|<tuple|10.302|337|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|matrix of a linear operator|<tuple|10.303|337|Chapter 2
+    <associate|matrix of a linear operator|<tuple|10.303|338|Chapter 2
     (Linear Algebra).tm>>
     <associate|matrix of a linear operator in a orthonormal
     basis|<tuple|11.118|415|Chapter 3 (Topology).tm>>
     <associate|matrix of adjoint of a mapping is adjoint of matrix of
-    mapping|<tuple|10.340|350|Chapter 2 (Linear Algebra).tm>>
+    mapping|<tuple|10.340|351|Chapter 2 (Linear Algebra).tm>>
     <associate|matrix of composition of linear
-    mappings|<tuple|10.307|339|Chapter 2 (Linear Algebra).tm>>
-    <associate|matrix of identity mapping|<tuple|10.304|337|Chapter 2 (Linear
+    mappings|<tuple|10.307|340|Chapter 2 (Linear Algebra).tm>>
+    <associate|matrix of identity mapping|<tuple|10.304|338|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|matrix of inverse mapping|<tuple|10.314|341|Chapter 2 (Linear
+    <associate|matrix of inverse mapping|<tuple|10.314|342|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|matrix of linear mapping of powers|<tuple|10.315|341|Chapter 2
+    <associate|matrix of linear mapping of powers|<tuple|10.315|342|Chapter 2
     (Linear Algebra).tm>>
-    <associate|matrix of permutation map|<tuple|10.308|339|Chapter 2 (Linear
+    <associate|matrix of permutation map|<tuple|10.308|340|Chapter 2 (Linear
     Algebra).tm>>
     <associate|matrix of product of scalar and linear
     mapping|<tuple|10.306|339|Chapter 2 (Linear Algebra).tm>>
@@ -6193,57 +6858,105 @@
     (Topology).tm>>
     <associate|max(alfa.A)|<tuple|11.81|408|Chapter 3 (Topology).tm>>
     <associate|maximal (minimal element in a pre-ordered
-    class|<tuple|2.162|69|Chapter 1 (Sets).tm>>
-    <associate|maximal filterbase and mapping|<tuple|11.294|458|Chapter 3
+    class|<tuple|2.164|69|Chapter 1 (Sets).tm>>
+    <associate|maximal filterbase and mapping|<tuple|11.294|459|Chapter 3
     (Topology).tm>>
-    <associate|maximal filterbase characterization|<tuple|11.291|457|Chapter
+    <associate|maximal filterbase characterization|<tuple|11.291|458|Chapter
     3 (Topology).tm>>
-    <associate|maximal, minimal, greatest, least|<tuple|2.163|69|Chapter 1
+    <associate|maximal, minimal, greatest, least|<tuple|2.165|70|Chapter 1
     (Sets).tm>>
-    <associate|maximum and minimum|<tuple|2.165|69|Chapter 1 (Sets).tm>>
+    <associate|maximum and minimum|<tuple|2.167|70|Chapter 1 (Sets).tm>>
     <associate|maximum filterbase and convergence|<tuple|11.293|458|Chapter 3
     (Topology).tm>>
     <associate|maximum of class with bigger elements then another
-    class|<tuple|2.166|70|Chapter 1 (Sets).tm>>
+    class|<tuple|2.168|70|Chapter 1 (Sets).tm>>
+    <associate|maximum of finite set of functions|<tuple|18.166|841|Chapter 6
+    (Measures and integration).tm>>
+    <associate|maximum of measurable functions|<tuple|18.167|841|Chapter 6
+    (Measures and integration).tm>>
+    <associate|maximum of non negative real valued simple
+    functions|<tuple|18.195|866|Chapter 6 (Measures and integration).tm>>
     <associate|mean value theorem (3)|<tuple|14.119|617|Chapter 4
     (Differentiation).tm>>
-    <associate|measurable set alternative definition|<tuple|18.64|796|Chapter
-    6 (Measures and integration).tm>>
-    <associate|measurable sets and null sets|<tuple|18.65|796|Chapter 6
+    <associate|measurability of extension of a
+    function|<tuple|18.214|876|Chapter 6 (Measures and integration).tm>>
+    <associate|measurable extended function space|<tuple|18.145|833|Chapter 6
     (Measures and integration).tm>>
-    <associate|measurable space|<tuple|18.10|769|Chapter 6 (Measures and
+    <associate|measurable function|<tuple|18.137|831|Chapter 6 (Measures and
     integration).tm>>
-    <associate|measure|<tuple|18.52|788|Chapter 6 (Measures and
+    <associate|measurable function and limit|<tuple|18.183|854|Chapter 6
+    (Measures and integration).tm>>
+    <associate|measurable function and restriction|<tuple|18.141|832|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable function as a limit of simple
+    functions|<tuple|18.177|851|Chapter 6 (Measures and integration).tm>>
+    <associate|measurable function condition (1)|<tuple|18.151|835|Chapter 6
+    (Measures and integration).tm>>
+    <associate|measurable function condition (2)|<tuple|18.153|836|Chapter 6
+    (Measures and integration).tm>>
+    <associate|measurable function condition and restricted
+    functions|<tuple|18.142|832|Chapter 6 (Measures and integration).tm>>
+    <associate|measurable function space|<tuple|18.146|833|Chapter 6
+    (Measures and integration).tm>>
+    <associate|measurable functions and generated
+    algebra|<tuple|18.140|832|Chapter 6 (Measures and integration).tm>>
+    <associate|measurable functions properties (1)|<tuple|18.164|840|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable functions properties (2)|<tuple|18.168|842|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable functions properties (3)|<tuple|18.169|843|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable functions properties (4)|<tuple|18.171|844|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable functions properties (5)|<tuple|18.175|849|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable functions properties (6)|<tuple|18.176|849|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable positive functions|<tuple|18.197|869|Chapter 6
+    (Measures and integration).tm>>
+    <associate|measurable set alternative definition|<tuple|18.73|787|Chapter
+    6 (Measures and integration).tm>>
+    <associate|measurable sets and null sets|<tuple|18.74|788|Chapter 6
+    (Measures and integration).tm>>
+    <associate|measurable space|<tuple|18.13|756|Chapter 6 (Measures and
     integration).tm>>
-    <associate|measure is subadditive|<tuple|18.57|789|Chapter 6 (Measures
+    <associate|measure|<tuple|18.61|780|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|measure is subadditive|<tuple|18.66|781|Chapter 6 (Measures
     and integration).tm>>
-    <associate|measure properties (1)|<tuple|18.55|789|Chapter 6 (Measures
+    <associate|measure properties (1)|<tuple|18.64|780|Chapter 6 (Measures
     and integration).tm>>
-    <associate|measure properties (2)|<tuple|18.58|789|Chapter 6 (Measures
+    <associate|measure properties (2)|<tuple|18.67|781|Chapter 6 (Measures
     and integration).tm>>
-    <associate|measureable set|<tuple|18.63|796|Chapter 6 (Measures and
+    <associate|measure regularity lemma|<tuple|18.122|824|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|measureable set|<tuple|18.72|787|Chapter 6 (Measures and
     integration).tm>>
     <associate|metric spaces are Hausdorff|<tuple|11.227|445|Chapter 3
     (Topology).tm>>
     <associate|metric spaces are first countable|<tuple|11.237|446|Chapter 3
     (Topology).tm>>
-    <associate|metric spaces are regular|<tuple|11.230|445|Chapter 3
+    <associate|metric spaces are regular|<tuple|11.230|446|Chapter 3
     (Topology).tm>>
     <associate|metric topology|<tuple|11.54|399|Chapter 3 (Topology).tm>>
-    <associate|minimality of sum of tensor product|<tuple|10.387|375|Chapter
+    <associate|minimality of sum of tensor product|<tuple|10.387|376|Chapter
     2 (Linear Algebra).tm>>
-    <associate|multilinear mapping|<tuple|10.230|306|Chapter 2 (Linear
+    <associate|minimum of two functions|<tuple|18.161|839|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|monotone convergence theorem|<tuple|18.232|888|Chapter 6
+    (Measures and integration).tm>>
+    <associate|multilinear mapping|<tuple|10.230|307|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|multilinear mapping and general sum|<tuple|10.245|309|Chapter
+    <associate|multilinear mapping and general sum|<tuple|10.245|310|Chapter
     2 (Linear Algebra).tm>>
     <associate|multilinear mapping and product of
-    scalars|<tuple|10.241|308|Chapter 2 (Linear Algebra).tm>>
-    <associate|multilinear mapping of sums|<tuple|10.392|379|Chapter 2
+    scalars|<tuple|10.241|309|Chapter 2 (Linear Algebra).tm>>
+    <associate|multilinear mapping of sums|<tuple|10.392|380|Chapter 2
     (Linear Algebra).tm>>
-    <associate|multilinear mappings and permutations|<tuple|10.262|316|Chapter
+    <associate|multilinear mappings and permutations|<tuple|10.262|317|Chapter
     2 (Linear Algebra).tm>>
     <associate|multilinear mappings build from linear
-    mappings|<tuple|10.233|306|Chapter 2 (Linear Algebra).tm>>
+    mappings|<tuple|10.233|308|Chapter 2 (Linear Algebra).tm>>
     <associate|multiplaction of natural numbers|<tuple|4.35|108|Chapter 1
     (Sets).tm>>
     <associate|multiplication of natural numbers is
@@ -6254,12 +6967,12 @@
     (Sets).tm>>
     <associate|n element of successor|<tuple|4.11|100|Chapter 1 (Sets).tm>>
     <associate|n+1 multilinear to n multilinear
-    mapping|<tuple|10.240|307|Chapter 2 (Linear Algebra).tm>>
+    mapping|<tuple|10.240|309|Chapter 2 (Linear Algebra).tm>>
     <associate|n+k=0=\<gtr\>n=k=0 if n,k are natural
     numbers|<tuple|4.60|112|Chapter 1 (Sets).tm>>
     <associate|n+k=m+k=\<gtr\>n=m|<tuple|4.44|109|Chapter 1 (Sets).tm>>
     <associate|n-linear skew symmetric mapping is completely defined on
-    bases|<tuple|10.261|314|Chapter 2 (Linear Algebra).tm>>
+    bases|<tuple|10.261|315|Chapter 2 (Linear Algebra).tm>>
     <associate|n-times differentiability implies m-times
     differentiability|<tuple|14.62|586|Chapter 4 (Differentiation).tm>>
     <associate|n-times differentiability is local|<tuple|14.69|588|Chapter 4
@@ -6276,7 +6989,7 @@
     <associate|n\<less\>=i\<less\>=m=\<gtr\>0\<less\>=i-n\<less\>=m-n|<tuple|4.65|113|Chapter
     1 (Sets).tm>>
     <associate|n\<less\>=m\<less\>=\<gtr\>n+k\<less\>=m+k (natural
-    numbers)|<tuple|4.56|112|Chapter 1 (Sets).tm>>
+    numbers)|<tuple|4.56|111|Chapter 1 (Sets).tm>>
     <associate|n\<less\>=m\<less\>=\<gtr\>n+k=m|<tuple|4.62|113|Chapter 1
     (Sets).tm>>
     <associate|n\<less\>=m=\<gtr\>n.k\<less\>=m.k|<tuple|4.71|114|Chapter 1
@@ -6340,25 +7053,25 @@
     ordered|<tuple|6.41|162|Chapter 1 (Sets).tm>>
     <associate|negative cut|<tuple|8.8|180|Chapter 1 (Sets).tm>>
     <associate|negative of rational cut|<tuple|8.9|181|Chapter 1 (Sets).tm>>
-    <associate|negligibility|<tuple|18.95|825|Chapter 6 (Measures and
+    <associate|negligibility|<tuple|18.104|817|Chapter 6 (Measures and
     integration).tm>>
-    <associate|negligible set properties|<tuple|18.96|825|Chapter 6 (Measures
-    and integration).tm>>
+    <associate|negligible set properties|<tuple|18.105|817|Chapter 6
+    (Measures and integration).tm>>
     <associate|neighborhood|<tuple|11.234|446|Chapter 3 (Topology).tm>>
-    <associate|neighborhood filter base|<tuple|11.270|453|Chapter 3
+    <associate|neighborhood filter base|<tuple|11.270|454|Chapter 3
     (Topology).tm>>
-    <associate|neighborhood filterbase converges|<tuple|11.277|454|Chapter 3
+    <associate|neighborhood filterbase converges|<tuple|11.277|455|Chapter 3
     (Topology).tm>>
     <associate|neighborhood filterbase is a
-    filterbase|<tuple|11.271|453|Chapter 3 (Topology).tm>>
+    filterbase|<tuple|11.271|454|Chapter 3 (Topology).tm>>
     <associate|neutral element for mulitiplication of natural
     numbers|<tuple|4.38|108|Chapter 1 (Sets).tm>>
     <associate|neutral element of naturals|<tuple|4.29|107|Chapter 1
     (Sets).tm>>
     <associate|non trivial vector space has non empty
-    basis|<tuple|10.152|283|Chapter 2 (Linear Algebra).tm>>
+    basis|<tuple|10.152|284|Chapter 2 (Linear Algebra).tm>>
     <associate|non zero determinant functions are multiples of each
-    other|<tuple|10.267|318|Chapter 2 (Linear Algebra).tm>>
+    other|<tuple|10.267|319|Chapter 2 (Linear Algebra).tm>>
     <associate|non zero element is a successor|<tuple|4.17|101|Chapter 1
     (Sets).tm>>
     <associate|norm and absolute value|<tuple|11.70|402|Chapter 3
@@ -6366,7 +7079,7 @@
     <associate|norm in real space|<tuple|8.65|211|Chapter 1 (Sets).tm>>
     <associate|norm mappings are continuous in the produc tof
     reals|<tuple|11.163|426|Chapter 3 (Topology).tm>>
-    <associate|norm of L(x1:..:xn}|<tuple|11.215|441|Chapter 3
+    <associate|norm of L(x1:..:xn}|<tuple|11.215|442|Chapter 3
     (Topology).tm>>
     <associate|norm of a finite sum|<tuple|11.70|402|Chapter 3
     (Topology).tm>>
@@ -6375,35 +7088,38 @@
     <associate|norm of a partition|<tuple|11.429|504|Chapter 3
     (Topology).tm>>
     <associate|norm of composition of linear
-    mapping|<tuple|11.190|432|Chapter 3 (Topology).tm>>
+    mapping|<tuple|11.190|433|Chapter 3 (Topology).tm>>
     <associate|norm of continuous linear mapping
-    (inf)|<tuple|11.183|430|Chapter 3 (Topology).tm>>
+    (inf)|<tuple|11.183|431|Chapter 3 (Topology).tm>>
     <associate|norm of finite product of normed
-    spaces|<tuple|11.82|408|Chapter 3 (Topology).tm>>
+    spaces|<tuple|11.82|409|Chapter 3 (Topology).tm>>
     <associate|norm properties|<tuple|11.70|402|Chapter 3 (Topology).tm>>
     <associate|normal operator|<tuple|12.71|550|Chapter 3 (Topology).tm>>
     <associate|normal operator and its adjoint has same
     norm|<tuple|12.75|551|Chapter 3 (Topology).tm>>
     <associate|normal space|<tuple|11.232|446|Chapter 3 (Topology).tm>>
     <associate|normed space|<tuple|11.68|402|Chapter 3 (Topology).tm>>
-    <associate|normed space of bounded functions|<tuple|11.342|467|Chapter 3
+    <associate|normed space of bounded functions|<tuple|11.342|468|Chapter 3
     (Topology).tm>>
     <associate|normed space properties|<tuple|11.79|407|Chapter 3
     (Topology).tm>>
     <associate|normed topology|<tuple|11.71|402|Chapter 3 (Topology).tm>>
     <associate|norms in R and C are equivalent|<tuple|11.86|409|Chapter 3
     (Topology).tm>>
-    <associate|notation for a tuple|<tuple|2.86|55|Chapter 1 (Sets).tm>>
+    <associate|notation for a tuple|<tuple|2.88|55|Chapter 1 (Sets).tm>>
     <associate|notation for limit of increasing/decreasing
-    sequences|<tuple|17.84|713|Chapter 5 (Extended Real Numbers).tm>>
+    sequences|<tuple|17.72|700|Chapter 5 (Extended Real Numbers).tm>>
     <associate|nth derivate|<tuple|14.56|582|Chapter 4 (Differentiation).tm>>
+    <associate|null function|<tuple|2.11|37|Chapter 1 (Sets).tm>>
+    <associate|null function is measurable|<tuple|18.154|836|Chapter 6
+    (Measures and integration).tm>>
     <associate|number of elements in a finite set|<tuple|5.42|128|Chapter 1
     (Sets).tm>>
     <associate|number of elements of strict subsets of a finite
     set|<tuple|5.46|130|Chapter 1 (Sets).tm>>
     <associate|n\|m=\<gtr\>n\<less\>=\|m\||<tuple|6.47|163|Chapter 1
     (Sets).tm>>
-    <associate|one to one correspondence|<tuple|2.24|39|Chapter 1 (Sets).tm>>
+    <associate|one to one correspondence|<tuple|2.25|39|Chapter 1 (Sets).tm>>
     <associate|open ball|<tuple|11.49|398|Chapter 3 (Topology).tm>>
     <associate|open functions|<tuple|11.144|422|Chapter 3 (Topology).tm>>
     <associate|open functions in metric spaces|<tuple|11.153|424|Chapter 3
@@ -6411,62 +7127,64 @@
     <associate|open intervals in R|<tuple|11.73|403|Chapter 3 (Topology).tm>>
     <associate|open maaping theorem|<tuple|11.419|499|Chapter 3
     (Topology).tm>>
-    <associate|open set in R is union of open sets|<tuple|11.75|404|Chapter 3
+    <associate|open set in R is union of open sets|<tuple|11.75|405|Chapter 3
     (Topology).tm>>
     <associate|open sets and addition scalar
-    multiplication|<tuple|17.40|682|Chapter 5 (Extended Real Numbers).tm>>
+    multiplication|<tuple|17.43|687|Chapter 5 (Extended Real Numbers).tm>>
     <associate|open sets in metric topology|<tuple|11.55|399|Chapter 3
     (Topology).tm>>
+    <associate|open sets in the extended reals
+    condition|<tuple|17.41|686|Chapter 5 (Extended Real Numbers).tm>>
     <associate|open,half open and bounded intervals are
-    different|<tuple|18.21|772|Chapter 6 (Measures and integration).tm>>
-    <associate|open/closed sets relation|<tuple|18.50|787|Chapter 6 (Measures
+    different|<tuple|18.24|760|Chapter 6 (Measures and integration).tm>>
+    <associate|open/closed sets relation|<tuple|18.59|779|Chapter 6 (Measures
     and integration).tm>>
-    <associate|operations on matrices|<tuple|10.294|334|Chapter 2 (Linear
+    <associate|operations on matrices|<tuple|10.294|335|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|order and generalized product|<tuple|10.63|252|Chapter 2
+    <associate|order and generalized product|<tuple|10.63|254|Chapter 2
     (Linear Algebra).tm>>
     <associate|order in real and complex|<tuple|9.25|221|Chapter 1
     (Sets).tm>>
     <associate|order in the reals|<tuple|8.36|201|Chapter 1 (Sets).tm>>
     <associate|order induced by totally order is
-    totally|<tuple|2.147|67|Chapter 1 (Sets).tm>>
+    totally|<tuple|2.149|67|Chapter 1 (Sets).tm>>
     <associate|order of polynomial|<tuple|12.5|514|Chapter 3 (Topology).tm>>
-    <associate|order relation|<tuple|2.134|64|Chapter 1 (Sets).tm>>
+    <associate|order relation|<tuple|2.136|64|Chapter 1 (Sets).tm>>
     <associate|order relation in C|<tuple|9.24|220|Chapter 1 (Sets).tm>>
-    <associate|order relation on rational cuts|<tuple|8.41|204|Chapter 1
+    <associate|order relation on rational cuts|<tuple|8.41|203|Chapter 1
     (Sets).tm>>
     <associate|order relation on rational numbers|<tuple|7.17|172|Chapter 1
     (Sets).tm>>
     <associate|order relation on the integer numbers|<tuple|6.25|158|Chapter
     1 (Sets).tm>>
-    <associate|ordered sequences|<tuple|11.310|462|Chapter 3 (Topology).tm>>
+    <associate|ordered sequences|<tuple|11.310|463|Chapter 3 (Topology).tm>>
     <associate|ordering of a finite set|<tuple|5.53|132|Chapter 1 (Sets).tm>>
     <associate|orthogonal complement|<tuple|12.81|556|Chapter 3
     (Topology).tm>>
     <associate|orthogonal sub space and direct sum|<tuple|12.83|557|Chapter 3
     (Topology).tm>>
-    <associate|orthogonality|<tuple|11.114|414|Chapter 3 (Topology).tm>>
-    <associate|orthonormal basis|<tuple|11.115|414|Chapter 3 (Topology).tm>>
-    <associate|orthonormality|<tuple|11.115|414|Chapter 3 (Topology).tm>>
+    <associate|orthogonality|<tuple|11.114|415|Chapter 3 (Topology).tm>>
+    <associate|orthonormal basis|<tuple|11.115|415|Chapter 3 (Topology).tm>>
+    <associate|orthonormality|<tuple|11.115|415|Chapter 3 (Topology).tm>>
     <associate|orthonormality and basis|<tuple|11.121|417|Chapter 3
     (Topology).tm>>
     <associate|orthonormality and diagonalization|<tuple|12.76|551|Chapter 3
     (Topology).tm>>
     <associate|orthonromal sets are linear
     independent|<tuple|11.117|415|Chapter 3 (Topology).tm>>
-    <associate|outer measure|<tuple|18.60|793|Chapter 6 (Measures and
+    <associate|outer measure|<tuple|18.69|785|Chapter 6 (Measures and
     integration).tm>>
     <associate|outer measure definition on
-    rectangles|<tuple|18.75|810|Chapter 6 (Measures and integration).tm>>
-    <associate|outer measure finite subadditivity|<tuple|18.61|794|Chapter 6
+    rectangles|<tuple|18.84|803|Chapter 6 (Measures and integration).tm>>
+    <associate|outer measure finite subadditivity|<tuple|18.70|785|Chapter 6
     (Measures and integration).tm>>
     <associate|outer measure is translation
-    invariant|<tuple|18.88|820|Chapter 6 (Measures and integration).tm>>
-    <associate|outer measure on R|<tuple|18.71|801|Chapter 6 (Measures and
+    invariant|<tuple|18.97|812|Chapter 6 (Measures and integration).tm>>
+    <associate|outer measure on R|<tuple|18.80|793|Chapter 6 (Measures and
     integration).tm>>
-    <associate|outer measure on rectangles|<tuple|18.76|811|Chapter 6
+    <associate|outer measure on rectangles|<tuple|18.85|803|Chapter 6
     (Measures and integration).tm>>
-    <associate|outermeasure construction|<tuple|18.62|794|Chapter 6 (Measures
+    <associate|outermeasure construction|<tuple|18.71|786|Chapter 6 (Measures
     and integration).tm>>
     <associate|p is continuous|<tuple|12.16|519|Chapter 3 (Topology).tm>>
     <associate|p1 projection|<tuple|5.86|141|Chapter 1 (Sets).tm>>
@@ -6474,30 +7192,30 @@
     <associate|pair|<tuple|1.36|14|Chapter 1 (Sets).tm>>
     <associate|pair of classes|<tuple|1.73|22|Chapter 1 (Sets).tm>>
     <associate|part:Chapter 1 (Sets).tm|<tuple|?|7>>
-    <associate|part:Chapter 2 (Linear Algebra).tm|<tuple|g|235>>
+    <associate|part:Chapter 2 (Linear Algebra).tm|<tuple|g|237>>
     <associate|part:Chapter 3 (Topology).tm|<tuple|c|389>>
     <associate|part:Chapter 4 (Differentiation).tm|<tuple|2|561>>
     <associate|part:Chapter 5 (Extended Real Numbers).tm|<tuple|14.279|663>>
-    <associate|part:Chapter 6 (Measures and integration).tm|<tuple|11|763>>
+    <associate|part:Chapter 6 (Measures and integration).tm|<tuple|11|749>>
     <associate|partial derivate of higher order and partial
     differential|<tuple|14.137|633|Chapter 4 (Differentiation).tm>>
     <associate|partial derivative and partial
-    differential|<tuple|14.39|574|Chapter 4 (Differentiation).tm>>
-    <associate|partial derivative definition|<tuple|14.38|574|Chapter 4
+    differential|<tuple|14.39|575|Chapter 4 (Differentiation).tm>>
+    <associate|partial derivative definition|<tuple|14.38|575|Chapter 4
     (Differentiation).tm>>
-    <associate|partial differential definition|<tuple|14.34|572|Chapter 4
+    <associate|partial differential definition|<tuple|14.34|573|Chapter 4
     (Differentiation).tm>>
     <associate|partial differential of sum and scalar
-    product|<tuple|14.37|573|Chapter 4 (Differentiation).tm>>
+    product|<tuple|14.37|574|Chapter 4 (Differentiation).tm>>
     <associate|partial differential on U|<tuple|14.129|626|Chapter 4
     (Differentiation).tm>>
     <associate|partial function|<tuple|2.1|35|Chapter 1 (Sets).tm>>
-    <associate|partial ordered functions|<tuple|2.136|64|Chapter 1
+    <associate|partial ordered functions|<tuple|2.138|64|Chapter 1
     (Sets).tm>>
-    <associate|partial ordered set|<tuple|2.137|64|Chapter 1 (Sets).tm>>
+    <associate|partial ordered set|<tuple|2.139|65|Chapter 1 (Sets).tm>>
     <associate|partial sum and product is
     continuous|<tuple|11.162|426|Chapter 3 (Topology).tm>>
-    <associate|partition by a equivalence relation|<tuple|2.119|60|Chapter 1
+    <associate|partition by a equivalence relation|<tuple|2.121|60|Chapter 1
     (Sets).tm>>
     <associate|partition covers interval|<tuple|11.424|501|Chapter 3
     (Topology).tm>>
@@ -6506,20 +7224,20 @@
     <associate|partitions and combined parititions|<tuple|11.428|503|Chapter
     3 (Topology).tm>>
     <associate|peano axioms|<tuple|4.16|100|Chapter 1 (Sets).tm>>
-    <associate|permutation|<tuple|10.19|239|Chapter 2 (Linear Algebra).tm>>
-    <associate|permutation and multilinearity|<tuple|10.243|308|Chapter 2
+    <associate|permutation|<tuple|10.19|241|Chapter 2 (Linear Algebra).tm>>
+    <associate|permutation and multilinearity|<tuple|10.243|309|Chapter 2
     (Linear Algebra).tm>>
-    <associate|permutation group|<tuple|10.66|253|Chapter 2 (Linear
+    <associate|permutation group|<tuple|10.66|255|Chapter 2 (Linear
     Algebra).tm>>
     <associate|permutation of a family gives same set as the
-    family|<tuple|2.108|58|Chapter 1 (Sets).tm>>
-    <associate|pi|<tuple|18.48|761|Chapter 5 (Extended Real Numbers).tm>>
+    family|<tuple|2.110|59|Chapter 1 (Sets).tm>>
+    <associate|pi|<tuple|18.48|747|Chapter 5 (Extended Real Numbers).tm>>
     <associate|polynome operator is a abelian semi
     group|<tuple|12.45|540|Chapter 3 (Topology).tm>>
     <associate|polynomial|<tuple|12.1|513|Chapter 3 (Topology).tm>>
-    <associate|power function is continuous|<tuple|11.178|429|Chapter 3
+    <associate|power function is continuous|<tuple|11.178|430|Chapter 3
     (Topology).tm>>
-    <associate|power in a field|<tuple|10.251|311|Chapter 2 (Linear
+    <associate|power in a field|<tuple|10.251|312|Chapter 2 (Linear
     Algebra).tm>>
     <associate|power in the rationals|<tuple|7.14|171|Chapter 1 (Sets).tm>>
     <associate|power in the whole numbers|<tuple|6.19|157|Chapter 1
@@ -6530,7 +7248,7 @@
     continuous|<tuple|11.177|429|Chapter 3 (Topology).tm>>
     <associate|power of a continuous linear mapping is linear and
     continuous|<tuple|14.145|636|Chapter 4 (Differentiation).tm>>
-    <associate|power of a family of sets|<tuple|2.84|54|Chapter 1 (Sets).tm>>
+    <associate|power of a family of sets|<tuple|2.86|54|Chapter 1 (Sets).tm>>
     <associate|power of i|<tuple|9.22|220|Chapter 1 (Sets).tm>>
     <associate|power of product of complex numbers|<tuple|9.8|218|Chapter 1
     (Sets).tm>>
@@ -6540,25 +7258,25 @@
     (Sets).tm>>
     <associate|power of product of reals|<tuple|8.32|200|Chapter 1
     (Sets).tm>>
-    <associate|power series 0|<tuple|18.3|737|Chapter 5 (Extended Real
+    <associate|power series 0|<tuple|18.3|723|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|power set|<tuple|1.62|20|Chapter 1 (Sets).tm>>
-    <associate|pre-order|<tuple|2.132|63|Chapter 1 (Sets).tm>>
-    <associate|pre-order to order|<tuple|2.140|65|Chapter 1 (Sets).tm>>
-    <associate|pre-ordered class|<tuple|2.133|63|Chapter 1 (Sets).tm>>
-    <associate|preimage of a bijection|<tuple|2.51|47|Chapter 1 (Sets).tm>>
-    <associate|preimage of a relation|<tuple|2.122|61|Chapter 1 (Sets).tm>>
-    <associate|pretuple|<tuple|2.76|53|Chapter 1 (Sets).tm>>
+    <associate|pre-order|<tuple|2.134|64|Chapter 1 (Sets).tm>>
+    <associate|pre-order to order|<tuple|2.142|65|Chapter 1 (Sets).tm>>
+    <associate|pre-ordered class|<tuple|2.135|64|Chapter 1 (Sets).tm>>
+    <associate|preimage of a bijection|<tuple|2.53|47|Chapter 1 (Sets).tm>>
+    <associate|preimage of a relation|<tuple|2.124|61|Chapter 1 (Sets).tm>>
+    <associate|pretuple|<tuple|2.78|53|Chapter 1 (Sets).tm>>
     <associate|principle of nested intervals|<tuple|11.265|452|Chapter 3
     (Topology).tm>>
-    <associate|product is continuous and multilinear|<tuple|11.194|434|Chapter
+    <associate|product is continuous and multilinear|<tuple|11.194|435|Chapter
     3 (Topology).tm>>
     <associate|product of Banach spaces is Banach|<tuple|11.337|467|Chapter 3
     (Topology).tm>>
-    <associate|product of a empty family|<tuple|2.81|54|Chapter 1 (Sets).tm>>
+    <associate|product of a empty family|<tuple|2.83|54|Chapter 1 (Sets).tm>>
     <associate|product of a family of groups|<tuple|3.15|94|Chapter 1
     (Sets).tm>>
-    <associate|product of a family of sets condition|<tuple|2.85|54|Chapter 1
+    <associate|product of a family of sets condition|<tuple|2.87|55|Chapter 1
     (Sets).tm>>
     <associate|product of a finite and denumerable set is
     denumerable|<tuple|5.64|136|Chapter 1 (Sets).tm>>
@@ -6566,14 +7284,14 @@
     (Topology).tm>>
     <associate|product of classes and equipotence|<tuple|5.12|118|Chapter 1
     (Sets).tm>>
-    <associate|product of compact subspaces|<tuple|11.297|459|Chapter 3
+    <associate|product of compact subspaces|<tuple|11.297|460|Chapter 3
     (Topology).tm>>
     <associate|product of continuous functions is
     continue|<tuple|11.176|429|Chapter 3 (Topology).tm>>
     <associate|product of countable sets is countable|<tuple|5.70|137|Chapter
     1 (Sets).tm>>
     <associate|product of elements of a finite set and a
-    constant|<tuple|10.54|250|Chapter 2 (Linear Algebra).tm>>
+    constant|<tuple|10.54|252|Chapter 2 (Linear Algebra).tm>>
     <associate|product of empty sets|<tuple|1.39|15|Chapter 1 (Sets).tm>>
     <associate|product of enumerable sets is
     enumerable|<tuple|5.59|135|Chapter 1 (Sets).tm>>
@@ -6587,42 +7305,42 @@
     differentiable|<tuple|14.87|597|Chapter 4 (Differentiation).tm>>
     <associate|product of non zero natural numbers is non
     zero|<tuple|4.69|114|Chapter 1 (Sets).tm>>
-    <associate|product of one baselement and scalar|<tuple|10.279|326|Chapter
+    <associate|product of one baselement and scalar|<tuple|10.279|327|Chapter
     2 (Linear Algebra).tm>>
     <associate|product of polynomial operator|<tuple|12.42|539|Chapter 3
     (Topology).tm>>
     <associate|product of product of sets|<tuple|5.94|144|Chapter 1
     (Sets).tm>>
-    <associate|product of products of sets|<tuple|2.101|57|Chapter 1
+    <associate|product of products of sets|<tuple|2.103|58|Chapter 1
     (Sets).tm>>
     <associate|product of regular operators|<tuple|12.48|541|Chapter 3
     (Topology).tm>>
-    <associate|product of scalars is multilinear|<tuple|10.232|306|Chapter 2
+    <associate|product of scalars is multilinear|<tuple|10.232|307|Chapter 2
     (Linear Algebra).tm>>
     <associate|product of sets as element|<tuple|1.71|21|Chapter 1
     (Sets).tm>>
     <associate|product of sets is a set|<tuple|1.72|21|Chapter 1 (Sets).tm>>
     <associate|product of sets properties|<tuple|1.43|15|Chapter 1
     (Sets).tm>>
-    <associate|product of square roots|<tuple|9.73|233|Chapter 1 (Sets).tm>>
-    <associate|product of square roots (R)|<tuple|8.79|215|Chapter 1
+    <associate|product of square roots|<tuple|9.74|234|Chapter 1 (Sets).tm>>
+    <associate|product of square roots (R)|<tuple|8.80|215|Chapter 1
     (Sets).tm>>
     <associate|product of subclasses|<tuple|1.41|15|Chapter 1 (Sets).tm>>
     <associate|product of subclasses (1)|<tuple|1.42|15|Chapter 1 (Sets).tm>>
     <associate|product of union of sets that is a product of
-    sets|<tuple|5.105|151|Chapter 1 (Sets).tm>>
-    <associate|product of vector spaces|<tuple|10.120|276|Chapter 2 (Linear
+    sets|<tuple|5.105|150|Chapter 1 (Sets).tm>>
+    <associate|product of vector spaces|<tuple|10.120|278|Chapter 2 (Linear
     Algebra).tm>>
     <associate|product topological of subspace
     topologies|<tuple|11.40|397|Chapter 3 (Topology).tm>>
     <associate|product topology|<tuple|11.36|396|Chapter 3 (Topology).tm>>
     <associate|product tuple|<tuple|5.85|141|Chapter 1 (Sets).tm>>
-    <associate|project of generalized sum|<tuple|10.56|250|Chapter 2 (Linear
+    <associate|project of generalized sum|<tuple|10.56|252|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|projection function|<tuple|2.89|55|Chapter 1 (Sets).tm>>
-    <associate|projection function and subsets|<tuple|2.90|55|Chapter 1
+    <associate|projection function|<tuple|2.91|55|Chapter 1 (Sets).tm>>
+    <associate|projection function and subsets|<tuple|2.92|56|Chapter 1
     (Sets).tm>>
-    <associate|projection function is surjective|<tuple|2.91|55|Chapter 1
+    <associate|projection function is surjective|<tuple|2.93|56|Chapter 1
     (Sets).tm>>
     <associate|projection map is continuous and
     linear|<tuple|11.187|432|Chapter 3 (Topology).tm>>
@@ -6630,46 +7348,46 @@
     dimensions|<tuple|14.79|593|Chapter 4 (Differentiation).tm>>
     <associate|projection map is open and open|<tuple|11.148|423|Chapter 3
     (Topology).tm>>
-    <associate|projection of sum|<tuple|10.10|236|Chapter 2 (Linear
+    <associate|projection of sum|<tuple|10.10|238|Chapter 2 (Linear
     Algebra).tm>>
     <associate|proper subclass|<tuple|1.7|7|Chapter 1 (Sets).tm>>
-    <associate|properties of M[\<less\> or \<gtr\>]|<tuple|10.336|349|Chapter
+    <associate|properties of M[\<less\> or \<gtr\>]|<tuple|10.336|350|Chapter
     2 (Linear Algebra).tm>>
     <associate|properties of []n|<tuple|5.88|141|Chapter 1 (Sets).tm>>
-    <associate|properties of a determinant|<tuple|10.282|326|Chapter 2
+    <associate|properties of a determinant|<tuple|10.282|327|Chapter 2
     (Linear Algebra).tm>>
     <associate|properties of a projection map|<tuple|5.93|143|Chapter 1
     (Sets).tm>>
-    <associate|properties of adjoint mapping|<tuple|10.289|332|Chapter 2
+    <associate|properties of adjoint mapping|<tuple|10.289|333|Chapter 2
     (Linear Algebra).tm>>
-    <associate|properties of adjoint matrix|<tuple|10.342|352|Chapter 2
+    <associate|properties of adjoint matrix|<tuple|10.342|353|Chapter 2
     (Linear Algebra).tm>>
-    <associate|properties of algebras|<tuple|18.7|768|Chapter 6 (Measures and
-    integration).tm>>
+    <associate|properties of algebras|<tuple|18.10|755|Chapter 6 (Measures
+    and integration).tm>>
     <associate|properties of classes|<tuple|1.8|7|Chapter 1 (Sets).tm>>
-    <associate|properties of composition of functions|<tuple|2.47|45|Chapter
+    <associate|properties of composition of functions|<tuple|2.49|45|Chapter
     1 (Sets).tm>>
     <associate|properties of composition of linear
-    transformations|<tuple|10.353|359|Chapter 2 (Linear Algebra).tm>>
+    transformations|<tuple|10.353|360|Chapter 2 (Linear Algebra).tm>>
     <associate|properties of composition of mappings|<tuple|1.48|18|Chapter 1
     (Sets).tm>>
-    <associate|properties of compositions|<tuple|2.35|42|Chapter 1
+    <associate|properties of compositions|<tuple|2.37|42|Chapter 1
     (Sets).tm>>
     <associate|properties of domains and ranges of
     graphs|<tuple|1.51|18|Chapter 1 (Sets).tm>>
     <associate|properties of empty set and universal
     class|<tuple|1.27|11|Chapter 1 (Sets).tm>>
-    <associate|properties of exp (1)|<tuple|18.27|747|Chapter 5 (Extended
+    <associate|properties of exp (1)|<tuple|18.27|734|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|properties of exp (2)|<tuple|18.43|756|Chapter 5 (Extended
+    <associate|properties of exp (2)|<tuple|18.43|742|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|properties of general power|<tuple|18.39|752|Chapter 5
+    <associate|properties of general power|<tuple|18.39|738|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|properties of general strict power|<tuple|18.37|750|Chapter 5
+    <associate|properties of general strict power|<tuple|18.37|736|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|properties of image and preimage|<tuple|2.56|48|Chapter 1
+    <associate|properties of image and preimage|<tuple|2.58|48|Chapter 1
     (Sets).tm>>
-    <associate|properties of log|<tuple|18.34|749|Chapter 5 (Extended Real
+    <associate|properties of log|<tuple|18.34|735|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|properties of multiplication of integer
     numbers|<tuple|6.9|155|Chapter 1 (Sets).tm>>
@@ -6685,42 +7403,42 @@
     numbers|<tuple|9.41|225|Chapter 1 (Sets).tm>>
     <associate|properties of positive, negative real numbers
     (R)|<tuple|8.39|202|Chapter 1 (Sets).tm>>
-    <associate|properties of product in a ring|<tuple|10.55|250|Chapter 2
+    <associate|properties of product in a ring|<tuple|10.55|252|Chapter 2
     (Linear Algebra).tm>>
-    <associate|properties of sum and union|<tuple|10.123|277|Chapter 2
+    <associate|properties of sum and union|<tuple|10.123|279|Chapter 2
     (Linear Algebra).tm>>
-    <associate|properties of switch basis|<tuple|10.348|357|Chapter 2 (Linear
+    <associate|properties of switch basis|<tuple|10.348|358|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|properties of the isomorph relation|<tuple|2.160|69|Chapter 1
+    <associate|properties of the isomorph relation|<tuple|2.162|69|Chapter 1
     (Sets).tm>>
     <associate|properties of the limit in the extented
-    reals|<tuple|17.89|715|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.77|702|Chapter 5 (Extended Real Numbers).tm>>
     <associate|properties of the natural numbers embeded in the embedded
     integers|<tuple|9.52|229|Chapter 1 (Sets).tm>>
     <associate|properties of the natural numbers embeded in the embedded
     integers (R)|<tuple|8.58|208|Chapter 1 (Sets).tm>>
     <associate|properties of the orthogonal
     complement|<tuple|12.82|556|Chapter 3 (Topology).tm>>
-    <associate|properties of two filterbases|<tuple|11.280|454|Chapter 3
+    <associate|properties of two filterbases|<tuple|11.280|455|Chapter 3
     (Topology).tm>>
     <associate|properties of \|\|\|\| on C|<tuple|12.15|517|Chapter 3
     (Topology).tm>>
-    <associate|propertiy of finite sum starting at n|<tuple|10.15|237|Chapter
+    <associate|propertiy of finite sum starting at n|<tuple|10.15|239|Chapter
     2 (Linear Algebra).tm>>
     <associate|property for recursing on direct sum of vector
-    spaces|<tuple|10.370|368|Chapter 2 (Linear Algebra).tm>>
+    spaces|<tuple|10.370|369|Chapter 2 (Linear Algebra).tm>>
     <associate|property for recursing on sum of vector
-    spaces|<tuple|10.363|366|Chapter 2 (Linear Algebra).tm>>
+    spaces|<tuple|10.363|367|Chapter 2 (Linear Algebra).tm>>
     <associate|property for recursion on tensor
-    products|<tuple|10.388|376|Chapter 2 (Linear Algebra).tm>>
-    <associate|property of delta hood|<tuple|10.272|322|Chapter 2 (Linear
+    products|<tuple|10.388|377|Chapter 2 (Linear Algebra).tm>>
+    <associate|property of delta hood|<tuple|10.272|323|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|property of inf and sup|<tuple|2.169|70|Chapter 1 (Sets).tm>>
+    <associate|property of inf and sup|<tuple|2.171|71|Chapter 1 (Sets).tm>>
     <associate|property of integral|<tuple|11.444|507|Chapter 3
     (Topology).tm>>
-    <associate|property of kronicker delta|<tuple|10.162|286|Chapter 2
+    <associate|property of kronicker delta|<tuple|10.162|287|Chapter 2
     (Linear Algebra).tm>>
-    <associate|property of stritly less|<tuple|2.139|64|Chapter 1 (Sets).tm>>
+    <associate|property of stritly less|<tuple|2.141|65|Chapter 1 (Sets).tm>>
     <associate|property to determine membership of a
     cut|<tuple|8.3|179|Chapter 1 (Sets).tm>>
     <associate|proposition 12.116|<tuple|14.161|651|Chapter 4
@@ -6730,18 +7448,18 @@
     <associate|proposition 12.120|<tuple|14.165|654|Chapter 4
     (Differentiation).tm>>
     <associate|pseudo metric space|<tuple|11.45|398|Chapter 3 (Topology).tm>>
-    <associate|q-1\<less\>q|<tuple|7.23|172|Chapter 1 (Sets).tm>>
+    <associate|q-1\<less\>q|<tuple|7.23|173|Chapter 1 (Sets).tm>>
     <associate|q\<less\>=r=\<gtr\>-r\<less\>=-q for rational
     numbers|<tuple|7.22|172|Chapter 1 (Sets).tm>>
     <associate|q\<less\>=r=\<gtr\>q+s\<less\>=r+s
     rationals|<tuple|7.19|172|Chapter 1 (Sets).tm>>
     <associate|quotient of polynomal|<tuple|12.24|523|Chapter 3
     (Topology).tm>>
-    <associate|rank and injective or isomorphism|<tuple|10.222|304|Chapter 2
+    <associate|rank and injective or isomorphism|<tuple|10.222|305|Chapter 2
     (Linear Algebra).tm>>
-    <associate|rank of a linear mapping|<tuple|10.217|301|Chapter 2 (Linear
+    <associate|rank of a linear mapping|<tuple|10.217|302|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|rank of a matrix|<tuple|10.301|336|Chapter 2 (Linear
+    <associate|rank of a matrix|<tuple|10.301|337|Chapter 2 (Linear
     Algebra).tm>>
     <associate|rational cuts|<tuple|8.4|179|Chapter 1 (Sets).tm>>
     <associate|rational numbers are dense|<tuple|7.36|175|Chapter 1
@@ -6752,6 +7470,8 @@
     complete|<tuple|8.50|206|Chapter 1 (Sets).tm>>
     <associate|rationals in reals form a subfield|<tuple|8.28|199|Chapter 1
     (Sets).tm>>
+    <associate|real (extended real) measurability|<tuple|18.148|833|Chapter 6
+    (Measures and integration).tm>>
     <associate|real continuous mappings on a compact
     subset|<tuple|11.300|460|Chapter 3 (Topology).tm>>
     <associate|real inner product spaces|<tuple|11.91|410|Chapter 3
@@ -6764,8 +7484,8 @@
     (Topology).tm>>
     <associate|reals embedded in complex numbers|<tuple|9.10|219|Chapter 1
     (Sets).tm>>
-    <associate|reciprocal cut|<tuple|8.21|187|Chapter 1 (Sets).tm>>
-    <associate|rectangle and half open sets|<tuple|18.47|786|Chapter 6
+    <associate|reciprocal cut|<tuple|8.21|186|Chapter 1 (Sets).tm>>
+    <associate|rectangle and half open sets|<tuple|18.56|778|Chapter 6
     (Measures and integration).tm>>
     <associate|recursion|<tuple|4.18|101|Chapter 1 (Sets).tm>>
     <associate|recursion on N step form|<tuple|5.18|120|Chapter 1 (Sets).tm>>
@@ -6786,66 +7506,64 @@
     (Sets).tm>>
     <associate|reflection is unitary|<tuple|12.68|546|Chapter 3
     (Topology).tm>>
-    <associate|regular linear mapping|<tuple|10.174|290|Chapter 2 (Linear
+    <associate|regular linear mapping|<tuple|10.174|292|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|regular linear mapping and kernel|<tuple|10.213|300|Chapter 2
+    <associate|regular linear mapping and kernel|<tuple|10.213|301|Chapter 2
     (Linear Algebra).tm>>
     <associate|regular linear transformation is the composition of elementair
-    transformations|<tuple|10.358|360|Chapter 2 (Linear Algebra).tm>>
-    <associate|regular mapping and map of basis|<tuple|10.214|300|Chapter 2
+    transformations|<tuple|10.358|361|Chapter 2 (Linear Algebra).tm>>
+    <associate|regular mapping and map of basis|<tuple|10.214|301|Chapter 2
     (Linear Algebra).tm>>
-    <associate|regular space|<tuple|11.229|445|Chapter 3 (Topology).tm>>
-    <associate|regularity and non empty open sets|<tuple|11.231|445|Chapter 3
+    <associate|regular space|<tuple|11.229|446|Chapter 3 (Topology).tm>>
+    <associate|regularity and non empty open sets|<tuple|11.231|446|Chapter 3
     (Topology).tm>>
     <associate|reiman sum f\<less\>=g|<tuple|11.432|504|Chapter 3
     (Topology).tm>>
-    <associate|reindexing of a family|<tuple|2.66|51|Chapter 1 (Sets).tm>>
+    <associate|reindexing of a family|<tuple|2.68|51|Chapter 1 (Sets).tm>>
     <associate|relation|<tuple|1.45|18|Chapter 1 (Sets).tm>>
     <associate|relation between linear dependence of family and its
-    set|<tuple|10.145|281|Chapter 2 (Linear Algebra).tm>>
-    <associate|relation between rank and kernel|<tuple|10.220|302|Chapter 2
+    set|<tuple|10.145|283|Chapter 2 (Linear Algebra).tm>>
+    <associate|relation between rank and kernel|<tuple|10.220|303|Chapter 2
     (Linear Algebra).tm>>
-    <associate|relation between rank and surjectivity|<tuple|10.219|302|Chapter
+    <associate|relation between rank and surjectivity|<tuple|10.219|303|Chapter
     2 (Linear Algebra).tm>>
     <associate|relation between real and imaginary
     art|<tuple|9.19|220|Chapter 1 (Sets).tm>>
     <associate|relation classes and intersection and
     union|<tuple|1.20|9|Chapter 1 (Sets).tm>>
-    <associate|relation inf and sup|<tuple|2.176|72|Chapter 1 (Sets).tm>>
-    <associate|relation of well ordered classes|<tuple|2.202|81|Chapter 1
+    <associate|relation inf and sup|<tuple|2.178|72|Chapter 1 (Sets).tm>>
+    <associate|relation of well ordered classes|<tuple|2.204|81|Chapter 1
     (Sets).tm>>
     <associate|relation subclass and union or
     intersection|<tuple|1.21|9|Chapter 1 (Sets).tm>>
     <associate|replace countable untion of sets by disjoint union of
-    sets|<tuple|18.56|789|Chapter 6 (Measures and integration).tm>>
-    <associate|restricted partial function|<tuple|2.28|39|Chapter 1
+    sets|<tuple|18.65|781|Chapter 6 (Measures and integration).tm>>
+    <associate|restricted partial function|<tuple|2.29|39|Chapter 1
     (Sets).tm>>
-    <associate|restriction of a equivalence relation|<tuple|2.123|61|Chapter
+    <associate|restriction of a equivalence relation|<tuple|2.125|61|Chapter
     1 (Sets).tm>>
     <associate|restriction of measure space to a sub sigma
-    algebra|<tuple|18.53|788|Chapter 6 (Measures and integration).tm>>
-    <associate|restriction of restricted function|<tuple|2.29|40|Chapter 1
+    algebra|<tuple|18.62|780|Chapter 6 (Measures and integration).tm>>
+    <associate|restriction of restricted function|<tuple|2.31|40|Chapter 1
     (Sets).tm>>
-    <associate|restriction of transposition|<tuple|10.24|240|Chapter 2
+    <associate|restriction of transposition|<tuple|10.24|242|Chapter 2
     (Linear Algebra).tm>>
     <associate|riemanian sum|<tuple|11.431|504|Chapter 3 (Topology).tm>>
-    <associate|right limit|<tuple|17.47|684|Chapter 5 (Extended Real
-    Numbers).tm>>
     <associate|ring|<tuple|3.20|95|Chapter 1 (Sets).tm>>
     <associate|ring homorphism|<tuple|3.26|97|Chapter 1 (Sets).tm>>
     <associate|ring isomorphism|<tuple|3.28|97|Chapter 1 (Sets).tm>>
     <associate|rolles theorem|<tuple|14.97|605|Chapter 4
     (Differentiation).tm>>
-    <associate|s[i] from s|<tuple|10.74|257|Chapter 2 (Linear Algebra).tm>>
-    <associate|schwartz inequality|<tuple|11.107|412|Chapter 3
+    <associate|s[i] from s|<tuple|10.74|259|Chapter 2 (Linear Algebra).tm>>
+    <associate|schwartz inequality|<tuple|11.107|413|Chapter 3
     (Topology).tm>>
-    <associate|second countable topological space|<tuple|11.238|446|Chapter 3
+    <associate|second countable topological space|<tuple|11.238|447|Chapter 3
     (Topology).tm>>
     <associate|second mean value theorem|<tuple|14.117|616|Chapter 4
     (Differentiation).tm>>
     <associate|section is a initial segement in a well-ordered
-    class|<tuple|2.195|79|Chapter 1 (Sets).tm>>
-    <associate|section of a well ordered class|<tuple|2.194|79|Chapter 1
+    class|<tuple|2.197|80|Chapter 1 (Sets).tm>>
+    <associate|section of a well ordered class|<tuple|2.196|80|Chapter 1
     (Sets).tm>>
     <associate|self adjoint operators have at least one
     eigenvalue|<tuple|12.80|555|Chapter 3 (Topology).tm>>
@@ -6853,11 +7571,11 @@
     (Topology).tm>>
     <associate|self-adjoint operator is normal|<tuple|12.72|550|Chapter 3
     (Topology).tm>>
-    <associate|selfindexed family|<tuple|2.103|58|Chapter 1 (Sets).tm>>
-    <associate|selfindexed family image|<tuple|2.107|58|Chapter 1 (Sets).tm>>
+    <associate|selfindexed family|<tuple|2.105|58|Chapter 1 (Sets).tm>>
+    <associate|selfindexed family image|<tuple|2.109|59|Chapter 1 (Sets).tm>>
     <associate|semi additivity of the length in the
-    reals|<tuple|18.70|800|Chapter 6 (Measures and integration).tm>>
-    <associate|semi-group|<tuple|semi-group|93|Chapter 1 (Sets).tm>>
+    reals|<tuple|18.79|791|Chapter 6 (Measures and integration).tm>>
+    <associate|semi-group|<tuple|3.1|93|Chapter 1 (Sets).tm>>
     <associate|sequence|<tuple|5.75|139|Chapter 1 (Sets).tm>>
     <associate|sequence of classes|<tuple|5.78|139|Chapter 1 (Sets).tm>>
     <associate|sequential compact space|<tuple|11.259|450|Chapter 3
@@ -6865,116 +7583,145 @@
     <associate|serie k-\<gtr\>k+l|<tuple|11.377|480|Chapter 3 (Topology).tm>>
     <associate|serie of positive numbers is
     positive|<tuple|11.382|482|Chapter 3 (Topology).tm>>
-    <associate|series and product with a scalar|<tuple|17.112|725|Chapter 5
+    <associate|series and product with a scalar|<tuple|17.95|711|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|series are increasing|<tuple|17.100|722|Chapter 5 (Extended
+    <associate|series are increasing|<tuple|17.88|709|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|series of extended reals and zeroes|<tuple|17.120|727|Chapter
+    <associate|series of extended reals and zeroes|<tuple|17.102|713|Chapter
     5 (Extended Real Numbers).tm>>
     <associate|series of positive extented reals is
-    increasing|<tuple|17.113|725|Chapter 5 (Extended Real Numbers).tm>>
+    increasing|<tuple|17.94|711|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|series of positive extented reals is increasing
+    (1)|<tuple|17.93|710|Chapter 5 (Extended Real Numbers).tm>>
     <associate|series of positive numbers are
     commutative|<tuple|11.383|482|Chapter 3 (Topology).tm>>
     <associate|set distance functions are lipschitz|<tuple|11.160|425|Chapter
     3 (Topology).tm>>
     <associate|set is included in its set of upper and lower
-    bounds|<tuple|2.175|71|Chapter 1 (Sets).tm>>
-    <associate|set is part of its span|<tuple|10.135|280|Chapter 2 (Linear
+    bounds|<tuple|2.177|72|Chapter 1 (Sets).tm>>
+    <associate|set is part of its span|<tuple|10.135|281|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|set of all subsets is a sigma algebra|<tuple|18.9|769|Chapter
+    <associate|set of all subsets is a Dynkin class|<tuple|18.128|828|Chapter
+    6 (Measures and integration).tm>>
+    <associate|set of all subsets is a sigma algebra|<tuple|18.12|756|Chapter
     6 (Measures and integration).tm>>
     <associate|set of compact sets is a countable compact
-    class|<tuple|11.264|451|Chapter 3 (Topology).tm>>
-    <associate|set of family of elements|<tuple|2.106|58|Chapter 1
+    class|<tuple|11.264|452|Chapter 3 (Topology).tm>>
+    <associate|set of family of elements|<tuple|2.108|58|Chapter 1
     (Sets).tm>>
     <associate|set of matrices is a semigroup|<tuple|10.297|335|Chapter 2
     (Linear Algebra).tm>>
     <associate|set of nxm matrices forms a vector
-    space|<tuple|10.296|334|Chapter 2 (Linear Algebra).tm>>
+    space|<tuple|10.296|335|Chapter 2 (Linear Algebra).tm>>
     <associate|set of rational cuts|<tuple|8.6|180|Chapter 1 (Sets).tm>>
+    <associate|set of simple functions|<tuple|18.188|858|Chapter 6 (Measures
+    and integration).tm>>
     <associate|sets for basis of topology on the extented
-    reals|<tuple|17.35|680|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.36|684|Chapter 5 (Extended Real Numbers).tm>>
     <associate|short notation of the ithe element of a
-    tuple|<tuple|10.227|305|Chapter 2 (Linear Algebra).tm>>
-    <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|769|Chapter
+    tuple|<tuple|10.227|306|Chapter 2 (Linear Algebra).tm>>
+    <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|756|Chapter
     6 (Measures and integration).tm>>
-    <associate|sigma algebra equivalent definitions|<tuple|18.11|769|Chapter
+    <associate|sigma algebra equivalent definitions|<tuple|18.14|756|Chapter
     6 (Measures and integration).tm>>
-    <associate|sigma f|<tuple|10.84|262|Chapter 2 (Linear Algebra).tm>>
-    <associate|sigmaL is multilinear|<tuple|10.257|312|Chapter 2 (Linear
+    <associate|sigma algebras are Dynkin classes|<tuple|18.127|828|Chapter 6
+    (Measures and integration).tm>>
+    <associate|sigma f|<tuple|10.84|264|Chapter 2 (Linear Algebra).tm>>
+    <associate|sigmaL is multilinear|<tuple|10.257|313|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sign of a permutation|<tuple|10.91|267|Chapter 2 (Linear
+    <associate|sign of a permutation|<tuple|10.91|269|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sign of composition of permutations|<tuple|10.93|267|Chapter 2
+    <associate|sign of composition of permutations|<tuple|10.93|269|Chapter 2
     (Linear Algebra).tm>>
-    <associate|sign of inverse permutation|<tuple|10.94|267|Chapter 2 (Linear
+    <associate|sign of inverse permutation|<tuple|10.94|269|Chapter 2 (Linear
     Algebra).tm>>
     <associate|sign(q)=-1=\<gtr\>sign(-q)=1|<tuple|7.16|172|Chapter 1
     (Sets).tm>>
-    <associate|simple associativity|<tuple|10.17|237|Chapter 2 (Linear
+    <associate|simple associativity|<tuple|10.17|239|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|simpler definition of linear span|<tuple|10.134|279|Chapter 2
-    (Linear Algebra).tm>>
-    <associate|singleton family union intersection|<tuple|18.1|765|Chapter 6
+    <associate|simple function|<tuple|18.157|837|Chapter 6 (Measures and
+    integration).tm>>
+    <associate|simple function as a finite sum|<tuple|18.184|854|Chapter 6
     (Measures and integration).tm>>
-    <associate|size of Sn|<tuple|10.76|259|Chapter 2 (Linear Algebra).tm>>
+    <associate|simple function condition (2)|<tuple|18.189|858|Chapter 6
+    (Measures and integration).tm>>
+    <associate|simple function condition (3)|<tuple|18.193|862|Chapter 6
+    (Measures and integration).tm>>
+    <associate|simple function integral extension|<tuple|18.201|870|Chapter 6
+    (Measures and integration).tm>>
+    <associate|simple function integral properties
+    (4)|<tuple|18.196|867|Chapter 6 (Measures and integration).tm>>
+    <associate|simple function properties|<tuple|18.185|854|Chapter 6
+    (Measures and integration).tm>>
+    <associate|simple function properties (1)|<tuple|18.158|837|Chapter 6
+    (Measures and integration).tm>>
+    <associate|simple functions are measurable|<tuple|18.159|838|Chapter 6
+    (Measures and integration).tm>>
+    <associate|simple functions integral (1)|<tuple|18.190|859|Chapter 6
+    (Measures and integration).tm>>
+    <associate|simple functions integral properties
+    (1)|<tuple|18.194|864|Chapter 6 (Measures and integration).tm>>
+    <associate|simpler definition of linear span|<tuple|10.134|281|Chapter 2
+    (Linear Algebra).tm>>
+    <associate|size of Sn|<tuple|10.76|261|Chapter 2 (Linear Algebra).tm>>
     <associate|skew summetry|<tuple|10.255|312|Chapter 2 (Linear
     Algebra).tm>>
     <associate|skew symmetric equivalences|<tuple|10.259|313|Chapter 2
     (Linear Algebra).tm>>
     <associate|skew symmetric functions and determinant
-    functions|<tuple|10.266|318|Chapter 2 (Linear Algebra).tm>>
+    functions|<tuple|10.266|319|Chapter 2 (Linear Algebra).tm>>
     <associate|skew symmetric mappings is only determined by values on the
     basis|<tuple|10.263|317|Chapter 2 (Linear Algebra).tm>>
-    <associate|solution of x^2=z|<tuple|9.75|234|Chapter 1 (Sets).tm>>
+    <associate|solution of x^2=z|<tuple|9.76|234|Chapter 1 (Sets).tm>>
     <associate|some properties of rational numbers|<tuple|7.35|175|Chapter 1
     (Sets).tm>>
     <associate|space of linear continuous maps to a Banach space is
     Banach|<tuple|11.363|473|Chapter 3 (Topology).tm>>
-    <associate|span is a sub space|<tuple|10.132|279|Chapter 2 (Linear
+    <associate|span is a sub space|<tuple|10.132|281|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|span is order preserving|<tuple|10.138|280|Chapter 2 (Linear
+    <associate|span is order preserving|<tuple|10.138|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|span of span is span|<tuple|10.137|280|Chapter 2 (Linear
+    <associate|span of span is span|<tuple|10.137|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|span of subspace|<tuple|10.136|280|Chapter 2 (Linear
+    <associate|span of subspace|<tuple|10.136|282|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|special cases of limits|<tuple|17.57|692|Chapter 5 (Extended
-    Real Numbers).tm>>
     <associate|special cases of the binomial
     constant|<tuple|12.20|520|Chapter 3 (Topology).tm>>
     <associate|special linear function on linear independent
-    set|<tuple|10.180|291|Chapter 2 (Linear Algebra).tm>>
+    set|<tuple|10.180|293|Chapter 2 (Linear Algebra).tm>>
     <associate|splitting of a integral|<tuple|11.446|509|Chapter 3
     (Topology).tm>>
     <associate|square root|<tuple|9.70|233|Chapter 1 (Sets).tm>>
-    <associate|square root (R)|<tuple|8.76|215|Chapter 1 (Sets).tm>>
+    <associate|square root (R)|<tuple|8.76|214|Chapter 1 (Sets).tm>>
     <associate|square root is a strictly increasing
     function|<tuple|9.72|233|Chapter 1 (Sets).tm>>
     <associate|square root is a strictly increasing function
-    (R)|<tuple|8.78|215|Chapter 1 (Sets).tm>>
+    (R)|<tuple|8.78|214|Chapter 1 (Sets).tm>>
     <associate|square root is inverse (1)|<tuple|9.71|233|Chapter 1
     (Sets).tm>>
     <associate|square root of sum is lower the sum of
-    squareroots|<tuple|9.74|233|Chapter 1 (Sets).tm>>
+    squareroots|<tuple|9.75|234|Chapter 1 (Sets).tm>>
     <associate|square root of sum is lower the sum of squareroots
-    (R)|<tuple|8.80|215|Chapter 1 (Sets).tm>>
+    (R)|<tuple|8.81|215|Chapter 1 (Sets).tm>>
+    <associate|square root properties|<tuple|8.79|215|Chapter 1 (Sets).tm>>
+    <associate|square root properties (1)|<tuple|9.73|233|Chapter 1
+    (Sets).tm>>
     <associate|stitching topologies|<tuple|11.29|394|Chapter 3
     (Topology).tm>>
     <associate|strict order in the reals|<tuple|8.35|201|Chapter 1
     (Sets).tm>>
     <associate|strict positive natural numbers|<tuple|4.7|99|Chapter 1
     (Sets).tm>>
-    <associate|strict transposition|<tuple|10.69|253|Chapter 2 (Linear
+    <associate|strict transposition|<tuple|10.69|255|Chapter 2 (Linear
     Algebra).tm>>
     <associate|strictly increasing function|<tuple|strictly increasing
     function|68|Chapter 1 (Sets).tm>>
     <associate|strictly increasing function and
     derivative|<tuple|14.99|605|Chapter 4 (Differentiation).tm>>
     <associate|sub basis topology|<tuple|11.33|395|Chapter 3 (Topology).tm>>
-    <associate|sub determinant function|<tuple|10.329|344|Chapter 2 (Linear
+    <associate|sub determinant function|<tuple|10.329|345|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sub permutation|<tuple|10.21|239|Chapter 2 (Linear
+    <associate|sub permutation|<tuple|10.21|241|Chapter 2 (Linear
     Algebra).tm>>
     <associate|sub-field|<tuple|3.31|98|Chapter 1 (Sets).tm>>
     <associate|sub-group|<tuple|sub-group|94|Chapter 1 (Sets).tm>>
@@ -6991,16 +7738,16 @@
     (Topology).tm>>
     <associate|subserie property|<tuple|11.378|480|Chapter 3 (Topology).tm>>
     <associate|subset of a well-ordered (fully-ordered) set is well-ordered
-    (fully-ordered)|<tuple|2.189|79|Chapter 1 (Sets).tm>>
-    <associate|subset of functions|<tuple|2.73|52|Chapter 1 (Sets).tm>>
+    (fully-ordered)|<tuple|2.191|79|Chapter 1 (Sets).tm>>
+    <associate|subset of functions|<tuple|2.75|52|Chapter 1 (Sets).tm>>
     <associate|subsets of countable sets are
     countable|<tuple|5.66|136|Chapter 1 (Sets).tm>>
     <associate|subsets of denumerable sets are finite or
     denumerable|<tuple|5.55|133|Chapter 1 (Sets).tm>>
     <associate|subsets of finite sets are finite|<tuple|5.36|126|Chapter 1
     (Sets).tm>>
-    <associate|subspace|<tuple|10.110|274|Chapter 2 (Linear Algebra).tm>>
-    <associate|subspace of a vector space|<tuple|10.111|274|Chapter 2 (Linear
+    <associate|subspace|<tuple|10.110|276|Chapter 2 (Linear Algebra).tm>>
+    <associate|subspace of a vector space|<tuple|10.111|276|Chapter 2 (Linear
     Algebra).tm>>
     <associate|subspace topology|<tuple|11.6|390|Chapter 3 (Topology).tm>>
     <associate|subspace topology of a metric space|<tuple|11.57|399|Chapter 3
@@ -7009,8 +7756,8 @@
     (Topology).tm>>
     <associate|subspace topology of subspace topology|<tuple|11.8|390|Chapter
     3 (Topology).tm>>
-    <associate|subtuple|<tuple|2.78|53|Chapter 1 (Sets).tm>>
-    <associate|subtuple of product of sets|<tuple|5.80|140|Chapter 1
+    <associate|subtuple|<tuple|2.80|53|Chapter 1 (Sets).tm>>
+    <associate|subtuple of product of sets|<tuple|5.80|139|Chapter 1
     (Sets).tm>>
     <associate|successor and multiplication|<tuple|4.39|108|Chapter 1
     (Sets).tm>>
@@ -7022,75 +7769,75 @@
     <associate|successor of zero is not zero|<tuple|4.8|99|Chapter 1
     (Sets).tm>>
     <associate|successor set|<tuple|1.67|21|Chapter 1 (Sets).tm>>
-    <associate|sum and inequalities of family|<tuple|10.32|243|Chapter 2
+    <associate|sum and inequalities of family|<tuple|10.32|245|Chapter 2
     (Linear Algebra).tm>>
-    <associate|sum and inequaltiy to 0|<tuple|10.31|243|Chapter 2 (Linear
+    <associate|sum and inequaltiy to 0|<tuple|10.31|245|Chapter 2 (Linear
     Algebra).tm>>
     <associate|sum and order relation in the extented
-    reals|<tuple|17.115|726|Chapter 5 (Extended Real Numbers).tm>>
+    reals|<tuple|17.97|711|Chapter 5 (Extended Real Numbers).tm>>
     <associate|sum and product of rational cuts|<tuple|8.27|198|Chapter 1
     (Sets).tm>>
-    <associate|sum from -infinity to infinity|<tuple|17.126|735|Chapter 5
+    <associate|sum from -infinity to infinity|<tuple|17.108|722|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|sum in a field|<tuple|10.29|243|Chapter 2 (Linear
+    <associate|sum in a field|<tuple|10.29|245|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sum of (01,...,*,...0n)|<tuple|14.31|571|Chapter 4
+    <associate|sum of (01,...,*,...0n)|<tuple|14.31|572|Chapter 4
     (Differentiation).tm>>
-    <associate|sum of C^n functions is C^n|<tuple|14.72|589|Chapter 4
+    <associate|sum of C^n functions is C^n|<tuple|14.72|590|Chapter 4
     (Differentiation).tm>>
-    <associate|sum of constants|<tuple|10.30|243|Chapter 2 (Linear
+    <associate|sum of constants|<tuple|10.30|245|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sum of differences|<tuple|10.27|242|Chapter 2 (Linear
+    <associate|sum of differences|<tuple|10.27|244|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sum of differences (1)|<tuple|10.28|242|Chapter 2 (Linear
+    <associate|sum of differences (1)|<tuple|10.28|244|Chapter 2 (Linear
     Algebra).tm>>
     <associate|sum of differentiable functions|<tuple|14.21|567|Chapter 4
     (Differentiation).tm>>
     <associate|sum of elements of a finite set and a
-    constant|<tuple|10.53|249|Chapter 2 (Linear Algebra).tm>>
-    <associate|sum of extented reals and product|<tuple|17.101|722|Chapter 5
+    constant|<tuple|10.53|251|Chapter 2 (Linear Algebra).tm>>
+    <associate|sum of extented reals and product|<tuple|17.89|709|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|sum of extented reals is indepenent of order the
-    reals|<tuple|17.118|726|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|sum of finite families|<tuple|10.50|249|Chapter 2 (Linear
+    reals|<tuple|17.100|712|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|sum of finite families|<tuple|10.50|251|Chapter 2 (Linear
     Algebra).tm>>
     <associate|sum of linear function and infinite
     sum|<tuple|14.147|637|Chapter 4 (Differentiation).tm>>
     <associate|sum of multilinear functions is
-    multilinear|<tuple|10.244|308|Chapter 2 (Linear Algebra).tm>>
+    multilinear|<tuple|10.244|310|Chapter 2 (Linear Algebra).tm>>
     <associate|sum of n-times differentiable functions is n-times
     differentiable|<tuple|14.71|589|Chapter 4 (Differentiation).tm>>
     <associate|sum of non-empty subspaces is a
-    subspace|<tuple|10.365|366|Chapter 2 (Linear Algebra).tm>>
+    subspace|<tuple|10.365|367|Chapter 2 (Linear Algebra).tm>>
     <associate|sum of positive numbers is positive|<tuple|11.101|411|Chapter
     3 (Topology).tm>>
     <associate|sum of powers theorem|<tuple|11.413|496|Chapter 3
     (Topology).tm>>
-    <associate|sum of scalar products|<tuple|10.124|278|Chapter 2 (Linear
+    <associate|sum of scalar products|<tuple|10.124|279|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sum of series in the extended reals|<tuple|17.114|725|Chapter
-    5 (Extended Real Numbers).tm>>
+    <associate|sum of series in the extended reals|<tuple|17.96|711|Chapter 5
+    (Extended Real Numbers).tm>>
     <associate|sum of sets, product of sets, difference of
-    sets|<tuple|10.122|277|Chapter 2 (Linear Algebra).tm>>
-    <associate|sum of subspaces|<tuple|10.359|366|Chapter 2 (Linear
+    sets|<tuple|10.122|279|Chapter 2 (Linear Algebra).tm>>
+    <associate|sum of subspaces|<tuple|10.359|367|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sum of sum's|<tuple|10.11|236|Chapter 2 (Linear Algebra).tm>>
-    <associate|sum of vector spaces and bijection|<tuple|10.362|366|Chapter 2
+    <associate|sum of sum's|<tuple|10.11|238|Chapter 2 (Linear Algebra).tm>>
+    <associate|sum of vector spaces and bijection|<tuple|10.362|367|Chapter 2
     (Linear Algebra).tm>>
     <associate|sum of vector spaces divided over
-    partitions|<tuple|10.364|366|Chapter 2 (Linear Algebra).tm>>
-    <associate|sum of zeroes|<tuple|10.16|237|Chapter 2 (Linear Algebra).tm>>
-    <associate|sum over product of sets|<tuple|10.47|248|Chapter 2 (Linear
+    partitions|<tuple|10.364|367|Chapter 2 (Linear Algebra).tm>>
+    <associate|sum of zeroes|<tuple|10.16|239|Chapter 2 (Linear Algebra).tm>>
+    <associate|sum over product of sets|<tuple|10.47|250|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|sum with constant vector|<tuple|10.127|278|Chapter 2 (Linear
+    <associate|sum with constant vector|<tuple|10.127|280|Chapter 2 (Linear
     Algebra).tm>>
     <associate|sum,product on (x1:..:xn)|<tuple|11.214|441|Chapter 3
     (Topology).tm>>
     <associate|sup and inf in real and extended
-    reals|<tuple|17.12|668|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|sup of set and sum|<tuple|17.29|677|Chapter 5 (Extended Real
+    reals|<tuple|17.15|670|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|sup of set and sum|<tuple|17.30|681|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|sup of set of bigger elements|<tuple|2.174|71|Chapter 1
+    <associate|sup of set of bigger elements|<tuple|2.176|72|Chapter 1
     (Sets).tm>>
     <associate|sup(A) is element of A in N|<tuple|4.67|114|Chapter 1
     (Sets).tm>>
@@ -7100,37 +7847,39 @@
     <associate|sup(S+x) (R)|<tuple|8.47|205|Chapter 1 (Sets).tm>>
     <associate|sup(a.S)|<tuple|9.45|228|Chapter 1 (Sets).tm>>
     <associate|sup(a.S) (R)|<tuple|8.45|205|Chapter 1 (Sets).tm>>
-    <associate|sup,inf sum of monotone sequences|<tuple|17.73|709|Chapter 5
+    <associate|sup,inf sum of monotone sequences|<tuple|17.59|694|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|super tuple|<tuple|5.81|140|Chapter 1 (Sets).tm>>
-    <associate|support of a family of elements|<tuple|10.33|243|Chapter 2
+    <associate|support of a family of elements|<tuple|10.33|245|Chapter 2
     (Linear Algebra).tm>>
-    <associate|support of family of products|<tuple|10.128|278|Chapter 2
+    <associate|support of family of products|<tuple|10.128|280|Chapter 2
     (Linear Algebra).tm>>
     <associate|supremum (infinum) of increasing (decreasing) sequence is
-    indpendent of start|<tuple|17.82|712|Chapter 5 (Extended Real
+    indpendent of start|<tuple|17.70|699|Chapter 5 (Extended Real
     Numbers).tm>>
+    <associate|supremum of set of real numbers is ververy
+    -ifinity|<tuple|17.13|670|Chapter 5 (Extended Real Numbers).tm>>
     <associate|supremum or infinum of negative
     numbers|<tuple|9.44|228|Chapter 1 (Sets).tm>>
     <associate|supremum or infinum of negative numbers
-    (R)|<tuple|8.44|205|Chapter 1 (Sets).tm>>
-    <associate|supremum, infinum of extented real set|<tuple|17.9|667|Chapter
-    5 (Extended Real Numbers).tm>>
-    <associate|supremum, infinum of real set|<tuple|17.8|667|Chapter 5
+    (R)|<tuple|8.44|204|Chapter 1 (Sets).tm>>
+    <associate|supremum, infinum of extented real
+    set|<tuple|17.11|668|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|supremum, infinum of real set|<tuple|17.10|668|Chapter 5
     (Extended Real Numbers).tm>>
     <associate|surjection f:A-\<gtr\>B B is finite if A is
     finite|<tuple|5.48|131|Chapter 1 (Sets).tm>>
     <associate|surjection f:Sn-\<gtr\>A implies A is
     finite|<tuple|5.47|130|Chapter 1 (Sets).tm>>
     <associate|surjection implies function in other
-    directory|<tuple|2.46|45|Chapter 1 (Sets).tm>>
-    <associate|surjective function and image/preimage|<tuple|2.54|47|Chapter
+    directory|<tuple|2.48|45|Chapter 1 (Sets).tm>>
+    <associate|surjective function and image/preimage|<tuple|2.56|47|Chapter
     1 (Sets).tm>>
     <associate|surjective function implies injective function in opposite
-    direction|<tuple|2.206|83|Chapter 1 (Sets).tm>>
+    direction|<tuple|2.208|83|Chapter 1 (Sets).tm>>
     <associate|surjectivity, injectivity or isomorphism of a linear
     operator|<tuple|12.35|538|Chapter 3 (Topology).tm>>
-    <associate|switch basis linear function|<tuple|10.280|326|Chapter 2
+    <associate|switch basis linear function|<tuple|10.280|327|Chapter 2
     (Linear Algebra).tm>>
     <associate|symmetric matrix|<tuple|11.129|419|Chapter 3 (Topology).tm>>
     <associate|symmetry of L^n+t(X;Y) based on permutations and
@@ -7138,19 +7887,19 @@
     <associate|symmetry of partial differentials|<tuple|14.133|629|Chapter 4
     (Differentiation).tm>>
     <associate|tagged partition|<tuple|11.430|504|Chapter 3 (Topology).tm>>
-    <associate|tensor product exist always|<tuple|10.384|372|Chapter 2
+    <associate|tensor product exist always|<tuple|10.384|373|Chapter 2
     (Linear Algebra).tm>>
     <associate|tensor product of direct sum and
-    space|<tuple|10.395|382|Chapter 2 (Linear Algebra).tm>>
-    <associate|tensor product of direct sums|<tuple|10.397|384|Chapter 2
+    space|<tuple|10.395|383|Chapter 2 (Linear Algebra).tm>>
+    <associate|tensor product of direct sums|<tuple|10.397|385|Chapter 2
     (Linear Algebra).tm>>
-    <associate|tensor product of subspaces|<tuple|10.386|374|Chapter 2
+    <associate|tensor product of subspaces|<tuple|10.386|375|Chapter 2
     (Linear Algebra).tm>>
-    <associate|tensor product of sums|<tuple|10.393|380|Chapter 2 (Linear
+    <associate|tensor product of sums|<tuple|10.393|381|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|tensor product of vector spaces|<tuple|10.382|372|Chapter 2
+    <associate|tensor product of vector spaces|<tuple|10.382|373|Chapter 2
     (Linear Algebra).tm>>
-    <associate|tensor product of vectors|<tuple|10.383|372|Chapter 2 (Linear
+    <associate|tensor product of vectors|<tuple|10.383|373|Chapter 2 (Linear
     Algebra).tm>>
     <associate|terms of a convergent series goes to
     0|<tuple|11.375|479|Chapter 3 (Topology).tm>>
@@ -7162,7 +7911,7 @@
     3 (Topology).tm>>
     <associate|the complex numbers form a field|<tuple|9.2|217|Chapter 1
     (Sets).tm>>
-    <associate|the inner product norm is a norm|<tuple|11.109|413|Chapter 3
+    <associate|the inner product norm is a norm|<tuple|11.109|414|Chapter 3
     (Topology).tm>>
     <associate|the integer numbers are denumerable|<tuple|6.59|165|Chapter 1
     (Sets).tm>>
@@ -7171,7 +7920,7 @@
     <associate|the integer numbers in the reals are
     denumerable|<tuple|8.54|207|Chapter 1 (Sets).tm>>
     <associate|the limit inferior is lower then limit
-    superior|<tuple|17.75|710|Chapter 5 (Extended Real Numbers).tm>>
+    superior|<tuple|17.61|696|Chapter 5 (Extended Real Numbers).tm>>
     <associate|the n-th differential is symmetric|<tuple|14.128|626|Chapter 4
     (Differentiation).tm>>
     <associate|the natural numbers are well-ordered|<tuple|4.52|111|Chapter 1
@@ -7185,7 +7934,7 @@
     <associate|the norm of a continuous linear
     mapping|<tuple|11.184|431|Chapter 3 (Topology).tm>>
     <associate|the positive extented reals form a abelian
-    semi-group|<tuple|17.26|675|Chapter 5 (Extended Real Numbers).tm>>
+    semi-group|<tuple|17.28|680|Chapter 5 (Extended Real Numbers).tm>>
     <associate|the rational numbers form a field|<tuple|7.10|169|Chapter 1
     (Sets).tm>>
     <associate|the rationals in the reals are
@@ -7197,32 +7946,32 @@
     (Sets).tm>>
     <associate|the reals are conditional complete (R)|<tuple|8.43|204|Chapter
     1 (Sets).tm>>
-    <associate|the reals form a vector space|<tuple|10.113|275|Chapter 2
+    <associate|the reals form a vector space|<tuple|10.113|277|Chapter 2
     (Linear Algebra).tm>>
     <associate|the set of Dyadic cubes is
-    denumerable|<tuple|18.40|783|Chapter 6 (Measures and integration).tm>>
+    denumerable|<tuple|18.49|775|Chapter 6 (Measures and integration).tm>>
     <associate|the set of linear continuous mappings is a vector
-    space|<tuple|11.189|432|Chapter 3 (Topology).tm>>
+    space|<tuple|11.189|433|Chapter 3 (Topology).tm>>
     <associate|the set of natural numbers is conditional
     complete|<tuple|4.54|111|Chapter 1 (Sets).tm>>
     <associate|the set of rational numbers forms a abelian group for
-    addition|<tuple|7.7|167|Chapter 1 (Sets).tm>>
+    addition|<tuple|7.7|168|Chapter 1 (Sets).tm>>
     <associate|the set of rationals is not conditional
     complete|<tuple|7.38|176|Chapter 1 (Sets).tm>>
     <associate|the set of reals is fully-ordered|<tuple|9.27|221|Chapter 1
     (Sets).tm>>
-    <associate|the set of reals is fully-ordered (R)|<tuple|8.38|202|Chapter
+    <associate|the set of reals is fully-ordered (R)|<tuple|8.38|201|Chapter
     1 (Sets).tm>>
     <associate|the topology on the extented reals is
-    Hausdorff|<tuple|17.42|683|Chapter 5 (Extended Real Numbers).tm>>
+    Hausdorff|<tuple|17.45|688|Chapter 5 (Extended Real Numbers).tm>>
     <associate|the union of a countable family of countable sets is
-    countable|<tuple|5.74|139|Chapter 1 (Sets).tm>>
+    countable|<tuple|5.74|138|Chapter 1 (Sets).tm>>
     <associate|the union of two countable sets is
-    countable|<tuple|5.63|136|Chapter 1 (Sets).tm>>
+    countable|<tuple|5.63|135|Chapter 1 (Sets).tm>>
     <associate|the union of two denumerable sets is
     denumerable|<tuple|5.61|135|Chapter 1 (Sets).tm>>
     <associate|there exists a non trivial determinant
-    function|<tuple|10.265|317|Chapter 2 (Linear Algebra).tm>>
+    function|<tuple|10.265|318|Chapter 2 (Linear Algebra).tm>>
     <associate|there exists irational numbers|<tuple|9.51|229|Chapter 1
     (Sets).tm>>
     <associate|there is no surjection between A and
@@ -7239,44 +7988,46 @@
     <associate|topology of real complex numbers|<tuple|11.72|403|Chapter 3
     (Topology).tm>>
     <associate|topology of spaces which are isometric in the
-    norm|<tuple|11.90|409|Chapter 3 (Topology).tm>>
-    <associate|topology on extented reals|<tuple|17.36|680|Chapter 5
+    norm|<tuple|11.90|410|Chapter 3 (Topology).tm>>
+    <associate|topology on extented reals|<tuple|17.38|685|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|transfinite induction|<tuple|2.196|80|Chapter 1 (Sets).tm>>
+    <associate|topology on the extended reals
+    properties|<tuple|17.39|685|Chapter 5 (Extended Real Numbers).tm>>
+    <associate|transfinite induction|<tuple|2.198|80|Chapter 1 (Sets).tm>>
     <associate|translate of a polynome|<tuple|12.23|522|Chapter 3
     (Topology).tm>>
-    <associate|translate of index in finite sum|<tuple|10.14|237|Chapter 2
+    <associate|translate of index in finite sum|<tuple|10.14|239|Chapter 2
     (Linear Algebra).tm>>
     <associate|translation of families|<tuple|5.22|121|Chapter 1 (Sets).tm>>
-    <associate|translation properties|<tuple|18.86|819|Chapter 6 (Measures
+    <associate|translation properties|<tuple|18.95|811|Chapter 6 (Measures
     and integration).tm>>
     <associate|translations are C-infinity|<tuple|14.77|591|Chapter 4
     (Differentiation).tm>>
-    <associate|transpose and row and column removal|<tuple|10.331|345|Chapter
+    <associate|transpose and row and column removal|<tuple|10.331|346|Chapter
     2 (Linear Algebra).tm>>
-    <associate|transpose of a matrix|<tuple|10.298|335|Chapter 2 (Linear
+    <associate|transpose of a matrix|<tuple|10.298|336|Chapter 2 (Linear
     Algebra).tm>>
     <associate|transpose of a matrix (1)|<tuple|11.127|419|Chapter 3
     (Topology).tm>>
-    <associate|transpose of a product|<tuple|10.299|335|Chapter 2 (Linear
+    <associate|transpose of a product|<tuple|10.299|336|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|transposition|<tuple|10.23|239|Chapter 2 (Linear Algebra).tm>>
-    <associate|transposition and symmetry (1)|<tuple|10.71|254|Chapter 2
+    <associate|transposition|<tuple|10.23|241|Chapter 2 (Linear Algebra).tm>>
+    <associate|transposition and symmetry (1)|<tuple|10.71|256|Chapter 2
     (Linear Algebra).tm>>
-    <associate|transposition and symmetry (2)|<tuple|10.72|254|Chapter 2
+    <associate|transposition and symmetry (2)|<tuple|10.72|256|Chapter 2
     (Linear Algebra).tm>>
-    <associate|transpositions and symmetry (3)|<tuple|10.73|257|Chapter 2
+    <associate|transpositions and symmetry (3)|<tuple|10.73|259|Chapter 2
     (Linear Algebra).tm>>
     <associate|triangle inequality of inner product
     norm|<tuple|11.108|413|Chapter 3 (Topology).tm>>
-    <associate|trigoniometic properties|<tuple|18.45|756|Chapter 5 (Extended
+    <associate|trigoniometic properties|<tuple|18.45|743|Chapter 5 (Extended
     Real Numbers).tm>>
-    <associate|trigoniometric functions|<tuple|18.44|756|Chapter 5 (Extended
+    <associate|trigoniometric functions|<tuple|18.44|743|Chapter 5 (Extended
     Real Numbers).tm>>
     <associate|tripple of classes|<tuple|1.75|23|Chapter 1 (Sets).tm>>
-    <associate|trivial example of a direct sum|<tuple|10.367|367|Chapter 2
+    <associate|trivial example of a direct sum|<tuple|10.367|368|Chapter 2
     (Linear Algebra).tm>>
-    <associate|trivial example of tensor product|<tuple|10.378|371|Chapter 2
+    <associate|trivial example of tensor product|<tuple|10.378|372|Chapter 2
     (Linear Algebra).tm>>
     <associate|trivial filterbase|<tuple|11.272|454|Chapter 3 (Topology).tm>>
     <associate|trivial skew-symmetric mapping|<tuple|10.256|312|Chapter 2
@@ -7294,21 +8045,21 @@
     classes|<tuple|1.29|13|Chapter 1 (Sets).tm>>
     <associate|union and intersection of emptyset|<tuple|1.94|28|Chapter 1
     (Sets).tm>>
-    <associate|union definition of functions|<tuple|2.32|41|Chapter 1
+    <associate|union definition of functions|<tuple|2.34|41|Chapter 1
     (Sets).tm>>
-    <associate|union intersection union of families|<tuple|18.2|765|Chapter 6
+    <associate|union intersection union of families|<tuple|18.3|751|Chapter 6
     (Measures and integration).tm>>
-    <associate|union of a family of sets is a set|<tuple|2.70|52|Chapter 1
+    <associate|union of a family of sets is a set|<tuple|2.72|52|Chapter 1
     (Sets).tm>>
-    <associate|union of bijections|<tuple|2.44|44|Chapter 1 (Sets).tm>>
+    <associate|union of bijections|<tuple|2.46|44|Chapter 1 (Sets).tm>>
     <associate|union of family of classes|<tuple|1.97|28|Chapter 1
     (Sets).tm>>
     <associate|union of finite denumerable sets is
     denumerable|<tuple|5.62|135|Chapter 1 (Sets).tm>>
     <associate|union of finite family of finite sets (number of
     elements)|<tuple|5.43|128|Chapter 1 (Sets).tm>>
-    <associate|union of functions|<tuple|2.31|40|Chapter 1 (Sets).tm>>
-    <associate|union of general product of sets|<tuple|2.99|57|Chapter 1
+    <associate|union of functions|<tuple|2.33|40|Chapter 1 (Sets).tm>>
+    <associate|union of general product of sets|<tuple|2.101|57|Chapter 1
     (Sets).tm>>
     <associate|union of possible empty sets|<tuple|1.103|33|Chapter 1
     (Sets).tm>>
@@ -7319,17 +8070,17 @@
     <associate|union of two graphs|<tuple|1.53|19|Chapter 1 (Sets).tm>>
     <associate|union of two sets is a set|<tuple|1.61|20|Chapter 1
     (Sets).tm>>
+    <associate|union of union of sets (1)|<tuple|18.5|752|Chapter 6 (Measures
+    and integration).tm>>
     <associate|union,intersection and function between and
-    indexes|<tuple|18.3|765|Chapter 6 (Measures and integration).tm>>
+    indexes|<tuple|18.4|752|Chapter 6 (Measures and integration).tm>>
     <associate|uniqueness and riemansums|<tuple|11.435|505|Chapter 3
     (Topology).tm>>
     <associate|uniqueness of differential|<tuple|14.7|562|Chapter 4
     (Differentiation).tm>>
-    <associate|uniqueness of limits in extented
-    reals|<tuple|17.50|685|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|uniqueness of the Lebesgue measure|<tuple|18.84|817|Chapter 6
+    <associate|uniqueness of the Lebesgue measure|<tuple|18.93|810|Chapter 6
     (Measures and integration).tm>>
-    <associate|unit matrix|<tuple|10.293|334|Chapter 2 (Linear Algebra).tm>>
+    <associate|unit matrix|<tuple|10.293|335|Chapter 2 (Linear Algebra).tm>>
     <associate|unitary operator|<tuple|12.64|544|Chapter 3 (Topology).tm>>
     <associate|unitary operators are self-adjoint|<tuple|12.69|546|Chapter 3
     (Topology).tm>>
@@ -7338,87 +8089,98 @@
     <associate|unordered pair is a element|<tuple|1.32|14|Chapter 1
     (Sets).tm>>
     <associate|upgrade composition of elementair
-    transformation|<tuple|10.352|358|Chapter 2 (Linear Algebra).tm>>
-    <associate|upper bound|<tuple|2.168|70|Chapter 1 (Sets).tm>>
-    <associate|upper bound in pre-ordered set|<tuple|2.167|70|Chapter 1
+    transformation|<tuple|10.352|359|Chapter 2 (Linear Algebra).tm>>
+    <associate|upper bound|<tuple|2.170|70|Chapter 1 (Sets).tm>>
+    <associate|upper bound in pre-ordered set|<tuple|2.169|70|Chapter 1
     (Sets).tm>>
     <associate|upper limit of L in L^n(K;Y)|<tuple|11.216|442|Chapter 3
     (Topology).tm>>
     <associate|upper triangular matrix|<tuple|12.53|542|Chapter 3
     (Topology).tm>>
     <associate|use domain restriction to make a function
-    injective|<tuple|2.232|91|Chapter 1 (Sets).tm>>
-    <associate|usefull properties of open sets in the extented reals
-    |<tuple|17.58|698|Chapter 5 (Extended Real Numbers).tm>>
-    <associate|vector fields and 0|<tuple|10.108|274|Chapter 2 (Linear
+    injective|<tuple|2.234|91|Chapter 1 (Sets).tm>>
+    <associate|vector fields and 0|<tuple|10.108|276|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|vector space|<tuple|10.107|273|Chapter 2 (Linear Algebra).tm>>
-    <associate|vector space basis and expansion|<tuple|10.153|283|Chapter 2
+    <associate|vector space|<tuple|10.107|275|Chapter 2 (Linear Algebra).tm>>
+    <associate|vector space basis and expansion|<tuple|10.153|285|Chapter 2
     (Linear Algebra).tm>>
     <associate|vector space of functions to a vector
-    space|<tuple|10.115|275|Chapter 2 (Linear Algebra).tm>>
+    space|<tuple|10.115|277|Chapter 2 (Linear Algebra).tm>>
     <associate|vector space of multilinear continuous
     mappings|<tuple|11.198|437|Chapter 3 (Topology).tm>>
-    <associate|vector space of power of field|<tuple|10.118|276|Chapter 2
+    <associate|vector space of power of field|<tuple|10.118|278|Chapter 2
     (Linear Algebra).tm>>
-    <associate|volume in R^n|<tuple|18.32|781|Chapter 6 (Measures and
+    <associate|volume in R^n|<tuple|18.41|772|Chapter 6 (Measures and
     integration).tm>>
-    <associate|volume is increasing|<tuple|18.34|781|Chapter 6 (Measures and
+    <associate|volume is increasing|<tuple|18.43|772|Chapter 6 (Measures and
     integration).tm>>
-    <associate|volume is subadditive|<tuple|18.74|805|Chapter 6 (Measures and
+    <associate|volume is subadditive|<tuple|18.83|797|Chapter 6 (Measures and
     integration).tm>>
-    <associate|volume is translation invariant|<tuple|18.87|820|Chapter 6
+    <associate|volume is translation invariant|<tuple|18.96|812|Chapter 6
     (Measures and integration).tm>>
-    <associate|volume of a rectangle|<tuple|18.31|781|Chapter 6 (Measures and
+    <associate|volume of a rectangle|<tuple|18.40|772|Chapter 6 (Measures and
     integration).tm>>
-    <associate|way to test equality|<tuple|10.179|291|Chapter 2 (Linear
+    <associate|way to test equality|<tuple|10.179|293|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|well ordered class|<tuple|2.188|79|Chapter 1 (Sets).tm>>
+    <associate|well ordered class|<tuple|2.190|79|Chapter 1 (Sets).tm>>
     <associate|well ordering implies conditional
-    completeness|<tuple|2.191|79|Chapter 1 (Sets).tm>>
-    <associate|well ordering implies fully ordering|<tuple|2.190|79|Chapter 1
+    completeness|<tuple|2.193|80|Chapter 1 (Sets).tm>>
+    <associate|well ordering implies fully ordering|<tuple|2.192|79|Chapter 1
     (Sets).tm>>
-    <associate|well-ordering theorem|<tuple|2.225|87|Chapter 1 (Sets).tm>>
+    <associate|well-ordering theorem|<tuple|2.227|88|Chapter 1 (Sets).tm>>
     <associate|whole numbers are fully-ordered|<tuple|6.26|158|Chapter 1
     (Sets).tm>>
     <associate|whole numbers embedded in the reals from a sub
-    ring|<tuple|8.53|207|Chapter 1 (Sets).tm>>
+    ring|<tuple|8.53|206|Chapter 1 (Sets).tm>>
     <associate|whole numbers is union of positive and negative
     numbers|<tuple|6.24|158|Chapter 1 (Sets).tm>>
     <associate|writing a countable family of sets as a disjoint familly of
-    sets|<tuple|18.4|766|Chapter 6 (Measures and integration).tm>>
+    sets|<tuple|18.6|753|Chapter 6 (Measures and integration).tm>>
     <associate|x+t.y is C infinite|<tuple|14.94|604|Chapter 4
     (Differentiation).tm>>
     <associate|x+t.y is C1 (1)|<tuple|14.60|585|Chapter 4
     (Differentiation).tm>>
-    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.19|671|Chapter 5 (Extended Real
+    <associate|x+z=y+z=\<gtr\>x=y|<tuple|17.24|677|Chapter 5 (Extended Real
     Numbers).tm>>
-    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.17|670|Chapter 5
+    <associate|x.y \<less\> 0 or \<gtr\> 0|<tuple|17.20|671|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.18|670|Chapter 5
+    <associate|x\<less\>=y=\<gtr\>-y\<less\>=-x|<tuple|17.22|675|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.20|673|Chapter 5
+    <associate|x\<less\>=y=\<gtr\>lx\<less\>=ly|<tuple|17.23|676|Chapter 5
     (Extended Real Numbers).tm>>
+    <associate|x\<less\>=y=\<gtr\>x+z\<less\>=y+z|<tuple|17.25|679|Chapter 5
+    (Extended Real Numbers).tm>>
+    <associate|x\<less\>y=\<gtr\>x+1/n\<less\>y|<tuple|17.8|667|Chapter 5
+    (Extended Real Numbers).tm>>
+    <associate|x\<less\>y=\<gtr\>x\<less\>\<gtr\>inf and
+    y\<less\>\<gtr\>-inf|<tuple|17.7|667|Chapter 5 (Extended Real
+    Numbers).tm>>
     <associate|x^n\<gtr\>n if x\<gtr\>1|<tuple|9.64|232|Chapter 1 (Sets).tm>>
-    <associate|x^n\<gtr\>n if x\<gtr\>1 (R)|<tuple|8.72|213|Chapter 1
+    <associate|x^n\<gtr\>n if x\<gtr\>1 (R)|<tuple|8.72|212|Chapter 1
     (Sets).tm>>
-    <associate|x^p is continuous|<tuple|18.40|753|Chapter 5 (Extended Real
+    <associate|x^p is continuous|<tuple|18.40|739|Chapter 5 (Extended Real
     Numbers).tm>>
     <associate|xn\<less\>yn=\<gtr\>limxn\<less\>limyn|<tuple|11.354|470|Chapter
     3 (Topology).tm>>
     <associate|y^n\<less\>x^n|<tuple|9.68|233|Chapter 1 (Sets).tm>>
-    <associate|zero and convergentie domain|<tuple|18.5|737|Chapter 5
+    <associate|zero and convergentie domain|<tuple|18.5|723|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|zero dimensional vector space|<tuple|10.203|298|Chapter 2
+    <associate|zero dimensional vector space|<tuple|10.203|300|Chapter 2
     (Linear Algebra).tm>>
     <associate|zero sum in C|<tuple|9.29|221|Chapter 1 (Sets).tm>>
     <associate|zero sum in R|<tuple|9.42|227|Chapter 1 (Sets).tm>>
-    <associate|zero sum in R (R)|<tuple|8.40|204|Chapter 1 (Sets).tm>>
-    <associate|zeroes in a tensorspace|<tuple|10.379|371|Chapter 2 (Linear
+    <associate|zero sum in R (R)|<tuple|8.40|203|Chapter 1 (Sets).tm>>
+    <associate|zeroes in a tensorspace|<tuple|10.379|372|Chapter 2 (Linear
     Algebra).tm>>
-    <associate|zeroes of cos has a minimum|<tuple|18.47|760|Chapter 5
+    <associate|zeroes of cos has a minimum|<tuple|18.47|747|Chapter 5
     (Extended Real Numbers).tm>>
-    <associate|{n,..,m}|<tuple|10.2|235|Chapter 2 (Linear Algebra).tm>>
+    <associate|{n,..,m}|<tuple|10.2|237|Chapter 2 (Linear Algebra).tm>>
+    <associate|{x\<less\>f} properties|<tuple|18.150|834|Chapter 6 (Measures
+    and integration).tm>>
+    <associate|{x\<less\>f} properties (1)|<tuple|18.152|835|Chapter 6
+    (Measures and integration).tm>>
+    <associate|\|f(x)\| as f+ f-|<tuple|18.174|846|Chapter 6 (Measures and
+    integration).tm>>
     <associate|\|\|L\|\| depends only on the
     topology|<tuple|11.191|433|Chapter 3 (Topology).tm>>
     <associate|~[(n,m)]=~[(n+k,m+k)]|<tuple|6.4|153|Chapter 1 (Sets).tm>>
@@ -8434,111 +9196,133 @@
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|<wide|\<bbb-R\>|\<bar\>>>>>|<pageref|auto-636>>
 
-      <tuple|<tuple|topology on <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>>|<pageref|auto-637>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>>|<pageref|auto-637>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-T\><rsub|<wide|\<bbb-R\>|\<bar\>>>>>|<pageref|auto-638>>
+      <tuple|<tuple|increasing sequence>|<pageref|auto-639>>
 
-      <tuple|<tuple|left limit point>|<pageref|auto-640>>
-
-      <tuple|<tuple|right limit point>|<pageref|auto-641>>
-
-      <tuple|<tuple|limit point>|<pageref|auto-642>>
-
-      <tuple|<tuple|left limit of a function>|<pageref|auto-643>>
-
-      <tuple|<tuple|right limit of a function>|<pageref|auto-644>>
-
-      <tuple|<tuple|limit of a function>|<pageref|auto-645>>
-
-      <tuple|<tuple|left continuity>|<pageref|auto-646>>
-
-      <tuple|<tuple|right continuity>|<pageref|auto-647>>
-
-      <tuple|<tuple|increasing sequence>|<pageref|auto-649>>
-
-      <tuple|<tuple|decreasing sequence>|<pageref|auto-650>>
+      <tuple|<tuple|decreasing sequence>|<pageref|auto-640>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<below|lim
-      inf|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-651>>
+      inf|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-641>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<below|lim
-      sup|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-652>>
+      sup|i\<rightarrow\>\<infty\>> x<rsub|i>>>|<pageref|auto-642>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>>|<pageref|auto-654>>
+      <tuple|<tuple|<with|mode|<quote|math>|<big|sum><rsub|i=-\<infty\>><rsup|\<infty\>>x<rsub|i>>>|<pageref|auto-644>>
 
-      <tuple|<tuple|convergence domain>|<pageref|auto-659>>
+      <tuple|<tuple|convergence domain>|<pageref|auto-648>>
 
-      <tuple|<tuple|absolute convergence domain>|<pageref|auto-660>>
+      <tuple|<tuple|absolute convergence domain>|<pageref|auto-649>>
 
-      <tuple|<tuple|convergence radius>|<pageref|auto-661>>
+      <tuple|<tuple|convergence radius>|<pageref|auto-650>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>>|<pageref|auto-662>>
+      <tuple|<tuple|<with|mode|<quote|math>|R<rsub|<around*|{|a<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>>>|<pageref|auto-651>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>>|<pageref|auto-664>>
+      <tuple|<tuple|<with|mode|<quote|math>|exp<around*|(|z|)>>>|<pageref|auto-653>>
 
-      <tuple|<tuple|Euler's number>|<pageref|auto-666>>
+      <tuple|<tuple|Euler's number>|<pageref|auto-655>>
 
-      <tuple|<tuple|Napierian logarithm>|<pageref|auto-667>>
+      <tuple|<tuple|Napierian logarithm>|<pageref|auto-656>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|log>>|<pageref|auto-668>>
+      <tuple|<tuple|<with|mode|<quote|math>|log>>|<pageref|auto-657>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>>|<pageref|auto-669>>
+      <tuple|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>>|<pageref|auto-658>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>>|<pageref|auto-670>>
+      <tuple|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>>|<pageref|auto-659>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<pi\>>>|<pageref|auto-671>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<pi\>>>|<pageref|auto-660>>
 
-      <tuple|<tuple|algebra>|<pageref|auto-675>>
+      <tuple|<tuple|algebra>|<pageref|auto-664>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra>|<pageref|auto-676>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra>|<pageref|auto-665>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>>|<pageref|auto-677>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>>|<pageref|auto-666>>
 
-      <tuple|<tuple|Borel algebra>|<pageref|auto-678>>
+      <tuple|<tuple|Borel algebra>|<pageref|auto-667>>
 
-      <tuple|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>>|<pageref|auto-679>>
+      <tuple|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>>|<pageref|auto-668>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-R\><rsup|n>>>|<pageref|auto-682>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-R\><rsup|n>>>|<pageref|auto-672>>
 
-      <tuple|<tuple|Dyadic cubes>|<pageref|auto-683>>
+      <tuple|<tuple|Dyadic cubes>|<pageref|auto-673>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n><rsub|m>>>|<pageref|auto-684>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n><rsub|m>>>|<pageref|auto-674>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n>>>|<pageref|auto-685>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n>>>|<pageref|auto-675>>
 
-      <tuple|<tuple|lower half open space>|<pageref|auto-686>>
+      <tuple|<tuple|lower half open space>|<pageref|auto-676>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|]|-\<infty\>,a|[><rsub|i>>>|<pageref|auto-687>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|]|-\<infty\>,a|[><rsub|i>>>|<pageref|auto-677>>
 
-      <tuple|<tuple|Lower half spaces>|<pageref|auto-688>>
+      <tuple|<tuple|Lower half spaces>|<pageref|auto-678>>
 
-      <tuple|<tuple|Carathéodory theorem>|<pageref|auto-692>>
+      <tuple|<tuple|Carathéodory theorem>|<pageref|auto-682>>
 
-      <tuple|<tuple|Lebesgue measurable space>|<pageref|auto-694>>
+      <tuple|<tuple|Lebesgue measurable space>|<pageref|auto-684>>
 
-      <tuple|<tuple|Lebesgue measure>|<pageref|auto-695>>
+      <tuple|<tuple|Lebesgue measure>|<pageref|auto-685>>
 
-      <tuple|<tuple|Lebesgue measurable set>|<pageref|auto-696>>
+      <tuple|<tuple|Lebesgue measurable set>|<pageref|auto-686>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>>|<pageref|auto-698>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>>|<pageref|auto-688>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible>|<pageref|auto-701>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible>|<pageref|auto-691>>
 
-      <tuple|<tuple|almost everyware>|<pageref|auto-702>>
+      <tuple|<tuple|complete measures>|<pageref|auto-692>>
 
-      <tuple|<tuple|complete measures>|<pageref|auto-703>>
+      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-693>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-704>>
+      <tuple|<tuple|completion of a measure space>|<pageref|auto-694>>
 
-      <tuple|<tuple|completion of a measure space>|<pageref|auto-705>>
+      <tuple|<tuple|outer measure induced>|<pageref|auto-695>>
 
-      <tuple|<tuple|outer measure induced>|<pageref|auto-706>>
+      <tuple|<tuple|inner measure induced>|<pageref|auto-696>>
 
-      <tuple|<tuple|inner measure induced>|<pageref|auto-707>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-697>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-708>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-698>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-709>>
+      <tuple|<tuple|inner regular sets>|<pageref|auto-699>>
+
+      <tuple|<tuple|outer regular sets>|<pageref|auto-700>>
+
+      <tuple|<tuple|Dynkin class>|<pageref|auto-703>>
+
+      <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-704>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-705>>
+
+      <tuple|<tuple|measurable function>|<pageref|auto-708>>
+
+      <tuple|<tuple|Borel function>|<pageref|auto-709>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
+      function>|<pageref|auto-710>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-711>>
+
+      <tuple|<tuple|almost everyware>|<pageref|auto-715>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>>|<pageref|auto-719>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>>|<pageref|auto-720>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsup|+>f
+      d\<mu\>>>|<pageref|auto-721>>
+
+      <tuple|<tuple|integrable functions on a measure
+      space>|<pageref|auto-723>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+      d\<mu\>>>|<pageref|auto-724>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+      d\<mu\>>>|<pageref|auto-725>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>>|<pageref|auto-726>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+      d\<mu\>>>|<pageref|auto-727>>
     </associate>
     <\associate|parts>
       <tuple|Chapter 1 (Sets).tm|chapter-nr|0|section-nr|0|subsection-nr|0>
@@ -9088,101 +9872,152 @@
       17.1<space|2spc>Extented reals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-626>
 
-      17.2<space|2spc>Topology on <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>
+      17.2<space|2spc>Topology on <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-632>
 
-      <with|par-left|<quote|1tab>|17.2.1<space|2spc>Limit of functions in
-      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>
+      17.3<space|2spc>Sequences in <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-639>>
+      <no-break><pageref|auto-638>
 
-      <with|par-left|<quote|1tab>|17.2.2<space|2spc>Sequences in
-      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<bar\>>>
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-648>>
-
-      <with|par-left|<quote|1tab>|17.2.3<space|2spc>Series in
+      <with|par-left|<quote|1tab>|17.3.1<space|2spc>Series in
       <with|mode|<quote|math>|<wide|\<bbb-R\><rsub|>|\<bar\>><rsub|+>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-653>>
-
-      <with|par-left|<quote|1tab>|17.2.4<space|2spc>Generalized series of
-      positive extened reals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-655>>
+      <no-break><pageref|auto-643>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>The
       exponential function> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-656><vspace|0.5fn>
+      <no-break><pageref|auto-645><vspace|0.5fn>
 
       18.1<space|2spc>Power series <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-657>
+      <no-break><pageref|auto-646>
 
       <with|par-left|<quote|1tab>|18.1.1<space|2spc>Definition and
       convergence domains <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-658>>
+      <no-break><pageref|auto-647>>
 
       <with|par-left|<quote|1tab>|18.1.2<space|2spc>Convergence criteria
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-663>>
+      <no-break><pageref|auto-652>>
 
       <with|par-left|<quote|1tab>|18.1.3<space|2spc>Differentiation of power
       series <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-665>>
+      <no-break><pageref|auto-654>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>Measure
       Theory> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-672><vspace|0.5fn>
+      <no-break><pageref|auto-661><vspace|0.5fn>
 
       18.1<space|2spc>Prerequisites <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-673>
+      <no-break><pageref|auto-662>
 
       18.2<space|2spc>Algebras and <with|mode|<quote|math>|\<sigma\>>-algebras
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-674>
+      <no-break><pageref|auto-663>
 
       <with|par-left|<quote|1tab>|18.2.1<space|2spc>Borel algebra on
       <with|mode|<quote|math>|\<bbb-R\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-680>>
+      <no-break><pageref|auto-669>>
 
       <with|par-left|<quote|1tab>|18.2.2<space|2spc>Borel algebra on
+      <with|mode|<quote|math>|<wide|\<bbb-R\>|\<wide-bar\>>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-670>>
+
+      <with|par-left|<quote|1tab>|18.2.3<space|2spc>Borel algebra on
       <with|mode|<quote|math>|\<bbb-R\><rsup|n>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-681>>
+      <no-break><pageref|auto-671>>
 
       18.3<space|2spc>Measures <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-689>
+      <no-break><pageref|auto-679>
 
       <with|par-left|<quote|1tab>|18.3.1<space|2spc>Measure definition and
       properties <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-690>>
+      <no-break><pageref|auto-680>>
 
       <with|par-left|<quote|1tab>|18.3.2<space|2spc>Carathéodory theorem
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-691>>
+      <no-break><pageref|auto-681>>
 
       <with|par-left|<quote|1tab>|18.3.3<space|2spc>The Carathéodory theorem
       and the set of real numbers <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-693>>
+      <no-break><pageref|auto-683>>
 
       <with|par-left|<quote|1tab>|18.3.4<space|2spc>The Carathéodory theorem
       and <with|mode|<quote|math>|\<bbb-R\><rsup|n>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-697>>
+      <no-break><pageref|auto-687>>
 
-      <with|par-left|<quote|2tab>|18.3.4.1<space|2spc>Properties of
+      <with|par-left|<quote|1tab>|18.3.5<space|2spc>Properties of
       <with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><rsup|n>,\<lambda\><rsup|n>|\<rangle\>>>
       and <with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>,<around*|(|\<lambda\><rsup|n>|)><rsub|\|\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>|\<rangle\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-699>>
+      <no-break><pageref|auto-689>>
 
-      <with|par-left|<quote|1tab>|18.3.5<space|2spc><with|mode|<quote|math>|Negligibity,Completeness<syntax|<with|mode|<quote|text>|
+      <with|par-left|<quote|1tab>|18.3.6<space|2spc><with|mode|<quote|math>|Negligibity,Completeness<syntax|<with|mode|<quote|text>|
       and >|\<wedge\>>Regularity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-700>>
+      <no-break><pageref|auto-690>>
+
+      18.4<space|2spc>Measurable functions
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-701>
+
+      <with|par-left|<quote|1tab>|18.4.1<space|2spc>Dynkin Classes
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-702>>
+
+      18.5<space|2spc>Measurable functions
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-706>
+
+      <with|par-left|<quote|1tab>|18.5.1<space|2spc>Measurable functions
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-707>>
+
+      <with|par-left|<quote|1tab>|18.5.2<space|2spc>Example of measurable
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-712>>
+
+      <with|par-left|<quote|1tab>|18.5.3<space|2spc>Properties of measurable
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-713>>
+
+      <with|par-left|<quote|1tab>|18.5.4<space|2spc>Properties that hold
+      everywhere <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-714>>
+
+      18.6<space|2spc>The measure integral
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-716>
+
+      <with|par-left|<quote|1tab>|18.6.1<space|2spc>Integral of simple
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-717>>
+
+      <with|par-left|<quote|1tab>|18.6.2<space|2spc>Integral of non negative
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-718>>
+
+      <with|par-left|<quote|1tab>|18.6.3<space|2spc>Integral of integrable
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-722>>
+
+      <with|par-left|<quote|1tab>|18.6.4<space|2spc>Properties of the
+      integral <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-728>>
+
+      <with|par-left|<quote|1tab>|18.6.5<space|2spc>Limit theorems for
+      integrable functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-729>>
+
+      <with|par-left|<quote|1tab>|18.6.6<space|2spc>Integral of complex
+      functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-730>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Index>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-710><vspace|0.5fn>
+      <no-break><pageref|auto-731><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

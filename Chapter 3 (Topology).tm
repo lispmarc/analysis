@@ -2761,7 +2761,7 @@
     <label|norms in R and C are equivalent>All norms on <math|\<bbb-R\>> and
     <math|\<bbb-C\>> are equivalent with the norm <math|<around*|\|||\|>> (if
     we consider <math|<around*|\<langle\>|\<bbb-R\>,+,\<cdot\>|\<rangle\>>> a
-    real vector space as a filed and <math|<around*|\<langle\>|\<bbb-C\>,+,\<cdot\>|\<rangle\>>>
+    real vector space as a field and <math|<around*|\<langle\>|\<bbb-C\>,+,\<cdot\>|\<rangle\>>>
     a complex vector space as a field).
   </example>
 
@@ -19366,7 +19366,7 @@
     <associate|info-flag|minimal>
     <associate|page-even-footer|>
     <associate|page-even-header|>
-    <associate|page-first|391>
+    <associate|page-first|389>
     <associate|page-height|auto>
     <associate|page-medium|papyrus>
     <associate|page-odd-footer|>
