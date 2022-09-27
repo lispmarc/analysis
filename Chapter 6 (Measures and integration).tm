@@ -8352,7 +8352,7 @@
 
       <item>Let <math|A,B\<in\><big|cap><rsub|\<cal-D\>\<in\>\<cal-X\>>\<cal-D\>>
       then <math|\<forall\>\<cal-D\>\<in\>\<cal-X\>> we have that
-      <math|A,B\<in\>\<cal-D\>\<Rightarrow\>A\\B\<in\>\<b-cal-D\>> hence
+      <math|A,B\<in\>\<cal-D\>\<Rightarrow\>A\\B\<in\>\<cal-D\>> hence
       <math|A\\B\<in\>\<cal-X\>>
 
       <item>Let <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\><big|cap><rsub|\<cal-D\>\<in\>\<cal-X\>>\<cal-D\>>
@@ -8387,16 +8387,27 @@
 
   <\proof>
     Define <math|\<cal-X\>=<around*|{|\<cal-C\>\<subseteq\>\<cal-P\><around*|(|X|)>\|\<cal-A\>\<subseteq\>\<cal-C\><infix-and>\<cal-C\>
-    is a Dynkin class|}>> then by <reference|intersection of a class of
-    Dynkin classes is a Dynkin class> we have that
+    is a Dynkin class|}>> then as <math|\<cal-P\><around*|(|X|)>\<in\>\<cal-X\>>
+    [see <reference|set of all subsets is a Dynkin class>]
+    <math|\<cal-X\>\<neq\>\<emptyset\>>, hence by <reference|intersection of
+    a class of Dynkin classes is a Dynkin class> we have that
     <math|\<cal-D\>=<big|cap><rsub|\<cal-C\>\<in\>\<cal-X\>>\<cal-C\>> is a
     Dynkin class. As <math|\<forall\>\<cal-C\>\<in\>\<cal-X\>> we have that
     <math|\<cal-A\>\<subseteq\>\<cal-C\>> it follows that
     <math|\<cal-A\>\<subseteq\><big|cap><rsub|\<cal-C\>\<in\>\<cal-X\>>\<cal-C\>=\<cal-D\>>.
-    Finally if <math|\<cal-D\><rprime|'>> is another Dynkin class with
+    If <math|\<cal-D\><rprime|'>> is another Dynkin class with
     <math|\<cal-A\>\<subseteq\>\<cal-D\><rprime|'>> then
     <math|\<cal-D\><rprime|'>\<in\>\<cal-X\>> hence
     <math|\<cal-D\>=<big|cap><rsub|\<cal-C\>\<in\>\<cal-X\>>\<cal-C\>\<subseteq\>\<cal-D\><rprime|'>>.
+    Finally let <math|\<cal-D\><rprime|''>> be a another Dynkin class with
+    <math|\<cal-A\>\<subseteq\>\<cal-D\><rprime|''>> such that fit contains
+    every Dynkin class that contains <math|\<cal-A\>> we have that
+    <math|\<cal-D\>\<subseteq\>\<cal-D\><rprime|''>> [<math|\<cal-D\>> is a
+    Dynkin class containing <math|\<cal-A\>>] and
+    <math|\<cal-D\><rprime|''>\<subseteq\>\<cal-D\>>
+    [<math|\<cal-D\><rprime|''>> is a Dynkin class containing
+    <math|\<cal-A\>>] so that <math|\<cal-D\><rprime|''>=\<cal-D\>> proving
+    uniqueness.
   </proof>
 
   <\definition>
@@ -8408,17 +8419,17 @@
 
   <\note>
     <label|consequence of a pi-system>Let <math|X> be a set and
-    <math|\<cal-A\>> a <math|\<pi\>>-system on <math|X> then if
-    <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>> with <math|I> finite and
-    non empty we have that <math|<big|cap><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-A\>>
+    <math|\<cal-A\>> a <math|\<pi\>>-system on <math|X> then for
+    <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>> where <math|I> is finite
+    and non empty we have that <math|<big|cap><rsub|i\<in\>I>A<rsub|i>\<in\>\<cal-A\>>
   </note>
 
   <\proof>
     This follows from <reference|finite unions and intersections>.
   </proof>
 
-  We prove now that every Dynkin class that is a <math|\<pi\>>-system is a
-  <math|\<sigma\>>-algebra
+  We prove now that every Dynkin class that is also a <math|\<pi\>>-system is
+  a <math|\<sigma\>>-algebra
 
   <\lemma>
     <label|condition for a Dynkin class to be a sigma algebra>Let <math|X> be
@@ -8428,7 +8439,7 @@
   </lemma>
 
   <\proof>
-    Le's check the conditions to be a <math|\<sigma\>>-algebra [see
+    Let's check the conditions for a <math|\<sigma\>>-algebra [see
     <reference|sigma algebra>]\ 
 
     <\enumerate>
@@ -8470,6 +8481,8 @@
       </equation*>
     </enumerate>
   </proof>
+
+  TODO Check rest
 
   <\theorem>
     <label|Dynkin classes and sigma algebra>Let <math|X> a set and
@@ -15859,7 +15872,7 @@
 <\initial>
   <\collection>
     <associate|chapter-nr|18>
-    <associate|page-first|751>
+    <associate|page-first|749>
     <associate|page-medium|papyrus>
     <associate|section-nr|1>
     <associate|subsection-nr|3>
