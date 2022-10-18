@@ -10619,7 +10619,7 @@
 
       <\equation>
         <label|eq 18.323.033>D=<around*|{|x\<in\>\<cal-A\>\|g<around*|(|x|)>\<neq\>0|}>=<around*|{|g\<less\>0|}><big|cup><around*|{|g\<gtr\>0|}>\<in\>\<cal-A\>
-        </equation>
+      </equation>
 
       If <math|t\<in\><around*|(|<math|<around*|{|t\<in\>A\|g<around*|(|t|)>\<gtr\>0|}><big|cap><around*|{|t\<in\>A\|f<around*|(|t|)>\<less\>x\<cdot\>g<around*|(|t|)>|}>>|)><big|cup><around*|(|<around*|{|t\<in\>A\|g<around*|(|t|)>\<less\>0|}><big|cap><around*|{|t\<in\>A\|f<around*|(|t|)>\<gtr\>x\<cdot\>g<around*|(|t|)>|}>|)>>
       then we have either:
@@ -10929,10 +10929,6 @@
     a <math|\<cal-A\>>-measurable function then\ 
 
     <\enumerate>
-      <item><math|C<rsub|0>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
-      defined by <math|C<rsub|0><around*|(|x|)>=0> is
-      <math|\<cal-A\>>-measurable
-
       <item><math|f<rsup|+>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> is
       <math|\<cal-A\>>-measurable.
 
@@ -10945,12 +10941,12 @@
   </proposition>
 
   <\proof>
-    \ 
+    \ First note that by <reference|zero function is measurable>
+    <math|C<rsub|0>\<of\>A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    defined by <math|C<rsub|0><around*|(|x|)>=0> is
+    <math|\<cal-A\>>-measurable.
 
     <\enumerate>
-      <item>This is already proved in <reference|zero function is
-      measurable>.
-
       <item>As <math|f<rsup|+>=f\<wedge\>C<rsub|0>> and <math|f,C<rsub|0>>
       are <math|\<cal-A\>>-measurable it follows from <reference|measurable
       functions properties (1)> that <math|f<rsup|+>> is
@@ -10964,26 +10960,27 @@
       <math|\<cal-A\>>-measurable.
 
       <item>As <math|<around*|\||f|\|>\<equallim\><rsub|<text|<reference|\|f(x)\|
-      as f+ f->>>f<rsub|+>+f<rsub|->> it follows from (1),(2) and
+      as f+ f->>>f<rsub|+>+f<rsub|->> it follows from (2),(2) and
       <reference|measurable functions properties (4)> that
       <math|<around*|\||f|\|>> is <math|\<cal-A\>>-measurable.
     </enumerate>
   </proof>
 
-  TODO
-
-  The following theorem will be essential to define the measure integral.
+  The following theorem will be essential to find a equivalent definition of
+  the measure integral.
 
   <\theorem>
     <label|measurable functions properties (6)>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
     <math|A\<in\>\<cal-A\>> and <math|f:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
-    a <math|\<cal-A\>>-measurable function such that
-    <math|f<around*|(|A|)>\<subseteq\><around*|[|0,\<infty\>|]>> then there
-    exists a sequence <math|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
-    of <with|font-series|bold|<math|\<cal-A\>>-measurable>
+    with <math|f\<in\><wide|\<cal-M\><around*|[|A,\<cal-A\>|]>|\<wide-bar\>>>
+    and<space|1em><math|f<around*|(|A|)>\<subseteq\><around*|[|0,\<infty\>|]>>
+    [a <math|\<cal-A\>>-measurable non negative extended real valued
+    function] then there exists a sequence
+    <math|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> of
+    <with|font-series|bold|<math|\<cal-A\>>-measurable>
     <with|font-series|bold|simple functions> such that
-    <math|\<forall\>x\<in\>A>
+    <math|\<forall\>x\<in\>A>.
 
     <\enumerate>
       <item><math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
@@ -10998,7 +10995,7 @@
   </theorem>
 
   <\proof>
-    Let <math|n\<in\>\<bbb-N\><rsub|0>>.\ 
+    Let <math|n\<in\>\<bbb-N\><rsub|0>> and define
 
     <\equation>
       <label|eq 18.325.033>I<rsub|n>=<around*|{|i\<in\>\<bbb-N\><rsub|0>\|i\<leqslant\>n\<cdot\>2<rsup|n>|}>=<around*|{|1,2,\<ldots\>,n\<cdot\>2<rsup|n>|}>
@@ -11028,7 +11025,8 @@
     so it follows that\ 
 
     <\equation>
-      <label|eq 18.328.033>\<forall\>k\<in\><around*|{|i\<cdot\>2<rsup|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>\<vDash\>A<rsub|n,k>\<in\>\<cal-A\>
+      <label|eq 18.328.033>\<forall\>k\<in\>I<rsub|n><text| we have that
+      >A<rsub|n,k>\<in\>\<cal-A\>
     </equation>
 
     Let <math|l,k\<in\>I<rsub|n>> with <math|l\<less\>k\<Rightarrow\>l+1\<leqslant\>k\<Rightarrow\>l\<leqslant\>k-1>,
@@ -11046,7 +11044,7 @@
     If <math|x\<in\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>> then there
     exists a <math|k\<in\>I<rsub|n>> such that <math|x\<in\>A<rsub|n,k>> and
     this <math|k> is unique because of <reference|eq 18.329.033>. This allows
-    us to define <math|<around*|{|f<rsub|n>:A\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+    us to define <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>><rsup|A>>
     by\ 
 
     <\equation>
@@ -11057,40 +11055,13 @@
     </equation>
 
     Using the above definition if is clear that
-    <math|f<rsub|n><around*|(|A|)>\<subseteq\><around*|{|n|}><big|cup><rsub|k\<in\>I<rsub|n>><around*|{|<frac|k-1|2<rsup|n>>|}>>
+    <math|f<rsub|n><around*|(|A|)>\<subseteq\><around*|{|n|}><big|cup><around*|(|<big|cup><rsub|k\<in\>I<rsub|n>><around*|{|<frac|k-1|2<rsup|n>>|}>|)>>
     which is finite [see <reference|finite union of finite sets is finite>],
     taking this in account together with <reference|eq 18.328.033> proves\ 
 
     <\equation>
       <label|eq 18.331.033.1>\<forall\>n\<in\>\<bbb-N\><rsub|0> f<rsub|n> is
-      a<with|font-series|medium| simple function>
-    </equation>
-
-    Let <math|n\<in\>\<bbb-N\><rsub|0>> and take <math|k\<in\>I<rsub|n>> and
-    <math|l\<in\>I<rsub|n+1>> such that <math|A<rsub|n,k><big|cap>A<rsub|n+1,l>\<neq\>\<emptyset\>>.
-    Then there exists <math|x\<in\>A> such that
-    <math|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>
-    and <math|<frac|l-1|2<rsup|n+1>>\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n+1>>>.
-    So we have then
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<frac|k-1|2<rsup|n>>\<less\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|k|2<rsup|n>>>|<cell|\<Rightarrow\>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<less\><frac|l|2<rsup|n+1>>\<wedge\><frac|l-1|2<rsup|n+1>>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-2\<less\>l\<wedge\>l-1\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|2\<cdot\>k-1\<leqslant\>l\<wedge\>l\<less\>2\<cdot\>k>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|l=2\<cdot\>k-1<eq-number><label|eq
-      18.331.033>>>>>
-    </eqnarray*>
-
-    Next
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|y\<in\>A<rsub|n+1,l>>|<cell|\<Rightarrow\>>|<cell|<frac|l-1|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|l|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrowlim\><rsub|<text|<reference|eq
-      18.331.033>>>>|<cell|<frac|2\<cdot\>k-2|2<rsup|n+1>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k-1|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|2\<cdot\>k|2<rsup|n+1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|y|)>\<less\><frac|k|2<rsup|n1>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|y\<in\>A<rsub|n,k>>>>>
-    </eqnarray*>
-
-    So we have
-
-    <\equation>
-      <label|eq 18.332.033>\<forall\>n\<in\>\<bbb-N\><rsub|0> if
-      k\<in\>I<rsub|n>,l\<in\>I<rsub|n+1><infix-and>A<rsub|n,k><big|cap>A<rsub|n+1,l>\<neq\>\<emptyset\>
-      then A<rsub|n+1,l>\<subseteq\>A<rsub|n,k>
+      a<with|font-series|medium| simple \<cal-A\><text|-measurable >function>
     </equation>
 
     Let <math|n\<in\>\<bbb-N\><rsub|0>>, and
@@ -11104,7 +11075,7 @@
     for <math|l>:
 
     <\description>
-      <item*|<math|l=1>>then <math|<frac|l-1|2<rsup|n>>=0\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,1>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
+      <item*|<math|l=1>>then <math|<frac|1-1|2<rsup|n>>=0\<leqslant\>f<around*|(|x|)>\<less\><frac|1|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,1>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
 
       <item*|<math|1\<less\>l>>then <math|1\<leqslant\>l-1\<less\>l\<leqslant\>n\<cdot\>2<rsup|n>
       proving that l-1\<in\>I<rsub|n>>, and as
@@ -11112,8 +11083,8 @@
       <math|<frac|l-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n>>\<Rightarrow\>x\<in\>A<rsub|n,l>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|n>>A<rsub|n,k>>
     </description>
 
-    So we have proved that <math|f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|i>>A<rsub|n,k>>,
-    also for <math|k\<in\>I<rsub|n>> we have that
+    So we have proved that <math|f<rsup|-1><around*|(|<around*|[|0,n|[>|)>\<subseteq\><big|cup><rsub|k\<in\>I<rsub|i>>A<rsub|n,k>>.
+    Also for <math|k\<in\>I<rsub|n>> we have that
     <math|A<rsub|n,k>=f<rsup|-1><around*|(|<around*|[|<frac|k-1|2<rsup|n>>,<frac|k|2<rsup|n>>|[>|)>\<subseteq\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>>,
     hence\ 
 
@@ -11139,7 +11110,7 @@
       that <math|f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>>
     </description>
 
-    To suummarize
+    To summarize
 
     <\equation>
       <label|eq 18.334.033>\<forall\>x\<in\>A,\<forall\>n\<in\>\<bbb-N\><rsub|0>
@@ -11152,16 +11123,17 @@
 
     <\equation>
       <label|eq 18.335.033>\<forall\>n\<in\>\<bbb-N\><rsub|0> if x\<in\>A is
-      such that f<around*|(|x|)>\<leqslant\>n then \<exists\>k\<in\>I<rsub|n>
+      such that f<around*|(|x|)>\<less\>n then \<exists\>k\<in\>I<rsub|n>
       such that f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>
     </equation>
 
-    Let now <math|x\<in\>A> then we must consider the following cases for
-    <math|f<around*|(|x|)>>:
+    Let now <math|x\<in\>A> then we must consider the following cases:
 
     <\description>
-      <item*|<math|n+1\<leqslant\>f<around*|(|x|)>>>then by <reference|eq
-      18.334.033> <math|f<rsub|n><around*|(|x|)>=n\<less\>n+1=f<rsub|n+1><around*|(|x|)>>\ 
+      <item*|<math|n+1\<leqslant\>f<around*|(|x|)>>>then
+      <math|n,n+1\<leqslant\>f<around*|(|x|)>> and by <reference|eq
+      18.334.033> <math|f<rsub|n><around*|(|x|)>=n\<less\>n+1=f<rsub|n+1><around*|(|x|)>>
+      so
 
       <\equation*>
         f<rsub|n><around*|(|x|)>\<less\>f<rsub|n+1><around*|(|x|)>
@@ -11183,11 +11155,11 @@
       <item*|<math|0\<leqslant\>f<around*|(|x|)>\<less\>n>>then
       <math|x\<in\>f<rsup|-1><around*|(|<around*|[|0,n|[>|)>,x\<in\>f<rsup|-1><around*|(|<around*|[|0,n+1|[>|)>>,
       so using <reference|eq 18.333.033> <math|\<exists\>k\<in\>I<rsub|n>,l\<in\>I<rsub|n+1>>
-      such that <math|f<around*|(|x|)>\<in\>A<rsub|n,k><big|cap>A<rsub|n+1,l>>.
-      Applying then <reference|eq 18.332.033> we have
-      <math|A<rsub|n+1,l>\<subseteq\>A<rsub|n,k>> proving that
-      <math|<frac|l-1|2<rsup|n+1>>\<leqslant\><frac|k-1|2<rsup|n>>>. Using
-      <reference|eq 18.330.033> we have that
+      such that <math|x\<in\>A<rsub|n,k><big|cap>A<rsub|n+1,l>>, hence
+      <math|<frac|k-1|2<rsup|n>>\<leqslant\>f<around*|(|x|)>\<less\><frac|k|2<rsup|n>>\<wedge\><frac|l-1|2<rsup|n+1>>\<leqslant\>f<around*|(|x|)>\<less\><frac|l|2<rsup|n+1>>>,.
+      From this it follows that <math|<frac|k-1|2<rsup|n>>\<less\><frac|l|2<rsup|n+1>>\<Rightarrow\><frac|2\<cdot\>k-2|2<rsup|n+1>>\<less\><frac|l|2<rsup|n+1>>\<Rightarrow\>2\<cdot\>k-2\<less\>l\<Rightarrow\>2\<cdot\>k-2\<leqslant\>l-1>
+      giving <math|<frac|k-1|2<rsup|n>>=<frac|2\<cdot\>k-2|2<rsup|n+1>>\<leqslant\><frac|l-1|2<rsup|n+1>>>.
+      Using <reference|eq 18.330.033> we have that
       <math|f<rsub|n+1><around*|(|x|)>=<frac|l-1|2<rsup|n+1>>,f<rsub|n><around*|(|x|)>=<frac|k-1|2<rsup|n>>>
       proving that\ 
 
@@ -11210,8 +11182,9 @@
       <label|eq 18.337.033>sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<leqslant\>f<around*|(|x|)>
     </equation>
 
-    Assume now that <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>f<around*|(|x|)>>.
-    For <math|f<around*|(|x|)>> we have either:
+    Assume now that <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>f<around*|(|x|)>>
+    [so that <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<in\><around*|[|0,\<infty\>|[>>).
+    \ For <math|f<around*|(|x|)>> we have either:
 
     <\description>
       <item*|<math|f<around*|(|x|)>=\<infty\>>>then as
@@ -11219,7 +11192,7 @@
       we have by <reference|consequence of the archimedean property for the
       reals> that <math|\<exists\>n\<in\>\<bbb-N\><rsub|0>> such that
       <math|><math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n\<less\>\<infty\>=f<around*|(|x|)>>.
-      Using <reference|eq 18.334.033> we have then that
+      Using <reference|eq 18.334.033> we have that
       <math|f<rsub|n><around*|(|x|)>=n>, so
       \ <math|sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<less\>n=f<rsub|n><around*|(|x|)>>
       a contradiction.
@@ -11227,7 +11200,7 @@
       <item*|<math|f<around*|(|x|)>\<less\>\<infty\>>>Take
       <math|\<delta\>=f<around*|(|x|)>-sup<around*|(|<around*|{|f<rsub|n><around*|(|x|)>\|n\<in\>\<bbb-N\><rsub|0>|}>|)>\<gtr\>0>,
       using <reference|properties of positive, negative real numbers> there
-      exists a <math|n1\<in\>\<bbb-N\><rsub|0>> such that
+      exists a <math|n<rsub|1>\<in\>\<bbb-N\><rsub|0>> such that
       <math|<frac|1|2<rsup|n<rsub|1>>>\<less\>\<delta\>>, using
       <reference|consequence of the archimedean property for the reals> there
       exists a <math|n<rsub|2>\<in\>\<bbb-N\><rsub|0>> such that
@@ -11274,7 +11247,7 @@
 
   <\proof>
     Using <reference|\|f(x)\| as f+ f-> we have <math|f=f<rsup|+>-f<rsup|->>
-    [where the difference us well defined] and as <math|f> is
+    [where the difference is well defined] and as <math|f> is
     <math|\<cal-A\>>-measurable it follows from <reference|measurable
     functions properties (5)> that <math|f<rsup|+>> and <math|f<rsup|-1>> are
     <math|\<cal-A\>>-measurable. Using the fact that
@@ -11290,11 +11263,11 @@
     and <math|f<rsup|-><around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsup|-><rsub|n><around*|(|x|)>>.
     Define now <math|<around*|(|f<rsub|n>|)><rsub|n\<in\>\<bbb-N\><rsub|0>>>
     by <math|f<rsub|n>=f<rsup|+><rsub|n>-f<rsup|-><rsub|n>> \ then by
-    <reference|simple function properties> and <reference|measurable
-    functions properties (5)> it follows that <math|f<rsub|n>> is
-    <math|\<cal-A\>>-measurable. \ As <math|\<forall\>x\<in\>X>
-    <math|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>> is well defined
-    and <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+    <reference|simple function properties (1)> and <reference|measurable
+    functions properties (3)> \ it follows that <math|f<rsub|n>> is a
+    <math|\<cal-A\>>-measurable simple function. \ As
+    <math|\<forall\>x\<in\>X> <math|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>>
+    is well defined and <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
     <math|f<rsup|+><rsub|n><around*|(|x|)>-f<rsup|-><rsub|n><around*|(|x|)>>
     is well defined [difference of real numbers] \ we have
     using<reference|properties of the limit in the extented reals> that\ 
@@ -11314,6 +11287,8 @@
   Using the concept of <math|\<mu\>>-negligible sets [see
   <reference|negligibility>] we can introduce the concept of almost
   everywhere predicates and complete measures.
+
+  TODO
 
   <\definition>
     <label|almost complete><index|almost everyware>Let
@@ -16323,7 +16298,6 @@
     <associate|eq 18.321.033|<tuple|18.321|?>>
     <associate|eq 18.322.033|<tuple|18.322|?>>
     <associate|eq 18.323.033|<tuple|18.323|?>>
-    <associate|eq 18.324.033|<tuple|18.326|?>>
     <associate|eq 18.324.036.7|<tuple|18.324|?>>
     <associate|eq 18.325.033|<tuple|18.326|?>>
     <associate|eq 18.325.036.7|<tuple|18.325|?>>
@@ -16333,176 +16307,174 @@
     <associate|eq 18.329.033|<tuple|18.330|?>>
     <associate|eq 18.33.021|<tuple|18.38|?>>
     <associate|eq 18.330.033|<tuple|18.331|?>>
-    <associate|eq 18.331.033|<tuple|18.333|?>>
     <associate|eq 18.331.033.1|<tuple|18.332|?>>
-    <associate|eq 18.332.033|<tuple|18.334|?>>
-    <associate|eq 18.333.033|<tuple|18.335|?>>
-    <associate|eq 18.334.033|<tuple|18.336|?>>
-    <associate|eq 18.335.033|<tuple|18.337|?>>
-    <associate|eq 18.336.033|<tuple|18.338|?>>
-    <associate|eq 18.337.033|<tuple|18.339|?>>
-    <associate|eq 18.338.033|<tuple|18.340|?>>
+    <associate|eq 18.333.033|<tuple|18.333|?>>
+    <associate|eq 18.334.033|<tuple|18.334|?>>
+    <associate|eq 18.335.033|<tuple|18.335|?>>
+    <associate|eq 18.336.033|<tuple|18.336|?>>
+    <associate|eq 18.337.033|<tuple|18.337|?>>
+    <associate|eq 18.338.033|<tuple|18.338|?>>
     <associate|eq 18.34.021|<tuple|18.39|?>>
-    <associate|eq 18.340.033|<tuple|18.341|?>>
-    <associate|eq 18.341.034|<tuple|18.342|?>>
-    <associate|eq 18.342.034|<tuple|18.343|?>>
-    <associate|eq 18.343.0.34|<tuple|18.344|?>>
-    <associate|eq 18.345.034|<tuple|18.346|?>>
-    <associate|eq 18.346.033|<tuple|18.347|?>>
-    <associate|eq 18.347.033|<tuple|18.348|?>>
-    <associate|eq 18.348.034|<tuple|18.349|?>>
-    <associate|eq 18.349.034|<tuple|18.350|?>>
+    <associate|eq 18.340.033|<tuple|18.339|?>>
+    <associate|eq 18.341.034|<tuple|18.340|?>>
+    <associate|eq 18.342.034|<tuple|18.341|?>>
+    <associate|eq 18.343.0.34|<tuple|18.342|?>>
+    <associate|eq 18.345.034|<tuple|18.344|?>>
+    <associate|eq 18.346.033|<tuple|18.345|?>>
+    <associate|eq 18.347.033|<tuple|18.346|?>>
+    <associate|eq 18.348.034|<tuple|18.347|?>>
+    <associate|eq 18.349.034|<tuple|18.348|?>>
     <associate|eq 18.35.021|<tuple|18.40|?>>
-    <associate|eq 18.350.0.34|<tuple|18.351|?>>
-    <associate|eq 18.351.034|<tuple|18.352|?>>
-    <associate|eq 18.352.034|<tuple|18.353|?>>
-    <associate|eq 18.353.034|<tuple|18.354|?>>
-    <associate|eq 18.354.034|<tuple|18.355|?>>
-    <associate|eq 18.355.034|<tuple|18.356|?>>
-    <associate|eq 18.356.034|<tuple|18.357|?>>
-    <associate|eq 18.357.034|<tuple|18.358|?>>
-    <associate|eq 18.358.034|<tuple|18.359|?>>
-    <associate|eq 18.359.034|<tuple|18.360|?>>
+    <associate|eq 18.350.0.34|<tuple|18.349|?>>
+    <associate|eq 18.351.034|<tuple|18.350|?>>
+    <associate|eq 18.352.034|<tuple|18.351|?>>
+    <associate|eq 18.353.034|<tuple|18.352|?>>
+    <associate|eq 18.354.034|<tuple|18.353|?>>
+    <associate|eq 18.355.034|<tuple|18.354|?>>
+    <associate|eq 18.356.034|<tuple|18.355|?>>
+    <associate|eq 18.357.034|<tuple|18.356|?>>
+    <associate|eq 18.358.034|<tuple|18.357|?>>
+    <associate|eq 18.359.034|<tuple|18.358|?>>
     <associate|eq 18.36.016|<tuple|18.85|?>>
     <associate|eq 18.36.021|<tuple|18.41|?>>
-    <associate|eq 18.360.034|<tuple|18.361|?>>
-    <associate|eq 18.361.034|<tuple|18.362|?>>
-    <associate|eq 18.362.034|<tuple|18.363|?>>
-    <associate|eq 18.363.034|<tuple|18.364|?>>
-    <associate|eq 18.364.035|<tuple|18.371|?>>
-    <associate|eq 18.364.035.1|<tuple|18.366|?>>
-    <associate|eq 18.364.35.2|<tuple|18.365|?>>
-    <associate|eq 18.365.035|<tuple|18.372|?>>
-    <associate|eq 18.365.035.1|<tuple|18.367|?>>
-    <associate|eq 18.366.035|<tuple|18.373|?>>
-    <associate|eq 18.366.035.1|<tuple|18.368|?>>
-    <associate|eq 18.367.035|<tuple|18.374|?>>
-    <associate|eq 18.367.035.1|<tuple|18.369|?>>
-    <associate|eq 18.368.035|<tuple|18.375|?>>
-    <associate|eq 18.369.035.1|<tuple|18.370|?>>
+    <associate|eq 18.360.034|<tuple|18.359|?>>
+    <associate|eq 18.361.034|<tuple|18.360|?>>
+    <associate|eq 18.362.034|<tuple|18.361|?>>
+    <associate|eq 18.363.034|<tuple|18.362|?>>
+    <associate|eq 18.364.035|<tuple|18.369|?>>
+    <associate|eq 18.364.035.1|<tuple|18.364|?>>
+    <associate|eq 18.364.35.2|<tuple|18.363|?>>
+    <associate|eq 18.365.035|<tuple|18.370|?>>
+    <associate|eq 18.365.035.1|<tuple|18.365|?>>
+    <associate|eq 18.366.035|<tuple|18.371|?>>
+    <associate|eq 18.366.035.1|<tuple|18.366|?>>
+    <associate|eq 18.367.035|<tuple|18.372|?>>
+    <associate|eq 18.367.035.1|<tuple|18.367|?>>
+    <associate|eq 18.368.035|<tuple|18.373|?>>
+    <associate|eq 18.369.035.1|<tuple|18.368|?>>
     <associate|eq 18.37.016|<tuple|18.86|?>>
     <associate|eq 18.37.021|<tuple|18.42|?>>
-    <associate|eq 18.375.035.3|<tuple|18.376|?>>
-    <associate|eq 18.376.035.3|<tuple|18.377|?>>
-    <associate|eq 18.377.035.3|<tuple|18.378|?>>
-    <associate|eq 18.378.035.3|<tuple|18.379|?>>
-    <associate|eq 18.379.035.3|<tuple|18.380|?>>
+    <associate|eq 18.375.035.3|<tuple|18.374|?>>
+    <associate|eq 18.376.035.3|<tuple|18.375|?>>
+    <associate|eq 18.377.035.3|<tuple|18.376|?>>
+    <associate|eq 18.378.035.3|<tuple|18.377|?>>
+    <associate|eq 18.379.035.3|<tuple|18.378|?>>
     <associate|eq 18.38.016|<tuple|18.87|?>>
     <associate|eq 18.38.021|<tuple|18.43|?>>
-    <associate|eq 18.380.035.3|<tuple|18.381|?>>
-    <associate|eq 18.381.035.3|<tuple|18.382|?>>
-    <associate|eq 18.382.035.3|<tuple|18.383|?>>
-    <associate|eq 18.384.035.3|<tuple|18.385|?>>
-    <associate|eq 18.385.035|<tuple|18.386|?>>
-    <associate|eq 18.386.035|<tuple|18.390|?>>
-    <associate|eq 18.386.035.4|<tuple|18.387|?>>
-    <associate|eq 18.387.035|<tuple|18.388|?>>
-    <associate|eq 18.388.035|<tuple|18.392|?>>
-    <associate|eq 18.388.035.11|<tuple|18.389|?>>
-    <associate|eq 18.389.035|<tuple|18.393|?>>
+    <associate|eq 18.380.035.3|<tuple|18.379|?>>
+    <associate|eq 18.381.035.3|<tuple|18.380|?>>
+    <associate|eq 18.382.035.3|<tuple|18.381|?>>
+    <associate|eq 18.384.035.3|<tuple|18.383|?>>
+    <associate|eq 18.385.035|<tuple|18.384|?>>
+    <associate|eq 18.386.035|<tuple|18.388|?>>
+    <associate|eq 18.386.035.4|<tuple|18.385|?>>
+    <associate|eq 18.387.035|<tuple|18.386|?>>
+    <associate|eq 18.388.035|<tuple|18.390|?>>
+    <associate|eq 18.388.035.11|<tuple|18.387|?>>
+    <associate|eq 18.389.035|<tuple|18.391|?>>
     <associate|eq 18.39.016|<tuple|18.87|?>>
     <associate|eq 18.39.022|<tuple|18.61|?>>
-    <associate|eq 18.390.035|<tuple|18.394|?>>
-    <associate|eq 18.391.035|<tuple|18.395|?>>
-    <associate|eq 18.392.035|<tuple|18.396|?>>
-    <associate|eq 18.393.035|<tuple|18.397|?>>
-    <associate|eq 18.394.035|<tuple|18.398|?>>
-    <associate|eq 18.395.035|<tuple|18.399|?>>
-    <associate|eq 18.396.035|<tuple|18.400|?>>
-    <associate|eq 18.397.035|<tuple|18.401|?>>
-    <associate|eq 18.398.035|<tuple|18.402|?>>
-    <associate|eq 18.399.035|<tuple|18.403|?>>
+    <associate|eq 18.390.035|<tuple|18.392|?>>
+    <associate|eq 18.391.035|<tuple|18.393|?>>
+    <associate|eq 18.392.035|<tuple|18.394|?>>
+    <associate|eq 18.393.035|<tuple|18.395|?>>
+    <associate|eq 18.394.035|<tuple|18.396|?>>
+    <associate|eq 18.395.035|<tuple|18.397|?>>
+    <associate|eq 18.396.035|<tuple|18.398|?>>
+    <associate|eq 18.397.035|<tuple|18.399|?>>
+    <associate|eq 18.398.035|<tuple|18.400|?>>
+    <associate|eq 18.399.035|<tuple|18.401|?>>
     <associate|eq 18.4.016|<tuple|18.7|?>>
     <associate|eq 18.40.016|<tuple|18.89|?>>
     <associate|eq 18.40.022|<tuple|18.62|?>>
-    <associate|eq 18.400.035|<tuple|18.404|?>>
-    <associate|eq 18.401.035|<tuple|18.405|?>>
-    <associate|eq 18.403.35|<tuple|18.406|?>>
-    <associate|eq 18.404.035|<tuple|18.407|?>>
-    <associate|eq 18.405.35|<tuple|18.408|?>>
-    <associate|eq 18.406.035|<tuple|18.409|?>>
-    <associate|eq 18.407.035|<tuple|18.410|?>>
-    <associate|eq 18.408.035|<tuple|18.411|?>>
-    <associate|eq 18.409.035|<tuple|18.412|?>>
+    <associate|eq 18.400.035|<tuple|18.402|?>>
+    <associate|eq 18.401.035|<tuple|18.403|?>>
+    <associate|eq 18.403.35|<tuple|18.404|?>>
+    <associate|eq 18.404.035|<tuple|18.405|?>>
+    <associate|eq 18.405.35|<tuple|18.406|?>>
+    <associate|eq 18.406.035|<tuple|18.407|?>>
+    <associate|eq 18.407.035|<tuple|18.408|?>>
+    <associate|eq 18.408.035|<tuple|18.409|?>>
+    <associate|eq 18.409.035|<tuple|18.410|?>>
     <associate|eq 18.41.016|<tuple|18.90|?>>
     <associate|eq 18.41.022|<tuple|18.63|?>>
-    <associate|eq 18.410.035|<tuple|18.414|?>>
-    <associate|eq 18.410.35.1|<tuple|18.413|?>>
-    <associate|eq 18.412.035|<tuple|18.415|?>>
-    <associate|eq 18.413.035|<tuple|18.416|?>>
-    <associate|eq 18.414.035|<tuple|18.419|?>>
-    <associate|eq 18.415.035|<tuple|18.420|?>>
-    <associate|eq 18.416.035|<tuple|18.421|?>>
-    <associate|eq 18.417.035|<tuple|18.422|?>>
-    <associate|eq 18.418.035|<tuple|18.423|?>>
-    <associate|eq 18.419.035|<tuple|18.424|?>>
+    <associate|eq 18.410.035|<tuple|18.412|?>>
+    <associate|eq 18.410.35.1|<tuple|18.411|?>>
+    <associate|eq 18.412.035|<tuple|18.413|?>>
+    <associate|eq 18.413.035|<tuple|18.414|?>>
+    <associate|eq 18.414.035|<tuple|18.417|?>>
+    <associate|eq 18.415.035|<tuple|18.418|?>>
+    <associate|eq 18.416.035|<tuple|18.419|?>>
+    <associate|eq 18.417.035|<tuple|18.420|?>>
+    <associate|eq 18.418.035|<tuple|18.421|?>>
+    <associate|eq 18.419.035|<tuple|18.422|?>>
     <associate|eq 18.42.016|<tuple|18.91|?>>
     <associate|eq 18.42.022|<tuple|18.64|?>>
-    <associate|eq 18.420.035|<tuple|18.425|?>>
-    <associate|eq 18.421.035|<tuple|18.426|?>>
-    <associate|eq 18.422.035|<tuple|18.427|?>>
-    <associate|eq 18.423.035|<tuple|18.428|?>>
-    <associate|eq 18.424.035|<tuple|18.429|?>>
-    <associate|eq 18.425.035|<tuple|18.430|?>>
-    <associate|eq 18.428.035|<tuple|18.417|?>>
-    <associate|eq 18.429.035|<tuple|18.418|?>>
+    <associate|eq 18.420.035|<tuple|18.423|?>>
+    <associate|eq 18.421.035|<tuple|18.424|?>>
+    <associate|eq 18.422.035|<tuple|18.425|?>>
+    <associate|eq 18.423.035|<tuple|18.426|?>>
+    <associate|eq 18.424.035|<tuple|18.427|?>>
+    <associate|eq 18.425.035|<tuple|18.428|?>>
+    <associate|eq 18.428.035|<tuple|18.415|?>>
+    <associate|eq 18.429.035|<tuple|18.416|?>>
     <associate|eq 18.43.016|<tuple|18.92|?>>
     <associate|eq 18.43.022|<tuple|18.65|?>>
-    <associate|eq 18.430.036.1|<tuple|18.431|?>>
-    <associate|eq 18.432.036|<tuple|18.434|?>>
-    <associate|eq 18.433.036|<tuple|18.435|?>>
-    <associate|eq 18.434.036|<tuple|18.436|?>>
-    <associate|eq 18.436.036|<tuple|18.437|?>>
-    <associate|eq 18.437.036.1|<tuple|18.438|?>>
-    <associate|eq 18.438.036|<tuple|18.439|?>>
-    <associate|eq 18.439.036|<tuple|18.440|?>>
+    <associate|eq 18.430.036.1|<tuple|18.429|?>>
+    <associate|eq 18.432.036|<tuple|18.432|?>>
+    <associate|eq 18.433.036|<tuple|18.433|?>>
+    <associate|eq 18.434.036|<tuple|18.434|?>>
+    <associate|eq 18.436.036|<tuple|18.435|?>>
+    <associate|eq 18.437.036.1|<tuple|18.436|?>>
+    <associate|eq 18.438.036|<tuple|18.437|?>>
+    <associate|eq 18.439.036|<tuple|18.438|?>>
     <associate|eq 18.44.016|<tuple|18.93|?>>
     <associate|eq 18.44.022|<tuple|18.66|?>>
     <associate|eq 18.44.033|<tuple|18.44|?>>
-    <associate|eq 18.44.034|<tuple|18.345|?>>
-    <associate|eq 18.440.036|<tuple|18.441|?>>
-    <associate|eq 18.441.036|<tuple|18.442|?>>
-    <associate|eq 18.442.036|<tuple|18.443|?>>
-    <associate|eq 18.443.036|<tuple|18.444|?>>
-    <associate|eq 18.444.036|<tuple|18.445|?>>
-    <associate|eq 18.445.036|<tuple|18.446|?>>
-    <associate|eq 18.446.036|<tuple|18.447|?>>
-    <associate|eq 18.447.036|<tuple|18.448|?>>
-    <associate|eq 18.448.036|<tuple|18.449|?>>
-    <associate|eq 18.449.036|<tuple|18.450|?>>
+    <associate|eq 18.44.034|<tuple|18.343|?>>
+    <associate|eq 18.440.036|<tuple|18.439|?>>
+    <associate|eq 18.441.036|<tuple|18.440|?>>
+    <associate|eq 18.442.036|<tuple|18.441|?>>
+    <associate|eq 18.443.036|<tuple|18.442|?>>
+    <associate|eq 18.444.036|<tuple|18.443|?>>
+    <associate|eq 18.445.036|<tuple|18.444|?>>
+    <associate|eq 18.446.036|<tuple|18.445|?>>
+    <associate|eq 18.447.036|<tuple|18.446|?>>
+    <associate|eq 18.448.036|<tuple|18.447|?>>
+    <associate|eq 18.449.036|<tuple|18.448|?>>
     <associate|eq 18.45.016|<tuple|18.94|?>>
     <associate|eq 18.45.022|<tuple|18.67|?>>
     <associate|eq 18.45.033|<tuple|18.45|?>>
-    <associate|eq 18.450.036|<tuple|18.451|?>>
-    <associate|eq 18.451.036|<tuple|18.452|?>>
-    <associate|eq 18.452.036|<tuple|18.453|?>>
-    <associate|eq 18.453.036|<tuple|18.454|?>>
-    <associate|eq 18.454.036|<tuple|18.455|?>>
-    <associate|eq 18.455.036|<tuple|18.456|?>>
-    <associate|eq 18.456.036|<tuple|18.457|?>>
-    <associate|eq 18.457.036|<tuple|18.458|?>>
-    <associate|eq 18.458.036|<tuple|18.459|?>>
-    <associate|eq 18.459.036|<tuple|18.460|?>>
+    <associate|eq 18.450.036|<tuple|18.449|?>>
+    <associate|eq 18.451.036|<tuple|18.450|?>>
+    <associate|eq 18.452.036|<tuple|18.451|?>>
+    <associate|eq 18.453.036|<tuple|18.452|?>>
+    <associate|eq 18.454.036|<tuple|18.453|?>>
+    <associate|eq 18.455.036|<tuple|18.454|?>>
+    <associate|eq 18.456.036|<tuple|18.455|?>>
+    <associate|eq 18.457.036|<tuple|18.456|?>>
+    <associate|eq 18.458.036|<tuple|18.457|?>>
+    <associate|eq 18.459.036|<tuple|18.458|?>>
     <associate|eq 18.46.016|<tuple|18.95|?>>
     <associate|eq 18.46.022|<tuple|18.68|?>>
     <associate|eq 18.46.033|<tuple|18.46|?>>
-    <associate|eq 18.460.036|<tuple|18.461|?>>
-    <associate|eq 18.461.036|<tuple|18.462|?>>
-    <associate|eq 18.463.036|<tuple|18.463|?>>
-    <associate|eq 18.463.036.1|<tuple|18.464|?>>
-    <associate|eq 18.464.036|<tuple|18.465|?>>
-    <associate|eq 18.465.036|<tuple|18.466|?>>
-    <associate|eq 18.466.036|<tuple|18.467|?>>
-    <associate|eq 18.467.036|<tuple|18.468|?>>
-    <associate|eq 18.468.036|<tuple|18.469|?>>
-    <associate|eq 18.469.036|<tuple|18.470|?>>
+    <associate|eq 18.460.036|<tuple|18.459|?>>
+    <associate|eq 18.461.036|<tuple|18.460|?>>
+    <associate|eq 18.463.036|<tuple|18.461|?>>
+    <associate|eq 18.463.036.1|<tuple|18.462|?>>
+    <associate|eq 18.464.036|<tuple|18.463|?>>
+    <associate|eq 18.465.036|<tuple|18.464|?>>
+    <associate|eq 18.466.036|<tuple|18.465|?>>
+    <associate|eq 18.467.036|<tuple|18.466|?>>
+    <associate|eq 18.468.036|<tuple|18.467|?>>
+    <associate|eq 18.469.036|<tuple|18.468|?>>
     <associate|eq 18.47.016|<tuple|18.96|?>>
     <associate|eq 18.47.022|<tuple|18.69|?>>
     <associate|eq 18.47.033|<tuple|18.47|?>>
-    <associate|eq 18.470.036|<tuple|18.471|?>>
-    <associate|eq 18.471.036|<tuple|18.471|?>>
-    <associate|eq 18.472.036|<tuple|18.473|?>>
-    <associate|eq 18.473.036|<tuple|18.474|?>>
+    <associate|eq 18.470.036|<tuple|18.469|?>>
+    <associate|eq 18.471.036|<tuple|18.469|?>>
+    <associate|eq 18.472.036|<tuple|18.471|?>>
+    <associate|eq 18.473.036|<tuple|18.472|?>>
     <associate|eq 18.48.016|<tuple|18.97|?>>
     <associate|eq 18.48.022|<tuple|18.70|?>>
     <associate|eq 18.48.033|<tuple|18.52|?>>
@@ -16557,7 +16529,7 @@
     <associate|eq 18.61.023|<tuple|18.83|?>>
     <associate|eq 18.62.016|<tuple|18.120|?>>
     <associate|eq 18.62.032|<tuple|18.84|?>>
-    <associate|eq 18.67.035|<tuple|18.391|?>>
+    <associate|eq 18.67.035|<tuple|18.389|?>>
     <associate|eq 18.74.018|<tuple|18.121|?>>
     <associate|eq 18.75.018|<tuple|18.122|?>>
     <associate|eq 18.76.018|<tuple|18.123|?>>
