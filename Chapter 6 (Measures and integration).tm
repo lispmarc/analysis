@@ -11252,7 +11252,7 @@
     functions properties (5)> that <math|f<rsup|+>> and <math|f<rsup|-1>> are
     <math|\<cal-A\>>-measurable. Using the fact that
     <math|f<rsup|+>,f<rsup|->> are non negative we can apply the previous
-    theorem <reference|measurable functions properties (6)> two find two
+    theorem <reference|measurable functions properties (6)> to find two
     sequences of <math|\<cal-A\>>-measurable simple functions
     <math|<around*|{|f<rsup|+><rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>,
     <math|<around*|{|f<rsup|-><rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
@@ -11274,7 +11274,7 @@
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>|<cell|\<equallim\><rsub|def>>|<cell|<below|lim|n\<rightarrow\>\<infty\>><around*|(|f<rsup|+><rsub|n><around*|(|x|)>+<around*|(|-1\<cdot\>f<rsup|-><rsub|n><around*|(|x|)>|)>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|properties
-      of the limit in the extented reals>>>>|<cell|<below|lim|n\<rightarrow\>\<infty\>>f<rsup|+><rsub|n><around*|(|x|)>+<around*|(|-1|)>\<cdot\><below|lim|n\<rightarrow\>\<infty\>>f<rsup|-><rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|+><around*|(|x|)>+<around*|(|-1|)>\<cdot\>f<rsup|-1><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|f<rsup|+>-f<rsup|->|)><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<around*|(|x|)>>>>>
+      of the limit in the extented reals>>>>|<cell|<below|lim|n\<rightarrow\>\<infty\>>f<rsup|+><rsub|n><around*|(|x|)>+<around*|(|-1|)>\<cdot\><below|lim|n\<rightarrow\>\<infty\>>f<rsup|-><rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|+><around*|(|x|)>+<around*|(|-1|)>\<cdot\>f<rsup|-><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<rsup|+><around*|(|x|)>-f<rsup|-><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|f<rsup|+>-f<rsup|->|)><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<around*|(|x|)>>>>>
     </eqnarray*>
 
     So there exists a sequence of real simple functions
@@ -11288,16 +11288,14 @@
   <reference|negligibility>] we can introduce the concept of almost
   everywhere predicates and complete measures.
 
-  TODO
-
   <\definition>
     <label|almost complete><index|almost everyware>Let
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
     space and <math|P<around*|(|x|)>> a predicate then
-    <math|P<around*|(|x|)>> is <with|font-series|bold|<math|\<mu\>>-almost
-    everywhere> if <math|<around*|{|x\<in\>X\|\<neg\><around*|(|P<around*|(|x|)>|)><text|>|}>\<in\>\<cal-N\><rsub|\<mu\>>>.
-    In other words <math|P<around*|(|x|)>> is
-    <with|font-series|bold|<math|\<mu\>>-almost everywhere> if there exists a
+    <math|P<around*|(|x|)>> is <with|font-series|bold|<math|\<mu\>>-a.e.
+    true> if <math|<around*|{|x\<in\>X\|\<neg\><around*|(|P<around*|(|x|)>|)><text|>|}>\<in\>\<cal-N\><rsub|\<mu\>>>
+    [see <reference|negligibility>]. In other words <math|P<around*|(|x|)>>
+    is <with|font-series|bold|<math|\<mu\>>-a.e. true> if there exists a
     <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> such that
     <math|<around*|{|x\<in\>X\|\<neg\>P<around*|(|x|)>|}>\<subseteq\>N>.
   </definition>
@@ -11310,21 +11308,20 @@
     <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> then\ 
 
     <\enumerate>
-      <item><math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost
-      everywhere if there exists a <math|N\<in\>\<cal-A\>> with
-      <math|\<mu\><around*|(|N|)>=0> such that
-      <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
+      <item><math|f=g> <with|font-series|bold|<math|\<mu\>>-a.e>. if there
+      exists a <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0>
+      such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
 
-      <item><math|f<around*|(|x|)>\<geqslant\>g<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere if there exists a
-      <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> such
+      <item><math|f\<geqslant\>g> <with|font-series|bold|<math|\<mu\>>-a.e>.
+      if there exists a <math|N\<in\>\<cal-A\>> with
+      <math|\<mu\><around*|(|N|)>=0> such
       that<math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<less\>g<around*|(|x|)>|}>\<subseteq\>N>.
 
       <item>Let <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
       a sequence of functions from <math|X> to
       <math|<wide|\<bbb-R\>|\<wide-bar\>>> then
-      <math|<around*|{|f<rsub|n><rsub|><around*|(|x|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
-      converges <math|\<mu\>>-almost everywhere to <math|f<around*|(|x|)>> if
+      <math|<around*|{|f<rsub|n><rsub|>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+      converges <with|font-series|bold|<math|\<mu\>>-a.e>. to <math|f> if
       there exists a <math|N\<in\>\<cal-A\>> with
       <math|\<mu\><around*|(|N|)>=0> such that
       <math|<around*|{|x\<in\>X<mid|\|><around*|{|f<rsub|n><around*|(|x|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>
@@ -11336,32 +11333,30 @@
     <label|almost everywhere equality and characteristic function>Let
     <math|<around*|\<langle\>|X,\<cal-A\>\<comma\>\<mu\>|\<rangle\>>> be a
     measure space, <math|A\<subseteq\>X> such that
-    <math|\<exists\>N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> and
-    <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>. If we define
-    <math|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)>:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    <math|\<exists\>N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> so
+    that <math|A\<subseteq\>N> and <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>.
+    If we define <math|\<cal-X\><rsub|X\\A>\<cdot\>f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
     by <math|><math|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>=\<cal-X\><rsub|X\\A><around*|(|x|)>\<cdot\>f<around*|(|x|)>>
     [see <reference|characteristics function> for a definition of
     <math|\<cal-X\><rsub|X\\A>>] then we have that
 
     <\equation*>
-      <around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>=f<around*|(|x|)>
-      \<mu\><text|-almost everywhere>
+      \<cal-X\><rsub|X\\A>\<cdot\>f=f<space|1em> \<mu\><text|-a.e.>
     </equation*>
   </proposition>
 
   <\proof>
-    Let <math|x\<in\><around*|{|x\<in\>X\|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>=f<around*|(|x|)>|}>>
+    Let <math|x\<in\><around*|{|x\<in\>X\|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>\<neq\>f<around*|(|x|)>|}>>
     then <math|x\<in\>X> and <math|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>\<neq\>f<around*|(|x|)>>.
     Assume that <math|x\<nin\>A> then <math|x\<in\>X\\A> and
     <math|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>=\<cal-X\><rsub|X\\A><around*|(|x|)>*\<cdot\>f<around*|(|x|)>=1\<cdot\>f<around*|(|x|)>=f<around*|(|x|)>>
     contradicting <math|><math|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>\<neq\>f<around*|(|x|)>>,
     so we must have that <math|x\<in\>A>. Hence
-    <math|<around*|{|x\<in\>X\|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>=f<around*|(|x|)>|}>\<subseteq\>A\<subseteq\>N>
+    <math|<around*|{|x\<in\>X\|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>\<neq\>f<around*|(|x|)>|}>\<subseteq\>A\<subseteq\>N>
     proving that\ 
 
     <\equation*>
-      <around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><around*|(|x|)>=f<around*|(|x|)>
-      \<mu\><text|-almost everywhere>
+      \<cal-X\><rsub|X\\A>\<cdot\>f=f<space|1em>\<mu\><text|-a.e.>
     </equation*>
 
     \;
@@ -11376,34 +11371,26 @@
     <math|k:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>\ 
 
     <\enumerate>
-      <item>If <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost
-      everywhere and <math|g<around*|(|x|)>=h<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere then
-      <math|f<around*|(|x|)>=h<around*|(|x|)>> almost everywhere.
+      <item>If <math|f=g> <math|\<mu\>>-a.e. and <math|g=h>
+      <math|\<mu\>>-a.e. then <math|f=h> <math|\<mu\>>-a.e.
 
-      <item>If <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere and
-      <math|g<around*|(|x|)>\<leqslant\>h<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere then
-      <math|f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>> almost everywhere.
+      <item>If <math|f\<leqslant\>g> <math|\<mu\>>-a.e. and
+      <math|g\<leqslant\>h> <math|\<mu\>>-a.e. then <math|f\<leqslant\>h>
+      <math|\<mu\>>-a.e..
 
-      <item>If <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere and
-      <math|g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere then
-      <math|f<around*|(|x|)>=g<around*|(|x|)>> almost everywhere.
+      <item>If <math|f\<leqslant\>g> <math|\<mu\>>-a.e. and
+      <math|g\<leqslant\>f> <math|\<mu\>>-a.e. then <math|f=g>
+      <math|\<mu\>>-a.e..
 
       <item>If <math|\<alpha\>\<in\>\<bbb-R\>\\<around*|{|0|}>> then if
-      <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost
-      everywhere then <math|\<alpha\>\<cdot\>f<around*|(|x|)>=\<alpha\>\<cdot\>g<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere.
+      <math|f=g> <math|\<mu\>>-a.e. then <math|\<alpha\>\<cdot\>f=\<alpha\>\<cdot\>g>
+      <math|\<mu\>>-a.e..
 
       <item>If <math|\<forall\>x\<in\>X> we have that
       <math|f<around*|(|x|)>+g<around*|(|x|)>> and
       <math|h<around*|(|x|)>+k<around*|(|x|)>> is well defined and in
-      addition <math|f<around*|(|x|)>=h<around*|(|x|)>> <math|\<mu\>>-almost
-      everywhere and <math|g<around*|(|x|)>=k<around*|(|x|)>>
-      <math|\<mu\>>-almost everywhere.
+      addition <math|f=h> <math|\<mu\>>-a.e. and <math|g=k>
+      <math|\<mu\>>-a.e. then <math|f+g=h+k> <math|\<mu\>>-a.e.
     </enumerate>
   </proposition>
 
@@ -11411,8 +11398,8 @@
     \ 
 
     <\enumerate>
-      <item>As <math|f=g> <math|\<mu\>>-almost everywhere and <math|g=h>
-      <math|\<mu\>>-almost everywhere <math|>there exists
+      <item>As <math|f=g> <math|\<mu\>>-a.e. and <math|g=h>
+      <math|\<mu\>>-a.e. <math|>there exists
       <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
       <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>>
       such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
@@ -11422,25 +11409,24 @@
       [for if <math|f<around*|(|x|)>=g<around*|(|x|)>\<wedge\>g<around*|(|x|)>=h<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>=h<around*|(|x|)>>]
       so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<neq\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
       As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f=h> <math|\<mu\>>-almost everywhere.
+      it follows that <math|f=h> <math|\<mu\>>-a.e..
 
-      <item>As <math|f\<leqslant\>g> <math|\<mu\>>-almost everywhere and
-      <math|g\<leqslant\>h> <math|\<mu\>>-almost everywhere <math|>there
-      exists <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
+      <item>As <math|f\<leqslant\>g> <math|\<mu\>>-a.e. and
+      <math|g\<leqslant\>h> <math|\<mu\>>-a.e. <math|>there exists
+      <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
       <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>>
       such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
       and <math|<around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|2>>.
-      Let <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>|}>>
+      Let <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>h<around*|(|x|)>|}>>
       then <math|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>\<vee\>g<around*|(|x|)>\<nleqslant\>h<around*|(|x|)>>
       [for if <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>\<wedge\>g<around*|(|x|)>\<leqslant\>h<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>>]
       so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
       As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f\<leqslant\>h> <math|\<mu\>>-almost
-      everywhere.<math|>
+      it follows that <math|f\<leqslant\>h> <math|\<mu\>>-a.e..<math|>
 
-      <item>As <math|f\<leqslant\>g> <math|\<mu\>>-almost everywhere and
-      <math|g\<leqslant\>f> <math|\<mu\>>-almost everywhere <math|>there
-      exists <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
+      <item>As <math|f\<leqslant\>g> <math|\<mu\>>-a.e. and
+      <math|g\<leqslant\>f> <math|\<mu\>>-a.e. <math|>there exists
+      <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
       <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>
       >such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
       and <math|<around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>f<around*|(|x|)>|}>\<subseteq\>N<rsub|2>>.
@@ -11449,9 +11435,9 @@
       [for if <math|f<around*|(|x|)>\<leqslant\>g<around*|(|x|)>\<wedge\>g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>=g<around*|(|x|)>>]
       so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<nleqslant\>g<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<nleqslant\>f<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
       As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f=h> <math|\<mu\>>-almost everywhere.<math|>
+      it follows that <math|f=h> <math|\<mu\>>-a.e..<math|>
 
-      <item>As <math|f=g> <math|\<mu\>>-almost everywhere there exists a
+      <item>As <math|f=g> <math|\<mu\>>-a.e. there exists a
       <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> such that
       <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
       Let now <math|x\<in\><around*|{|x\<in\>X\|\<alpha\>\<cdot\>f<around*|(|x|)>\<neq\>\<alpha\>\<cdot\>g<around*|(|x|)>|}>>
@@ -11459,8 +11445,8 @@
       proving that <math|><math|<around*|{|x\<in\>X\|\<alpha\>\<cdot\>f<around*|(|x|)>\<neq\>\<alpha\>\<cdot\>g<around*|(|x|)>|}>\<subseteq\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
       So <math|\<alpha\>\<cdot\>f\<neq\>\<alpha\>\<cdot\>g>.
 
-      <item>As As <math|f=h> <math|\<mu\>>-almost everywhere and <math|g=k>
-      <math|\<mu\>>-almost everywhere <math|>there exists
+      <item>As As <math|f=h> <math|\<mu\>>-a.e. and <math|g=k>
+      <math|\<mu\>>-a.e. <math|>there exists
       <math|N<rsub|1>,N<rsub|2>\<in\>\<cal-A\>> with
       <math|\<mu\><around*|(|N<rsub|1>|)>=0=\<mu\><around*|(|N<rsub|2>|)>>
       such that <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>h<around*|(|x|)>|}>\<subseteq\>N<rsub|1>>
@@ -11470,9 +11456,11 @@
       [for if <math|f<around*|(|x|)>=h<around*|(|x|)>\<wedge\>g<around*|(|x|)>=k<around*|(|x|)>\<Rightarrow\>f<around*|(|x|)>+g<around*|(|x|)>=h<around*|(|x|)>+k<around*|(|x|)>>]
       so that <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>h<around*|(|x|)>|}><big|cup><around*|{|x\<in\>X\|g<around*|(|x|)>\<neq\>k<around*|(|x|)>|}>\<subseteq\>N<rsub|1><big|cup>N<rsub|2>>.
       As <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0>
-      it follows that <math|f+g=h+k> <math|\<mu\>>-almost everywhere.<math|>
+      it follows that <math|f+g=h+k> <math|\<mu\>>-a.e..<math|>
     </enumerate>
   </proof>
+
+  TODO
 
   <\proposition>
     <label|f=g almost everywhere property>Let
@@ -11481,13 +11469,13 @@
     <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
     <math|\<cal-A\>>-measurable function and
     <math|g:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> such that
-    <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost everywhere
-    then <math|g<around*|(|x|)>> is <math|\<cal-A\>>-measurable.\ 
+    <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-a.e. then
+    <math|g<around*|(|x|)>> is <math|\<cal-A\>>-measurable.\ 
   </proposition>
 
   <\proof>
-    As <math|f=g> <math|\<mu\>>-almost everywhere there exists a
-    <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> and
+    As <math|f=g> <math|\<mu\>>-a.e. there exists a <math|N\<in\>\<cal-A\>>
+    with <math|\<mu\><around*|(|N|)>=0> and
     <math|<around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>g<around*|(|x|)>|}>\<subseteq\>N>.
     So\ 
 
@@ -11527,24 +11515,24 @@
     <math|X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>,
     <math|f:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> such that
     <math|<around*|{|f<rsub|n><around*|(|x|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
-    converges <math|\<mu\>>-almost everywhere to <math|f<around*|(|x|)>> then
-    <math|f> is <math|\<cal-A\>>-measurable.
+    converges <math|\<mu\>>-a.e. to <math|f<around*|(|x|)>> then <math|f> is
+    <math|\<cal-A\>>-measurable.
   </corollary>
 
   <\proof>
     Take <math|B=<around*|{|x\<in\>X\|<around*|{|f<rsub|n><around*|(|x|)><rsub|n\<in\>\<bbb-N\><rsub|0>>
     does not converges to f<around*|(|x|)>|}>|}>. >As
     <math|<around*|{|f<rsub|n><around*|(|x|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
-    converges <math|\<mu\>>-almost everywhere to <math|f> we have that there
-    exists a <math|N\<in\>\<cal-A\>> with <math|B\<subseteq\>N> and
+    converges <math|\<mu\>>-a.e. to <math|f> we have that there exists a
+    <math|N\<in\>\<cal-A\>> with <math|B\<subseteq\>N> and
     <math|\<mu\><around*|(|N|)>=\<emptyset\>>. If <math|x\<in\>X\\B> then
     <math|f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n>\<equallim\><rsub|<text|<reference|definition
     of limit in the extented reals>>><below|lim
     inf|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>> so we have that
     <math|f<around*|(|x|)>=<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>
-    <math|\<mu\>>-almost everywhere. As by <reference|measurable functions
-    properties (2)> <math|<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>>
-    is <math|\<cal-A\>>-measurable [given that
+    <math|\<mu\>>-a.e.. As by <reference|measurable functions properties (2)>
+    <math|<below|lim inf|n\<rightarrow\>\<infty\>>f<rsub|n>> is
+    <math|\<cal-A\>>-measurable [given that
     <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> <math|f<rsub|n> > is
     <math|\<cal-A\>>-measurable] we have using the previous property
     <reference|f=g almost everywhere property> that\ 
@@ -11724,8 +11712,7 @@
 
         <item><math|\<forall\>x\<in\>X> <math|g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>\<leqslant\>h<around*|(|x|)>>
 
-        <item><math|g<around*|(|x|)>=h<around*|(|x|)>> <math|\<mu\>>-almost
-        everywhere
+        <item><math|g<around*|(|x|)>=h<around*|(|x|)>> <math|\<mu\>>-a.e.
       </enumerate>
 
       <item><math|f> is <math|\<cal-A\><rsub|\<mu\>>>-measurable
@@ -11842,7 +11829,7 @@
         18.350.0.34>>>0> we conclude that
 
         <\equation>
-          <label|eq 18.353.034>g=h<text| >\<mu\><text|-almost everywhere>
+          <label|eq 18.353.034>g=h<text| >\<mu\><text|-a.e.>
         </equation>
 
         <item>Let <math|s:X\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> be a
@@ -11866,8 +11853,7 @@
           >g<rsup|+><around*|(|x|)>\<leqslant\>s<rsup|+><around*|(|x|)>\<leqslant\>h<rsup|+><around*|(|x|)><infix-and>g<rsup|-><around*|(|x|)>\<leqslant\>s<rsup|-><around*|(|x|)>\<leqslant\>h<rsup|-><around*|(|x|)>>|<cell|<eq-number><label|eq
           18.354.034>>>|<row|<cell|>|<cell|h<rsup|+>=g<rsup|+>
           \<mu\><text|-almost everywhere and> h<rsup|<rsup|->>=g<rsup|->
-          \<mu\><text|-almost everywhere>>|<cell|<eq-number><label|eq
-          18.355.034>>>>>
+          \<mu\><text|-a.e.>>|<cell|<eq-number><label|eq 18.355.034>>>>>
         </eqnarray*>
 
         Let <math|x\<in\>X> then we have (taking in account that all the
@@ -11887,14 +11873,13 @@
         </equation>
 
         Further as <math|h<rsup|+>=g<rsup|+> \<mu\><text|-almost everywhere
-        and> h<rsup|<rsup|->>=g<rsup|-> \<mu\><text|-almost everywhere>> we
-        have by <reference|almost everywhere properties> and <reference|eq
+        and> h<rsup|<rsup|->>=g<rsup|-> \<mu\><text|-a.e.>> we have by
+        <reference|almost everywhere properties> and <reference|eq
         18.355.034> that <math|g<rsup|+>-h<rsup|->=h<rsup|+>-g<rsup|->>
-        <math|\<mu\>>-almost everywhere proving that\ 
+        <math|\<mu\>>-a.e. proving that\ 
 
         <\equation>
-          <label|eq 18.358.034>g=h<text| holds >\<mu\><text|-almost
-          everywhere>
+          <label|eq 18.358.034>g=h<text| holds >\<mu\><text|-a.e.>
         </equation>
 
         <item>Now for the general case let
@@ -11917,7 +11902,7 @@
         <\equation>
           <label|eq 18.360.034>\<forall\>x\<in\>X
           g<rsub|n><around*|(|x|)>\<leqslant\>f<rsub|n><around*|(|x|)>\<leqslant\>h<rsub|n><around*|(|x|)><text|
-          and >g<rsub|n>=h<rsub|n> \<mu\><text|-almost everywhere>
+          and >g<rsub|n>=h<rsub|n> \<mu\><text|-a.e.>
         </equation>
 
         Define now <math|g> and <math|h> as <math|g=<below|lim
@@ -11968,7 +11953,7 @@
         Hence we have that\ 
 
         <\equation>
-          <label|eq 18.363.034>g=h<space|1em>\<mu\><text|-almost everywhere>
+          <label|eq 18.363.034>g=h<space|1em>\<mu\><text|-a.e.>
         </equation>
 
         \;
@@ -12588,8 +12573,8 @@
       </enumerate>
 
       <item>If <math|f\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> such
-      that <math|f=0> <math|\<mu\>>-almost everywhere then
-      <math|<big|int><rsup|S>f d\<mu\>=0>
+      that <math|f=0> <math|\<mu\>>-a.e. then <math|<big|int><rsup|S>f
+      d\<mu\>=0>
     </enumerate>
   </proposition>
 
@@ -12732,7 +12717,7 @@
         </equation*>
       </enumerate>
 
-      <item>As <math|f=0> <math|\<mu\>>-almost everywhere we have
+      <item>As <math|f=0> <math|\<mu\>>-a.e. we have
 
       <\equation*>
         \<exists\>N\<in\>\<cal-A\><text| with >\<mu\><around*|(|N|)>=0<text|
@@ -13217,13 +13202,12 @@
     <label|integral of everywhere zero function>Let
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measiure
     space and <math|f\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f=0> <math|\<mu\>>-almost everywhere then
-    <math|<big|int>f d\<mu\>=0>
+    such that <math|f=0> <math|\<mu\>>-a.e. then <math|<big|int>f d\<mu\>=0>
   </example>
 
   <\proof>
-    As <math|f=0> <math|\<mu\>>-almost everywhere there exists a
-    <math|N\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N|)>=0> such that
+    As <math|f=0> <math|\<mu\>>-a.e. there exists a <math|N\<in\>\<cal-A\>>
+    with <math|\<mu\><around*|(|N|)>=0> such that
     <math|<around*|{|x\<in\>X\|0\<less\>f<around*|(|x|)>|}>\<subseteq\>N>.
     Let now <math|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]>> be such
     that <math|g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>> then if
@@ -13231,7 +13215,7 @@
     <math|0\<less\>g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>> so that
     <math|x\<in\><around*|{|x\<in\>X\|0\<less\>f<around*|(|x|)>|}>\<subseteq\>N>.
     Hence we have that <math|<around*|{|x\<in\>X\|0\<less\>g<around*|(|x|)>|}>\<subseteq\>N>
-    proving that <math|g=0> <math|\<mu\>>-almost everywhere. Applying then
+    proving that <math|g=0> <math|\<mu\>>-a.e.. Applying then
     <reference|simple functions integral properties (1)> proves that
     <math|<big|int><rsup|+>g d\<mu\>=0>. So
 
@@ -14127,7 +14111,7 @@
   </proposition>
 
   <\proof>
-    As <math|f=0> <math|\<mu\>>-almost everywhere we have\ 
+    As <math|f=0> <math|\<mu\>>-a.e. we have\ 
 
     <\equation*>
       \<exists\>N\<in\>\<cal-A\><text| with >\<mu\><around*|(|N|)>=0<text|
@@ -14139,9 +14123,8 @@
     <math|f<around*|(|x|)>\<neq\>0> proving that
     <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>0|}>\<subseteq\>N>.
     Hence <math|\<mu\><around*|(|<around*|{|x\<in\>X\|f<rsup|+><around*|(|x|)>\<neq\>0|}>|)>\<leqslant\>\<mu\><around*|(|N|)>=0>
-    from which it follows that <math|f<rsup|+>=0> <math|\<mu\>>-almost
-    everywhere. From <reference|integral of everywhere zero function> we have
-    that\ 
+    from which it follows that <math|f<rsup|+>=0> <math|\<mu\>>-a.e.. From
+    <reference|integral of everywhere zero function> we have that\ 
 
     <\equation>
       <label|eq 18.428.035><big|int><rsup|+>f<rsup|+>
@@ -14153,9 +14136,8 @@
     <math|f<around*|(|x|)>\<neq\>0> proving that
     <math|x\<in\><around*|{|x\<in\>X\|f<around*|(|x|)>\<neq\>0|}>\<subseteq\>N>.
     Hence <math|\<mu\><around*|(|<around*|{|x\<in\>X\|f<rsup|-><around*|(|x|)>\<neq\>0|}>|)>\<leqslant\>\<mu\><around*|(|N|)>=0>
-    from which it follows that <math|f<rsup|->=0> <math|\<mu\>>-almost
-    everywhere. From <reference|integral of everywhere zero function> we have
-    that
+    from which it follows that <math|f<rsup|->=0> <math|\<mu\>>-a.e.. From
+    <reference|integral of everywhere zero function> we have that
 
     <\equation>
       <label|eq 18.429.035><big|int><rsup|+>f<rsup|->
@@ -14539,8 +14521,8 @@
     <label|integral properties (11.1)>Let
     <math|<around*|\<langle\>|X,\<cal-A\>.\<mu\>|\<rangle\>>> be a measure
     space and let <math|f,g\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost
-    everywhere then\ 
+    such that <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-a.e.
+    then\ 
 
     <\equation*>
       <big|int><rsup|+>f d\<mu\>=<big|int><rsup|+>g d\<mu\>
@@ -14675,8 +14657,8 @@
   <\proposition>
     <label|integral properties (12)>Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>>
     be a measure space and let <math|f,g\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost
-    everywhere. If <math|f> is <math|\<mu\>>-integrable then <math|g> is
+    such that <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-a.e.. If
+    <math|f> is <math|\<mu\>>-integrable then <math|g> is
     <math|\<mu\>>-integrable and <math|<big|int>f d\<mu\>=<big|int>g d\<mu\>>
   </proposition>
 
@@ -14720,7 +14702,7 @@
 
     <\equation*>
       f<rsup|+>=g<rsup|+><text| >\<mu\><text|-almost everywhere and
-      >f<rsup|->=g<rsup|-><text| >\<mu\><text|-almost everywhere>
+      >f<rsup|->=g<rsup|-><text| >\<mu\><text|-a.e.>
     </equation*>
 
     Using then <reference|integral properties (11.1)> we have [taking in
@@ -14862,7 +14844,7 @@
     [hence by <reference|measurable functions properties (5)>
     <math|<around*|\||f|\|>\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>]
     such that <math|<big|int><around*|\||f|\|> d\<mu\>=0> then
-    <math|f<around*|(|x|)>=0> <math|\<mu\>>-almost everywhere.
+    <math|f<around*|(|x|)>=0> <math|\<mu\>>-a.e..
   </corollary>
 
   <\proof>
@@ -14902,7 +14884,7 @@
     which proves that\ 
 
     <\equation*>
-      f=0<text| >\<mu\><text|-almost everywhere>
+      f=0<text| >\<mu\><text|-a.e.>
     </equation*>
   </proof>
 
@@ -14912,8 +14894,7 @@
     [<math|f> is a <math|\<mu\>>-integrable function extended real function]
     such that <math|\<forall\>A\<in\>\<cal-A\>> we have
     <math|<big|int><rsub|A>f d\<mu\>\<geqslant\>0> then
-    <math|f<around*|(|x|)>\<geqslant\>0> holds <math|\<mu\>>-almost
-    everywhere.
+    <math|f<around*|(|x|)>\<geqslant\>0> holds <math|\<mu\>>-a.e..
   </corollary>
 
   <\proof>
@@ -14982,8 +14963,8 @@
 
     Using the above with the previous corollary <reference|integral
     properties (16)> proves that <math|\<cal-X\><rsub|A>\<cdot\>f=0>
-    <math|\<mu\>>-almost everywhere. Hence there exists a
-    <math|N\<in\>\<cal-N\>> with <math|\<mu\><around*|(|N|)>=0> such that
+    <math|\<mu\>>-a.e.. Hence there exists a <math|N\<in\>\<cal-N\>> with
+    <math|\<mu\><around*|(|N|)>=0> such that
     <math|<around*|{|x\<in\>X\|<around*|(|\<cal-X\><rsub|A>\<cdot\>f|)><around*|(|x|)>\<neq\>0|}>\<subseteq\>N>.
     So if <math|x\<in\>A> then <math|f<around*|(|x|)>\<less\>0> and
     <math|\<cal-X\><rsub|A><around*|(|x|)>=1> proving that
@@ -14991,7 +14972,7 @@
     hence <math|x\<in\>N> giving <math|A\<subseteq\>N>. Hence we have\ 
 
     <\equation*>
-      f\<geqslant\>0 <text|holds >\<mu\><text|-almost everywhere>
+      f\<geqslant\>0 <text|holds >\<mu\><text|-a.e.>
     </equation*>
   </proof>
 
@@ -15002,7 +14983,7 @@
     function into the extended real numbers] then
     <math|\<mu\><around*|(|<around*|{|x\<in\>X\|<around*|\||f<around*|(|x|)>|\|>=\<infty\>|}>|)>=0>
     so that \ <math|<around*|\||f<around*|(|x|)>|\|>\<less\>\<infty\>>
-    <math|\<mu\>>-almost everywhere.
+    <math|\<mu\>>-a.e..
   </corollary>
 
   <\proof>
@@ -15040,7 +15021,7 @@
 
     <\equation*>
       <around*|\||f<around*|(|x|)>|\|>\<less\>\<infty\><text|
-      >\<mu\><text|-almost everywhere>
+      >\<mu\><text|-a.e.>
     </equation*>
   </proof>
 
@@ -15049,7 +15030,7 @@
     measure space and <math|f\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
     then <math|f\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>> if and only if
     there exists a <math|g\<in\>\<cal-L\><rsup|1>> such that
-    <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost everywhere.
+    <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-a.e..
 
     In other words a measurable <math|<wide|\<bbb-R\>|\<wide-bar\>>> valued
     function is <math|\<mu\>>-integrable if there exists a <math|\<bbb-R\>>
@@ -15063,17 +15044,17 @@
     <\description>
       <item*|<math|\<Leftarrow\>>>Assume the there exists a function
       <math|g\<in\>\<cal-L\><rsup|1>> such that
-      <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-almost
-      everywhere, then as <math|\<cal-L\><rsup|1>\<subseteq\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>
+      <math|f<around*|(|x|)>=g<around*|(|x|)>> <math|\<mu\>>-a.e., then as
+      <math|\<cal-L\><rsup|1>\<subseteq\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>
       we have by <reference|integral properties (12)> that <math|f> is
       <math|\<mu\>>-integrable.\ 
 
       <item*|<math|\<Rightarrow\>>>Suppose that
       <math|f\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>> then we must create
       a <math|g> that is finite, <math|\<mu\>>-integrable and
-      <math|\<mu\>>-almost everywhere to <math|f>. To do this define the set
-      <math|A> of allo elements of <math|X> where <math|f<around*|(|x|)>> is
-      either <math|+\<infty\>> or <math|-\<infty\>>.
+      <math|\<mu\>>-a.e. to <math|f>. To do this define the set <math|A> of
+      allo elements of <math|X> where <math|f<around*|(|x|)>> is either
+      <math|+\<infty\>> or <math|-\<infty\>>.
 
       <\equation*>
         A=<around*|{|x\<in\>X\|<around*|\||f<around*|(|x|)>|\|>=\<infty\>|}>=<around*|{|x=\<infty\>|}><text|>
@@ -15318,7 +15299,7 @@
       <item><math|f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<around*|(|x|)>>
     </enumerate>
 
-    <math|\<mu\>>-almost everywhere then we have\ 
+    <math|\<mu\>>-a.e. then we have\ 
 
     <\equation*>
       <big|int><rsup|+>f d\<mu\>=<below|lim|n\<rightarrow\>\<infty\>><big|int><rsup|+>f<rsub|n>
@@ -15382,7 +15363,7 @@
 
     <\equation*>
       f<around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f|)><text|
-      >\<mu\><text|-almost everywhere>
+      >\<mu\><text|-a.e.>
     </equation*>
 
     and
@@ -15390,7 +15371,7 @@
     <\equation*>
       \<forall\>n\<in\>\<bbb-N\><rsub|0><text|
       ><around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f<rsub|n>|)><around*|(|x|)>=f<rsub|n><around*|(|x|)><text|
-      >\<mu\><text|-almost everywhere>
+      >\<mu\><text|-a.e.>
     </equation*>
 
     From this it follows that\ 
@@ -15557,7 +15538,7 @@
       \<forall\>n\<in\>\<bbb-N\><rsub|0> <around*|\||f<rsub|n><around*|(|x|)>|\|>\<leqslant\>g<around*|(|x|)>
     </equation*>
 
-    holds <math|\<mu\>>-almost everywhere then\ 
+    holds <math|\<mu\>>-a.e. then\ 
 
     <\enumerate>
       <item><math|f\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>
@@ -15581,9 +15562,8 @@
 
     Using <reference|integral properties (18)> we have that
     <math|g<around*|(|x|)>=<around*|\||g<around*|(|x|)>|\|>\<less\>\<infty\>>
-    <math|\<mu\>>-almost everywhere so there exists a
-    <math|N<rsub|1>\<in\>\<cal-A\>> with <math|\<mu\><around*|(|N<rsub|1>|)>=0>
-    such that
+    <math|\<mu\>>-a.e. so there exists a <math|N<rsub|1>\<in\>\<cal-A\>> with
+    <math|\<mu\><around*|(|N<rsub|1>|)>=0> such that
 
     <\equation*>
       A=<around*|{|x\<in\>X\|g<around*|(|x|)>=\<infty\>|}>\<subseteq\>N<rsub|1>
@@ -15611,10 +15591,10 @@
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|>|<cell|f<around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>
-      \<mu\><text|-almost everywhere>>|<cell|>>|<row|<cell|>|<cell|g<around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>
-      \<mu\><text|-almost everywhere>>|<cell|>>|<row|<cell|>|<cell|\<forall\>n\<in\>\<bbb-N\><rsub|0>
+      \<mu\><text|-a.e.>>|<cell|>>|<row|<cell|>|<cell|g<around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>
+      \<mu\><text|-a.e.>>|<cell|>>|<row|<cell|>|<cell|\<forall\>n\<in\>\<bbb-N\><rsub|0>
       <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>=f<rsub|n><around*|(|x|)>
-      \<mu\><text|-almost everywhere>>|<cell|>>>>
+      \<mu\><text|-a.e.>>|<cell|>>>>
     </eqnarray*>
 
     As <math|N\<in\>\<cal-A\>> hence <math|X\\N\<in\>\<cal-A\>> it follows by
@@ -15681,8 +15661,7 @@
 
     Using the fact that <math|g> ia <math|\<mu\>>-integrable , finite and
     <math|g<around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>
-    \<mu\><text|-almost everywhere>> we have by <reference|integral
-    properties (12)> that
+    \<mu\><text|-a.e.>> we have by <reference|integral properties (12)> that
 
     <\equation>
       <label|eq 18.466.036><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>\<in\>\<cal-L\><rsup|1>\<wedge\><big|int><rsup|+><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g
