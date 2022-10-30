@@ -15686,312 +15686,304 @@
 
   <\proof>
     As <math|g\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>> is non negative we
-    have by <reference|integrability of non negative functions (2)> that\ 
+    have by <reference|integrability of non negative functions (2)> we have
+    that\ 
 
     <\equation>
-      <label|eq 18.460.037><big|int>g d\<mu\>=<big|int><rsup|+>g
+      <label|eq 18.463.036><big|int>g d\<mu\>=<big|int><rsup|+>g
       d\<mu\>\<less\>\<infty\>
     </equation>
 
-    From <reference|integral properties (18)> and the non negativity of
-    <math|g> we have that <math|<around*|\||g|\|>=g\<less\>\<infty\>>
-    <math|\<mu\>>-a.e. so there exists a <math|N<rsub|1>\<in\>\<cal-A\>> with
-    <math|\<mu\><around*|(|N<rsub|1>|)>> such that
+    Using <reference|integral properties (18)> we have that
+    <math|g=<around*|\||g|\|>\<less\>\<infty\>> <math|\<mu\>>-a.e. so there
+    exists a <math|N<rsub|1>\<in\>\<cal-A\>> with
+    <math|\<mu\><around*|(|N<rsub|1>|)>=0> such that
 
-    <\equation>
-      <label|eq 18.461.037>A=<around*|{|x\<in\>X\|g<around*|(|x|)>=\<infty\>|}>=<around*|{|x\<in\>X\|<around*|\||g<around*|(|x|)>|\|>=\<infty\>|}>\<subseteq\>N<rsub|1>
-    </equation>
+    <\equation*>
+      A=<around*|{|x\<in\>X\|g<around*|(|x|)>=\<infty\>|}>\<subseteq\>N<rsub|1>
+    </equation*>
 
-    From the assumptions there exists a <math|N<rsub|2>\<in\>\<cal-A\>> with
-    <math|\<mu\><around*|(|N<rsub|2>|)>=0> such that\ 
+    Further using the hypothese, there exists <math|N<rsub|2>\<in\>\<cal-A\>>
+    with <math|\<mu\><around*|(|N<rsub|2>|)>=0> such that
 
-    <\equation>
-      <label|eq 18.462.037>B=<around*|{|x\<in\>X\|\<neg\><around*|(|f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>\<wedge\>\<forall\>n\<in\>\<bbb-N\><rsub|0>
+    <\equation*>
+      B=<around*|{|x\<in\>X\|\<neg\><around*|(|f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>\<wedge\>\<forall\>n\<in\>\<bbb-N\><rsub|0>
       <around*|\||f<rsub|n><around*|(|x|)>|\|>\<leqslant\>g<around*|(|x|)>|)>|}>\<subseteq\>N<rsub|2>
-    </equation>
+    </equation*>
 
-    Define <math|N=N<rsub|1><big|cup>N<rsub|2>> then <math|N\<in\>\<cal-A\>>
-    and <math|\<mu\><around*|(|N|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0+0=0>
-    gving\ 
+    Take <math|N=N<rsub|1><big|cup>N<rsub|2>\<in\>\<cal-A\>> then
+    <math|\<mu\><around*|(|N<rsub|1><big|cup>N<rsub|2>|)>\<leqslant\>\<mu\><around*|(|N<rsub|1>|)>+\<mu\><around*|(|N<rsub|2>|)>=0+0=0>
+    and\ 
 
     <\equation>
-      <label|eq 18.463.037>A<big|cup>B\<subseteq\>N\<in\>\<cal-A\><text| with
-      >\<mu\><around*|(|N|)>=0
+      <label|eq 18.463.036.1><around*|{|x\<in\>X\|g<around*|(|x|)>=\<infty\>|}><big|cup><around*|{|x\<in\>X\|\<neg\><around*|(|f<around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>\<wedge\>\<forall\>n\<in\>\<bbb-N\><rsub|0>
+      <around*|\||f<rsub|n><around*|(|x|)>|\|>\<leqslant\>g<around*|(|x|)>|)>|}>\<subseteq\>N
     </equation>
 
-    As <math|N\<in\>\<cal-A\>> so that <math|X\\N\<in\>\<cal-A\>> we have
-    using <reference|characteristic function is measurable> that
-    <math|\<cal-X\><rsub|X\\N>\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>,
-    and applying <reference|measurable functions properties (4)>,
-    <reference|measurable functions properties (5)> we have that\ 
+    Using <reference|almost everywhere equality and characteristic function>
+    on <math|N> we have that\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<cal-X\><rsub|X\\N>\<cdot\>f\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>|<cell|\<wedge\>>|<cell|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|>\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>>|<row|<cell|>|<cell|\<wedge\>>|<cell|\<cal-X\><rsub|X\\N>\<cdot\>g\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>>|<row|<cell|>|<cell|\<wedge\>>|<cell|\<forall\>n\<in\>\<bbb-N\><rsub|0>
-      \<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>><eq-number><label|eq
-      18.464.037>>>>>
+      <tformat|<table|<row|<cell|>|<cell|f=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
+      \<mu\><text|-a.e.>>|<cell|>>|<row|<cell|>|<cell|g=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>
+      \<mu\><text|-a.e.>>|<cell|>>|<row|<cell|>|<cell|\<forall\>n\<in\>\<bbb-N\><rsub|0>
+      <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>=f<rsub|n>
+      \<mu\><text|-a.e.>>|<cell|>>>>
     </eqnarray*>
 
-    Let <math|x\<in\>X> then we have either\ 
+    As <math|N\<in\>\<cal-A\>> so that \ <math|X\\N\<in\>\<cal-A\>> it
+    follows by <reference|characteristic function is measurable> that
+    <math|\<cal-X\><rsub|X\\N>\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
+    so that by applying <reference|measurable functions properties (4)> we
+    have\ 
+
+    <\equation>
+      <label|eq 18.464.036><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>\<wedge\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>\<wedge\>\<forall\>n\<in\>\<bbb-N\><rsub|0>
+      <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>\<in\><wide|\<cal-M\><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>
+    </equation>
+
+    If <math|x\<in\>X> the we have either\ 
 
     <\description>
-      <item*|<math|x\<in\>N>>then <math|\<cal-X\><rsub|X\\A><around*|(|x|)>=0>
-      so that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+      <item*|<math|x\<in\>N>>then we have
+      <math|\<cal-X\><rsub|X\\N><around*|(|x|)>=0> so that
 
       <\equation*>
-        <around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>=0=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>
+        \<forall\>n\<in\>\<bbb-N\><rsub|0><text| that
+        ><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>=<around*|\||<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>|\|>=<around*|\||\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>f<rsub|n><around*|(|x|)>|\|>=0\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>
       </equation*>
 
       and
 
       <\equation*>
-        <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>=0=<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>=<around*|(|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|)><around*|(|x|)>
+        <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>f<around*|(|x|)>=0=<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>f<rsub|n><around*|(|x|)>|)>=<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>
       </equation*>
 
-      and\ 
+      and
 
       <\equation*>
-        <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>=0\<less\>\<infty\>
+        <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>g<around*|(|x|)>=0\<less\>\<infty\>
       </equation*>
 
-      <item*|<math|x\<in\>X\\N>>then <math|x\<nin\>A>, <math|x\<nin\>B> and
-      <math|\<cal-X\><rsub|X\\N><around*|(|x|)>=1> so that
-      <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>\ 
+      <item*|<math|x\<in\>X\\N>>then as <math|A,B\<subseteq\>N> we have
+      <math|x\<nin\>B> and <math|x\<nin\>A> so that
+      <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
 
       <\equation*>
-        <around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>=f<rsub|n><around*|(|x|)>\<leqslant\><rsub|x\<nin\>B>g<around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>
+        <around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>=<around*|\||<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>|\|>=<around*|\||f<rsub|n><around*|(|x|)>|\|>\<leqslant\><rsub|x\<nin\>B>g<around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>g<around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>
       </equation*>
 
-      and\ 
+      and
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>|<cell|=>|<cell|f<around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|x\<nin\>B>>|<cell|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|)><around*|(|x|)>>>>>
+        <tformat|<table|<row|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>|<cell|=>|<cell|\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>f<around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|f<around*|(|x|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|x\<nin\>B>>|<cell|<below|lim|n\<rightarrow\>\<infty\>>f<rsub|n><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>f<around*|(|x|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>>>>
       </eqnarray*>
 
-      and\ 
+      and
 
       <\equation*>
-        <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>=g<around*|(|x|)>\<less\><rsub|x\<nin\>A>\<infty\>
+        <around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>g<around*|(|x|)>=g<around*|(|x|)>\<less\>\<infty\>
       </equation*>
     </description>
 
-    which proves that <math|\<forall\>x\<in\>X>
+    So we have for <math|x\<in\>X> that\ 
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|>|<cell|\<forall\>n\<in\>\<bbb-N\><rsub|0>
-      <around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>\<less\>\<infty\>>|<cell|>>|<row|<cell|>|<cell|<around*|(|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>|<cell|<eq-number><label|eq
-      18.465.037>>>>>
+      <around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>\<less\>\<infty\>>|<cell|>>|<row|<cell|>|<cell|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>|<cell|<eq-number><label|eq
+      18.465.036>>>>>
     </eqnarray*>
 
-    Using <math|\<mu\><around*|(|N|)>=0> we have by <reference|almost
-    everywhere equality and characteristic function> that
-    <math|g=\<cal-X\><rsub|X\\N>\<cdot\>g> <math|\<mu\>>-a.e. we have by
-    <reference|integral properties (12)> <math|\<cal-X\><rsub|X\\N>\<cdot\>g>
-    and the fact that <math|\<cal-X\><rsub|X\\A>\<cdot\>g> is real valued we
-    have\ 
+    From <reference|eq 18.464.036> we have that\ 
+
+    Using the fact that <math|g> ia <math|\<mu\>>-integrable,
+    <math|g\<cdot\>\<cal-X\><rsub|N>> is real valued and
+    <math|g=\<cal-X\><rsub|X\\N>\<cdot\>g<text|<space|1em>>
+    \<mu\><text|-a.e.>> we have by <reference|integral properties (12)> that
 
     <\equation>
-      <label|eq 18.466.037>\<cal-X\><rsub|X\\A>\<cdot\>g\<in\>\<cal-L\><rsup|1>\<wedge\><big|int><around*|(|\<cal-X\><rsub|X\\A>\<cdot\>g|)>
-      d\<mu\>=<big|int>g d\<mu\>\<less\>\<infty\>
+      <label|eq 18.466.036><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>\<in\>\<cal-L\><rsup|1>\<wedge\><big|int><rsup|+><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g
+      |)>d\<mu\>\<equallim\><rsub|<text|<reference|integrability of non
+      negative functions (2)>>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>
+      d\<mu\>\<equallim\><rsub|<text|<reference|integral properties
+      (12)>>><big|int>g d\<mu\>\<equallim\><rsub|<text|<reference|integrability
+      of non negative functions (2)>>><big|int><rsup|+>g
+      d\<mu\>\<less\>\<infty\>
     </equation>
 
-    Using <reference|eq 18.465.037>, <reference|eq 18.464.037> and
-    <reference|integral of positive function properties (2)> we have that
+    \;
 
-    <\equation*>
-      <big|int><rsup|+><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|>
-      d\<mu\>\<leqslant\><big|int><rsup|+><around*|(|\<cal-X\><rsub|X\\A>\<cdot\>g|)>d\<mu\>\<equallim\><rsub|<text|<reference|integrability
-      of non negative functions (2)>>><big|int><around*|(|\<cal-X\><rsub|X\\A>\<cdot\>g|)>
-      d\<mu\>\<less\>\<infty\> <around*|[|see <text|<reference|eq
-      18.466.037>>|]>
-    </equation*>
-
-    From the above we have using <reference|integrability of non negative
-    functions (2)> that <math|<around*|\||\<cal-X\><rsub|X\\A>\<cdot\>f<rsub|n>|\|>\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>.
-    From this <reference|eq 18.464.037> and <reference|integral properties
-    (11)> we have that <math|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>.
-    Combining this with the fact that by <reference|almost everywhere
-    equality and characteristic function>
-    <math|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>=f<rsub|n>>
-    <math|\<mu\>>-a.e., <reference|eq 18.464.037> and <reference|integral
-    properties (12)> we have that <math|f<rsub|n>\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>
-    and <math|<big|int>f<rsub|n>d\<mu\>=<big|int><around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f<rsub|n>|)>d\<mu\>>.
-    As <math|>by <reference|eq 18.465.037>
-    <math|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>> is real valued we have\ 
+    From <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>
+    we have by <reference|integral of positive function properties (2)> that
+    <math|<big|int><rsup|+><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|>
+    d\<mu\>\<leqslant\><big|int><rsup|+><around*|(|\<cal-X\><rsub|X\\A>\<cdot\>g|)>
+    d\<mu\>>. Using <reference|eq 18.466.036> we have then that
+    <math|<big|int><rsup|+><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|>
+    d\<mu\>\<less\>\<infty\>> which using <reference|integrability of non
+    negative functions (2)> proves that <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|>\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>.
+    Using <reference|eq 18.464.036> and <reference|integral properties (11)>
+    it follows that <math|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>
+    and combining this with <reference|eq 18.464.036> and <reference|integral
+    properties (12)> and the fact that <math|<around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f<rsub|n>|)><around*|(|x|)>\<leqslant\><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|>\<less\>\<infty\>>
+    [see <reference|eq 18.466.036>
 
     <\equation>
-      <label|eq 18.467.037>\<forall\>n\<in\>\<bbb-N\><rsub|0>
-      f<rsub|n>\<in\>\<cal-L\><rsup|1><text| and
-      ><big|int>f<rsub|n>d\<mu\>=<big|int><around*|(|\<cal-X\><rsub|X\\A>\<cdot\>f<rsub|n>|)>d\<mu\>
+      <label|eq 18.467.036>\<forall\>n\<in\>\<bbb-N\><rsub|0><text|
+      <math|f<rsub|n>\<in\>\<cal-L\><rsup|1>> and ><big|int>f<rsub|n>
+      d\<mu\>=<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>
     </equation>
 
-    As by <reference|eq 18.465.037> we have
-    <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>
-    we have \ by <reference|limit and absolut value> that
+    From <math|><math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>
+    we have by <reference|limit and absolut value> that
+    <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|><around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>>.
+    As <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>
+    it follows by <reference|properties of the limit in the extented reals>
+    that <math|<below|lim|n\<rightarrow\>\<infty\>><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>,
+    hence
 
     <\equation>
-      <label|eq 18.468.037><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|><around*|(|x|)>=<below|lim|n\<rightarrow\>\<infty\>><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>
+      <label|eq 18.468.036><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)><around*|(|x|)>\<less\>\<infty\>
     </equation>
 
-    As by <reference|eq 18.468.037> <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>
-    we have by <reference|properties of the limit in the extented reals> that
-
-    <\equation*>
-      <around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|><around*|(|x|)>\<equallim\><rsub|<text|<reference|eq
-      18.468.037>>><below|lim|n\<rightarrow\>\<infty\>><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>\<less\>\<infty\>
-    </equation*>
-
-    \ hence\ 
-
-    <\equation>
-      <label|eq 18.469.037>\<forall\>x\<in\>X
-      <around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>\<less\>\<infty\>
-    </equation>
-
-    Combining the above with <reference|eq 18.464.037> and
-    <reference|integral of positive function properties (2)> we have that
+    So using <reference|eq 18.464.036> and <reference|integral of positive
+    function properties (2)> we have that
     <math|<big|int><rsup|+><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|>
-    d\<mu\>\<leqslant\><big|int><rsup|+><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>\<less\><rsub|<text|<reference|eq
-    18.466.037>>>\<infty\>>. Using <reference|eq 18.464.037> and
-    <reference|integrability of non negative functions (2)> we have that
-    <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|>\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>.
-    Using <reference|integral properties (11)> we have that
-    <math|\<cal-X\><rsub|X\\A>\<cdot\>f\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>
-    which as by <reference|almost everywhere equality and characteristic
-    function> <math|\<cal-X\><rsub|X\\A>\<cdot\>f=f> <math|\<mu\>>-a.e.
-    proves that\ 
+    d\<mu\>\<leqslant\><big|int><rsup|+><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g
+    |)>d\<mu\>\<less\>\<infty\>> which using <reference|integrability of non
+    negative functions (2)> proves that <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|>\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>.
+    Using <reference|eq 18.464.036> and <reference|integral properties (11)>
+    givest <math|\<cal-X\><rsub|X\\N>\<cdot\>f\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>>>
+    and finally by \ <reference|eq 18.464.036> and <reference|integral
+    properties (12)> and the fact that <math|\<cal-X\><rsub|X\\N>\<cdot\>f<around*|(|x|)>\<leqslant\><around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f|\|><around*|(|x|)>\<less\>\<infty\>>
 
     <\equation>
-      <label|eq 18.470.037>f\<in\><wide|\<cal-L\><rsup|1>|\<wide-bar\>><text|
-      and ><big|int>f d\<mu\>=<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>d\<mu\>
+      <label|eq 18.469.036>f\<in\>\<cal-L\><rsup|1><infix-and><big|int>f
+      d\<mu\>=<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)> d\<mu\>
     </equation>
 
-    and as <math|\<cal-X\><rsub|X\\A>\<cdot\>f> is real valued [see
-    <reference|eq 18.465.037> we have that\ 
-
-    <\equation>
-      <label|eq 18.471.037>\<cal-X\><rsub|X\\N>\<cdot\>f\<in\>\<cal-L\><rsup|1>
-    </equation>
-
-    Given <math|x\<in\>X> and <math|n\<in\>\<bbb-N\><rsub|0>> then from
-    <math|<around*|\||<around*|(|\<cal-X\><rsub|X\\B>\<cdot\>f<rsub|n>|)><around*|(|x|)>|\|>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>\<less\>\<infty\>>
-    [see <reference|eq 18.465.037>] we have that\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>>|<cell|\<leqslant\>>|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>>|<row|<cell|-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>>|<cell|\<leqslant\>>|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>>>>
-    </eqnarray*>
-
-    so that\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|0>|<cell|\<leqslant\>>|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>+\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>>|<row|<cell|0>|<cell|\<leqslant\>>|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g-\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>>>>>
-    </eqnarray*>
-
+    Given <math|n\<in\>\<bbb-N\><rsub|0>> and <math|x\<in\>X> then from
+    <math|<around*|\||\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|\|><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>
+    we have <math|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>
+    and <math|-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>>
+    so that <math|0\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>
+    and <math|0\<leqslant\><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>,
     proving that
 
     <\equation>
-      <label|eq 18.472.037><around*|{|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>+\<cal-X\><rsub|X\\N>\<cdot\>g|}><rsub|n\<in\>\<bbb-N\><rsub|0>>,<around*|{|\<cal-X\><rsub|X\\N>\<cdot\>g\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>><text|
-      are non negative sequences>
+      <label|eq 18.470.036><around*|{|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>><text|,
+      ><around*|{|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>><text|
+      are non negative>
     </equation>
 
-    Using <reference|eq 18.471.037>, <reference|eq 18.467.037> and
-    <reference|integral properties (10)> we have also\ 
+    Further combining <reference|eq 18.466.036>, <reference|eq 18.467.036> we
+    have by r<reference|integral properties (10)> that\ 
 
-    <\equation>
-      <label|eq 18.473.037><around*|{|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>+\<cal-X\><rsub|X\\N>\<cdot\>g|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<in\>\<cal-L\><rsup|1>\<wedge\><around*|{|\<cal-X\><rsub|X\\N>\<cdot\>g\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<in\>\<cal-L\><rsup|1>
-    </equation>
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<label|eq
+      18.471.036><around*|{|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<in\>\<cal-L\><rsup|1><text|
+      and ><around*|{|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<in\>\<cal-L\><rsup|1>>|<cell|>|<cell|<eq-number>>>>>
+    </eqnarray*>
 
-    Further using <reference|limit of constant extented real>,
-    <reference|properties of the limit in the extented reals> and
-    <reference|eq 18.465.037> we have that\ 
+    Further using <reference|limit of constant extented real> and
+    <reference|properties of the limit in the extented reals> we have that\ 
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>|<cell|=>|<cell|<below|lim|n\<rightarrow\>\<infty\>><around*|(|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)><around*|(|x|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<below|lim
-      inf|n\<rightarrow\>\<infty\>> <around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g+\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>>>|<row|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>|<cell|=>|<cell|<below|lim|n\<rightarrow\>\<infty\>>
+      inf|n\<rightarrow\>\<infty\>> <around*|(|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)><around*|(|x|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>|)>>>|<row|<cell|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)><around*|(|x|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)><around*|(|x|)>>|<cell|=>|<cell|<below|lim|n\<rightarrow\>\<infty\>>
       <around*|(|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)><around*|(|x|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<below|lim
-      inf |n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g-\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)><eq-number><label|eq
-      18.474.037>>>>>
+      inf |n\<rightarrow\>\<infty\>><around*|(|<around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)><around*|(|x|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)><around*|(|x|)>|)><eq-number><label|eq
+      18.472.036>>>>>
     </eqnarray*>
 
-    Next we have using <reference|eq 18.471.037> and <reference|eq
-    18.466.037>
+    So we can use <reference|eq 18.470.036>, <reference|eq 18.471.036> and
+    <reference|eq 18.472.036> to apply Fatou's lemma [see <reference|Fatou's
+    Lemma>] in the following
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>+<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>d\<mu\>>|<cell|\<equallim\><rsub|<text|<reference|integral
-      properties (10)>>>>|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g+\<cal-X\><rsub|X\\N>\<cdot\>f|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
-      18.474.037>>>>|<cell|<big|int><below|lim
-      inf|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g+\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|Fatou's
-      Lemma>>,<reference|eq 18.472.037>>>|<cell|<below|lim
-      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g+\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|integral
-      properties (10)>>>>|<cell|<below|lim
-      inf|n\<rightarrow\>\<infty\>><around*|(|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>+<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|liminf
+      <tformat|<table|<row|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>
+      d\<mu\>+<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
+      d\<mu\>>|<cell|=>|<cell|<big|int><around*|(|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>|)>
+      d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|\<nobracket\>|<below|lim
+      inf|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|)>d\<mu\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<below|lim
+      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>+<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<below|lim
+      inf|n\<rightarrow\>\<infty\>> <around*|(|<big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>
+      d\<mu\>+<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|liminf
       and limsup properties for sum product>>>>|<cell|<below|lim
-      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>+<below|lim
-      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|liminf
-      and limsup of a constant>>>>|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>+<below|lim
-      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>>>
+      inf|n\<rightarrow\>\<infty\>> <big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>
+      d\<mu\>+<below|lim inf|n\<rightarrow\>\<infty\>>
+      <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|liminf
+      and limsup of a constant>>>>|<cell|<big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>
+      d\<mu\>+<below|lim inf|n\<rightarrow\>\<infty\>>
+      <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>>>>>
     </eqnarray*>
 
-    As the integrals are real numbers the above gives\ 
+    As the integrals are finite for <math|\<mu\>>-integrable functions we
+    have that\ 
 
     <\equation>
-      <label|eq 18.475.037><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>d\<mu\>\<leqslant\><below|lim
-      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>
+      <label|eq 18.473.036><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
+      d\<mu\>\<leqslant\><below|lim inf|n\<rightarrow\>\<infty\>>
+      <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)> d\<mu\>
     </equation>
 
-    Similar we have that\ 
+    further using Fatou's lemma again we have\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>-<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>d\<mu\>>|<cell|\<equallim\><rsub|<text|<reference|integral
-      properties (10)>>>>|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g-\<cal-X\><rsub|X\\N>\<cdot\>f|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
-      18.474.037>>>>|<cell|<big|int><below|lim
-      inf|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g-\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|Fatou's
-      Lemma>>,<reference|eq 18.472.037>>>|<cell|<below|lim
-      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g-\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|integral
-      properties (10)>>>>|<cell|<below|lim
-      inf|n\<rightarrow\>\<infty\>><around*|(|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>-<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|liminf
+      <tformat|<table|<row|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>
+      d\<mu\>-<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
+      d\<mu\>>|<cell|=>|<cell|<big|int><around*|(|<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>|)>
+      d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|\<nobracket\>|<below|lim
+      inf|n\<rightarrow\>\<infty\>><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>|)>d\<mu\>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<below|lim
+      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>-<around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<below|lim
+      inf|n\<rightarrow\>\<infty\>> <around*|(|<big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>
+      d\<mu\>-<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|liminf
       and limsup properties for sum product>>>>|<cell|<below|lim
-      inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>+<below|lim
-      inf|n\<rightarrow\>\<infty\>>-<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|lim
-      inf -xn>>>>|<cell|<below|lim inf|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>-<below|lim
-      sup|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|liminf
-      and limsup of a constant>>>>|<cell|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>g|)>d\<mu\>-<below|lim
-      sup|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>>>>
+      inf|n\<rightarrow\>\<infty\>> <big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>
+      d\<mu\>+<below|lim inf|n\<rightarrow\>\<infty\>>-<around*|(|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|lim
+      inf -xn>>>>|<cell|<below|lim inf|n\<rightarrow\>\<infty\>>
+      <big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)> d\<mu\>-<below|lim
+      sup|n\<rightarrow\>\<infty\>> <around*|(|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|liminf
+      and limsup of a constant>>>>|<cell|<big|int><around*|(|\<cal-X\><rsub|X\|N>\<cdot\>g|)>
+      d\<mu\>-<below|lim sup|n\<rightarrow\>\<infty\>>
+      <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+      d\<mu\>>>>>
     </eqnarray*>
 
-    As the integrals are real numbers the above gives\ 
-
-    <\equation*>
-      \ <math|<below|lim sup|n\<rightarrow\>\<infty\>>
-      <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
-      d\<mu\>\<leqslant\><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
-      d\<mu\>>
-    </equation*>
-
-    which combined with <reference|eq 18.475.037> gives
+    As the integrals are finite we have that <math|<below|lim
+    sup|n\<rightarrow\>\<infty\>> <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+    d\<mu\>\<leqslant\><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
+    d\<mu\>> combing this with <reference|eq 18.473.036> gives\ 
 
     <\equation*>
       <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
       d\<mu\>\<leqslant\><below|lim inf|n\<rightarrow\>\<infty\>>
       <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
-      d\<mu\>\<leqslant\><rsub|<text|<reference|the limit inferior is lower
-      then limit superior>>><below|lim sup|n\<rightarrow\>\<infty\>>
+      d\<mu\>\<leqslant\><below|lim sup|n\<rightarrow\>\<infty\>>
       <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
       d\<mu\>\<leqslant\><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
       d\<mu\>
     </equation*>
 
-    proving that <math|<below|lim|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>
-    exists and <math|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
-    d\<mu\>=<below|lim|n\<rightarrow\>\<infty\>><big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>d\<mu\>>.
-    Using then <reference|eq 18.470.037> and <reference|eq 18.467.037> we
-    have\ 
+    proving that <math|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)>
+    d\<mu\>> exists and that <math|<big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f|)>
+    d\<mu\>=<below|lim|n\<rightarrow\>\<infty\>>
+    <big|int><around*|(|\<cal-X\><rsub|X\\N>\<cdot\>f<rsub|n>|)> d\<mu\>>.
+    Using then <reference|eq 18.467.036> and <reference|eq 18.469.036> we
+    have that\ 
 
-    <\equation>
-      <label|eq 18.476.037><big|int>f d\<mu\>=<below|lim|n\<rightarrow\>\<infty\>><big|int>f<rsub|n>d\<mu\>
-    </equation>
-
-    The theorem is then proved by <reference|eq 18.467.037>,<reference|eq
-    18.470.037> and the above.
+    <\equation*>
+      <big|int>f d\<mu\>=<below|lim|n\<rightarrow\>\<infty\>><big|int>f<rsub|n>
+      d\<mu\>
+    </equation*>
   </proof>
 
   <subsection|Integral of complex functions>
@@ -16586,39 +16578,22 @@
     <associate|eq 18.46.022|<tuple|18.68|?>>
     <associate|eq 18.46.033|<tuple|18.46|?>>
     <associate|eq 18.460.036|<tuple|18.458|?>>
-    <associate|eq 18.460.037|<tuple|18.460|?>>
     <associate|eq 18.461.036|<tuple|18.459|?>>
-    <associate|eq 18.461.037|<tuple|18.461|?>>
-    <associate|eq 18.462.037|<tuple|18.462|?>>
-    <associate|eq 18.463.036|<tuple|18.477|?>>
-    <associate|eq 18.463.036.1|<tuple|18.478|?>>
-    <associate|eq 18.463.037|<tuple|18.463|?>>
-    <associate|eq 18.464.036|<tuple|18.479|?>>
-    <associate|eq 18.464.037|<tuple|18.464|?>>
-    <associate|eq 18.465.036|<tuple|18.480|?>>
-    <associate|eq 18.465.037|<tuple|18.465|?>>
-    <associate|eq 18.466.036|<tuple|18.481|?>>
-    <associate|eq 18.466.037|<tuple|18.466|?>>
-    <associate|eq 18.467.036|<tuple|18.482|?>>
-    <associate|eq 18.467.037|<tuple|18.467|?>>
-    <associate|eq 18.468.036|<tuple|18.483|?>>
-    <associate|eq 18.468.037|<tuple|18.468|?>>
-    <associate|eq 18.469.036|<tuple|18.484|?>>
-    <associate|eq 18.469.037|<tuple|18.469|?>>
+    <associate|eq 18.463.036|<tuple|18.460|?>>
+    <associate|eq 18.463.036.1|<tuple|18.461|?>>
+    <associate|eq 18.464.036|<tuple|18.462|?>>
+    <associate|eq 18.465.036|<tuple|18.463|?>>
+    <associate|eq 18.466.036|<tuple|18.464|?>>
+    <associate|eq 18.467.036|<tuple|18.465|?>>
+    <associate|eq 18.468.036|<tuple|18.466|?>>
+    <associate|eq 18.469.036|<tuple|18.467|?>>
     <associate|eq 18.47.016|<tuple|18.96|?>>
     <associate|eq 18.47.022|<tuple|18.69|?>>
     <associate|eq 18.47.033|<tuple|18.47|?>>
-    <associate|eq 18.470.036|<tuple|18.485|?>>
-    <associate|eq 18.470.037|<tuple|18.470|?>>
-    <associate|eq 18.471.036|<tuple|18.485|?>>
-    <associate|eq 18.471.037|<tuple|18.471|?>>
-    <associate|eq 18.472.036|<tuple|18.487|?>>
-    <associate|eq 18.472.037|<tuple|18.472|?>>
-    <associate|eq 18.473.036|<tuple|18.488|?>>
-    <associate|eq 18.473.037|<tuple|18.473|?>>
-    <associate|eq 18.474.037|<tuple|18.474|?>>
-    <associate|eq 18.475.037|<tuple|18.475|?>>
-    <associate|eq 18.476.037|<tuple|18.476|?>>
+    <associate|eq 18.470.036|<tuple|18.468|?>>
+    <associate|eq 18.471.036|<tuple|18.468|?>>
+    <associate|eq 18.472.036|<tuple|18.470|?>>
+    <associate|eq 18.473.036|<tuple|18.471|?>>
     <associate|eq 18.48.016|<tuple|18.97|?>>
     <associate|eq 18.48.022|<tuple|18.70|?>>
     <associate|eq 18.48.033|<tuple|18.52|?>>
