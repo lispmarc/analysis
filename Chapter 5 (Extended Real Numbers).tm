@@ -3552,8 +3552,11 @@
     <label|liminf and limsup of a constant>Let
     <math|k\<in\>\<bbb-N\><rsub|0>> and <math|<around*|{|x<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,n|}>>>
     defined by <math|x<rsub|n>=x\<in\><below|\<bbb-R\>|>> then
-    <math|<below|lim inf|n\<rightarrow\>\<infty\>> x<rsub|n>=<below|lim
-    sup|n\<rightarrow\>\<infty\>> x<rsub|n>>
+
+    <\equation*>
+      <below|x=lim inf|n\<rightarrow\>\<infty\>> x<rsub|n>=<below|lim
+      sup|n\<rightarrow\>\<infty\>> x<rsub|n>
+    </equation*>
   </example>
 
   <\proof>
@@ -9044,7 +9047,7 @@
 <\initial>
   <\collection>
     <associate|chapter-nr|14>
-    <associate|page-first|666>
+    <associate|page-first|663>
     <associate|page-medium|papyrus>
     <associate|section-nr|7>
     <associate|subsection-nr|0>
@@ -9104,7 +9107,6 @@
     <associate|auto-34|<tuple|<with|mode|<quote|math>|cos<around*|(|x|)>>|677>>
     <associate|auto-35|<tuple|<with|mode|<quote|math>|sin<around*|(|x|)>>|677>>
     <associate|auto-36|<tuple|<with|mode|<quote|math>|\<pi\>>|677>>
-    <associate|auto-37|<tuple|<with|mode|<quote|math>|\<pi\>>|?>>
     <associate|auto-4|<tuple|<with|mode|<quote|math>|sup<rsub|\<bbb-R\>>>|609>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|inf<rsub|\<bbb-R\>>>|609>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|sup>|609>>

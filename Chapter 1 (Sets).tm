@@ -24200,6 +24200,7 @@
       <item><math|<around*|\||<wide|z|\<bar\>>|\|>=<around*|\||z|\|>>
 
       <item><math|Re<around*|(|z|)>\<leqslant\><rsub|\<bbb-R\>><around*|\||z|\|>>
+      and <math|Img<around*|(|z|)>\<leqslant\><rsub|\<bbb-R\>><around*|\||z|\|>>
 
       <item><math|z\<cdot\><wide|z|\<bar\>>=<around*|\||z|\|><rsup|2>>
 
@@ -24210,10 +24211,16 @@
 
       <item><math|<around*|\||z+z<rprime|'>|\|>\<leqslant\><rsub|\<bbb-R\>><around*|\||z|\|>+<around*|\||z<rprime|'>|\|>>
 
+      <item><math|<around*|\||1|\|>=<around*|\||-1|\|>=<around*|\||i|\|>=1>
+
+      <item><math|<around*|\||z|\|>\<leqslant\><around*|\||Re<around*|(|z|)>|\|>+<around*|\||Img<around*|(|z|)>|\|>>
+
       <item><math|<around*|\||z|\|>=0\<Leftrightarrow\>z=0>
 
       <item>If <math|z\<in\>\<bbb-R\><rsub|\<bbb-C\>>> then
       <math|<around*|\||z|\|>=<around*|\||Re<around*|(|z|)>|\|>>
+
+      <item>If <math|z\<neq\>0> then <math|<around*|\||<frac|1|z>|\|>=<frac|1|<around*|\||z|\|>>>
     </enumerate>
   </theorem>
 
@@ -24244,14 +24251,22 @@
       <math|<around*|\||<wide|z|\<bar\>>|\|>=<around*|\||<around*|(|x,-y|)>|\|>=<around*|(|<sqrt|x<rsup|2>+<around*|(|-y|)><rsup|2>>,0|)>=<around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>=<around*|\||z|\|>>
 
       <item>If <math|z=<around*|(|x,y|)>> then
-      <math|Re<around*|(|z|)>=<around*|(|x,0|)>>, now as
+      <math|Re<around*|(|z|)>=<around*|(|x,0|)>> and
+      <math|Img<around*|(|z|)>=<around*|(|0,y|)>> Now as
       <math|0\<leqslant\>y<rsup|2>> we have that
       <math|x<rsup|2>\<leqslant\>x<rsup|2>+y<rsup|2>\<Rightarrowlim\><rsub|<sqrt|
       > is increasing <with|mode|text|(see <reference|square root is a
       strictly increasing function>)>><sqrt|<around*|\||x|\|><rsup|2>>\<leqslant\><sqrt|x<rsup|2>+y<rsup|2>>>
       hence as <math|x\<leqslant\><around*|\||x|\|>=<sqrt|<around*|\||x|\|><rsup|2>>>
       we have <math|x\<leqslant\><sqrt|x<rsup|2>+y<rsup|2>>> so that
-      <math|Re<around*|(|z|)>=<around*|(|x,0|)>\<leqslant\><rsub|\<bbb-R\>><around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>=<around*|\||z|\|>>
+      <math|Re<around*|(|z|)>=<around*|(|x,0|)>\<leqslant\><rsub|\<bbb-R\>><around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>=<around*|\||z|\|>>.
+      Further as <math|0\<leqslant\>x<rsup|2>> we have that
+      <math|y<rsup|2>\<leqslant\>x<rsup|2>+y<rsup|2>\<Rightarrowlim\><rsub|<sqrt|
+      > is increasing <with|mode|text|(see <reference|square root is a
+      strictly increasing function>)>><sqrt|<around*|\||y|\|><rsup|2>>\<leqslant\><sqrt|x<rsup|2>+y<rsup|2>>>
+      hence as <math|y\<leqslant\><around*|\||y|\|>=<sqrt|<around*|\||y|\|><rsup|2>>>
+      we have <math|y\<leqslant\><sqrt|x<rsup|2>+y<rsup|2>>> so that
+      <math|Img<around*|(|z|)>=<around*|(|y,0|)>\<leqslant\><rsub|\<bbb-R\>><around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>=<around*|\||z|\|>>.
 
       <item>If <math|z=<around*|(|x,y|)>> then
       <math|z\<cdot\><wide|z|\<bar\>>=<around*|(|x,y|)>\<times\><around*|(|x,-y|)>=<around*|(|x\<cdot\>x+y\<cdot\>y,-x\<cdot\>y+y\<cdot\>x|)>=<around*|(|x<rsup|2>+y<rsup|2>,0|)>\<equallim\><rsub|0\<in\>x<rsup|2>+y<rsup|2>><around*|(|<around*|(|<sqrt|x<rsup|2>+y<rsup|2>>|)><rsup|2>,0|)>=<around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>\<cdot\><around*|(|<sqrt|x<rsup|2>+y<rsup|2>>,0|)>=<around*|\||z|\|><rsup|2>>
@@ -24278,6 +24293,19 @@
 
       hence using (6) we have <math|<around*|\||x+y|\|>\<leqslant\><rsub|\<bbb-R\>><around*|\||x|\|>+<around*|\||y|\|>>
 
+      <item>\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\||1|\|>>|<cell|=>|<cell|<around*|\||<around*|(|1,0|)>|\|>=<sqrt|1<rsup|2>+0<rsup|2>>=1>>|<row|<cell|<around*|\||-1|\|>>|<cell|=>|<cell|<around*|\||<around*|(|-1,0|)>|\|>=<sqrt|<around*|(|-1|)><rsup|2>+0<rsup|2>>=1>>|<row|<cell|<around*|\||i|\|>>|<cell|=>|<cell|<around*|\||<around*|(|0,1|)>|\|>=<sqrt|0<rsup|2>+1<rsup|2>>=1>>>>
+      </eqnarray*>
+
+      <item>As <math|<around*|\||z|\|>=<around*|\||Re<around*|(|z|)>+i\<cdot\>Img<around*|(|z|)>|\|>>
+      we have using (7) that\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\||z|\|>>|<cell|\<leqslant\>>|<cell|<around*|\||Re<around*|(|z|)>|\|>+<around*|\||i\<cdot\>Img<around*|(|z|)>|\|>>>|<row|<cell|>|<cell|\<equallim\><rsub|<around*|(|2|)>>>|<cell|<around*|\||Re<around*|(|z|)>|\|>+<around*|\||i|\|>\<cdot\><around*|\||Img<around*|(|z|)>|\|>>>|<row|<cell|>|<cell|\<equallim\><rsub|<around*|(|8|)>>>|<cell|<around*|\||Re<around*|(|z|)>|\|>+<around*|\||Img<around*|(|z|)>|\|>>>>>
+      </eqnarray*>
+
       <item>If <math|z=<around*|(|x,y|)>> then if
       <math|z=0=<around*|(|0,0|)>> we have
       <math|<around*|\||z|\|>=<around*|(|<sqrt|0<rsup|2>+0<rsup|2>>,0|)>=<around*|(|<sqrt|<around*|(|0|)>>,0|)>=0>.
@@ -24295,7 +24323,12 @@
       <math|\<exists\>z<rprime|'>\<in\>\<bbb-R\>> such that
       <math|z=<around*|(|x<rprime|'>,0|)>> hence <math|Re<around*|(|z|)>=z>
       so that <math|<around*|\||Re<around*|(|z|)>|\|>=<around*|\||z|\|>>
+
+      <item>As <math|1=z\<cdot\><frac|1|z>> we have
+      <math|1\<equallim\><rsub|<around*|(|8|)>><around*|\||1|\|>=<around*|\||z\<cdot\><frac|1|z>|\|>\<equallim\><rsub|<around*|(|2|)>><around*|\||z|\|>\<cdot\><around*|\||<frac|1|z>|\|>\<Rightarrow\><around*|\||<frac|1|z>|\|>=<frac|1|<around*|\||z|\|>>>.
     </enumerate>
+
+    \;
   </proof>
 
   <section|<math|\<bbb-R\>> and <math|\<bbb-R\><rsub|\<bbb-C\>>>>

@@ -16714,128 +16714,6 @@
     </enumerate>
   </proof>
 
-  Next we want to check if for <math|f,g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>>
-  [or <math|f,g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>]
-  and <math|\<alpha\>\<in\>\<bbb-R\>> we have that
-  <math|f+g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>> and
-  <math|\<alpha\>\<cdot\>f\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>><space|1em>[or
-  <math|f+g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>]. For
-  this we need the following two lemmas.
-
-  <\lemma>
-    Let <math|p\<in\><around*|[|1,\<ldots\>,\<infty\>|[>> then we have that\ 
-
-    <\enumerate>
-      <item><math|<around*|\|||\|><rsup|p>:\<bbb-R\>\<rightarrow\>\<bbb-R\>>
-      defined by <math|<around*|\|||\|><rsup|p><around*|(|x|)>=<around*|\||x|\|><rsup|p>>
-      is <math|\<cal-B\><around*|[|\<bbb-R\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]>-measurable
-      >
-
-      <item><math|><math|<around*|\|||\|><rsup|p>:\<bbb-C\>\<rightarrow\>\<bbb-R\>>
-      defined by <math|<around*|\|||\|><rsup|p><around*|(|z|)>=<around*|\||z|\|><rsup|p>>
-      is <math|\<cal-B\><around*|[|\<bbb-C\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]>-measurable
-      >
-    </enumerate>
-  </lemma>
-
-  <\proof>
-    \ 
-
-    <\enumerate>
-      <item>First by <reference|continuity of vector space operations> the
-      norm function <math|<around*|\|||\|>:\<bbb-R\>\<rightarrow\>\<bbb-R\>>
-      is continuous [using the topologies <math|\<cal-T\><rsub|\<bbb-R\>>>
-      and <math|\<cal-T\><rsub|\<bbb-R\>>> for the domain and codomain].
-      Consider now the supspace topology <math|\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>>
-      [see <reference|subspace topology>], then if
-      <math|U\<in\>\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>>
-      there exists a <math|U<rprime|'>\<in\>\<cal-T\><rsub|\<bbb-R\>>> such
-      that <math|U=U<rprime|'><big|cap><around*|[|0,\<infty\>|[>>, so
-
-      <\equation*>
-        <around*|\|||\|><rsup|-1><around*|(|U|)>=<around*|\|||\|><rsup|-1><around*|(|U<big|cap><around*|[|0,\<infty\>|[>|)>\<equallim\><rsub|<text|<reference|image
-        (preimage) of union , intersections>>><around*|\|||\|><rsup|-1><around*|(|U|)><big|cap><around*|\|||\|><rsup|-1><around*|(|<around*|[|0,\<infty\>|[>|)>\<equallim\><rsub|range<around*|(|<around*|\|||\|>|)>=<around*|[|0,\<infty\>|[>><around*|\|||\|><rsup|-1><around*|(|U|)>\<in\>\<cal-T\><rsub|\<bbb-R\>>
-      </equation*>
-
-      which proves that\ 
-
-      <\equation*>
-        <around*|\|||\|>:\<bbb-R\>\<rightarrow\><around*|[|0,\<infty\>|[>
-        <text|is continuous using the topologies
-        >\<cal-T\><rsub|\<bbb-R\>>,\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>
-      </equation*>
-
-      Further using <reference|x^p is continuous> we have that
-      <math|<around*|[|.|]><rsup|p>:<around*|[|0,\<infty\>|[>\<rightarrow\>\<bbb-R\>>
-      is continuous [using the topologies
-      <math|\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>>].
-      Hence as the compositions of continuous functions is continuous it
-      follows that
-
-      <\equation*>
-        <around*|[|.|]><rsup|p>\<circ\><around*|\|||\|> <text|is continuous
-        using the topologies >\<cal-T\><rsub|\<bbb-R\>>,\<cal-T\><rsub|\<bbb-R\>>
-      </equation*>
-
-      Finally, as <math|<around*|(|<around*|[|.|]><rsup|p>\<circ\><around*|\|||\|>|)><around*|(|x|)>=<around*|[|.|]><rsup|p><around*|(|<around*|\||x|\|>|)>=<around*|\||x|\|><rsup|p>=<around*|(|<around*|\|||\|><rsup|p>|)><around*|(|x|)>>,
-      it follows that <math|<around*|\|||\|><rsup|p>> is continuous [using
-      the topologies <math|\<cal-T\><rsub|\<bbb-R\>>,\<cal-T\><rsub|\<bbb-R\>>>].
-      Using then \ <reference|continuous functions are measurable> we have\ 
-
-      <\equation*>
-        <around*|\|||\|><rsup|p><text| is
-        >\<cal-B\><around*|[|\<bbb-R\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]><text|-measurable.>
-      </equation*>
-
-      <item>First by <reference|continuity of vector space operations> the
-      norm function <math|<around*|\|||\|>:\<bbb-C\>\<rightarrow\>\<bbb-R\>>
-      is continuous [using the topologies <math|\<cal-T\><rsub|\<bbb-C\>>>
-      and <math|\<cal-T\><rsub|\<bbb-R\>>> for the domain and codomain].
-      Consider now the supspace topology <math|\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>>
-      [see <reference|subspace topology>], then if
-      <math|U\<in\>\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>>
-      there exists a <math|U<rprime|'>\<in\>\<cal-T\><rsub|\<bbb-R\>>> such
-      that <math|U=U<rprime|'><big|cap><around*|[|0,\<infty\>|[>>, so
-
-      <\equation*>
-        <around*|\|||\|><rsup|-1><around*|(|U|)>=<around*|\|||\|><rsup|-1><around*|(|U<big|cap><around*|[|0,\<infty\>|[>|)>\<equallim\><rsub|<text|<reference|image
-        (preimage) of union , intersections>>><around*|\|||\|><rsup|-1><around*|(|U|)><big|cap><around*|\|||\|><rsup|-1><around*|(|<around*|[|0,\<infty\>|[>|)>\<equallim\><rsub|range<around*|(|<around*|\|||\|>|)>=<around*|[|0,\<infty\>|[>><around*|\|||\|><rsup|-1><around*|(|U|)>\<in\>\<cal-T\><rsub|\<bbb-C\>>
-      </equation*>
-
-      which proves that\ 
-
-      <\equation*>
-        <around*|\|||\|>:\<bbb-C\>\<rightarrow\><around*|[|0,\<infty\>|[>
-        <text|is continuous using the topologies
-        >\<cal-T\><rsub|\<bbb-C\>>,\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>
-      </equation*>
-
-      Further using <reference|x^p is continuous> we have that
-      <math|<around*|[|.|]><rsup|p>:<around*|[|0,\<infty\>|[>\<rightarrow\>\<bbb-R\>>
-      is continuous [using the topologies
-      <math|\<cal-T\><rsub|\<bbb-R\>><big|cap><around*|[|0,\<infty\>|[>>].
-      Hence as the compositions of continuous functions is continuous it
-      follows that
-
-      <\equation*>
-        <around*|[|.|]><rsup|p>\<circ\><around*|\|||\|> <text|is continuous
-        using the topologies >\<cal-T\><rsub|\<bbb-C\>>,\<cal-T\><rsub|\<bbb-R\>>
-      </equation*>
-
-      Finally, as <math|<around*|(|<around*|[|.|]><rsup|p>\<circ\><around*|\|||\|>|)><around*|(|x|)>=<around*|[|.|]><rsup|p><around*|(|<around*|\||x|\|>|)>=<around*|\||x|\|><rsup|p>=<around*|(|<around*|\|||\|><rsup|p>|)><around*|(|x|)>>,
-      it follows that <math|<around*|\|||\|><rsup|p>> is continuous [using
-      the topologies <math|\<cal-T\><rsub|\<bbb-C\>>,\<cal-T\><rsub|\<bbb-R\>>>].
-      Using then \ <reference|continuous functions are measurable> we have\ 
-
-      <\equation*>
-        <around*|\|||\|><rsup|p><text| is
-        >\<cal-B\><around*|[|\<bbb-C\>|]>,\<cal-B\><around*|[|\<bbb-R\>|]><text|-measurable.>
-      </equation*>
-    </enumerate>
-
-    \;
-  </proof>
-
   <\lemma>
     Let <math|p\<in\><around*|[|1,\<ldots\>,\<infty\>|[>> and
     <math|z<rsub|1>,z<rsub|2>\<in\>\<bbb-R\>> [or
@@ -16872,39 +16750,6 @@
     <\equation*>
       <around*|\||z<rsub|1>+z<rsub|2>|\|><rsup|p>\<leqslant\>2<rsup|p>\<cdot\>max<around*|(|<around*|\||z<rsub|1>|\|><rsup|p>,<around*|\||z<rsub|2>|\|><rsup|p>|)>
     </equation*>
-  </proof>
-
-  <\proposition>
-    <label|L^p properties (1)>Let <math|p\<in\>\<bbb-R\>> then we have\ 
-
-    <\enumerate>
-      <item><math|\<forall\>f,g\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>
-      we have <math|f+g\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>
-
-      <item><math|\<forall\>f\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>
-      and <math|\<alpha\>\<in\>\<bbb-R\>> we have that
-      <math|\<alpha\>\<cdot\>f\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>
-
-      <item><math|\<forall\>f,g\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>
-      we have <math|f+g\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>
-
-      <item><math|\<forall\>f\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>
-      and <math|\<bbb-C\>> we have that <math|\<alpha\>\<cdot\>f\<in\>\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>
-    </enumerate>
-  </proposition>
-
-  <\proof>
-    \ 
-
-    <\enumerate>
-      <item>
-
-      <item>
-
-      <item>
-
-      <item>
-    </enumerate>
   </proof>
 
   \;
@@ -16967,7 +16812,6 @@
     <associate|Dynkin class generated|<tuple|18.130|?>>
     <associate|Dynkin classes and sigma algebra|<tuple|18.134|?>>
     <associate|Fatou's Lemma|<tuple|18.239|?>>
-    <associate|L^p properties (1)|<tuple|18.255|?>>
     <associate|Lebesgue measurability is transalation
     invariant|<tuple|18.98|?>>
     <associate|Lebesgue measurable sets alternatives|<tuple|18.88|?>>
@@ -17759,79 +17603,69 @@
 
       <tuple|<tuple|Lebesgue measurable space>|<pageref|auto-24>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><around*|[|\<bbb-R\>|]>>>|<pageref|auto-25>>
+      <tuple|<tuple|Lebesgue measure>|<pageref|auto-25>>
 
-      <tuple|<tuple|Lebesgue measure>|<pageref|auto-26>>
+      <tuple|<tuple|Lebesgue measurable set>|<pageref|auto-26>>
 
-      <tuple|<tuple|Lebesgue measurable set>|<pageref|auto-27>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>>|<pageref|auto-28>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>>|<pageref|auto-29>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible>|<pageref|auto-31>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible>|<pageref|auto-32>>
+      <tuple|<tuple|complete measures>|<pageref|auto-32>>
 
-      <tuple|<tuple|complete measures>|<pageref|auto-33>>
+      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-33>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-34>>
+      <tuple|<tuple|completion of a measure space>|<pageref|auto-34>>
 
-      <tuple|<tuple|completion of a measure space>|<pageref|auto-35>>
+      <tuple|<tuple|outer measure induced>|<pageref|auto-35>>
 
-      <tuple|<tuple|outer measure induced>|<pageref|auto-36>>
+      <tuple|<tuple|inner measure induced>|<pageref|auto-36>>
 
-      <tuple|<tuple|inner measure induced>|<pageref|auto-37>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-37>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-38>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-38>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-39>>
+      <tuple|<tuple|inner regular sets>|<pageref|auto-39>>
 
-      <tuple|<tuple|inner regular sets>|<pageref|auto-40>>
+      <tuple|<tuple|outer regular sets>|<pageref|auto-40>>
 
-      <tuple|<tuple|outer regular sets>|<pageref|auto-41>>
+      <tuple|<tuple|Dynkin class>|<pageref|auto-43>>
 
-      <tuple|<tuple|Dynkin class>|<pageref|auto-44>>
+      <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-44>>
 
-      <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-45>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-45>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-46>>
+      <tuple|<tuple|measurable function>|<pageref|auto-48>>
 
-      <tuple|<tuple|measurable function>|<pageref|auto-49>>
-
-      <tuple|<tuple|Borel function>|<pageref|auto-50>>
+      <tuple|<tuple|Borel function>|<pageref|auto-49>>
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
-      function>|<pageref|auto-51>>
+      function>|<pageref|auto-50>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-52>>
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-51>>
 
-      <tuple|<tuple|almost everyware>|<pageref|auto-56>>
+      <tuple|<tuple|almost everyware>|<pageref|auto-55>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>>|<pageref|auto-60>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>>|<pageref|auto-59>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>>|<pageref|auto-61>>
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>>|<pageref|auto-60>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsup|+>f
-      d\<mu\>>>|<pageref|auto-62>>
+      d\<mu\>>>|<pageref|auto-61>>
 
       <tuple|<tuple|integrable functions on a measure
-      space>|<pageref|auto-64>>
+      space>|<pageref|auto-63>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+      d\<mu\>>>|<pageref|auto-64>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
       d\<mu\>>>|<pageref|auto-65>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1>>>|<pageref|auto-66>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-67>>
+      <tuple|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>>|<pageref|auto-66>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
-      d\<mu\>>>|<pageref|auto-68>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>>|<pageref|auto-69>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
-      d\<mu\>>>|<pageref|auto-70>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>>|<pageref|auto-74>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><rsub|\<bbb-C\>>>>|<pageref|auto-75>>
+      d\<mu\>>>|<pageref|auto-67>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|18<space|2spc>Measure
@@ -17877,78 +17711,73 @@
       <with|par-left|<quote|1tab>|18.3.4<space|2spc>The Carathéodory theorem
       and <with|mode|<quote|math>|\<bbb-R\><rsup|n>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-28>>
+      <no-break><pageref|auto-27>>
 
       <with|par-left|<quote|1tab>|18.3.5<space|2spc>Properties of
-      <with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><around*|[|\<bbb-R\><rsup|n>|]>,\<lambda\><rsup|n>|\<rangle\>>>
+      <with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><rsup|n>,\<lambda\><rsup|n>|\<rangle\>>>
       and <with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>,<around*|(|\<lambda\><rsup|n>|)><rsub|\|\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>|\<rangle\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30>>
+      <no-break><pageref|auto-29>>
 
       <with|par-left|<quote|1tab>|18.3.6<space|2spc><with|mode|<quote|math>|Negligibity,Completeness<syntax|<with|mode|<quote|text>|
       and >|\<wedge\>>Regularity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-30>>
 
       18.4<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>
+      <no-break><pageref|auto-41>
 
       <with|par-left|<quote|1tab>|18.4.1<space|2spc>Dynkin Classes
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43>>
+      <no-break><pageref|auto-42>>
 
       18.5<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>
+      <no-break><pageref|auto-46>
 
       <with|par-left|<quote|1tab>|18.5.1<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-47>>
 
       <with|par-left|<quote|1tab>|18.5.2<space|2spc>Example of measurable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-52>>
 
       <with|par-left|<quote|1tab>|18.5.3<space|2spc>Properties of measurable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-54>>
+      <no-break><pageref|auto-53>>
 
       <with|par-left|<quote|1tab>|18.5.4<space|2spc>Properties that hold
       everywhere <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-55>>
+      <no-break><pageref|auto-54>>
 
       18.6<space|2spc>The measure integral
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-57>
+      <no-break><pageref|auto-56>
 
       <with|par-left|<quote|1tab>|18.6.1<space|2spc>Integral of simple
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-58>>
+      <no-break><pageref|auto-57>>
 
       <with|par-left|<quote|1tab>|18.6.2<space|2spc>Integral of non negative
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-59>>
+      <no-break><pageref|auto-58>>
 
       <with|par-left|<quote|1tab>|18.6.3<space|2spc>Integral of integrable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-63>>
+      <no-break><pageref|auto-62>>
 
       <with|par-left|<quote|1tab>|18.6.4<space|2spc>Properties of the
       integral <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-71>>
+      <no-break><pageref|auto-68>>
 
       <with|par-left|<quote|1tab>|18.6.5<space|2spc>Limit theorems for
       integrable functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-72>>
+      <no-break><pageref|auto-69>>
 
       <with|par-left|<quote|1tab>|18.6.6<space|2spc>Integral of complex
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-73>>
-
-      18.7<space|2spc>The spaces <with|mode|<quote|math>|\<cal-L\><rsup|p>>
-      and <with|mode|<quote|math>|L<rsup|p>>
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-76>
+      <no-break><pageref|auto-70>>
     </associate>
   </collection>
 </auxiliary>
