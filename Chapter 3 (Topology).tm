@@ -10074,18 +10074,19 @@
   </proof>
 
   <\example>
-    <label|1/n convergence>Let <math|a\<in\>\<bbb-R\><rsub|+>> then
-    <math|<around*|{|<frac|1|a+i>|)><rsub|i\<in\>\<bbb-N\> >> converges to
-    <math|0>
+    <label|1/n convergence>Let <math|a\<in\>\<bbb-R\>> then
+    <math|<around*|{|<frac|1|a+i>|)><rsub|i\<in\>\<bbb-N\><rsub|0> >>
+    converges to <math|0>
   </example>
 
   <\proof>
     Let <math|\<varepsilon\>\<in\>\<bbb-R\><rsub|+>> then using
     <reference|consequence of the archimedean property for the reals> there
     exists a <math|N\<in\>\<bbb-N\><rsub|0>> such that
-    <math|<frac|1|\<varepsilon\>>-a\<less\>N> so if <math|N\<leqslant\>i>
-    then <math|<frac|1|\<varepsilon\>>-a\<less\>i\<Rightarrow\><frac|1|\<varepsilon\>>\<less\>i+a>
-    so that <math|<frac|1|a+i>\<less\>\<varepsilon\>> proving that
+    <math|max<around*|(|<frac|1|\<varepsilon\>>-a,-a|)>\<less\>N> so if
+    <math|N\<leqslant\>i> then <math|<frac|1|\<varepsilon\>>-a\<less\>i\<Rightarrow\><frac|1|\<varepsilon\>>\<less\>i+a>
+    and <math|-a\<less\>i\<Rightarrow\>0\<less\>i+a> so that
+    <math|<frac|1|a+i>\<less\>\<varepsilon\>> proving that
     <math|<around*|\||<frac|1|a+i>-0|\|>=<around*|\||<frac|1|a+i>|\|>=<frac|1|a+i>\<less\>\<varepsilon\>>
     which proves that <math|<below|lim|i\<rightarrow\>\<infty\>><frac|1|a+i>=0>
   </proof>

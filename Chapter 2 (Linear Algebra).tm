@@ -698,7 +698,7 @@
             10.3.030>>>>>
           </eqnarray*>
 
-          As <math|\<sigma\><around*|(|n+1|)>\<neq\>n+1> we have
+          As <math|\<sigma\><around*|(|n+1|)>\<neq\>n+1> we hvave
           <math|\<sigma\><around*|(|n+1|)>\<in\><around*|{|0,\<ldots\>,n|}>>.
           Further if <math|\<exists\>i\<in\><around*|{|1,\<ldots\>,n-1|}>>
           such that <math|\<sigma\><around*|(|<around*|(|n\<leftrightarrow\><rsub|0,n>k|)><around*|(|i|)>|)>=n+1=\<sigma\><around*|(|k|)>>
