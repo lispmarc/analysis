@@ -8009,21 +8009,20 @@
     <math|log<around*|(|a|)>> is only defined if
     <math|a\<in\>\<bbb-R\><rsub|+>=<around*|]|0,\<infty\>|[>>, further if for
     example if <math|x=<frac|1|2>> then we will see that
-    <math|a<rsup|<frac|1|2>>=<sqrt|a>> which is not defined in the reals if
-    <math|a=<frac|1|2>>. Later we will see that in the case of
-    <math|0\<less\>x> we can include the case <math|a=0> in the definition of
-    <math|a<rsup|x>>.
+    <math|a<rsup|<frac|1|2>>=<sqrt|a>> which is not defined on the negative
+    real numbers.\ 
   </remark>
 
   Next we prove now that we have the classical properties of our generalized
-  power.
+  power. TODO add <math|a<rsup|x+y>=a<rsup|x>\<cdot\>a<rsup|y>>
 
   <\theorem>
-    <label|properties of general strict power>Let
-    <math|a\<in\><around*|]|0,\<infty\>|[>=\<bbb-R\><rsub|+>> then we that\ 
+    <label|properties of general strict power>We have the following
+    properties for the generalized power
 
     <\enumerate>
-      <item><math|\<forall\>n\<in\>\<bbb-N\>> we have that
+      <item><math|\<forall\>n\<in\>\<bbb-N\>> and
+      <math|\<forall\>a\<in\><around*|]|a,\<infty\>|[>> we have that
       <math|a<rsup|<around*|[|n|]>>=<wide*|a*\<ldots\>a|\<wide-underbrace\>><rsub|n
       times>> (we have a conflict of notation here so we use
       <math|<wide*|a*\<ldots\>a|\<wide-underbrace\>>> to note the classical
@@ -8038,20 +8037,27 @@
       <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
       <math|<frac|a<rsup|<around*|[|x|]>>|a>=a<rsup|<around*|[|x-1|]>>>
 
-      <item><math|\<forall\>x,y\<in\>\<bbb-R\>> we have
+      <item><math|\<forall\>x,y\<in\>\<bbb-R\>> and
+      <math|\<forall\>a\<in\><around*|]|0,\<infty\>|[>> we have
       <math|<around*|(|a<rsup|<around*|[|x|]>>|)><rsup|<around*|[|y|]>>=a<rsup|<around*|[|x\<cdot\>y|]>>>
 
-      <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
+      <item><math|\<forall\>x\<in\>\<bbb-R\>> and
+      <math|\<forall\>a\<in\><around*|]|0,\<infty\>|[>> we have
       <math|a<rsup|<around*|[|-x|]>>=<frac|1|a<rsup|<around*|[|x|]>>>>
 
-      <item><math|\<forall\>b\<in\><around*|]|0,\<infty\>|[>> and
+      <item><math|\<forall\>a,b\<in\><around*|]|0,\<infty\>|[>> and
       <math|\<forall\>x\<in\>\<bbb-R\>> we have
       <math|<around*|(|a\<cdot\>b|)><rsup|<around*|[|x|]>>=a<rsup|<around*|[|x|]>>\<cdot\>b<rsup|<around*|[|x|]>>>
 
-      <item><math|\<forall\>x\<in\>\<bbb-R\>> we have
+      <item><math|\<forall\>a\<in\><around*|]|0,\<infty\>|[>> and
+      <math|\<forall\>x,y\<in\>\<bbb-R\>> we have
+      <math|a<rsup|<around*|[|x+y|]>>=a<rsup|<around*|[|x|]>>\<cdot\>a<rsup|<around*|[|y|]>>>
+
+      <item><math|\<forall\>x\<in\>\<bbb-R\>> and
+      <math|\<forall\>a\<in\><around*|]|0,\<infty\>|[>> we have
       <math|log<around*|(|a<rsup|<around*|[|x|]>>|)>=x\<cdot\>log<around*|(|a|)>>
 
-      <item>Let <math|a\<in\>\<bbb-R\><rsub|+>> and define
+      <item>Let <math|a\<in\><around*|]|a,\<infty\>|[>> and define
       <math|a<rsup|<around*|(|.|)>>:\<bbb-R\>\<rightarrow\>\<bbb-R\><rsub|+>>
       by <math|a<rsup|<around*|(|.|)>><around*|(|x|)>=a<rsup|<around*|[|x|]>>>
       then <math|\<forall\>x\<in\>\<bbb-R\>> we have
@@ -8119,6 +8125,14 @@
       <math|x\<in\>\<bbb-R\>> then <math|<around*|(|a\<cdot\>b|)><rsup|<around*|[|x|]>>=exp<around*|(|log<around*|(|a\<cdot\>b|)>\<cdot\>x|)>\<equallim\><rsub|<text|<reference|properties
       of log> (5)>>exp<around*|(|<around*|(|log<around*|(|a|)>+log<around*|(|b|)>|)>\<cdot\>x|)>=exp<around*|(|log<around*|(|a|)>\<cdot\>x+log<around*|(|b|)>\<cdot\>x|)>\<equallim\><rsub|<text|<reference|exp(x+y)=exp(x)exp(y)>>>exp<around*|(|log<around*|(|a|)>\<cdot\>x|)>\<cdot\>exp<around*|(|log<around*|(|b|)>\<cdot\>x|)>=a<rsup|<around*|[|x|]>>\<cdot\>b<rsup|<around*|[|x|]>>>
 
+      <item>Let <math|x,y\<in\>\<bbb-R\>> we have\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|a<rsup|<around*|[|x+y|]>>>|<cell|=>|<cell|exp<around*|(|<around*|(|x+y|)>\<cdot\>log<around*|(|a|)>|)>>>|<row|<cell|>|<cell|=>|<cell|exp<around*|(|x\<cdot\>log<around*|(|a|)>+y\<cdot\>log<around*|(|a|)>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|exp(x+y)=exp(x)exp(y)>>>>|<cell|exp<around*|(|x\<cdot\>log<around*|(|a|)>|)>\<cdot\>exp<around*|(|y\<cdot\>log<around*|(|a|)>|)>>>|<row|<cell|>|<cell|=>|<cell|a<rsup|<around*|[|x|]>>\<cdot\>a<rsup|<around*|[|y|]>>>>>>
+      </eqnarray*>
+
+      <item>Let\ 
+
       <item><math|log<around*|(|a<rsup|<around*|[|x|]>>|)>=log<around*|(|exp<around*|(|x\<cdot\>log<around*|(|a|)>|)>|)>=x\<cdot\>log<around*|(|a|)>>
 
       <item>If we define <math|f:\<bbb-R\>\<rightarrow\>\<bbb-R\>> by
@@ -8146,15 +8160,17 @@
   </proof>
 
   Using the above theorem (9) we see that the function
-  <math|<around*|(|.|)><rsup|x>:\<bbb-R\><rsub|+>\<rightarrow\>\<bbb-R\><rsub|+>>
+  <math|a<rsup|<around*|(|.|)>>:\<bbb-R\><rsub|+>\<rightarrow\>\<bbb-R\><rsub|+>>
   has a derivative and thus by <reference|differentias and derivates> and
   <reference|differentiability at x implies continuity at x> we have that
-  <math|<around*|(|.|)><rsup|<around*|[|x|]>>> is continuous at every
+  <math|a<rsup|<around*|(|.|)>>> is continuous at every
   <math|x\<in\>\<bbb-R\><rsub|+>=<around*|]|0,\<infty\>|[>> this can be
   extended to <math|<around*|[|0,\<infty\>|[>> using the subspace topology on
   <math|<around*|[|0,\<infty\>|[>> if we extend the definition of a power to
   <math|<around*|[|0,\<infty\>|[>> which can be done if we restrict the power
   to strict positive numbers.
+
+  \;
 
   <\definition>
     <label|general strict positive powers>Let
@@ -8164,14 +8180,16 @@
     if a\<in\><around*|]|0,\<infty\>|[>>>|<row|<cell|0 if a=0>>>>>>
   </definition>
 
-  Note that the requirement <math|0\<less\>p> is needed for if
+  Note that the requirement <math|0\<less\>p> is needed, for if
   <math|a\<in\><around*|]|0,\<infty\>|[>> then
-  <math|a<rsup|0>=exp<around*|(|log<around*|(|a|)>\<cdot\>0|)>=1> and as
-  \ <math|0<rsup|0>=0> the function <math|<around*|[|.|]><rsup|0>:<around*|[|0,\<infty\>|[>\<rightarrow\>\<bbb-R\>>
-  defined by <math|<around*|[|.|]><rsup|0><around*|(|x|)>> is then
-  discontinuous at <math|0>. Furter if <math|p\<less\>0> then
-  <math|0<rsup|p>=0<rsup|-p>=<frac|1|0<rsup|p>>> is not well defined. We have
-  now simular properties for <math|a<rsup|p>> as <math|a<rsup|p>>
+  <math|a<rsup|0>=exp<around*|(|log<around*|(|a|)>\<cdot\>0|)>=1> and
+  \ <math|0<rsup|0>=0> so that the function
+  <math|<around*|[|.|]><rsup|0>:<around*|[|0,\<infty\>|[>\<rightarrow\>\<bbb-R\>>
+  defined by <math|<around*|[|.|]><rsup|0><around*|(|x|)>> is discontinuous
+  at <math|0>. Further if <math|p\<less\>0> then
+  <math|0<rsup|p>=0<rsup|-p>=<frac|1|0<rsup|p>>> is not well defined. The new
+  definition <math|a<rsup|p>> has similar properties as
+  <math|a<rsup|<around*|[|p|]>>> as is expressed in the following theorem.
 
   <\theorem>
     <label|properties of general power>Let
@@ -8199,9 +8217,17 @@
       <item><math|\<forall\>x,y\<in\><around*|]|0,\<infty\>|[>> we have
       <math|<around*|(|a<rsup|x>|)><rsup|y>=a<rsup|x\<cdot\>y>>
 
-      <item><math|\<forall\>b\<in\><around*|[|0,\<infty\>|[>> and
+      <item><math|\<forall\>a,b\<in\><around*|[|0,\<infty\>|[>> and
       <math|\<forall\>x\<in\>\<bbb-R\>> we have
       <math|<around*|(|a\<cdot\>b|)><rsup|x>=a<rsup|x>\<cdot\>b<rsup|x>>
+
+      <item><math|\<forall\>a\<in\><around*|[|0,\<infty\>|[>> and
+      <math|\<forall\>x,y\<in\>\<bbb-R\>> we have
+      <math|a<rsup|x+y>=a<rsup|x>\<cdot\>a<rsup|y>>
+
+      <item><math|\<forall\>a\<in\><around*|]|0,\<infty\>|[>> and
+      <math|\<forall\>x\<in\>\<bbb-R\>> we have
+      <math|a<rsup|-x>=<frac|1|a<rsup|x>>>
 
       <item><math|\<forall\>p\<in\><around*|]|0,\<infty\>|[>> we have that
       <math|<around*|[|.|]><rsup|p>:<around*|[|0,\<infty\>|]>\<rightarrow\>\<bbb-R\>>
@@ -8265,6 +8291,19 @@
         <item*|<math|a\<neq\>0\<wedge\>b\<neq\>0>><math|<around*|(|a\<cdot\>b|)><rsup|x>\<equallim\><rsub|a\<cdot\>b\<neq\>0><around*|(|a\<cdot\>b|)><rsup|<around*|[|x\<cdot\>y|]>>\<equallim\><rsub|<text|<reference|properties
         of general strict power> (7)>>=a<rsup|<around*|[|x|]>>\<cdot\>b<rsup|<around*|[|x|]>>=a<rsup|x>\<cdot\>b<rsup|x>>
       </description>
+
+      <item>We have for <math|a> either\ 
+
+      <\description>
+        <item*|<math|a=0>>then <math|a<rsup|x+y>=0<rsup|x+y>=0=0\<cdot\>0=0<rsup|x>\<cdot\>0<rsup|y>=a<rsup|x>\<cdot\>a<rsup|y>>
+
+        <item*|<math|a\<neq\>0>>then <math|a<rsup|x+y>=a<rsup|<around*|[|x+y|]>>\<equallim\><rsub|<text|<reference|properties
+        of general strict power> (8)>>a<rsup|<around*|[|x|]>>\<cdot\>a<rsup|<around*|[|y|]>>=a<rsup|x>\<cdot\>a<rsup|y>>
+      </description>
+
+      <item>As <math|a\<in\><around*|]|0,\<infty\>|[>> we have
+      <math|a<rsup|-x>=a<rsup|<around*|[|-x|]>>\<equallim\><rsub|<text|<reference|properties
+      of general strict power> (6)>><frac|1|a<rsup|<around*|[|x|]>>>=<frac|1|a<rsup|x>>>
 
       <item>Let <math|x,y\<in\><around*|[|0,\<infty\>|[>> with
       <math|x\<less\>y> then we have for <math|x> either\ 
@@ -9047,7 +9086,7 @@
 <\initial>
   <\collection>
     <associate|chapter-nr|14>
-    <associate|page-first|663>
+    <associate|page-first|664>
     <associate|page-medium|papyrus>
     <associate|section-nr|7>
     <associate|subsection-nr|0>
