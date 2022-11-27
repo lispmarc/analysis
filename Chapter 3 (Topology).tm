@@ -11868,21 +11868,74 @@
     <label|definition of a serie><dueto|Serie>Let
     <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>> be
     a normed space and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>X>
-    a sequence then we note:
+    a sequence then we say:
 
     <\enumerate>
-      <item><math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> is another
-      notation for <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
-
-      <item><math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> is convergent
-      if <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|i>|)>>
+      <item>The series <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> is
+      convergent if <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|i>|)>>
       exists.
 
-      <item>If <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> converges
-      then we note <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|i>|)>>
+      <item>If the series <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
+      converges then we note <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|<big|sum><rsub|i=k><rsup|n>x<rsub|i>|)>>
       by <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
     </enumerate>
   </definition>
+
+  <\note>
+    To avoid excesive notation instead of saying
+    '<math|<around*|{|x|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    is a sequence such that the series <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
+    converges' we say just 'the series <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
+    converges' where the sequence <math|<around*|{|x<rsub|i>|)>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+    is implicit assumed.
+  </note>
+
+  The following provides a example of a convergent series.
+
+  <\lemma>
+    <label|sum of powers theorem>Let <math|\<lambda\>\<in\>\<bbb-R\>> such
+    that <math|\<lambda\>\<neq\>1> then if <math|k\<in\>\<bbb-N\><rsub|0>>
+    and <math|n\<in\>\<bbb-N\> > we have <math|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>>.
+    So if we take <math|n=0> then <math|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|<around*|(|i-1|)>>=<frac|1-\<lambda\><rsup|k>|1-\<lambda\>>>
+    and if <math|n=1> then <math|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i>=\<lambda\>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>>
+  </lemma>
+
+  <\proof>
+    We proof this by induction so let <math|S=<around*|{|k\<in\>\<bbb-N\><rsub|0>\|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>|}>>
+    then \ we have:
+
+    <\enumerate>
+      <item>If <math|k=1> then <math|<big|sum><rsub|i=1><rsup|1>\<lambda\><rsup|n+<around*|(|i-1|)>>=\<lambda\><rsup|n>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\>|1-\<lambda\>>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|1>|1-\<lambda\>>>
+      so that <math|1\<in\>S>
+
+      <item>Assume that <math|k\<in\>S> then we have\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|k+1>\<lambda\><rsup|n+<around*|(|i-1|)>>>|<cell|=>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>|)>+\<lambda\><rsup|n+<around*|(|<around*|(|k+1|)>-1|)>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>|)>+\<lambda\><rsup|n+k>>>|<row|<cell|>|<cell|\<equallim\><rsub|k\<in\>S>>|<cell|\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>+\<lambda\><rsup|n+k>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<lambda\><rsup|n>\<cdot\><around*|(|1-\<lambda\><rsup|k>|)>+<around*|(|1-\<lambda\>|)>\<cdot\>\<lambda\><rsup|n+k>|1-\<lambda\>>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<lambda\><rsup|n>\<cdot\><around*|(|1-\<lambda\><rsup|k>+<around*|(|1-\<lambda\>|)>\<cdot\>\<lambda\><rsup|k>|)>|1-\<lambda\>>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<lambda\><rsup|n>\<cdot\><around*|(|1-\<lambda\><rsup|k>+\<lambda\><rsup|k>-\<lambda\><rsup|k+1>|)>|1-\<lambda\>>>>|<row|<cell|>|<cell|=>|<cell|\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k+1>|1-\<lambda\>>>>>>
+      </eqnarray*>
+
+      proving that <math|k+1\<in\>S>
+    </enumerate>
+  </proof>
+
+  <\lemma>
+    <label|exaple of a convergent serie>Let <math|\<lambda\>\<in\>\<bbb-R\>>
+    with <math|0\<less\>\<lambda\>\<less\>1> then
+    <math|<big|sum><rsub|i=1><rsup|\<infty\>>\<lambda\><rsup|i>> converges
+    and <math|<big|sum><rsub|i=1><rsup|\<infty\>>\<lambda\><rsup|i>=<frac|\<lambda\>|1-\<lambda\>>>
+  </lemma>
+
+  <\proof>
+    Given a <math|k\<in\>\<bbb-N\><rsub|0>> we have that
+    <math|<around*|\||<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>=<around*|\||<around*|(|\<lambda\>\<cdot\><big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i-1>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>\<equallim\><rsub|previous
+    lemma with n=0><around*|\||\<lambda\>\<cdot\><around*|(|\<lambda\><rsup|0>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>=<around*|\||<frac|\<lambda\>|1-\<lambda\>>\<cdot\><around*|(|1-\<lambda\><rsup|k>-1|)>|\|>=<around*|\||<frac|\<lambda\><rsup|k+1>|1-\<lambda\>>|\|>=<frac|\<lambda\><rsup|>|1-\<lambda\>>\<cdot\>\<lambda\><rsup|k>>.
+    Now using <reference|convergence of powersequence> given
+    <math|\<varepsilon\>\<gtr\>0> there exists a
+    <math|N\<in\><around*|{|1,\<ldots\>,\<infty\>|}>> such that
+    <math|<frac|\<lambda\>|1-\<lambda\>>\<cdot\>\<lambda\><rsup|k>=<around*|\||<frac|\<lambda\>|1-\<lambda\>>\<cdot\>\<lambda\><rsup|k>-0|\|>\<less\>\<varepsilon\>>
+    if <math|k\<geqslant\>N\<Rightarrow\><around*|\||<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>\<less\>\<varepsilon\>>
+    if <math|k\<geqslant\>N>
+  </proof>
 
   <\theorem>
     <label|terms of a convergent series goes to 0>Let
@@ -12034,7 +12087,7 @@
   <\theorem>
     <label|converging of upper serie>Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
     be a normed space and <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
-    convergent serie then <math|<below|lim|N\<rightarrow\>\<infty\>><big|sum><rsub|i=N><rsup|\<infty\>>x<rsub|i>=0>
+    convergent series then <math|<below|lim|N\<rightarrow\>\<infty\>><big|sum><rsub|i=N><rsup|\<infty\>>x<rsub|i>=0>
   </theorem>
 
   <\proof>
@@ -12235,7 +12288,7 @@
 
   <\corollary>
     <label|serie of positive numbers is positive>Let
-    <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> be convergent serie
+    <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> be convergent series
     such that <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we
     have <math|0\<less\>x<rsub|i>> then <math|0\<less\><big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
   </corollary>
@@ -12297,9 +12350,9 @@
     is finite|}>|)>=<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|\<beta\><around*|(|i|)>>>
   </proof>
 
-  The above theorem allows us to extend the definition of a serie of positive
-  numbers. Later we wil use this extension also for absolute convergent
-  series.
+  The above theorem allows us to extend the definition of a series of
+  positive numbers. Later we wil use this extension also for absolute
+  convergent series.
 
   <\definition>
     <label|definition of summable family of poitive temrs>Let <math|I> be a
@@ -12526,7 +12579,7 @@
 
   <\lemma>
     <label|lemma 12.356>Let <math|I> be a countable set,
-    \ <math|<big|sum><rsub|i\<in\>I>x<rsub|i>> a convergent serie with
+    \ <math|<big|sum><rsub|i\<in\>I>x<rsub|i>> a convergent series with
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>\<subseteq\><around*|[|0,\<infty\>|[>>,
     <math|n\<in\>\<bbb-N\> > and <math|<around*|{|N<rsub|i>|}><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>>
     such that <math|\<forall\>i,j\<in\><around*|{|0,\<ldots\>,n|}>\<vdash\>i\<neq\>j>
@@ -12615,7 +12668,7 @@
 
   <\lemma>
     <label|lemma 12.358>Let <math|I> be a countable set,
-    <math|<big|sum><rsub|i\<in\>I>x<rsub|i>> a convergent serie with
+    <math|<big|sum><rsub|i\<in\>I>x<rsub|i>> a convergent series with
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>\<subseteq\><around*|[|0,\<infty\>|[>>,
     <math|<around*|{|N<rsub|i>|}><rsub|i\<in\>\<bbb-N\> >> be such that
     <math|\<bbb-N\> =<big|cup><rsub|i\<in\>\<bbb-N\> >N<rsub|i>> and
@@ -12801,11 +12854,21 @@
 
   <subsection|Absolute convergent series>
 
+  <\definition>
+    <label|absolute convergence of a serie><dueto|Absolute Convergence>Let
+    <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>> be
+    a normed space and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    a sequence then <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> is
+    <with|font-series|bold|absolute convergent> if and only if
+    <math|<big|sum><rsub|i=k><rsup|\<infty\>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
+    is convergent.
+  </definition>
+
   <\theorem>
     <label|convergent criteria of a serie in a Banach space><dueto|Dominent
     Convergence>Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
     be a Banach space <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> a
-    serie such that there exists a convergent serie
+    series such that there exists a convergent series
     <math|<big|sum><rsub|i=k><rsup|\<infty\>>s<rsub|i>> such that
     <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we have
     <math|s<rsub|i>\<in\>\<bbb-R\>\<wedge\><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>\<leqslant\>s<rsub|i>>
@@ -12835,21 +12898,25 @@
       sum and order of families>>><big|sum><rsup|n><rsub|i=m+1><rsup|><around*|\||s<rsub|i>|\|>\<equallim\><big|sum><rsub|i=m+1><rsup|n>s<rsub|i>\<equallim\><rsub|0\<leqslant\><big|sum><rsub|i=n+1><rsup|m>s<rsub|i>><around*|\||<big|sum><rsub|i=m+1><rsup|n>s<rsub|i>|\|>=<around*|\||<big|sum><rsub|i=k><rsup|n>s<rsub|i>-<big|sum><rsub|i=k><rsup|m>s<rsub|i>|\|>\<less\>\<varepsilon\>>
       (as <math|s<rsub|i>\<geqslant\>0\<Rightarrow\><around*|\||s<rsub|i>|\|>=s<rsub|i>>)
     </enumerate>
+
+    So in all cases we have <math|<around*|\<\|\|\>|<big|sum><rsub|i=k><rsup|n>x<rsub|i>-<big|sum><rsub|i=k><rsup|m>x<rsub|i>|\<\|\|\>>\<less\>\<varepsilon\>>
+    proving that <math|<around*|{|<big|sum><rsub|i=k><rsup|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    is Cauchy. as <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
+    is a Banach space and thus complete we have that
+    <math|<around*|{|<big|sum><rsub|i=k><rsup|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    converges and thus that <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
+    exist.
+
+    Second if <math|n\<in\><around*|{|k,\<ldots\>\<infty\>|}>> then we have
+    <math|<around*|\<\|\|\>|<big|sum><rsub|i=k><rsup|n>x<rsub|i>|\<\|\|\>>\<leqslant\><big|sum><rsub|i=k><rsup|n><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>\<leqslant\><big|sum><rsub|i=k><rsup|n><around*|\||x<rsub|i>|\|>=<big|sum><rsub|i=k><rsup|n>s<rsub|i>>
+    so that by <reference|limit preserves inequality (2)> we have that
+    <math|<around*|\<\|\|\>|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>|\<\|\|\>>=<around*|\<\|\|\>|<below|lim|n\<rightarrow\>\<infty\>><big|sum><rsup|n><rsub|i=k>x<rsub|i>|\<\|\|\>>\<leqslant\><rsub|<text|<reference|limit
+    preserves inequality (3)>>><below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=k><rsup|n>s<rsub|i>>
   </proof>
 
-  So in all cases we have <math|<around*|\<\|\|\>|<big|sum><rsub|i=k><rsup|n>x<rsub|i>-<big|sum><rsub|i=k><rsup|m>x<rsub|i>|\<\|\|\>>\<less\>\<varepsilon\>>
-  proving that <math|<around*|{|<big|sum><rsub|i=k><rsup|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
-  is Cauchy. as <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
-  is a Banach space and thus complete we have that
-  <math|<around*|{|<big|sum><rsub|i=k><rsup|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
-  converges and thus that <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
-  exist.
-
-  Second if <math|n\<in\><around*|{|k,\<ldots\>\<infty\>|}>> then we have
-  <math|<around*|\<\|\|\>|<big|sum><rsub|i=k><rsup|n>x<rsub|i>|\<\|\|\>>\<leqslant\><big|sum><rsub|i=k><rsup|n><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>\<leqslant\><big|sum><rsub|i=k><rsup|n><around*|\||x<rsub|i>|\|>=<big|sum><rsub|i=k><rsup|n>s<rsub|i>>
-  so that by <reference|limit preserves inequality (2)> we have that
-  <math|<around*|\<\|\|\>|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>|\<\|\|\>>=<around*|\<\|\|\>|<below|lim|n\<rightarrow\>\<infty\>><big|sum><rsup|n><rsub|i=k>x<rsub|i>|\<\|\|\>>\<leqslant\><rsub|<text|<reference|limit
-  preserves inequality (3)>>><below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=k><rsup|n>s<rsub|i>>.
+  Using <math|<big|sum><rsub|i=1><rsup|\<infty\>>s<rsub|i>=<big|sum><rsub|i=1><rsup|\<infty\>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
+  in the above theorem we have as <math|<around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>\<leqslant\><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
+  that\ 
 
   <\corollary>
     <label|corollary 12.340>Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
@@ -12859,31 +12926,118 @@
     converges and <math|<around*|\<\|\|\>|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>|\<\|\|\>>\<leqslant\><big|sum><rsub|i=k><rsup|\<infty\>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
   </corollary>
 
+  <\corollary>
+    <label|convergence of \|\|x\|\|>Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
+    be a normed space <math|<around*|{|x|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>X>
+    such that there exists a convergent series
+    <math|<big|sum><rsub|i=k><rsup|\<infty\>>s<rsub|i>> with
+    <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+    <math|<around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>\<leqslant\>s<rsub|i>> then
+    <math|<big|sum><rsub|i=1><rsup|\<infty\>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
+    converges.
+  </corollary>
+
   <\proof>
-    This follows from the previous theorem as
-    <math|<around*|{|<around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
-    is a sequence in <math|\<bbb-R\>> and
-    <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we have
-    <math|<around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>\<leqslant\><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>.
+    Note that <math|<around*|{|<around*|\<\|\|\>|x|\<\|\|\>><rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>\<bbb-R\>>
+    and <math|<around*|\<langle\>|\<bbb-R\>,<around*|\|||\|>|\<rangle\>>> is
+    a Banach space [see <reference|real space is complete>], so as
+    <math|\<forall\>i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> we have that
+    <math|<around*|\||<around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>|\|>=<around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>\<less\>s<rsub|i>>,
+    it follows from <reference|convergent criteria of a serie in a Banach
+    space> that <math|<big|sum><rsub|i=k><rsup|\<infty\>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
+    is convergent.
   </proof>
 
-  the above theorem motivates the definition of absolute convergence of a
-  serie.
-
-  <\definition>
-    <label|absolute convergence of a serie><dueto|Absolute Convergence>Let
+  <\theorem>
+    <label|absolute convergence implies convergence>Let
     <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>> be
-    a normed Banach space then <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
-    is <with|font-series|bold|absolute convergent> if and only if
-    <math|<big|sum><rsub|i=k><rsup|\<infty\>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
-    is convergent,
-  </definition>
+    a normed space then <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
+    is a Banach space if and only if every absolute convergent series is
+    convergent
+  </theorem>
 
-  <\note>
-    <label|absolute convergence implies convergence>Using
-    <reference|corollary 12.340> we have that absolute convergence implies
-    convergence.
-  </note>
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|\<Rightarrow\>>>This follows from the abovce corollary
+      [see <reference|corollary 12.340>]
+
+      <item*|<math|\<Leftarrow\>>>Assume that every absolute convergent
+      series converges. Let <math|<around*|{|x<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+      be a Cauchy sequence. Then <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+      there exists a <math|N<rsub|n>\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+      such that <math|\<forall\>r,s\<in\><around*|{|N<rsub|n>,\<ldots\>,\<infty\>|}>>
+      we have <math|<around*|\<\|\|\>|x<rsub|r>-x<rsub|s><rsub|>|\<\|\|\>>\<less\><frac|1|2<rsup|n+1>>>
+      or <math|<around*|\<\|\|\>|x<rsub|N<rsub|n>+1>-x<rsub|N<rsub|n>>|\<\|\|\>>\<less\><frac|1|2<rsup|N+1>>>.
+      Define <math|<around*|{|y<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> by
+
+      <\equation*>
+        y<rsub|i>=<choice|<tformat|<table|<row|<cell|x<rsub|N<rsub|1>> if
+        i=1>>|<row|<cell|x<rsub|N<rsub|i>>-x<rsub|N<rsub|i-1>> if
+        i\<in\><around*|{|2,\<ldots\>,\<infty\>|}>>>>>>
+      </equation*>
+
+      So we have\ 
+
+      <\equation>
+        <label|eq 11.66.037>\<forall\>i\<in\><around*|{|2,\<ldots\>,\<infty\>|}><text|
+        ><around*|\<\|\|\>|y<rsub|i>|\<\|\|\>>=<around*|\<\|\|\>|x<rsub|N<rsub|i>>-x<rsub|N<rsub|i-1>>|\<\|\|\>>\<less\><frac|1|2<rsup|i>>
+      </equation>
+
+      As <math|<big|sum><rsub|i=1><rsup|\<infty\>><frac|1|2<rsup|i>>> is
+      convergent [see <reference|exaple of a convergent serie>] we have by
+      <reference|subserie property> that <math|<big|sum><rsub|i=2><rsup|\<infty\>><frac|1|2<rsup|i>>>
+      is convergent, using <reference|convergence of \|\|x\|\|> and
+      <reference|eq 11.66.037> we have that
+      <math|<big|sum><rsub|i=2><rsup|\<infty\>><around*|\<\|\|\>|y<rsub|i>|\<\|\|\>>>
+      is convergent. Using then <reference|subserie property> again proves
+      that\ 
+
+      <\equation>
+        <label|eq 11.67.037><big|sum><rsub|i=1><rsup|\<infty\>><around*|\<\|\|\>|y<rsub|i>|\<\|\|\>><text|
+        converges>
+      </equation>
+
+      Then we have that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|n>y<rsub|i>>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|y<rsub|1>
+        if n=1>>|<row|<cell|y<rsub|1>+<big|sum><rsub|i=2><rsup|n>y<rsub|i> if
+        1\<less\>n>>>>>>>|<row|<cell|>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|x<rsub|N<rsub|1>>
+        if n=1>>|<row|<cell|x<rsub|N<rsub|1>>+<big|sum><rsub|i=2><rsup|n><around*|(|x<rsub|N<rsub|i>>-X<rsub|N<rsub|i-1>>|)>
+        if 1\<less\>n>>>>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
+        of differences>>>>|<cell|<choice|<tformat|<table|<row|<cell|x<rsub|N<rsub|i>
+        > if n=1>>|<row|<cell|x<rsub|N<rsub|1>+X<rsub|n<rsub|n>>-X<rsub|<rsub|N<rsub|1>>>
+        if 1\<less\>n>>>>>>>>|<row|<cell|>|<cell|=>|<cell|x<rsub|N<rsub|n>><eq-number><label|eq
+        11.68.037>>>>>
+      </eqnarray*>
+
+      From <reference|eq 11.67.037> and <reference|eq 11.68.037> we have that\ 
+
+      <\equation>
+        <label|eq 11.69.037><around*|{|x<rsub|N<rsub|i>>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>
+        <text|converges> to a limit x
+      </equation>
+
+      Take now <math|\<varepsilon\>\<gtr\>0> then as
+      <math|<around*|{|x<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+      is cauchy there exists a <math|N<rsub|1>> such that
+      <math|\<forall\>n,m\<in\><around*|{|N<rsub|1>,\<ldots\>,\<infty\>|}>>
+      we have that <math|<around*|\<\|\|\>|x<rsub|n>-x<rsub|m>|\<\|\|\>>\<less\><frac|\<varepsilon\>|2>>.
+      Further from the convergence of <math|<around*|{|x<rsub|N<rsub|i>>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
+      there exists a <math|N<rsub|2>> such that
+      <math|\<forall\>i\<in\><around*|{|N<rsub|2>,\<ldots\>,\<infty\>|}>> we
+      have <math|<around*|\<\|\|\>|x<rsub|N<rsub|i>>-x|\<\|\|\>>\<less\><frac|\<varepsilon\>|2>>.
+      Let <math|N=max<around*|(|N<rsub|1>,N<rsub|2>|)>> then if
+      <math|n\<in\><around*|{|N,\<ldots\>,\<infty\>|}>> we have
+      <math|<around*|\<\|\|\>|x<rsub|n>-x|\<\|\|\>>=<around*|\<\|\|\>|x<rsub|n>-x<rsub|N<rsub|1>>+x<rsub|N<rsub|1>-x>|\<\|\|\>>\<leqslant\><around*|\<\|\|\>|x<rsub|n>-x<rsub|N<rsub|1>>|\<\|\|\>>+<around*|\<\|\|\>|x<rsub|N<rsub|1>>-x|\<\|\|\>>\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>=\<varepsilon\>>.
+      Hence <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+      is convergent proving the theorem.
+    </description>
+
+    \;
+  </proof>
 
   We set now out to prove that absolute convergent series in a Banach space
   are commutative and associative. First we need some theorems and lemmas.
@@ -12923,7 +13077,7 @@
     <label|lemma 12.365>Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
     be a normed space, <math|\<varepsilon\>\<gtr\>0> and
     <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> a absolute convergent
-    serie then there exists a finite <math|K\<subseteq\><around*|{|k,\<ldots\>,\<infty\>|}>>
+    series then there exists a finite <math|K\<subseteq\><around*|{|k,\<ldots\>,\<infty\>|}>>
     such that <math|\<forall\>\<varepsilon\>\<gtr\>0> we have
 
     <\enumerate>
@@ -13007,7 +13161,7 @@
   <\theorem>
     Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
     be a Banach space and <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>>
-    a absolute convergent serie then for every permutation
+    a absolute convergent series then for every permutation
     <math|\<beta\>:<around*|{|k,\<ldots\>,\<infty\>|}>\<rightarrow\><around*|{|k,\<ldots\>,\<infty\>|}>>
     we have that <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|\<beta\><around*|(|i|)>>>
     is absolute convergent. If <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
@@ -13032,7 +13186,7 @@
     <label|absolute convergent series are commutative>Let
     <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>> be
     a Banach space and <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> a
-    absolute convergent serie, <math|\<alpha\>,\<beta\>:<around*|{|k,\<ldots\>,\<infty\>|}>\<rightarrow\><around*|{|k,\<ldots\>,\<infty\>|}>>
+    absolute convergent series, <math|\<alpha\>,\<beta\>:<around*|{|k,\<ldots\>,\<infty\>|}>\<rightarrow\><around*|{|k,\<ldots\>,\<infty\>|}>>
     two bijections then <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|\<alpha\><around*|(|i|)>>=<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|\<beta\><around*|(|i|)>>>
     (the previous theorem ensures convergence). Note that by taking
     <math|\<alpha\>=1<rsub|<around*|{|k,\<ldots\>,\<infty\>|}>>> we have that
@@ -13091,10 +13245,10 @@
   </proof>
 
   The above theorem lets us to extend the definition of a absolute convergent
-  serie to a absolute convergent summable serie.
+  series to a absolute convergent summable series.
 
   <\definition>
-    <label|absolute convergent family><dueto|Absolute convergent serie of a
+    <label|absolute convergent family><dueto|Absolute convergent series of a
     countable family>Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
     be a Banach space, and <math|I> a countable set,
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>\<subseteq\>X> a countable
@@ -13452,7 +13606,7 @@
 
     <\enumerate>
       <item>If <math|\<alpha\>\<in\>\<bbb-K\>>,
-      <math|<big|sum><rsub|i\<in\>I>x<rsub|i>> a absolute convergent serie
+      <math|<big|sum><rsub|i\<in\>I>x<rsub|i>> a absolute convergent series
       then <math|<big|sum><rsub|i\<in\>I><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>>
       is absolute convergent and <math|<big|sum><rsub|i\<in\>I><around*|(|\<alpha\>\<cdot\>x<rsub|i>|)>=\<alpha\>\<cdot\><big|sum><rsub|i\<in\>I>x<rsub|i>>
 
@@ -13504,8 +13658,8 @@
     a Banach space, <math|I,K> countable sets,
     <math|<around*|{|N<rsub|i>|}><rsub|i\<in\>I>> a family of sets such that
     <math|\<forall\>i,j\<in\>I\<vdash\>> <math|<big|cup><rsub|i\<in\>I>N<rsub|i>=K>,
-    <math|<big|sum><rsub|i\<in\>K>x<rsub|i>> a absolute convergent serie then
-    <math|\<forall\>i\<in\>I> we have that
+    <math|<big|sum><rsub|i\<in\>K>x<rsub|i>> a absolute convergent series
+    then <math|\<forall\>i\<in\>I> we have that
     <math|<big|sum><rsub|j\<in\>N<rsub|i>>x<rsub|j>> is absolute convergent
     and further <math|<big|sum><rsub|i\<in\>I><around*|(|<big|sum><rsub|j\<in\>N<rsub|i>>x<rsub|j>|)>>
     is absolute convergent and <math|<big|sum><rsub|i\<in\>K>x<rsub|i>=<big|sum><rsub|i\<in\>I><around*|(|<big|sum><rsub|j\<in\>N<rsub|i>>x<rsub|j>|)>>
@@ -13514,7 +13668,7 @@
   <\proof>
     As <math|<big|sum><rsub|i\<in\>K>x<rsub|i>> is absolute convergent we
     have that <math|<big|sum><rsub|i\<in\>K><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>>>
-    is a convergent serie of positive numbers. So we can use the
+    is a convergent series of positive numbers. So we can use the
     associativity of convergent series of positieve numbers (see
     <reference|associativity of summable families of positive terms>) from
     which it follows that <math|\<forall\>i\<in\>I\<vDash\><big|sum><rsub|j\<in\>N<rsub|i>><around*|\<\|\|\>|x<rsub|i>|\<\|\|\>><text|
@@ -13731,7 +13885,7 @@
 
   <subsection|Properties of complete spaces>
 
-  \ <with|color|<pattern|/usr/local/share/TeXmacs/misc/patterns/paper-manila-medium.png||>|>
+  \ 
 
   <\definition>
     <label|contraction><index|contraction>Let
@@ -13757,50 +13911,7 @@
     <math|d<around*|(|f<around*|(|x|)>,f<around*|(|y|)>|)>\<leqslant\>\<lambda\>\<cdot\>d<around*|(|x,y|)>\<less\>\<lambda\>\<cdot\>d<around*|(|x,y|)>\<less\>d<around*|(|x,y|)>>.
   </proof>
 
-  <\lemma>
-    <label|sum of powers theorem>Let <math|\<lambda\>\<in\>\<bbb-R\>> such
-    that <math|\<lambda\>\<neq\>1> then if <math|k\<in\>\<bbb-N\><rsub|0>>
-    and <math|n\<in\>\<bbb-N\> > we have <math|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>>.
-    So if we take <math|n=0> then <math|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|<around*|(|i-1|)>>=<frac|1-\<lambda\><rsup|k>|1-\<lambda\>>>
-    and if <math|n=1> then <math|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i>=\<lambda\>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>>
-  </lemma>
-
-  <\proof>
-    We proof this by induction so let <math|S=<around*|{|k\<in\>\<bbb-N\><rsub|0>\|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>|}>>
-    then \ we have:
-
-    <\enumerate>
-      <item>If <math|k=1> then <math|<big|sum><rsub|i=1><rsup|1>\<lambda\><rsup|n+<around*|(|i-1|)>>=\<lambda\><rsup|n>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\>|1-\<lambda\>>=\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|1>|1-\<lambda\>>>
-      so that <math|1\<in\>S>
-
-      <item>Assume that <math|k\<in\>S> then we have\ 
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|k+1>\<lambda\><rsup|n+<around*|(|i-1|)>>>|<cell|=>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>|)>+\<lambda\><rsup|n+<around*|(|<around*|(|k+1|)>-1|)>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|n+<around*|(|i-1|)>>|)>+\<lambda\><rsup|n+k>>>|<row|<cell|>|<cell|\<equallim\><rsub|k\<in\>S>>|<cell|\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>+\<lambda\><rsup|n+k>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<lambda\><rsup|n>\<cdot\><around*|(|1-\<lambda\><rsup|k>|)>+<around*|(|1-\<lambda\>|)>\<cdot\>\<lambda\><rsup|n+k>|1-\<lambda\>>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<lambda\><rsup|n>\<cdot\><around*|(|1-\<lambda\><rsup|k>+<around*|(|1-\<lambda\>|)>\<cdot\>\<lambda\><rsup|k>|)>|1-\<lambda\>>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<lambda\><rsup|n>\<cdot\><around*|(|1-\<lambda\><rsup|k>+\<lambda\><rsup|k>-\<lambda\><rsup|k+1>|)>|1-\<lambda\>>>>|<row|<cell|>|<cell|=>|<cell|\<lambda\><rsup|n>\<cdot\><frac|1-\<lambda\><rsup|k+1>|1-\<lambda\>>>>>>
-      </eqnarray*>
-
-      proving that <math|k+1\<in\>S>
-    </enumerate>
-  </proof>
-
-  <\lemma>
-    <label|exaple of a convergent serie>Let <math|\<lambda\>\<in\>\<bbb-R\>>
-    with <math|0\<less\>\<lambda\>\<less\>1> then
-    <math|<big|sum><rsub|i=1><rsup|\<infty\>>\<lambda\><rsup|i>> converges
-    and <math|<big|sum><rsub|i=1><rsup|\<infty\>>\<lambda\><rsup|i>=<frac|\<lambda\>|1-\<lambda\>>>
-  </lemma>
-
-  <\proof>
-    Given a <math|k\<in\>\<bbb-N\><rsub|0>> we have that
-    <math|<around*|\||<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>=<around*|\||<around*|(|\<lambda\>\<cdot\><big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i-1>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>\<equallim\><rsub|previous
-    lemma with n=0><around*|\||\<lambda\>\<cdot\><around*|(|\<lambda\><rsup|0>\<cdot\><frac|1-\<lambda\><rsup|k>|1-\<lambda\>>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>=<around*|\||<frac|\<lambda\>|1-\<lambda\>>\<cdot\><around*|(|1-\<lambda\><rsup|k>-1|)>|\|>=<around*|\||<frac|\<lambda\><rsup|k+1>|1-\<lambda\>>|\|>=<frac|\<lambda\><rsup|>|1-\<lambda\>>\<cdot\>\<lambda\><rsup|k>>.
-    Now using <reference|convergence of powersequence> given
-    <math|\<varepsilon\>\<gtr\>0> there exists a
-    <math|N\<in\><around*|{|1,\<ldots\>,\<infty\>|}>> such that
-    <math|<frac|\<lambda\>|1-\<lambda\>>\<cdot\>\<lambda\><rsup|k>=<around*|\||<frac|\<lambda\>|1-\<lambda\>>\<cdot\>\<lambda\><rsup|k>-0|\|>\<less\>\<varepsilon\>>
-    if <math|k\<geqslant\>N\<Rightarrow\><around*|\||<around*|(|<big|sum><rsub|i=1><rsup|k>\<lambda\><rsup|i>|)>-<frac|\<lambda\>|1-\<lambda\>>|\|>\<less\>\<varepsilon\>>
-    if <math|k\<geqslant\>N>
-  </proof>
+  \;
 
   <\theorem>
     <label|the Banach Fixed Point Theorem><index|Banach fixed point
@@ -19437,10 +19548,10 @@
     <associate|@ product|<tuple|11.223|429>>
     <associate|@ prouct property|<tuple|11.224|429>>
     <associate|B(X,Y) is a Banach space if Y is|<tuple|11.344|451>>
-    <associate|Baire Category Theorem|<tuple|11.419|477>>
+    <associate|Baire Category Theorem|<tuple|11.421|477>>
     <associate|Baire space|<tuple|11.42|387>>
     <associate|Cauchy condition for convergence of a
-    serie|<tuple|11.377|459>>
+    serie|<tuple|11.380|459>>
     <associate|Cauchy includes bounded|<tuple|11.335|455>>
     <associate|Cauchy sequence in a pseudo normed space|<tuple|11.327|449>>
     <associate|Cauchy sequences in metric spaces|<tuple|11.319|448>>
@@ -19477,9 +19588,9 @@
     <associate|R^2 is isometric with C|<tuple|11.112|400>>
     <associate|Real part, image part function are
     continuous|<tuple|11.156|?>>
-    <associate|Rieman Integral|<tuple|11.437|485>>
-    <associate|Rieman integral is increasing|<tuple|11.441|486>>
-    <associate|Riemann Integral (general)|<tuple|11.443|486>>
+    <associate|Rieman Integral|<tuple|11.439|485>>
+    <associate|Rieman integral is increasing|<tuple|11.443|486>>
+    <associate|Riemann Integral (general)|<tuple|11.445|486>>
     <associate|Riesz representation theorem|<tuple|11.122|403>>
     <associate|Schur's Theorem|<tuple|12.57|524>>
     <associate|Tychonoff|<tuple|11.297|444>>
@@ -19487,32 +19598,33 @@
     <associate|[a,@@[ is closed|<tuple|11.74|393>>
     <associate|[a,b] is compact|<tuple|11.267|437>>
     <associate|a closed set is equal to its closurer|<tuple|11.17|382>>
-    <associate|a contraction mapping is continuous|<tuple|11.413|475>>
+    <associate|a contraction mapping is continuous|<tuple|11.417|475>>
     <associate|a isometry is a homeomorphism|<tuple|11.172|414>>
     <associate|a open set in R is a countable union of open finite
     intervals|<tuple|11.76|?>>
     <associate|a second countable basis is first
     countable|<tuple|11.240|431>>
-    <associate|absolute convergence implies convergence|<tuple|11.396|467>>
-    <associate|absolute convergence of a serie|<tuple|11.395|467>>
-    <associate|absolute convergent family|<tuple|11.402|469>>
-    <associate|absolute convergent series and nijections|<tuple|11.403|469>>
-    <associate|absolute convergent series are commutative|<tuple|11.401|468>>
-    <associate|absolute series sum scalar product|<tuple|11.409|471>>
+    <associate|absolute convergence and Banach spaces|<tuple|11.397|?>>
+    <associate|absolute convergence implies convergence|<tuple|11.400|467>>
+    <associate|absolute convergence of a serie|<tuple|11.396|467>>
+    <associate|absolute convergent family|<tuple|11.406|469>>
+    <associate|absolute convergent series and nijections|<tuple|11.407|469>>
+    <associate|absolute convergent series are commutative|<tuple|11.405|468>>
+    <associate|absolute series sum scalar product|<tuple|11.413|471>>
     <associate|accumulation and closure|<tuple|11.277|439>>
     <associate|adjoint is a linear|<tuple|11.125|404>>
     <associate|adjoint of a linear function|<tuple|11.123|403>>
     <associate|alternate definition of a compact subset|<tuple|11.247|432>>
     <associate|alternate definition of closed set|<tuple|11.21|382>>
     <associate|alternative definition of Baire sets|<tuple|11.44|387>>
-    <associate|alternative definition of Riemann Integral|<tuple|11.440|485>>
+    <associate|alternative definition of Riemann Integral|<tuple|11.442|485>>
     <associate|alternative definition of a bounded
     function|<tuple|11.340|451>>
     <associate|another characterization of Cauchy|<tuple|11.320|448>>
     <associate|associativity of absolute convergent
-    families|<tuple|11.410|472>>
+    families|<tuple|11.414|472>>
     <associate|associativity of summable families of positive
-    terms|<tuple|11.392|466>>
+    terms|<tuple|11.395|466>>
     <associate|auto-1|<tuple|11|379>>
     <associate|auto-10|<tuple|closed sets|380>>
     <associate|auto-100|<tuple|<with|mode|<quote|math>|\<frak-U\><around*|(|x|)>>|438>>
@@ -19719,7 +19831,7 @@
     <associate|closed subset of a complete space is
     complete|<tuple|11.348|452>>
     <associate|coefficients of a polynomial are unique|<tuple|12.3|494>>
-    <associate|combined partition|<tuple|11.427|482>>
+    <associate|combined partition|<tuple|11.429|482>>
     <associate|compact Hausdorf space is regular and
     normal|<tuple|11.258|434>>
     <associate|compact sets in a normed spaces are bounded|<tuple|11.252|?>>
@@ -19759,11 +19871,11 @@
     <associate|conditions to make a basis|<tuple|11.27|383>>
     <associate|conjugate of sum|<tuple|11.103|398>>
     <associate|conjugate transpose|<tuple|11.128|405>>
-    <associate|connected space|<tuple|11.449|489>>
-    <associate|connected subset|<tuple|11.451|490>>
+    <associate|connected space|<tuple|11.451|489>>
+    <associate|connected subset|<tuple|11.453|490>>
     <associate|constant functions are continuous|<tuple|11.140|407>>
     <associate|construction of new filterbases|<tuple|11.274|438>>
-    <associate|continuity and connectness|<tuple|11.454|490>>
+    <associate|continuity and connectness|<tuple|11.456|490>>
     <associate|continuity and multilinearity|<tuple|11.194|420>>
     <associate|continuity at a point and topological
     basis|<tuple|11.136|407>>
@@ -19784,8 +19896,8 @@
     <associate|continuous functions to a product space|<tuple|11.149|409>>
     <associate|continuous image of compact set|<tuple|11.253|433>>
     <associate|continuous linear maps in a normed space|<tuple|11.180|416>>
-    <associate|continuous mapping in [a,b]|<tuple|11.455|491>>
-    <associate|contraction|<tuple|11.412|475>>
+    <associate|continuous mapping in [a,b]|<tuple|11.457|491>>
+    <associate|contraction|<tuple|11.416|475>>
     <associate|convergence in a metric space|<tuple|11.315|448>>
     <associate|convergence in a normed space|<tuple|11.322|449>>
     <associate|convergence in normed space|<tuple|11.322|449>>
@@ -19794,20 +19906,21 @@
     <associate|convergence is independent of start of
     sequence|<tuple|11.314|447>>
     <associate|convergence of powersequence|<tuple|11.330|450>>
+    <associate|convergence of \|\|x\|\||<tuple|11.399|?>>
     <associate|convergency in a topological space|<tuple|11.312|447>>
     <associate|convergent criteria of a serie in a Banach
-    space|<tuple|11.393|466>>
+    space|<tuple|11.397|466>>
     <associate|convergent filterbase|<tuple|11.276|439>>
     <associate|convergent sequence are bounded|<tuple|11.336|?>>
     <associate|convergent sequences are Cauchy|<tuple|11.321|449>>
     <associate|convergent sequences are Cauchy (1)|<tuple|11.329|450>>
     <associate|converging and accumulation|<tuple|11.283|440>>
-    <associate|converging of upper serie|<tuple|11.380|460>>
-    <associate|corollary 12.340|<tuple|11.394|466>>
+    <associate|converging of upper serie|<tuple|11.383|460>>
+    <associate|corollary 12.340|<tuple|11.398|466>>
     <associate|countable compact class|<tuple|11.264|436>>
     <associate|definition of a serie|<tuple|11.375|459>>
     <associate|definition of summable family of poitive
-    temrs|<tuple|11.385|462>>
+    temrs|<tuple|11.388|462>>
     <associate|definition of the operator norm of a multilinear
     mapping|<tuple|11.197|421>>
     <associate|dense subset|<tuple|11.41|387>>
@@ -19819,18 +19932,18 @@
     <associate|diagonalization of a self-adjoint operator|<tuple|12.86|540>>
     <associate|diagonlization of matrices|<tuple|12.87|541>>
     <associate|diameter|<tuple|11.65|391>>
-    <associate|difference of Riemann sums|<tuple|11.434|484>>
-    <associate|differences of tagged partitions|<tuple|11.435|484>>
+    <associate|difference of Riemann sums|<tuple|11.436|484>>
+    <associate|differences of tagged partitions|<tuple|11.437|484>>
     <associate|disjoint union of {..}x{..}|<tuple|12.7|494>>
     <associate|distance functions|<tuple|11.160|411>>
     <associate|distributivity of absolute convergetn
-    series|<tuple|11.411|474>>
+    series|<tuple|11.415|474>>
     <associate|divergence limits|<tuple|12.11|496>>
     <associate|divergent limit and negate|<tuple|12.12|496>>
     <associate|divergent limit of sums|<tuple|12.13|496>>
     <associate|divide in even and odd numbers|<tuple|12.26|503>>
     <associate|division of pair sums|<tuple|12.27|504>>
-    <associate|dominant convergence|<tuple|11.407|471>>
+    <associate|dominant convergence|<tuple|11.411|471>>
     <associate|each filterbase converges to exactly one
     point|<tuple|11.282|439>>
     <associate|egenvector and eigenvalue|<tuple|12.49|522>>
@@ -19861,36 +19974,40 @@
     <associate|eq 11.20|<tuple|11.37|457>>
     <associate|eq 11.21|<tuple|11.38|457>>
     <associate|eq 11.22|<tuple|11.39|457>>
-    <associate|eq 11.23|<tuple|11.82|476>>
-    <associate|eq 11.24|<tuple|11.83|476>>
-    <associate|eq 11.25|<tuple|11.84|476>>
-    <associate|eq 11.26|<tuple|11.85|477>>
-    <associate|eq 11.27|<tuple|11.86|477>>
-    <associate|eq 11.28|<tuple|11.87|478>>
-    <associate|eq 11.29|<tuple|11.88|478>>
+    <associate|eq 11.23|<tuple|11.86|476>>
+    <associate|eq 11.24|<tuple|11.87|476>>
+    <associate|eq 11.25|<tuple|11.88|476>>
+    <associate|eq 11.26|<tuple|11.89|477>>
+    <associate|eq 11.27|<tuple|11.90|477>>
+    <associate|eq 11.28|<tuple|11.91|478>>
+    <associate|eq 11.29|<tuple|11.92|478>>
     <associate|eq 11.3|<tuple|11.4|391>>
     <associate|eq 11.30|<tuple|11.3|390>>
-    <associate|eq 11.30.|<tuple|11.89|478>>
-    <associate|eq 11.31|<tuple|11.90|479>>
-    <associate|eq 11.32|<tuple|11.91|479>>
-    <associate|eq 11.33|<tuple|11.92|479>>
-    <associate|eq 11.34|<tuple|11.93|479>>
-    <associate|eq 11.35|<tuple|11.94|479>>
-    <associate|eq 11.36|<tuple|11.95|479>>
-    <associate|eq 11.38|<tuple|11.97|480>>
-    <associate|eq 11.39|<tuple|11.98|480>>
+    <associate|eq 11.30.|<tuple|11.93|478>>
+    <associate|eq 11.31|<tuple|11.94|479>>
+    <associate|eq 11.32|<tuple|11.95|479>>
+    <associate|eq 11.33|<tuple|11.96|479>>
+    <associate|eq 11.34|<tuple|11.97|479>>
+    <associate|eq 11.35|<tuple|11.98|479>>
+    <associate|eq 11.36|<tuple|11.99|479>>
+    <associate|eq 11.38|<tuple|11.101|480>>
+    <associate|eq 11.39|<tuple|11.102|480>>
     <associate|eq 11.4|<tuple|11.5|391>>
-    <associate|eq 11.40|<tuple|11.99|480>>
-    <associate|eq 11.42|<tuple|11.101|480>>
-    <associate|eq 11.43|<tuple|11.102|480>>
-    <associate|eq 11.44|<tuple|11.103|483>>
-    <associate|eq 11.45|<tuple|11.104|484>>
-    <associate|eq 11.46|<tuple|11.105|484>>
-    <associate|eq 11.47|<tuple|11.106|487>>
-    <associate|eq 11.48|<tuple|11.107|487>>
-    <associate|eq 11.49|<tuple|11.108|487>>
+    <associate|eq 11.40|<tuple|11.103|480>>
+    <associate|eq 11.42|<tuple|11.105|480>>
+    <associate|eq 11.43|<tuple|11.106|480>>
+    <associate|eq 11.44|<tuple|11.107|483>>
+    <associate|eq 11.45|<tuple|11.108|484>>
+    <associate|eq 11.46|<tuple|11.109|484>>
+    <associate|eq 11.47|<tuple|11.110|487>>
+    <associate|eq 11.48|<tuple|11.111|487>>
+    <associate|eq 11.49|<tuple|11.112|487>>
     <associate|eq 11.5|<tuple|11.6|391>>
-    <associate|eq 11.50|<tuple|11.109|488>>
+    <associate|eq 11.50|<tuple|11.113|488>>
+    <associate|eq 11.66.037|<tuple|11.66|?>>
+    <associate|eq 11.67.037|<tuple|11.67|?>>
+    <associate|eq 11.68.037|<tuple|11.68|?>>
+    <associate|eq 11.69.037|<tuple|11.69|?>>
     <associate|eq 11.7|<tuple|11.7|391>>
     <associate|eq 11.8|<tuple|11.8|392>>
     <associate|eq 11.9|<tuple|11.19|393>>
@@ -19918,18 +20035,18 @@
     <associate|eq 12.27.064|<tuple|11.53|461>>
     <associate|eq 12.29.065|<tuple|11.54|462>>
     <associate|eq 12.30.065|<tuple|11.55|462>>
-    <associate|eq 12.31.066|<tuple|11.66|467>>
+    <associate|eq 12.31.066|<tuple|11.70|467>>
     <associate|eq 12.31.067|<tuple|11.57|464>>
     <associate|eq 12.31.067.1|<tuple|11.56|463>>
-    <associate|eq 12.32.066|<tuple|11.67|467>>
+    <associate|eq 12.32.066|<tuple|11.71|467>>
     <associate|eq 12.32.067|<tuple|11.58|464>>
     <associate|eq 12.32.075|<tuple|11.40|?>>
-    <associate|eq 12.33.066|<tuple|11.68|468>>
+    <associate|eq 12.33.066|<tuple|11.72|468>>
     <associate|eq 12.33.067|<tuple|11.59|464>>
     <associate|eq 12.33.075|<tuple|11.41|?>>
-    <associate|eq 12.34.066|<tuple|11.69|468>>
+    <associate|eq 12.34.066|<tuple|11.73|468>>
     <associate|eq 12.34.067|<tuple|11.60|464>>
-    <associate|eq 12.35.066|<tuple|11.70|469>>
+    <associate|eq 12.35.066|<tuple|11.74|469>>
     <associate|eq 12.35.067|<tuple|11.61|465>>
     <associate|eq 12.35.075|<tuple|11.43|?>>
     <associate|eq 12.36.067|<tuple|11.62|465>>
@@ -19943,23 +20060,23 @@
     <associate|eq 12.40.076|<tuple|11.48|?>>
     <associate|eq 12.41.076|<tuple|11.49|?>>
     <associate|eq 12.42.076|<tuple|11.50|?>>
-    <associate|eq 12.46.068|<tuple|11.71|472>>
-    <associate|eq 12.47.069|<tuple|11.72|472>>
-    <associate|eq 12.48.069|<tuple|11.73|472>>
-    <associate|eq 12.49.069|<tuple|11.74|472>>
-    <associate|eq 12.50.069|<tuple|11.75|472>>
-    <associate|eq 12.51.069|<tuple|11.76|473>>
+    <associate|eq 12.46.068|<tuple|11.75|472>>
+    <associate|eq 12.47.069|<tuple|11.76|472>>
+    <associate|eq 12.48.069|<tuple|11.77|472>>
+    <associate|eq 12.49.069|<tuple|11.78|472>>
+    <associate|eq 12.50.069|<tuple|11.79|472>>
+    <associate|eq 12.51.069|<tuple|11.80|473>>
     <associate|eq 12.52.015|<tuple|12.1|497>>
-    <associate|eq 12.52.069|<tuple|11.77|473>>
+    <associate|eq 12.52.069|<tuple|11.81|473>>
     <associate|eq 12.53.015|<tuple|12.2|498>>
-    <associate|eq 12.53.069|<tuple|11.78|473>>
+    <associate|eq 12.53.069|<tuple|11.82|473>>
     <associate|eq 12.54.015|<tuple|12.3|498>>
     <associate|eq 12.55.016|<tuple|12.4|498>>
     <associate|eq 12.56.015|<tuple|12.5|498>>
-    <associate|eq 12.58.071|<tuple|11.79|474>>
-    <associate|eq 12.59.072|<tuple|11.80|474>>
+    <associate|eq 12.58.071|<tuple|11.83|474>>
+    <associate|eq 12.59.072|<tuple|11.84|474>>
     <associate|eq 12.59.476|<tuple|12.13|510>>
-    <associate|eq 12.60.072|<tuple|11.81|474>>
+    <associate|eq 12.60.072|<tuple|11.85|474>>
     <associate|eq 12.60.476|<tuple|12.14|510>>
     <associate|eq 12.61.476|<tuple|12.15|510>>
     <associate|eq 12.66.016|<tuple|12.29|511>>
@@ -20002,15 +20119,15 @@
     <associate|equivalence of norms on product of real
     numbers|<tuple|11.303|445>>
     <associate|equivalence of operator norm (multilinear)|<tuple|11.201|422>>
-    <associate|equivalences of absolute convergence|<tuple|11.397|467>>
+    <associate|equivalences of absolute convergence|<tuple|11.401|467>>
     <associate|equivalences of absolute convergence families
-    (1)|<tuple|11.405|470>>
+    (1)|<tuple|11.409|470>>
     <associate|equivalences of absolute convergence of
-    families|<tuple|11.406|470>>
+    families|<tuple|11.410|470>>
     <associate|equivalences of convergence of summable familie of positive
-    numbers|<tuple|11.387|463>>
+    numbers|<tuple|11.390|463>>
     <associate|equivalences of existance of series of positive
-    numbers|<tuple|11.382|460>>
+    numbers|<tuple|11.385|460>>
     <associate|equivalent definition of homeomorphism|<tuple|11.166|412>>
     <associate|equivalent definition of unitary operator|<tuple|12.67|527>>
     <associate|equivalent metric|<tuple|11.58|390>>
@@ -20028,12 +20145,12 @@
     triangular|<tuple|12.56|523>>
     <associate|example of continuous mappings in a topological vector
     space|<tuple|11.244|431>>
-    <associate|exaple of a convergent serie|<tuple|11.415|475>>
-    <associate|exchange infinite sum and finite sum|<tuple|11.399|468>>
+    <associate|exaple of a convergent serie|<tuple|11.378|475>>
+    <associate|exchange infinite sum and finite sum|<tuple|11.403|468>>
     <associate|existance of Riemann integral for continuous
-    function|<tuple|11.442|486>>
+    function|<tuple|11.444|486>>
     <associate|existance of converging tagged
-    partititions|<tuple|11.439|485>>
+    partititions|<tuple|11.441|485>>
     <associate|existance of isometry,isomorphism,homeomorphism|<tuple|11.174|414>>
     <associate|existance of maximal filterbase|<tuple|11.293|442>>
     <associate|existance of maximum and minimum in the image of a continuous
@@ -20068,7 +20185,7 @@
     <associate|fundamental system of neighborhoods|<tuple|11.236|430>>
     <associate|fundamental theorem of algebra|<tuple|12.29|510>>
     <associate|general product of polynomial operators|<tuple|12.43|520>>
-    <associate|generalized intervals and connectness|<tuple|11.453|490>>
+    <associate|generalized intervals and connectness|<tuple|11.455|490>>
     <associate|generating basis of a topology|<tuple|11.28|383>>
     <associate|gram-schmidt procedure|<tuple|11.119|401>>
     <associate|homeomorphism|<tuple|11.165|412>>
@@ -20081,7 +20198,7 @@
     ontinuous|<tuple|11.175|414>>
     <associate|induced topology|<tuple|11.170|413>>
     <associate|inf sup of xi+yi|<tuple|11.373|?>>
-    <associate|infinite sum of zeroes|<tuple|11.388|463>>
+    <associate|infinite sum of zeroes|<tuple|11.391|463>>
     <associate|infinum 1/n|<tuple|11.367|458>>
     <associate|inner product and general sum|<tuple|11.98|397>>
     <associate|inner product norm|<tuple|11.105|398>>
@@ -20091,8 +20208,8 @@
     <associate|inner product on C^n|<tuple|11.97|396>>
     <associate|inner product on R^n|<tuple|11.93|396>>
     <associate|inner set|<tuple|11.9|380>>
-    <associate|integral of function to linear operators|<tuple|11.448|489>>
-    <associate|intermediate value theorem|<tuple|11.456|491>>
+    <associate|integral of function to linear operators|<tuple|11.450|489>>
+    <associate|intermediate value theorem|<tuple|11.458|491>>
     <associate|intersection of balls|<tuple|11.52|388>>
     <associate|intersection of finite open sets is open|<tuple|11.4|379>>
     <associate|introduction of the multilinear norm|<tuple|11.196|420>>
@@ -20100,18 +20217,18 @@
     <associate|inverse induced topology|<tuple|11.171|413>>
     <associate|inverse of a homeomorphisme|<tuple|11.168|413>>
     <associate|inverse of continuous linear mappings between Banach space is
-    continuous|<tuple|11.421|481>>
+    continuous|<tuple|11.423|481>>
     <associate|inverse of isometry metric|<tuple|11.61|390>>
     <associate|inverse of isometry norm|<tuple|11.88|395>>
     <associate|inverse of open map is continuous|<tuple|11.145|408>>
     <associate|isometry and balls|<tuple|11.63|390>>
     <associate|isometry norm|<tuple|11.87|395>>
-    <associate|lemma 12.355|<tuple|11.389|464>>
-    <associate|lemma 12.356|<tuple|11.390|464>>
-    <associate|lemma 12.358|<tuple|11.391|465>>
-    <associate|lemma 12.365|<tuple|11.398|467>>
-    <associate|lemma 12.371|<tuple|11.408|471>>
-    <associate|lemma 12.377|<tuple|11.404|469>>
+    <associate|lemma 12.355|<tuple|11.392|464>>
+    <associate|lemma 12.356|<tuple|11.393|464>>
+    <associate|lemma 12.358|<tuple|11.394|465>>
+    <associate|lemma 12.365|<tuple|11.402|467>>
+    <associate|lemma 12.371|<tuple|11.412|471>>
+    <associate|lemma 12.377|<tuple|11.408|469>>
     <associate|lim inf \<less\>= lim sup (R)|<tuple|11.371|?>>
     <associate|lim inf = lim sup = lim|<tuple|11.372|?>>
     <associate|lim inf and lim sup alternative|<tuple|11.369|?>>
@@ -20132,7 +20249,7 @@
     <associate|limit preserves inequality (2)|<tuple|11.351|453>>
     <associate|limit preserves inequality (3)|<tuple|11.350|453>>
     <associate|limit xn+a|<tuple|11.352|453>>
-    <associate|linear combination of convergent series|<tuple|11.381|460>>
+    <associate|linear combination of convergent series|<tuple|11.384|460>>
     <associate|linear continuous mappings and +,.|<tuple|11.186|417>>
     <associate|linear isomorphism between R^n is a
     homeomorphism|<tuple|11.183|416>>
@@ -20142,7 +20259,7 @@
     continuous|<tuple|11.306|446>>
     <associate|linear open mappings|<tuple|11.193|419>>
     <associate|linear operator|<tuple|12.34|518>>
-    <associate|linearity of integral|<tuple|11.444|486>>
+    <associate|linearity of integral|<tuple|11.446|486>>
     <associate|local property of open sets|<tuple|11.5|379>>
     <associate|mapping between basis is unitary|<tuple|12.70|528>>
     <associate|mapping of a filterbase|<tuple|11.287|441>>
@@ -20169,7 +20286,7 @@
     <associate|norm of L(x1:..:xn}|<tuple|11.216|426>>
     <associate|norm of a finite sum|<tuple|11.70|392>>
     <associate|norm of a multilinear mapping|<tuple|11.198|421>>
-    <associate|norm of a partition|<tuple|11.430|483>>
+    <associate|norm of a partition|<tuple|11.432|483>>
     <associate|norm of composition of linear mapping|<tuple|11.191|418>>
     <associate|norm of continuous linear mapping (inf)|<tuple|11.184|417>>
     <associate|norm of finite product of normed spaces|<tuple|11.82|394>>
@@ -20187,7 +20304,7 @@
     <associate|open functions|<tuple|11.144|408>>
     <associate|open functions in metric spaces|<tuple|11.153|410>>
     <associate|open intervals in R|<tuple|11.73|?>>
-    <associate|open maaping theorem|<tuple|11.420|478>>
+    <associate|open maaping theorem|<tuple|11.422|478>>
     <associate|open set in R is union of open sets|<tuple|11.75|?>>
     <associate|open sets in metric topology|<tuple|11.55|389>>
     <associate|order of polynomial|<tuple|12.5|494>>
@@ -20202,9 +20319,9 @@
     <associate|orthonromal sets are linear independent|<tuple|11.117|401>>
     <associate|p is continuous|<tuple|12.16|499>>
     <associate|partial sum and product is continuous|<tuple|11.163|412>>
-    <associate|partition covers interval|<tuple|11.425|481>>
-    <associate|partition of a interval|<tuple|11.424|481>>
-    <associate|partitions and combined parititions|<tuple|11.429|482>>
+    <associate|partition covers interval|<tuple|11.427|481>>
+    <associate|partition of a interval|<tuple|11.426|481>>
+    <associate|partitions and combined parititions|<tuple|11.431|482>>
     <associate|polynome operator is a abelian semi group|<tuple|12.45|521>>
     <associate|polynomial|<tuple|12.1|493>>
     <associate|power function is continuous|<tuple|11.179|416>>
@@ -20225,11 +20342,11 @@
     <associate|product topology|<tuple|11.36|386>>
     <associate|projection map is continuous and linear|<tuple|11.188|418>>
     <associate|projection map is open and open|<tuple|11.148|409>>
-    <associate|properties of parititions|<tuple|11.426|481>>
+    <associate|properties of parititions|<tuple|11.428|481>>
     <associate|properties of the orthogonal complement|<tuple|12.82|537>>
     <associate|properties of two filterbases|<tuple|11.281|439>>
     <associate|properties of \|\|\|\| on C|<tuple|12.15|497>>
-    <associate|property of integral|<tuple|11.445|487>>
+    <associate|property of integral|<tuple|11.447|487>>
     <associate|pseudo metric space|<tuple|11.45|388>>
     <associate|quotient of polynomal|<tuple|12.24|503>>
     <associate|real continuous mappings on a compact
@@ -20240,8 +20357,8 @@
     <associate|reflection is unitary|<tuple|12.68|527>>
     <associate|regular space|<tuple|11.230|430>>
     <associate|regularity and non empty open sets|<tuple|11.232|430>>
-    <associate|reiman sum f\<less\>=g|<tuple|11.433|484>>
-    <associate|riemanian sum|<tuple|11.432|483>>
+    <associate|reiman sum f\<less\>=g|<tuple|11.435|484>>
+    <associate|riemanian sum|<tuple|11.434|483>>
     <associate|schwartz inequality|<tuple|11.107|398>>
     <associate|second countable topological space|<tuple|11.239|431>>
     <associate|self adjoint operators have at least one
@@ -20249,33 +20366,33 @@
     <associate|self-adjoint operator|<tuple|12.58|524>>
     <associate|self-adjoint operator is normal|<tuple|12.72|531>>
     <associate|sequential compact space|<tuple|11.260|434>>
-    <associate|serie k-\<gtr\>k+l|<tuple|11.378|459>>
-    <associate|serie of positive numbers is positive|<tuple|11.383|461>>
-    <associate|series of positive numbers are commutative|<tuple|11.384|462>>
+    <associate|serie k-\<gtr\>k+l|<tuple|11.381|459>>
+    <associate|serie of positive numbers is positive|<tuple|11.386|461>>
+    <associate|series of positive numbers are commutative|<tuple|11.387|462>>
     <associate|set distance functions are lipschitz|<tuple|11.161|411>>
     <associate|set of compact sets is a countable compact
     class|<tuple|11.265|436>>
     <associate|space of linear continuous maps to a Banach space is
     Banach|<tuple|11.364|456>>
     <associate|special cases of the binomial constant|<tuple|12.20|500>>
-    <associate|splitting of a integral|<tuple|11.447|488>>
+    <associate|splitting of a integral|<tuple|11.449|488>>
     <associate|stitching topologies|<tuple|11.29|384>>
     <associate|sub basis topology|<tuple|11.33|385>>
-    <associate|subsequences of positive numbers|<tuple|11.386|462>>
-    <associate|subserie property|<tuple|11.379|459>>
+    <associate|subsequences of positive numbers|<tuple|11.389|462>>
+    <associate|subserie property|<tuple|11.382|459>>
     <associate|subspace topology|<tuple|11.6|380>>
     <associate|subspace topology of a metric space|<tuple|11.57|389>>
     <associate|subspace topology of a normed space|<tuple|11.78|?>>
     <associate|subspace topology of subspace topology|<tuple|11.8|380>>
     <associate|sum of positive numbers is positive|<tuple|11.101|397>>
-    <associate|sum of powers theorem|<tuple|11.414|475>>
+    <associate|sum of powers theorem|<tuple|11.377|475>>
     <associate|sum,product on (x1:..:xn)|<tuple|11.215|425>>
     <associate|surjectivity, injectivity or isomorphism of a linear
     operator|<tuple|12.35|518>>
     <associate|symmetric matrix|<tuple|11.129|405>>
-    <associate|tagged partition|<tuple|11.431|483>>
-    <associate|terms of a convergent series goes to 0|<tuple|11.376|459>>
-    <associate|the Banach Fixed Point Theorem|<tuple|11.416|475>>
+    <associate|tagged partition|<tuple|11.433|483>>
+    <associate|terms of a convergent series goes to 0|<tuple|11.379|459>>
+    <associate|the Banach Fixed Point Theorem|<tuple|11.418|475>>
     <associate|the alternative definition of the norm of a continuous linear
     function|<tuple|11.187|418>>
     <associate|the complex number space is complete|<tuple|11.361|455>>
@@ -20298,8 +20415,8 @@
     <associate|uniform convergence|<tuple|11.345|452>>
     <associate|uniform convergence in bounded functions|<tuple|11.346|452>>
     <associate|uniform convergence preserves continuity|<tuple|11.347|452>>
-    <associate|union of tagged partitions|<tuple|11.446|488>>
-    <associate|uniqueness and riemansums|<tuple|11.436|484>>
+    <associate|union of tagged partitions|<tuple|11.448|488>>
+    <associate|uniqueness and riemansums|<tuple|11.438|484>>
     <associate|unitary operator|<tuple|12.64|525>>
     <associate|unitary operators are self-adjoint|<tuple|12.69|527>>
     <associate|upper limit of L in L^n(K;Y)|<tuple|11.217|426>>
