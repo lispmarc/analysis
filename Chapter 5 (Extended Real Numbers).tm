@@ -4597,7 +4597,7 @@
       <item><math|<below|lim|i\<rightarrow\>\<infty\>> x<rsub|i>=\<infty\>>
       if and only <math|\<forall\>C\<in\>\<bbb-R\><rsub|+>> there exists a
       <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
-      <math|\<forall\>\<in\><around*|{|N,\<ldots\>,\<infty\>|}>> we have
+      <math|\<forall\>n\<in\><around*|{|N,\<ldots\>,\<infty\>|}>> we have
       <math|C\<less\>x<rsub|n>>
 
       <item><math|<below|lim|i\<rightarrow\>\<infty\>> x<rsub|i>=-\<infty\>>
@@ -4610,7 +4610,7 @@
       x<rsub|i>=x\<in\>\<bbb-R\>> if and only
       <math|\<forall\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>> there exists a
       <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>> such that
-      <math|\<forall\>n\<in\><around*|{|N,\<ldots\>m\<infty\>|}>> we have
+      <math|\<forall\>n\<in\><around*|{|N,\<ldots\>,\<infty\>|}>> we have
       that <math|x-\<varepsilon\>\<less\>x<rsub|n>\<less\>x+\<varepsilon\>>
 
       <\note>
@@ -9086,7 +9086,7 @@
 <\initial>
   <\collection>
     <associate|chapter-nr|14>
-    <associate|page-first|664>
+    <associate|page-first|663>
     <associate|page-medium|papyrus>
     <associate|section-nr|7>
     <associate|subsection-nr|0>
