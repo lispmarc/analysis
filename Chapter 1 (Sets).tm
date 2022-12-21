@@ -4769,8 +4769,6 @@
       <item*|<math|\<Leftarrow\>>>This follows from <reference|general
       product of sets and subsets>
     </description>
-
-    \;
   </proof>
 
   <\note>

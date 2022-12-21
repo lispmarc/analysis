@@ -10711,6 +10711,48 @@
     </enumerate>
   </proof>
 
+  <\corollary>
+    <label|limit of complex numbers>Let <math|<around*|{|x<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>\<bbb-C\>>
+    a sequence of complex numbers then <math|<around*|{|x<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>><rsub|>>
+    is convergent if and only if <math|<around*|{|Re<around*|(|z<rsub|n>|)>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    and <math|<around*|{|Img<around*|(|z<rsub|n>|)>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+    are convergent. Further in case of convergence we have
+    <math|<below|lim|n\<rightarrow\>\<infty\>>z<rsub|n>=<below|lim|n\<rightarrow\>\<infty\>>Re<around*|(|z<rsub|n>|)>+i\<cdot\><below|lim|n\<rightarrow\>\<infty\>>Img<around*|(|z<rsub|n>|)>>
+  </corollary>
+
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|\<Rightarrow\>>>As <math|<around*|{|z<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>>
+      is convergent to <math|z> there exists given
+      <math|\<varepsilon\>\<gtr\>0> a <math|N\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>
+      such that <math|\<forall\>n\<in\><around*|{|N,\<ldots\>,\<infty\>|}>>
+      we have <math|<around*|\||z<rsub|n>-z|\|>\<less\>\<varepsilon\>>. As
+      <math|<around*|\||Re<around*|(|z<rsub|n>|)>-Re<around*|(|z|)>|\|>=<around*|\||Re<around*|(|z-z<rsub|n>|)>|\|>\<leqslant\><around*|\||z<rsub|n>-z|\|>\<less\>\<varepsilon\>>
+      and <math|<around*|\||Img<around*|(|z<rsub|n>|)>-Img<around*|(|z|)>|\|>=<around*|\||Img<around*|(|z<rsub|n>-z|)>|\|>\<leqslant\><around*|\||z<rsub|n>-z|\|>\<less\>\<varepsilon\>>
+      [see <reference|complex norm is a norm>] it follows that\ 
+
+      <\equation*>
+        <below|lim|n\<rightarrow\>\<infty\>>Re<around*|(|z<rsub|n>|)>=Re<around*|(|z|)>\<wedge\><below|lim|n\<rightarrow\>\<infty\>>Img<around*|(|z<rsub|n>|)>=Img<around*|(|z|)>
+      </equation*>
+
+      and\ 
+
+      <\equation*>
+        <below|lim|n\<rightarrow\>\<infty\>>z<rsub|n>=z=Re<around*|(|z|)>+i\<cdot\>Img<around*|(|z|)>=<below|lim|n\<rightarrow\>\<infty\>>Re<around*|(|z<rsub|n>|)>+<below|lim|n\<rightarrow\>\<infty\>>Img<around*|(|z<rsub|n>|)>
+      </equation*>
+
+      <item*|<math|\<Leftarrow\>>>As <math|<below|lim|n\<rightarrow\>\<infty\>>Re<around*|(|z<rsub|n>|)>>
+      and <math|<below|lim|n\<rightarrow\>\<infty\>>Img<around*|(|z<rsub|n>|)>>
+      exists we have by <reference|limit of a sum> that
+      <math|<below|lim|n\<rightarrow\>\<infty\>>z<rsub|n>=<below|lim|n\<rightarrow\>\<infty\>><around*|(|Re<around*|(|z<rsub|n>|)>+i\<cdot\>Img<around*|(|z<rsub|n>|)>|)>>
+      exists and is equal to <math|<below|lim|n\<rightarrow\>\<infty\>>Re<around*|(|z<rsub|n>|)>+i\<cdot\><below|lim|n\<rightarrow\>\<infty\>>Img<around*|(|z<rsub|n>|)>>.
+    </description>
+
+    \;
+  </proof>
+
   <\theorem>
     <label|0\<less\>xn=\<gtr\>0\<less\>=limxn>Let
     <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\><around*|[|0,\<infty\>|[>>
@@ -10914,8 +10956,8 @@
 
   <\theorem>
     <label|real space is complete>The normed space
-    <math|<around*|\<langle\>|\<bbb-R\>,<around*|\|||\|>|\<rangle\>>> of the
-    real numbers together with the default metric is complete.
+    <math|<around*|\<langle\>|\<bbb-R\>,<frac||><around*|\|||\|>|\<rangle\>>>
+    of the real numbers together with the default metric is complete.
   </theorem>
 
   <\proof>
@@ -11865,7 +11907,7 @@
   as a limit of finite sums. We use the following definitions:
 
   <\definition>
-    <label|definition of a serie><dueto|Serie>Let
+    <label|definition of a serie><dueto|Series>Let
     <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>> be
     a normed space and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>X>
     a sequence then we say:
@@ -12865,7 +12907,7 @@
   </definition>
 
   <\theorem>
-    <label|convergent criteria of a serie in a Banach space><dueto|Dominent
+    <label|convergent criteria of a serie in a Banach space><dueto|Dominant
     Convergence>Let <math|<around*|\<langle\>|X,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
     be a Banach space <math|<big|sum><rsub|i=k><rsup|\<infty\>>x<rsub|i>> a
     series such that there exists a convergent series
@@ -19540,7 +19582,7 @@
     <associate|(1+i/k)^2*k|<tuple|12.28|504>>
     <associate|(L1@L2)*=L2*@L1*|<tuple|11.126|404>>
     <associate|(a+n)(b+n)-\<gtr\>1|<tuple|11.332|450>>
-    <associate|0\<less\>xn=\<gtr\>0\<less\>=limxn|<tuple|11.354|454>>
+    <associate|0\<less\>xn=\<gtr\>0\<less\>=limxn|<tuple|11.355|454>>
     <associate|1/n convergence|<tuple|11.331|450>>
     <associate|1x is self-adjoint|<tuple|12.61|525>>
     <associate|\<less\>Lv,v\<gtr\>=0=\<gtr\>L=0 (complex)|<tuple|12.73|531>>
@@ -19548,10 +19590,10 @@
     <associate|@ product|<tuple|11.223|429>>
     <associate|@ prouct property|<tuple|11.224|429>>
     <associate|B(X,Y) is a Banach space if Y is|<tuple|11.344|451>>
-    <associate|Baire Category Theorem|<tuple|11.421|477>>
+    <associate|Baire Category Theorem|<tuple|11.422|477>>
     <associate|Baire space|<tuple|11.42|387>>
     <associate|Cauchy condition for convergence of a
-    serie|<tuple|11.380|459>>
+    serie|<tuple|11.381|459>>
     <associate|Cauchy includes bounded|<tuple|11.335|455>>
     <associate|Cauchy sequence in a pseudo normed space|<tuple|11.327|449>>
     <associate|Cauchy sequences in metric spaces|<tuple|11.319|448>>
@@ -19576,7 +19618,7 @@
     <associate|L^n(X;L(X,Y))=L^n(X;Y)|<tuple|11.209|424>>
     <associate|L^n(X;Y)|<tuple|11.206|424>>
     <associate|L^n(X;Y) is a Banach space if Y is a Banach
-    space|<tuple|11.365|457>>
+    space|<tuple|11.366|457>>
     <associate|L^n@L^m=L^n+m|<tuple|12.39|519>>
     <associate|Lipschitz continuous functions are uniform
     continuous|<tuple|11.159|411>>
@@ -19588,9 +19630,9 @@
     <associate|R^2 is isometric with C|<tuple|11.112|400>>
     <associate|Real part, image part function are
     continuous|<tuple|11.156|?>>
-    <associate|Rieman Integral|<tuple|11.439|485>>
-    <associate|Rieman integral is increasing|<tuple|11.443|486>>
-    <associate|Riemann Integral (general)|<tuple|11.445|486>>
+    <associate|Rieman Integral|<tuple|11.440|485>>
+    <associate|Rieman integral is increasing|<tuple|11.444|486>>
+    <associate|Riemann Integral (general)|<tuple|11.446|486>>
     <associate|Riesz representation theorem|<tuple|11.122|403>>
     <associate|Schur's Theorem|<tuple|12.57|524>>
     <associate|Tychonoff|<tuple|11.297|444>>
@@ -19598,33 +19640,32 @@
     <associate|[a,@@[ is closed|<tuple|11.74|393>>
     <associate|[a,b] is compact|<tuple|11.267|437>>
     <associate|a closed set is equal to its closurer|<tuple|11.17|382>>
-    <associate|a contraction mapping is continuous|<tuple|11.417|475>>
+    <associate|a contraction mapping is continuous|<tuple|11.418|475>>
     <associate|a isometry is a homeomorphism|<tuple|11.172|414>>
     <associate|a open set in R is a countable union of open finite
     intervals|<tuple|11.76|?>>
     <associate|a second countable basis is first
     countable|<tuple|11.240|431>>
-    <associate|absolute convergence and Banach spaces|<tuple|11.397|?>>
-    <associate|absolute convergence implies convergence|<tuple|11.400|467>>
-    <associate|absolute convergence of a serie|<tuple|11.396|467>>
-    <associate|absolute convergent family|<tuple|11.406|469>>
-    <associate|absolute convergent series and nijections|<tuple|11.407|469>>
-    <associate|absolute convergent series are commutative|<tuple|11.405|468>>
-    <associate|absolute series sum scalar product|<tuple|11.413|471>>
+    <associate|absolute convergence implies convergence|<tuple|11.401|467>>
+    <associate|absolute convergence of a serie|<tuple|11.397|467>>
+    <associate|absolute convergent family|<tuple|11.407|469>>
+    <associate|absolute convergent series and nijections|<tuple|11.408|469>>
+    <associate|absolute convergent series are commutative|<tuple|11.406|468>>
+    <associate|absolute series sum scalar product|<tuple|11.414|471>>
     <associate|accumulation and closure|<tuple|11.277|439>>
     <associate|adjoint is a linear|<tuple|11.125|404>>
     <associate|adjoint of a linear function|<tuple|11.123|403>>
     <associate|alternate definition of a compact subset|<tuple|11.247|432>>
     <associate|alternate definition of closed set|<tuple|11.21|382>>
     <associate|alternative definition of Baire sets|<tuple|11.44|387>>
-    <associate|alternative definition of Riemann Integral|<tuple|11.442|485>>
+    <associate|alternative definition of Riemann Integral|<tuple|11.443|485>>
     <associate|alternative definition of a bounded
     function|<tuple|11.340|451>>
     <associate|another characterization of Cauchy|<tuple|11.320|448>>
     <associate|associativity of absolute convergent
-    families|<tuple|11.414|472>>
+    families|<tuple|11.415|472>>
     <associate|associativity of summable families of positive
-    terms|<tuple|11.395|466>>
+    terms|<tuple|11.396|466>>
     <associate|auto-1|<tuple|11|379>>
     <associate|auto-10|<tuple|closed sets|380>>
     <associate|auto-100|<tuple|<with|mode|<quote|math>|\<frak-U\><around*|(|x|)>>|438>>
@@ -19815,7 +19856,7 @@
     <associate|box topology|<tuple|11.34|385>>
     <associate|box topology and base|<tuple|11.35|385>>
     <associate|canonical inner product|<tuple|11.104|398>>
-    <associate|cauchy and uniqueness|<tuple|11.358|455>>
+    <associate|cauchy and uniqueness|<tuple|11.359|455>>
     <associate|characterization of a basis in a topology|<tuple|11.26|383>>
     <associate|characterization of closure|<tuple|11.19|382>>
     <associate|characterization of closure (another)|<tuple|11.30|384>>
@@ -19831,7 +19872,7 @@
     <associate|closed subset of a complete space is
     complete|<tuple|11.348|452>>
     <associate|coefficients of a polynomial are unique|<tuple|12.3|494>>
-    <associate|combined partition|<tuple|11.429|482>>
+    <associate|combined partition|<tuple|11.430|482>>
     <associate|compact Hausdorf space is regular and
     normal|<tuple|11.258|434>>
     <associate|compact sets in a normed spaces are bounded|<tuple|11.252|?>>
@@ -19862,7 +19903,7 @@
     <associate|composition of isometries norm|<tuple|11.89|395>>
     <associate|composition of open functions is open|<tuple|11.146|408>>
     <associate|condition for increasing sequence to
-    convert|<tuple|11.366|458>>
+    convert|<tuple|11.367|458>>
     <associate|condition for polynomial to be zero|<tuple|12.2|493>>
     <associate|condition for self-adjoint operator to be
     zero|<tuple|12.74|531>>
@@ -19871,11 +19912,11 @@
     <associate|conditions to make a basis|<tuple|11.27|383>>
     <associate|conjugate of sum|<tuple|11.103|398>>
     <associate|conjugate transpose|<tuple|11.128|405>>
-    <associate|connected space|<tuple|11.451|489>>
-    <associate|connected subset|<tuple|11.453|490>>
+    <associate|connected space|<tuple|11.452|489>>
+    <associate|connected subset|<tuple|11.454|490>>
     <associate|constant functions are continuous|<tuple|11.140|407>>
     <associate|construction of new filterbases|<tuple|11.274|438>>
-    <associate|continuity and connectness|<tuple|11.456|490>>
+    <associate|continuity and connectness|<tuple|11.457|490>>
     <associate|continuity and multilinearity|<tuple|11.194|420>>
     <associate|continuity at a point and topological
     basis|<tuple|11.136|407>>
@@ -19896,8 +19937,8 @@
     <associate|continuous functions to a product space|<tuple|11.149|409>>
     <associate|continuous image of compact set|<tuple|11.253|433>>
     <associate|continuous linear maps in a normed space|<tuple|11.180|416>>
-    <associate|continuous mapping in [a,b]|<tuple|11.457|491>>
-    <associate|contraction|<tuple|11.416|475>>
+    <associate|continuous mapping in [a,b]|<tuple|11.458|491>>
+    <associate|contraction|<tuple|11.417|475>>
     <associate|convergence in a metric space|<tuple|11.315|448>>
     <associate|convergence in a normed space|<tuple|11.322|449>>
     <associate|convergence in normed space|<tuple|11.322|449>>
@@ -19906,21 +19947,21 @@
     <associate|convergence is independent of start of
     sequence|<tuple|11.314|447>>
     <associate|convergence of powersequence|<tuple|11.330|450>>
-    <associate|convergence of \|\|x\|\||<tuple|11.399|?>>
+    <associate|convergence of \|\|x\|\||<tuple|11.400|?>>
     <associate|convergency in a topological space|<tuple|11.312|447>>
     <associate|convergent criteria of a serie in a Banach
-    space|<tuple|11.397|466>>
+    space|<tuple|11.398|466>>
     <associate|convergent filterbase|<tuple|11.276|439>>
     <associate|convergent sequence are bounded|<tuple|11.336|?>>
     <associate|convergent sequences are Cauchy|<tuple|11.321|449>>
     <associate|convergent sequences are Cauchy (1)|<tuple|11.329|450>>
     <associate|converging and accumulation|<tuple|11.283|440>>
-    <associate|converging of upper serie|<tuple|11.383|460>>
-    <associate|corollary 12.340|<tuple|11.398|466>>
+    <associate|converging of upper serie|<tuple|11.384|460>>
+    <associate|corollary 12.340|<tuple|11.399|466>>
     <associate|countable compact class|<tuple|11.264|436>>
-    <associate|definition of a serie|<tuple|11.375|459>>
+    <associate|definition of a serie|<tuple|11.376|459>>
     <associate|definition of summable family of poitive
-    temrs|<tuple|11.388|462>>
+    temrs|<tuple|11.389|462>>
     <associate|definition of the operator norm of a multilinear
     mapping|<tuple|11.197|421>>
     <associate|dense subset|<tuple|11.41|387>>
@@ -19932,18 +19973,18 @@
     <associate|diagonalization of a self-adjoint operator|<tuple|12.86|540>>
     <associate|diagonlization of matrices|<tuple|12.87|541>>
     <associate|diameter|<tuple|11.65|391>>
-    <associate|difference of Riemann sums|<tuple|11.436|484>>
-    <associate|differences of tagged partitions|<tuple|11.437|484>>
+    <associate|difference of Riemann sums|<tuple|11.437|484>>
+    <associate|differences of tagged partitions|<tuple|11.438|484>>
     <associate|disjoint union of {..}x{..}|<tuple|12.7|494>>
     <associate|distance functions|<tuple|11.160|411>>
     <associate|distributivity of absolute convergetn
-    series|<tuple|11.415|474>>
+    series|<tuple|11.416|474>>
     <associate|divergence limits|<tuple|12.11|496>>
     <associate|divergent limit and negate|<tuple|12.12|496>>
     <associate|divergent limit of sums|<tuple|12.13|496>>
     <associate|divide in even and odd numbers|<tuple|12.26|503>>
     <associate|division of pair sums|<tuple|12.27|504>>
-    <associate|dominant convergence|<tuple|11.411|471>>
+    <associate|dominant convergence|<tuple|11.412|471>>
     <associate|each filterbase converges to exactly one
     point|<tuple|11.282|439>>
     <associate|egenvector and eigenvalue|<tuple|12.49|522>>
@@ -20119,15 +20160,15 @@
     <associate|equivalence of norms on product of real
     numbers|<tuple|11.303|445>>
     <associate|equivalence of operator norm (multilinear)|<tuple|11.201|422>>
-    <associate|equivalences of absolute convergence|<tuple|11.401|467>>
+    <associate|equivalences of absolute convergence|<tuple|11.402|467>>
     <associate|equivalences of absolute convergence families
-    (1)|<tuple|11.409|470>>
+    (1)|<tuple|11.410|470>>
     <associate|equivalences of absolute convergence of
-    families|<tuple|11.410|470>>
+    families|<tuple|11.411|470>>
     <associate|equivalences of convergence of summable familie of positive
-    numbers|<tuple|11.390|463>>
+    numbers|<tuple|11.391|463>>
     <associate|equivalences of existance of series of positive
-    numbers|<tuple|11.385|460>>
+    numbers|<tuple|11.386|460>>
     <associate|equivalent definition of homeomorphism|<tuple|11.166|412>>
     <associate|equivalent definition of unitary operator|<tuple|12.67|527>>
     <associate|equivalent metric|<tuple|11.58|390>>
@@ -20137,20 +20178,20 @@
     <associate|ev_l + @|<tuple|11.226|429>>
     <associate|every closed bounded set in C is compact|<tuple|11.305|446>>
     <associate|every closed, open ball is bounded|<tuple|11.66|391>>
-    <associate|every compact metric space is complete|<tuple|11.359|455>>
-    <associate|every finite dimensional space is Banach|<tuple|11.363|456>>
+    <associate|every compact metric space is complete|<tuple|11.360|455>>
+    <associate|every finite dimensional space is Banach|<tuple|11.364|456>>
     <associate|every finite subset of a Hausdorff is
     closed|<tuple|11.229|430>>
     <associate|every linear operator in a complex space have a upper
     triangular|<tuple|12.56|523>>
     <associate|example of continuous mappings in a topological vector
     space|<tuple|11.244|431>>
-    <associate|exaple of a convergent serie|<tuple|11.378|475>>
-    <associate|exchange infinite sum and finite sum|<tuple|11.403|468>>
+    <associate|exaple of a convergent serie|<tuple|11.379|475>>
+    <associate|exchange infinite sum and finite sum|<tuple|11.404|468>>
     <associate|existance of Riemann integral for continuous
-    function|<tuple|11.444|486>>
+    function|<tuple|11.445|486>>
     <associate|existance of converging tagged
-    partititions|<tuple|11.441|485>>
+    partititions|<tuple|11.442|485>>
     <associate|existance of isometry,isomorphism,homeomorphism|<tuple|11.174|414>>
     <associate|existance of maximal filterbase|<tuple|11.293|442>>
     <associate|existance of maximum and minimum in the image of a continuous
@@ -20185,7 +20226,7 @@
     <associate|fundamental system of neighborhoods|<tuple|11.236|430>>
     <associate|fundamental theorem of algebra|<tuple|12.29|510>>
     <associate|general product of polynomial operators|<tuple|12.43|520>>
-    <associate|generalized intervals and connectness|<tuple|11.455|490>>
+    <associate|generalized intervals and connectness|<tuple|11.456|490>>
     <associate|generating basis of a topology|<tuple|11.28|383>>
     <associate|gram-schmidt procedure|<tuple|11.119|401>>
     <associate|homeomorphism|<tuple|11.165|412>>
@@ -20197,9 +20238,9 @@
     <associate|in a normed space the sum,product with scalar is
     ontinuous|<tuple|11.175|414>>
     <associate|induced topology|<tuple|11.170|413>>
-    <associate|inf sup of xi+yi|<tuple|11.373|?>>
-    <associate|infinite sum of zeroes|<tuple|11.391|463>>
-    <associate|infinum 1/n|<tuple|11.367|458>>
+    <associate|inf sup of xi+yi|<tuple|11.374|?>>
+    <associate|infinite sum of zeroes|<tuple|11.392|463>>
+    <associate|infinum 1/n|<tuple|11.368|458>>
     <associate|inner product and general sum|<tuple|11.98|397>>
     <associate|inner product norm|<tuple|11.105|398>>
     <associate|inner product norm of finite dimensional
@@ -20208,8 +20249,8 @@
     <associate|inner product on C^n|<tuple|11.97|396>>
     <associate|inner product on R^n|<tuple|11.93|396>>
     <associate|inner set|<tuple|11.9|380>>
-    <associate|integral of function to linear operators|<tuple|11.450|489>>
-    <associate|intermediate value theorem|<tuple|11.458|491>>
+    <associate|integral of function to linear operators|<tuple|11.451|489>>
+    <associate|intermediate value theorem|<tuple|11.459|491>>
     <associate|intersection of balls|<tuple|11.52|388>>
     <associate|intersection of finite open sets is open|<tuple|11.4|379>>
     <associate|introduction of the multilinear norm|<tuple|11.196|420>>
@@ -20217,24 +20258,24 @@
     <associate|inverse induced topology|<tuple|11.171|413>>
     <associate|inverse of a homeomorphisme|<tuple|11.168|413>>
     <associate|inverse of continuous linear mappings between Banach space is
-    continuous|<tuple|11.423|481>>
+    continuous|<tuple|11.424|481>>
     <associate|inverse of isometry metric|<tuple|11.61|390>>
     <associate|inverse of isometry norm|<tuple|11.88|395>>
     <associate|inverse of open map is continuous|<tuple|11.145|408>>
     <associate|isometry and balls|<tuple|11.63|390>>
     <associate|isometry norm|<tuple|11.87|395>>
-    <associate|lemma 12.355|<tuple|11.392|464>>
-    <associate|lemma 12.356|<tuple|11.393|464>>
-    <associate|lemma 12.358|<tuple|11.394|465>>
-    <associate|lemma 12.365|<tuple|11.402|467>>
-    <associate|lemma 12.371|<tuple|11.412|471>>
-    <associate|lemma 12.377|<tuple|11.408|469>>
-    <associate|lim inf \<less\>= lim sup (R)|<tuple|11.371|?>>
-    <associate|lim inf = lim sup = lim|<tuple|11.372|?>>
-    <associate|lim inf and lim sup alternative|<tuple|11.369|?>>
-    <associate|lim inf and lim sup properties|<tuple|11.374|?>>
-    <associate|lim inf and lim sup real numbers|<tuple|11.368|?>>
-    <associate|lim inf lim sup constant sequence|<tuple|11.370|?>>
+    <associate|lemma 12.355|<tuple|11.393|464>>
+    <associate|lemma 12.356|<tuple|11.394|464>>
+    <associate|lemma 12.358|<tuple|11.395|465>>
+    <associate|lemma 12.365|<tuple|11.403|467>>
+    <associate|lemma 12.371|<tuple|11.413|471>>
+    <associate|lemma 12.377|<tuple|11.409|469>>
+    <associate|lim inf \<less\>= lim sup (R)|<tuple|11.372|?>>
+    <associate|lim inf = lim sup = lim|<tuple|11.373|?>>
+    <associate|lim inf and lim sup alternative|<tuple|11.370|?>>
+    <associate|lim inf and lim sup properties|<tuple|11.375|?>>
+    <associate|lim inf and lim sup real numbers|<tuple|11.369|?>>
+    <associate|lim inf lim sup constant sequence|<tuple|11.371|?>>
     <associate|limit and continuity|<tuple|11.334|450>>
     <associate|limit in a Hausdorff space is unique|<tuple|11.313|447>>
     <associate|limit of a convergent sequence is unique in a metric
@@ -20242,14 +20283,15 @@
     <associate|limit of a partial function|<tuple|11.47|388>>
     <associate|limit of a sequence in a metric space|<tuple|11.318|448>>
     <associate|limit of a sum|<tuple|11.353|453>>
+    <associate|limit of complex numbers|<tuple|11.354|?>>
     <associate|limit of constant seqeunce|<tuple|11.323|449>>
     <associate|limit point|<tuple|11.18|382>>
-    <associate|limit point of sequences|<tuple|11.357|454>>
+    <associate|limit point of sequences|<tuple|11.358|454>>
     <associate|limit preserve inequality|<tuple|11.349|453>>
     <associate|limit preserves inequality (2)|<tuple|11.351|453>>
     <associate|limit preserves inequality (3)|<tuple|11.350|453>>
     <associate|limit xn+a|<tuple|11.352|453>>
-    <associate|linear combination of convergent series|<tuple|11.384|460>>
+    <associate|linear combination of convergent series|<tuple|11.385|460>>
     <associate|linear continuous mappings and +,.|<tuple|11.186|417>>
     <associate|linear isomorphism between R^n is a
     homeomorphism|<tuple|11.183|416>>
@@ -20259,7 +20301,7 @@
     continuous|<tuple|11.306|446>>
     <associate|linear open mappings|<tuple|11.193|419>>
     <associate|linear operator|<tuple|12.34|518>>
-    <associate|linearity of integral|<tuple|11.446|486>>
+    <associate|linearity of integral|<tuple|11.447|486>>
     <associate|local property of open sets|<tuple|11.5|379>>
     <associate|mapping between basis is unitary|<tuple|12.70|528>>
     <associate|mapping of a filterbase|<tuple|11.287|441>>
@@ -20286,7 +20328,7 @@
     <associate|norm of L(x1:..:xn}|<tuple|11.216|426>>
     <associate|norm of a finite sum|<tuple|11.70|392>>
     <associate|norm of a multilinear mapping|<tuple|11.198|421>>
-    <associate|norm of a partition|<tuple|11.432|483>>
+    <associate|norm of a partition|<tuple|11.433|483>>
     <associate|norm of composition of linear mapping|<tuple|11.191|418>>
     <associate|norm of continuous linear mapping (inf)|<tuple|11.184|417>>
     <associate|norm of finite product of normed spaces|<tuple|11.82|394>>
@@ -20304,7 +20346,7 @@
     <associate|open functions|<tuple|11.144|408>>
     <associate|open functions in metric spaces|<tuple|11.153|410>>
     <associate|open intervals in R|<tuple|11.73|?>>
-    <associate|open maaping theorem|<tuple|11.422|478>>
+    <associate|open maaping theorem|<tuple|11.423|478>>
     <associate|open set in R is union of open sets|<tuple|11.75|?>>
     <associate|open sets in metric topology|<tuple|11.55|389>>
     <associate|order of polynomial|<tuple|12.5|494>>
@@ -20319,9 +20361,9 @@
     <associate|orthonromal sets are linear independent|<tuple|11.117|401>>
     <associate|p is continuous|<tuple|12.16|499>>
     <associate|partial sum and product is continuous|<tuple|11.163|412>>
-    <associate|partition covers interval|<tuple|11.427|481>>
-    <associate|partition of a interval|<tuple|11.426|481>>
-    <associate|partitions and combined parititions|<tuple|11.431|482>>
+    <associate|partition covers interval|<tuple|11.428|481>>
+    <associate|partition of a interval|<tuple|11.427|481>>
+    <associate|partitions and combined parititions|<tuple|11.432|482>>
     <associate|polynome operator is a abelian semi group|<tuple|12.45|521>>
     <associate|polynomial|<tuple|12.1|493>>
     <associate|power function is continuous|<tuple|11.179|416>>
@@ -20342,23 +20384,23 @@
     <associate|product topology|<tuple|11.36|386>>
     <associate|projection map is continuous and linear|<tuple|11.188|418>>
     <associate|projection map is open and open|<tuple|11.148|409>>
-    <associate|properties of parititions|<tuple|11.428|481>>
+    <associate|properties of parititions|<tuple|11.429|481>>
     <associate|properties of the orthogonal complement|<tuple|12.82|537>>
     <associate|properties of two filterbases|<tuple|11.281|439>>
     <associate|properties of \|\|\|\| on C|<tuple|12.15|497>>
-    <associate|property of integral|<tuple|11.447|487>>
+    <associate|property of integral|<tuple|11.448|487>>
     <associate|pseudo metric space|<tuple|11.45|388>>
     <associate|quotient of polynomal|<tuple|12.24|503>>
     <associate|real continuous mappings on a compact
     subset|<tuple|11.301|445>>
     <associate|real inner product spaces|<tuple|11.91|396>>
-    <associate|real space is complete|<tuple|11.360|455>>
+    <associate|real space is complete|<tuple|11.361|455>>
     <associate|real spectral theorem|<tuple|12.85|539>>
     <associate|reflection is unitary|<tuple|12.68|527>>
     <associate|regular space|<tuple|11.230|430>>
     <associate|regularity and non empty open sets|<tuple|11.232|430>>
-    <associate|reiman sum f\<less\>=g|<tuple|11.435|484>>
-    <associate|riemanian sum|<tuple|11.434|483>>
+    <associate|reiman sum f\<less\>=g|<tuple|11.436|484>>
+    <associate|riemanian sum|<tuple|11.435|483>>
     <associate|schwartz inequality|<tuple|11.107|398>>
     <associate|second countable topological space|<tuple|11.239|431>>
     <associate|self adjoint operators have at least one
@@ -20366,36 +20408,36 @@
     <associate|self-adjoint operator|<tuple|12.58|524>>
     <associate|self-adjoint operator is normal|<tuple|12.72|531>>
     <associate|sequential compact space|<tuple|11.260|434>>
-    <associate|serie k-\<gtr\>k+l|<tuple|11.381|459>>
-    <associate|serie of positive numbers is positive|<tuple|11.386|461>>
-    <associate|series of positive numbers are commutative|<tuple|11.387|462>>
+    <associate|serie k-\<gtr\>k+l|<tuple|11.382|459>>
+    <associate|serie of positive numbers is positive|<tuple|11.387|461>>
+    <associate|series of positive numbers are commutative|<tuple|11.388|462>>
     <associate|set distance functions are lipschitz|<tuple|11.161|411>>
     <associate|set of compact sets is a countable compact
     class|<tuple|11.265|436>>
     <associate|space of linear continuous maps to a Banach space is
-    Banach|<tuple|11.364|456>>
+    Banach|<tuple|11.365|456>>
     <associate|special cases of the binomial constant|<tuple|12.20|500>>
-    <associate|splitting of a integral|<tuple|11.449|488>>
+    <associate|splitting of a integral|<tuple|11.450|488>>
     <associate|stitching topologies|<tuple|11.29|384>>
     <associate|sub basis topology|<tuple|11.33|385>>
-    <associate|subsequences of positive numbers|<tuple|11.389|462>>
-    <associate|subserie property|<tuple|11.382|459>>
+    <associate|subsequences of positive numbers|<tuple|11.390|462>>
+    <associate|subserie property|<tuple|11.383|459>>
     <associate|subspace topology|<tuple|11.6|380>>
     <associate|subspace topology of a metric space|<tuple|11.57|389>>
     <associate|subspace topology of a normed space|<tuple|11.78|?>>
     <associate|subspace topology of subspace topology|<tuple|11.8|380>>
     <associate|sum of positive numbers is positive|<tuple|11.101|397>>
-    <associate|sum of powers theorem|<tuple|11.377|475>>
+    <associate|sum of powers theorem|<tuple|11.378|475>>
     <associate|sum,product on (x1:..:xn)|<tuple|11.215|425>>
     <associate|surjectivity, injectivity or isomorphism of a linear
     operator|<tuple|12.35|518>>
     <associate|symmetric matrix|<tuple|11.129|405>>
-    <associate|tagged partition|<tuple|11.433|483>>
-    <associate|terms of a convergent series goes to 0|<tuple|11.379|459>>
-    <associate|the Banach Fixed Point Theorem|<tuple|11.418|475>>
+    <associate|tagged partition|<tuple|11.434|483>>
+    <associate|terms of a convergent series goes to 0|<tuple|11.380|459>>
+    <associate|the Banach Fixed Point Theorem|<tuple|11.419|475>>
     <associate|the alternative definition of the norm of a continuous linear
     function|<tuple|11.187|418>>
-    <associate|the complex number space is complete|<tuple|11.361|455>>
+    <associate|the complex number space is complete|<tuple|11.362|455>>
     <associate|the inner product norm is a norm|<tuple|11.109|399>>
     <associate|the norm of a continuous linear mapping|<tuple|11.185|417>>
     <associate|the set of linear continuous mappings is a vector
@@ -20415,15 +20457,15 @@
     <associate|uniform convergence|<tuple|11.345|452>>
     <associate|uniform convergence in bounded functions|<tuple|11.346|452>>
     <associate|uniform convergence preserves continuity|<tuple|11.347|452>>
-    <associate|union of tagged partitions|<tuple|11.448|488>>
-    <associate|uniqueness and riemansums|<tuple|11.438|484>>
+    <associate|union of tagged partitions|<tuple|11.449|488>>
+    <associate|uniqueness and riemansums|<tuple|11.439|484>>
     <associate|unitary operator|<tuple|12.64|525>>
     <associate|unitary operators are self-adjoint|<tuple|12.69|527>>
     <associate|upper limit of L in L^n(K;Y)|<tuple|11.217|426>>
     <associate|upper triangular matrix|<tuple|12.53|522>>
     <associate|vector space of multilinear continuous
     mappings|<tuple|11.199|422>>
-    <associate|xn\<less\>yn=\<gtr\>limxn\<less\>limyn|<tuple|11.355|454>>
+    <associate|xn\<less\>yn=\<gtr\>limxn\<less\>limyn|<tuple|11.356|454>>
     <associate|\|\|L\|\| depends only on the topology|<tuple|11.192|419>>
   </collection>
 </references>
