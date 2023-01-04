@@ -327,9 +327,9 @@
 
   <\theorem>
     <label|simple associativity>Let <math|<around*|\<langle\>|A,\<upl\>|\<rangle\>>>
-    be a semi-group, <math|n\<in\>\<bbb-N\><rsub|0>>,
-    <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>> a
-    family of element of <math|A> and <math|m\<in\><around*|{|0,\<ldots\>,n\<um\>1|}>>
+    be a semi-group, <math|n\<in\>\<bbb-N\><rsub|0>> with
+    <math|k\<leqslant\>n>, <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|0,\<ldots\>,n|}>>>
+    a family of elements of <math|A> and <math|m\<in\><around*|{|0,\<ldots\>,n\<um\>1|}>>
     then <math|<big|sum><rsub|i=0><rsup|n>x<rsub|i>=<around*|(|<big|sum><rsub|i=0><rsup|m>x<rsub|i>|)>\<upl\><around*|(|<big|sum><rsub|i=m\<upl\>1><rsup|n>x<rsub|i>|)>>
   </theorem>
 

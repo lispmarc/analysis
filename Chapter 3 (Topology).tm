@@ -11402,8 +11402,6 @@
         exists and <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
       </enumerate>
     </enumerate>
-
-    \;
   </lemma>
 
   <\proof>
