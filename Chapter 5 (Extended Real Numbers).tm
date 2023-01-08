@@ -413,8 +413,7 @@
       <item>If <math|\<infty\>\<in\>A> then
       <math|sup<around*|(|A|)>=\<infty\>>
 
-      <item>If <math|\<infty\>\<nin\>A\<neq\><around*|{|\<infty\>|}>> then we
-      have\ 
+      <item>If <math|\<infty\>\<nin\>A> then we have\ 
 
       <\enumerate>
         <item>If <math|><math|\<exists\>u\<in\>\<bbb-R\>\<vdash\>\<forall\>x\<in\>A
@@ -4352,7 +4351,7 @@
     \ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>|<cell|=>|<cell|sup<around*|(|<around*|{|inf<around*|(|<around*|{|x|}>|)>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|sup<around*|(|<around*|{|x|}>|)>>>|<row|<cell|>|<cell|=>|<cell|x>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|x|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|sup<around*|(|<around*|{|x|}>|)>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|nf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>>>>
+      <tformat|<table|<row|<cell|sup<around*|(|<around*|{|inf<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>|<cell|=>|<cell|sup<around*|(|<around*|{|inf<around*|(|<around*|{|x|}>|)>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|sup<around*|(|<around*|{|x|}>|)>>>|<row|<cell|>|<cell|=>|<cell|x>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|x|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|sup<around*|(|<around*|{|x|}>|)>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|inf<around*|(|<around*|{|sup<around*|(|<around*|{|x<rsub|i>\|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>|}>|)>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>>>>
     </eqnarray*>
 
     proving that <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|i>=x>.
@@ -4582,11 +4581,11 @@
     <math|x=inf<around*|(|<around*|{|x<rsub|n>\|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>|}>|)>>
   </definition>
 
-  The idea of a limit in the reals numbers that the sequence approaches its
+  The idea of a limit in the real numbers is that the sequence approaches its
   limit the higher the index is (as is expressed in the <math|\<varepsilon\>>
-  definition of a lint in the real numbers), we show now a alternative
-  definition of the limit in <math|<wide|\<bbb-R\>|\<wide-bar\>>> that embed
-  this idea.
+  definition of a limit in the real numbers), we show now a alternative
+  definition of the limit in <math|<wide|\<bbb-R\>|\<wide-bar\>>> that
+  express this idea.
 
   <\theorem>
     <label|alternative definition of limit in the extented reals>Let
@@ -4853,6 +4852,148 @@
       proving by the previous theorem that
       <math|<below|lim|i\<rightarrow\>\<infty\>>x<rsub|n>=\<infty\>=<around*|\||x|\|>>
     </description>
+  </proof>
+
+  <\theorem>
+    <label|limit based on supremum and infinum>Let
+    <math|\<emptyset\>\<neq\>A\<subseteq\><wide|\<bbb-R\>|\<wide-bar\>>> be a
+    non empty set of extended real numbers then we have\ 
+
+    <\enumerate>
+      <item><math|\<exists\><around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>A>
+      such that <math|<below|lim|n\<rightarrow\>\<infty\>>x<rsub|i>> exists
+      and <math|<below|lim|n\<rightarrow\>\<infty\>>x<rsub|i>=sup<around*|(|A|)>>
+
+      <item><math|\<exists\><around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>A>
+      such that <math|<below|lim|n\<rightarrow\>\<infty\>>x<rsub|i>> exists
+      and <math|<below|lim|n\<rightarrow\>\<infty\>>x<rsub|i>=inf<around*|(|A|)>>
+    </enumerate>
+
+    \ 
+  </theorem>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>For <math|sup<around*|(|A|)>> we have the following options to
+      consider:
+
+      <\description>
+        <item*|<math|sup<around*|(|A|)>=\<infty\>>>Then
+        <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have that
+        <math|n\<less\>\<infty\>=sup<around*|(|A|)>>, hence using the
+        definition of the supremum, there exists a <math|x<rsub|n>\<in\>A>
+        such that <math|n\<less\>x<rsub|n>\<leqslant\>sup<around*|(|A|)>>.
+        This defines a sequence <math|<around*|{|x<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<subseteq\>A>
+        such that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+        <math|n\<less\>x<rsub|n>\<leqslant\>\<infty\>>. Let
+        <math|C\<in\>\<bbb-R\><rsub|+>> then, by <reference|consequence of
+        the archimedean property for the reals>, there exists a
+        <math|N\<in\>\<bbb-N\><rsub|0>> such that <math|C\<less\>N>, hence
+        <math|\<forall\>n\<geqslant\>N> we have
+        <math|C\<less\>N\<leqslant\>n\<less\>x<rsub|n>>. So using
+        <reference|alternative definition of limit in the extented reals> it
+        follows that\ 
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>=\<infty\>=sup<around*|(|A|)>
+        </equation*>
+
+        <item*|<math|sup<around*|(|A|)>=-\<infty\>>>Then
+        <math|\<forall\>x\<in\>A> we have
+        <math|-\<infty\>\<leqslant\>x\<leqslant\>-\<infty\>> which, as
+        <math|A\<neq\>\<emptyset\>>, proves that
+        <math|A=<around*|{|-\<infty\>|}>>. Define now
+        <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>A=<around*|{|-\<infty\>|}>>
+        by <math|x<rsub|i>=-\<infty\>>. Then, using <reference|limit of
+        constant extented real>, we have that\ 
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>=-\<infty\>=sup<around*|(|A|)>
+        </equation*>
+
+        <item*|<math|sup<around*|(|A|)>\<in\>\<bbb-R\>>>Then
+        <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have that
+        <math|sup<around*|(|A|)>-<frac|1|n>\<less\>sup<around*|(|A|)>>, hence
+        using the definiition of the supremum, there exists a
+        <math|x<rsub|n>\<in\>A> such that
+        <math|sup<around*|(|A|)>-<frac|1|n>\<less\>x<rsub|n>\<leqslant\>sup<around*|(|A|)>>.
+        This defines a sequence <math|<around*|{|x<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<subseteq\>A>
+        such that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+        <math|sup<around*|(|A|)>-<frac|1|n>\<less\>x<rsub|n>\<leqslant\>sup<around*|(|A|)>>.
+        Take now <math|\<varepsilon\>\<in\>\<bbb-R\><rsub|+>> then, using
+        <reference|x\<less\>y=\<gtr\>x+1/n\<less\>y>, there exists a
+        <math|N\<in\>\<bbb-N\><rsub|0>> such that
+        <math|<frac|1|N>\<less\>\<varepsilon\>>. Take <math|n\<geqslant\>N>
+        then we have <math|sup<around*|(|A|)>-\<varepsilon\>\<leqslant\>sup<around*|(|A|)>-<frac|1|N>\<leqslant\>sup<around*|(|A|)>-<frac|1|n>\<less\>x<rsub|n>\<leqslant\>sup<around*|(|A|)>\<less\>sup<around*|(|A|)>+\<varepsilon\>>.
+        Which proves, using <reference|alternative definition of limit in the
+        extented reals>, that
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>=sup<around*|(|A|)>
+        </equation*>
+      </description>
+
+      <item>For <math|inf<around*|(|A|)>> we have the following options to
+      consider:
+
+      <\description>
+        <item*|<math|inf<around*|(|A|)>=\<infty\>>>Then
+        <math|\<forall\>x\<in\>A> we have
+        <math|\<infty\>\<leqslant\>x\<leqslant\>\<infty\>>, which, as
+        <math|A\<neq\>\<emptyset\>>, proves that
+        <math|A=<around*|{|\<infty\>|}>>. Define now
+        <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>A>
+        by <math|x<rsub|i>=\<infty\>>. Then, using <reference|limit of
+        constant extented real>, we have that\ 
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>=\<infty\>=inf<around*|(|A|)>
+        </equation*>
+
+        <item*|<math|inf<around*|(|A|)>=-\<infty\>>>Then
+        <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have that
+        <math|-\<infty\>\<less\>-n>, hence, using the definition of the
+        infinum, there exists a <math|x<rsub|n>\<in\>A> such that
+        <math|-\<infty\>=inf<around*|(|A|)>\<leqslant\>x<rsub|n>\<less\>-n>.
+        This defines a sequence <math|<around*|{|x<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+        such that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+        <math|-\<infty\>\<leqslant\>x<rsub|n>\<less\>-n>. Let
+        <math|C\<in\>\<bbb-R\><rsub|+>> then, by <reference|consequence of
+        the archimedean property for the reals>, there exists a
+        <math|N\<in\>\<bbb-N\><rsub|0>> such that <math|C\<less\>N>, hence
+        <math|-N\<less\>-C>. Let <math|n\<geqslant\>N> then
+        <math|x<rsub|n>\<less\>-n\<leqslant\>-N\<less\>-C>. Using
+        <reference|alternative definition of limit in the extented reals> it
+        follows that\ 
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>=-\<infty\>=inf<around*|(|A|)>
+        </equation*>
+
+        <item*|<math|inf<around*|(|A|)>\<in\>\<bbb-R\>>>Then
+        <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
+        <math|inf<around*|(|A|)>\<less\>inf<around*|(|A|)>+<frac|1|n>>,
+        hence, using the definition of the infinum, there exists a
+        <math|x<rsub|n>\<in\>A> such that
+        <math|inf<around*|(|A|)>\<leqslant\>x<rsub|n>\<less\>inf<around*|(|A|)>+<frac|1|n>>.
+        So we have found a sequence <math|<around*|{|x<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<subseteq\>A>
+        such that <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
+        <math|inf<around*|(|A|)>\<leqslant\>x<rsub|n>\<less\>inf<around*|(|A|)>+<frac|1|n>>.
+        Let <math|\<varepsilon\>\<in\>\<bbb-R\><rsub|+>> then, using
+        \ <reference|x\<less\>y=\<gtr\>x+1/n\<less\>y>, there exists a
+        <math|N\<in\>\<bbb-N\><rsub|0>> such that
+        <math|<frac|1|N>\<less\>\<varepsilon\>>. Let <math|n\<geqslant\>N>
+        then we have <math|inf<around*|(|A|)>-\<varepsilon\>\<less\>inf<around*|(|A|)>\<leqslant\>x<rsub|n>\<less\>inf<around*|(|A|)>+<frac|1|n>\<leqslant\>inf<around*|(|A|)>+<frac|1|N>\<less\>inf<around*|(|A|)>+\<varepsilon\>>.
+        Which proves, using <reference|alternative definition of limit in the
+        extented reals>, that\ 
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>=inf<around*|(|A|)>
+        </equation*>
+      </description>
+    </enumerate>
   </proof>
 
   We show now that the limit in <math|<wide|\<bbb-R\>|\<wide-bar\>>> has
@@ -9086,7 +9227,7 @@
 <\initial>
   <\collection>
     <associate|chapter-nr|14>
-    <associate|page-first|663>
+    <associate|page-first|666>
     <associate|page-medium|papyrus>
     <associate|section-nr|7>
     <associate|subsection-nr|0>
@@ -9106,13 +9247,13 @@
     <associate|Power series|<tuple|18.2|677>>
     <associate|Young's inequality|<tuple|18.42|694>>
     <associate|a serie of extented positive reals converges always and is
-    independent of the order|<tuple|17.101|666>>
+    independent of the order|<tuple|17.102|666>>
     <associate|absolute value in the extended reals|<tuple|17.32|620>>
     <associate|absolute value on the extended real
     properties|<tuple|17.34|620>>
     <associate|alternative definition of limit in the extented
     reals|<tuple|17.73|653>>
-    <associate|associativity of series of extended reals|<tuple|17.105|670>>
+    <associate|associativity of series of extended reals|<tuple|17.106|670>>
     <associate|associativity of the product of extnded reals|<tuple|17.21|?>>
     <associate|auto-1|<tuple|17|607>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|\<cal-B\><rsub|\<infty\>>>|621>>
@@ -9167,7 +9308,7 @@
     <associate|convergence of powerseries (1)|<tuple|18.6|677>>
     <associate|convergence radius|<tuple|18.8|678>>
     <associate|countable sum of countable sums is a countable
-    sum|<tuple|17.107|672>>
+    sum|<tuple|17.108|672>>
     <associate|d'Alembert|<tuple|18.17|681>>
     <associate|definition of limit in the extented reals|<tuple|17.63|651>>
     <associate|density of the extented reals|<tuple|17.9|609>>
@@ -9275,17 +9416,17 @@
     <associate|exp(z)|<tuple|18.19|682>>
     <associate|exponential as power|<tuple|18.30|688>>
     <associate|extented reals|<tuple|17.2|607>>
-    <associate|finite infinite sum means finite terms|<tuple|17.98|665>>
+    <associate|finite infinite sum means finite terms|<tuple|17.99|665>>
     <associate|finite sum of constants in the extented
-    reals|<tuple|17.92|664>>
-    <associate|finite sum of denumerable sums|<tuple|17.104|669>>
-    <associate|finite sum of extented reals|<tuple|17.85|661>>
-    <associate|finite sum of extented reals properties|<tuple|17.91|664>>
-    <associate|finite sum of extented reals starting at n|<tuple|17.86|661>>
+    reals|<tuple|17.93|664>>
+    <associate|finite sum of denumerable sums|<tuple|17.105|669>>
+    <associate|finite sum of extented reals|<tuple|17.86|661>>
+    <associate|finite sum of extented reals properties|<tuple|17.92|664>>
+    <associate|finite sum of extented reals starting at n|<tuple|17.87|661>>
     <associate|finite sum of extented reals written as infinite
-    sum|<tuple|17.99|665>>
+    sum|<tuple|17.100|665>>
     <associate|finite sum of non negative extented reals is non
-    negative|<tuple|17.87|661>>
+    negative|<tuple|17.88|661>>
     <associate|general strict positive powers|<tuple|18.38|692>>
     <associate|generalized power|<tuple|18.35|690>>
     <associate|gnerating basis vor the extended reals|<tuple|17.37|?>>
@@ -9294,8 +9435,8 @@
     <associate|independence of limit inf and limit sup of start
     index|<tuple|17.52|648>>
     <associate|inequality of Abel|<tuple|18.14|680>>
-    <associate|interchange infinite and finite sum|<tuple|17.103|668>>
-    <associate|lemma 15.75|<tuple|17.80|660>>
+    <associate|interchange infinite and finite sum|<tuple|17.104|668>>
+    <associate|lemma 15.75|<tuple|17.81|660>>
     <associate|lemma 17.2|<tuple|18.16|681>>
     <associate|lemma 17.38|<tuple|18.41|693>>
     <associate|lim inf -xn|<tuple|17.58|648>>
@@ -9309,13 +9450,14 @@
     product|<tuple|17.60|649>>
     <associate|limit and absolut value|<tuple|17.76|655>>
     <associate|limit and translation of indexes|<tuple|17.68|?>>
-    <associate|limit n|<tuple|17.82|660>>
+    <associate|limit based on supremum and infinum|<tuple|17.77|?>>
+    <associate|limit n|<tuple|17.83|660>>
     <associate|limit n to infinite|<tuple|17.75|?>>
-    <associate|limit of 1/f|<tuple|17.81|660>>
+    <associate|limit of 1/f|<tuple|17.82|660>>
     <associate|limit of constant extented real|<tuple|17.67|651>>
-    <associate|limit of finite sums in the extented reals|<tuple|17.90|662>>
+    <associate|limit of finite sums in the extented reals|<tuple|17.91|662>>
     <associate|limit xi+x|<tuple|17.69|651>>
-    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.83|660>>
+    <associate|limxi=x=\<gtr\>\|x-xi\|-\<gtr\>0|<tuple|17.84|660>>
     <associate|notation for limit of increasing/decreasing
     sequences|<tuple|17.72|653>>
     <associate|open sets and addition scalar
@@ -9329,23 +9471,23 @@
     <associate|properties of general strict power|<tuple|18.37|690>>
     <associate|properties of log|<tuple|18.34|689>>
     <associate|properties of the limit in the extented
-    reals|<tuple|17.77|655>>
-    <associate|series and product with a scalar|<tuple|17.95|665>>
-    <associate|series are increasing|<tuple|17.88|661>>
-    <associate|series of extended reals and zeroes|<tuple|17.102|666>>
+    reals|<tuple|17.78|655>>
+    <associate|series and product with a scalar|<tuple|17.96|665>>
+    <associate|series are increasing|<tuple|17.89|661>>
+    <associate|series of extended reals and zeroes|<tuple|17.103|666>>
     <associate|series of positive extented reals is
-    increasing|<tuple|17.94|665>>
+    increasing|<tuple|17.95|665>>
     <associate|series of positive extented reals is increasing
-    (1)|<tuple|17.93|?>>
+    (1)|<tuple|17.94|?>>
     <associate|sets for basis of topology on the extented
     reals|<tuple|17.36|621>>
     <associate|sum and order relation in the extented
-    reals|<tuple|17.97|665>>
-    <associate|sum from -infinity to infinity|<tuple|17.108|673>>
-    <associate|sum of extented reals and product|<tuple|17.89|661>>
+    reals|<tuple|17.98|665>>
+    <associate|sum from -infinity to infinity|<tuple|17.109|673>>
+    <associate|sum of extented reals and product|<tuple|17.90|661>>
     <associate|sum of extented reals is indepenent of order the
-    reals|<tuple|17.100|665>>
-    <associate|sum of series in the extended reals|<tuple|17.96|?>>
+    reals|<tuple|17.101|665>>
+    <associate|sum of series in the extended reals|<tuple|17.97|?>>
     <associate|sup and inf in real and extended reals|<tuple|17.15|?>>
     <associate|sup of set and sum|<tuple|17.30|618>>
     <associate|sup,inf sum of monotone sequences|<tuple|17.59|649>>

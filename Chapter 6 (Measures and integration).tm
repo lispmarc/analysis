@@ -3305,7 +3305,7 @@
       <math|x\<in\>U<rsub|n>=<big|cup><rsub|y\<in\>F>U<rsub|n,y>> so that
       there exists a <math|f<rsub|n>\<in\>F> such that
       <math|x\<in\>U<rsub|n,f<rsub|n>>> or
-      <math|<around*|\<\|\|\>|x=f<rsub|n>|\<\|\|\>><rsub|max>\<less\><frac|1|n>>.
+      <math|<around*|\<\|\|\>|x-f<rsub|n>|\<\|\|\>><rsub|max>\<less\><frac|1|n>>.
       Hence if we take <math|<around*|{|f<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>\<subseteq\>F>
       then if <math|\<varepsilon\>\<gtr\>0> we have [see
       <reference|consequence of the archimedean property for the reals>] that
@@ -3529,7 +3529,7 @@
   <\proof>
     Define <math|<around*|{|B<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> by
     <math|B<rsub|i>=<choice|<tformat|<table|<row|<cell|A<rsub|1> if
-    i=1>>|<row|<cell|X<rsub|i>\\<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,i-1|}>>A<rsub|j>
+    i=1>>|<row|<cell|A<rsub|i>\\<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,i-1|}>>A<rsub|j>
     if i\<in\>\<bbb-N\><rsub|0>\\<around*|{|1|}>>>>>>> then by the properties
     of a <math|\<sigma\>>-algebra it follows that
     <math|<around*|{|B<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>.
@@ -20246,7 +20246,67 @@
     <math|\<mu\><around*|(|X|)>\<subseteq\>\<bbb-R\>>
   </definition>
 
-  From the countable additivity of s signed measure it follows that signed
+  <\lemma>
+    <label|signed measure negated>Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
+    be a measurable and <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    be a signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>.
+    Then <math|\<nu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    define by <math|\<nu\><around*|(|A|)>=-\<mu\><around*|(|A|)>> is also a
+    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>.>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item><math|\<nu\><around*|(|\<emptyset\>|)>=-\<mu\><around*|(|\<emptyset\>|)>=0>
+
+      <item>As <math|\<mu\>> is a signed measure on
+      <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>, we have either\ 
+
+      <\description>
+        <item*|<math|<around*|{|\<mu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|\<infty\>>>>then
+        if <math|x\<in\><around*|{|\<nu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>>
+        there exists a <math|A\<in\>\<cal-A\>> with
+        <math|x=\<nu\><around*|(|A|)>=-\<mu\><around*|(|A|)>>. As
+        <math|\<mu\><around*|(|A|)>\<in\>\<bbb-R\>> or
+        <math|\<mu\><around*|(|A|)>=\<infty\>> we have that
+        <math|\<nu\><around*|(|A|)>\<in\>\<bbb-R\>> or that
+        <math|\<nu\><around*|(|A|)>=-\<infty\>>, proving that
+        <math|<around*|{|v<around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|-\<infty\>>>.
+
+        <item*|<math|<around*|{|\<mu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|\<infty\>>>>then
+        if <math|x\<in\><around*|{|\<nu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>>
+        there exists a <math|A\<in\>\<cal-A\>> with
+        <math|x=\<nu\><around*|(|A|)>=-\<mu\><around*|(|A|)>>. As
+        <math|\<mu\><around*|(|A|)>\<in\>\<bbb-R\>> or
+        <math|\<mu\><around*|(|A|)>=-\<infty\>> we have that
+        <math|\<nu\><around*|(|A|)>\<in\>\<bbb-R\>> or that
+        <math|\<nu\><around*|(|A|)>=\<infty\>>, proving that
+        <math|<around*|{|v<around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|\<infty\>>>.
+      </description>
+
+      <item>Let <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>
+      such that <math|\<forall\>i,j\<in\>\<bbb-N\><rsub|0>> with
+      <math|i\<neq\>j> we have <math|A<rsub|i><big|cap>A<rsub|j>=\<emptyset\>>.
+      Then <math|<below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>>
+      exists and <math|\<mu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>|)>=<below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>>.
+      Using <reference|properties of the limit in the extented reals> we have
+      that <math|<below||><below|lim|n\<rightarrow\>\<infty\>><around*|(|-<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>|)>>
+      exists and <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|-<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>|)>=-<below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>=-\<mu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>|)>=\<nu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>|)>>.Finally
+      as <math|<below|lim|n\<rightarrow\>\<infty\>><around*|(|-<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>|)>=<below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n><around*|(|-\<mu\><around*|(|A<rsub|i>|)>|)>=<below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<nu\><around*|(|A<rsub|i>|)>>
+      it follows that\ 
+
+      <\equation*>
+        <below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<nu\><around*|(|A<rsub|i>|)><text|
+        exists and ><below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<nu\><around*|(|A<rsub|i>|)>=\<nu\><around*|(|<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>|)>
+      </equation*>
+    </enumerate>
+
+    \;
+  </proof>
+
+  From the countable additivity of signed measures it follows that signed
   measures are also finite additive.
 
   <\note>
@@ -20867,6 +20927,165 @@
     </enumerate>
   </definition>
 
+  <\example>
+    <label|neagative / positive set examples>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    and <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
+    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then
+    <math|\<emptyset\>> is a positive set and negative set for <math|\<mu\>>
+  </example>
+
+  <\proof>
+    First <math|\<emptyset\>\<in\>\<cal-A\>>, second if
+    <math|E\<subseteq\>\<emptyset\>> then <math|E=\<emptyset\>> and
+    <math|\<mu\><around*|(|E|)>=\<mu\><around*|(|\<emptyset\>|)>=0> hence
+    <math|\<emptyset\>> is a positive and negative set for <math|\<mu\>>.
+  </proof>
+
+  <\lemma>
+    <label|postive, negative sets and negated measure>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    and <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
+    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> and
+    <math|\<nu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> the
+    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
+    defined by <math|\<nu\><around*|(|A|)>=-\<mu\><around*|(|A|)>>. Then we
+    have\ 
+
+    <\enumerate>
+      <item>If <math|A> is a positive set for <math|\<mu\>> iff <math|A> is a
+      negative set for <math|\<nu\>>
+
+      <item>If <math|A> is a negative set for <math|\<mu\>> iff <math|A> is a
+      postiive set for <math|\<mu\>>
+    </enumerate>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>Assume that <math|A> is a positive set
+        for <math|\<mu\>>. Take <math|B\<in\>\<cal-A\>> with
+        <math|B\<subseteq\>A>. Then <math|\<nu\><around*|(|B|)>=-\<mu\><around*|(|B|)>\<leqslant\>0>
+        [as <math|0\<leqslant\>\<mu\><around*|(|B|)>>], proving that <math|A>
+        is a negative set for <math|\<nu\>>
+
+        <item*|<math|\<Leftarrow\>>>Assume that <math|A> is a negative set
+        for <math|\<nu\>>. Take <math|B\<in\>\<cal-A\>> with
+        <math|B\<subseteq\>A>. Then <math|\<mu\><around*|(|B|)>=-\<nu\><around*|(|B|)>\<geqslant\>0>
+        [as <math|\<nu\><around*|(|B|)>\<leqslant\>0>], proving that <math|A>
+        is a positive set for <math|\<mu\>>.
+      </description>
+
+      <item>
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>Assume that <math|A> is a negative set
+        for <math|\<mu\>>. Take <math|B\<in\>\<cal-A\>> with
+        <math|B\<subseteq\>A>. Then <math|\<nu\><around*|(|B|)>=-\<mu\><around*|(|B|)>\<geqslant\>0>
+        [as <math|\<mu\><around*|(|B|)>\<leqslant\>0>], proving that <math|A>
+        is a positive set for <math|\<nu\>>
+
+        <item*|<math|\<Leftarrow\>>>Assume that <math|A> is a positive set
+        for <math|\<nu\>>. Take <math|B\<in\>\<cal-A\>> with
+        <math|B\<subseteq\>A>. Then <math|\<mu\><around*|(|B|)>=-\<nu\><around*|(|B|)>\<leqslant\>0>
+        [as <math|\<nu\><around*|(|B|)>\<geqslant\>0>], proving that <math|A>
+        is a positive set for <math|\<nu\>>.
+      </description>
+    </enumerate>
+  </proof>
+
+  <\lemma>
+    <label|positive, negative set properties>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    amd <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
+    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then
+    we have\ 
+
+    <\enumerate>
+      <item>If <math|A> is a positive set for <math|\<mu\>> then
+      <math|\<forall\>B\<in\>\<cal-A\>> with <math|B\<subseteq\>A> we have
+      <math|\<mu\><around*|(|B|)>\<leqslant\>\<mu\><around*|(|A|)>>
+
+      <item>If <math|A> is a negative set for <math|\<mu\>> then
+      <math|\<forall\>B\<in\>\<cal-A\>> with <math|B\<subseteq\>A> we have
+      <math|\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|B|)>>
+    </enumerate>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>As <math|A> is a positive set for <math|\<mu\>> and
+      <math|A,B,A\|B\<in\>\<cal-A\>> with
+      <math|A\<subseteq\>B,B\<subseteq\>A,A\|B\<subseteq\>A> we have that\ 
+
+      <\equation*>
+        0\<leqslant\>\<mu\><around*|(|A|)>\<wedge\>0\<leqdot\>\<mu\><around*|(|B|)>\<wedge\>0\<leqslant\>\<mu\><around*|(|A\\B|)>
+      </equation*>
+
+      \ Now as <math|B\<subseteq\>A> we have
+      <math|A=<around*|(|A\\B|)><big|sqcup>B>, hence
+
+      <\equation*>
+        \<mu\><around*|(|A|)>=\<mu\><around*|(|B\\A|)>+\<mu\><around*|(|B|)>
+      </equation*>
+
+      For <math|\<mu\><around*|(|A|)>> we have now as
+      <math|0\<leqslant\>\<mu\><around*|(|A|)>> either\ 
+
+      <\description>
+        <item*|<math|\<mu\><around*|(|A|)>=\<infty\>>>then
+        <math|\<mu\><around*|(|B|)>\<leqslant\>\<mu\><around*|(|A|)>>
+
+        <item*|<math|\<mu\><around*|(|A|)>\<less\>\<infty\>>>then also
+        <math|\<mu\><around*|(|B\\A|)>\<less\>\<infty\>> and
+        <math|\<mu\>*<around*|(|B|)>\<less\>\<infty\>> so that
+        <math|\<mu\><around*|(|B|)>=\<mu\><around*|(|A|)>-\<mu\><around*|(|B\\A|)>>
+        giving <math|\<mu\><around*|(|B|)>\<leqslant\>\<mu\><around*|(|A|)>>
+      </description>
+
+      So in all cases we have <math|\<mu\><around*|(|B|)>\<leqslant\>\<mu\><around*|(|A|)>>
+
+      <item>As <math|A> is a negative set for <math|\<mu\>> and
+      <math|A,B,A\|B\<in\>\<cal-A\>> with
+      <math|A\<subseteq\>B,B\<subseteq\>A,A\|B\<subseteq\>A> we have that\ 
+
+      <\equation*>
+        \<mu\><around*|(|A|)>\<leqslant\>0\<wedge\>\<mu\><around*|(|B|)>\<leqslant\>0\<wedge\>\<mu\><around*|(|A\\B|)>\<leqslant\>0
+      </equation*>
+
+      \ Now as <math|B\<subseteq\>A> we have
+      <math|A=<around*|(|A\\B|)><big|sqcup>B>, hence
+
+      <\equation*>
+        \<mu\><around*|(|A|)>=\<mu\><around*|(|B\\A|)>+\<mu\><around*|(|B|)>
+      </equation*>
+
+      For <math|\<mu\><around*|(|A|)> we have now as
+      \<mu\><around*|(|A|)>\<leqslant\>0> either\ 
+
+      <\description>
+        <item*|<math|\<mu\><around*|(|A|)>=-\<infty\>>>then
+        <math|\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|B|)>>
+
+        <item*|<math|-\<infty\>\<less\>\<mu\><around*|(|A|)>>>then
+        <math|\<mu\>*-\<infty\>\<less\>\<mu\><around*|(|A\\B|)>> and
+        <math|-\<infty\>\<less\>\<mu\><around*|(|B|)>> so that
+        <math|\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|B|)>>
+      </description>
+
+      So in all cases we have <math|\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|B|)>>
+    </enumerate>
+
+    \;
+  </proof>
+
   <\lemma>
     <label|signed measures negative set (1)>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
@@ -21054,6 +21273,206 @@
     which proves the lemma
   </proof>
 
+  <\lemma>
+    <label|negative union of sets>Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
+    be a measurable space, <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    a signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>.
+    If <math|A,B> are negative sets for <math|\<mu\>> such that
+    <math|A<big|cap>B=\<emptyset\>> then <math|A<big|cup>B> is a negative set
+    for <math|\<mu\>>.
+  </lemma>
+
+  <\proof>
+    Let <math|C\<in\>\<cal-A\>> be such that <math|C\<subseteq\>A<big|cup>B>.
+    Then <math|C=C<big|cap><around*|(|A<big|cup>B|)>=<around*|(|C<big|cap>A|)><big|cup><around*|(|C<big|cap>B|)>>
+    and <math|<around*|(|C<big|cap>A|)><big|cap><around*|(|C<big|cap>B|)>=C<big|cap><around*|(|A<big|cap>B|)>=\<emptyset\>>.
+    So
+
+    <\equation*>
+      \<mu\>*<around*|(|C|)>=\<mu\><around*|(|C<big|cap>A|)>+\<mu\><around*|(|C<big|cap>B|)>.
+    </equation*>
+
+    As <math|A,B> are negative sets for <math|\<mu\>>,
+    <math|C<big|cap>A,C<big|cap>B\<in\>\<cal-A\>> and
+    <math|C<big|cap>A\<subseteq\>A>, <math|C<big|cap>B\<subseteq\>B>, we have
+    <math|\<mu\><around*|(|C<big|cap>A|)>\<leqslant\>0> and
+    <math|\<mu\><around*|(|C<big|cap>B|)>\<leqslant\>0>. So we have that
+
+    <\equation*>
+      \<mu\><around*|(|C|)>=\<mu\><around*|(|C<big|cap>A|)>+\<mu\><around*|(|C<big|cap>B|)>\<leqslant\>0
+    </equation*>
+
+    So <math|A<big|cup>B> is a negative set.
+  </proof>
+
+  <\theorem>
+    <label|Hahn Decomposition Theorem><dueto|Hahn Decomposition Theorem>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
+    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>.
+    Then there exists subsets <math|P,N\<subseteq\>X> such that\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|X=P<big|cup>N\<wedge\>P<big|cap>N=\<emptyset\>>|<cell|>>|<row|<cell|>|<cell|P
+      <text| is a positive set for >\<mu\>>|<cell|>>|<row|<cell|>|<cell|N<text|
+      is a negative set for >\<mu\>>|<cell|>>>>
+    </eqnarray*>
+  </theorem>
+
+  <\proof>
+    Take <math|<around*|{|\<mu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>> then we
+    have two cases, with similar proofs, to consider:
+
+    <\description>
+      <item*|<math|<around*|{|\<mu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|\<infty\>>>>As
+      <math|\<emptyset\>> is a negative set for <math|\<mu\>> [see
+      <reference|neagative / positive set examples>] we have that
+      <math|0\<in\><around*|{|\<mu\><around*|(|A|)>\|A<text| is a negative
+      set for >\<mu\>|}>>, so\ 
+
+      <\equation>
+        <label|eq 19.608.038>L=inf<around*|(|<around*|{|\<mu\><around*|(|A|)>\|A<text|
+        is a negative set for >\<mu\>|}>|)><text| exists and >L\<leqslant\>0
+      </equation>
+
+      Using <reference|limit based on supremum and infinum>, we have the
+      existence of a sequence <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\><around*|(|<around*|{|\<mu\><around*|(|A|)>\|A<text|
+      is a negative set for >\<mu\>|}>|)>>, such that
+      <math|<below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>> exists and
+      <math|<below|lim|n\<rightarrow\>\<infty\>>x<rsub|n>=L>. Hence there
+      exists a sequence <math|<around*|{|A<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+      of negative sets for <math|\<mu\>> with
+      <math|x<rsub|n>=\<mu\><around*|(|A<rsub|n>|)>>. To summarize we found a
+      sequence <math|<around*|{|A<rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+      of negative sets for <math|\<mu\>>, such that
+
+      <\equation>
+        <below||><below||><label|eq 19.609.038><below|lim|n\<rightarrow\>\<infty\>>\<mu\><around*|(|A<rsub|n>|)><text|
+        exists and ><below|lim|n\<rightarrow\>\<infty\>>\<mu\><around*|(|A<rsub|n>|)>=L
+      </equation>
+
+      Using the definition of negative sets, we have that
+      <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>,
+      hence\ 
+
+      <\equation>
+        <label|eq 19.610.038>N=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>\<in\>\<cal-A\>
+      </equation>
+
+      Using <reference|replace countable untion of sets by disjoint union of
+      sets> we have the existence of a sequence
+      <math|<around*|{|B<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>
+      satisfying
+
+      <\equation>
+        <label|eq 19.611.038>\<forall\>i,j\<in\>\<bbb-N\><rsub|0><text| with
+        >i\<neq\>j<text| we have >B<rsub|i><big|cap>B<rsub|j>=\<emptyset\>,\<forall\>i\<in\>\<bbb-N\><rsub|0>
+        B<rsub|i>\<subseteq\>A<rsub|i><text| and
+        >N=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>B<rsub|i>
+      </equation>
+
+      Let <math|E\<in\>\<cal-A\>> with <math|E\<subseteq\>N> then\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<mu\><around*|(|E|)>>|<cell|=>|<cell|\<mu\><around*|(|E<big|cap>N|)>>>|<row|<cell|>|<cell|=>|<cell|\<mu\><around*|(|E<big|cap><around*|(|<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>B<rsub|i>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|\<mu\><around*|(|<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|E<big|cap>B<rsub|i>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>\<mu\><around*|(|E<big|cap>B<rsub|i>|)><eq-number><label|eq
+        19.612.038>>>>>
+      </eqnarray*>
+
+      Given <math|i\<in\>\<bbb-N\><rsub|0>>, we have
+      <math|E<big|cap>B<rsub|i>\<in\>\<cal-A\>> and
+      <math|E<big|cap>B<rsub|i>\<subseteq\>B<rsub|i>\<subseteq\>A<rsub|i>>
+      [see <reference|eq 19.611.038>], as <math|A<rsub|i>> is a negative set
+      for <math|\<mu\>>, we have that <math|\<mu\><around*|(|E<big|cap>B<rsub|i>|)>\<leqslant\>0>,
+      hence <math|\<mu\><around*|(|E|)>\<equallim\><rsub|<text|<reference|eq
+      19.612.038>>><big|sum><rsub|i=1><rsup|\<infty\>>\<mu\><around*|(|E<big|cap>B<rsub|i>|)>\<leqslant\>0>.
+      So it follows that\ 
+
+      <\equation>
+        <label|eq 19.613.038>N<text| is a negative set for <math|\<mu\>>>
+      </equation>
+
+      From the above we together with <reference|eq 19.608.038> we have that
+
+      <\equation>
+        <label|eq 19.614.038>L\<leqslant\>\<mu\><around*|(|N|)>
+      </equation>
+
+      Further given <math|n\<in\>\<bbb-N\><rsub|0>> we have that
+      <math|A<rsub|n>\<in\>\<cal-A\>>, <math|A<rsub|n>\<subseteq\>N>, which
+      is a negagtive set [see <reference|eq 19.613.038>], so by
+      <reference|positive, negative set properties> that
+      <math|\<mu\><around*|(|N|)>\<leqslant\>\<mu\><around*|(|A<rsub|n>|)>>.
+      Using <reference|properties of the limit in the extented reals> we have
+      then that <math|\<mu\><around*|(|N|)>\<leqslant\><below|lim|n\<rightarrow\>\<infty\>>\<mu\><around*|(|A<rsub|n>|)>=L>,
+      combining this with <reference|eq 19.614.038> proves that\ 
+
+      <\equation>
+        <label|eq 19.615.038>\<mu\><around*|(|N|)>=L
+      </equation>
+
+      As <math|L\<leqslant\>0> [see <reference|eq 19.608.038>] we have from
+      the above that <math|\<mu\><around*|(|N|)>\<leqslant\>0>, hence
+      <math|\<mu\><around*|(|A|)>\<neq\>\<infty\>>, further as
+      <math|<around*|{|\<mu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|+>=\<bbb-R\><big|cup><around*|{|\<infty\>|}>>,
+      <math|\<mu\><around*|(|N|)>\<neq\>-\<infty\>>. So we must have that\ 
+
+      <\equation>
+        <label|eq 19.616.038>\<mu\><around*|(|N|)>\<in\>\<bbb-R\>
+      </equation>
+
+      Take <math|P=X\\N> then as <math|N\<in\>\<cal-A\>> we have that
+      <math|P\<in\>\<cal-A\>>. Assume that there exists a
+      <math|C\<in\>\<cal-A\>> with <math|C\<subseteq\>P> and
+      <math|\<mu\><around*|(|C|)>\<less\>0>. As
+      <math|\<mu\><around*|(|A|)>\<neq\>-\<infty\>><space|1em>we can use
+      <reference|signed measures negative set (1)> to get the existance of a
+      negative set for <math|\<mu\>> <math|B> such that <math|B\<subseteq\>C>
+      and
+
+      <\equation>
+        <label|eq 19.617.038>\<mu\><around*|(|B|)>\<leqslant\>\<mu\><around*|(|C|)>\<less\>0.
+      </equation>
+
+      Also we have <math|N<big|cap>B\<subseteq\>N<big|cap>C\<subseteq\>N<big|cap>P\<subseteq\>N<big|cap><around*|(|X\\N|)>=\<emptyset\>>,
+      so that\ 
+
+      <\equation>
+        <label|eq 19.618.038>N<big|cap>B=\<emptyset\><text|>
+      </equation>
+
+      As <math|N,B> are negative sets for <math|\<mu\>> we have by
+      <reference|negative union of sets> and the above that\ 
+
+      <\equation>
+        <label|eq 19.619.038>N<big|cup>B<text| is a negative set for >\<mu\>
+      </equation>
+
+      Now as <math|\<mu\><around*|(|N|)>\<in\>\<bbb-R\>> and
+      <math|\<mu\>*<around*|(|B|)>\<less\>0> [see <reference|eq
+      19.616.038>,<reference|eq 19.615.038>] we have that
+      <math|\<mu\><around*|(|N|)>+\<mu\><around*|(|B|)>\<less\>\<mu\><around*|(|N|)>=L>.
+      So <math|\<mu\><around*|(|N<big|cup>B|)>\<equallim\><rsub|<text|<reference|eq
+      19.619.038>>>\<mu\><around*|(|N|)>+\<mu\><around*|(|B|)>\<less\>L=inf<around*|(|\<mu\><around*|(|A|)>\|A<text|
+      is a negative set for >\<mu\>|)>\<leqslant\><rsub|<text|<reference|eq
+      19.619.038>>>\<mu\><around*|(|N<big|cup>B|)>> a contradiction. So for
+      <math|C\<in\>\<cal-A\>> with <math|C\<subseteq\>P> we must have
+      <math|0\<leqslant\>\<mu\><around*|(|C|)>> which proves that\ 
+
+      <\equation*>
+        P<text| is a positive set for >\<mu\>
+      </equation*>
+
+      To summarize we have that <math|N\<subseteq\>X> is a negative set for
+      <math|\<mu\>>, <math|P=X\\N> [so that <math|X=N<big|cup>P> with
+      <math|N<big|cap>P=\<emptyset\>> is a positive set for <math|\<mu\>>,
+      proving the theorem for the case <math|<around*|{|\<mu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|\<infty\>>>,
+    </description>
+
+    <\description>
+      <item*|<math|<around*|{|\<mu\><around*|(|A|)>\|A\<in\>\<cal-A\>|}>\<subseteq\>\<bbb-R\><rsub|-\<infty\>>>>
+    </description>
+  </proof>
+
   \;
 
   \;
@@ -21094,6 +21513,7 @@
     <associate|Dynkin class generated|<tuple|19.130|?>>
     <associate|Dynkin classes and sigma algebra|<tuple|19.134|?>>
     <associate|Fatou's Lemma|<tuple|19.240|?>>
+    <associate|Hahn Decomposition Theorem|<tuple|19.312|?>>
     <associate|Holder's Inequality|<tuple|19.272|?>>
     <associate|L^OO properties|<tuple|19.261|?>>
     <associate|L^p densitity|<tuple|19.292|?>>
@@ -21866,6 +22286,18 @@
     <associate|eq 19.605.038|<tuple|19.605|?>>
     <associate|eq 19.606.038|<tuple|19.606|?>>
     <associate|eq 19.607.038|<tuple|19.607|?>>
+    <associate|eq 19.608.038|<tuple|19.608|?>>
+    <associate|eq 19.609.038|<tuple|19.609|?>>
+    <associate|eq 19.610.038|<tuple|19.610|?>>
+    <associate|eq 19.611.038|<tuple|19.611|?>>
+    <associate|eq 19.612.038|<tuple|19.612|?>>
+    <associate|eq 19.613.038|<tuple|19.613|?>>
+    <associate|eq 19.614.038|<tuple|19.614|?>>
+    <associate|eq 19.615.038|<tuple|19.615|?>>
+    <associate|eq 19.616.038|<tuple|19.616|?>>
+    <associate|eq 19.617.038|<tuple|19.617|?>>
+    <associate|eq 19.618.038|<tuple|19.618|?>>
+    <associate|eq 19.619.038|<tuple|19.619|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|19.50|?>>
     <associate|extension of measurable function|<tuple|19.158|?>>
@@ -21969,6 +22401,8 @@
     <associate|measure regularity lemma|<tuple|19.122|?>>
     <associate|measureable set|<tuple|19.72|?>>
     <associate|monotone convergence theorem|<tuple|19.238|?>>
+    <associate|neagative / positive set examples|<tuple|19.307|?>>
+    <associate|negative union of sets|<tuple|19.311|?>>
     <associate|negligibility|<tuple|19.104|?>>
     <associate|negligible set properties|<tuple|19.105|?>>
     <associate|null function is measurable|<tuple|19.154|?>>
@@ -21982,6 +22416,8 @@
     <associate|outer measure on R|<tuple|19.80|?>>
     <associate|outer measure on rectangles|<tuple|19.85|?>>
     <associate|outermeasure construction|<tuple|19.71|?>>
+    <associate|positive, negative set properties|<tuple|19.309|?>>
+    <associate|postive, negative sets and negated measure|<tuple|19.308|?>>
     <associate|power of limit|<tuple|19.282|?>>
     <associate|properties of algebras|<tuple|19.10|?>>
     <associate|real (extended real) measurability|<tuple|19.148|?>>
@@ -21998,11 +22434,12 @@
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
     <associate|sigma algebra equivalent definitions|<tuple|19.14|?>>
     <associate|sigma algebras are Dynkin classes|<tuple|19.127|?>>
-    <associate|signed measure and subsets|<tuple|19.302|?>>
-    <associate|signed measure condition (1)|<tuple|19.304|?>>
-    <associate|signed measure of finite union|<tuple|19.301|?>>
-    <associate|signed measure property (1)|<tuple|19.303|?>>
-    <associate|signed measures negative set (1)|<tuple|19.306|?>>
+    <associate|signed measure and subsets|<tuple|19.303|?>>
+    <associate|signed measure condition (1)|<tuple|19.305|?>>
+    <associate|signed measure negated|<tuple|19.301|?>>
+    <associate|signed measure of finite union|<tuple|19.302|?>>
+    <associate|signed measure property (1)|<tuple|19.304|?>>
+    <associate|signed measures negative set (1)|<tuple|19.310|?>>
     <associate|simple function|<tuple|19.160|?>>
     <associate|simple function as a finite sum|<tuple|19.187|?>>
     <associate|simple function condition (2)|<tuple|19.192|?>>
@@ -22166,6 +22603,10 @@
       <tuple|<tuple|signed measure>|<pageref|auto-91>>
 
       <tuple|<tuple|finite signed measure>|<pageref|auto-92>>
+
+      <tuple|<tuple|negative set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-93>>
+
+      <tuple|<tuple|positive set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-94>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|19<space|2spc>Measure
