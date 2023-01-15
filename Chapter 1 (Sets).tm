@@ -24197,8 +24197,8 @@
 
       <item><math|<around*|\||<wide|z|\<bar\>>|\|>=<around*|\||z|\|>>
 
-      <item><math|Re<around*|(|z|)>\<leqslant\><rsub|\<bbb-R\>><around*|\||z|\|>>
-      and <math|Img<around*|(|z|)>\<leqslant\><rsub|\<bbb-R\>><around*|\||z|\|>>
+      <item><math|Re<around*|(|z|)>\<leqslant\><around*|\||Re<around*|(|z|)>|\|>\<leqslant\><rsub|\<bbb-R\>><around*|\||z|\|>>
+      and <math|Img<around*|(|z|)>\<leqslant\><around*|\||Img<around*|(|z|)>|\|>\<leqslant\><rsub|\<bbb-R\>><around*|\||z|\|>>
 
       <item><math|z\<cdot\><wide|z|\<bar\>>=<around*|\||z|\|><rsup|2>>
 
