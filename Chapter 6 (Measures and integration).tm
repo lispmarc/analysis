@@ -3383,6 +3383,118 @@
     </enumerate>
   </definition>
 
+  Using mathematical induction it is easy to specify a neccesary and
+  sufficient condition for finite additivity and finite sub additivity.
+
+  <\proposition>
+    <label|finite (sub) additivity>Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
+    be a measurable space and <math|\<mu\>:\<cal-A\>\<rightarrow\><around*|[|0,\<infty\>|]>>
+    a function then we have
+
+    <\enumerate>
+      <item><math|\<mu\>> is finate additive if and only
+      \ <math|\<forall\>A,B\<in\>\<cal-A\>> with
+      <math|A<big|cap>B=\<emptyset\>> we have
+      <math|\<mu\><around*|(|A<big|cup>B|)>=\<mu\><around*|(|A|)>+\<mu\><around*|(|B|)>>
+
+      <item><math|\<mu\>> is finite sub additive if and only if
+      <math|\<forall\>A,B\<in\>\<cal-A\>> we have
+      <math|\<mu\><around*|(|A<big|cup>B|)>\<leqslant\>\<mu\><around*|(|A|)>+\<mu\><around*|(|B|)>>
+    </enumerate>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>Let <math|A,B\<in\>\<cal-A\>> with
+        <math|A<big|cap>B=\<emptyset\>> then
+        <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,2|}>>>
+        defined by <math|A<rsub|i>=<choice|<tformat|<table|<row|<cell|A if
+        i=1>>|<row|<cell|B if i=2>>>>>>is pairwise disjoint and
+        <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,2|}>>\<subseteq\>\<cal-A\>>.
+        So by assumption we have that\ 
+
+        <\equation*>
+          \<mu\><around*|(|A<big|cup>B|)>=\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,2|}>>A<rsub|i>|)>=<big|sum><rsub|i=1><rsup|2>\<mu\><around*|(|A<rsub|i>|)>=\<mu\><around*|(|A<rsub|1>|)>+\<mu\><around*|(|A<rsub|2>|)>=\<mu\><around*|(|A|)>+\<mu\><around*|(|B|)>
+        </equation*>
+
+        <item*|<math|\<Leftarrow\>>>Let <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\><rsub|0>\|<text|\<forall\>><around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\><text|
+        pairwise disjoint we have >\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>=<big|sum>\<mu\><around*|(|A<rsub|i>|)>|}>>
+        then we have:
+
+        <\description>
+          <item*|<math|1\<in\>\<cal-S\>>>Let
+          <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,1|}>>\<subseteq\>\<cal-A\>>
+          then <math|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,1|}>>A<rsub|i>|)>=\<mu\><around*|(|A<rsub|1>|)>=<big|sum><rsub|i=1><rsup|1>\<mu\><around*|(|A<rsub|i>|)>>
+          proving that <math|1\<in\>\<cal-S\>>
+
+          <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>Let
+          <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n+1|}>>\<subseteq\>\<cal-A\>>
+          pairwise disjoint. Take <math|A=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>
+          and <math|B=A<rsub|n+1>>, then <math|A<big|cup>B=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n+1|}>>A<rsub|i>>
+          and <math|A<big|cap>B=<around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)><big|cap>A<rsub|n+1>=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>><around*|(|A<rsub|i><big|cap>A<rsub|i+1>|)>=\<emptyset\>>.
+          Hence we have
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>>|<cell|=>|<cell|\<mu\><around*|(|A<big|cup>B|)>>>|<row|<cell|>|<cell|=>|<cell|\<mu\><around*|(|A|)>+\<mu\><around*|(|B|)>>>|<row|<cell|>|<cell|=>|<cell|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>+\<mu\><around*|(|A<rsub|n+1>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|n\<in\>\<cal-S\>>>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>|)>+\<mu\><around*|(|A<rsub|n+1>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n+1>\<mu\><around*|(|A<rsub|i>|)>>>>>
+          </eqnarray*>
+
+          proving that <math|n+1\<in\>\<cal-S\>>.
+        </description>
+
+        Using mathematical induction we have that <math|\<bbb-N\>=\<cal-S\>>.
+        So <math|\<forall\><around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
+        pairwise disjoint we have <math|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n+1|}>>A<rsub|i>|)>=<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>>
+      </description>
+
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>Let <math|A,B\<in\>\<cal-A\>> then
+        <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,2|}>>>
+        defined by <math|A<rsub|i>=<choice|<tformat|<table|<row|<cell|A if
+        i=1>>|<row|<cell|B if i=2>>>>>>satisfies
+        <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,2|}>>\<subseteq\>\<cal-A\>>.
+        So by assumption we have that\ 
+
+        <\equation*>
+          \<mu\><around*|(|A<big|cup>B|)>=\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,2|}>>A<rsub|i>|)>\<leqslant\><big|sum><rsub|i=1><rsup|2>\<mu\><around*|(|A<rsub|i>|)>=\<mu\><around*|(|A<rsub|1>|)>+\<mu\><around*|(|A<rsub|2>|)>=\<mu\><around*|(|A|)>+\<mu\><around*|(|B|)>
+        </equation*>
+
+        <item*|<math|\<Leftarrow\>>>Let <math|\<cal-S\>=<around*|{|n\<in\>\<bbb-N\><rsub|0>\|<text|\<forall\>><around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\><text|
+        we have >\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>\<leqslant\><big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>|}>>
+        then:
+
+        <\description>
+          <item*|<math|1\<in\>\<cal-S\>>>Let
+          <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,1|}>>\<subseteq\>\<cal-A\>>
+          then <math|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,1|}>>A<rsub|i>|)>=\<mu\><around*|(|A<rsub|1>|)>=<big|sum><rsub|i=1><rsup|1>\<mu\><around*|(|A<rsub|i>|)>>
+          proving that <math|1\<in\>\<cal-S\>>
+
+          <item*|<math|n\<in\>\<cal-S\>\<Rightarrow\>n+1\<in\>\<cal-S\>>>Let
+          <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n+1|}>>\<subseteq\>\<cal-A\>>
+          pairwise disjoint. Take <math|A=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>
+          and <math|B=A<rsub|n+1>>, then <math|A<big|cup>B=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n+1|}>>A<rsub|i>>
+          . Hence we have
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>>|<cell|=>|<cell|\<mu\><around*|(|A<big|cup>B|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|\<mu\><around*|(|A|)>+\<mu\><around*|(|B|)>>>|<row|<cell|>|<cell|=>|<cell|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>+\<mu\><around*|(|A<rsub|n+1>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|n\<in\>\<cal-S\>>>|<cell|<around*|(|<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>|)>+\<mu\><around*|(|A<rsub|n+1>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|n+1>\<mu\><around*|(|A<rsub|i>|)>>>>>
+          </eqnarray*>
+
+          proving that <math|n+1\<in\>\<cal-S\>>.
+        </description>
+
+        Using mathematical induction we have that <math|\<bbb-N\>=\<cal-S\>>.
+        So <math|\<forall\><around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
+        \ we have <math|\<mu\><around*|(|<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n+1|}>>A<rsub|i>|)>\<leqslant\><big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>>
+      </description>
+    </enumerate>
+  </proof>
+
   <\definition>
     <label|measure>Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be
     a measurable space and <math|\<mu\>:\<cal-A\>\<rightarrow\><around*|[|0,\<infty\>|]>>
@@ -3512,6 +3624,36 @@
       </enumerate>
     </proof>
   </theorem>
+
+  <\definition>
+    <label|finite measure><index|finite measure>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
+    space then <math|\<mu\>> is finite if
+    <math|\<mu\><around*|(|X|)>\<less\>\<infty\>>.\ 
+  </definition>
+
+  <\proposition>
+    <label|finite measure condition>Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>>
+    be a measure space then <math|\<mu\>> is finite if and only if
+    <math|\<forall\>A\<in\>\<cal-A\>> we have
+    <math|\<mu\><around*|(|A|)>\<less\>\<infty\>>
+  </proposition>
+
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|\<Rightarrow\>>>As <math|\<mu\>> is finite
+      <math|\<mu\><around*|(|X|)>\<less\>\<infty\>>, tkae
+      <math|A\<in\>\<cal-A\>> then as <math|A\<subseteq\>X> we have by
+      <reference|measure properties (1)> that
+      <math|0\<leqslant\>\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|X|)>\<less\>\<infty\>>.
+
+      <item*|<math|\<Leftarrow\>>>If <math|\<forall\>A\<in\>\<cal-A\>>
+      <math|\<mu\><around*|(|A|)>\<less\>\<infty\>> we have as
+      <math|X\<in\>\<cal-A\>> that <math|\<mu\><around*|(|X|)>\<less\>\<infty\>>
+    </description>
+  </proof>
 
   Next we prove that countable additivity implies countable sub additivity.
 
@@ -21951,7 +22093,8 @@
   <\definition>
     <label|Jordan Decomposition of a complex measure>Let
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
-    <math|\<mu\>:\<cal-A\>\<rightarrow\>\<bbb-C\>> a complex mesure then a
+    <math|\<mu\>:\<cal-A\>\<rightarrow\>\<bbb-C\>> a complex mesure on
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then a
     <with|font-series|bold|Jordon Decomposition> of <math|\<mu\>> is the
     quadruple <math|<around*|(|\<mu\><rsup|+><rsub|r>,\<mu\><rsup|-><rsub|r>,\<mu\><rsub|c><rsup|+>,\<mu\><rsub|c><rsup|->|)>>
     where <math|<around*|(|\<mu\><rsup|+><rsub|r>,\<mu\><rsup|-><rsub|c>|)>>
@@ -21969,6 +22112,36 @@
     are finite measures on <math|\<cal-A\>>.
   </definition>
 
+  <\definition>
+    <label|complex mesure variation><index|variation of a complex measure>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space,
+    <math|\<mu\>:\<cal-A\>\<rightarrow\>\<bbb-C\>> a complex mesure on
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>then the
+    <with|font-series|bold|variation> of <math|\<mu\>> noted by
+    <math|<around*|\||\<mu\>|\|>> is defined by\ 
+
+    <\equation*>
+      \<forall\>A\<in\>\<cal-A\><text| we define
+      ><around*|\||\<mu\>|\|><around*|(|A|)>=sup<around*|(|<around*|{|<big|sum><rsub|i=1><rsup|n><around*|\||\<mu\><around*|(|A<rsub|i>|)>|\|>\|n\<in\>\<bbb-N\><rsub|0>\<wedge\><around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\><rsup|>\<wedge\>A=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|}>|)>
+    </equation*>
+  </definition>
+
+  where in the above definition we use <math|A=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>
+  > to indicate that <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+  is pairwise disjoint and <math|A=<big|cup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>.
+
+  <\proposition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
+    space, <math|\<mu\>:\<cal-A\>\<rightarrow\>\<bbb-C\>> a complex mesure on
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>then the variation of
+    <math|<around*|\||\<mu\>|\|>> on <math|\<mu\>> is a finite measure on
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
+  </proposition>
+
+  <\proof>
+    First we prove that <math|<around*|\||\<mu\>|\|>> is a measure.\ 
+  </proof>
+
   \;
 
   TODO
@@ -21985,7 +22158,7 @@
 <\initial>
   <\collection>
     <associate|chapter-nr|18>
-    <associate|page-first|753>
+    <associate|page-first|754>
     <associate|page-medium|papyrus>
     <associate|section-nr|1>
     <associate|subsection-nr|3>
@@ -21996,7 +22169,7 @@
   <\collection>
     <associate|(A except B) interect C|<tuple|19.2|?>>
     <associate|A except B is (X except B) intersect A |<tuple|19.1|?>>
-    <associate|Beppo Levi's Theorem|<tuple|19.239|?>>
+    <associate|Beppo Levi's Theorem|<tuple|19.242|?>>
     <associate|Borel algebra is generated by closed sets|<tuple|19.21|?>>
     <associate|Borel algebra on R|<tuple|19.19|?>>
     <associate|Borel algebra on R^n|<tuple|19.20|?>>
@@ -22004,67 +22177,67 @@
     <associate|Borel algebra on R^n (2)|<tuple|19.57|?>>
     <associate|Borel algebra on R^n equivalences|<tuple|19.58|?>>
     <associate|Borel algebras on R|<tuple|19.26|?>>
-    <associate|Borel function|<tuple|19.139|?>>
-    <associate|Borel measure space|<tuple|19.89|?>>
-    <associate|Borel sets in R^n are transaltion invariant|<tuple|19.100|?>>
-    <associate|Caratheodore|<tuple|19.75|?>>
-    <associate|Complex Measure|<tuple|19.318|?>>
-    <associate|Dunkin class|<tuple|19.126|?>>
+    <associate|Borel function|<tuple|19.142|?>>
+    <associate|Borel measure space|<tuple|19.92|?>>
+    <associate|Borel sets in R^n are transaltion invariant|<tuple|19.103|?>>
+    <associate|Caratheodore|<tuple|19.78|?>>
+    <associate|Complex Measure|<tuple|19.321|?>>
+    <associate|Dunkin class|<tuple|19.129|?>>
     <associate|Dyadic cube properties|<tuple|19.48|?>>
     <associate|Dyadic cubes|<tuple|19.46|?>>
     <associate|Dyadic interval basic property|<tuple|19.45|?>>
     <associate|Dyadic intervals|<tuple|19.44|?>>
-    <associate|Dynkin class and uniqueness of measures|<tuple|19.135|?>>
-    <associate|Dynkin class generated|<tuple|19.130|?>>
-    <associate|Dynkin classes and sigma algebra|<tuple|19.134|?>>
-    <associate|Fatou's Lemma|<tuple|19.240|?>>
-    <associate|Hahn Decomposition|<tuple|19.312|?>>
-    <associate|Hahn Decomposition Theorem|<tuple|19.314|?>>
-    <associate|Hahn Decomposition uniqueness|<tuple|19.313|?>>
-    <associate|Holder's Inequality|<tuple|19.272|?>>
-    <associate|Jordan Decomposition Theorem|<tuple|19.315|?>>
-    <associate|Jordan Decomposition of a complex measure|<tuple|19.320|?>>
-    <associate|Jordon Decomposition|<tuple|19.316|?>>
-    <associate|L^OO properties|<tuple|19.261|?>>
-    <associate|L^p densitity|<tuple|19.292|?>>
-    <associate|L^p densitity (1)|<tuple|19.287|?>>
-    <associate|L^p densitity (2)|<tuple|19.289|?>>
-    <associate|L^p is a normed space|<tuple|19.280|?>>
-    <associate|L^p is a vector space|<tuple|19.264|?>>
-    <associate|L^p norm (1)|<tuple|19.265|?>>
-    <associate|L^p norm (2)|<tuple|19.270|?>>
-    <associate|L^p properties (1)|<tuple|19.259|?>>
-    <associate|L^p=L|<tuple|19.255|?>>
-    <associate|L^p[X,A,m,K] g\<less\>=f|<tuple|19.257|?>>
+    <associate|Dynkin class and uniqueness of measures|<tuple|19.138|?>>
+    <associate|Dynkin class generated|<tuple|19.133|?>>
+    <associate|Dynkin classes and sigma algebra|<tuple|19.137|?>>
+    <associate|Fatou's Lemma|<tuple|19.243|?>>
+    <associate|Hahn Decomposition|<tuple|19.315|?>>
+    <associate|Hahn Decomposition Theorem|<tuple|19.317|?>>
+    <associate|Hahn Decomposition uniqueness|<tuple|19.316|?>>
+    <associate|Holder's Inequality|<tuple|19.275|?>>
+    <associate|Jordan Decomposition Theorem|<tuple|19.318|?>>
+    <associate|Jordan Decomposition of a complex measure|<tuple|19.323|?>>
+    <associate|Jordon Decomposition|<tuple|19.319|?>>
+    <associate|L^OO properties|<tuple|19.264|?>>
+    <associate|L^p densitity|<tuple|19.295|?>>
+    <associate|L^p densitity (1)|<tuple|19.290|?>>
+    <associate|L^p densitity (2)|<tuple|19.292|?>>
+    <associate|L^p is a normed space|<tuple|19.283|?>>
+    <associate|L^p is a vector space|<tuple|19.267|?>>
+    <associate|L^p norm (1)|<tuple|19.268|?>>
+    <associate|L^p norm (2)|<tuple|19.273|?>>
+    <associate|L^p properties (1)|<tuple|19.262|?>>
+    <associate|L^p=L|<tuple|19.258|?>>
+    <associate|L^p[X,A,m,K] g\<less\>=f|<tuple|19.260|?>>
     <associate|Lebesgue measurability is transalation
-    invariant|<tuple|19.98|?>>
-    <associate|Lebesgue measurable sets alternatives|<tuple|19.88|?>>
-    <associate|Lebesgue measure is regular|<tuple|19.121|?>>
-    <associate|Lebesgue measure is translation invariant|<tuple|19.99|?>>
-    <associate|Lebesgue measure space|<tuple|19.81|?>>
-    <associate|Lebesgue measure space on R^n|<tuple|19.86|?>>
-    <associate|Lebesgue measure spaces are complete|<tuple|19.108|?>>
-    <associate|Lebesgue space and compact sets|<tuple|19.92|?>>
-    <associate|Lebesgue's Dominated Convergence Theorem|<tuple|19.243|?>>
+    invariant|<tuple|19.101|?>>
+    <associate|Lebesgue measurable sets alternatives|<tuple|19.91|?>>
+    <associate|Lebesgue measure is regular|<tuple|19.124|?>>
+    <associate|Lebesgue measure is translation invariant|<tuple|19.102|?>>
+    <associate|Lebesgue measure space|<tuple|19.84|?>>
+    <associate|Lebesgue measure space on R^n|<tuple|19.89|?>>
+    <associate|Lebesgue measure spaces are complete|<tuple|19.111|?>>
+    <associate|Lebesgue space and compact sets|<tuple|19.95|?>>
+    <associate|Lebesgue's Dominated Convergence Theorem|<tuple|19.246|?>>
     <associate|Lower half spaces|<tuple|19.55|?>>
-    <associate|Minkowski's ineqaultiy|<tuple|19.273|?>>
-    <associate|N_p characterization|<tuple|19.277|?>>
-    <associate|N_p is a subspace|<tuple|19.278|?>>
-    <associate|R can be covered by open intervals|<tuple|19.78|?>>
-    <associate|R^n is a unin of rectangles|<tuple|19.82|?>>
-    <associate|[0,1[ as a union of Dyadic intervals|<tuple|19.101|?>>
-    <associate|[0,1[^n as a union of half open rectangles|<tuple|19.102|?>>
+    <associate|Minkowski's ineqaultiy|<tuple|19.276|?>>
+    <associate|N_p characterization|<tuple|19.280|?>>
+    <associate|N_p is a subspace|<tuple|19.281|?>>
+    <associate|R can be covered by open intervals|<tuple|19.81|?>>
+    <associate|R^n is a unin of rectangles|<tuple|19.85|?>>
+    <associate|[0,1[ as a union of Dyadic intervals|<tuple|19.104|?>>
+    <associate|[0,1[^n as a union of half open rectangles|<tuple|19.105|?>>
     <associate|[a,b] part of intervals with arbitrary small
-    length|<tuple|19.288|?>>
-    <associate|[f]_p|<tuple|19.279|?>>
+    length|<tuple|19.291|?>>
+    <associate|[f]_p|<tuple|19.282|?>>
     <associate|algebra equivalent definitions|<tuple|19.9|?>>
     <associate|algebra of sets|<tuple|19.8|?>>
-    <associate|almost complete|<tuple|19.181|?>>
+    <associate|almost complete|<tuple|19.184|?>>
     <associate|almost everywhere equality and characteristic
-    function|<tuple|19.183|?>>
-    <associate|almost everywhere properties|<tuple|19.184|?>>
-    <associate|alternative formule for lebesgue measure (1)|<tuple|19.91|?>>
-    <associate|aproximate halfopen by open|<tuple|19.90|?>>
+    function|<tuple|19.186|?>>
+    <associate|almost everywhere properties|<tuple|19.187|?>>
+    <associate|alternative formule for lebesgue measure (1)|<tuple|19.94|?>>
+    <associate|aproximate halfopen by open|<tuple|19.93|?>>
     <associate|auto-1|<tuple|19|?>>
     <associate|auto-10|<tuple|19.2.2|?>>
     <associate|auto-11|<tuple|19.2.3|?>>
@@ -22078,126 +22251,129 @@
     <associate|auto-19|<tuple|19.3|?>>
     <associate|auto-2|<tuple|19.1|?>>
     <associate|auto-20|<tuple|19.3.1|?>>
-    <associate|auto-21|<tuple|19.3.2|?>>
-    <associate|auto-22|<tuple|Carathéodory theorem|?>>
-    <associate|auto-23|<tuple|19.3.3|?>>
-    <associate|auto-24|<tuple|Lebesgue measurable space|?>>
-    <associate|auto-25|<tuple|<with|mode|<quote|math>|\<cal-L\><around*|[|\<bbb-R\>|]>>|?>>
-    <associate|auto-26|<tuple|Lebesgue measure|?>>
-    <associate|auto-27|<tuple|Lebesgue measurable set|?>>
-    <associate|auto-28|<tuple|19.3.4|?>>
-    <associate|auto-29|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>|?>>
+    <associate|auto-21|<tuple|finite measure|?>>
+    <associate|auto-22|<tuple|19.3.2|?>>
+    <associate|auto-23|<tuple|Carathéodory theorem|?>>
+    <associate|auto-24|<tuple|19.3.3|?>>
+    <associate|auto-25|<tuple|Lebesgue measurable space|?>>
+    <associate|auto-26|<tuple|<with|mode|<quote|math>|\<cal-L\><around*|[|\<bbb-R\>|]>>|?>>
+    <associate|auto-27|<tuple|Lebesgue measure|?>>
+    <associate|auto-28|<tuple|Lebesgue measurable set|?>>
+    <associate|auto-29|<tuple|19.3.4|?>>
     <associate|auto-3|<tuple|19.2|?>>
-    <associate|auto-30|<tuple|19.3.5|?>>
-    <associate|auto-31|<tuple|19.3.6|?>>
-    <associate|auto-32|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible|?>>
-    <associate|auto-33|<tuple|complete measures|?>>
-    <associate|auto-34|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>|?>>
-    <associate|auto-35|<tuple|completion of a measure space|?>>
-    <associate|auto-36|<tuple|outer measure induced|?>>
-    <associate|auto-37|<tuple|inner measure induced|?>>
-    <associate|auto-38|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>|?>>
-    <associate|auto-39|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>|?>>
+    <associate|auto-30|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>|?>>
+    <associate|auto-31|<tuple|19.3.5|?>>
+    <associate|auto-32|<tuple|19.3.6|?>>
+    <associate|auto-33|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible|?>>
+    <associate|auto-34|<tuple|complete measures|?>>
+    <associate|auto-35|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>|?>>
+    <associate|auto-36|<tuple|completion of a measure space|?>>
+    <associate|auto-37|<tuple|outer measure induced|?>>
+    <associate|auto-38|<tuple|inner measure induced|?>>
+    <associate|auto-39|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>|?>>
     <associate|auto-4|<tuple|algebra|?>>
-    <associate|auto-40|<tuple|inner regular sets|?>>
-    <associate|auto-41|<tuple|outer regular sets|?>>
-    <associate|auto-42|<tuple|19.4|?>>
-    <associate|auto-43|<tuple|19.4.1|?>>
-    <associate|auto-44|<tuple|Dynkin class|?>>
-    <associate|auto-45|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>|?>>
-    <associate|auto-46|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>|?>>
-    <associate|auto-47|<tuple|19.5|?>>
-    <associate|auto-48|<tuple|19.5.1|?>>
-    <associate|auto-49|<tuple|measurable function|?>>
+    <associate|auto-40|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>|?>>
+    <associate|auto-41|<tuple|inner regular sets|?>>
+    <associate|auto-42|<tuple|outer regular sets|?>>
+    <associate|auto-43|<tuple|19.4|?>>
+    <associate|auto-44|<tuple|19.4.1|?>>
+    <associate|auto-45|<tuple|Dynkin class|?>>
+    <associate|auto-46|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>|?>>
+    <associate|auto-47|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>|?>>
+    <associate|auto-48|<tuple|19.5|?>>
+    <associate|auto-49|<tuple|19.5.1|?>>
     <associate|auto-5|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
-    <associate|auto-50|<tuple|Borel function|?>>
-    <associate|auto-51|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
+    <associate|auto-50|<tuple|measurable function|?>>
+    <associate|auto-51|<tuple|Borel function|?>>
+    <associate|auto-52|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
     function|?>>
-    <associate|auto-52|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|?>>
-    <associate|auto-53|<tuple|19.5.2|?>>
-    <associate|auto-54|<tuple|19.5.3|?>>
-    <associate|auto-55|<tuple|19.5.4|?>>
-    <associate|auto-56|<tuple|almost everyware|?>>
-    <associate|auto-57|<tuple|19.6|?>>
-    <associate|auto-58|<tuple|19.6.1|?>>
-    <associate|auto-59|<tuple|19.6.2|?>>
+    <associate|auto-53|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>|?>>
+    <associate|auto-54|<tuple|19.5.2|?>>
+    <associate|auto-55|<tuple|19.5.3|?>>
+    <associate|auto-56|<tuple|19.5.4|?>>
+    <associate|auto-57|<tuple|almost everyware|?>>
+    <associate|auto-58|<tuple|19.6|?>>
+    <associate|auto-59|<tuple|19.6.1|?>>
     <associate|auto-6|<tuple|<with|mode|<quote|math>|\<sigma\><around*|[|\<cal-A\>|]>>|?>>
-    <associate|auto-60|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>|?>>
-    <associate|auto-61|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>|?>>
-    <associate|auto-62|<tuple|<with|mode|<quote|math>|<big|int><rsup|+>f
+    <associate|auto-60|<tuple|19.6.2|?>>
+    <associate|auto-61|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>|?>>
+    <associate|auto-62|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>|?>>
+    <associate|auto-63|<tuple|<with|mode|<quote|math>|<big|int><rsup|+>f
     d\<mu\>>|?>>
-    <associate|auto-63|<tuple|19.6.3|?>>
-    <associate|auto-64|<tuple|integrable functions on a measure space|?>>
-    <associate|auto-65|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    <associate|auto-64|<tuple|19.6.3|?>>
+    <associate|auto-65|<tuple|integrable functions on a measure space|?>>
+    <associate|auto-66|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
     d\<mu\>>|?>>
-    <associate|auto-66|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1>>|?>>
-    <associate|auto-67|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
-    <associate|auto-68|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    <associate|auto-67|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1>>|?>>
+    <associate|auto-68|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
+    <associate|auto-69|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
     d\<mu\>>|?>>
-    <associate|auto-69|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>|?>>
     <associate|auto-7|<tuple|Borel algebra|?>>
-    <associate|auto-70|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+    <associate|auto-70|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>|?>>
+    <associate|auto-71|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
     d\<mu\>>|?>>
-    <associate|auto-71|<tuple|19.6.4|?>>
-    <associate|auto-72|<tuple|19.6.5|?>>
-    <associate|auto-73|<tuple|19.6.6|?>>
-    <associate|auto-74|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>|?>>
-    <associate|auto-75|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><rsub|\<bbb-C\>>>|?>>
-    <associate|auto-76|<tuple|19.7|?>>
-    <associate|auto-77|<tuple|19.7.1|?>>
-    <associate|auto-78|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
-    <associate|auto-79|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>|?>>
+    <associate|auto-72|<tuple|19.6.4|?>>
+    <associate|auto-73|<tuple|19.6.5|?>>
+    <associate|auto-74|<tuple|19.6.6|?>>
+    <associate|auto-75|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>|?>>
+    <associate|auto-76|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><rsub|\<bbb-C\>>>|?>>
+    <associate|auto-77|<tuple|19.7|?>>
+    <associate|auto-78|<tuple|19.7.1|?>>
+    <associate|auto-79|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
     <associate|auto-8|<tuple|\<cal-B\><around*|[|X,\<cal-T\>|]>|?>>
-    <associate|auto-80|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
-    <associate|auto-81|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>|?>>
-    <associate|auto-82|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|p>>|?>>
-    <associate|auto-83|<tuple|locally null set|?>>
-    <associate|auto-84|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|\<infty\>>>|?>>
-    <associate|auto-85|<tuple|Hölder's Inequality|?>>
-    <associate|auto-86|<tuple|<with|mode|<quote|math>|\<cal-N\><rsub|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-K\>|]>>|?>>
-    <associate|auto-87|<tuple|19.7.2|?>>
-    <associate|auto-88|<tuple|19.7.3|?>>
-    <associate|auto-89|<tuple|<with|mode|<quote|math>|S<rsup|p><around*|[|X.\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
+    <associate|auto-80|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>|?>>
+    <associate|auto-81|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
+    <associate|auto-82|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>|?>>
+    <associate|auto-83|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|p>>|?>>
+    <associate|auto-84|<tuple|locally null set|?>>
+    <associate|auto-85|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|\<infty\>>>|?>>
+    <associate|auto-86|<tuple|Hölder's Inequality|?>>
+    <associate|auto-87|<tuple|<with|mode|<quote|math>|\<cal-N\><rsub|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-K\>|]>>|?>>
+    <associate|auto-88|<tuple|19.7.2|?>>
+    <associate|auto-89|<tuple|19.7.3|?>>
     <associate|auto-9|<tuple|19.2.1|?>>
-    <associate|auto-90|<tuple|19.8|?>>
-    <associate|auto-91|<tuple|signed measure|?>>
-    <associate|auto-92|<tuple|finite signed measure|?>>
-    <associate|auto-93|<tuple|negative set for
+    <associate|auto-90|<tuple|<with|mode|<quote|math>|S<rsup|p><around*|[|X.\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
+    <associate|auto-91|<tuple|19.8|?>>
+    <associate|auto-92|<tuple|signed measure|?>>
+    <associate|auto-93|<tuple|finite signed measure|?>>
+    <associate|auto-94|<tuple|negative set for
     <with|mode|<quote|math>|\<mu\>>|?>>
-    <associate|auto-94|<tuple|positive set for
+    <associate|auto-95|<tuple|positive set for
     <with|mode|<quote|math>|\<mu\>>|?>>
-    <associate|auto-95|<tuple|Hah Decomposition|?>>
-    <associate|auto-96|<tuple|complex measure|?>>
+    <associate|auto-96|<tuple|Hah Decomposition|?>>
+    <associate|auto-97|<tuple|complex measure|?>>
+    <associate|auto-98|<tuple|variation of a complex measure|?>>
     <associate|borel algebra on the extebded reals (1)|<tuple|19.30|?>>
     <associate|borel algebra on the extended real numbers
     (2)|<tuple|19.31|?>>
     <associate|borel algebra on the extended reals (3)|<tuple|19.32|?>>
     <associate|boundaries of a rectangle are unique|<tuple|19.39|?>>
     <associate|bounded intervals|<tuple|19.22|?>>
-    <associate|characteristic function is measurable|<tuple|19.157|?>>
-    <associate|complete measures|<tuple|19.106|?>>
-    <associate|completeness of L^infinity|<tuple|19.284|?>>
-    <associate|completeness of L^p|<tuple|19.285|?>>
-    <associate|completion lemma|<tuple|19.109|?>>
-    <associate|completion of Borelset label|<tuple|19.112|?>>
-    <associate|completion of a measure|<tuple|19.110|?>>
-    <associate|completion of a measure space|<tuple|19.111|?>>
-    <associate|complex integral properties|<tuple|19.250|?>>
-    <associate|complex integral properties (2)|<tuple|19.253|?>>
-    <associate|complex measurable functions|<tuple|19.247|?>>
-    <associate|complex measurable functions properties|<tuple|19.248|?>>
-    <associate|complex measure|<tuple|19.318|?>>
-    <associate|complex measure (real, imaginair)|<tuple|19.319|?>>
+    <associate|characteristic function is measurable|<tuple|19.160|?>>
+    <associate|complete measures|<tuple|19.109|?>>
+    <associate|completeness of L^infinity|<tuple|19.287|?>>
+    <associate|completeness of L^p|<tuple|19.288|?>>
+    <associate|completion lemma|<tuple|19.112|?>>
+    <associate|completion of Borelset label|<tuple|19.115|?>>
+    <associate|completion of a measure|<tuple|19.113|?>>
+    <associate|completion of a measure space|<tuple|19.114|?>>
+    <associate|complex integral properties|<tuple|19.253|?>>
+    <associate|complex integral properties (2)|<tuple|19.256|?>>
+    <associate|complex measurable functions|<tuple|19.250|?>>
+    <associate|complex measurable functions properties|<tuple|19.251|?>>
+    <associate|complex measure|<tuple|19.321|?>>
+    <associate|complex measure (real, imaginair)|<tuple|19.322|?>>
+    <associate|complex mesure variation|<tuple|19.324|?>>
     <associate|composition of measurable functions is
-    measurable|<tuple|19.144|?>>
+    measurable|<tuple|19.147|?>>
     <associate|condition for a Dynkin class to be a sigma
-    algebra|<tuple|19.133|?>>
-    <associate|consequence of a pi-system|<tuple|19.132|?>>
-    <associate|constant simple function|<tuple|19.193|?>>
-    <associate|continuous functions are measurable|<tuple|19.143|?>>
-    <associate|continuous functions are measurable (4)|<tuple|19.156|?>>
+    algebra|<tuple|19.136|?>>
+    <associate|consequence of a pi-system|<tuple|19.135|?>>
+    <associate|constant simple function|<tuple|19.196|?>>
+    <associate|continuous functions are measurable|<tuple|19.146|?>>
+    <associate|continuous functions are measurable (4)|<tuple|19.159|?>>
     <associate|corollary 18.29|<tuple|19.29|?>>
-    <associate|countable additivity implies additivity|<tuple|19.63|?>>
+    <associate|countable additivity implies additivity|<tuple|19.64|?>>
     <associate|empty rectaangles|<tuple|19.35|?>>
     <associate|eq 18.1.014|<tuple|19.10|?>>
     <associate|eq 18.1.016|<tuple|19.4|?>>
@@ -22824,178 +23000,181 @@
     <associate|eq 19.628.038|<tuple|19.628|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|19.50|?>>
-    <associate|extension of measurable function|<tuple|19.158|?>>
-    <associate|f is measurable then \|f\| is measurable|<tuple|19.251|?>>
-    <associate|f+ and f-|<tuple|19.176|?>>
-    <associate|f=g almost everywhere property|<tuple|19.185|?>>
+    <associate|extension of measurable function|<tuple|19.161|?>>
+    <associate|f is measurable then \|f\| is measurable|<tuple|19.254|?>>
+    <associate|f+ and f-|<tuple|19.179|?>>
+    <associate|f=g almost everywhere property|<tuple|19.188|?>>
+    <associate|finite (sub) additivity|<tuple|19.61|?>>
+    <associate|finite measure|<tuple|19.66|?>>
+    <associate|finite measure condition|<tuple|19.67|?>>
     <associate|finite sum of mesaurable functions is measurable
-    (1)|<tuple|19.172|?>>
+    (1)|<tuple|19.175|?>>
     <associate|finite sum of mesaurable functions is measurable
-    (2)|<tuple|19.175|?>>
+    (2)|<tuple|19.178|?>>
     <associate|finite unions and intersections|<tuple|19.7|?>>
-    <associate|function comparizatons are measurable|<tuple|19.163|?>>
+    <associate|function comparizatons are measurable|<tuple|19.166|?>>
     <associate|generated sigma algebra|<tuple|19.17|?>>
     <associate|half open rectangle as intersection of open
     sets|<tuple|19.51|?>>
-    <associate|half spaces are Lebesgue measurable in R^n|<tuple|19.87|?>>
-    <associate|induced outer inner measure|<tuple|19.114|?>>
-    <associate|induced outer measure is a outer measure|<tuple|19.116|?>>
-    <associate|inner/outer regularity|<tuple|19.118|?>>
-    <associate|integrability and absolute norm (2)|<tuple|19.252|?>>
-    <associate|integrability of function with domain A|<tuple|19.218|?>>
-    <associate|integrability of function with domain X on A|<tuple|19.215|?>>
-    <associate|integrability of non negative functions (2)|<tuple|19.222|?>>
-    <associate|integrability where X is A|<tuple|19.221|?>>
-    <associate|integrable complex function|<tuple|19.249|?>>
-    <associate|integrable functions|<tuple|19.212|?>>
-    <associate|integrable functions finite sums|<tuple|19.274|?>>
-    <associate|integral difference|<tuple|19.225|?>>
-    <associate|integral norm is 0 implies f = 0 a.e.e|<tuple|19.266|?>>
-    <associate|integral of almost zero function is zero|<tuple|19.223|?>>
-    <associate|integral of everywhere zero function|<tuple|19.207|?>>
-    <associate|integral of positive function properties (2)|<tuple|19.210|?>>
-    <associate|integral of positive functions (1)|<tuple|19.209|?>>
+    <associate|half spaces are Lebesgue measurable in R^n|<tuple|19.90|?>>
+    <associate|induced outer inner measure|<tuple|19.117|?>>
+    <associate|induced outer measure is a outer measure|<tuple|19.119|?>>
+    <associate|inner/outer regularity|<tuple|19.121|?>>
+    <associate|integrability and absolute norm (2)|<tuple|19.255|?>>
+    <associate|integrability of function with domain A|<tuple|19.221|?>>
+    <associate|integrability of function with domain X on A|<tuple|19.218|?>>
+    <associate|integrability of non negative functions (2)|<tuple|19.225|?>>
+    <associate|integrability where X is A|<tuple|19.224|?>>
+    <associate|integrable complex function|<tuple|19.252|?>>
+    <associate|integrable functions|<tuple|19.215|?>>
+    <associate|integrable functions finite sums|<tuple|19.277|?>>
+    <associate|integral difference|<tuple|19.228|?>>
+    <associate|integral norm is 0 implies f = 0 a.e.e|<tuple|19.269|?>>
+    <associate|integral of almost zero function is zero|<tuple|19.226|?>>
+    <associate|integral of everywhere zero function|<tuple|19.210|?>>
+    <associate|integral of positive function properties (2)|<tuple|19.213|?>>
+    <associate|integral of positive functions (1)|<tuple|19.212|?>>
     <associate|integral of positive functions properties
-    (1)|<tuple|19.208|?>>
-    <associate|integral of positive measurable functions|<tuple|19.203|?>>
+    (1)|<tuple|19.211|?>>
+    <associate|integral of positive measurable functions|<tuple|19.206|?>>
     <associate|integral of sum non negative positive
-    functions|<tuple|19.211|?>>
-    <associate|integral of the null function|<tuple|19.206|?>>
-    <associate|integral properties (10)|<tuple|19.226|?>>
-    <associate|integral properties (11)|<tuple|19.227|?>>
-    <associate|integral properties (11.1)|<tuple|19.228|?>>
-    <associate|integral properties (12)|<tuple|19.229|?>>
-    <associate|integral properties (14)|<tuple|19.230|?>>
-    <associate|integral properties (15|<tuple|19.232|?>>
-    <associate|integral properties (16)|<tuple|19.233|?>>
-    <associate|integral properties (17)|<tuple|19.234|?>>
-    <associate|integral properties (18)|<tuple|19.235|?>>
+    functions|<tuple|19.214|?>>
+    <associate|integral of the null function|<tuple|19.209|?>>
+    <associate|integral properties (10)|<tuple|19.229|?>>
+    <associate|integral properties (11)|<tuple|19.230|?>>
+    <associate|integral properties (11.1)|<tuple|19.231|?>>
+    <associate|integral properties (12)|<tuple|19.232|?>>
+    <associate|integral properties (14)|<tuple|19.233|?>>
+    <associate|integral properties (15|<tuple|19.235|?>>
+    <associate|integral properties (16)|<tuple|19.236|?>>
+    <associate|integral properties (17)|<tuple|19.237|?>>
+    <associate|integral properties (18)|<tuple|19.238|?>>
     <associate|intersection of a class of Dynkin classes is a Dynkin
-    class|<tuple|19.129|?>>
+    class|<tuple|19.132|?>>
     <associate|intersection of sigma algebras is a sigma
     algebra|<tuple|19.16|?>>
     <associate|interval identities|<tuple|19.25|?>>
     <associate|lemma 18.28 set relations|<tuple|19.28|?>>
-    <associate|lemma 19.277.037|<tuple|19.283|?>>
+    <associate|lemma 19.277.037|<tuple|19.286|?>>
     <associate|lemma for almost everywhere monotone convergence
-    theorem|<tuple|19.237|?>>
+    theorem|<tuple|19.240|?>>
     <associate|length of interval is increasing|<tuple|19.42|?>>
-    <associate|liminf or limsup of functions|<tuple|19.165|?>>
-    <associate|locally null is emptyset|<tuple|19.268|?>>
-    <associate|locally null set and norm|<tuple|19.271|?>>
-    <associate|locally null set properties|<tuple|19.269|?>>
+    <associate|liminf or limsup of functions|<tuple|19.168|?>>
+    <associate|locally null is emptyset|<tuple|19.271|?>>
+    <associate|locally null set and norm|<tuple|19.274|?>>
+    <associate|locally null set properties|<tuple|19.272|?>>
     <associate|lower half open spaces|<tuple|19.53|?>>
     <associate|lower half open spaces are open|<tuple|19.54|?>>
-    <associate|maximum of finite set of functions|<tuple|19.168|?>>
-    <associate|maximum of measurable functions|<tuple|19.169|?>>
+    <associate|maximum of finite set of functions|<tuple|19.171|?>>
+    <associate|maximum of measurable functions|<tuple|19.172|?>>
     <associate|maximum of non negative real valued simple
-    functions|<tuple|19.199|?>>
-    <associate|measurability and components|<tuple|19.246|?>>
-    <associate|measurability of extension of a function|<tuple|19.219|?>>
-    <associate|measurability of \|f\|^p|<tuple|19.256|?>>
-    <associate|measurable extended function space|<tuple|19.145|?>>
-    <associate|measurable function|<tuple|19.137|?>>
-    <associate|measurable function and limit|<tuple|19.186|?>>
-    <associate|measurable function and restriction|<tuple|19.141|?>>
+    functions|<tuple|19.202|?>>
+    <associate|measurability and components|<tuple|19.249|?>>
+    <associate|measurability of extension of a function|<tuple|19.222|?>>
+    <associate|measurability of \|f\|^p|<tuple|19.259|?>>
+    <associate|measurable extended function space|<tuple|19.148|?>>
+    <associate|measurable function|<tuple|19.140|?>>
+    <associate|measurable function and limit|<tuple|19.189|?>>
+    <associate|measurable function and restriction|<tuple|19.144|?>>
     <associate|measurable function as a limit of simple
-    functions|<tuple|19.180|?>>
-    <associate|measurable function condition (1)|<tuple|19.151|?>>
-    <associate|measurable function condition (2)|<tuple|19.153|?>>
+    functions|<tuple|19.183|?>>
+    <associate|measurable function condition (1)|<tuple|19.154|?>>
+    <associate|measurable function condition (2)|<tuple|19.156|?>>
     <associate|measurable function condition and restricted
-    functions|<tuple|19.142|?>>
+    functions|<tuple|19.145|?>>
     <associate|measurable function covered by a integrable
-    function|<tuple|19.224|?>>
-    <associate|measurable function space|<tuple|19.146|?>>
-    <associate|measurable functions and generated algebra|<tuple|19.140|?>>
-    <associate|measurable functions properties (1)|<tuple|19.166|?>>
-    <associate|measurable functions properties (2)|<tuple|19.170|?>>
-    <associate|measurable functions properties (3)|<tuple|19.171|?>>
-    <associate|measurable functions properties (4)|<tuple|19.174|?>>
-    <associate|measurable functions properties (5)|<tuple|19.178|?>>
-    <associate|measurable functions properties (6)|<tuple|19.179|?>>
-    <associate|measurable positive functions|<tuple|19.201|?>>
-    <associate|measurable set alternative definition|<tuple|19.73|?>>
-    <associate|measurable sets and null sets|<tuple|19.74|?>>
+    function|<tuple|19.227|?>>
+    <associate|measurable function space|<tuple|19.149|?>>
+    <associate|measurable functions and generated algebra|<tuple|19.143|?>>
+    <associate|measurable functions properties (1)|<tuple|19.169|?>>
+    <associate|measurable functions properties (2)|<tuple|19.173|?>>
+    <associate|measurable functions properties (3)|<tuple|19.174|?>>
+    <associate|measurable functions properties (4)|<tuple|19.177|?>>
+    <associate|measurable functions properties (5)|<tuple|19.181|?>>
+    <associate|measurable functions properties (6)|<tuple|19.182|?>>
+    <associate|measurable positive functions|<tuple|19.204|?>>
+    <associate|measurable set alternative definition|<tuple|19.76|?>>
+    <associate|measurable sets and null sets|<tuple|19.77|?>>
     <associate|measurable space|<tuple|19.13|?>>
-    <associate|measure|<tuple|19.61|?>>
-    <associate|measure conditions (10)|<tuple|19.68|?>>
-    <associate|measure is subadditive|<tuple|19.66|?>>
-    <associate|measure properties (1)|<tuple|19.64|?>>
-    <associate|measure properties (2)|<tuple|19.67|?>>
-    <associate|measure regularity lemma|<tuple|19.122|?>>
-    <associate|measureable set|<tuple|19.72|?>>
-    <associate|monotone convergence theorem|<tuple|19.238|?>>
-    <associate|neagative / positive set examples|<tuple|19.307|?>>
-    <associate|negative union of sets|<tuple|19.311|?>>
-    <associate|negligibility|<tuple|19.104|?>>
-    <associate|negligible set properties|<tuple|19.105|?>>
-    <associate|null function is measurable|<tuple|19.154|?>>
+    <associate|measure|<tuple|19.62|?>>
+    <associate|measure conditions (10)|<tuple|19.71|?>>
+    <associate|measure is subadditive|<tuple|19.69|?>>
+    <associate|measure properties (1)|<tuple|19.65|?>>
+    <associate|measure properties (2)|<tuple|19.70|?>>
+    <associate|measure regularity lemma|<tuple|19.125|?>>
+    <associate|measureable set|<tuple|19.75|?>>
+    <associate|monotone convergence theorem|<tuple|19.241|?>>
+    <associate|neagative / positive set examples|<tuple|19.310|?>>
+    <associate|negative union of sets|<tuple|19.314|?>>
+    <associate|negligibility|<tuple|19.107|?>>
+    <associate|negligible set properties|<tuple|19.108|?>>
+    <associate|null function is measurable|<tuple|19.157|?>>
     <associate|open,half open and bounded intervals are
     different|<tuple|19.24|?>>
     <associate|open/closed sets relation|<tuple|19.59|?>>
-    <associate|outer measure|<tuple|19.69|?>>
-    <associate|outer measure definition on rectangles|<tuple|19.84|?>>
-    <associate|outer measure finite subadditivity|<tuple|19.70|?>>
-    <associate|outer measure is translation invariant|<tuple|19.97|?>>
-    <associate|outer measure on R|<tuple|19.80|?>>
-    <associate|outer measure on rectangles|<tuple|19.85|?>>
-    <associate|outermeasure construction|<tuple|19.71|?>>
-    <associate|positive, negative set properties|<tuple|19.309|?>>
-    <associate|positive, negative sets and negated measure|<tuple|19.308|?>>
-    <associate|power of limit|<tuple|19.282|?>>
+    <associate|outer measure|<tuple|19.72|?>>
+    <associate|outer measure definition on rectangles|<tuple|19.87|?>>
+    <associate|outer measure finite subadditivity|<tuple|19.73|?>>
+    <associate|outer measure is translation invariant|<tuple|19.100|?>>
+    <associate|outer measure on R|<tuple|19.83|?>>
+    <associate|outer measure on rectangles|<tuple|19.88|?>>
+    <associate|outermeasure construction|<tuple|19.74|?>>
+    <associate|positive, negative set properties|<tuple|19.312|?>>
+    <associate|positive, negative sets and negated measure|<tuple|19.311|?>>
+    <associate|power of limit|<tuple|19.285|?>>
     <associate|properties of algebras|<tuple|19.10|?>>
-    <associate|real (extended real) measurability|<tuple|19.148|?>>
+    <associate|real (extended real) measurability|<tuple|19.151|?>>
     <associate|rectangle and half open sets|<tuple|19.56|?>>
     <associate|replace countable untion of sets by disjoint union of
-    sets|<tuple|19.65|?>>
-    <associate|restriction of measurable functions|<tuple|19.159|?>>
+    sets|<tuple|19.68|?>>
+    <associate|restriction of measurable functions|<tuple|19.162|?>>
     <associate|restriction of measure space to a sub sigma
-    algebra|<tuple|19.62|?>>
-    <associate|semi additivity of the length in the reals|<tuple|19.79|?>>
-    <associate|set of all subsets is a Dynkin class|<tuple|19.128|?>>
+    algebra|<tuple|19.63|?>>
+    <associate|semi additivity of the length in the reals|<tuple|19.82|?>>
+    <associate|set of all subsets is a Dynkin class|<tuple|19.131|?>>
     <associate|set of all subsets is a sigma algebra|<tuple|19.12|?>>
-    <associate|set of simple functions|<tuple|19.191|?>>
+    <associate|set of simple functions|<tuple|19.194|?>>
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
     <associate|sigma algebra equivalent definitions|<tuple|19.14|?>>
-    <associate|sigma algebras are Dynkin classes|<tuple|19.127|?>>
-    <associate|signed measure and subsets|<tuple|19.303|?>>
-    <associate|signed measure condition (1)|<tuple|19.305|?>>
-    <associate|signed measure negated|<tuple|19.301|?>>
-    <associate|signed measure of finite union|<tuple|19.302|?>>
-    <associate|signed measure property (1)|<tuple|19.304|?>>
-    <associate|signed measures negative set (1)|<tuple|19.310|?>>
-    <associate|simple function|<tuple|19.160|?>>
-    <associate|simple function as a finite sum|<tuple|19.187|?>>
-    <associate|simple function condition (2)|<tuple|19.192|?>>
-    <associate|simple function condition (3)|<tuple|19.197|?>>
-    <associate|simple function integral extension|<tuple|19.205|?>>
-    <associate|simple function integral properties (4)|<tuple|19.200|?>>
-    <associate|simple function properties|<tuple|19.188|?>>
-    <associate|simple function properties (1)|<tuple|19.161|?>>
-    <associate|simple functions are measurable|<tuple|19.162|?>>
-    <associate|simple functions integral (1)|<tuple|19.194|?>>
-    <associate|simple functions integral properties (1)|<tuple|19.198|?>>
+    <associate|sigma algebras are Dynkin classes|<tuple|19.130|?>>
+    <associate|signed measure and subsets|<tuple|19.306|?>>
+    <associate|signed measure condition (1)|<tuple|19.308|?>>
+    <associate|signed measure negated|<tuple|19.304|?>>
+    <associate|signed measure of finite union|<tuple|19.305|?>>
+    <associate|signed measure property (1)|<tuple|19.307|?>>
+    <associate|signed measures negative set (1)|<tuple|19.313|?>>
+    <associate|simple function|<tuple|19.163|?>>
+    <associate|simple function as a finite sum|<tuple|19.190|?>>
+    <associate|simple function condition (2)|<tuple|19.195|?>>
+    <associate|simple function condition (3)|<tuple|19.200|?>>
+    <associate|simple function integral extension|<tuple|19.208|?>>
+    <associate|simple function integral properties (4)|<tuple|19.203|?>>
+    <associate|simple function properties|<tuple|19.191|?>>
+    <associate|simple function properties (1)|<tuple|19.164|?>>
+    <associate|simple functions are measurable|<tuple|19.165|?>>
+    <associate|simple functions integral (1)|<tuple|19.197|?>>
+    <associate|simple functions integral properties (1)|<tuple|19.201|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|19.49|?>>
-    <associate|translation properties|<tuple|19.95|?>>
+    <associate|translation properties|<tuple|19.98|?>>
     <associate|union intersection union of families|<tuple|19.3|?>>
     <associate|union of union of sets (1)|<tuple|19.5|?>>
     <associate|union,intersection and function between and
     indexes|<tuple|19.4|?>>
-    <associate|uniqueness of the Lebesgue measure|<tuple|19.93|?>>
+    <associate|uniqueness of the Lebesgue measure|<tuple|19.96|?>>
     <associate|volume in R^n|<tuple|19.41|?>>
     <associate|volume is increasing|<tuple|19.43|?>>
-    <associate|volume is subadditive|<tuple|19.83|?>>
-    <associate|volume is translation invariant|<tuple|19.96|?>>
+    <associate|volume is subadditive|<tuple|19.86|?>>
+    <associate|volume is translation invariant|<tuple|19.99|?>>
     <associate|volume of a rectangle|<tuple|19.40|?>>
     <associate|writing a countable family of sets as a disjoint familly of
     sets|<tuple|19.6|?>>
-    <associate|zero function is measurable|<tuple|19.155|?>>
-    <associate|{x\<less\>f} properties|<tuple|19.150|?>>
-    <associate|{x\<less\>f} properties (1)|<tuple|19.152|?>>
-    <associate|\|f(x)\| as f+ f-|<tuple|19.177|?>>
-    <associate|\|f\| in L^p|<tuple|19.263|?>>
-    <associate|\|z1+z2\|\<less\>=2^p*(z1^p+z^2)|<tuple|19.258|?>>
-    <associate|\|\|(\|f)\|\|=\|\|f\|\||<tuple|19.281|?>>
+    <associate|zero function is measurable|<tuple|19.158|?>>
+    <associate|{x\<less\>f} properties|<tuple|19.153|?>>
+    <associate|{x\<less\>f} properties (1)|<tuple|19.155|?>>
+    <associate|\|f(x)\| as f+ f-|<tuple|19.180|?>>
+    <associate|\|f\| in L^p|<tuple|19.266|?>>
+    <associate|\|z1+z2\|\<less\>=2^p*(z1^p+z^2)|<tuple|19.261|?>>
+    <associate|\|\|(\|f)\|\|=\|\|f\|\||<tuple|19.284|?>>
   </collection>
 </references>
 
@@ -23026,115 +23205,119 @@
 
       <tuple|<tuple|Lower half spaces>|<pageref|auto-18>>
 
-      <tuple|<tuple|Carathéodory theorem>|<pageref|auto-22>>
+      <tuple|<tuple|finite measure>|<pageref|auto-21>>
 
-      <tuple|<tuple|Lebesgue measurable space>|<pageref|auto-24>>
+      <tuple|<tuple|Carathéodory theorem>|<pageref|auto-23>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><around*|[|\<bbb-R\>|]>>>|<pageref|auto-25>>
+      <tuple|<tuple|Lebesgue measurable space>|<pageref|auto-25>>
 
-      <tuple|<tuple|Lebesgue measure>|<pageref|auto-26>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><around*|[|\<bbb-R\>|]>>>|<pageref|auto-26>>
 
-      <tuple|<tuple|Lebesgue measurable set>|<pageref|auto-27>>
+      <tuple|<tuple|Lebesgue measure>|<pageref|auto-27>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>>|<pageref|auto-29>>
+      <tuple|<tuple|Lebesgue measurable set>|<pageref|auto-28>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible>|<pageref|auto-32>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<varphi\><rsup|n>>>|<pageref|auto-30>>
 
-      <tuple|<tuple|complete measures>|<pageref|auto-33>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>>-negligible>|<pageref|auto-33>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-34>>
+      <tuple|<tuple|complete measures>|<pageref|auto-34>>
 
-      <tuple|<tuple|completion of a measure space>|<pageref|auto-35>>
+      <tuple|<tuple|<with|mode|<quote|math>|A<rsub|\<mu\>>>>|<pageref|auto-35>>
 
-      <tuple|<tuple|outer measure induced>|<pageref|auto-36>>
+      <tuple|<tuple|completion of a measure space>|<pageref|auto-36>>
 
-      <tuple|<tuple|inner measure induced>|<pageref|auto-37>>
+      <tuple|<tuple|outer measure induced>|<pageref|auto-37>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-38>>
+      <tuple|<tuple|inner measure induced>|<pageref|auto-38>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-39>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsup|\<ast\>>>>|<pageref|auto-39>>
 
-      <tuple|<tuple|inner regular sets>|<pageref|auto-40>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\><rsub|\<ast\>>>>|<pageref|auto-40>>
 
-      <tuple|<tuple|outer regular sets>|<pageref|auto-41>>
+      <tuple|<tuple|inner regular sets>|<pageref|auto-41>>
 
-      <tuple|<tuple|Dynkin class>|<pageref|auto-44>>
+      <tuple|<tuple|outer regular sets>|<pageref|auto-42>>
 
-      <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-45>>
+      <tuple|<tuple|Dynkin class>|<pageref|auto-45>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-46>>
+      <tuple|<tuple|<with|font-family|<quote|tt>|language|<quote|verbatim>|D>>|<pageref|auto-46>>
 
-      <tuple|<tuple|measurable function>|<pageref|auto-49>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-d\><around*|(|\<cal-A\>|)>>>|<pageref|auto-47>>
 
-      <tuple|<tuple|Borel function>|<pageref|auto-50>>
+      <tuple|<tuple|measurable function>|<pageref|auto-50>>
+
+      <tuple|<tuple|Borel function>|<pageref|auto-51>>
 
       <tuple|<tuple|<with|mode|<quote|math>|\<cal-A\>>-measurable
-      function>|<pageref|auto-51>>
+      function>|<pageref|auto-52>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-52>>
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\>|\<wide-bar\>><around*|[|X|]>>>|<pageref|auto-53>>
 
-      <tuple|<tuple|almost everyware>|<pageref|auto-56>>
+      <tuple|<tuple|almost everyware>|<pageref|auto-57>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>>|<pageref|auto-60>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-M\><rsup|+><around*|[|X,A|]>>>|<pageref|auto-61>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>>|<pageref|auto-61>>
+      <tuple|<tuple|<with|mode|<quote|math>|<wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>>|<pageref|auto-62>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsup|+>f
-      d\<mu\>>>|<pageref|auto-62>>
+      d\<mu\>>>|<pageref|auto-63>>
 
       <tuple|<tuple|integrable functions on a measure
-      space>|<pageref|auto-64>>
+      space>|<pageref|auto-65>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
-      d\<mu\>>>|<pageref|auto-65>>
+      d\<mu\>>>|<pageref|auto-66>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1>>>|<pageref|auto-66>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1>>>|<pageref|auto-67>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-67>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
-      d\<mu\>>>|<pageref|auto-68>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>>|<pageref|auto-69>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-68>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
-      d\<mu\>>>|<pageref|auto-70>>
+      d\<mu\>>>|<pageref|auto-69>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>>|<pageref|auto-74>>
+      <tuple|<tuple|<with|mode|<quote|math>|f<rsub|X\<rightarrow\>A>>>|<pageref|auto-70>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><rsub|\<bbb-C\>>>>|<pageref|auto-75>>
+      <tuple|<tuple|<with|mode|<quote|math>|<big|int><rsub|A>f
+      d\<mu\>>>|<pageref|auto-71>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-78>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>>|<pageref|auto-75>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>>|<pageref|auto-79>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|1><rsub|\<bbb-C\>>>>|<pageref|auto-76>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-80>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-79>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>>|<pageref|auto-81>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>>|<pageref|auto-80>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|p>>>|<pageref|auto-82>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-81>>
 
-      <tuple|<tuple|locally null set>|<pageref|auto-83>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-L\><rsup|\<infty\>><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>>|<pageref|auto-82>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|\<infty\>>>>|<pageref|auto-84>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|p>>>|<pageref|auto-83>>
 
-      <tuple|<tuple|Hölder's Inequality>|<pageref|auto-85>>
+      <tuple|<tuple|locally null set>|<pageref|auto-84>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<cal-N\><rsub|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-K\>|]>>>|<pageref|auto-86>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|\<\|\|\>||\<\|\|\>><rsub|\<infty\>>>>|<pageref|auto-85>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|S<rsup|p><around*|[|X.\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-89>>
+      <tuple|<tuple|Hölder's Inequality>|<pageref|auto-86>>
 
-      <tuple|<tuple|signed measure>|<pageref|auto-91>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<cal-N\><rsub|p><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-K\>|]>>>|<pageref|auto-87>>
 
-      <tuple|<tuple|finite signed measure>|<pageref|auto-92>>
+      <tuple|<tuple|<with|mode|<quote|math>|S<rsup|p><around*|[|X.\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-90>>
 
-      <tuple|<tuple|negative set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-93>>
+      <tuple|<tuple|signed measure>|<pageref|auto-92>>
 
-      <tuple|<tuple|positive set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-94>>
+      <tuple|<tuple|finite signed measure>|<pageref|auto-93>>
 
-      <tuple|<tuple|Hah Decomposition>|<pageref|auto-95>>
+      <tuple|<tuple|negative set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-94>>
 
-      <tuple|<tuple|complex measure>|<pageref|auto-96>>
+      <tuple|<tuple|positive set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-95>>
+
+      <tuple|<tuple|Hah Decomposition>|<pageref|auto-96>>
+
+      <tuple|<tuple|complex measure>|<pageref|auto-97>>
+
+      <tuple|<tuple|variation of a complex measure>|<pageref|auto-98>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|19<space|2spc>Measure
@@ -23171,104 +23354,104 @@
 
       <with|par-left|<quote|1tab>|19.3.2<space|2spc>Carathéodory theorem
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>
+      <no-break><pageref|auto-22>>
 
       <with|par-left|<quote|1tab>|19.3.3<space|2spc>The Carathéodory theorem
       and the set of real numbers <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-23>>
+      <no-break><pageref|auto-24>>
 
       <with|par-left|<quote|1tab>|19.3.4<space|2spc>The Carathéodory theorem
       and <with|mode|<quote|math>|\<bbb-R\><rsup|n>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-28>>
+      <no-break><pageref|auto-29>>
 
       <with|par-left|<quote|1tab>|19.3.5<space|2spc>Properties of
       <with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-L\><around*|[|\<bbb-R\><rsup|n>|]>,\<lambda\><rsup|n>|\<rangle\>>>
       and <with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\><rsup|n>,\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>,<around*|(|\<lambda\><rsup|n>|)><rsub|\|\<cal-B\><around*|[|\<bbb-R\><rsup|n>|]>>|\<rangle\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30>>
+      <no-break><pageref|auto-31>>
 
       <with|par-left|<quote|1tab>|19.3.6<space|2spc><with|mode|<quote|math>|Negligibity,Completeness<syntax|<with|mode|<quote|text>|
       and >|\<wedge\>>Regularity> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-32>>
 
       19.4<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>
+      <no-break><pageref|auto-43>
 
       <with|par-left|<quote|1tab>|19.4.1<space|2spc>Dynkin Classes
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43>>
+      <no-break><pageref|auto-44>>
 
       19.5<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>
+      <no-break><pageref|auto-48>
 
       <with|par-left|<quote|1tab>|19.5.1<space|2spc>Measurable functions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-49>>
 
       <with|par-left|<quote|1tab>|19.5.2<space|2spc>Example of measurable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-54>>
 
       <with|par-left|<quote|1tab>|19.5.3<space|2spc>Properties of measurable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-54>>
+      <no-break><pageref|auto-55>>
 
       <with|par-left|<quote|1tab>|19.5.4<space|2spc>Properties that hold
       everywhere <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-55>>
+      <no-break><pageref|auto-56>>
 
       19.6<space|2spc>The measure integral
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-57>
+      <no-break><pageref|auto-58>
 
       <with|par-left|<quote|1tab>|19.6.1<space|2spc>Integral of simple
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-58>>
+      <no-break><pageref|auto-59>>
 
       <with|par-left|<quote|1tab>|19.6.2<space|2spc>Integral of non negative
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-59>>
+      <no-break><pageref|auto-60>>
 
       <with|par-left|<quote|1tab>|19.6.3<space|2spc>Integral of integrable
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-63>>
+      <no-break><pageref|auto-64>>
 
       <with|par-left|<quote|1tab>|19.6.4<space|2spc>Properties of the
       integral <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-71>>
+      <no-break><pageref|auto-72>>
 
       <with|par-left|<quote|1tab>|19.6.5<space|2spc>Limit theorems for
       integrable functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-72>>
+      <no-break><pageref|auto-73>>
 
       <with|par-left|<quote|1tab>|19.6.6<space|2spc>Integral of complex
       functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-73>>
+      <no-break><pageref|auto-74>>
 
       19.7<space|2spc>The spaces <with|mode|<quote|math>|\<cal-L\><rsup|p>>
       and <with|mode|<quote|math>|L<rsup|p>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-76>
+      <no-break><pageref|auto-77>
 
       <with|par-left|<quote|1tab>|19.7.1<space|2spc>Norm and definition
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-77>>
+      <no-break><pageref|auto-78>>
 
       <with|par-left|<quote|1tab>|19.7.2<space|2spc>Properties of
       <with|mode|<quote|math>|\<cal-L\><rsup|p>> and
       <with|mode|<quote|math>|L<rsup|p>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-87>>
+      <no-break><pageref|auto-88>>
 
       <with|par-left|<quote|1tab>|19.7.3<space|2spc>Density
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-88>>
+      <no-break><pageref|auto-89>>
 
       19.8<space|2spc>Signed and complex measures
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-90>
+      <no-break><pageref|auto-91>
     </associate>
   </collection>
 </auxiliary>
