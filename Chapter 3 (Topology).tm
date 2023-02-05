@@ -9816,9 +9816,14 @@
     a sequence in <math|X> then\ 
 
     <\enumerate>
-      <item>If <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|m,\<ldots\>,n|}>>>
+      <item>If <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>>
       converges to <math|x> we have that <math|\<forall\>n\<geqslant\>m> that
       the subsequence <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>>
+      converges to <math|x>
+
+      <item>If <math|<around*|{|x<rsub|i>|)><rsub|i\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>>
+      converges to <math|x> then <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we
+      have that <math|<around*|{|x<rsub|i+n>|}><rsub|i\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>>
       converges to <math|x>
 
       <item>If there exists a <math|m\<geqslant\>n> such that
@@ -9832,7 +9837,7 @@
     \ 
 
     <\enumerate>
-      <item>Given a <math|U> open containing <math|x> there exists by the
+      <item>Given a <math|U> open containing <math|x>, there exists by the
       hypothese a <math|N<rprime|'>\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>
       such that <math|\<forall\>i\<geqslant\>N<rprime|'>> we have
       <math|x<rsub|i>\<in\>U>. Take then <math|N=max<around*|(|n,N<rprime|'>|)>>
@@ -9841,12 +9846,21 @@
       proving that <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>>
       converges to <math|x>.
 
+      <item>Given a <math|U> containing <math|x>, there exists by the
+      hypothese a <math|N<rprime|'>\<in\><around*|{|m,\<ldots\>,\<infty\>|}>>
+      such that <math|\<forall\>i\<geqslant\>N> we have
+      <math|x<rsub|i>\<in\>U>, as clearly
+      <math|N\<leqslant\>i\<leqslant\>i+n> we must have that
+      <math|x<rsub|i+n>\<in\>U>. So we have that
+      <math|<around*|{|x<rsub|i+n>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> also
+      converges to <math|x>.
+
       <item>If <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>>
       converges to <math|x> where <math|n\<geqslant\>m> then there exists a
       <math|N\<in\><around*|{|n,\<ldots\>,\<infty\>|}>\<Rightarrow\>N\<in\><around*|{|m,\<ldots\>\<infty\>|}>>
       such that if <math|i\<geqslant\>N> we have <math|x<rsub|i>\<in\>U>
       proving that <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|m,\<ldots\>\<infty\>|}>>>
-      converges to <math|>x\<gtr\>
+      converges to <math|>x.
     </enumerate>
   </proof>
 
@@ -10831,6 +10845,8 @@
       then <math|<around*|\<\|\|\>|<around*|(|z+x<rsub|n>|)>-<around*|(|z+x|)>|\<\|\|\>>=<around*|\<\|\|\>|x<rsub|n>-x|\<\|\|\>>\<less\>\<varepsilon\>>.
     </enumerate>
   </proof>
+
+  \;
 
   <\corollary>
     <label|limit of complex numbers>Let <math|<around*|{|x<rsub|n>|}><rsub|n\<in\><around*|{|k,\<ldots\>,\<infty\>|}>>\<subseteq\>\<bbb-C\>>
@@ -20471,6 +20487,7 @@
     <associate|limit of a sum|<tuple|11.356|453>>
     <associate|limit of complex numbers|<tuple|11.357|?>>
     <associate|limit of constant seqeunce|<tuple|11.326|449>>
+    <associate|limit of finite sum|<tuple|11.357|?>>
     <associate|limit point|<tuple|11.18|382>>
     <associate|limit point of sequences|<tuple|11.361|454>>
     <associate|limit preserve inequality|<tuple|11.352|453>>
