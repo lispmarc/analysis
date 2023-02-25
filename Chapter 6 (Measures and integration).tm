@@ -23428,16 +23428,107 @@
     proving that
 
     <\equation>
-      <label|eq 19.678.039>If \<bbb-K\>=\<bbb-R\><text| then >\<mu\><text| is
-      a signed measure on <math|\<cal-A\>> and if <math|\<bbb-K\>=\<bbb-C\>>
-      then >\<mu\><text| is a complex measure on >\<cal-A\>
+      <label|eq 19.678.039><text|If >\<bbb-K\>=\<bbb-R\><text| then
+      >\<mu\><text| is a signed measure on <math|\<cal-A\>> and if
+      <math|\<bbb-K\>=\<bbb-C\>> then >\<mu\><text| is a complex measure on
+      >\<cal-A\>
     </equation>
 
+    Finally we have to prove completeness, where we must consider the
+    following cases for <math|\<bbb-K\>>:
+
+    <\description>
+      <item*|<math|\<bbb-K\>=\<bbb-R\>>>Let <math|\<varepsilon\>\<gtr\>0>
+      then using <reference|eq 19.658.038> there exists a
+      <math|K<rsub|<frac|\<varepsilon\>|2>>\<in\>\<bbb-N\><rsub|0>> such that
+      <math|\<forall\>n\<in\><around*|{|K<rsub|<frac|\<varepsilon\>|2>>,\<ldots\>,\<infty\>|}>>
+      we have \ <math|\<forall\>A\<in\>\<cal-A\>> that
+      <math|<around*|\||\<mu\><rsub|n>-\<mu\>|\|><around*|(|A|)>\<less\><frac|\<varepsilon\>|2>>
+      so that <math|<around*|(|\<mu\><rsub|n>-\<mu\>|)><around*|(|A|)>\<leqslant\><around*|\||\<mu\><rsub|n>-\<mu\>|\|><around*|(|A|)>\<less\>\<varepsilon\>>
+      and <math|-*<around*|(|\<mu\><rsub|n>-\<mu\>|)><around*|(|A|)>\<leqslant\><around*|\||\<mu\><rsub|n>-\<mu\>|\|><around*|(|A|)>\<less\>\<varepsilon\>>,
+      hence
+
+      <\equation*>
+        <around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|+><around*|(|X|)>\<equallim\><rsub|<text|<reference|Jordon
+        Decomposition>>>sup<around*|(|<around*|{|<around*|(|\<mu\><rsub|n>-\<mu\>|)><around*|(|A|)>\|A\<in\>\<cal-A\>\<wedge\>A\<subseteq\>X|}>|)>\<less\><frac|\<varepsilon\>|2>
+      </equation*>
+
+      and
+
+      <\equation*>
+        <around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|-><around*|(|X|)>\<equallim\><rsub|<text|<reference|Jordon
+        Decomposition>>>sup<around*|(|<around*|{|-<around*|(|\<mu\><rsub|n>-\<mu\>|)><around*|(|A|)>\|A\<in\>\<cal-A\>\<wedge\>A\<subseteq\>X|}>|)>\<less\><frac|\<varepsilon\>|2>
+      </equation*>
+
+      so that <math|<around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\>|\<\|\|\>>=<around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|+>+<around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|-><around*|(|X|)>\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>=\<varepsilon\>>.
+      Hence\ 
+
+      <\equation*>
+        \<forall\>\<varepsilon\>\<gtr\>0<text| there exists a
+        >K<rsub|<frac|\<varepsilon\>|2>>\<in\>\<bbb-N\><rsub|0><text| such
+        that >\<forall\>n\<in\><around*|{|K<rsub|<frac|\<varepsilon\>|2>>,\<ldots\>,\<infty\>|}><text|
+        we have ><around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\>|\<\|\|\>>\<less\><frac|\<varepsilon\>|2>
+      </equation*>
+
+      or\ 
+
+      <\equation>
+        <label|eq 19.679.039.1><below|lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\>\<in\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>
+      </equation>
+
+      <item*|<math|\<bbb-K\>=\<bbb-C\>>>Let <math|\<varepsilon\>\<gtr\>0>
+      then as as <math|<around*|{|\<mu\><rsub|n>|}><rsub|n\<in\>\<bbb-N\><rsub|0>>>
+      is Cauchy there exists a <math|N> such that
+      <math|\<forall\>n,m\<in\><around*|{|N,\<ldots\>,\<infty\>|}>> we have
+      [see <reference|complex mesure variation>]
+
+      <\equation>
+        <label|eq 19.679.039>sup<around*|(|<around*|{|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n>-\<mu\><rsub|m>|\|><around*|(|A<rsub|i>|)>\|\|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,k|}>>\<subseteq\>\<cal-A\>\<wedge\>X=<big|sqcup><rsub|i=1><rsup|k>A<rsub|i>|}>|)>=<around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\><rsub|m>|\<\|\|\>>\<less\><frac|\<varepsilon\>|2>.
+      </equation>
+
+      Take <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,k|}>>\<subseteq\>X>
+      such that <math|X=<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>,
+      using <reference|eq 19.658.038> there exists a
+      <math|K\<in\>\<bbb-N\><rsub|0>> such that
+      <math|\<forall\>l\<geqslant\>K> we have
+      <math|\<forall\>i\<in\><around*|{|1,\<ldots\>,k|}>> that
+      <math|<around*|\||\<mu\><rsub|l>-\<mu\>|\|><around*|(|A<rsub|i>|)>\<less\><frac|\<varepsilon\>|2\<cdot\>k>>.
+      So that\ 
+
+      <\equation>
+        <label|eq 19.680.039><big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|l>-\<mu\>|\|><around*|(|A<rsub|i>|)>\<less\><frac|\<varepsilon\>|2>
+      </equation>
+
+      Take now <math|n\<geqslant\>N> and \ <math|l=max<around*|(|N,K|)>> and
+      <math|n\<geqslant\>N> then we have\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n>-\<mu\>|\|><around*|(|A<rsub|i>|)>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n><around*|(|A<rsub|i>|)>-\<mu\><rsub|l><around*|(|A<rsub|i>|)>+\<mu\><rsub|l><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n><around*|(|A<rsub|i>|)>-\<mu\><rsub|l><around*|(|A<rsub|i>|)>|\|>+<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|l><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
+        19.679.039>,<reference|eq 19.680.039>>>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>|<row|<cell|>|<cell|>|<cell|\<varepsilon\><eq-number><label|eq
+        19.681.039>>>>>
+      </eqnarray*>
+
+      Using the above we have taking the supremum
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\>|\<\|\|\>>>|<cell|=>|<cell|sup<around*|(|<around*|{|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n>-\<mu\>|\|><around*|(|A<rsub|i>|)>\|\|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,k|}>>\<subseteq\>\<cal-A\>\<wedge\>X=<big|sqcup><rsub|i=1><rsup|k>A<rsub|i>|}>|)>>>|<row|<cell|>|<cell|\<less\>>|<cell|\<varepsilon\>>>>>
+      </eqnarray*>
+
+      proving that\ 
+
+      <\equation>
+        <below|<label|eq 19.683.039.1>lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\>\<in\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>
+      </equation>
+    </description>
+
+    So in all cases we have that\ 
+
     <\equation*>
-      \;
+      <below|lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>
     </equation*>
 
-    \;
+    proving that <math|\<mu\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
+    is a Banach space.
   </proof>
 
   \;
@@ -24318,7 +24409,7 @@
     <associate|eq 19.629.039|<tuple|19.632|?>>
     <associate|eq 19.629.039.1|<tuple|19.629|?>>
     <associate|eq 19.630.038|<tuple|19.644|?>>
-    <associate|eq 19.630.039|<tuple|19.633|?>>
+    <associate|eq 19.630.039|<tuple|19.680|?>>
     <associate|eq 19.630.039.1|<tuple|19.630|?>>
     <associate|eq 19.631.038|<tuple|19.645|?>>
     <associate|eq 19.631.039|<tuple|19.634|?>>
@@ -24362,6 +24453,12 @@
     <associate|eq 19.676.039|<tuple|19.676|?>>
     <associate|eq 19.677.039|<tuple|19.677|?>>
     <associate|eq 19.678.039|<tuple|19.678|?>>
+    <associate|eq 19.679.039|<tuple|19.680|?>>
+    <associate|eq 19.679.039.1|<tuple|19.679|?>>
+    <associate|eq 19.680.039|<tuple|19.681|?>>
+    <associate|eq 19.681.039|<tuple|19.682|?>>
+    <associate|eq 19.683.039.1|<tuple|19.683|?>>
+    <associate|eq 19.690.039|<tuple|19.680|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|19.50|?>>
     <associate|extension of measurable function|<tuple|19.162|?>>
