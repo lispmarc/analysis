@@ -13649,7 +13649,8 @@
     <label|integral of everywhere zero function>Let
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
     space and <math|f\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f=0> <math|\<mu\>>-a.e. then <math|<big|int>f d\<mu\>=0>
+    such that <math|f=0> <math|\<mu\>>-a.e. then <math|<big|int><rsup|+>f
+    d\<mu\>=0>
   </example>
 
   <\proof>
@@ -13667,14 +13668,14 @@
     <math|<big|int><rsup|+>g d\<mu\>=0>. So
 
     <\equation*>
-      <around*|{|<big|int>g d\<mu\>\|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]><text|
+      <around*|{|<big|int><rsup|S>g d\<mu\>\|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]><text|
       with >\<forall\>x\<in\>X g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>|}>=<around*|{|0|}>
     </equation*>
 
     which finally gives\ 
 
     <\equation*>
-      <big|int><rsup|+>f d\<mu\>=sup<around*|(|<big|int>g
+      <big|int><rsup|+>f d\<mu\>=sup<around*|(|<big|int><rsup|S>g
       d\<mu\>\|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]><text| with
       >\<forall\>x\<in\>X g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>|)>=0
     </equation*>
@@ -21754,10 +21755,10 @@
   the difference of two measures.
 
   <\theorem>
-    <label|Jordan Decomposition Theorem>Let
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
-    and <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>> a
-    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>.
+    <label|Jordan Decomposition Theorem><dueto|Jordon Decomposition
+    Theorem>Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a
+    measurable space and <math|\<mu\>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
+    a signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>.
     Define then <math|\<mu\><rsup|+>:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
     and <math|\<mu\><rsup|->:\<cal-A\>\<rightarrow\><wide|\<bbb-R\>|\<wide-bar\>>>
     by\ 
@@ -22133,12 +22134,12 @@
     <math|Img<around*|(|\<mu\>|)>> and <math|re<around*|(|\<mu\>|)>> defined
     by <math|Img<around*|(|\<mu\>|)><around*|(|A|)>=Img<around*|(|\<mu\><around*|(|A|)>|)>>
     and <math|Re<around*|(|\<mu\>|)><around*|(|A|)>=Re<around*|(|\<mu\><around*|(|A|)>|)>>
-    are signed measures on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
+    are finite signed measures on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
   </lemma>
 
   <\proof>
     \ First <math|Re<around*|(|\<mu\>|)>> and <math|Img<around*|(|\<mu\>|)>>
-    are clearly real valued functions.
+    are clearly <with|font-series|bold|real> valued functions.
 
     <\enumerate>
       <item><math|Re<around*|(|\<mu\>|)><around*|(|\<emptyset\>|)>=Re<around*|(|\<mu\><around*|(|\<emptyset\>|)>|)>=Re<around*|(|0|)>=0>
@@ -24056,8 +24057,6 @@
     <associate|simple functions integral properties (1)|<tuple|19.202|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|19.49|?>>
     <associate|total variation is finite|<tuple|19.329|?>>
-    <associate|total variation of signed measure properties
-    (1)|<tuple|19.321|?>>
     <associate|translation properties|<tuple|19.99|?>>
     <associate|union intersection union of families|<tuple|19.3|?>>
     <associate|union of union of sets (1)|<tuple|19.5|?>>

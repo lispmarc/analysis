@@ -10510,6 +10510,14 @@
         <around*|(|see <text|<reference|inclusion and sup and
         inf>>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sup(S+T)>>>>|<cell|sup<around*|(|<around*|{|<around*|\<\|\|\>|f<around*|(|x|)>|\<\|\|\>>\|x\<in\>X|}>|)>+sup<around*|(|<around*|{|<around*|\<\|\|\>|g<around*|(|x|)>|\<\|\|\>>\|x\<in\>X|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<\|\|\>|f|\<\|\|\>><rsub|s>+<around*|\<\|\|\>|g|\<\|\|\>><rsub|s>>>>>
       </eqnarray*>
+
+      <item>If <math|<around*|\<\|\|\>|f|\<\|\|\>><rsub|s>=0> then
+      <math|sup<around*|(|<around*|{|<around*|\<\|\|\>|f<around*|(|x|)>|\<\|\|\>>\|x\<in\>X|}>|)>=0>
+      so that <math|\<forall\>x\<in\>X> we have
+      <math|0\<leqslant\><around*|\<\|\|\>|f<around*|(|x|)>|\<\|\|\>>\<leqslant\>0>
+      giving <math|f<around*|(|x|)>=0> proving that <math|f=C<rsub|0>> [where
+      <math|C<rsub|0><around*|(|x|)>=0> is the neutral element in
+      <math|\<cal-B\><around*|[|X.Y|]>>
     </enumerate>
   </proof>
 
@@ -20487,7 +20495,6 @@
     <associate|limit of a sum|<tuple|11.356|453>>
     <associate|limit of complex numbers|<tuple|11.357|?>>
     <associate|limit of constant seqeunce|<tuple|11.326|449>>
-    <associate|limit of finite sum|<tuple|11.357|?>>
     <associate|limit point|<tuple|11.18|382>>
     <associate|limit point of sequences|<tuple|11.361|454>>
     <associate|limit preserve inequality|<tuple|11.352|453>>

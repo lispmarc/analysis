@@ -13540,7 +13540,7 @@
     </eqnarray*>
   </definition>
 
-  If <math|A\<in\>\<cal-A\>> then we defined <math|<big|int><rsub|A><rsup|+>f
+  If <math|A\<in\>\<cal-A\>> then we define <math|<big|int><rsub|A><rsup|+>f
   d\<mu\>> by\ 
 
   <\equation*>
@@ -13649,7 +13649,8 @@
     <label|integral of everywhere zero function>Let
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
     space and <math|f\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
-    such that <math|f=0> <math|\<mu\>>-a.e. then <math|<big|int>f d\<mu\>=0>
+    such that <math|f=0> <math|\<mu\>>-a.e. then <math|<big|int><rsup|+>f
+    d\<mu\>=0>
   </example>
 
   <\proof>
@@ -13667,7 +13668,7 @@
     <math|<big|int><rsup|+>g d\<mu\>=0>. So
 
     <\equation*>
-      <around*|{|<big|int>g d\<mu\>\|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]><text|
+      <around*|{|<big|int><rsup|S>g d\<mu\>\|g\<in\>\<cal-S\><rsup|+><around*|[|X,\<cal-A\>|]><text|
       with >\<forall\>x\<in\>X g<around*|(|x|)>\<leqslant\>f<around*|(|x|)>|}>=<around*|{|0|}>
     </equation*>
 
@@ -15959,7 +15960,7 @@
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
     space, <math|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
     then for <math|<big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i>> defined by
-    <math|<around*|(|<big|sum><rsub|i=1><rsup|n>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i><around*|(|x|)>>
+    <math|<around*|(|<big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i>|)><around*|(|x|)>=<big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i><around*|(|x|)>>
     [see <reference|series of positive extented reals is increasing>] we have\ 
 
     <\equation*>
@@ -15991,6 +15992,74 @@
       d\<mu\>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><big|int><rsup|+>f<rsub|i
       > d\<mu\>>>>>
     </eqnarray*>
+  </proof>
+
+  <\corollary>
+    <label|measure construction based on a integral>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measurable
+    space and <math|f\<in\><below|\<cal-M\><rsup|+><around*|[|X,\<b-A\>|]>|>>
+    then <math|\<nu\>:\<cal-A\>\<rightarrow\><around*|[|0,\<infty\>|]>>
+    defined by <math|\<mu\><around*|(|A|)>=<big|int><rsup|+><rsub|A>f
+    d\<mu\>\<equallim\><rsub|def><big|int><rsup|+><around*|(|\<cal-X\><rsub|A>\<cdot\>f|)>d\<mu\>>
+    is a measure on <math|\<cal-A\>>
+  </corollary>
+
+  <\proof>
+    Let's check the conditions for a measure: TODO
+
+    <\enumerate>
+      <item>Let <math|x\<in\>X> then <math|<around*|(|\<cal-X\><rsub|\<emptyset\>>\<cdot\>f|)>=\<cal-X\><rsub|\<emptyset\>><around*|(|x|)>\<cdot\>f<around*|(|x|)>=0>
+      so that <math|\<nu\><around*|(|\<emptyset\>|)>=<big|int><rsup|+>C<rsub|0>
+      d\<mu\>\<equallim\><rsub|<text|<reference|integral of the null
+      function>>>0>
+
+      <item>Let <math|<around*|{|A<rsub|i>|)>i\<in\>\<bbb-N\><rsub|0>\<subseteq\>\<cal-A\>>
+      be pairwise disjoint and define <math|<around*|{|f<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
+      by <math|f<rsub|i>=\<cal-X\><rsub|A<rsub|i>>\<cdot\>f>. Let
+      <math|A=<big|sqcup><rsub|i\<less\><lprime|'>\<bbb-N\><rsub|0>>A<rsub|i>>.
+      Take <math|x\<in\>X> then we have two cases to consider:
+
+      <\description>
+        <item*|<math|x\<in\>X\\A>>then <math|<around*|(|f\<cdot\>\<cal-X\><rsub|A>|)><around*|(|x|)>=0>
+        and <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>>
+        <math|<big|sum><rsub|i=1><rsup|n>f<rsub|i>=<big|sum><rsub|i=1><rsup|n><around*|(|\<cal-X\><rsub|A<rsub|i>><around*|(|x|)>\<cdot\>f<around*|(|x|)>|)>=0>
+        so that\ 
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>f<rsub|i><around*|(|x|)>=<around*|(|X<rsub|A>\<cdot\>f|)><around*|(|x|)>
+        </equation*>
+
+        <item*|<math|x\<in\>A>>Let <math|\<varepsilon\>\<gtr\>0>, as
+        <math|x\<in\>A=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>>
+        there exists a unique <math|N\<in\>\<bbb-N\><rsub|0>> such that
+        <math|x\<in\>A<rsub|N>>. If <math|n\<in\><around*|{|N,\<ldots\>,\<infty\>|}>>
+        then we have
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<around*|\||<around*|(|f\<cdot\>\<cal-X\><rsub|A>|)><around*|(|x|)>-<big|sum><rsub|i=1><rsup|n>f<rsub|i><around*|(|x|)>|\|>>|<cell|=>|<cell|<around*|\||f<around*|(|x|)>-<big|sum><rsub|i=1><rsup|n><around*|(|\<cal-X\><rsub|A<rsub|i>><around*|(|z|)>\<cdot\>f<around*|(|x|)>|)>|\|>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||f<rsub|i><around*|(|x|)>-\<cal-X\><rsub|A<rsub|N>><around*|(|x|)>\<cdot\>f<around*|(|x|)>|\|>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
+        </eqnarray*>
+
+        proving that
+
+        <\equation*>
+          <below|lim|n\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>f<rsub|i><around*|(|x|)>=<around*|(|\<cal-X\><rsub|A>\<cdot\>f|)><around*|(|x|)>
+        </equation*>
+      </description>
+
+      this proves that in all cases
+
+      <\equation*>
+        <big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i><around*|(|x|)>=<around*|(|\<cal-X\><rsub|A>\<cdot\>f|)><around*|(|x|)>
+      </equation*>
+
+      Applying then Beppo Levi gives\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<nu\><around*|(|<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>\<bbb-A\><rsub|i>|)>>|<cell|=>|<cell|\<nu\><around*|(|A|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsup|+><around*|(|\<cal-X\><rsub|A>\<cdot\>f|)>d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsup|+><around*|(|<big|sum><rsub|i=1><rsup|\<infty\>>f<rsub|i>|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|Beppo
+        Levi's Theorem>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><big|int><rsup|+>f<rsub|i>
+        d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><big|int><rsup|+><around*|(|\<cal-X\><rsub|A<rsub|i>>\<cdot\>f|)>d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>v<around*|(|A<rsub|i>|)>>>>>
+      </eqnarray*>
+    </enumerate>
   </proof>
 
   <\lemma>
@@ -16443,8 +16512,9 @@
   </definition>
 
   <\definition>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
-    space then the set of all <math|\<cal-A\>,\<cal-B\><around*|[|\<bbb-C\>|]>>-measurable
+    <label|complex measurable functions (1)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    then the set of all <math|\<cal-A\>,\<cal-B\><around*|[|\<bbb-C\>|]>>-measurable
     function graphs is noted as <math|\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>>
     so\ 
 
@@ -20074,6 +20144,8 @@
 
   <section|Signed and complex measures>
 
+  <subsection|Signed measures>
+
   First we must extend the concept of finite sums in
   <math|<wide|\<bbb-R\>|\<wide-bar\>>> and ensure that they are always well
   defined. The problem is that <math|-\<infty\>+\<infty\>> and
@@ -21125,6 +21197,8 @@
     \;
   </proof>
 
+  <subsection|Hahn and Jordan decomposition>
+
   TODO
 
   <\definition>
@@ -22107,6 +22181,8 @@
     </equation*>
   </proof>
 
+  <subsection|Complex measure>
+
   Just as we defined signed measures, it is possible to define complex
   measures.
 
@@ -22579,6 +22655,8 @@
     </enumerate>
   </proof>
 
+  <subsection|Jordan decomposition>
+
   As every complex measure <math|\<mu\>> can be written as
   <math|\<mu\>=Re<around*|(|\<mu\>|)>+i\<cdot\>Img<around*|(|\<mu\>|)>>, we
   can do a a Jordan Decomposition of the real and imaginair part of
@@ -22854,6 +22932,8 @@
 
     \;
   </proof>
+
+  <subsection|Banach space of signed (complex) measures>
 
   <\definition>
     <index|space of signed measures><index|space of complex measures>Let
@@ -23256,9 +23336,8 @@
     </equation*>
   </proof>
 
-  The next question is of course is if <math|<around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-R\>|)>|\<rangle\>>>
-  and <math|<around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-C\>|)>|\<rangle\>>>
-  are complete, which is indeed true.
+  Next we prove that <math|M<around*|(|X,\<cal-A\>,\<bbb-K\>,<around*|\<\|\|\>||\<\|\|\>>|)>>
+  is a Banach space.
 
   <\theorem>
     Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
@@ -23273,10 +23352,12 @@
     <math|N\<in\>\<bbb-N\><rsub|0>> such that
     <math|\<forall\>n,m\<geqslant\>N> we have
     <math|<around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\><rsub|m>|\<\|\|\>>\<less\>\<varepsilon\>>.
-    Take <math|A\<in\>\<cal-A\>> then we have by <reference|variation of
-    complex measure is a measure> and <reference|variation of complex measure
-    is a measure> that <math|<around*|\||\<mu\><rsub|n>-\<mu\><rsub|m>|\|>>
-    is a measure on <math|\<cal-A\>> so that\ 
+    By <reference|vector space of signed, complex measures>
+    <math|\<mu\><rsub|n>-\<mu\><rsub|m>\<in\>M<around*|(|X,\<b-A\>,\<bbb-K\>|)>>
+    and using <reference|variation of complex measure is a measure> and
+    <reference|variation of complex measure is a measure> it follows that
+    <math|<around*|\||\<mu\><rsub|n>-\<mu\><rsub|m>|\|>> is a measure on
+    <math|\<cal-A\>>. So given <math|A\<in\>\<cal-A\>>
 
     <\equation>
       <label|eq 19.654.038><around*|\||\<mu\><rsub|n>-\<mu\><rsub|m>|\|><around*|(|A|)>\<leqslant\><around*|\||\<mu\><rsub|n>-\<mu\><rsub|m>|\|><around*|(|X|)>=<around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\><rsub|m>|\<\|\|\>>
@@ -23295,7 +23376,7 @@
 
     <\equation>
       <label|eq 19.666.039>\<forall\>\<varepsilon\>\<gtr\>0<text|
-      \ \<exists\>>N<rsub|\<varepsilon\>>\<in\>\<bbb-N\><rsub|i><text| such
+      \ \<exists\>>N<rsub|\<varepsilon\>>\<in\>\<bbb-N\><rsub|0><text| such
       that >\<forall\>n,m\<in\><around*|{|N<rsub|\<varepsilon\>>,\<ldots\>,\<infty\>|}><text|
       and >\<forall\>A\<in\>\<cal-A\><text| we have
       ><around*|\||\<mu\><rsub|n><around*|(|A|)>-\<mu\><rsub|m><around*|(|A|)>|\|>\<less\>\<varepsilon\>
@@ -23323,7 +23404,7 @@
     <math|n\<geqslant\>N<rsub|<frac|\<varepsilon\>|2>>> let
     <math|A\<in\>\<cal-A\>> then as <math|\<mu\><around*|(|A|)>=<below|lim|i\<rightarrow\>\<infty\>>\<mu\><rsub|i><around*|(|A|)>>
     there exists a <math|M<rsub|\<varepsilon\>>> such that
-    <math|\<forall\>m\<in\><around*|{|M,\<ldots\>,\<infty\>|}>>
+    <math|\<forall\>m\<in\><around*|{|M<rsub|\<varepsilon\>>,\<ldots\>,\<infty\>|}>>
     <math|<around*|\||\<mu\><rsub|m><around*|(|A|)>-\<mu\><around*|(|A|)>|\|>\<less\><frac|\<varepsilon\>|2>>,
     let <math|M=max<around*|(|N<rsub|<frac|\<varepsilon\>|2>>,M<rsub|\<varepsilon\>>|)>>
     then\ 
@@ -23332,17 +23413,17 @@
       <tformat|<table|<row|<cell|<around*|\||\<mu\><rsub|n><around*|(|A|)>-\<mu\><around*|(|A|)>|\|>>|<cell|=>|<cell|<around*|\||\<mu\><rsub|n><around*|(|A|)>-\<mu\><rsub|M><around*|(|A|)>+\<mu\><rsub|M><around*|(|A|)>-\<mu\><around*|(|A|)>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<around*|\||\<mu\><rsub|n><around*|(|A|)>-\<mu\><rsub|M><around*|(|A|)>|\|>+<around*|\||\<mu\><rsub|M><around*|(|A|)>-\<mu\><around*|(|A|)>|\|>>>|<row|<cell|>|<cell|\<less\>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>|<row|<cell|>|<cell|\<less\>>|<cell|\<varepsilon\>>>>>
     </eqnarray*>
 
-    hence taking <math|K<rsub|\<varepsilon\>>=N<rsub|<frac|\<varepsilon\>|3>>>
-    we have proved that [uniform convergence]
+    hence, taking <math|K<rsub|\<varepsilon\>>=N<rsub|<frac|\<varepsilon\>|3>>>,
+    we have proved uniform convergence, or in other words
 
     <\equation>
       <label|eq 19.658.038>\<forall\>\<varepsilon\>\<gtr\>0<text| there
       exists a >K<rsub|\<varepsilon\>>\<in\>\<bbb-N\><rsub|0><text| such that
       >\<forall\>n\<in\><around*|{|K<rsub|\<varepsilon\>>,\<ldots\>,\<infty\>|}><text|
-      and >\<forall\>A\<in\>\<cal-A\> <around*|\||\<mu\><rsub|n><around*|(|A|)>-\<mu\><around*|(|A|)>|\|>\<less\>\<varepsilon\>
+      and >\<forall\>A\<in\>\<cal-A\><space|1em><around*|\||\<mu\><rsub|n><around*|(|A|)>-\<mu\><around*|(|A|)>|\|>\<less\>\<varepsilon\>
     </equation>
 
-    Now to prove that <math|\<mu\>> is a complex measure we use
+    Now to prove that <math|\<mu\>> is a signed [or complex measure] we use
     <reference|signed measure condition (1)> for <math|\<bbb-K\>=\<bbb-R\>>
     and <reference|complex measure condition (2)> for
     <math|\<bbb-K\>=\<bbb-C\>>. First we have\ 
@@ -23351,36 +23432,38 @@
       <label|eq 19.673.039>\<mu\><around*|(|\<emptyset\>|)>=<below|lim|i\<rightarrow\>\<infty\>>\<mu\><rsub|i><around*|(|\<emptyset\>|)>=<below|lim|i\<rightarrow\>\<infty\>>0=0
     </equation>
 
-    Further if <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
-    is a finite pairwise disjoint family. Let <math|\<varepsilon\>\<gtr\>0>
-    then <math|\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}>> there exists a
+    Further let <math|<around*|{|B<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\>>
+    be a finite pairwise disjoint family. Let <math|\<varepsilon\>=> then
+    <math|\<forall\>i\<in\><around*|{|1,\<ldots\>,n|}>> there exists a
     <math|N<rsub|i>> such that <math|\<forall\>k\<geqslant\>N<rsub|i>> we
-    have <math|<around*|\||\<mu\><rsub|k><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>\<less\><frac|\<varepsilon\>|n>>.
+    have <math|<around*|\||\<mu\><rsub|k><around*|(|B<rsub|i>|)>-\<mu\><around*|(|B<rsub|i>|)>|\|>\<less\><frac|\<varepsilon\>|n>>.
     Take <math|N=max<around*|(|<around*|{|N<rsub|i>\|i\<in\><around*|{|1,\<ldots\>,n|}>|}>|)>>
     then we have for <math|k\<geqslant\>N> that
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<around*|\||<big|sum><rsub|i=1><rsup|n>\<mu\><rsub|k><around*|(|A<rsub|i>|)>-<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>|\|>>|<cell|=>|<cell|<around*|\||<big|sum><rsub|i=1><rsup|n><around*|(|\<mu\><rsub|k><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|)>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|n><around*|\||\<mu\><rsub|k><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<less\>>|<cell|<big|sum><rsub|i=1><rsup|n><frac|\<varepsilon\>|n>>>|<row|<cell|>|<cell|=>|<cell|\<varepsilon\>>>>>
+      <tformat|<table|<row|<cell|<around*|\||<big|sum><rsub|i=1><rsup|n>\<mu\><rsub|k><around*|(|B<rsub|i>|)>-<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|B<rsub|i>|)>|\|>>|<cell|=>|<cell|<around*|\||<big|sum><rsub|i=1><rsup|n><around*|(|\<mu\><rsub|k><around*|(|B<rsub|i>|)>-\<mu\><around*|(|B<rsub|i>|)>|)>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|n><around*|\||\<mu\><rsub|k><around*|(|B<rsub|i>|)>-\<mu\><around*|(|B<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<less\>>|<cell|<big|sum><rsub|i=1><rsup|n><frac|\<varepsilon\>|n>>>|<row|<cell|>|<cell|=>|<cell|\<varepsilon\>>>>>
     </eqnarray*>
 
     proving that
 
     <\equation>
-      <label|eq 19.674.039><below|lim|k\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<mu\><rsub|k><around*|(|A<rsub|i>|)>=<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>
+      <label|eq 19.674.039><below|lim|k\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<mu\><rsub|k><around*|(|B<rsub|i>|)>=<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|B<rsub|i>|)>
     </equation>
 
     So
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<mu\><around*|(|<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>>|<cell|\<equallim\><rsub|def>>|<cell|<below|lim|k\<rightarrow\>\<infty\>>\<mu\><rsub|k><around*|(|<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|<below|lim|k\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<mu\><rsub|k><around*|(|A<rsub|i>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
-      19.674.039>>>>|<cell|<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>>>>>
+      <tformat|<table|<row|<cell|\<mu\><around*|(|<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>B<rsub|i>|)>>|<cell|\<equallim\><rsub|def>>|<cell|<below|lim|k\<rightarrow\>\<infty\>>\<mu\><rsub|k><around*|(|<big|sqcup><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>B<rsub|i>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|complex
+      measure of finite union>,<reference|signed measure of finite
+      union>>>>|<cell|<below|lim|k\<rightarrow\>\<infty\>><big|sum><rsub|i=1><rsup|n>\<mu\><rsub|k><around*|(|B<rsub|i>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
+      19.674.039>>>>|<cell|<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|B<rsub|i>|)>>>>>
     </eqnarray*>
 
     proving that
 
     <\equation>
-      <label|eq 19.675.039>\<forall\><around*|{|A<rsub|i>|}><rsub|\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\><text|
-      pairwise disjoint we have >\<mu\><around*|(|<big|sqcup><rsub|i=1><rsup|n>A<rsub|i>|)>=<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|A<rsub|i>|)>
+      <label|eq 19.675.039>\<forall\><around*|{|B<rsub|i>|}><rsub|\<in\><around*|{|1,\<ldots\>,n|}>>\<subseteq\>\<cal-A\><text|
+      pairwise disjoint we have >\<mu\><around*|(|<big|sqcup><rsub|i=1><rsup|n>B<rsub|i>|)>=<big|sum><rsub|i=1><rsup|n>\<mu\><around*|(|B<rsub|i>|)>
     </equation>
 
     Let now <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>> be
@@ -23390,12 +23473,12 @@
     \ Using for <math|\<bbb-K\>=\<bbb-R\>> <reference|signed measure property
     (1)> [and the fact that <math|\<forall\>i\<in\>\<bbb-N\><rsub|0>>
     <math|\<mu\><rsub|i>> is finite if <math|\<mu\><rsub|i>\<in\>M<around*|(|X,\<cal-A\>,\<bbb-R\>|)>>]
-    and for <math|\<bbb-K\>=\<bbb-C\>> <reference|complex measure condition
+    and for <math|\<bbb-K\>=\<bbb-C\>> <reference|complex measure property
     (2)> it follows that\ 
 
     <\equation>
       <label|eq 19.676.039>\<forall\>i\<in\>\<bbb-N\><rsub|0><text| we have
-      that ><below|lim|k\<rightarrow\>\<infty\>>\<mu\><rsub|k><around*|(|A|)>=\<mu\><rsub|i><around*|(|<big|cap><rsub|k\<in\>\<bbb-N\><rsub|0>>A<rsub|k>|)>=\<mu\><rsub|i><around*|(|\<emptyset\>|)>=0
+      that ><below|lim|k\<rightarrow\>\<infty\>>\<mu\><rsub|i><around*|(|A<rsub|k>|)>=\<mu\><rsub|i><around*|(|<big|cap><rsub|k\<in\>\<bbb-N\><rsub|0>>A<rsub|k>|)>=\<mu\><rsub|i><around*|(|\<emptyset\>|)>=0
     </equation>
 
     Take <math|\<varepsilon\>\<gtr\>0> then using \ <reference|eq 19.658.038>
@@ -23405,13 +23488,13 @@
     <math|K\<in\>\<bbb-N\><rsub|0>> such that
     <math|\<forall\>n\<in\><around*|{|K,\<ldots\>,\<infty\>|}>>
     <math|<around*|\||\<mu\><rsub|N><around*|(|A<rsub|n>|)>|\|>\<less\><frac|\<varepsilon\>|2>>.
-    Let <math|k\<geqslant\>K> then we have\ 
+    Let <math|n\<geqslant\>K> then we have\ 
 
     <\equation*>
-      <around*|\||\<mu\><around*|(|A<rsub|k>|)>|\|>\<leqslant\><around*|\||\<mu\><around*|(|A<rsub|k>|)>-\<mu\><rsub|N><around*|(|A<rsub|k><rsub|>|)>+\<mu\><rsub|N>*<around*|(|A<rsub|k>|)>|\|>\<leqslant\><around*|\||\<mu\><around*|(|A<rsub|k>|)>-\<mu\><rsub|N><around*|(|A<rsub|k>|)>|\|>+<around*|\||\<mu\><rsub|N><around*|(|A<rsub|k>|)>|\|>\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>\<less\>\<varepsilon\>
+      <around*|\||\<mu\><around*|(|A<rsub|n>|)>|\|>\<leqslant\><around*|\||\<mu\><around*|(|A<rsub|n>|)>-\<mu\><rsub|N><around*|(|A<rsub|n><rsub|>|)>+\<mu\><rsub|N>*<around*|(|A<rsub|n>|)>|\|>\<leqslant\><around*|\||\<mu\><around*|(|A<rsub|n>|)>-\<mu\><rsub|N><around*|(|A<rsub|n>|)>|\|>+<around*|\||\<mu\><rsub|N><around*|(|A<rsub|n>|)>|\|>\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>\<less\>\<varepsilon\>
     </equation*>
 
-    proving that <math|<below|lim|k\<rightarrow\>\<infty\>>\<mu\><around*|(|A<rsub|k>|)>>.
+    proving that <math|<below|lim|k\<rightarrow\>\<infty\>>\<mu\><around*|(|A<rsub|k>|)>=0>.
     To summarize\ 
 
     <\equation>
@@ -23460,20 +23543,21 @@
         Decomposition>>>sup<around*|(|<around*|{|-<around*|(|\<mu\><rsub|n>-\<mu\>|)><around*|(|A|)>\|A\<in\>\<cal-A\>\<wedge\>A\<subseteq\>X|}>|)>\<less\><frac|\<varepsilon\>|2>
       </equation*>
 
-      so that <math|<around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\>|\<\|\|\>>=<around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|+>+<around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|-><around*|(|X|)>\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>=\<varepsilon\>>.
+      so that <math|<around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\>|\<\|\|\>>=<around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|+><around*|(|X|)>+<around*|(|\<mu\><rsub|n>-\<mu\>|)><rsup|-><around*|(|X|)>\<less\><frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>=\<varepsilon\>>.
       Hence\ 
 
       <\equation*>
         \<forall\>\<varepsilon\>\<gtr\>0<text| there exists a
         >K<rsub|<frac|\<varepsilon\>|2>>\<in\>\<bbb-N\><rsub|0><text| such
         that >\<forall\>n\<in\><around*|{|K<rsub|<frac|\<varepsilon\>|2>>,\<ldots\>,\<infty\>|}><text|
-        we have ><around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\>|\<\|\|\>>\<less\><frac|\<varepsilon\>|2>
+        we have ><around*|\<\|\|\>|\<mu\><rsub|n>-\<mu\>|\<\|\|\>>\<less\>\<varepsilon\>
       </equation*>
 
       or\ 
 
       <\equation>
-        <label|eq 19.679.039.1><below|lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\>\<in\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>
+        <label|eq 19.679.039.1><below|lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\>\<in\>M<around*|(|X,\<cal-A\>,\<bbb-R\>|)>
+        using the <around*|\<\|\|\>||\<\|\|\>> norm
       </equation>
 
       <item*|<math|\<bbb-K\>=\<bbb-C\>>>Let <math|\<varepsilon\>\<gtr\>0>
@@ -23499,11 +23583,11 @@
         <label|eq 19.680.039><big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|l>-\<mu\>|\|><around*|(|A<rsub|i>|)>\<less\><frac|\<varepsilon\>|2>
       </equation>
 
-      Take now <math|n\<geqslant\>N> and \ <math|l=max<around*|(|N,K|)>> and
-      <math|n\<geqslant\>N> then we have\ 
+      Take now <math|n\<geqslant\>N> and \ <math|M=max<around*|(|N,K|)>> then
+      we have\ 
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n>-\<mu\>|\|><around*|(|A<rsub|i>|)>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n><around*|(|A<rsub|i>|)>-\<mu\><rsub|l><around*|(|A<rsub|i>|)>+\<mu\><rsub|l><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n><around*|(|A<rsub|i>|)>-\<mu\><rsub|l><around*|(|A<rsub|i>|)>|\|>+<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|l><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
+        <tformat|<table|<row|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n>-\<mu\>|\|><around*|(|A<rsub|i>|)>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n><around*|(|A<rsub|i>|)>-\<mu\><rsub|M><around*|(|A<rsub|i>|)>+\<mu\><rsub|M><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|n><around*|(|A<rsub|i>|)>-\<mu\><rsub|M><around*|(|A<rsub|i>|)>|\|>+<big|sum><rsub|i=1><rsup|k><around*|\||\<mu\><rsub|M><around*|(|A<rsub|i>|)>-\<mu\><around*|(|A<rsub|i>|)>|\|>>>|<row|<cell|>|<cell|\<less\><rsub|<text|<reference|eq
         19.679.039>,<reference|eq 19.680.039>>>>|<cell|<frac|\<varepsilon\>|2>+<frac|\<varepsilon\>|2>>>|<row|<cell|>|<cell|>|<cell|\<varepsilon\><eq-number><label|eq
         19.681.039>>>>>
       </eqnarray*>
@@ -23517,19 +23601,405 @@
       proving that\ 
 
       <\equation>
-        <below|<label|eq 19.683.039.1>lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\>\<in\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>
+        <below|<label|eq 19.683.039.1>lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\>\<in\>M<around*|(|X,\<cal-A\>,\<bbb-K\>|)><text|
+        using the norm ><around*|\<\|\|\>||\<\|\|\>>
       </equation>
     </description>
 
     So in all cases we have that\ 
 
     <\equation*>
-      <below|lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>
+      <below|lim|n\<rightarrow\>\<infty\>>\<mu\><rsub|n>=\<mu\>\<in\>M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>
     </equation*>
 
     proving that <math|\<mu\><around*|\<langle\>|M<around*|(|X,\<cal-A\>,\<bbb-K\>|)>,<around*|\<\|\|\>||\<\|\|\>>|\<rangle\>>>
     is a Banach space.
   </proof>
+
+  <subsection|Integrals bases on signed (complex) measures>
+
+  First we define the set of bounded measurable functions.
+
+  <\definition>
+    <label|bounded measurable functions>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be measurable space
+    then the set of bounded measurable functions
+    <math|\<cal-B\><around*|(|X,\<cal-A\>,\<bbb-R\>|)>> and
+    <math|\<cal-B\><around*|(|X,\<cal-A\>,\<bbb-C\>|)>> are defined as\ 
+
+    <\equation*>
+      \<cal-B\><around*|[|X,\<cal-A\>,,\<bbb-R\>|]>=<around*|{|f\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>\|\<exists\>M\<in\><around*|[|0,\<infty\>|[><text|
+      such that >\<forall\>x\<in\>X<text| we have
+      ><around*|\||f<around*|(|x|)>|\|>\<leqslant\>M|}>
+    </equation*>
+
+    <\equation*>
+      \<cal-B\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>=<around*|{|f\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>\|\<exists\>M\<in\><around*|[|0,\<infty\>|[><text|
+      such that >\<forall\>x\<in\>X<text| we have
+      ><around*|\||f<around*|(|x|)>\<leqslant\>M|\|>|}>
+    </equation*>
+
+    A general notation is <math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-K\>|]>>
+    where <math|\<bbb-K\>=\<bbb-R\>> or <math|\<bbb-K\>=\<bbb-C\>>.
+  </definition>
+
+  <\lemma>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
+    space then we have\ 
+
+    <\enumerate>
+      <item><math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>> is a real
+      vector space
+
+      <item><math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>> is complex
+      vector space\ 
+
+      <item><math|<around*|\<langle\>|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-K\>|]>,<around*|\<\|\|\>||\<\|\|\>><rsub|\<infty\>>|\<rangle\>>>
+      where <math|<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>=sup<around*|(|<around*|{|<around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>|)>>
+      forms a normed space.
+    </enumerate>
+
+    <\proof>
+      \ 
+
+      <\enumerate>
+        <item>Let <math|f,g\<in\>\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>
+        and <math|\<alpha\>\<in\>\<bbb-R\>> then
+        <math|f,g\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>> and
+        <math|\<exists\>M<rsub|1>,M<rsub|2>\<in\><around*|[|0,\<infty\>|[>>
+        such that <math|\<forall\>x\<in\>X> we have
+        <math|<around*|\||f<around*|(|x|)>|\|>\<less\>M<rsub|1>\<wedge\><around*|\||g<around*|(|x|)>|\|>\<less\>M<rsub|2>>.
+        Using <reference|measurable functions properties (4)> if follows that
+        <math|f+g,\<alpha\>\<cdot\>f\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>.
+        Further given <math|x\<in\>X> we have
+        <math|<around*|\||<around*|(|f+g|)><around*|(|x|)>|\|>\<leqslant\><around*|\||f<around*|(|x|)>|\|>+<around*|\||g<around*|(|x|)>|\|>\<leqslant\>M<rsub|1>+M<rsub|2>>.
+        So we have that <math|f+g,\<alpha\>\<cdot\>f\<in\>\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>.
+        Using <reference|vector space of functions to a vector space> and
+        <reference|subspace of a vector space> we have that
+        <math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>> is a real vector
+        space.
+
+        <item>Let <math|f,g\<in\>\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>>
+        and <math|\<alpha\>\<in\>\<bbb-C\>> then
+        <math|f,g\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>> and
+        <math|\<exists\>M<rsub|1>,M<rsub|2>\<in\><around*|[|0,\<infty\>|[>>
+        such that <math|\<forall\>x\<in\>X> we have
+        <math|<around*|\||f<around*|(|x|)>|\|>\<less\>M<rsub|1>\<wedge\><around*|\||g<around*|(|x|)>|\|>\<less\>M<rsub|2>>.
+        Using <reference|complex measurable functions properties> if follows
+        that <math|f+g,\<alpha\>\<cdot\>f\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>>.
+        Further given <math|x\<in\>X> we have
+        <math|<around*|\||<around*|(|f+g|)><around*|(|x|)>|\|>\<leqslant\><around*|\||f<around*|(|x|)>|\|>+<around*|\||g<around*|(|x|)>|\|>\<leqslant\>M<rsub|1>+M<rsub|2>>.
+        So we have that <math|f+g,\<alpha\>\<cdot\>f\<in\>\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>>.
+        Using <reference|vector space of functions to a vector space> and
+        <reference|subspace of a vector space> we have that
+        <math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>> is a real vector
+        space.
+
+        <item>Let <math|f\<in\>\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-K\>|]>>
+        then <math|\<exists\>M\<in\><around*|[|0,\<infty\>|[>> such that
+        <math|\<forall\>x\<in\>X> <math|<around*|\||f<around*|(|x|)>|\|>\<leqslant\>M,>
+        hence <math|<around*|{|<around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>\<subseteq\>\<bbb-R\>>
+        is bounded above and as <math|f<around*|(|0|)>\<in\><around*|{|<around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>>
+        we have that <math|<around*|{|<around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>\<neq\>\<emptyset\>>.
+        <math|>Using <reference|the reals are conditional complete> it
+        follows then that\ 
+
+        <\equation*>
+          <around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>=sup<around*|(|<around*|{|<around*|\||f<around*|(|x|)>|\|><around*|\||x\<in\>X|\|>|}>|)>
+          exists\ 
+        </equation*>
+
+        To prove that <math|<around*|\<\|\|\>||\<\|\|\>><rsub|\<infty\>>> is
+        a norm, consider for <math|f,g\<in\>\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-K\>|]>>
+        and <math|\<alpha\>\<in\>\<bbb-K\>>:
+
+        <\enumerate>
+          <item> <math|0\<leqslant\><around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>>\ 
+
+          <item>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|\<\|\|\>|f+g|\<\|\|\>><rsub|\<infty\>>>|<cell|=>|<cell|sup<around*|(|<around*|{|<around*|\||<around*|(|f+g|)><around*|(|x|)>|\|>x\<in\>X|}>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|sup
+            of set of bigger elements>>>>|<cell|sup<around*|(|<around*|{|<around*|\||f<around*|(|x|)>|\|>+<around*|\||g<around*|(|x|)>|\|>\|x\<in\>X|}>|)>>>|<row|<cell|>|<cell|\<leqslant\><rsub|<text|<reference|sup(S+T)>>>>|<cell|sup<around*|(|<around*|{|<around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>|)>+sup<around*|(|<around*|{|<around*|\||g<around*|(|x|)>|\|>\|x\<in\>X|}>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>+<around*|\<\|\|\>|g|\<\|\|\>><rsub|\<infty\>>>>>>
+          </eqnarray*>
+
+          <item>\ 
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|\<\|\|\>|\<alpha\>\<cdot\>f|\<\|\|\>><rsub|\<infty\>>>|<cell|=>|<cell|sup<around*|(|<around*|{|<around*|\||<around*|(|\<alpha\>\<cdot\>f|)><around*|(|x|)>|\|>\|x\<in\>X|}>|)>>>|<row|<cell|>|<cell|=>|<cell|sup<around*|(|<around*|{|<around*|\||\<alpha\>|\|>\<cdot\><around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sup(a.S)>>>>|<cell|<around*|\||\<alpha\>|\|>\<cdot\>sup<around*|(|<around*|{|<around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<alpha\>|\|>\<cdot\><around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>>>>>
+          </eqnarray*>
+
+          <item>If <math|<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>=0>
+          then <math|sup<around*|(|<around*|{|<around*|\||f*<around*|(|x|)>|\|>\|x\<in\>X|}>|)>=0>
+          so that <math|\<forall\>x\<in\>X>
+          <math|<around*|\||f<around*|(|x|)>|\|>\<leqslant\>0> hence
+          <math|f<around*|(|x|)>=0>, proving that <math|f=C<rsub|0>> the
+          neutral element in <math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-K\>|]>>.
+        </enumerate>
+      </enumerate>
+    </proof>
+  </lemma>
+
+  Before we can define the integrals on <math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>
+  we need the following lemma.
+
+  <\lemma>
+    <label|bounded measurable function properties (1)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
+    space where <math|\<mu\>> is a finite measure then
+    <math|\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>\<subseteq\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>|]>>
+    [if <math|\<mu\>> is a finite measure then every boounded measurable
+    function is <math|\<mu\>>-integrable] and <math|<big|int>f
+    d\<mu\>\<leqslant\><around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>\<cdot\>\<mu\><around*|(|X|)>>
+  </lemma>
+
+  <\proof>
+    If <math|f\<in\>\<cal-B\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>> then
+    <math|f\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>> and
+    <math|<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>=sup<around*|(|<around*|{|<around*|\||f<around*|(|x|)>|\|>\|x\<in\>X|}>|)>>
+    exists Hence <math|<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>=sup<around*|(|<around*|{|f<around*|(|x|)>\||}>|)>>.
+    Define <math|g:X\<rightarrow\>\<bbb-R\>> by
+    <math|g<around*|(|x|)>=<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>=<around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>\<cdot\>\<cal-X\><rsub|X>>
+    so that <math|g\<in\>\<cal-S\><around*|[|X,\<cal-A\>|]>> then
+    <math|<big|int><rsup|+>g d\<mu\>\<equallim\><rsub|<text|<reference|simple
+    function integral extension>>><big|int><rsup|S><around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>\<cdot\>\<cal-X\><rsub|X>
+    d\<mu\>=<around*|\<\|\|\>|f|\<\|\|\>>+\<infty\>\<cdot\>\<mu\><around*|(|X|)>\<less\>\<infty\>>.
+    Hence using <reference|integrability of non negative functions (2)> we
+    have that <math|g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>.
+    Applying then <reference|measurable function covered by a integrable
+    function> on <math|<around*|\||f|\|>\<leqslant\><around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>\<cdot\>\<cal-X\><rsub|A>=g>
+    proves that\ 
+
+    <\equation*>
+      f\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>|]><text| and ><big|int>f
+      d\<mu\>\<leqslant\><around*|\<\|\|\>|f|\<\|\|\>><rsub|\<infty\>>\<cdot\>\<mu\><around*|(|X|)>
+    </equation*>
+  </proof>
+
+  <\definition>
+    <label|integral of a signed measure><index|integral of a signed
+    measure>Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a
+    measurable space, <math|\<mu\>> a <with|font-series|bold|finite>
+    <with|font-series|bold|measure> on <math|\<cal-A\>> and
+    <math|f\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>> then\ 
+
+    <\equation*>
+      <big|int>f d\<mu\>=<big|int>f d\<mu\><rsup|+>-<big|int>f
+      d\<mu\><rsup|->
+    </equation*>
+
+    where <math|<around*|(|\<mu\><rsup|+>,\<mu\><rsup|->|)>> is the Jordan
+    decomposition of <math|\<mu\> > [see <reference|Jordon Decomposition>]/
+  </definition>
+
+  <\proof>
+    We must make sure that this definition make sens. First as <math|\<mu\>>
+    is finite we have as <math|\<mu\>=\<mu\><rsup|+>-\<nu\><rsup|->> that
+    <math|\<mu\><rsup|+>,\<mu\><rsup|->> are finte. So we can apply
+    <reference|bounded measurable function properties (1)> proving that
+    <math|<big|int>f d\<mu\><rsup|+>>, <math|<big|int>f d\<mu\><rsup|->>
+    exists. Using the Jordan Decomposition Theorem ensures also that the
+    definition makes sense.
+  </proof>
+
+  We have a similar definition for complex measures\ 
+
+  <\definition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
+    space, <math|\<mu\>> a complex measure and
+    <math|f\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-C\>|]>> then\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>f
+      d\<mu\>>|<cell|\<equallim\><rsub|def>>|<cell|<big|int>f
+      d<around*|(|Re<around*|(|\<mu\>|)>|)>+i\<cdot\><big|int>f
+      d<around*|(|Img<around*|(|\<mu\>|)>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|Jordan
+      Decomposition of a complex measure> and <reference|integral of a signed
+      measure>>>>|<cell|<big|int>f d\<mu\><rsub|r><rsup|+>-<big|int>f
+      d\<mu\><rsup|-><rsub|r>+i\<cdot\><around*|(|<big|int>f
+      d\<mu\><rsup|+><rsub|c>-<big|int>f d\<mu\><rsup|-><rsub|c>|)>>>>>
+    </eqnarray*>
+  </definition>
+
+  <subsection|Dadon-Nikodym Theorem>
+
+  <\definition>
+    <label|absolute continuity><index|<math|\<mu\>\<ll\>\<nu\>>>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable space
+    with two measures <math|\<mu\>,\<nu\>> then <math|\<nu\>> is
+    <with|font-series|bold|absolute continuous with respect to> <math|\<mu\>>
+    iff\ 
+
+    <\equation*>
+      \<forall\>A\<in\>\<cal-A\><text| such that
+      >\<mu\><around*|(|A|)>=0<text| we have >\<nu\><around*|(|A|)>=0
+    </equation*>
+
+    A shorter notation for the above is\ 
+
+    <\equation*>
+      \<nu\>\<ll\>\<mu\>
+    </equation*>
+  </definition>
+
+  <\example>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
+    measure space and <math|f\<in\><wide|\<cal-M\><rsup|+><around*|[|X,\<cal-A\>|]>|\<wide-bar\>>>
+    then <math|the measure \<nu\>:\<cal-A\>\<rightarrow\><around*|[|0,\<infty\>|]>>
+    defined by <math|\<nu\><around*|(|A|)>=<big|int><rsup|+><rsub|A>f
+    d\<mu\>=<big|int><rsup|+><around*|(|\<cal-X\><rsub|A>\<cdot\>f|)>d\<mu\>>
+    [see <reference|measure construction based on a integral>] is absolute
+    continous with respect to <math|\<mu\>> or in other words
+    <math|\<nu\>\<ll\>\<mu\>>
+  </example>
+
+  <\proof>
+    Let <math|A\<in\>\<cal-A\>> be such that <math|\<mu\><around*|(|A|)>=0>
+    then if <math|x\<in\><around*|{|x\<in\>X\|<around*|(|f\<cdot\>\<cal-X\><rsub|A>|)><around*|(|x|)>\<neq\>0|}>>
+    we must have that <math|x\<in\>A> [for if <math|x\<in\>X\\A> then
+    <math|<around*|(|\<cal-X\><rsub|A>\<cdot\>f|)>=\<cal-X\><rsub|A><around*|(|x|)>\<cdot\>f<around*|(|x|)>=0>]
+    so that <math|\<cal-X\><rsub|A>\<cdot\>f=0> is <math|\<mu\>>-a.e.. Using
+    <reference|integral of everywhere zero function> we have that
+    <math|\<nu\><around*|(|A|)>=<big|int><rsup|+><around*|(|\<cal-X\><rsub|A>\<cdot\>f|)>d\<mu\>=0>.
+  </proof>
+
+  The following lemma explains the name absolute coninuity as it is similar
+  to the <math|\<varepsilon\>> <math|\<delta\>> definition of continuity of
+  functions.
+
+  <\lemma>
+    <label|absolute continuity conditions (1)>Let
+    <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
+    space and let <math|\<nu\>> be <with|font-series|bold|finite> measure on
+    <math|\<cal-A\>> then\ 
+
+    <\equation*>
+      \<nu\>\<ll\>\<mu\><text| if and only if
+      >\<forall\>\<varepsilon\>\<gtr\>0<text|
+      >\<exists\>\<delta\>\<gtr\>0<text| such that
+      >\<forall\>A\<in\>\<cal-A\><text| with
+      >\<mu\><around*|(|A|)>\<less\>\<delta\><text| we have
+      >\<nu\><around*|(|A|)>\<less\>\<varepsilon\>
+    </equation*>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\description>
+      <item*|<math|\<Leftarrow\>>>Let <math|A\<in\>\<cal-A\>> such that
+      <math|\<mu\><around*|(|A|)>=0> and assume that
+      <math|0\<less\>\<nu\><around*|(|A|)>>, then there exists a
+      <math|\<delta\>\<gtr\>0> such if <math|\<mu\><around*|(|A|)>\<less\>\<delta\>>
+      then <math|\<nu\><around*|(|A|)>\<less\>\<nu\><around*|(|A|)>>, which,
+      as <math|\<mu\><around*|(|A|)>=0\<less\>\<delta\>>, leads to the
+      contradiction <math|\<nu\><around*|(|A|)>\<less\>\<nu\><around*|(|A|)>>,
+      hence <math|\<nu\><around*|(|A|)>=0>. So we have that\ 
+
+      <\equation*>
+        \<nu\>\<ll\>\<mu\>
+      </equation*>
+
+      \ <item*|<math|\<Rightarrow\>>>We prove this by contradiction, so
+      assume that there exists a <math|\<varepsilon\>\<gtr\>0> such that
+      <math|\<forall\>\<delta\>\<gtr\>0> there exists a
+      <math|A<rsub|\<delta\>>\<in\>\<cal-A\>> with
+      <math|\<mu\><around*|(|A<rsub|\<delta\>>|)>\<less\>\<delta\>> such that
+      <math|\<varepsilon\>\<leqslant\>\<nu\><around*|(|A|)>>. More specific
+      <math|\<forall\>k\<in\>\<bbb-N\><rsub|0>> there exists a
+      <math|A<rsub|k>\<in\>\<cal-A\>> with
+      <math|\<mu\><around*|(|A<rsub|k>|)>\<less\><frac|1|2<rsup|k>>> such
+      that <math|\<varepsilon\>\<leqslant\>\<nu\><around*|(|A<rsub|k>|)>>.
+      Now if <math|n\<in\>\<bbb-N\><rsub|0>> we have either\ 
+
+      <\description>
+        <item*|<math|n=1>>then
+
+        <\equation*>
+          <big|sum><rsub|k=n><rsup|\<infty\>><frac|1|2<rsup|k>>=<big|sum><rsub|k=1><rsup|\<infty\>><frac|1|2<rsup|k>>\<equallim\><rsub|<text|<reference|exaple
+          of a convergent serie>>>1=<frac|1|2<rsup|n-1>>
+        </equation*>
+
+        <item*|<math|n\<in\>\<bbb-N\><rsub|0>\\<around*|{|1|}>>>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|1>|<cell|\<equallim\><rsub|<text|<reference|exaple
+          of a convergent serie>>>>|<cell|<big|sum><rsub|k=1><rsup|\<infty\>><frac|1|k>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|subserie
+          property>>>>|<cell|<big|sum><rsub|k=1><rsup|n-1><frac|1|2<rsup|k>>+<big|sum><rsub|k=n><rsup|\<infty\>><frac|1|2<rsup|k>>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|sum
+          of powers theorem>>>>|<cell|<frac|1|2>\<cdot\><around*|(|<frac|1-<frac|1|2<rsup|n-1>>|1-<frac|1|2>>|)>+<big|sum><rsub|k=n><rsup|\<infty\>><frac|1|2<rsup|k>>>>|<row|<cell|>|<cell|=>|<cell|1-<frac|1|2<rsup|n-1>>+<big|sum><rsub|k=n><rsup|\<infty\>><frac|1|2<rsup|k>>>>>>
+        </eqnarray*>
+
+        proving that\ 
+
+        <\equation*>
+          <big|sum><rsub|k=n><rsup|\<infty\>><frac|1|2<rsup|k>>=<frac|1|2<rsup|n-1>>
+        </equation*>
+      </description>
+
+      So in all cases we have\ 
+
+      <\equation>
+        <label|eq 19.684.039>\<forall\>n\<in\>\<bbb-N\><rsub|0><text|
+        ><big|sum><rsub|k=n><rsup|\<infty\>><frac|1|2<rsup|k>>=<frac|1|2<rsup|n-1>>
+      </equation>
+
+      Define <math|<around*|{|B<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>
+      by <math|B<rsub|i>=<big|cup><rsub|j\<in\><around*|{|i,\<ldots\>,\<infty\>|}>>A<rsub|i>>
+      and <math|B=<big|cap><rsub|i\<in\>\<bbb-N\><rsub|0>>B<rsub|i>> then we
+      have <math|\<forall\>i\<in\>B<rsub|i+1>\<subseteq\>B<rsub|i>>, using
+      the fact <math|\<mu\><around*|(|A<rsub|>|)>\<leqslant\><frac|1|2<rsup|1>>\<less\>\<infty\>>
+      we can apply <reference|measure properties (2)> giving\ 
+
+      <\equation>
+        <label|eq 19.685.039>\<mu\><around*|(|B|)>=\<mu\>*<around*|(|<big|cap><rsub|i\<in\>\<bbb-N\><rsub|0>>B<rsub|i>|)>=<below|lim|i\<rightarrow\>\<infty\>>\<mu\><around*|(|B<rsub|i>|)><text|>
+      </equation>
+
+      and using the fact that <math|\<mu\>> is finite we have by
+      <reference|measure properties (2)> again
+
+      <\equation>
+        <label|eq 19.686.039>\<nu\><around*|(|B|)>=\<mu\>*<around*|(|<big|cap><rsub|i\<in\>\<bbb-N\><rsub|0>>B<rsub|i>|)>=<below|lim|i\<rightarrow\>\<infty\>>\<nu\><around*|(|B<rsub|i>|)>=inf<around*|(|<around*|{|\<nu\><around*|(|B<rsub|i>|)>\|i\<in\>\<bbb-N\><rsub|>|}>|)>
+      </equation>
+
+      Further we have that given <math|n\<in\>\<bbb-N\><rsub|0>>
+
+      <\equation*>
+        \<mu\><around*|(|B<rsub|n>|)>=\<mu\><around*|(|<big|cup><rsub|k\<in\><around*|{|n,\<ldots\>,\<infty\>|}>>A<rsub|k>|)>\<leqslant\><big|sum><rsub|k=n><rsup|\<infty\>>\<mu\><around*|(|A<rsub|k>|)>\<leqslant\><big|sum><rsub|k=n><rsup|\<infty\>><frac|1|2<rsup|k>>=<frac|1|2<rsup|n-1>>
+      </equation*>
+
+      so that <math|<below|lim|n\<rightarrow\>\<infty\>>\<mu\><around*|(|B<rsub|i>|)>=0>.
+      Combining this with <reference|eq 19.685.039> proves that\ 
+
+      <\equation>
+        <label|eq 19.687.039>\<mu\><around*|(|B|)>=0
+      </equation>
+
+      Now as <math|\<forall\>n\<in\>\<bbb-N\><rsub|0>> we have
+      <math|\<nu\><around*|(|B<rsub|n>|)>=\<nu\><around*|(|<big|cup><rsub|i=n><rsup|\<infty\>>A<rsub|i>|)>\<geqslant\>\<mu\><around*|(|A<rsub|n>|)>\<geqslant\>\<varepsilon\>>
+      so that <math|inf<around*|(|<around*|{|\<nu\><around*|(|B<rsub|i>|)>\|i\<in\>\<bbb-N\><rsub|0>|}>|)>\<geqslant\>\<varepsilon\>\<gtr\>0>,
+      which using <reference|eq 19.686.039> proves that
+      <math|\<nu\><around*|(|B|)>\<gtr\>0>. Now as
+      <math|\<mu\><around*|(|B|)>=0> we have from <math|\<nu\>\<ll\>\<mu\>>
+      that <math|\<nu\><around*|(|B|)>=0> contradiction
+      <math|\<nu\><around*|(|B|)>\<gtr\>0>. So we must have that\ 
+
+      <\equation*>
+        \<forall\>\<varepsilon\>\<gtr\>0<text| there exists a
+        <math|\<delta\>\<gtr\>0<text| such that
+        <math|\<forall\>A\<in\>\<cal-A\><text| with
+        >\<mu\><around*|(|A|)>\<less\>\<delta\><text| we have
+        >\<nu\><around*|(|A|)>\<less\>\<varepsilon\>>>>>
+      </equation*>
+    </description>
+  </proof>
+
+  \;
+
+  \;
+
+  \ 
+
+  \;
 
   \;
 
@@ -23551,7 +24021,7 @@
 <\initial>
   <\collection>
     <associate|chapter-nr|18>
-    <associate|page-first|754>
+    <associate|page-first|757>
     <associate|page-medium|papyrus>
     <associate|section-nr|1>
     <associate|subsection-nr|3>
@@ -23574,7 +24044,7 @@
     <associate|Borel measure space|<tuple|19.93|?>>
     <associate|Borel sets in R^n are transaltion invariant|<tuple|19.104|?>>
     <associate|Caratheodore|<tuple|19.79|?>>
-    <associate|Complex Measure|<tuple|19.322|?>>
+    <associate|Complex Measure|<tuple|19.323|?>>
     <associate|Dunkin class|<tuple|19.130|?>>
     <associate|Dyadic cube properties|<tuple|19.48|?>>
     <associate|Dyadic cubes|<tuple|19.46|?>>
@@ -23583,25 +24053,25 @@
     <associate|Dynkin class and uniqueness of measures|<tuple|19.139|?>>
     <associate|Dynkin class generated|<tuple|19.134|?>>
     <associate|Dynkin classes and sigma algebra|<tuple|19.138|?>>
-    <associate|Fatou's Lemma|<tuple|19.244|?>>
-    <associate|Hahn Decomposition|<tuple|19.316|?>>
-    <associate|Hahn Decomposition Theorem|<tuple|19.318|?>>
-    <associate|Hahn Decomposition uniqueness|<tuple|19.317|?>>
-    <associate|Holder's Inequality|<tuple|19.276|?>>
-    <associate|Jordan Decomposition Theorem|<tuple|19.319|?>>
-    <associate|Jordan Decomposition of a complex measure|<tuple|19.327|?>>
-    <associate|Jordon Decomposition|<tuple|19.320|?>>
-    <associate|L^OO properties|<tuple|19.265|?>>
-    <associate|L^p densitity|<tuple|19.296|?>>
-    <associate|L^p densitity (1)|<tuple|19.291|?>>
-    <associate|L^p densitity (2)|<tuple|19.293|?>>
-    <associate|L^p is a normed space|<tuple|19.284|?>>
-    <associate|L^p is a vector space|<tuple|19.268|?>>
-    <associate|L^p norm (1)|<tuple|19.269|?>>
-    <associate|L^p norm (2)|<tuple|19.274|?>>
-    <associate|L^p properties (1)|<tuple|19.263|?>>
-    <associate|L^p=L|<tuple|19.259|?>>
-    <associate|L^p[X,A,m,K] g\<less\>=f|<tuple|19.261|?>>
+    <associate|Fatou's Lemma|<tuple|19.245|?>>
+    <associate|Hahn Decomposition|<tuple|19.317|?>>
+    <associate|Hahn Decomposition Theorem|<tuple|19.319|?>>
+    <associate|Hahn Decomposition uniqueness|<tuple|19.318|?>>
+    <associate|Holder's Inequality|<tuple|19.277|?>>
+    <associate|Jordan Decomposition Theorem|<tuple|19.320|?>>
+    <associate|Jordan Decomposition of a complex measure|<tuple|19.328|?>>
+    <associate|Jordon Decomposition|<tuple|19.321|?>>
+    <associate|L^OO properties|<tuple|19.266|?>>
+    <associate|L^p densitity|<tuple|19.297|?>>
+    <associate|L^p densitity (1)|<tuple|19.292|?>>
+    <associate|L^p densitity (2)|<tuple|19.294|?>>
+    <associate|L^p is a normed space|<tuple|19.285|?>>
+    <associate|L^p is a vector space|<tuple|19.269|?>>
+    <associate|L^p norm (1)|<tuple|19.270|?>>
+    <associate|L^p norm (2)|<tuple|19.275|?>>
+    <associate|L^p properties (1)|<tuple|19.264|?>>
+    <associate|L^p=L|<tuple|19.260|?>>
+    <associate|L^p[X,A,m,K] g\<less\>=f|<tuple|19.262|?>>
     <associate|Lebesgue measurability is transalation
     invariant|<tuple|19.102|?>>
     <associate|Lebesgue measurable sets alternatives|<tuple|19.92|?>>
@@ -23611,21 +24081,23 @@
     <associate|Lebesgue measure space on R^n|<tuple|19.90|?>>
     <associate|Lebesgue measure spaces are complete|<tuple|19.112|?>>
     <associate|Lebesgue space and compact sets|<tuple|19.96|?>>
-    <associate|Lebesgue's Dominated Convergence Theorem|<tuple|19.247|?>>
+    <associate|Lebesgue's Dominated Convergence Theorem|<tuple|19.248|?>>
     <associate|Lower half spaces|<tuple|19.55|?>>
-    <associate|M(X,A,C) is a normed space|<tuple|19.334|?>>
-    <associate|M(X,A,R) is a normed space|<tuple|19.333|?>>
-    <associate|Minkowski's ineqaultiy|<tuple|19.277|?>>
-    <associate|N_p characterization|<tuple|19.281|?>>
-    <associate|N_p is a subspace|<tuple|19.282|?>>
+    <associate|M(X,A,C) is a normed space|<tuple|19.335|?>>
+    <associate|M(X,A,R) is a normed space|<tuple|19.334|?>>
+    <associate|Minkowski's ineqaultiy|<tuple|19.278|?>>
+    <associate|N_p characterization|<tuple|19.282|?>>
+    <associate|N_p is a subspace|<tuple|19.283|?>>
     <associate|R can be covered by open intervals|<tuple|19.82|?>>
     <associate|R^n is a unin of rectangles|<tuple|19.86|?>>
-    <associate|Total variation of complex measure|<tuple|19.328|?>>
+    <associate|Total variation of complex measure|<tuple|19.329|?>>
     <associate|[0,1[ as a union of Dyadic intervals|<tuple|19.105|?>>
     <associate|[0,1[^n as a union of half open rectangles|<tuple|19.106|?>>
     <associate|[a,b] part of intervals with arbitrary small
-    length|<tuple|19.292|?>>
-    <associate|[f]_p|<tuple|19.283|?>>
+    length|<tuple|19.293|?>>
+    <associate|[f]_p|<tuple|19.284|?>>
+    <associate|absolute continuity|<tuple|19.342|?>>
+    <associate|absolute continuity conditions (1)|<tuple|19.344|?>>
     <associate|algebra equivalent definitions|<tuple|19.9|?>>
     <associate|algebra of sets|<tuple|19.8|?>>
     <associate|almost complete|<tuple|19.185|?>>
@@ -23636,14 +24108,23 @@
     <associate|aproximate halfopen by open|<tuple|19.94|?>>
     <associate|auto-1|<tuple|19|?>>
     <associate|auto-10|<tuple|19.2.2|?>>
-    <associate|auto-100|<tuple|<with|mode|<quote|math>|<around*|\||\<mu\>|\|>>|?>>
-    <associate|auto-101|<tuple|complex measure|?>>
-    <associate|auto-102|<tuple|variation of a complex measure|?>>
-    <associate|auto-103|<tuple|total variation of a complex measure|?>>
-    <associate|auto-104|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>|?>>
-    <associate|auto-105|<tuple|space of signed measures|?>>
-    <associate|auto-106|<tuple|space of complex measures|?>>
+    <associate|auto-100|<tuple|variation of a measure|?>>
+    <associate|auto-101|<tuple|total variation of a measure|?>>
+    <associate|auto-102|<tuple|<with|mode|<quote|math>|<around*|\||\<mu\>|\|>>|?>>
+    <associate|auto-103|<tuple|19.8.3|?>>
+    <associate|auto-104|<tuple|complex measure|?>>
+    <associate|auto-105|<tuple|19.8.4|?>>
+    <associate|auto-106|<tuple|variation of a complex measure|?>>
+    <associate|auto-107|<tuple|total variation of a complex measure|?>>
+    <associate|auto-108|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>|?>>
+    <associate|auto-109|<tuple|19.8.5|?>>
     <associate|auto-11|<tuple|19.2.3|?>>
+    <associate|auto-110|<tuple|space of signed measures|?>>
+    <associate|auto-111|<tuple|space of complex measures|?>>
+    <associate|auto-112|<tuple|19.8.6|?>>
+    <associate|auto-113|<tuple|integral of a signed measure|?>>
+    <associate|auto-114|<tuple|19.8.7|?>>
+    <associate|auto-115|<tuple|<with|mode|<quote|math>|\<mu\>\<ll\>\<nu\>>|?>>
     <associate|auto-12|<tuple|<with|mode|<quote|math>|\<cal-R\><rsup|n>>|?>>
     <associate|auto-13|<tuple|Dyadic cubes|?>>
     <associate|auto-14|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n><rsub|m>>|?>>
@@ -23737,40 +24218,43 @@
     <associate|auto-9|<tuple|19.2.1|?>>
     <associate|auto-90|<tuple|<with|mode|<quote|math>|S<rsup|p><around*|[|X.\<cal-A\>,\<mu\>,\<bbb-R\>|]>>|?>>
     <associate|auto-91|<tuple|19.8|?>>
-    <associate|auto-92|<tuple|signed measure|?>>
-    <associate|auto-93|<tuple|finite signed measure|?>>
-    <associate|auto-94|<tuple|negative set for
+    <associate|auto-92|<tuple|19.8.1|?>>
+    <associate|auto-93|<tuple|signed measure|?>>
+    <associate|auto-94|<tuple|finite signed measure|?>>
+    <associate|auto-95|<tuple|19.8.2|?>>
+    <associate|auto-96|<tuple|negative set for
     <with|mode|<quote|math>|\<mu\>>|?>>
-    <associate|auto-95|<tuple|positive set for
+    <associate|auto-97|<tuple|positive set for
     <with|mode|<quote|math>|\<mu\>>|?>>
-    <associate|auto-96|<tuple|Hah Decomposition|?>>
-    <associate|auto-97|<tuple|Jordon Decomposition|?>>
-    <associate|auto-98|<tuple|variation of a measure|?>>
-    <associate|auto-99|<tuple|total variation of a measure|?>>
+    <associate|auto-98|<tuple|Hah Decomposition|?>>
+    <associate|auto-99|<tuple|Jordon Decomposition|?>>
     <associate|borel algebra on the extebded reals (1)|<tuple|19.30|?>>
     <associate|borel algebra on the extended real numbers
     (2)|<tuple|19.31|?>>
     <associate|borel algebra on the extended reals (3)|<tuple|19.32|?>>
     <associate|boundaries of a rectangle are unique|<tuple|19.39|?>>
     <associate|bounded intervals|<tuple|19.22|?>>
+    <associate|bounded measurable function properties (1)|<tuple|19.339|?>>
+    <associate|bounded measurable functions|<tuple|19.337|?>>
     <associate|characteristic function is measurable|<tuple|19.161|?>>
     <associate|complete measures|<tuple|19.110|?>>
-    <associate|completeness of L^infinity|<tuple|19.288|?>>
-    <associate|completeness of L^p|<tuple|19.289|?>>
+    <associate|completeness of L^infinity|<tuple|19.289|?>>
+    <associate|completeness of L^p|<tuple|19.290|?>>
     <associate|completion lemma|<tuple|19.113|?>>
     <associate|completion of Borelset label|<tuple|19.116|?>>
     <associate|completion of a measure|<tuple|19.114|?>>
     <associate|completion of a measure space|<tuple|19.115|?>>
-    <associate|complex integral properties|<tuple|19.254|?>>
-    <associate|complex integral properties (2)|<tuple|19.257|?>>
-    <associate|complex measurable functions|<tuple|19.251|?>>
-    <associate|complex measurable functions properties|<tuple|19.252|?>>
-    <associate|complex measure|<tuple|19.322|?>>
-    <associate|complex measure (real, imaginair)|<tuple|19.324|?>>
-    <associate|complex measure condition (2)|<tuple|19.326|?>>
-    <associate|complex measure of finite union|<tuple|19.323|?>>
-    <associate|complex measure property (2)|<tuple|19.325|?>>
-    <associate|complex mesure variation|<tuple|19.328|?>>
+    <associate|complex integral properties|<tuple|19.255|?>>
+    <associate|complex integral properties (2)|<tuple|19.258|?>>
+    <associate|complex measurable functions|<tuple|19.252|?>>
+    <associate|complex measurable functions (1)|<tuple|19.250|?>>
+    <associate|complex measurable functions properties|<tuple|19.253|?>>
+    <associate|complex measure|<tuple|19.323|?>>
+    <associate|complex measure (real, imaginair)|<tuple|19.325|?>>
+    <associate|complex measure condition (2)|<tuple|19.327|?>>
+    <associate|complex measure of finite union|<tuple|19.324|?>>
+    <associate|complex measure property (2)|<tuple|19.326|?>>
+    <associate|complex mesure variation|<tuple|19.329|?>>
     <associate|composition of measurable functions is
     measurable|<tuple|19.148|?>>
     <associate|condition for a Dynkin class to be a sigma
@@ -24409,7 +24893,7 @@
     <associate|eq 19.629.039|<tuple|19.632|?>>
     <associate|eq 19.629.039.1|<tuple|19.629|?>>
     <associate|eq 19.630.038|<tuple|19.644|?>>
-    <associate|eq 19.630.039|<tuple|19.680|?>>
+    <associate|eq 19.630.039|<tuple|19.633|?>>
     <associate|eq 19.630.039.1|<tuple|19.630|?>>
     <associate|eq 19.631.038|<tuple|19.645|?>>
     <associate|eq 19.631.039|<tuple|19.634|?>>
@@ -24458,11 +24942,14 @@
     <associate|eq 19.680.039|<tuple|19.681|?>>
     <associate|eq 19.681.039|<tuple|19.682|?>>
     <associate|eq 19.683.039.1|<tuple|19.683|?>>
-    <associate|eq 19.690.039|<tuple|19.680|?>>
+    <associate|eq 19.684.039|<tuple|19.684|?>>
+    <associate|eq 19.685.039|<tuple|19.685|?>>
+    <associate|eq 19.686.039|<tuple|19.686|?>>
+    <associate|eq 19.687.039|<tuple|19.687|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|19.50|?>>
     <associate|extension of measurable function|<tuple|19.162|?>>
-    <associate|f is measurable then \|f\| is measurable|<tuple|19.255|?>>
+    <associate|f is measurable then \|f\| is measurable|<tuple|19.256|?>>
     <associate|f+ and f-|<tuple|19.180|?>>
     <associate|f=g almost everywhere property|<tuple|19.189|?>>
     <associate|finite (sub) additivity|<tuple|19.61|?>>
@@ -24481,16 +24968,17 @@
     <associate|induced outer inner measure|<tuple|19.118|?>>
     <associate|induced outer measure is a outer measure|<tuple|19.120|?>>
     <associate|inner/outer regularity|<tuple|19.122|?>>
-    <associate|integrability and absolute norm (2)|<tuple|19.256|?>>
+    <associate|integrability and absolute norm (2)|<tuple|19.257|?>>
     <associate|integrability of function with domain A|<tuple|19.222|?>>
     <associate|integrability of function with domain X on A|<tuple|19.219|?>>
     <associate|integrability of non negative functions (2)|<tuple|19.226|?>>
     <associate|integrability where X is A|<tuple|19.225|?>>
-    <associate|integrable complex function|<tuple|19.253|?>>
+    <associate|integrable complex function|<tuple|19.254|?>>
     <associate|integrable functions|<tuple|19.216|?>>
-    <associate|integrable functions finite sums|<tuple|19.278|?>>
+    <associate|integrable functions finite sums|<tuple|19.279|?>>
     <associate|integral difference|<tuple|19.229|?>>
-    <associate|integral norm is 0 implies f = 0 a.e.e|<tuple|19.270|?>>
+    <associate|integral norm is 0 implies f = 0 a.e.e|<tuple|19.271|?>>
+    <associate|integral of a signed measure|<tuple|19.340|?>>
     <associate|integral of almost zero function is zero|<tuple|19.227|?>>
     <associate|integral of everywhere zero function|<tuple|19.211|?>>
     <associate|integral of positive function properties (2)|<tuple|19.214|?>>
@@ -24516,23 +25004,23 @@
     algebra|<tuple|19.16|?>>
     <associate|interval identities|<tuple|19.25|?>>
     <associate|lemma 18.28 set relations|<tuple|19.28|?>>
-    <associate|lemma 19.277.037|<tuple|19.287|?>>
+    <associate|lemma 19.277.037|<tuple|19.288|?>>
     <associate|lemma for almost everywhere monotone convergence
     theorem|<tuple|19.241|?>>
     <associate|length of interval is increasing|<tuple|19.42|?>>
     <associate|liminf or limsup of functions|<tuple|19.169|?>>
-    <associate|locally null is emptyset|<tuple|19.272|?>>
-    <associate|locally null set and norm|<tuple|19.275|?>>
-    <associate|locally null set properties|<tuple|19.273|?>>
+    <associate|locally null is emptyset|<tuple|19.273|?>>
+    <associate|locally null set and norm|<tuple|19.276|?>>
+    <associate|locally null set properties|<tuple|19.274|?>>
     <associate|lower half open spaces|<tuple|19.53|?>>
     <associate|lower half open spaces are open|<tuple|19.54|?>>
     <associate|maximum of finite set of functions|<tuple|19.172|?>>
     <associate|maximum of measurable functions|<tuple|19.173|?>>
     <associate|maximum of non negative real valued simple
     functions|<tuple|19.203|?>>
-    <associate|measurability and components|<tuple|19.250|?>>
+    <associate|measurability and components|<tuple|19.251|?>>
     <associate|measurability of extension of a function|<tuple|19.223|?>>
-    <associate|measurability of \|f\|^p|<tuple|19.260|?>>
+    <associate|measurability of \|f\|^p|<tuple|19.261|?>>
     <associate|measurable extended function space|<tuple|19.149|?>>
     <associate|measurable function|<tuple|19.141|?>>
     <associate|measurable function and limit|<tuple|19.190|?>>
@@ -24559,6 +25047,7 @@
     <associate|measurable space|<tuple|19.13|?>>
     <associate|measure|<tuple|19.62|?>>
     <associate|measure conditions (10)|<tuple|19.72|?>>
+    <associate|measure construction based on a integral|<tuple|19.244|?>>
     <associate|measure is subadditive|<tuple|19.70|?>>
     <associate|measure properties (1)|<tuple|19.66|?>>
     <associate|measure properties (2)|<tuple|19.71|?>>
@@ -24566,8 +25055,8 @@
     <associate|measure, sum and scalar product|<tuple|19.63|?>>
     <associate|measureable set|<tuple|19.76|?>>
     <associate|monotone convergence theorem|<tuple|19.242|?>>
-    <associate|neagative / positive set examples|<tuple|19.311|?>>
-    <associate|negative union of sets|<tuple|19.315|?>>
+    <associate|neagative / positive set examples|<tuple|19.312|?>>
+    <associate|negative union of sets|<tuple|19.316|?>>
     <associate|negligibility|<tuple|19.108|?>>
     <associate|negligible set properties|<tuple|19.109|?>>
     <associate|null function is measurable|<tuple|19.158|?>>
@@ -24581,9 +25070,9 @@
     <associate|outer measure on R|<tuple|19.84|?>>
     <associate|outer measure on rectangles|<tuple|19.89|?>>
     <associate|outermeasure construction|<tuple|19.75|?>>
-    <associate|positive, negative set properties|<tuple|19.313|?>>
-    <associate|positive, negative sets and negated measure|<tuple|19.312|?>>
-    <associate|power of limit|<tuple|19.286|?>>
+    <associate|positive, negative set properties|<tuple|19.314|?>>
+    <associate|positive, negative sets and negated measure|<tuple|19.313|?>>
+    <associate|power of limit|<tuple|19.287|?>>
     <associate|properties of algebras|<tuple|19.10|?>>
     <associate|real (extended real) measurability|<tuple|19.152|?>>
     <associate|rectangle and half open sets|<tuple|19.56|?>>
@@ -24599,12 +25088,12 @@
     <associate|sigma algebra|<tuple|<with|mode|<quote|math>|\<sigma\>>-algebra|?>>
     <associate|sigma algebra equivalent definitions|<tuple|19.14|?>>
     <associate|sigma algebras are Dynkin classes|<tuple|19.131|?>>
-    <associate|signed measure and subsets|<tuple|19.307|?>>
-    <associate|signed measure condition (1)|<tuple|19.309|?>>
-    <associate|signed measure negated|<tuple|19.305|?>>
-    <associate|signed measure of finite union|<tuple|19.306|?>>
-    <associate|signed measure property (1)|<tuple|19.308|?>>
-    <associate|signed measures negative set (1)|<tuple|19.314|?>>
+    <associate|signed measure and subsets|<tuple|19.308|?>>
+    <associate|signed measure condition (1)|<tuple|19.310|?>>
+    <associate|signed measure negated|<tuple|19.306|?>>
+    <associate|signed measure of finite union|<tuple|19.307|?>>
+    <associate|signed measure property (1)|<tuple|19.309|?>>
+    <associate|signed measures negative set (1)|<tuple|19.315|?>>
     <associate|simple function|<tuple|19.164|?>>
     <associate|simple function as a finite sum|<tuple|19.191|?>>
     <associate|simple function condition (2)|<tuple|19.196|?>>
@@ -24617,16 +25106,16 @@
     <associate|simple functions integral (1)|<tuple|19.198|?>>
     <associate|simple functions integral properties (1)|<tuple|19.202|?>>
     <associate|the set of Dyadic cubes is denumerable|<tuple|19.49|?>>
-    <associate|total variation is finite|<tuple|19.331|?>>
+    <associate|total variation is finite|<tuple|19.332|?>>
     <associate|translation properties|<tuple|19.99|?>>
     <associate|union intersection union of families|<tuple|19.3|?>>
     <associate|union of union of sets (1)|<tuple|19.5|?>>
     <associate|union,intersection and function between and
     indexes|<tuple|19.4|?>>
     <associate|uniqueness of the Lebesgue measure|<tuple|19.97|?>>
-    <associate|variation of complex measure is a measure|<tuple|19.329|?>>
-    <associate|variation of signed measure properties (1)|<tuple|19.321|?>>
-    <associate|vector space of signed, complex measures|<tuple|19.332|?>>
+    <associate|variation of complex measure is a measure|<tuple|19.330|?>>
+    <associate|variation of signed measure properties (1)|<tuple|19.322|?>>
+    <associate|vector space of signed, complex measures|<tuple|19.333|?>>
     <associate|volume in R^n|<tuple|19.41|?>>
     <associate|volume is increasing|<tuple|19.43|?>>
     <associate|volume is subadditive|<tuple|19.87|?>>
@@ -24638,9 +25127,9 @@
     <associate|{x\<less\>f} properties|<tuple|19.154|?>>
     <associate|{x\<less\>f} properties (1)|<tuple|19.156|?>>
     <associate|\|f(x)\| as f+ f-|<tuple|19.181|?>>
-    <associate|\|f\| in L^p|<tuple|19.267|?>>
-    <associate|\|z1+z2\|\<less\>=2^p*(z1^p+z^2)|<tuple|19.262|?>>
-    <associate|\|\|(\|f)\|\|=\|\|f\|\||<tuple|19.285|?>>
+    <associate|\|f\| in L^p|<tuple|19.268|?>>
+    <associate|\|z1+z2\|\<less\>=2^p*(z1^p+z^2)|<tuple|19.263|?>>
+    <associate|\|\|(\|f)\|\|=\|\|f\|\||<tuple|19.286|?>>
   </collection>
 </references>
 
@@ -24771,35 +25260,39 @@
 
       <tuple|<tuple|<with|mode|<quote|math>|S<rsup|p><around*|[|X.\<cal-A\>,\<mu\>,\<bbb-R\>|]>>>|<pageref|auto-90>>
 
-      <tuple|<tuple|signed measure>|<pageref|auto-92>>
+      <tuple|<tuple|signed measure>|<pageref|auto-93>>
 
-      <tuple|<tuple|finite signed measure>|<pageref|auto-93>>
+      <tuple|<tuple|finite signed measure>|<pageref|auto-94>>
 
-      <tuple|<tuple|negative set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-94>>
+      <tuple|<tuple|negative set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-96>>
 
-      <tuple|<tuple|positive set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-95>>
+      <tuple|<tuple|positive set for <with|mode|<quote|math>|\<mu\>>>|<pageref|auto-97>>
 
-      <tuple|<tuple|Hah Decomposition>|<pageref|auto-96>>
+      <tuple|<tuple|Hah Decomposition>|<pageref|auto-98>>
 
-      <tuple|<tuple|Jordon Decomposition>|<pageref|auto-97>>
+      <tuple|<tuple|Jordon Decomposition>|<pageref|auto-99>>
 
-      <tuple|<tuple|variation of a measure>|<pageref|auto-98>>
+      <tuple|<tuple|variation of a measure>|<pageref|auto-100>>
 
-      <tuple|<tuple|total variation of a measure>|<pageref|auto-99>>
+      <tuple|<tuple|total variation of a measure>|<pageref|auto-101>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|\||\<mu\>|\|>>>|<pageref|auto-100>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|\||\<mu\>|\|>>>|<pageref|auto-102>>
 
-      <tuple|<tuple|complex measure>|<pageref|auto-101>>
+      <tuple|<tuple|complex measure>|<pageref|auto-104>>
 
-      <tuple|<tuple|variation of a complex measure>|<pageref|auto-102>>
+      <tuple|<tuple|variation of a complex measure>|<pageref|auto-106>>
 
-      <tuple|<tuple|total variation of a complex measure>|<pageref|auto-103>>
+      <tuple|<tuple|total variation of a complex measure>|<pageref|auto-107>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>>|<pageref|auto-104>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>>|<pageref|auto-108>>
 
-      <tuple|<tuple|space of signed measures>|<pageref|auto-105>>
+      <tuple|<tuple|space of signed measures>|<pageref|auto-110>>
 
-      <tuple|<tuple|space of complex measures>|<pageref|auto-106>>
+      <tuple|<tuple|space of complex measures>|<pageref|auto-111>>
+
+      <tuple|<tuple|integral of a signed measure>|<pageref|auto-113>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>\<ll\>\<nu\>>>|<pageref|auto-115>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|19<space|2spc>Measure
@@ -24934,6 +25427,34 @@
       19.8<space|2spc>Signed and complex measures
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-91>
+
+      <with|par-left|<quote|1tab>|19.8.1<space|2spc>Signed measures
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-92>>
+
+      <with|par-left|<quote|1tab>|19.8.2<space|2spc>Hahn and Jordan
+      decomposition <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-95>>
+
+      <with|par-left|<quote|1tab>|19.8.3<space|2spc>Complex measure
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-103>>
+
+      <with|par-left|<quote|1tab>|19.8.4<space|2spc>Jordan decomposition
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-105>>
+
+      <with|par-left|<quote|1tab>|19.8.5<space|2spc>Banach space of signed
+      (complex) measures <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-109>>
+
+      <with|par-left|<quote|1tab>|19.8.6<space|2spc>Integrals bases on signed
+      (complex) measures <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-112>>
+
+      <with|par-left|<quote|1tab>|19.8.7<space|2spc>Absolute Continuity
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-114>>
     </associate>
   </collection>
 </auxiliary>
