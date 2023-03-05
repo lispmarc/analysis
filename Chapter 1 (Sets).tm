@@ -14494,7 +14494,7 @@
   </proof>
 
   <\theorem>
-    <math|\<bbb-N\>\<times\>\<bbb-N\>\<approx\>\<bbb-N\>>
+    <label|NxN is bijective to N><math|\<bbb-N\>\<times\>\<bbb-N\>\<approx\>\<bbb-N\>>
   </theorem>
 
   <\proof>
@@ -26078,6 +26078,7 @@
     <associate|N,.is a semi-group|<tuple|4.43|103>>
     <associate|N_Q forms positive integers|<tuple|7.32|166>>
     <associate|N_Q is semi group|<tuple|7.30|166>>
+    <associate|NxN is bijective to N|<tuple|5.58|?>>
     <associate|P'(X)|<tuple|1.65|21>>
     <associate|P(A) and 2^A are bijective|<tuple|2.77|51>>
     <associate|QC is a sub field of C|<tuple|9.37|214>>
