@@ -14757,8 +14757,17 @@
     <label|non negative functions with finite integral are finite a.e>Let
     <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a measure
     space and <math|f\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,<wide|\<bbb-R\>|\<wide-bar\>>|]>>
-    such that <math|<big|int><rsup|+>f d\<mu\>\<less\>\<infty\>> then
-    <math|f\<neq\>\<infty\>> <math|\<mu\>>-a,e,
+    such that <math|<big|int><rsup|+>f d\<mu\>\<less\>\<infty\>> then\ 
+
+    <\equation*>
+      \<mu\><around*|(|<around*|{|x\<in\>X:f<around*|(|x|)>=\<infty\>|}>|)>=0
+    </equation*>
+
+    proving that\ 
+
+    <\equation*>
+      f\<neq\>\<infty\><text| >\<mu\><text|-a.e.>
+    </equation*>
   </corollary>
 
   <\proof>
@@ -25552,7 +25561,7 @@
       <around*|[|\<nu\><text| is finite>|]><text|>
     </equation>
 
-    Using the definition of <math|\<cal-F\>> on the above gives\ 
+    Using the definition of <math|\<cal-F\>> on the above gives
 
     <\equation>
       <label|eq 19.679.039>g=<below|lim|n\<rightarrow\>\<infty\>>g<rsub|n>\<in\>\<cal-F\>\<subseteq\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,<wide|\<bbb-R\>|\<wide-bar\>>|]>
@@ -25633,7 +25642,7 @@
       <label|eq 19.703.039>g+\<varepsilon\>\<cdot\>\<cal-X\><rsub|P>\<in\>\<cal-F\>
     </equation>
 
-    Assume that <math|\<mu\><around*|(|P|)>=0> then as
+    Assume that <math|\<mu\><around*|\<nobracket\>|P|)>=0> then as
     <math|\<nu\>\<ll\>\<mu\>> we must have <math|\<nu\><around*|(|P|)>=0>, so
     that
 
@@ -25681,75 +25690,57 @@
       d\<mu\>=\<nu\><around*|(|A|)>\<less\>\<infty\>
     </equation>
 
-    TODO rewrite this without having to use <math|<big|int>> From the above
-    we have using <reference|integrability of non negative functions (2)>
-    that\ 
-
-    <\equation>
-      <label|eq 19.706.039>\<forall\>A\<in\>\<cal-A\><text| we have
-      >\<cal-X\><rsub|A>\<cdot\>g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,<wide|\<bbb-R\>|\<wide-bar\>>|]><text|
-      and ><big|int><rsup|+><rsub|A>g d\<mu\>=<big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\>g=<big|int>\<cal-X\><rsub|A>\<cdot\>g
-      d\<mu\>
-    </equation>
-
-    Let <math|N=<around*|{|x\<in\>X\|<around*|\||g<around*|(|x|)>|\|>=\<infty\>|}>\<equallim\><rsub|0\<leqslant\>g><around*|{|x\<in\>X\|g<around*|(|x|)>=\<infty\>|}>>
-    then, by taking <math|X=A> in the above, we can use <reference|integral
-    properties (18)> to get \ <math|\<nu\><around*|(|N|)>=0>. Define
-    <math|h=\<cal-X\><rsub|X\\N>\<cdot\>g> then we have for <math|x\<in\>X>
-    either\ 
+    From the above we have by taking <math|A=X> that <math|<big|int><rsup|+>g
+    d\<mu\>\<less\>\<infty\>>, which using <reference|non negative functions
+    with finite integral are finite a.e> proves that for
+    <math|N=<around*|{|x\<in\>X\|g<around*|(|x|)>=\<infty\>|}>\<in\>\<cal-A\>>
+    we have <math|\<mu\><around*|(|N|)>=0>. Define
+    <math|h=\<cal-X\><rsub|X\\N>\<cdot\>g> then for <math|x\<in\>X> we have
+    either:
 
     <\description>
-      <item*|<math|x\<in\>X>>then <math|h<around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>g<around*|(|x|)>=0\<in\>\<bbb-R\>>
-      and for <math|A\<in\>\<cal-A\>> that
-      <math|<around*|(|\<cal-X\><rsub|A>\<cdot\>h|)><around*|(|x|)>=\<cal-X\><rsub|A><around*|(|x|)>\<cdot\>h<around*|(|x|)>=0\<in\>\<bbb-R\>>
+      <item*|<math|x\<in\>N>>then <math|h<around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>g<around*|(|x|)>=0\<in\>\<bbb-R\>>
+      and <math|\<forall\>A\<in\>\<cal-A\>> we have
+      <math|<around*|(|\<cal-X\><rsub|A>\<cdot\>h|)><around*|(|x|)>=\<cal-X\><rsub|A><around*|(|x|)>\<cdot\>h<around*|(|x|)>\<in\>\<bbb-R\>>
 
-      <item*|<math|x\<in\>X\\N>>then <math|h<around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>g<around*|(|x|)>=g<around*|(|x|)>\<in\><around*|[|0,\<infty\>|[>>
-      and <math|<around*|(|\<cal-X\><rsub|A>\<cdot\>h|)><around*|(|x|)>=\<cal-X\><rsub|A><around*|(|x|)>\<cdot\>h<around*|(|x|)>\<in\><around*|[|0,\<infty\>|[>>
+      <item*|<math|x\<in\>X\\N>>then <math|h<around*|(|x|)>=\<cal-X\><rsub|X\\N><around*|(|x|)>\<cdot\>g<around*|(|x|)>=g<around*|(|x|)>\<in\>\<bbb-R\>>
+      and <math|<around*|(|\<cal-X\><rsub|A>\<cdot\>h|)><around*|(|x|)>=\<cal-X\><rsub|A><around*|(|x|)>\<cdot\>h<around*|(|x|)>\<in\>\<bbb-R\>>
     </description>
 
-    Combining this with <reference|restriction of measurable functions>
-    proves that\ 
+    proving that <math|h> and <math|\<cal-X\><rsub|A>\<cdot\>h>
+    [<math|A\<in\>\<cal-A\>>] are finite. Further as
+    <math|A,N\<in\>\<cal-A\>> it follows from <reference|restriction of
+    measurable functions> that\ 
 
     <\equation>
-      <label|eq 19.707.039>h\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]><text|
-      and >\<cal-X\><rsub|A>\<cdot\>h\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]>
+      <label|eq 19.750.042>h\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]><text|
+      and >\<forall\>A\<in\>\<cal-A\><text|
+      >\<cal-X\><rsub|A>\<cdot\>h\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]>
     </equation>
 
-    As <math|h=\<cal-X\><rsub|X\\N>\<cdot\>g> and
-    <math|\<cal-X\><rsub|A>\<cdot\>h=\<cal-X\><rsub|X\\N>\<cdot\><around*|(|\<cal-X\><rsub|A>\<cdot\>g|)>>,
-    it follows by <reference|almost everywhere equality and characteristic
-    function> that <math|<around*|(|\<cal-X\><rsub|A>\<cdot\>h|)>=<around*|(|\<cal-X\><rsub|A>\<cdot\>g|)>>
-    <math|\<mu\>>-a.e.. Finally using <reference|integral properties (12)>
-    and the fact that <math|h,\<cal-X\><rsub|A>\<cdot\>h> is finite we have
-    that
+    As <math|\<mu\><around*|(|N|)>=0> and
+    <math|\<cal-X\><rsub|A>\<cdot\>h=\<cal-X\><rsub|X\\N>\<cdot\><around*|(|\<cal-X\><rsub|A>\<cdot\>g|)>>
+    it follows from <reference|almost everywhere equality and characteristic
+    function> that <math|\<cal-X\><rsub|A>\<cdot\>h=\<cal-X\><rsub|A>\<cdot\>g>
+    <math|\<mu\>>-a.e., using <reference|integral properties (11)> it follows
+    then that <math|<big|int><rsup|+><rsub|A>h
+    d\<mu\>=<big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\>h\<equallim\><rsub|<text|<reference|integral
+    properties (11.1)>>><big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\>g
+    d\<mu\>=<big|int><rsup|+<rsub|>><rsub|A>g d\<mu\>>. Combining this with
+    <reference|eq 19.696.039> and <reference|eq 19.750.042> proves finally\ 
 
-    <\equation>
-      <label|eq 19.708.039>\<cal-X\><rsub|A>\<cdot\>h,h=\<cal-X\><rsub|X>\<cdot\>h\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]><text|
-      and ><big|int><around*|(|\<cal-X\><rsub|A>\<cdot\>h|)>d\<mu\>=<big|int>\<cal-X\><rsub|A>\<cdot\>g
-      d\<mu\>
-    </equation>
+    <\equation*>
+      h\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]><text| and
+      >\<forall\>A\<in\>\<cal-A\><text| ><big|int><rsup|+><rsub|A>h
+      d\<mu\>=\<nu\><around*|(|A|)>
+    </equation*>
 
-    Combining <reference|eq 19.707.039> and <reference|eq 19.708.039> with
-    <reference|integrability of non negative functions (2)> proves that
-    <math|<big|int><around*|(|\<cal-X\><rsub|A>\<cdot\>h|)>d\<mu\>=<big|int><rsup|+><around*|(|\<cal-X\><rsub|A>\<cdot\>h|)>d\<mu\>=<big|int><rsup|+><rsub|A>h
-    d\<mu\>>. So we have <math|<big|int><rsub|A><rsup|+>h
-    d\<mu\>=<big|int><around*|(|\<cal-X\><rsub|A>\<cdot\>h|)>d\<mu\>\<equallim\><rsub|<text|<reference|eq
-    19.708.039>>><big|int>\<cal-X\><rsub|A>\<cdot\>g
-    d\<mu\>\<equallim\><rsub|<text|<reference|eq
-    19.706.039>>><big|int><rsup|+>g d\<mu\>\<equallim\><rsub|<text|<reference|eq
-    19.705.039>>>\<nu\><around*|(|A|)>>. Hence we have
-
-    <\equation>
-      <label|eq 19.709.039>\<exists\>h\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]><text|
-      such that> \<forall\>A\<in\>\<cal-A\><text| we have
-      ><big|int><rsup|+><rsub|A>h d\<mu\>=\<nu\><around*|(|A|)>
-    </equation>
+    \;
   </proof>
 
-  We extend now the proof\ 
-
-  Extending the conditions for the measures of the above lemma to
-  <math|\<sigma\>>-finite measure gives the real Radon-Nikodym Theorem.
+  We will now extend the previous lemma to the case of
+  <math|\<sigma\>>-finite measures and also add a uniqueness requiremen,
+  leading to the Radon-Nikodum Theorem.
 
   <\theorem>
     <dueto|Radon-Nikodym Theorem>Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>>
@@ -25763,13 +25754,13 @@
     <math|\<nu\><around*|(|A|)>=<big|int><rsup|+><rsub|A>h
     d\<mu\>\<equallim\><rsub|def><big|int><rsup|+><around*|(|\<cal-X\><rsub|A>\<cdot\>h|)>d\<mu\>>.
     If there is another <math|f\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>
-    such that <math|\<nu\><around*|(|A|)>=<big|int><rsub|A>f d\<mu\>> then
-    <math|f=h> <math|\<mu\>>-a.e.
+    such that <math|\<nu\><around*|(|A|)>=<big|int><rsup|+><rsub|A>f d\<mu\>>
+    then <math|f=h> <math|\<mu\>>-a.e.
   </theorem>
 
   <\proof>
-    As <math|\<mu\>> and <math|\<nu\>> are <math|\<sigma\>>-finite we have by
-    <reference|sigma finite set alternative> there exists two pairwise
+    As <math|\<mu\>> and <math|\<nu\>> are <math|\<sigma\>>-finite ther
+    exists [see <reference|sigma finite set alternative>] two pairwise
     disjoint families <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>
     and <math|<around*|{|B<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>>
     such that <math|X=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>A<rsub|i>=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>B<rsub|i>>
@@ -25781,7 +25772,7 @@
 
     <\equation*>
       X=<big|cup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>>|)><text|
-      where ><around*|{|A<rsub|\<beta\><around*|(|i|)><rsub|1><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>>>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>
+      where ><around*|{|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>
     </equation*>
 
     Further if <math|i,j\<in\>\<bbb-N\><rsub|0>> with <math|i\<neq\>j> then
@@ -25789,13 +25780,13 @@
     have
 
     <\equation*>
-      \<beta\><around*|(|i|)><rsub|1>\<neq\>\<beta\><around*|(|j|)><rsub|1>\<Rightarrow\><around*|(|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>>|)><big|cap><around*|(|A<rsub|\<beta\><around*|(|j|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|j|)><rsub|2>>|)>=\<emptyset\>
+      \<beta\><around*|(|i|)><rsub|1>\<neq\>\<beta\><around*|(|j|)><rsub|1>\<Rightarrow\><around*|(|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>>|)><big|cap><around*|(|A<rsub|\<beta\><around*|(|j|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|j|)><rsub|2>>|)>=<around*|(|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>A<rsub|\<beta\><around*|(|j|)><rsub|1>>|)><big|cap><around*|(|B<rsub|\<beta\><around*|(|i|)><rsub|2>><big|cap>B<rsub|\<beta\><around*|(|j|)><rsub|2>>|)>=\<emptyset\>
     </equation*>
 
     or\ 
 
     <\equation*>
-      \<beta\><around*|(|i|)><rsub|2>\<neq\>\<beta\><around*|(|j|)><rsub|2>\<Rightarrow\><around*|(|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>>|)><big|cap><around*|(|A<rsub|\<beta\><around*|(|j|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|j|)><rsub|2>>|)>=\<emptyset\>
+      \<beta\><around*|(|i|)><rsub|2>\<neq\>\<beta\><around*|(|j|)><rsub|2>\<Rightarrow\><around*|(|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|i|)><rsub|2>>|)><big|cap><around*|(|A<rsub|\<beta\><around*|(|j|)><rsub|1>><big|cap>B<rsub|\<beta\><around*|(|j|)><rsub|2>>|)>=<around*|(|A<rsub|\<beta\><around*|(|i|)><rsub|1>><big|cap>A<rsub|\<beta\><around*|(|j|)><rsub|1>>|)><big|cap><around*|(|B<rsub|\<beta\><around*|(|i|)><rsub|2>><big|cap>B<rsub|\<beta\><around*|(|j|)><rsub|2>>|)>=\<emptyset\>
     </equation*>
 
     so if we define <math|<around*|{|C<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>>
@@ -25804,34 +25795,35 @@
 
     <\equation>
       <label|eq 19.750.042><around*|{|C<rsub|i>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-A\>\<wedge\>\<forall\>i,j\<in\>\<bbb-N\><rsub|><text|
-      with >i\<neq\>j<text| we have <math|C<rsub|i><big|cap>C<rsub|j>=\<emptyset\>\<wedge\>X=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>C<rsub|i>>>
+      with >i\<neq\>j<text| we have <math|C<rsub|i><big|cap>C<rsub|j>=\<emptyset\>\<wedge\>X=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>C<rsub|i>>>\<wedge\>\<mu\><around*|(|C<rsub|i>|)>,\<nu\><around*|(|C<rsub|i>|)>\<less\>\<infty\>
     </equation>
 
-    Let <math|i\<in\>\<bbb-N\><rsub|>> consider then the measure space
-    <math|<around*|\<langle\>|C<rsub|i>,\<cal-A\><rsub|C<rsub|i>>,<wide|\<bbb-R\>|\<wide-bar\>>|\<rangle\>>>
+    Let <math|i\<in\>\<bbb-N\><rsub|0><rsub|>> consider then the measure
+    space <math|<around*|\<langle\>|C<rsub|i>,\<cal-A\><rsub|C<rsub|i>>,<wide|\<bbb-R\>|\<wide-bar\>>|\<rangle\>>>
     [see <reference|sub measure space>] then if
     <math|A\<in\>\<cal-A\><rsub|C<rsub|i>>> we have that
     <math|A\<in\>\<cal-A\>> and <math|A\<subseteq\>C<rsub|i>>. So
     <math|\<mu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|A|)>=\<mu\><around*|(|A|)>\<leqslant\>\<mu\><around*|(|C<rsub|i>|)>\<less\>\<infty\>>
     and <math|\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|A|)>=\<nu\><around*|(|A|)>\<leqslant\>\<nu\><around*|(|C<rsub|i>|)>\<less\>\<infty\>>,
     further if <math|\<mu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>A><around*|(|A|)>=0\<Rightarrow\>\<mu\><around*|(|A|)>=0\<Rightarrow\>v<around*|(|A|)>=0=\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|0|)>>
-    proving that <math|> So we can apply the previous lemma [see
-    <reference|Radon Nikodym Theory (Finite)>] giving the existance of a
+    proving that<space|1em><math|\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>>\<ll\>\<mu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>>>
+    So we can apply the previous lemma [see <reference|Radon Nikodym Theory
+    (Finite)>], giving the existance of a
     <math|h<rsub|i>\<in\>\<cal-M\><rsup|+><around*|[|C<rsub|i>,\<cal-A\><rsub|C<rsub|i>>,\<bbb-R\>|]>>
     such that <math|\<forall\>A\<in\>\<cal-A\><rsub|C<rsub|i>>> we have
-    \ <math|\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|A|)>=<big|int><rsup|+><rsub|A>h<rsub|i>d\<mu\><rsub|\|\<cal-A\><rsub|C<rsub|I>>>=>.
+    \ <math|\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|A|)>=<big|int><rsup|+><rsub|A>h<rsub|i>d\<mu\><rsub|\|\<cal-A\><rsub|C<rsub|I>>>=<big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\>h<rsub|i>d\<mu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>>>.
     Applying then <reference|integral of positive functions and extension>
     gives\ 
 
     <\equation>
-      <label|eq 19.751.042><around*|(|h<rsub|i>|)><rsub|A\<uparrow\>X>\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]><text|
+      <label|eq 19.751.042><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]><text|
       and <math|\<forall\>A\<in\>\<cal-A\><rsub|C<rsub|i>>\<subseteq\>\<cal-A\>>>
-      <text| such that >\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|A|)>=<big|int><rsub|A><rsup|+><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>d\<mu\>
+      <text| we have >\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|A|)>=<big|int><rsub|A><rsup|+><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>d\<mu\>
     </equation>
 
     Gicen <math|x\<in\>X=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>C<rsub|i>>
     there exists a unique <math|i\<in\>\<bbb-N\><rsub|0>> such that
-    <math|x\<in\>C<rsub|i>>, associated with the unique
+    <math|x\<in\>C<rsub|i>>, allowing us to define
     <math|h<around*|(|x|)>=h<rsub|i><around*|(|x|)>\<in\>\<bbb-R\>>. This
     defines a function\ 
 
@@ -25872,7 +25864,8 @@
     </equation>
 
     Further as <math|<around*|{|<around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>
-    we have by <reference|restriction of measurable functions> that\ 
+    [see <reference|eq 19.751.042>] we have by <reference|restriction of
+    measurable functions> that\ 
 
     <\equation>
       <around*|{|\<cal-X\><rsub|B>\<cdot\><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>|}><rsub|i\<in\>\<bbb-N\><rsub|0>>\<subseteq\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>
@@ -25894,32 +25887,106 @@
     </equation>
 
     Take <math|A\<in\>\<cal-A\>> then <math|A=A<big|cap>X=A<big|cap><around*|(|<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>>C<rsub|i>|)>=<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|A<big|cap>C<rsub|i>|)>>
-    where, as <math|A<big|cap>C<rsub|i> and\<subseteq\>C<rsub|i>> and
-    <math|A<big|cap>C<rsub|i>\<in\>\<cal-A\>>,
-    <math|A<big|cap>C<rsub|i>\<in\>\<cal-A\><rsub|C<rsub|i>>> so\ 
+    where <math|A<big|cap>C<rsub|i>\<in\>\<cal-A\><rsub|C<rsub|i>>> [as
+    <math|A<big|cap>C<rsub|i>\<subseteq\>C<rsub|i>> and
+    <math|A<big|cap>C<rsub|i>\<in\>\<cal-A\>>], so\ 
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|\<nu\><around*|(|A|)>>|<cell|=>|<cell|\<nu\><around*|(|<big|sqcup><rsub|i\<in\>\<bbb-N\><rsub|0>><around*|(|A<big|cap>C<rsub|i>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>\<nu\><around*|(|A<big|cap>C<rsub|i>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>>\<nu\><rsub|\|\<cal-A\><rsub|C<rsub|i>>><around*|(|A<big|cap>C<rsub|i>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|eq
       19.751.042>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|int><rsup|+><rsub|A<big|cap>C<rsub|i>><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X><rsub|>d\<mu\>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|int><rsup|+>\<cal-X\><rsub|A<big|cap>C<rsub|i>>\<cdot\><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X><rsub|>d\<mu\>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|X_A*X_B=X_ANB>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\><around*|(|\<cal-X\><rsub|C<rsub|i>>\<cdot\><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>|)>d\<mu\>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|f_A-\<gtr\>X
-      poperties>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>d\<mu\>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><big|int><rsup|+><rsub|A><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|take
+      poperties>>>>|<cell|<big|sum><rsub|i=1><rsup|\<infty\>><around*|(|<big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\><around*|(|h<rsub|i>|)><rsub|C<rsub|i>\<uparrow\>X>d\<mu\>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|take
       B=A in <reference|eq 19.756.042>>>>|<cell|<big|int><rsup|+>\<cal-X\><rsub|B>\<cdot\>h
       d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|def>>|<cell|<big|int><rsup|+><rsub|B>h
       d\<mu\>>>>>
     </eqnarray*>
 
-    proving that\ 
+    proving the existance part of the theorem
 
     <\equation*>
       \<forall\>A\<in\>\<cal-A\><text| we have
       <math|\<nu\><around*|(|A|)>=<big|int><rsup|+><rsub|A>h d\<mu\>>>
     </equation*>
 
-    \;
+    Finally if there is another <math|f\<in\>\<cal-M\><rsup|+><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>
+    such that <math|\<nu\><around*|(|A|)>=<big|int><rsub|A>f d\<mu\>> then by
+    <reference|Radon Nikodym uniqueness (1)> it follows that\ 
+
+    <\equation*>
+      h=f<text| >\<mu\><text|-a.e.>
+    </equation*>
   </proof>
 
-  \;
+  We extend now the Radon-Nikodym theorem to signed and complex measures.
+  First we must extend the definition of <math|\<ll\>>.
 
-  \;
+  <\definition>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
+    measure space then we define:
+
+    <\enumerate>
+      <item>If <math|\<nu\>> is a signed measures on
+      <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then
+      <math|<with|font-series|bold|\<nu\>>> is
+      <with|font-series|bold|absolute continuous with respect to
+      <math|\<mu\>>> noted as <math|<with|font-series|bold|\<nu\>\<ll\>\<mu\>>>
+      iff <math|<around*|\||\<nu\>|\|>\<ll\>\<mu\>> [where
+      <math|<around*|\||\<nu\>|\|>> is the variation of the signed measures
+      <math|\<nu\>> [see <reference|Jordon Decomposition>]]
+
+      <item>If <math|\<nu\>> is a complex measures on
+      <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then
+      <math|<with|font-series|bold|\<nu\>>> is
+      <with|font-series|bold|absolute continuous with respect to
+      <math|\<mu\>>> noted as <with|font-series|bold|<math|\<nu\>\<ll\>\<mu\>>>
+      iff <math|\<nu\>\<ll\><around*|\||\<mu\>|\|>> [where
+      <math|<around*|\||\<nu\>|\|>> is the variation of the complex measure
+      <math|\<nu\>> [see <reference|complex mesure variation>]]
+    </enumerate>
+  </definition>
+
+  We have now the following characterization of absolute continuity
+
+  <\lemma>
+    Let <math|<around*|\<langle\>|X,\<cal-A\>,\<mu\>|\<rangle\>>> be a
+    measure space then\ 
+
+    <\enumerate>
+      <item>If <math|\<nu\>> is a signed measure then
+      <math|\<nu\>\<ll\>\<mu\>> if and only if
+      <math|\<nu\><rsup|+>\<ll\>\<mu\>> and <math|\<nu\><rsup|->\<ll\>\<mu\>>
+      where <math|<around*|(|\<nu\><rsup|+>,\<nu\><rsup|->|)>> is the Jordan
+      decomposition of <math|\<nu\>> [see <reference|Jordon Decomposition>]
+
+      <item>If <math|\<nu\>> is a complex measure then
+      <math|\<nu\>\<ll\>\<mu\>> if an only if
+      <math|\<nu\><rsup|+><rsub|r>\<ll\>\<mu\>\<wedge\>\<nu\><rsup|+><rsub|c>\<ll\>\<mu\>\<wedge\>\<nu\><rsup|-><rsub|r>\<ll\>\<mu\>\<wedge\>\<nu\><rsup|-><rsub|c>\<ll\>\<mu\>>
+      where <math|<around*|(|\<nu\><rsup|+><rsub|r>,\<nu\><rsup|-><rsub|r>,\<nu\><rsup|+><rsub|c>,\<nu\><rsup|-><rsub|\<nu\>>|)>>
+      is the Jordan decomposition of <math|\<nu\>> [see <reference|Jordan
+      Decomposition of a complex measure>]
+    </enumerate>
+  </lemma>
+
+  <\proof>
+    \ 
+
+    <\enumerate>
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>
+
+        <item*|<math|\<Leftarrow\>>>
+      </description>
+
+      <item>\ 
+
+      <\description>
+        <item*|<math|\<Rightarrow\>>>
+
+        <item*|<math|\<Leftarrow\>>>
+      </description>
+    </enumerate>
+  </proof>
 
   \ 
 
@@ -26553,7 +26620,6 @@
     <associate|eq 18.440.036|<tuple|19.476|?>>
     <associate|eq 18.441.036|<tuple|19.477|?>>
     <associate|eq 18.442.036|<tuple|19.478|?>>
-    <associate|eq 18.443.036|<tuple|19.479|?>>
     <associate|eq 18.444.036|<tuple|19.479|?>>
     <associate|eq 18.445.036|<tuple|19.480|?>>
     <associate|eq 18.446.036|<tuple|19.481|?>>
@@ -26710,7 +26776,6 @@
     <associate|eq 19.417.041|<tuple|19.424|?>>
     <associate|eq 19.418.041|<tuple|19.425|?>>
     <associate|eq 19.419.041|<tuple|19.426|?>>
-    <associate|eq 19.419.042.1|<tuple|19.419|?>>
     <associate|eq 19.420.041|<tuple|19.427|?>>
     <associate|eq 19.421.041|<tuple|19.428|?>>
     <associate|eq 19.422.041|<tuple|19.429|?>>
@@ -26931,10 +26996,10 @@
     <associate|eq 19.703.039|<tuple|19.747|?>>
     <associate|eq 19.704.039|<tuple|19.748|?>>
     <associate|eq 19.705.039|<tuple|19.749|?>>
-    <associate|eq 19.706.039|<tuple|19.750|?>>
-    <associate|eq 19.707.039|<tuple|19.751|?>>
-    <associate|eq 19.708.039|<tuple|19.752|?>>
-    <associate|eq 19.709.039|<tuple|19.753|?>>
+    <associate|eq 19.706.039|<tuple|19.751|?>>
+    <associate|eq 19.707.039|<tuple|19.752|?>>
+    <associate|eq 19.708.039|<tuple|19.753|?>>
+    <associate|eq 19.709.039|<tuple|19.754|?>>
     <associate|eq 19.710.039|<tuple|19.724|?>>
     <associate|eq 19.711.039|<tuple|19.725|?>>
     <associate|eq 19.712.039|<tuple|19.726|?>>
@@ -26942,11 +27007,11 @@
     <associate|eq 19.729.042|<tuple|19.728|?>>
     <associate|eq 19.730.042|<tuple|19.729|?>>
     <associate|eq 19.732.042|<tuple|19.731|?>>
-    <associate|eq 19.750.042|<tuple|19.754|?>>
-    <associate|eq 19.751.042|<tuple|19.755|?>>
-    <associate|eq 19.752.042|<tuple|19.756|?>>
-    <associate|eq 19.755.042|<tuple|19.759|?>>
-    <associate|eq 19.756.042|<tuple|19.760|?>>
+    <associate|eq 19.750.042|<tuple|19.751|?>>
+    <associate|eq 19.751.042|<tuple|19.752|?>>
+    <associate|eq 19.752.042|<tuple|19.753|?>>
+    <associate|eq 19.755.042|<tuple|19.756|?>>
+    <associate|eq 19.756.042|<tuple|19.757|?>>
     <associate|eq 19.960.039|<tuple|19.734|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|19.52|?>>
