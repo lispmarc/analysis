@@ -17833,12 +17833,6 @@
       \<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>=<around*|{|f\<in\>\<bbb-C\><rsup|X>\|f<text|
       is >\<mu\><text|-integrable>|}>
     </equation*>
-
-    If <math|A\<in\>\<cal-A\>> then we define <math|<big|int>f d\<mu\>> by\ 
-
-    <\equation*>
-      <big|int><rsub|A>f d\<mu\>=<big|int><around*|(|\<cal-X\><rsub|A>\<cdot\>f|)>d\<mu\>\<equallim\><rsub|def><big|int><rsub|A>Re<around*|(|f|)>d\<mu\>+<big|int><rsub|A>Img<around*|(|f|)>d\<mu\>=<big|int>\<cal-X\><rsub|A>\<cdot\>Re<around*|(|f|)>d\<mu\>+i\<cdot\><big|int>\<cal-X\><rsub|A>\<cdot\>img<around*|(|f|)>d\<mu\>
-    </equation*>
   </definition>
 
   Integrals of complex valued functions have similar properties as integrals
@@ -24982,75 +24976,7 @@
   <math|\<nu\><around*|(|A|)>=<big|int><rsub|A>f d\<mu\>> then <math|h=f>
   <math|\<mu\>>-a.e [<math|\<mu\>>-a.e. uniquencess]. To prove this we
   proceed in different steps, first we prove the <math|\<mu\>>-a.e.
-  uniqueness. First we need a little lemma.
-
-  <\lemma>
-    <label|(f-h)+=X_F(f-h>Let <math|X> be a set and
-    <math|f:X\<rightarrow\>\<bbb-R\>>, <math|g:X\<rightarrow\>\<bbb-R\>> be
-    two functions then we have\ 
-
-    <\enumerate>
-      <item><math|<around*|(|f-h|)><rsup|+>=\<cal-X\><rsub|F>\<cdot\><around*|(|f-h|)>>
-      where <math|F=<around*|{|f\<gtr\>h|}>=<around*|{|x\<in\>X\|f<around*|(|x|)>\<gtr\>h<around*|(|x|)>|)>>
-
-      <item><math|<around*|(|f-h|)><rsup|->=\<cal-X\><rsub|G>\<cdot\><around*|(|f-h|)>>
-      where <math|G=<around*|{|f\<less\>h|}>=<around*|{|x\<in\>X\|f<around*|(|x|)>\<less\>h<around*|(|x|)>|}>>
-    </enumerate>
-  </lemma>
-
-  <\proof>
-    \ 
-
-    <\enumerate>
-      <item>Let <math|x\<in\>X> then we have either:
-
-      <\description>
-        <item*|<math|x\<in\>F>>then <math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<gtr\>0>
-        so that\ 
-
-        <\equation*>
-          <around*|(|f-h|)><rsup|+><around*|(|x|)>=max<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=<around*|(|f-h|)><around*|(|x|)>=\<cal-X\><rsub|F><around*|(|x|)>\<cdot\><around*|(|f-h|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|F>\<cdot\><around*|(|f-h|)>|)><around*|(|x|)>
-        </equation*>
-
-        <item*|<math|x\<in\>X\\F>>then <math|><math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<leqslant\>0>
-        so that
-
-        <\equation*>
-          <around*|(|f-h|)><rsup|+><around*|(|x|)>=max<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=0=\<cal-X\><rsub|F><around*|(|x|)>\<cdot\><around*|(|f-h|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|F>\<cdot\><around*|(|f-h|)>|)><around*|(|x|)>
-        </equation*>
-      </description>
-
-      proving that\ 
-
-      <\equation*>
-        <around*|(|f-h|)><rsup|+>=\<cal-X\><rsub|F>\<cdot\><around*|(|f-h|)>
-      </equation*>
-
-      <item>Let <math|x\<in\>X> then we have either:
-
-      <\description>
-        <item*|<math|x\<in\>G>>then <math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<less\>0>
-        so that
-
-        <\equation*>
-          <around*|(|f-h|)><rsup|->=-min<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=h<around*|(|x|)>-f<around*|(|x|)>=\<cal-X\><rsub|G><around*|(|x|)>\<cdot\><around*|(|h-f|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|G>\<cdot\><around*|(|h-f|)>|)><around*|(|x|)>
-        </equation*>
-
-        <item*|<math|x\<in\>X\\G>>then <math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<geqslant\>0>
-        so that
-
-        <\equation*>
-          <around*|(|f-h|)><rsup|->=-min<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=0=\<cal-X\><rsub|G><around*|(|x|)>\<cdot\><around*|(|h-f|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|G>\<cdot\><around*|(|h-f|)>|)><around*|(|x|)>
-        </equation*>
-      </description>
-
-      proving that\ 
-
-      <\equation*>
-        <around*|(|f-h|)><rsup|->=\<cal-X\><rsub|G>\<cdot\><around*|(|h-f|)>
-      </equation*>
-    </enumerate>
-  </proof>
+  uniqueness.
 
   <\lemma>
     <label|Radon Nikodym uniqueness (1)>Let
@@ -25092,7 +25018,7 @@
     and
 
     <\equation*>
-      <big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\>h
+      <big|int><rsup|+>\<cal-X\><rsub|B>\<cdot\>h
       d\<mu\>=<big|int>\<cal-X\><rsub|A>\<cdot\>h
       d\<mu\>\<wedge\><big|int><rsup|+>\<cal-X\><rsub|A>\<cdot\>f
       d\<mu\>=<big|int>\<cal-X\><rsub|A>\<cdot\>f d\<mu\>.
@@ -25123,14 +25049,51 @@
 
     Define now <math|F=<around*|{|f\<gtr\>h|}>> and
     <math|G=<around*|{|f\<less\>h|}>> then <math|F,G\<in\>\<cal-A\>> [see
-    <reference|function comparizatons are measurable>] and we have by
-    <reference|(f-h)+=X_F(f-h> that
+    <reference|function comparizatons are measurable>]. Consider first
+    <math|<around*|(|f-h|)><rsup|+>> then for <math|x\<in\>X> we have either:
+
+    <\description>
+      <item*|<math|x\<in\>F>>then <math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<gtr\>0>
+      so that
+
+      <\equation*>
+        <around*|(|f-h|)><rsup|+><around*|(|x|)>=max<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=<around*|(|f-h|)><around*|(|x|)>=\<cal-X\><rsub|F><around*|(|x|)>\<cdot\><around*|(|f-h|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|F>\<cdot\><around*|(|f-h|)>|)><around*|(|x|)>
+      </equation*>
+
+      <item*|<math|x\<in\>X\\F>>then <math|><math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<leqslant\>0>
+      so that
+
+      <\equation*>
+        <around*|(|f-h|)><rsup|+><around*|(|x|)>=max<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=0=\<cal-X\><rsub|F><around*|(|x|)>\<cdot\><around*|(|f-h|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|F>\<cdot\><around*|(|f-h|)>|)><around*|(|x|)>
+      </equation*>
+    </description>
+
+    proving that\ 
 
     <\equation>
       <label|eq 19.711.039><around*|(|f-h|)><rsup|+>=\<cal-X\><rsub|F>\<cdot\><around*|(|f-h|)><rsub|>
     </equation>
 
-    \ and
+    Similar for <math|<around*|(|f-h|)><rsup|->> we have for <math|x\<in\>X>
+    either:
+
+    <\description>
+      <item*|<math|x\<in\>G>>then <math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<less\>0>
+      so that
+
+      <\equation*>
+        <around*|(|f-h|)><rsup|->=-min<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=h<around*|(|x|)>-f<around*|(|x|)>=\<cal-X\><rsub|G><around*|(|x|)>\<cdot\><around*|(|h-f|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|G>\<cdot\><around*|(|h-f|)>|)><around*|(|x|)>
+      </equation*>
+
+      <item*|<math|x\<in\>X\\G>>then <math|<around*|(|f-h|)><around*|(|x|)>=f<around*|(|x|)>-h<around*|(|x|)>\<geqslant\>0>
+      so that
+
+      <\equation*>
+        <around*|(|f-h|)><rsup|->=-min<around*|(|<around*|(|f-h|)><around*|(|x|)>,0|)>=0=\<cal-X\><rsub|G><around*|(|x|)>\<cdot\><around*|(|h-f|)><around*|(|x|)>=<around*|(|\<cal-X\><rsub|G>\<cdot\><around*|(|h-f|)>|)><around*|(|x|)>
+      </equation*>
+    </description>
+
+    proving that\ 
 
     <\equation>
       <label|eq 19.712.039><around*|(|f-h|)><rsup|->=\<cal-X\><rsub|G>\<cdot\><around*|(|h-f|)>=-\<cal-X\><rsub|G>\<cdot\><around*|(|f-h|)>
@@ -26015,150 +25978,10 @@
     Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
     space, <math|\<mu\>> a <math|\<sigma\>>-finite measure on
     <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> and <math|\<nu\>> a
-    <with|font-series|bold|finite signed measure> on
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then if
-    <math|f,g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>\<equallim\><rsub|<text|<reference|L^p=L>>>\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>
-    are such that <math|\<forall\>A\<in\>\<cal-A\>> we have that
-    <math|<big|int><rsub|A>f d\<mu\>=\<nu\><around*|(|A|)>=<big|int><rsub|A>g
-    d\<mu\>> then <math|f=g> <math|\<mu\>>-a.e.
+    signed measure on <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then
+    if <math|f,g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>\<equallim\><rsub|<text|<reference|L^p=L>>>\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-R\>|]>>
+    are such that <math|\<forall\>A\<in\>\<cal-A\>> we have that\ 
   </lemma>
-
-  <\proof>
-    Let <math|A\<in\>\<cal-A\>> then we have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|int>\<cal-X\><rsub|A>\<cdot\><around*|(|f-g|)>d\<mu\>>|<cell|=>|<cell|<big|int><around*|(|\<cal-X\><rsub|A>\<cdot\>f-\<cal-X\><rsub|A>\<cdot\>g|)>d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|integral
-      properties (10)>>>>|<cell|<big|int>\<cal-X\><rsub|A>\<cdot\>f
-      d\<mu\>-<big|int>\<cal-X\><rsub|A>\<cdot\>g
-      d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|\<nu\><around*|(|A|)>-\<nu\><around*|(|A|)>>>|<row|<cell|>|<cell|=>|<cell|0<eq-number><label|eq
-      19.758.043>>>>>
-    </eqnarray*>
-
-    Define now <math|F=<around*|{|f\<gtr\>g|}>> and
-    <math|G=<around*|{|f\<less\>g|}>> then
-    <math|<around*|{|f\<less\>g|}>,<around*|{|g\<less\>f|}>\<in\>\<cal-A\>>
-    [see <reference|function comparizatons are measurable>] \ we have by
-    <reference|(f-h)+=X_F(f-h> that\ 
-
-    <\equation>
-      <label|eq 19.759.043><around*|(|f-g|)><rsup|+>=\<cal-X\><rsub|F>\<cdot\><around*|(|f-g|)><text|
-      and ><around*|(|f-g|)><rsup|+>=\<cal-X\><rsub|G>\<cdot\><around*|(|g-f|)>=-\<cal-X\><rsub|G>\<cdot\><around*|(|f-g|)>
-    </equation>
-
-    Next we have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|int><around*|\||<around*|(|f-g|)><rsup|+>|\|>d\<mu\>>|<cell|\<equallim\><rsub|0\<leqslant\><around*|(|f-g|)><rsup|+>>>|<cell|<big|int><around*|(|f-g|)><rsup|+>d\<mu\>=<big|int>\<cal-X\><rsub|F>\<cdot\><around*|(|f-g|)>d\<mu\>\<equallim\><rsub|<text|<reference|eq
-      19.758.043>>>0<rsub|>>>>>
-    </eqnarray*>
-
-    and
-
-    <\equation*>
-      <tabular|<tformat|<table|<row|<cell|<big|int><around*|\||<around*|(|f-g|)><rsup|->|\|>d\<mu\>>|<cell|\<equallim\><rsub|0\<leqslant\><around*|(|f-g|)><rsup|->>>|<cell|<big|int><around*|(|f-g|)><rsup|->d\<mu\>=-<big|int>\<cal-X\><rsub|G>\<cdot\><around*|(|f-g|)>d\<mu\>\<equallim\><rsub|<text|<reference|eq
-      19.758.043>>>0<rsub|>>>>>>
-    </equation*>
-
-    Using <reference|integral properties (16)> we have then that
-    <math|<around*|(|f-h|)><rsup|+>=0> <math|\<mu\>>-a.e. and
-    <math|*<around*|(|f-h|)><rsup|->=0> <math|\<mu\>>-a.e.. As by
-    <reference|\|f(x)\| as f+ f-> <math|<around*|(|f-h|)>=<around*|(|f-h|)><rsup|+>-<around*|(|f-h|)><rsup|->>
-    it follows from <reference|almost everywhere properties> that
-    <math|<around*|(|f-h|)>=0> <math|\<mu\>>-a.e. or\ 
-
-    <\equation*>
-      f=h<text| >\<mu\><text|-a.e.>
-    </equation*>
-
-    which concludes the lemma.
-  </proof>
-
-  <\lemma>
-    Let <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> be a measurable
-    space, <math|\<mu\>> a <math|\<sigma\>>-finite measure on
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> and <math|\<nu\>> a
-    <with|font-series|bold|complex measure> on
-    <math|<around*|\<langle\>|X,\<cal-A\>|\<rangle\>>> then if
-    <math|f,g\<in\>\<cal-L\><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>\<equallim\><rsub|<text|<reference|L^p=L>>>\<cal-L\><rsup|1><around*|[|X,\<cal-A\>,\<mu\>,\<bbb-C\>|]>>
-    are such that <math|\<forall\>A\<in\>\<cal-A\>> we have that
-    <math|<big|int><rsub|A>f d\<mu\>=\<nu\><around*|(|A|)>=<big|int><rsub|A>g
-    d\<mu\>> then <math|f=g> <math|\<mu\>>-a.e.
-  </lemma>
-
-  <\proof>
-    Let <math|A\<in\>\<cal-A\>> then\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|int>Re<around*|(|\<cal-X\><rsub|A>\<cdot\><around*|(|f-g|)>|)>d\<mu\>+i\<cdot\><big|int>Img<around*|(|\<cal-X\><rsub|A>\<cdot\><around*|(|f-g|)>|)>
-      d\<mu\>>|<cell|\<equallim\><rsub|def>>|<cell|<big|int>\<cal-X\><rsub|A>\<cdot\><around*|(|f-g|)>
-      d\<mu\>>>|<row|<cell|>|<cell|\<equallim\><rsub|<text|<reference|complex
-      integral properties>>>>|<cell|<big|int>\<cal-X\><rsub|A>\<cdot\>f
-      d\<mu\>-<big|int>\<cal-X\><rsub|A>\<cdot\>g
-      d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsub|A>f
-      d\<mu\>-<big|int>g d\<mu\>>>|<row|<cell|>|<cell|=>|<cell|\<nu\><around*|(|A|)>-\<nu\><around*|(|A|)>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
-    </eqnarray*>
-
-    so that we have as <math|\<cal-X\><rsub|A>> is real
-
-    <\equation>
-      <big|int>Re<around*|(|\<cal-X\><rsub|A>\<cdot\><around*|(|f-g|)>|)>d\<mu\>=0\<wedge\><big|int>Img<around*|(|\<cal-X\><rsub|A>\<cdot\><around*|(|f-g|)>|)>d\<mu\>=0
-    </equation>
-
-    As <math|\<cal-X\><rsub|A>> is real it follows from the above that\ 
-
-    <\equation*>
-      <big|int>\<cal-X\><rsub|A>\<cdot\><around*|(|Re<around*|(|f|)>-Reg<around*|(|g|)>|)>d\<mu\>=0\<wedge\><big|int>\<cal-X\><rsub|A>\<cdot\><around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)>d\<mu\>=0
-    </equation*>
-
-    Using <reference|f is measurable then \|f\| is measurable> we have that
-    <math|Re<around*|(|f|)>,Re<around*|(|g|)>,Img<around*|(|f|)>,Img<around*|(|g|)>\<in\>\<cal-M\><around*|[|X,\<cal-A\>,\<bbb-R\>|]>>.
-    Define now
-
-    <\equation*>
-      F<rsub|r>=<around*|{|Re<around*|(|f|)>\<gtr\>Re<around*|(|g|)>|}>,G<rsub|r>=<around*|{|Ref<around*|(|g|)>\<less\>Re<around*|(|f|)>|}>,F<rsub|c>=<around*|{|Img<around*|(|f|)>\<gtr\>Img<around*|(|g|)>|}>,G<rsub|c>=<around*|{|Img<around*|(|f|)>\<less\>Img<around*|(|g|)>|}>
-    </equation*>
-
-    then we have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|int><around*|\||<around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|+>|\|>d\<mu\>>|<cell|=>|<cell|<big|int><around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|+>d\<mu\>\<equallim\><rsub|<text|<reference|(f-h)+=X_F(f-h>>><big|int>\<cal-X\><rsub|F<rsub|r>>\<cdot\><around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)>d\<mu\>=0>>|<row|<cell|<big|int><around*|\||<around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|->|\|>d\<mu\>>|<cell|=>|<cell|<big|int><around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|->d\<mu\>\<equallim\><rsub|<text|<reference|(f-h)+=X_F(f-h>>><big|int>\<cal-X\><rsub|G<rsub|r>>\<cdot\><around*|(|Re<around*|(|g|)>-Re<around*|(|f|)>|)>d\<mu\>=0>>|<row|<cell|<big|int><around*|\||<around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|+>|\|>d\<mu\>>|<cell|=>|<cell|<big|int><around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|+>d\<mu\>\<equallim\><rsub|<text|<reference|(f-h)+=X_F(f-h>>><big|int>\<cal-X\><rsub|F<rsub|c>>\<cdot\><around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)>d\<mu\>=0>>|<row|<cell|<big|int><around*|\||<around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|->|\|>d\<mu\>>|<cell|=>|<cell|<big|int><around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|->d\<mu\>\<equallim\><rsub|<text|<reference|(f-h)+=X_F(f-h>>><big|int>\<cal-X\><rsub|G<rsub|c>>\<cdot\><around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)>d\<mu\>=0>>>>
-    </eqnarray*>
-
-    Using <reference|integral properties (16)> we have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|+>>|<cell|0>|<cell|\<mu\><text|-a.e.>>>|<row|<cell|<around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|->>|<cell|0>|<cell|\<mu\><text|-a.e.>>>|<row|<cell|<around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|+>>|<cell|0>|<cell|\<mu\><text|-a.e.>>>|<row|<cell|<around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|+>>|<cell|0>|<cell|\<mu\><text|-a.e.>>>>>
-    </eqnarray*>
-
-    As by \ <reference|\|f(x)\| as f+ f->
-
-    <\equation*>
-      Re<around*|(|f|)>-Re<around*|(|g|)>=<around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|+>-*<around*|(|Re<around*|(|f|)>-Re<around*|(|g|)>|)><rsup|->
-    </equation*>
-
-    and
-
-    <\equation*>
-      Img<around*|(|f|)>-Img<around*|(|g|)>=<around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|+>-*<around*|(|Img<around*|(|f|)>-Img<around*|(|g|)>|)><rsup|->
-    </equation*>
-
-    we have by <reference|almost everywhere properties> that
-    <math|Re<around*|(|f|)>-Re<around*|(|g|)>=0> <math|\<mu\>>-a.e and
-    <math|Img<around*|(|f|)>-Img<around*|(|g|)>=0> <math|\<mu\>>-a.e.. From
-    this it follows that <math|Re<around*|(|f|)>=Re<around*|(|g|)>>
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|Re<around*|(|f|)>>|<cell|=>|<cell|Re<around*|(|g|)><text|
-      >\<mu\><text|-a.e.>>>|<row|<cell|Im<around*|(|f|)>>|<cell|=>|<cell|Img<around*|(|g|)>
-      \<mu\><text|-a.e.>>>>>
-    </eqnarray*>
-
-    <\equation*>
-      \;
-    </equation*>
-
-    \;
-  </proof>
 
   \;
 
@@ -26197,7 +26020,6 @@
   <\collection>
     <associate|(A except B) interect C|<tuple|19.2|?>>
     <associate|(f*g)+ and (f*g)-|<tuple|19.191|?>>
-    <associate|(f-h)+=X_F(f-h|<tuple|19.355|?>>
     <associate|A except B is (X except B) intersect A |<tuple|19.1|?>>
     <associate|Beppo Levi's Theorem|<tuple|19.255|?>>
     <associate|Borel algebra is generated by closed sets|<tuple|19.23|?>>
@@ -26258,8 +26080,8 @@
     <associate|N_p is a subspace|<tuple|19.295|?>>
     <associate|R can be covered by open intervals|<tuple|19.85|?>>
     <associate|R^n is a unin of rectangles|<tuple|19.89|?>>
-    <associate|Radon Nikodym Theory (Finite)|<tuple|19.358|?>>
-    <associate|Radon Nikodym uniqueness (1)|<tuple|19.356|?>>
+    <associate|Radon Nikodym Theory (Finite)|<tuple|19.357|?>>
+    <associate|Radon Nikodym uniqueness (1)|<tuple|19.355|?>>
     <associate|Total variation of complex measure|<tuple|19.342|?>>
     <associate|X_A*X_B=X_ANB|<tuple|19.165|?>>
     <associate|X_A*f and f\|A|<tuple|19.167|?>>
@@ -26295,6 +26117,8 @@
     <associate|auto-110|<tuple|space of complex measures|?>>
     <associate|auto-111|<tuple|19.7.6|?>>
     <associate|auto-112|<tuple|<with|mode|<quote|math>|\<mu\>\<ll\>\<nu\>>|?>>
+    <associate|auto-113|<tuple|<with|mode|<quote|math>|\<mu\>\<ll\>\<nu\>>|?>>
+    <associate|auto-114|<tuple|<with|mode|<quote|math>|\<mu\>\<ll\>\<nu\>>|?>>
     <associate|auto-12|<tuple|<with|mode|<quote|math>|\<cal-R\><rsup|n>>|?>>
     <associate|auto-13|<tuple|Dyadic cubes|?>>
     <associate|auto-14|<tuple|<with|mode|<quote|math>|\<cal-D\><rsup|n><rsub|m>>|?>>
@@ -26404,6 +26228,7 @@
     <associate|borel algebra on the extended reals (3)|<tuple|19.34|?>>
     <associate|boundaries of a rectangle are unique|<tuple|19.41|?>>
     <associate|bounded intervals|<tuple|19.24|?>>
+    <associate|bounded measurable function properties (1)|<tuple|19.352|?>>
     <associate|bounded measurable functions|<tuple|19.350|?>>
     <associate|characteristic function is measurable|<tuple|19.166|?>>
     <associate|complete measures|<tuple|19.113|?>>
@@ -27181,9 +27006,6 @@
     <associate|eq 19.752.042|<tuple|19.753|?>>
     <associate|eq 19.755.042|<tuple|19.756|?>>
     <associate|eq 19.756.042|<tuple|19.757|?>>
-    <associate|eq 19.758.043|<tuple|19.758|?>>
-    <associate|eq 19.759.043|<tuple|19.759|?>>
-    <associate|eq 19.760.043|<tuple|19.760|?>>
     <associate|eq 19.960.039|<tuple|19.734|?>>
     <associate|every open set in R^n is a countable union of dyadic
     cubes|<tuple|19.52|?>>
@@ -27218,6 +27040,7 @@
     <associate|integrable functions finite sums|<tuple|19.291|?>>
     <associate|integral difference|<tuple|19.240|?>>
     <associate|integral norm is 0 implies f = 0 a.e.e|<tuple|19.283|?>>
+    <associate|integral of a signed measure|<tuple|19.353|?>>
     <associate|integral of almost zero function is zero|<tuple|19.238|?>>
     <associate|integral of everywhere zero function|<tuple|19.223|?>>
     <associate|integral of positive function properties (2)|<tuple|19.226|?>>
@@ -27542,7 +27365,9 @@
 
       <tuple|<tuple|space of complex measures>|<pageref|auto-110>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>\<ll\>\<nu\>>>|<pageref|auto-112>>
+      <tuple|<tuple|integral of a signed measure>|<pageref|auto-112>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<mu\>\<ll\>\<nu\>>>|<pageref|auto-114>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|19<space|2spc>Measure
@@ -27694,9 +27519,13 @@
       (complex) measures <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-108>>
 
-      <with|par-left|<quote|1tab>|19.7.6<space|2spc>Radon-Nikodym Theorem
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|19.7.6<space|2spc>Integrals bases on signed
+      (complex) measures <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-111>>
+
+      <with|par-left|<quote|1tab>|19.7.7<space|2spc>Radon-Nikodym Theorem
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-113>>
     </associate>
   </collection>
 </auxiliary>
