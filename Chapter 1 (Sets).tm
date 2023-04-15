@@ -2317,7 +2317,7 @@
         <tformat|<table|<row|<cell|<around*|(|x,y|)>\<in\>A\<times\><around*|(|<big|cup><rsub|i\<in\>I>A<rsub|i>|)>>|<cell|\<Leftrightarrow\>>|<cell|x\<in\>A\<wedge\>y\<in\><big|cup><rsub|i\<in\>I>A<rsub|i>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|x\<in\>A\<wedge\>\<exists\>i\<in\>I\<vDash\>y\<in\>A<rsub|i>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|\<exists\>i\<in\>I\<vDash\>x\<in\>A\<wedge\>y\<in\>A<rsub|i>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|\<exists\>i\<in\>I\<vdash\>x\<in\>A\<times\>A<rsub|i>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x,y|)>\<in\><big|cup><rsub|i\<in\>I><around*|(|A\<times\>A<rsub|i>|)>>>>>
       </eqnarray*>
 
-      <item>We have
+      <item>We have\ 
 
       <\eqnarray*>
         <tformat|<table|<row|<cell|<around*|(|x,y|)>\<in\><around*|(|<big|cup><rsub|i\<in\>I>A<rsub|i>|)>\<times\>A>|<cell|\<Leftrightarrow\>>|<cell|x\<in\><big|cup><rsub|i\<in\>I>A<rsub|i>\<wedge\>y\<in\>A>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|y\<in\>A\<wedge\>\<exists\>i\<in\>I\<vDash\>x\<in\>A<rsub|i>>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|\<exists\>i\<in\>I\<vdash\>x\<in\>A<rsub|i>\<wedge\>y\<in\>A>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|\<exists\>i\<in\>I\<vdash\><around*|(|x,y|)>\<in\>A<rsub|i>\<times\>A>>|<row|<cell|>|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x,y|)>\<in\><big|cup><rsub|i\<in\>I><around*|(|A<rsub|i>\<times\>A|)>>>>>
