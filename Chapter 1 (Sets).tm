@@ -6243,7 +6243,7 @@
       <item>If <math|f> is a isomorphism then
       <math|x\<leqslant\><rsub|A>y\<Rightarrow\>f<around*|(|x|)>\<leqslant\><rsub|B>f<around*|(|y|)>\<Rightarrow\>f>
       is a increasing function. If <math|x,y\<in\>B> with
-      <math|x\<leqslant\><rsub|A>y> then <math|f<around*|(|f<rsup|-1><around*|(|x|)>|)>=x\<leqslant\><rsub|A>y=f<around*|(|f<rsup|-1><around*|(|y|)>|)>\<Rightarrowlim\><rsub|f
+      <math|x\<leqslant\><rsub|B>y> then <math|f<around*|(|f<rsup|-1><around*|(|x|)>|)>=xy=f<around*|(|f<rsup|-1><around*|(|y|)>|)>\<Rightarrowlim\><rsub|f
       is a isomorphism>f<rsup|-1><around*|(|x|)>\<leqslant\><rsub|B>f<rsup|-1><around*|(|y|)>>
       so <math|f<rsup|-1>> is a increasing function.
 
