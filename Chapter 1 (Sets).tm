@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.2>
 
 <project|Book.tm>
 
@@ -9,8 +9,8 @@
 
   <section|Basic concepts about classes>
 
-  We use Von Neuman's set of axioms to define a set and class theory. We
-  start with two undefined notions: <with|font-series|bold|class> and the
+  We use Von Neuman's set of axioms to define a set d class theory. We start
+  with two undefined notions: <with|font-series|bold|class> and the
   <with|font-series|bold|membership relation <math|\<in\>>>. The objects of
   our discourse will be classes. Later we will introduce the notion of
   <with|font-series|bold|set> that is a special kind of class. Every
@@ -1274,7 +1274,7 @@
   <\axiom>
     <label|axiom of power sets><index|axiom of
     powersets><index|<math|\<cal-P\><around*|(|A|)>>><dueto|Axiom of Power
-    Sets>If <math|A> is a set then <math|\<cal-P\><around*|(|A|)>> is a set
+    Sets>If <math|A> is a set thCen <math|\<cal-P\><around*|(|A|)>> is a set
   </axiom>
 
   <\theorem>
@@ -6497,7 +6497,7 @@
 
   <\theorem>
     <label|property of inf and sup>If <math|<around*|\<langle\>|A,\<leqslant\>|\<rangle\>>>
-    is a partially ordered class and <math|B\<subseteq\>A> then we have
+    is a fully ordered class and <math|B\<subseteq\>A> then we have
 
     <\enumerate>
       <item>If <math|inf<around*|(|B|)>> exists then
@@ -6806,11 +6806,11 @@
     preserving isomorphism (see <reference|isomorphism>) then\ 
 
     <\enumerate>
-      <item>If <math|b> is a upper bound of <math|f<around*|(|S|)>> then
+      <item>If <math|b> is a upper bound of <math|S> then
       <math|<around*|(|f<rsup|-1>|)><around*|(|b|)>> is a upper bound of
       <math|f<rsup|-1><around*|(|S|)>>
 
-      <item>If <math|l> is a lower bound of <math|f<around*|(|S|)>> then
+      <item>If <math|l> is a lower bound of <math|S> then
       <math|<around*|(|f<rsup|-1>|)><around*|(|l|)>> is a lower bound of
       <math|f<rsup|-1><around*|(|S|)>>
 
@@ -6830,14 +6830,14 @@
     increasing functions.
 
     <\enumerate>
-      <item>Let <math|b> be a upper bound of <math|f<around*|(|S|)>> then if
+      <item>Let <math|b> be a upper bound of <math|S> then if
       <math|a\<in\>f<rsup|-1><around*|(|S|)>> we have
       <math|f<around*|(|a|)>\<in\>S> so that
       <math|f<around*|(|a|)>\<leqslant\><rsub|B>b> and thus
       <math|a=f<rsup|-1><around*|(|f<around*|(|a|)>|)>\<leqslant\><rsub|A>f<rsup|-1><around*|(|b|)>>
       proving that <math|f<rsup|-1><around*|(|b|)>> is a upper bound
 
-      <item>Let <math|l> be a lower bound of <math|f<around*|(|S|)>> then if
+      <item>Let <math|l> be a lower bound of <math|S> then if
       <math|a\<in\>f<rsup|-1><around*|(|S|)>> we have
       <math|f<around*|(|a|)>\<in\>S> so that
       <math|l\<leqslant\><rsub|B>f<around*|(|a|)>> and thus
@@ -8185,7 +8185,7 @@
       contradiction. So this case does not occur.
     </enumerate>
 
-    We conclude that or theorem is proved if we prove that 1,2 and 3 can not
+    We conclude that our theorem is proved if we prove that 1,2 and 3 can not
     occur at the same time but this follows from <reference|if A is isomorph
     with a segment of B then B is not isomorph with a sublcass of A>.
   </proof>
@@ -8486,21 +8486,6 @@
     a p\<um\>sequence|}>> which is nonempty as it contains <math|A> and
     define the intersection of all p-sequences
 
-    <\theorem>
-      Let <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>> be a family of sets
-      and <math|b:J\<rightarrow\>I> a bijection then\ 
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|<big|cap><rsub|i\<in\>I>A<rsub|i>>|<cell|=>|<cell|<big|cap><rsub|j\<in\>J>A<rsub|b<around*|(|j|)>>>>|<row|<cell|<big|cup><rsub|i\<in\>I>A<rsub|i>>|<cell|=>|<cell|<big|cup><rsub|j\<in\>J>A<rsub|b<around*|(|j|)>>>>>>
-      </eqnarray*>
-    </theorem>
-
-    <\proof>
-      \ First we prove that\ 
-
-      \;
-    </proof>
-
     <\eqnarray*>
       <tformat|<table|<row|<cell|P>|<cell|=>|<cell|<big|cap><rsub|B\<in\>\<cal-A\>>B
       >>>>
@@ -8717,21 +8702,6 @@
       <item><math|C<rsub|2>\<subseteq\>C<rsub|1>\<Rightarrow\>x,y\<in\>C<rsub|1>\<Rightarrowlim\><rsub|C<rsub|1>
       is a chain in A>x> and <math|y> are comparable
     </enumerate>
-
-    <\theorem>
-      Let <math|<around*|{|A<rsub|i>|}><rsub|i\<in\>I>> be a family of sets
-      and <math|b:J\<rightarrow\>I> a bijection then\ 
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|<big|cap><rsub|i\<in\>I>A<rsub|i>>|<cell|=>|<cell|<big|cap><rsub|j\<in\>J>A<rsub|b<around*|(|j|)>>>>|<row|<cell|<big|cup><rsub|i\<in\>I>A<rsub|i>>|<cell|=>|<cell|<big|cup><rsub|j\<in\>J>A<rsub|b<around*|(|j|)>>>>>>
-      </eqnarray*>
-    </theorem>
-
-    <\proof>
-      \ First we prove that\ 
-
-      \;
-    </proof>
 
     proving that <math|K> is a chain. Using <reference|inf, sup in class
     ordered by inclusion> we have that <with|font-series|bold|<math|K=sup<around*|(|\<cal-D\>|)>>>
@@ -26073,7 +26043,7 @@
     <associate|Acc=A|<tuple|1.19|9>>
     <associate|B^A is a set if B and A are sets|<tuple|2.76|51>>
     <associate|DeMorgan's Laws|<tuple|1.23|10>>
-    <associate|Hausdorff's maximal principle|<tuple|2.222|81>>
+    <associate|Hausdorff's maximal principle|<tuple|2.221|81>>
     <associate|N,+ is a abelian semi-group|<tuple|4.34|102>>
     <associate|N,.is a semi-group|<tuple|4.43|103>>
     <associate|N_Q forms positive integers|<tuple|7.32|166>>
@@ -26090,8 +26060,8 @@
     <associate|Sn|<tuple|5.15|113>>
     <associate|The natural numbers are fully ordered|<tuple|4.53|105>>
     <associate|The rational numbers are denumerable|<tuple|7.40|169>>
-    <associate|Zorn' lemma for pre-ordered sets|<tuple|2.235|86>>
-    <associate|Zorn's lemma|<tuple|2.225|82>>
+    <associate|Zorn' lemma for pre-ordered sets|<tuple|2.233|86>>
+    <associate|Zorn's lemma|<tuple|2.223|82>>
     <associate|^2 is a bijection|<tuple|8.75|204>>
     <associate|a class is not isomorph to a subclass of a initial segment of
     itself|<tuple|2.200|75>>
@@ -27059,12 +27029,12 @@
     <associate|upper bound|<tuple|2.170|68>>
     <associate|upper bound in pre-ordered set|<tuple|2.169|68>>
     <associate|use domain restriction to make a function
-    injective|<tuple|2.234|86>>
+    injective|<tuple|2.232|86>>
     <associate|well ordered class|<tuple|2.190|74>>
     <associate|well ordering implies conditional
     completeness|<tuple|2.193|74>>
     <associate|well ordering implies fully ordering|<tuple|2.192|74>>
-    <associate|well-ordering theorem|<tuple|2.227|82>>
+    <associate|well-ordering theorem|<tuple|2.225|82>>
     <associate|whole numbers are fully-ordered|<tuple|6.26|150>>
     <associate|whole numbers embedded in the reals from a sub
     ring|<tuple|8.53|198>>
