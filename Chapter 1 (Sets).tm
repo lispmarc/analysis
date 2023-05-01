@@ -9237,8 +9237,8 @@
     <math|<around*|\<langle\>|A/\<sim\>,\<leqslant\>|\<rangle\>>> where
     <math|x\<sim\>y> iff <math|x\<leqslant\>y\<wedge\>y\<leqslant\>x> and
     where <math|\<sim\><around*|[|x|]>\<less\>\<sim\><around*|[|y|]>> iff
-    <math|x\<less\>y>. Let now <math|C\<subseteq\>A/\<sim\>> \ be a chain in
-    <math|A/\<sim\>> (in the pre-order sense) . Form then
+    <math|x\<less\>y>. Let now <math|C\<subseteq\>A/\<sim\>> \ be a chain
+    [using <math|\<leqslant\>>] . Form then
     <math|C<rprime|'>=<big|cup><rsub|S\<in\>C>S\<subseteq\>A>. If
     <math|x,y\<in\>C<rprime|'>> then there exists
     <math|\<sim\><around*|[|x<rprime|'>|]>,\<sim\><around*|[|y<rprime|'>|]>\<in\>C>
@@ -9257,17 +9257,19 @@
 
     proving that <math|C<rprime|'>> is a chain in <math|A>. By the hypothesis
     there exists a upper bound <math|u> of <math|C<rprime|'>> in <math|A>, in
-    other words <math|\<exists\>u\<in\>U> such that <math|\<forall\>a\<in\>A>
-    we have <math|a\<leqslant\>u>. Consider now <math|\<sim\><around*|[|u|]>>
-    and take <math|\<sim\><around*|[|z|]>\<in\>C> then as
+    other words <math|\<exists\>u\<in\>A> such that
+    <math|\<forall\>a\<in\>C<rprime|'>> we have <math|a\<leqslant\>u>.
+    Consider now <math|\<sim\><around*|[|u|]>> and take
+    <math|\<sim\><around*|[|z|]>\<in\>C> then as
     <math|z\<in\>\<sim\><around*|[|z|]>> we have <math|z\<in\>C<rprime|'>>
     and thus <math|z\<leqslant\>u> proving that
     <math|\<sim\><around*|[|z|]>\<leqslant\>\<sim\><around*|[|u|]>>. This
     proves that every chain in <math|A/\<sim\>> has a upper bound and thus by
     Zorn's lemma there exists a maximal element
-    <math|\<sim\><around*|[|m|]>\<in\>A> of <math|A>. If now <math|x\<in\>A>
-    with <math|m\<leqslant\>x> then <math|\<sim\><around*|[|m|]>\<leqslant\>\<sim\><around*|[|x|]>>
-    so by maximality of <math|\<sim\><around*|[|m|]>> we have then that
+    <math|\<sim\><around*|[|m|]>\<in\>A/\<sim\>> of <math|A/\<sim\>>. If now
+    <math|x\<in\>A> with <math|m\<leqslant\>x> then
+    <math|\<sim\><around*|[|m|]>\<leqslant\>\<sim\><around*|[|x|]>> so by
+    maximality of <math|\<sim\><around*|[|m|]>> we have then that
     <math|\<sim\><around*|[|m|]>=\<sim\><around*|[|x|]>> giving
     <math|x\<leqslant\>m> and thus by <reference|maximal (minimal element in
     a pre-ordered class> that <math|m> is a maximal element in the pre-order
@@ -9287,7 +9289,7 @@
     <math|\<odot\><around*|(|x,y|)>> is noted as <math|x\<odot\>y>)
 
     <\enumerate>
-      <item><dueto|Neutral Element><math|\<exists\>e\<in\>G\<vdash\>\<forall\>x\<in\>G\<vdash\>x\<odot\>e=e\<odot\>x>
+      <item><dueto|Neutral Element><math|\<exists\>e\<in\>G\<vdash\>\<forall\>x\<in\>G\<vdash\>x\<odot\>e=e\<odot\>x=x>
 
       <item><dueto|Associativity><math|\<forall\>x,y,z\<in\>G> we have
       <math|x\<odot\><around*|(|y\<odot\>z|)>=<around*|(|x\<odot\>y|)>\<odot\>z>
@@ -9451,7 +9453,7 @@
       <item><math|f<around*|(|e<rsub|F>|)>=f<around*|(|e<rsub|F>\<cdot\>e<rsub|F>|)>=f<around*|(|e<rsub|F>|)>\<cdot\>f<around*|(|e<rsub|F>|)>\<Rightarrowlim\><rsub|<with|mode|text|multiply
       both sides by <math|f<around*|(|e<rsub|F>|)><rsup|-1>>>>e<rsub|G>=f<around*|(|e<rsub|F>|)>>
 
-      <item>If <math|a\<in\>F\<Rightarrow\>f<around*|(|a<rsup|-1>\<cdot\>a|)>=f<around*|(|e<rsub|F>|)>\<equallim\><rsub|<around*|(|1|)>>e<rsub|G>\<equallim\><rsub|<around*|(|2|)>>f<around*|(|e<rsub|F>|)>=f<around*|(|a\<cdot\>a<rsup|-1>|)>\<Rightarrow\>f<around*|(|a<rsup|-1>|)>\<cdot\>f<around*|(|a|)>=e<rsub|G>=f<around*|(|a|)>\<cdot\>f<around*|(|a<rsup|-1>|)>\<Rightarrow\>f<around*|(|a<rsup|-1>|)>=f<around*|(|a|)><rsup|-1>>
+      <item>If <math|a\<in\>F\<Rightarrow\>f<around*|(|a<rsup|-1>\<cdot\>a|)>=f<around*|(|e<rsub|F>|)>\<equallim\><rsub|<around*|(|1|)>>e<rsub|G>\<equallim\><rsub|<around*|(|1|)>>f<around*|(|e<rsub|F>|)>=f<around*|(|a\<cdot\>a<rsup|-1>|)>\<Rightarrow\>f<around*|(|a<rsup|-1>|)>\<cdot\>f<around*|(|a|)>=e<rsub|G>=f<around*|(|a|)>\<cdot\>f<around*|(|a<rsup|-1>|)>\<Rightarrow\>f<around*|(|a<rsup|-1>|)>=f<around*|(|a|)><rsup|-1>>
     </enumerate>
   </proof>
 
