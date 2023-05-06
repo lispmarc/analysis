@@ -9806,8 +9806,8 @@
       <math|f<around*|(|a\<odot\><rsub|A>b|)>=f<around*|(|a|)>\<odot\><rsub|B>f<around*|(|b|)>>
 
       <item><math|f<around*|(|1<rsub|A>|)>=1<rsub|B>> where <math|1<rsub|A>>
-      is the multiplicative inverse in <math|A> and <math|1<rsub|B>> is the
-      multiplicative inverse in <math|B>.
+      is the multiplicative neutral element in <math|A> and <math|1<rsub|B>>
+      is the multiplicative neutral element in <math|B>.
     </enumerate>
   </definition>
 
@@ -9933,14 +9933,14 @@
   <\theorem>
     If <math|<around*|\<langle\>|F,\<oplus\>,\<odot\>|\<rangle\>>> is a field
     and <math|S\<subseteq\>F> a sub field then
-    <math|<around*|\<langle\>|S,\<oplus\><rsub|<around*|\||S|\<nobracket\>>>,\<odot\><rsub|<around*|\||S|\<nobracket\>>>|\<rangle\>>>
+    <math|<around*|\<langle\>|S,\<oplus\><rsub|<around*|\||S\<times\>S|\<nobracket\>>>,\<odot\><rsub|<around*|\||S\<times\>S|\<nobracket\>>>|\<rangle\>>>
     (for simplicity of notation we note this as
     <math|<around*|\<langle\>|S,\<oplus\>,\<odot\>|\<rangle\>>>)\ 
   </theorem>
 
   <\proof>
     Using <reference|subring is a ring> we have that
-    <math|<around*|\<langle\>|S,\<oplus\><rsub|<around*|\||S|\<nobracket\>>>,\<odot\><rsub|<around*|\||S|\<nobracket\>>>|\<rangle\>>>
+    <math|<around*|\<langle\>|S,\<oplus\><rsub|<around*|\||S\<times\>S|\<nobracket\>>>,\<odot\><rsub|<around*|\||S\<times\>S|\<nobracket\>>>|\<rangle\>>>
     is a sub ring so we only have to prove that every non-zero element in
     <math|S> has a multiplicative inverse. If
     <math|x\<in\>S\<backslash\><around*|{|0|}>\<subseteq\>F\\<around*|{|0|}>\<Rightarrow\>x<rsup|-1>>
@@ -10467,6 +10467,16 @@
     <math|T=\<bbb-N\>> so if <math|n\<in\>\<bbb-N\>\<Rightarrow\>n\<in\>T\<Rightarrow\>\<lambda\><around*|(|n|)>=\<lambda\><rprime|'><around*|(|n|)>\<Rightarrow\>\<lambda\>=\<lambda\><rprime|'>>
   </proof>
 
+  This theorem allows us to iterate the application of a function in the
+  following way: If <math|a\<in\>A> and <math|f:A\<rightarrow\>A> is a
+  function then there exists a function <math|\<varphi\>:\<bbb-N\>\<rightarrow\>A>
+  such that
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<lambda\><around*|(|0|)>>|<cell|=>|<cell|a>>|<row|<cell|\<lambda\><around*|(|1|)>=\<lambda\><around*|(|s<around*|(|0|)>|)>>|<cell|=>|<cell|f<around*|(|\<lambda\><around*|(|0|)>|)>=f<around*|(|a|)>>>|<row|<cell|\<lambda\><around*|(|2|)>=\<lambda\><around*|(|s<around*|(|1|)>|)>>|<cell|=>|<cell|f<around*|(|\<lambda\><around*|(|1|)>|)>=f<around*|(|f<around*|(|a|)>|)>>>|<row|<cell|\<lambda\><around*|(|3|)>=\<lambda\><around*|(|s<around*|(|2|)>|)>>|<cell|=>|<cell|f<around*|(|\<lambda\><around*|(|2|)>|)>=f<around*|(|f<around*|(|f<around*|(|a|)>|)>|)>>>|<row|<cell|>|<cell|\<ldots\>>|<cell|>>|<row|<cell|\<lambda\><around*|(|n|)>>|<cell|=>|<cell|<wide|<rsup|>f<around*|(|f<around*|(|\<ldots\>.<around*|(|f<around*|(|a|)>|)>|)>|)>|\<wide-overbrace\>><rsup|n
+    times>>>>>
+  </eqnarray*>
+
   As a corollary of the above theorem we have the following
 
   <\corollary>
@@ -10536,195 +10546,7 @@
     proving injectivity.
   </proof>
 
-  \;
-
-  <\theorem>
-    <label|universal property of natural numbers><index|universal property of
-    <math|\<bbb-N\><rsub|0>>>Suppose <math|A> is a set <math|a\<in\>A> and
-    <math|f:A\<rightarrow\>A> a function, then there exists a
-    <with|font-series|bold|unique> function
-    <math|\<varphi\>:\<bbb-N\>\<rightarrow\>A> such that
-    <math|\<varphi\><around*|(|0|)>=a> and
-    <math|\<varphi\>\<circ\>s=f\<circ\>\<varphi\>>.
-  </theorem>
-
-  <\proof>
-    Define the function <math|\<sigma\>:\<bbb-N\>\<times\>A\<rightarrow\>A>
-    by <math|<around*|(|n,x|)>\<rightarrow\><around*|(|s<around*|(|n|)>,f<around*|(|x|)>|)>>.
-    Given <math|a\<in\>A> we define a subset
-    <math|R\<subseteq\>\<bbb-N\>*\<times\>A> to be a-closed if the following
-    is true
-
-    <\enumerate>
-      <item><math|<around*|(|0,a|)>\<in\>R>
-
-      <item><math|\<sigma\><around*|(|R|)>\<subseteq\>R>
-    </enumerate>
-
-    We have that <math|\<bbb-N\>*\<times\>A> is a-closed for
-
-    <\enumerate>
-      <item><math|<around*|(|0,a|)>\<in\>\<bbb-N\>\<times\>A>
-
-      <item>If <math|<around*|(|m,y|)>\<in\>\<sigma\><around*|(|\<bbb-N\>\<times\>A|)>\<Rightarrow\>\<exists\><around*|(|n,x|)>\<in\>\<bbb-N\>\<times\>A\<vdash\><around*|(|m,y|)>=<around*|(|s<around*|(|n|)>,f<around*|(|x|)>|)>\<in\>\<bbb-N\>\<times\>A\<Rightarrow\>\<sigma\><around*|(|\<bbb-N\>\<times\>A|)>\<subseteq\>\<bbb-N\>\<times\>A>.
-    </enumerate>
-
-    If <math|\<cal-R\>> is a set of a-closed subsets of
-    <math|\<bbb-N\>\<times\>A> then we have
-
-    <\enumerate>
-      <item><math|\<forall\>R\<in\>\<cal-R\>> we have
-      <math|<around*|(|0,a|)>\<in\>R\<Rightarrow\><around*|(|0,a|)>\<in\><big|cap><rsub|R\<in\>\<cal-R\>>R>
-
-      <item>if <math|y\<in\>\<sigma\><around*|(|<big|cap><rsub|R\<in\>\<cal-R\>>R|)>\<Rightarrow\>\<exists\>x\<in\><big|cap><rsub|R\<in\>\<cal-R\>>R\<vdash\>y=\<sigma\><around*|(|x|)>\<Rightarrow\>\<exists\>x\<vdash\><around*|(|\<forall\>R\<in\>\<cal-R\>\<vdash\>x\<in\>R|)>\<wedge\>y=\<sigma\><around*|(|x|)>\<Rightarrow\>\<forall\>R\<in\>\<cal-R\>\<vdash\>y\<in\>\<sigma\><around*|(|R|)>\<Rightarrow\>y\<in\><big|cap><rsub|R\<in\>\<cal-R\>>\<sigma\><around*|(|R|)>\<Rightarrow\>\<sigma\><around*|(|<big|cap><rsub|R\<in\>\<cal-R\>>R|)>\<subseteq\><big|cap><rsub|R\<in\>\<cal-R\>>\<sigma\><around*|(|R|)>\<Rightarrowlim\><rsub|\<sigma\><around*|(|R|)>\<subseteq\>R>\<sigma\><around*|(|<big|cap><rsub|R\<in\>\<cal-R\>>R|)>\<subseteq\><big|cap><rsub|R\<in\>\<cal-R\>>R>
-    </enumerate>
-
-    proving that <math|<big|cap><rsub|R\<in\>\<cal-R\>>R> is also a-closed.
-    Define now the set <math|\<cal-R\><rsub|a>=<around*|{|R\<in\>\<cal-P\><around*|(|\<bbb-N\>\<times\>A|)><around*|\||R
-    <with|mode|text|is a-closed>|\<nobracket\>>|}>> set (because
-    <math|\<subseteq\>\<cal-P\><around*|(|\<bbb-N\>\<times\>A|)>> which is
-    set because <math|\<bbb-N\>\<times\>A> is a set and <reference|axiom of
-    power sets>) and <math|R<rsub|a>=<big|cap><rsub|R\<in\>\<cal-R\><rsub|a>>R>
-    then we have by the above that <math|R<rsub|a>> is a-closed and is
-    further the smallest a-closed set. We have then\ 
-
-    <\enumerate-alpha>
-      <item><math|<around*|(|0,a|)>\<in\><around*|{|<around*|(|0,a|)>|}><big|cup>\<sigma\><around*|(|R<rsub|a>|)>>
-
-      <item><math|\<sigma\><around*|(|<around*|{|<around*|(|0,a|)>|}><big|cup>\<sigma\><around*|(|R<rsub|a>|)>|)>\<subseteq\>\<sigma\><around*|(|<around*|{|<around*|(|0,a|)>|}>|)><big|cup>\<sigma\><around*|(|\<sigma\><around*|(|R<rsub|a>|)>|)>\<subseteq\><rsub|\<sigma\><around*|(|0,a|)>\<in\>R<rsub|a>>R<rsub|a><big|cup>\<sigma\><around*|(|\<sigma\><around*|(|R<rsub|a>|)>|)>\<subseteq\><rsub|\<sigma\><around*|(|R<rsub|a>|)>\<subseteq\>R<rsub|a>>R<rsub|a><big|cup>\<sigma\><around*|(|R<rsub|a>|)>\<subseteq\><rsub|\<sigma\><around*|(|R<rsub|a>|)>\<subseteq\>R<rsub|a>>R<rsub|a><big|cup>R<rsub|a>=R<rsub|a>>
-    </enumerate-alpha>
-
-    proving that <math|<around*|{|<around*|(|0,a|)>|}><big|cup>R<rsub|a>> is
-    a-closed and then from the minimality of <math|R<rsub|a>> we have
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|>|<cell|R<rsub|\<alpha\>>\<subseteq\><around*|{|<around*|(|0,a|)>|}><big|cup>\<sigma\><around*|(|R<rsub|a>|)>>|<cell|>>>>
-    </eqnarray*>
-
-    As <math|<around*|{|<around*|(|0,a|)>|}>\<subseteq\>R<rsub|a>> and
-    <math|\<sigma\><around*|(|R<rsub|a>|)>\<subseteq\>R<rsub|a>> we have\ 
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<around*|{|<around*|(|0,a|)>|}><big|cup>\<sigma\><around*|(|R<rsub|a>|)>\<subseteq\>R<rsub|a>>|<cell|>|<cell|>>>>
-    </eqnarray*>
-
-    and thus we finally have
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|>|<cell|R<rsub|a>=<around*|{|<around*|(|0,a|)>|}><big|cup>\<sigma\><around*|(|R<rsub|a>|)>>|<cell|>>>>
-    </eqnarray*>
-
-    We say now that <math|n\<in\>\<bbb-N\>> is a-paired-up iff
-
-    <\enumerate-alpha>
-      <item>There exists <math|y\<in\>A> such that
-      <math|<around*|(|n,y|)>\<in\>R<rsub|a>>
-
-      <item>If also <math|<around*|(|n,y<rprime|'>|)>\<in\>R<rsub|a>\<Rightarrow\>y=y<rprime|'>>
-    </enumerate-alpha>
-
-    Let's define now the set of a-paired-up numbers
-    <math|P<rsub|a>=<around*|{|n\<in\>\<bbb-N\><around*|\||n
-    <with|mode|text|is a-paired-up>|\<nobracket\>>|}>\<subseteq\>\<bbb-N\>>
-    then we proof that
-
-    <\enumerate>
-      <item><math|0\<in\>P<rsub|a>>
-
-      <\proof>
-        First <math|<around*|(|0,a|)>\<in\>R<rsub|a>>. Second if
-        <math|<around*|(|0,a<rprime|'>|)>\<in\>R<rsub|a>> with
-        <math|a\<neq\>a<rprime|'>\<Rightarrow\><around*|(|0,a|)>\<neq\><around*|(|0,a<rprime|'>|)>\<Rightarrowlim\><rsub|<around*|(|0,a<rprime|'>|)>\<in\>R<rsub|a>=<around*|{|<around*|(|0,a|)>|}><big|cup>\<sigma\><around*|(|R<rsub|a>|)>><around*|(|0,a<rprime|'>|)>\<in\>\<sigma\><around*|(|R<rsub|a>|)>>
-        so there exists a <math|<around*|(|n,a<rprime|''>|)>\<in\>R<rsub|a>>
-        with <math|<around*|(|0,a<rprime|'>|)>=\<sigma\><around*|(|n,a<rprime|''>|)>=<around*|(|s<around*|(|n|)>,f<around*|(|a<rprime|''>|)>|)>>
-        giving <math|0=s<around*|(|n|)>> a contradiction. So we must conclude
-        that <math|a=a<rprime|'>>.
-      </proof>
-
-      <item>If <math|n\<in\>P<rsub|a>\<Rightarrow\>s<around*|(|n|)>\<in\>P<rsub|a>>
-
-      <\proof>
-        As <math|n\<in\>P<rsub|a>> then <math|n> is a-paired-up so there
-        exists a <with|font-series|bold|unique> <math|y\<in\>A> such that
-        <math|<around*|(|n,y|)>\<in\>R<rsub|a>\<Rightarrowlim\><rsub|R<rsub|a>
-        is <with|mode|text|a-closed>>\<sigma\><around*|(|n,y|)>\<in\>R<rsub|a>\<Rightarrow\><around*|(|s<around*|(|n|)>,f<around*|(|y|)>|)>\<in\>R<rsub|a>>.
-        Suppose now that <math|<around*|(|s<around*|(|n|)>,y<rprime|'>|)>\<in\>R<rsub|a>=<around*|{|<around*|(|0,a|)>|}><big|cup>\<sigma\><around*|(|R<rsub|a>|)>\<Rightarrowlim\><rsub|s<around*|(|n|)>\<neq\>0><around*|(|s<around*|(|n|)>,y<rprime|'>|)>\<in\>\<sigma\><around*|(|R<rsub|a>|)>\<Rightarrow\>\<exists\><around*|(|m,c|)>\<in\>R<rsub|a>\<vdash\><around*|(|s<around*|(|n|)>,y<rprime|'>|)>=\<sigma\><around*|(|m,c|)>=<around*|(|s<around*|(|m|)>,f<around*|(|c|)>|)>\<Rightarrow\>s<around*|(|n|)>=s<around*|(|m|)>\<wedge\>y<rprime|'>=f<around*|(|c|)>\<Rightarrowlim\><rsub|<with|mode|text|<reference|if
-        successors are equal numbers are equal>>>n=m\<wedge\>y<rprime|'>=f<around*|(|c|)>\<Rightarrowlim\><around*|(|n,c|)>\<in\>R<rsub|a>\<wedge\>y<rprime|'>=f<around*|(|c|)>\<Rightarrowlim\><rsub|<around*|(|n,y|)>\<in\>R<rsub|a>><around*|(|n,c|)>,<around*|(|n,y|)>\<in\>R<rsub|a>\<wedge\>y<rprime|'>=f<around*|(|c|)>\<Rightarrowlim\><rsub|n
-        <with|mode|text|is a-paired-up>>c=y\<wedge\>y<rprime|'>=f<around*|(|c|)>\<Rightarrow\>y<rprime|'>=f<around*|(|y|)>>.
-        So <math|s<around*|(|n|)>> is a-paired-up and thus
-        <math|s<around*|(|n|)>\<in\>P<rsub|a>>
-      </proof>
-    </enumerate>
-
-    Using mathematical induction (see <reference|mathematical induction> ) we
-    have then that <math|P<rsub|a>=\<bbb-N\>>. Define now
-    <math|\<varphi\>:\<bbb-N\>\<rightarrow\>A> with
-    <math|\<varphi\>=R<rsub|a>> then we have that if
-    <math|n\<in\>\<bbb-N\>\<Rightarrow\>n\<in\>P<rsub|a>> so there exists a
-    <math|y\<in\>A\<vdash\><around*|(|n,a|)>\<in\>R<rsub|a>=\<varphi\>> and
-    thus <math|dom<around*|(|\<varphi\>|)>=\<bbb-N\>>. Second if
-    <math|<around*|(|n,y|)>,<around*|(|n,y<rprime|'>|)>\<in\>\<varphi\>> then
-    as <math|n\<in\>\<bbb-N\>\<Rightarrow\>n\<in\>P<rsub|a>> we have that
-    <math|n> is a-paired-up and thus <math|y=y<rprime|'>>. So we conclude
-    that <math|\<varphi\>:\<bbb-N\>\<rightarrow\>A> is indeed a function. Now
-    as <math|R<rsub|a>> is a-closed we have
-    <math|<around*|(|0,a|)>\<in\>R<rsub|a>=\<varphi\>\<Rightarrow\>\<varphi\><around*|(|0|)>=a>
-    and thus
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|>|<cell|\<varphi\><around*|(|0|)>=a>|<cell|>>>>
-    </eqnarray*>
-
-    Second if <math|n\<in\>\<bbb-N\>> then <math|n\<in\>P<rsub|a>> so there
-    exists a <math|y\<in\>A> such that <math|<around*|(|n,y|)>\<in\>R<rsub|a>=\<varphi\>\<Rightarrow\>y=\<varphi\><around*|(|n|)>>
-    \ then as <math|R<rsub|a>> is a-closed we have
-    <math|<around*|(|s<around*|(|n|)>,f<around*|(|y|)>|)>\<in\>R<rsub|a>=\<varphi\>>
-    and thus <math|<around*|(|\<varphi\>\<circ\>s|)><around*|(|n|)>=\<varphi\><around*|(|s<around*|(|n|)>|)>=f<around*|(|y|)>=f<around*|(|\<varphi\><around*|(|n|)>|)>=<around*|(|f\<circ\>\<varphi\>|)><around*|(|n|)>>
-    proving that
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|\<varphi\>\<circ\>s>|<cell|=>|<cell|f\<circ\>\<varphi\>>>>>
-    </eqnarray*>
-
-    So we have found that the function <math|\<varphi\>:\<bbb-N\>\<rightarrow\>A>
-    satisfies the requirements of the theorem. Let's now prove that it is
-    unique. Assume that there exists also a
-    <math|\<varphi\><rprime|'>:\<bbb-N\>\<rightarrow\>A> satisfying
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|\<varphi\><rprime|'><around*|(|0|)>>|<cell|=>|<cell|a>>|<row|<cell|\<varphi\><rprime|'>\<circ\>s>|<cell|=>|<cell|f\<circ\>\<varphi\>>>>>
-    </eqnarray*>
-
-    Take then <math|E=<around*|{|n\<in\>\<bbb-N\><around*|\||\<varphi\><around*|(|n|)>=\<varphi\><rprime|'><around*|(|n|)>|\<nobracket\>>|}>>
-    then we have
-
-    <\enumerate>
-      <item><math|\<varphi\><around*|(|0|)>=a=\<varphi\><rprime|'><around*|(|0|)>\<Rightarrow\>0\<in\>A>
-
-      <item>If <math|n\<in\>E> then for <math|s<around*|(|n|)>> we have
-      <math|\<varphi\><around*|(|s<around*|(|n|)>|)>=<around*|(|\<varphi\>\<circ\>s|)><around*|(|n|)>=<around*|(|f\<circ\>\<varphi\>|)><around*|(|n|)>=f<around*|(|\<varphi\><around*|(|n|)>|)>\<equallim\><rsub|n\<in\>E\<Rightarrow\>\<varphi\><around*|(|n|)>=\<varphi\><rprime|'><around*|(|n|)>>f<around*|(|\<varphi\><rprime|'><around*|(|n|)>|)>=<around*|(|f\<circ\>\<varphi\><rprime|'>|)><around*|(|n|)>=<around*|(|\<varphi\><rprime|'>\<circ\>s|)><around*|(|n|)>=\<varphi\><rprime|'><around*|(|s<around*|(|n|)>|)>>
-      and thus <math|s<around*|(|n|)>\<in\>E>
-    </enumerate>
-
-    Using mathematical induction (see <reference|mathematical induction>) we
-    have then that <math|E=\<bbb-N\>> so <math|\<forall\>n\<in\>\<bbb-N\>> we
-    have <math|n\<in\>E\<Rightarrow\>\<varphi\><around*|(|n|)>=\<varphi\><rprime|'><around*|(|n|)>>
-    and thus <math|\<varphi\>=\<varphi\><rprime|'>>
-
-    \;
-  </proof>
-
-  This theorem allows us to iterate the application of a function in the
-  following way: If <math|a\<in\>A> and <math|f:A\<rightarrow\>A> is a
-  function then there exists a function <math|\<varphi\>:\<bbb-N\>\<rightarrow\>A>
-  such that
-
-  <\eqnarray*>
-    <tformat|<table|<row|<cell|\<varphi\><around*|(|0|)>>|<cell|=>|<cell|a>>|<row|<cell|\<varphi\><around*|(|1|)>=\<varphi\><around*|(|s<around*|(|0|)>|)>>|<cell|=>|<cell|f<around*|(|\<varphi\><around*|(|0|)>|)>=f<around*|(|a|)>>>|<row|<cell|\<varphi\><around*|(|2|)>=\<varphi\><around*|(|s<around*|(|1|)>|)>>|<cell|=>|<cell|f<around*|(|\<varphi\><around*|(|1|)>|)>=f<around*|(|f<around*|(|a|)>|)>>>|<row|<cell|\<varphi\><around*|(|3|)>=\<varphi\><around*|(|s<around*|(|2|)>|)>>|<cell|=>|<cell|f<around*|(|\<varphi\><around*|(|2|)>|)>=f<around*|(|f<around*|(|f<around*|(|a|)>|)>|)>>>|<row|<cell|>|<cell|\<ldots\>>|<cell|>>|<row|<cell|\<varphi\><around*|(|n|)>>|<cell|=>|<cell|<wide|<rsup|>f<around*|(|f<around*|(|\<ldots\>.<around*|(|f<around*|(|a|)>|)>|)>|)>|\<wide-overbrace\>><rsup|n
-    times>>>>>
-  </eqnarray*>
-
-  As \ application of the above theorem we have the following iteration
+  As \ application of the previous theorem we have the following iteration
   theorem
 
   <\theorem>
@@ -10746,9 +10568,8 @@
     is also the empty function <math|\<emptyset\>> then
     <math|<around*|(|\<emptyset\>|)><rsup|n>=\<emptyset\>> satisfies (1),
     (2). If <math|A\<neq\>\<emptyset\>> then let <math|n\<in\>\<bbb-N\>> and
-    <math|a\<in\>A> and use the previous theorem <reference|universal
-    property of natural numbers> to find a function
-    <math|\<varphi\><rsub|a>:\<bbb-N\>\<rightarrow\>A> such that
+    <math|a\<in\>A> and use the theorem <reference|recursion> to find a
+    function <math|\<varphi\><rsub|a>:\<bbb-N\>\<rightarrow\>A> such that
     <math|\<varphi\><rsub|a><around*|(|0|)>=a> and
     <math|\<varphi\><rsub|a>\<circ\>s=f\<circ\>\<varphi\><rsub|a>>. Define
     now <math|<around*|(|f|)><rsup|n>:A\<rightarrow\>A> by
@@ -26046,8 +25867,8 @@
     <associate|B^A is a set if B and A are sets|<tuple|2.76|51>>
     <associate|DeMorgan's Laws|<tuple|1.23|10>>
     <associate|Hausdorff's maximal principle|<tuple|2.221|81>>
-    <associate|N,+ is a abelian semi-group|<tuple|4.34|102>>
-    <associate|N,.is a semi-group|<tuple|4.43|103>>
+    <associate|N,+ is a abelian semi-group|<tuple|4.33|102>>
+    <associate|N,.is a semi-group|<tuple|4.42|103>>
     <associate|N_Q forms positive integers|<tuple|7.32|166>>
     <associate|N_Q is semi group|<tuple|7.30|166>>
     <associate|NxN is bijective to N|<tuple|5.58|?>>
@@ -26058,9 +25879,9 @@
     <associate|R is isomorph to R embedded in the reals|<tuple|9.14|209>>
     <associate|R^2 is bijective with C|<tuple|9.39|215>>
     <associate|Re,Img|<tuple|9.17|?>>
-    <associate|Recursion step form|<tuple|4.26|100>>
+    <associate|Recursion step form|<tuple|4.25|100>>
     <associate|Sn|<tuple|5.15|113>>
-    <associate|The natural numbers are fully ordered|<tuple|4.53|105>>
+    <associate|The natural numbers are fully ordered|<tuple|4.52|105>>
     <associate|The rational numbers are denumerable|<tuple|7.40|169>>
     <associate|Zorn' lemma for pre-ordered sets|<tuple|2.233|86>>
     <associate|Zorn's lemma|<tuple|2.223|82>>
@@ -26077,24 +25898,24 @@
     <associate|absolute value is a norm|<tuple|8.66|202>>
     <associate|absolute value of integers|<tuple|6.44|155>>
     <associate|absorbing element|<tuple|3.25|90>>
-    <associate|absorbing element of natural numbers|<tuple|4.37|102>>
+    <associate|absorbing element of natural numbers|<tuple|4.36|102>>
     <associate|absorbing element of the integers|<tuple|6.12|147>>
     <associate|absorption laws|<tuple|1.22|10>>
-    <associate|addition of natural number|<tuple|4.27|101>>
-    <associate|addition of natural numbers is associative|<tuple|4.32|101>>
+    <associate|addition of natural number|<tuple|4.26|101>>
+    <associate|addition of natural numbers is associative|<tuple|4.31|101>>
     <associate|addition of rational numbers|<tuple|7.5|159>>
     <associate|alternative definition for conditional
     completeness|<tuple|2.180|70>>
     <associate|alternative definition of a function (1)|<tuple|2.10|36>>
     <associate|alternative definition of partial function|<tuple|2.3|35>>
     <associate|application of axiom of choice|<tuple|2.212|79>>
-    <associate|archimedean property of natural numbers|<tuple|4.73|108>>
+    <associate|archimedean property of natural numbers|<tuple|4.72|108>>
     <associate|archimedean property of the rationals|<tuple|7.33|167>>
     <associate|archimedean property of the reals|<tuple|9.55|219>>
     <associate|archimedean property of the reals (R)|<tuple|8.61|200>>
     <associate|archimedean property of whole numbers|<tuple|6.40|154>>
     <associate|associative laws of union and intersection|<tuple|1.26|11>>
-    <associate|associativity of general composition|<tuple|4.81|110>>
+    <associate|associativity of general composition|<tuple|4.80|110>>
     <associate|auto-1|<tuple|1|7>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|<big|cup>>|8>>
     <associate|auto-100|<tuple|initial segment|65>>
@@ -26160,144 +25981,143 @@
     <associate|auto-155|<tuple|peano axioms|93>>
     <associate|auto-156|<tuple|4.2|94>>
     <associate|auto-157|<tuple|recursion|95>>
-    <associate|auto-158|<tuple|universal property of
-    <with|mode|<quote|math>|\<bbb-N\><rsub|0>>|95>>
-    <associate|auto-159|<tuple|iteration|97>>
+    <associate|auto-158|<tuple|iteration|95>>
+    <associate|auto-159|<tuple|field with characterization zero|97>>
     <associate|auto-16|<tuple|DeMorgan's Laws|10>>
-    <associate|auto-160|<tuple|field with characterization zero|98>>
-    <associate|auto-161|<tuple|recursion on
-    <with|mode|<quote|math>|\<bbb-N\><rsub|0>> step form|100>>
-    <associate|auto-162|<tuple|4.3|100>>
-    <associate|auto-163|<tuple|addition of natural numbers|101>>
-    <associate|auto-164|<tuple|neutral element of natural elements|101>>
-    <associate|auto-165|<tuple|multiplication of natural numbers|101>>
-    <associate|auto-166|<tuple|4.4|102>>
-    <associate|auto-167|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-N\><rsub|0>.\<leqslant\>|\<rangle\>>
-    is conditional complete>|103>>
-    <associate|auto-168|<tuple|Archimedean property of
-    <with|mode|<quote|math>|\<bbb-N\><rsub|0>>|105>>
-    <associate|auto-169|<tuple|4.4.1|108>>
+    <associate|auto-160|<tuple|recursion on
+    <with|mode|<quote|math>|\<bbb-N\><rsub|0>> step form|98>>
+    <associate|auto-161|<tuple|4.3|100>>
+    <associate|auto-162|<tuple|addition of natural numbers|100>>
+    <associate|auto-163|<tuple|neutral element of natural elements|101>>
+    <associate|auto-164|<tuple|multiplication of natural numbers|101>>
+    <associate|auto-165|<tuple|4.4|101>>
+    <associate|auto-166|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-N\><rsub|0>.\<leqslant\>|\<rangle\>>
+    is conditional complete>|102>>
+    <associate|auto-167|<tuple|Archimedean property of
+    <with|mode|<quote|math>|\<bbb-N\><rsub|0>>|103>>
+    <associate|auto-168|<tuple|4.4.1|105>>
+    <associate|auto-169|<tuple|<with|mode|<quote|math>|<around*|{|n,\<ldots\>|}>>|108>>
     <associate|auto-17|<tuple|1.3|10>>
-    <associate|auto-170|<tuple|<with|mode|<quote|math>|<around*|{|n,\<ldots\>|}>>|109>>
-    <associate|auto-171|<tuple|<with|mode|<quote|math>|f<rsub|n>\<circ\>\<ldots\>\<circ\>f<rsub|1>>|109>>
-    <associate|auto-172|<tuple|5|110>>
-    <associate|auto-173|<tuple|5.1|111>>
-    <associate|auto-174|<tuple|equipotent|111>>
-    <associate|auto-175|<tuple|5.2|111>>
-    <associate|auto-176|<tuple|<with|mode|<quote|math>|S<rsub|n>>|113>>
-    <associate|auto-177|<tuple|recursion on
+    <associate|auto-170|<tuple|<with|mode|<quote|math>|f<rsub|n>\<circ\>\<ldots\>\<circ\>f<rsub|1>>|109>>
+    <associate|auto-171|<tuple|5|109>>
+    <associate|auto-172|<tuple|5.1|110>>
+    <associate|auto-173|<tuple|equipotent|111>>
+    <associate|auto-174|<tuple|5.2|111>>
+    <associate|auto-175|<tuple|<with|mode|<quote|math>|S<rsub|n>>|111>>
+    <associate|auto-176|<tuple|recursion on
     <with|mode|<quote|math>|S<rsub|n\<upl\>1>> - step form|113>>
-    <associate|auto-178|<tuple|<with|mode|<quote|math>|n!>|113>>
-    <associate|auto-179|<tuple|finite sets|114>>
+    <associate|auto-177|<tuple|<with|mode|<quote|math>|n!>|113>>
+    <associate|auto-178|<tuple|finite sets|113>>
+    <associate|auto-179|<tuple|infinite sets|114>>
     <associate|auto-18|<tuple|axiom of pairing|14>>
-    <associate|auto-180|<tuple|infinite sets|118>>
-    <associate|auto-181|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|0>,\<ldots\>,a<rsub|n>|}>>|118>>
-    <associate|auto-182|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|1>,\<ldots\>,a<rsub|n>|}>>|118>>
-    <associate|auto-183|<tuple|infinite countable set|118>>
-    <associate|auto-184|<tuple|enumerable set|118>>
-    <associate|auto-185|<tuple|countable set|118>>
-    <associate|auto-186|<tuple|<with|mode|<quote|math>|#<around*|(|A|)>>|118>>
-    <associate|auto-187|<tuple|5.3|122>>
-    <associate|auto-188|<tuple|5.4|127>>
-    <associate|auto-189|<tuple|5.5|130>>
+    <associate|auto-180|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|0>,\<ldots\>,a<rsub|n>|}>>|118>>
+    <associate|auto-181|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|1>,\<ldots\>,a<rsub|n>|}>>|118>>
+    <associate|auto-182|<tuple|infinite countable set|118>>
+    <associate|auto-183|<tuple|enumerable set|118>>
+    <associate|auto-184|<tuple|countable set|118>>
+    <associate|auto-185|<tuple|<with|mode|<quote|math>|#<around*|(|A|)>>|118>>
+    <associate|auto-186|<tuple|5.3|118>>
+    <associate|auto-187|<tuple|5.4|122>>
+    <associate|auto-188|<tuple|5.5|127>>
+    <associate|auto-189|<tuple|sequence|130>>
     <associate|auto-19|<tuple|<with|mode|<quote|math>|A\<times\>B>|14>>
-    <associate|auto-190|<tuple|sequence|133>>
-    <associate|auto-191|<tuple|5.6|133>>
-    <associate|auto-192|<tuple|cartesian product of a family of sets|133>>
-    <associate|auto-193|<tuple|product tuple|134>>
-    <associate|auto-194|<tuple|<with|mode|<quote|math>|\<pi\><rsub|i>>|134>>
-    <associate|auto-195|<tuple|5.6.1|136>>
-    <associate|auto-196|<tuple|5.6.2|141>>
-    <associate|auto-197|<tuple|6|142>>
-    <associate|auto-198|<tuple|6.1|145>>
-    <associate|auto-199|<tuple|<with|mode|<quote|math>|\<bbb-Z\>>|145>>
+    <associate|auto-190|<tuple|5.6|133>>
+    <associate|auto-191|<tuple|cartesian product of a family of sets|133>>
+    <associate|auto-192|<tuple|product tuple|133>>
+    <associate|auto-193|<tuple|<with|mode|<quote|math>|\<pi\><rsub|i>>|134>>
+    <associate|auto-194|<tuple|5.6.1|134>>
+    <associate|auto-195|<tuple|5.6.2|136>>
+    <associate|auto-196|<tuple|6|141>>
+    <associate|auto-197|<tuple|6.1|142>>
+    <associate|auto-198|<tuple|<with|mode|<quote|math>|\<bbb-Z\>>|145>>
+    <associate|auto-199|<tuple|absorbing element of integers|145>>
     <associate|auto-2|<tuple|1.1|7>>
     <associate|auto-20|<tuple|1.4|15>>
-    <associate|auto-200|<tuple|absorbing element of integers|145>>
-    <associate|auto-201|<tuple|6.1.1|147>>
-    <associate|auto-202|<tuple|6.2|148>>
-    <associate|auto-203|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>|149>>
-    <associate|auto-204|<tuple|positive whole numbers|149>>
-    <associate|auto-205|<tuple|<with|mode|<quote|math>|-\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>|149>>
-    <associate|auto-206|<tuple|negative whole numbers|150>>
-    <associate|auto-207|<tuple|order relation in
+    <associate|auto-200|<tuple|6.1.1|145>>
+    <associate|auto-201|<tuple|6.2|147>>
+    <associate|auto-202|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>|148>>
+    <associate|auto-203|<tuple|positive whole numbers|149>>
+    <associate|auto-204|<tuple|<with|mode|<quote|math>|-\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>|149>>
+    <associate|auto-205|<tuple|negative whole numbers|149>>
+    <associate|auto-206|<tuple|order relation in
     <with|mode|<quote|math>|\<bbb-Z\>>|150>>
-    <associate|auto-208|<tuple|Archimedean property of
+    <associate|auto-207|<tuple|Archimedean property of
     <with|mode|<quote|math>|\<bbb-Z\>>|150>>
-    <associate|auto-209|<tuple|absolute value|154>>
+    <associate|auto-208|<tuple|absolute value|150>>
+    <associate|auto-209|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>|154>>
     <associate|auto-21|<tuple|domain|17>>
-    <associate|auto-210|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>|155>>
-    <associate|auto-211|<tuple|division algorithm|155>>
-    <associate|auto-212|<tuple|divides|155>>
-    <associate|auto-213|<tuple|common divisor|156>>
-    <associate|auto-214|<tuple|gcd|156>>
-    <associate|auto-215|<tuple|even numbers|156>>
-    <associate|auto-216|<tuple|odd numbers|157>>
-    <associate|auto-217|<tuple|6.3|157>>
-    <associate|auto-218|<tuple|7|157>>
-    <associate|auto-219|<tuple|7.1|159>>
+    <associate|auto-210|<tuple|division algorithm|155>>
+    <associate|auto-211|<tuple|divides|155>>
+    <associate|auto-212|<tuple|common divisor|155>>
+    <associate|auto-213|<tuple|gcd|156>>
+    <associate|auto-214|<tuple|even numbers|156>>
+    <associate|auto-215|<tuple|odd numbers|156>>
+    <associate|auto-216|<tuple|6.3|157>>
+    <associate|auto-217|<tuple|7|157>>
+    <associate|auto-218|<tuple|7.1|157>>
+    <associate|auto-219|<tuple|<with|mode|<quote|math>|<frac|n|k>>|159>>
     <associate|auto-22|<tuple|range|18>>
-    <associate|auto-220|<tuple|<with|mode|<quote|math>|<frac|n|k>>|159>>
-    <associate|auto-221|<tuple|<with|mode|<quote|math>|\<bbb-Q\>>|159>>
-    <associate|auto-222|<tuple|<with|mode|<quote|math>|<frac|n|k>>|159>>
-    <associate|auto-223|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-Q\>,\<upl\>|\<rangle\>>>|159>>
-    <associate|auto-224|<tuple|7.2|160>>
-    <associate|auto-225|<tuple|7.3|162>>
-    <associate|auto-226|<tuple|order relation on rational numbers|163>>
-    <associate|auto-227|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-Q\>>>|164>>
-    <associate|auto-228|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Q\>>>|165>>
-    <associate|auto-229|<tuple|Archimedean property of
-    <with|mode|<quote|math>|\<bbb-Q\>>|166>>
+    <associate|auto-220|<tuple|<with|mode|<quote|math>|\<bbb-Q\>>|159>>
+    <associate|auto-221|<tuple|<with|mode|<quote|math>|<frac|n|k>>|159>>
+    <associate|auto-222|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-Q\>,\<upl\>|\<rangle\>>>|159>>
+    <associate|auto-223|<tuple|7.2|159>>
+    <associate|auto-224|<tuple|7.3|160>>
+    <associate|auto-225|<tuple|order relation on rational numbers|162>>
+    <associate|auto-226|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-Q\>>>|163>>
+    <associate|auto-227|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Q\>>>|164>>
+    <associate|auto-228|<tuple|Archimedean property of
+    <with|mode|<quote|math>|\<bbb-Q\>>|165>>
+    <associate|auto-229|<tuple|7.4|166>>
     <associate|auto-23|<tuple|function graph|18>>
-    <associate|auto-230|<tuple|7.4|167>>
-    <associate|auto-231|<tuple|8|169>>
-    <associate|auto-232|<tuple|8.1|171>>
-    <associate|auto-233|<tuple|Dedekind's Cut|171>>
-    <associate|auto-234|<tuple|the real numbers|171>>
-    <associate|auto-235|<tuple|<with|mode|<quote|math>|\<bbb-R\>>|171>>
-    <associate|auto-236|<tuple|rational cuts|171>>
-    <associate|auto-237|<tuple|<with|mode|<quote|math>|\<bbb-Q\><rsub|\<bbb-R\>>>|171>>
-    <associate|auto-238|<tuple|negative cut|172>>
-    <associate|auto-239|<tuple|8.2|172>>
+    <associate|auto-230|<tuple|8|167>>
+    <associate|auto-231|<tuple|8.1|169>>
+    <associate|auto-232|<tuple|Dedekind's Cut|171>>
+    <associate|auto-233|<tuple|the real numbers|171>>
+    <associate|auto-234|<tuple|<with|mode|<quote|math>|\<bbb-R\>>|171>>
+    <associate|auto-235|<tuple|rational cuts|171>>
+    <associate|auto-236|<tuple|<with|mode|<quote|math>|\<bbb-Q\><rsub|\<bbb-R\>>>|171>>
+    <associate|auto-237|<tuple|negative cut|171>>
+    <associate|auto-238|<tuple|8.2|172>>
+    <associate|auto-239|<tuple|8.2.1|172>>
     <associate|auto-24|<tuple|1.5|20>>
-    <associate|auto-240|<tuple|8.2.1|173>>
-    <associate|auto-241|<tuple|8.2.2|173>>
-    <associate|auto-242|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|+>>|175>>
-    <associate|auto-243|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|->>|175>>
-    <associate|auto-244|<tuple|reciprocal cut|175>>
-    <associate|auto-245|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\>,+,\<cdot\>|\<rangle\>>
-    is a field>|179>>
-    <associate|auto-246|<tuple|8.2.3|180>>
-    <associate|auto-247|<tuple|8.3|192>>
-    <associate|auto-248|<tuple|<with|mode|<quote|math>|\<less\>>|193>>
-    <associate|auto-249|<tuple|<with|mode|<quote|math>|\<leqslant\>>|193>>
-    <associate|auto-25|<tuple|axiom of subsets|20>>
-    <associate|auto-250|<tuple|<with|mode|<quote|math>|\<bbb-R\> is
+    <associate|auto-240|<tuple|8.2.2|173>>
+    <associate|auto-241|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|+>>|173>>
+    <associate|auto-242|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|->>|175>>
+    <associate|auto-243|<tuple|reciprocal cut|175>>
+    <associate|auto-244|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\>,+,\<cdot\>|\<rangle\>>
+    is a field>|175>>
+    <associate|auto-245|<tuple|8.2.3|179>>
+    <associate|auto-246|<tuple|8.3|180>>
+    <associate|auto-247|<tuple|<with|mode|<quote|math>|\<less\>>|192>>
+    <associate|auto-248|<tuple|<with|mode|<quote|math>|\<leqslant\>>|193>>
+    <associate|auto-249|<tuple|<with|mode|<quote|math>|\<bbb-R\> is
     conditional complete>|193>>
-    <associate|auto-251|<tuple|irrational numbers|196>>
-    <associate|auto-252|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-R\>>>|197>>
-    <associate|auto-253|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-R\>>>|198>>
-    <associate|auto-254|<tuple|density theorem|198>>
-    <associate|auto-255|<tuple|absolute value|202>>
-    <associate|auto-256|<tuple|8.4|202>>
-    <associate|auto-257|<tuple|<with|mode|<quote|math>|<sqrt|x>>|204>>
-    <associate|auto-258|<tuple|9|206>>
-    <associate|auto-259|<tuple|9.1|207>>
+    <associate|auto-25|<tuple|axiom of subsets|20>>
+    <associate|auto-250|<tuple|irrational numbers|193>>
+    <associate|auto-251|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-R\>>>|196>>
+    <associate|auto-252|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-R\>>>|197>>
+    <associate|auto-253|<tuple|density theorem|198>>
+    <associate|auto-254|<tuple|absolute value|198>>
+    <associate|auto-255|<tuple|8.4|202>>
+    <associate|auto-256|<tuple|<with|mode|<quote|math>|<sqrt|x>>|202>>
+    <associate|auto-257|<tuple|9|204>>
+    <associate|auto-258|<tuple|9.1|206>>
+    <associate|auto-259|<tuple|<with|mode|<quote|math>|\<bbb-C\>>|207>>
     <associate|auto-26|<tuple|axiom of unions|20>>
-    <associate|auto-260|<tuple|<with|mode|<quote|math>|\<bbb-C\>>|207>>
-    <associate|auto-261|<tuple|conjugate of a complex number|207>>
-    <associate|auto-262|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>>>|208>>
-    <associate|auto-263|<tuple|9.2|209>>
-    <associate|auto-264|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>+>,\<bbb-R\><rsub|\<bbb-C\>->>|210>>
-    <associate|auto-265|<tuple|9.3|211>>
-    <associate|auto-266|<tuple|complex norm|212>>
-    <associate|auto-267|<tuple|9.4|212>>
-    <associate|auto-268|<tuple|9.4.1|214>>
-    <associate|auto-269|<tuple|<with|mode|<quote|math>|\<bbb-C\><rsub|\<bbb-N\><rsub|0>>>|214>>
+    <associate|auto-260|<tuple|conjugate of a complex number|207>>
+    <associate|auto-261|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>>>|207>>
+    <associate|auto-262|<tuple|9.2|208>>
+    <associate|auto-263|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>+>,\<bbb-R\><rsub|\<bbb-C\>->>|209>>
+    <associate|auto-264|<tuple|9.3|210>>
+    <associate|auto-265|<tuple|complex norm|211>>
+    <associate|auto-266|<tuple|9.4|212>>
+    <associate|auto-267|<tuple|9.4.1|212>>
+    <associate|auto-268|<tuple|<with|mode|<quote|math>|\<bbb-C\><rsub|\<bbb-N\><rsub|0>>>|214>>
+    <associate|auto-269|<tuple|9.4.2|214>>
     <associate|auto-27|<tuple|axiom of powersets|20>>
-    <associate|auto-270|<tuple|9.4.2|214>>
-    <associate|auto-271|<tuple|density theorem|215>>
-    <associate|auto-272|<tuple|9.4.3|220>>
+    <associate|auto-270|<tuple|density theorem|214>>
+    <associate|auto-271|<tuple|9.4.3|215>>
+    <associate|auto-272|<tuple|9.5|220>>
     <associate|auto-273|<tuple|9.5|222>>
     <associate|auto-28|<tuple|<with|mode|<quote|math>|\<cal-P\><around*|(|A|)>>|20>>
     <associate|auto-29|<tuple|<with|mode|<quote|math>|\<cal-P\><rprime|'><around*|(|A|)>>|20>>
@@ -26418,7 +26238,7 @@
     application|<tuple|2.38|41>>
     <associate|composition of increasing functions|<tuple|2.155|66>>
     <associate|composition of injective partial functions|<tuple|2.18|37>>
-    <associate|composition of n functions|<tuple|4.80|110>>
+    <associate|composition of n functions|<tuple|4.79|110>>
     <associate|composition of partial functions|<tuple|2.5|35>>
     <associate|composition of relations|<tuple|1.47|?>>
     <associate|condition 1 for positive integers|<tuple|6.28|151>>
@@ -26462,16 +26282,16 @@
     denumerable|<tuple|5.60|129>>
     <associate|difference of finte sets|<tuple|5.45|123>>
     <associate|disjoint union of reals|<tuple|8.15|175>>
-    <associate|distributivity in natural numbers|<tuple|4.40|102>>
+    <associate|distributivity in natural numbers|<tuple|4.39|102>>
     <associate|distributivity of union or intersection|<tuple|1.28|12>>
     <associate|divides|<tuple|6.49|156>>
     <associate|division algorithm|<tuple|6.48|155>>
-    <associate|division algorithm for natural numbers|<tuple|4.74|108>>
+    <associate|division algorithm for natural numbers|<tuple|4.73|108>>
     <associate|dom and range of a composition of partial
     functions|<tuple|2.7|36>>
     <associate|domain property of composition|<tuple|1.52|19>>
     <associate|elemination of non zero common factor in natural
-    numbers|<tuple|4.72|108>>
+    numbers|<tuple|4.71|108>>
     <associate|embedding of natural numbers in the reals|<tuple|9.35|214>>
     <associate|embedding of the whole numbers in the
     rationals|<tuple|7.25|165>>
@@ -26552,7 +26372,7 @@
     <associate|even and odd|<tuple|6.55|157>>
     <associate|even and odd numbers|<tuple|6.56|157>>
     <associate|every natural number is bigger or equal to
-    zero|<tuple|4.47|104>>
+    zero|<tuple|4.46|104>>
     <associate|every natural number is transitive|<tuple|4.13|94>>
     <associate|every set with a infinite subset is finite|<tuple|5.35|119>>
     <associate|every subclass of a well ordered class is isomorphic to the
@@ -26572,7 +26392,7 @@
     <associate|field|<tuple|3.29|91>>
     <associate|field homomorphism|<tuple|3.33|92>>
     <associate|field isomorphism and neutral element|<tuple|3.35|92>>
-    <associate|field with characterization zero|<tuple|4.25|100>>
+    <associate|field with characterization zero|<tuple|4.24|100>>
     <associate|finite and infinite sets|<tuple|5.27|118>>
     <associate|finite cartesian product of sets and product of sets are
     bijective|<tuple|5.89|135>>
@@ -26664,8 +26484,8 @@
     <associate|isomorphism|<tuple|isomorphism|66>>
     <associate|isomorphism is strictly increasing|<tuple|2.159|66>>
     <associate|isomorphism preserves sup and inf|<tuple|2.181|71>>
-    <associate|iteration|<tuple|4.21|98>>
-    <associate|iteration over a group|<tuple|4.22|99>>
+    <associate|iteration|<tuple|4.20|98>>
+    <associate|iteration over a group|<tuple|4.21|99>>
     <associate|left (right action)|<tuple|3.16|89>>
     <associate|lemma for archimedean of rationals|<tuple|7.26|165>>
     <associate|lemma for sum of reals|<tuple|8.11|174>>
@@ -26675,71 +26495,71 @@
     <associate|lexical order and fully ordering|<tuple|2.150|65>>
     <associate|linear ordered class|<tuple|2.148|65>>
     <associate|m*m is even then m is even|<tuple|6.57|157>>
-    <associate|m+s(n)=s(m+n)|<tuple|4.31|101>>
-    <associate|m-n if n\<less\>=m, n,m natural numbers|<tuple|4.63|107>>
+    <associate|m+s(n)=s(m+n)|<tuple|4.30|101>>
+    <associate|m-n if n\<less\>=m, n,m natural numbers|<tuple|4.62|107>>
     <associate|mapping of N into a finite set|<tuple|5.52|125>>
     <associate|mathematical induction|<tuple|4.10|93>>
-    <associate|mathematical induction form 2|<tuple|4.77|109>>
-    <associate|mathematical induction form 3|<tuple|4.78|109>>
+    <associate|mathematical induction form 2|<tuple|4.76|109>>
+    <associate|mathematical induction form 3|<tuple|4.77|109>>
     <associate|maximal (minimal element in a pre-ordered
     class|<tuple|2.164|67>>
     <associate|maximal, minimal, greatest, least|<tuple|2.165|67>>
     <associate|maximum and minimum|<tuple|2.167|68>>
     <associate|maximum of class with bigger elements then another
     class|<tuple|2.168|68>>
-    <associate|multiplaction of natural numbers|<tuple|4.35|102>>
+    <associate|multiplaction of natural numbers|<tuple|4.34|102>>
     <associate|multiplication of natural numbers is
-    associative|<tuple|4.42|103>>
+    associative|<tuple|4.41|103>>
     <associate|multiplication of natural numbers is
-    commutative|<tuple|4.41|103>>
+    commutative|<tuple|4.40|103>>
     <associate|multiplication of rational numbers|<tuple|7.9|161>>
     <associate|n element of successor|<tuple|4.11|94>>
     <associate|n+k=0=\<gtr\>n=k=0 if n,k are natural
-    numbers|<tuple|4.60|106>>
-    <associate|n+k=m+k=\<gtr\>n=m|<tuple|4.44|103>>
+    numbers|<tuple|4.59|106>>
+    <associate|n+k=m+k=\<gtr\>n=m|<tuple|4.43|103>>
     <associate|n.r=k,r=\<gtr\>n=k and n,k,r integers|<tuple|6.15|148>>
     <associate|n/k|<tuple|7.4|159>>
     <associate|n\<less\>2^n|<tuple|9.62|220>>
     <associate|n\<less\>2^n (R)|<tuple|8.70|203>>
-    <associate|n\<less\>=i\<less\>=m=\<gtr\>0\<less\>=i-n\<less\>=m-n|<tuple|4.65|107>>
+    <associate|n\<less\>=i\<less\>=m=\<gtr\>0\<less\>=i-n\<less\>=m-n|<tuple|4.64|107>>
     <associate|n\<less\>=m\<less\>=\<gtr\>n+k\<less\>=m+k (natural
-    numbers)|<tuple|4.56|105>>
-    <associate|n\<less\>=m\<less\>=\<gtr\>n+k=m|<tuple|4.62|107>>
-    <associate|n\<less\>=m=\<gtr\>n.k\<less\>=m.k|<tuple|4.71|108>>
+    numbers)|<tuple|4.55|105>>
+    <associate|n\<less\>=m\<less\>=\<gtr\>n+k=m|<tuple|4.61|107>>
+    <associate|n\<less\>=m=\<gtr\>n.k\<less\>=m.k|<tuple|4.70|108>>
     <associate|n\<less\>=m=\<gtr\>n.k\<less\>=m.k n,m,k integers
     k\<gtr\>=0|<tuple|6.38|153>>
-    <associate|n\<less\>m and r\<less\>s=\<gtr\>n+r\<less\>m+s|<tuple|4.68|108>>
+    <associate|n\<less\>m and r\<less\>s=\<gtr\>n+r\<less\>m+s|<tuple|4.67|108>>
     <associate|n\<less\>m,0\<less\>s=\<gtr\>n.s\<less\>m.s
     rationals|<tuple|7.28|166>>
     <associate|n\<less\>m=\<gtr\>exists a k such that n+k=m n,m natural
-    nubers|<tuple|4.58|106>>
+    nubers|<tuple|4.57|106>>
     <associate|n\<less\>m=\<gtr\>m-n\<gtr\>0 (integers)|<tuple|6.34|152>>
     <associate|n\<less\>m=\<gtr\>n+1\<less\>=m|<tuple|9.54|?>>
     <associate|n\<less\>m=\<gtr\>n+k\<less\>m+k for
     integers|<tuple|6.32|152>>
-    <associate|n\<less\>m=\<gtr\>n+k=m|<tuple|4.61|106>>
+    <associate|n\<less\>m=\<gtr\>n+k=m|<tuple|4.60|106>>
     <associate|n\<less\>m=\<gtr\>n.k\<less\>m.k if k\<gtr\>0,n,m
     integers|<tuple|6.37|153>>
-    <associate|n\<less\>m=\<gtr\>nk\<less\>mk|<tuple|4.70|108>>
-    <associate|n\<less\>m=\<gtr\>s(n)\<less\>=m|<tuple|4.51|104>>
+    <associate|n\<less\>m=\<gtr\>nk\<less\>mk|<tuple|4.69|108>>
+    <associate|n\<less\>m=\<gtr\>s(n)\<less\>=m|<tuple|4.50|104>>
     <associate|n\<less\>m=\<gtr\>s(n)\<less\>s(m) n,m natural
-    numbers|<tuple|4.55|105>>
+    numbers|<tuple|4.54|105>>
     <associate|n\<less\>m=\<gtr\>x^n\<less\>x^m\<less\>x^n|<tuple|9.66|221>>
     <associate|n\<less\>m=\<gtr\>x^n\<less\>x^m\<less\>x^n
     (R)|<tuple|8.73|204>>
     <associate|n\<less\>m=m=n+k,k\<less\>\<gtr\>0 in N embedded in
     integers|<tuple|6.43|154>>
-    <associate|n\<less\>n+k|<tuple|4.59|106>>
-    <associate|n\<less\>s(m)=\<gtr\>n\<less\>=m|<tuple|4.57|106>>
-    <associate|n\<less\>s(n)|<tuple|4.48|104>>
+    <associate|n\<less\>n+k|<tuple|4.58|106>>
+    <associate|n\<less\>s(m)=\<gtr\>n\<less\>=m|<tuple|4.56|106>>
+    <associate|n\<less\>s(n)|<tuple|4.47|104>>
     <associate|n\<less\>s(n)=\<gtr\>no natural number between n and
-    s(n)|<tuple|4.66|107>>
+    s(n)|<tuple|4.65|107>>
     <associate|n=S_n|<tuple|5.16|113>>
     <associate|natural and integer numbers embedded in the rationals are
     denumerable|<tuple|7.39|169>>
     <associate|natural numbers|<tuple|4.4|93>>
-    <associate|natural numbers are commutative|<tuple|4.33|101>>
-    <associate|natural numbers are partially ordered|<tuple|4.46|103>>
+    <associate|natural numbers are commutative|<tuple|4.32|101>>
+    <associate|natural numbers are partially ordered|<tuple|4.45|103>>
     <associate|natural numbers embedded in reals|<tuple|8.55|198>>
     <associate|natural numbers embedded in the complex
     numbers|<tuple|9.34|214>>
@@ -26754,8 +26574,8 @@
     <associate|negative cut|<tuple|8.8|172>>
     <associate|negative of rational cut|<tuple|8.9|173>>
     <associate|neutral element for mulitiplication of natural
-    numbers|<tuple|4.38|102>>
-    <associate|neutral element of naturals|<tuple|4.29|101>>
+    numbers|<tuple|4.37|102>>
+    <associate|neutral element of naturals|<tuple|4.28|101>>
     <associate|non zero element is a successor|<tuple|4.17|95>>
     <associate|norm in real space|<tuple|8.65|202>>
     <associate|norm on the complex numbers|<tuple|9.32|?>>
@@ -26814,7 +26634,7 @@
     <associate|product of enumerable sets is enumerable|<tuple|5.59|129>>
     <associate|product of finite sets is finite|<tuple|5.44|123>>
     <associate|product of non zero natural numbers is non
-    zero|<tuple|4.69|108>>
+    zero|<tuple|4.68|108>>
     <associate|product of product of sets|<tuple|5.94|137>>
     <associate|product of products of sets|<tuple|2.103|56>>
     <associate|product of sets as element|<tuple|1.71|21>>
@@ -26945,8 +26765,8 @@
     <associate|subsets of finite sets are finite|<tuple|5.36|120>>
     <associate|subtuple|<tuple|2.80|52>>
     <associate|subtuple of product of sets|<tuple|5.80|133>>
-    <associate|successor and multiplication|<tuple|4.39|102>>
-    <associate|successor function and addition|<tuple|4.30|101>>
+    <associate|successor and multiplication|<tuple|4.38|102>>
+    <associate|successor function and addition|<tuple|4.29|101>>
     <associate|successor of a natural number is a natural
     number|<tuple|4.9|93>>
     <associate|successor of a set|<tuple|1.66|21>>
@@ -26954,7 +26774,7 @@
     <associate|successor set|<tuple|1.67|21>>
     <associate|sum and product of rational cuts|<tuple|8.27|190>>
     <associate|sup of set of bigger elements|<tuple|2.176|70>>
-    <associate|sup(A) is element of A in N|<tuple|4.67|107>>
+    <associate|sup(A) is element of A in N|<tuple|4.66|107>>
     <associate|sup(S+T)|<tuple|9.46|218>>
     <associate|sup(S+T) (R)|<tuple|8.46|197>>
     <associate|sup(S+x)|<tuple|9.47|?>>
@@ -26977,7 +26797,7 @@
     <associate|the integer numbers forms a group|<tuple|6.6|145>>
     <associate|the integer numbers in the reals are
     denumerable|<tuple|8.54|198>>
-    <associate|the natural numbers are well-ordered|<tuple|4.52|105>>
+    <associate|the natural numbers are well-ordered|<tuple|4.51|105>>
     <associate|the natural numbers embedded in the reals are
     well-ordered|<tuple|8.59|200>>
     <associate|the natural numbers in the reals are
@@ -26991,7 +26811,7 @@
     <associate|the reals are conditional complete|<tuple|9.43|217>>
     <associate|the reals are conditional complete (R)|<tuple|8.43|196>>
     <associate|the set of natural numbers is conditional
-    complete|<tuple|4.54|105>>
+    complete|<tuple|4.53|105>>
     <associate|the set of rational numbers forms a abelian group for
     addition|<tuple|7.7|160>>
     <associate|the set of rationals is not conditional
