@@ -10527,10 +10527,8 @@
 
       <\enumerate>
         <item><math|n=0> then <math|a=\<lambda\><around*|(|0|)>=\<lambda\><around*|(|s<around*|(|m|)>|)>=f<around*|(|\<lambda\><around*|(|m|)>|)>>
-        is not allowed because <math|a\<nin\>f<around*|(|A|)>> so
-        <math|\<lambda\><around*|(|s<around*|(|m|)>|)>=\<lambda\><around*|(|n|)>>
-        is false and thus <math|\<lambda\><around*|(|s<around*|(|m|)>|)>=\<lambda\><around*|(|n|)>\<Rightarrow\>s<around*|(|m|)>=n>
-        is true and thus <math|s<around*|(|m|)>\<in\>S<rsub|n>>
+        is not allowed because <math|a\<nin\>f<around*|(|A|)>> so this does
+        not apply.
 
         <item><math|n\<neq\>0> then by <reference|non zero element is a
         successor> we have that <math|\<exists\>k\<in\>\<bbb-N\>\<vdash\>n=s<around*|(|k|)>>
@@ -10691,7 +10689,7 @@
     <math|\<pi\><rsub|2>> as follows
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<pi\><rsub|1>:\<bbb-N\>\<times\>A\<rightarrow\>\<bbb-N\>>|<cell|by>|<cell|<around*|(|n,x|)>\<rightarrow\>\<pi\><rsub|1><around*|(|n,x|)>=n>>|<row|<cell|\<pi\><rsub|2>:\<bbb-N\>\<times\>A\<rightarrow\>\<bbb-N\>>|<cell|by>|<cell|<around*|(|n,x|)>\<rightarrow\>\<pi\><rsub|2><around*|(|n,x|)>=x>>>>
+      <tformat|<table|<row|<cell|\<pi\><rsub|1>:\<bbb-N\>\<times\>A\<rightarrow\>\<bbb-N\>>|<cell|by>|<cell|<around*|(|n,x|)>\<rightarrow\>\<pi\><rsub|1><around*|(|n,x|)>=n>>|<row|<cell|\<pi\><rsub|2>:\<bbb-N\>\<times\>A\<rightarrow\>A>|<cell|by>|<cell|<around*|(|n,x|)>\<rightarrow\>\<pi\><rsub|2><around*|(|n,x|)>=x>>>>
     </eqnarray*>
 
     we haven then <math|\<forall\><around*|(|n,x|)>\<in\>\<bbb-N\>\<times\>A>
@@ -11153,13 +11151,13 @@
 
       <\enumerate>
         <item><math|n\<in\>m\<wedge\>m\<in\>k> then by <reference|every
-        natural number is transitive> <math|n\<subseteq\>m\<wedge\>m\<subseteq\>k\<Rightarrow\>n\<subseteq\>k\<Rightarrow\>n\<leqslant\>k>
+        natural number is transitive> <math|n\<in\>m\<wedge\>m\<subseteq\>k\<Rightarrow\>n\<subseteq\>k\<Rightarrow\>n\<leqslant\>k>
 
         <item><math|n\<in\>m\<wedge\>m=k> then by <reference|every natural
-        number is transitive> <math|n\<subseteq\>m\<wedge\>m=k\<Rightarrow\>n\<subseteq\>k\<Rightarrow\>n\<leqslant\>k>
+        number is transitive> <math|n\<in\>k\<Rightarrow\>n\<leqslant\>k>
 
-        <item><math|n=m\<wedge\>m\<in\>k> then by <reference|every natural
-        number is transitive> <math|n=m\<wedge\>m\<subseteq\>k\<Rightarrow\>n\<subseteq\>k\<Rightarrow\>n\<leqslant\>k>
+        <item><math|n=m\<wedge\>m\<in\>k> hen <math|n\<in\>k> so that
+        <math|n\<leqslant\>k>
 
         <item><math|n=m\<wedge\>m=k> then
         <math|n=k\<Rightarrow\>n\<leqslant\>k>
@@ -11248,60 +11246,6 @@
       <item><dueto|<math|k\<less\>n\<Rightarrow\>k\<in\>n>>If
       <math|k\<less\>n> then <math|k\<leqslant\>n> and <math|k\<neq\>n> so
       <math|k\<in\>n\<vee\>k=n> and <math|k\<neq\>n> giving <math|k\<in\>n>
-    </enumerate>
-  </proof>
-
-  <\theorem>
-    If <math|k,n,m\<in\>\<bbb-N\>> then we have
-
-    <\enumerate>
-      <item><math|k\<leqslant\>n> and <math|n\<less\>m> then
-      <math|k\<less\>m>
-
-      <item><math|k\<less\>n> and <math|n\<leqslant\>m> then
-      <math|k\<less\>m>
-    </enumerate>
-  </theorem>
-
-  <\proof>
-    We have
-
-    <\enumerate>
-      <item>If <math|k\<leqslant\>n> and <math|n\<less\>m> then we have as
-      <math|n\<less\>m\<Rightarrow\>n\<leqslant\>m> that
-      <math|k\<leqslant\>m>. Now for <math|k> we have \ the following
-      possibilities:
-
-      <\enumerate>
-        <item><dueto|<math|k\<less\>n>>then using the previous theorem we
-        have <math|k\<in\>n> and <math|n\<in\>m>. If now <math|k=m> then we
-        have <math|n\<in\>k>. From <math|n\<in\>k> and <math|k\<in\>n> it
-        follows then that <math|k\<leqslant\>n> and <math|n\<leqslant\>k>
-        giving <math|k=n> contradicting <math|k\<less\>n>. So we must have
-        <math|k\<neq\>m> and thus <math|k\<less\>m>.
-
-        <item><dueto|<math|k=n>>if now <math|k=m> then <math|m=n>
-        contradicting <math|n\<less\>m> so we must have <math|k\<neq\>m> and
-        thus we have <math|k\<less\>m>.
-      </enumerate>
-
-      <item>If <math|k\<less\>n> and <math|n\<leqslant\>m> then we have
-      <math|k\<leqslant\>m>. Now for <math|n> we have the following
-      possibilities
-
-      <\enumerate>
-        <item><dueto|<math|n\<less\>m>>Using the previous theorem we have
-        <math|n\<in\>m>. If now <math|k=m> then
-        <math|n\<in\>k\<Rightarrow\>n\<leqslant\>k> this with
-        <math|k\<less\>n\<Rightarrow\>k\<leqslant\>n> means <math|k=n>
-        contradicting <math|k\<less\>n>. So we have <math|k\<neq\>m> and thus
-        <math|k\<less\>m>.
-
-        <item><dueto|<math|n=m>>then from
-        <math|k\<less\>n\<Rightarrowlim\><rsub|previous theorem>k\<in\>n> we
-        have <math|k\<in\>m\<Rightarrowlim\><rsub|previous
-        theorem>k\<less\>m>
-      </enumerate>
     </enumerate>
   </proof>
 
@@ -25881,7 +25825,7 @@
     <associate|Re,Img|<tuple|9.17|?>>
     <associate|Recursion step form|<tuple|4.25|100>>
     <associate|Sn|<tuple|5.15|113>>
-    <associate|The natural numbers are fully ordered|<tuple|4.52|105>>
+    <associate|The natural numbers are fully ordered|<tuple|4.51|105>>
     <associate|The rational numbers are denumerable|<tuple|7.40|169>>
     <associate|Zorn' lemma for pre-ordered sets|<tuple|2.233|86>>
     <associate|Zorn's lemma|<tuple|2.223|82>>
@@ -25909,13 +25853,13 @@
     <associate|alternative definition of a function (1)|<tuple|2.10|36>>
     <associate|alternative definition of partial function|<tuple|2.3|35>>
     <associate|application of axiom of choice|<tuple|2.212|79>>
-    <associate|archimedean property of natural numbers|<tuple|4.72|108>>
+    <associate|archimedean property of natural numbers|<tuple|4.71|108>>
     <associate|archimedean property of the rationals|<tuple|7.33|167>>
     <associate|archimedean property of the reals|<tuple|9.55|219>>
     <associate|archimedean property of the reals (R)|<tuple|8.61|200>>
     <associate|archimedean property of whole numbers|<tuple|6.40|154>>
     <associate|associative laws of union and intersection|<tuple|1.26|11>>
-    <associate|associativity of general composition|<tuple|4.80|110>>
+    <associate|associativity of general composition|<tuple|4.79|110>>
     <associate|auto-1|<tuple|1|7>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|<big|cup>>|8>>
     <associate|auto-100|<tuple|initial segment|65>>
@@ -26118,7 +26062,6 @@
     <associate|auto-270|<tuple|density theorem|214>>
     <associate|auto-271|<tuple|9.4.3|215>>
     <associate|auto-272|<tuple|9.5|220>>
-    <associate|auto-273|<tuple|9.5|222>>
     <associate|auto-28|<tuple|<with|mode|<quote|math>|\<cal-P\><around*|(|A|)>>|20>>
     <associate|auto-29|<tuple|<with|mode|<quote|math>|\<cal-P\><rprime|'><around*|(|A|)>>|20>>
     <associate|auto-3|<tuple|<with|mode|<quote|math>|\<in\>>|7>>
@@ -26238,7 +26181,7 @@
     application|<tuple|2.38|41>>
     <associate|composition of increasing functions|<tuple|2.155|66>>
     <associate|composition of injective partial functions|<tuple|2.18|37>>
-    <associate|composition of n functions|<tuple|4.79|110>>
+    <associate|composition of n functions|<tuple|4.78|110>>
     <associate|composition of partial functions|<tuple|2.5|35>>
     <associate|composition of relations|<tuple|1.47|?>>
     <associate|condition 1 for positive integers|<tuple|6.28|151>>
@@ -26286,12 +26229,12 @@
     <associate|distributivity of union or intersection|<tuple|1.28|12>>
     <associate|divides|<tuple|6.49|156>>
     <associate|division algorithm|<tuple|6.48|155>>
-    <associate|division algorithm for natural numbers|<tuple|4.73|108>>
+    <associate|division algorithm for natural numbers|<tuple|4.72|108>>
     <associate|dom and range of a composition of partial
     functions|<tuple|2.7|36>>
     <associate|domain property of composition|<tuple|1.52|19>>
     <associate|elemination of non zero common factor in natural
-    numbers|<tuple|4.71|108>>
+    numbers|<tuple|4.70|108>>
     <associate|embedding of natural numbers in the reals|<tuple|9.35|214>>
     <associate|embedding of the whole numbers in the
     rationals|<tuple|7.25|165>>
@@ -26496,11 +26439,11 @@
     <associate|linear ordered class|<tuple|2.148|65>>
     <associate|m*m is even then m is even|<tuple|6.57|157>>
     <associate|m+s(n)=s(m+n)|<tuple|4.30|101>>
-    <associate|m-n if n\<less\>=m, n,m natural numbers|<tuple|4.62|107>>
+    <associate|m-n if n\<less\>=m, n,m natural numbers|<tuple|4.61|107>>
     <associate|mapping of N into a finite set|<tuple|5.52|125>>
     <associate|mathematical induction|<tuple|4.10|93>>
-    <associate|mathematical induction form 2|<tuple|4.76|109>>
-    <associate|mathematical induction form 3|<tuple|4.77|109>>
+    <associate|mathematical induction form 2|<tuple|4.75|109>>
+    <associate|mathematical induction form 3|<tuple|4.76|109>>
     <associate|maximal (minimal element in a pre-ordered
     class|<tuple|2.164|67>>
     <associate|maximal, minimal, greatest, least|<tuple|2.165|67>>
@@ -26515,45 +26458,45 @@
     <associate|multiplication of rational numbers|<tuple|7.9|161>>
     <associate|n element of successor|<tuple|4.11|94>>
     <associate|n+k=0=\<gtr\>n=k=0 if n,k are natural
-    numbers|<tuple|4.59|106>>
+    numbers|<tuple|4.58|106>>
     <associate|n+k=m+k=\<gtr\>n=m|<tuple|4.43|103>>
     <associate|n.r=k,r=\<gtr\>n=k and n,k,r integers|<tuple|6.15|148>>
     <associate|n/k|<tuple|7.4|159>>
     <associate|n\<less\>2^n|<tuple|9.62|220>>
     <associate|n\<less\>2^n (R)|<tuple|8.70|203>>
-    <associate|n\<less\>=i\<less\>=m=\<gtr\>0\<less\>=i-n\<less\>=m-n|<tuple|4.64|107>>
+    <associate|n\<less\>=i\<less\>=m=\<gtr\>0\<less\>=i-n\<less\>=m-n|<tuple|4.63|107>>
     <associate|n\<less\>=m\<less\>=\<gtr\>n+k\<less\>=m+k (natural
-    numbers)|<tuple|4.55|105>>
-    <associate|n\<less\>=m\<less\>=\<gtr\>n+k=m|<tuple|4.61|107>>
-    <associate|n\<less\>=m=\<gtr\>n.k\<less\>=m.k|<tuple|4.70|108>>
+    numbers)|<tuple|4.54|105>>
+    <associate|n\<less\>=m\<less\>=\<gtr\>n+k=m|<tuple|4.60|107>>
+    <associate|n\<less\>=m=\<gtr\>n.k\<less\>=m.k|<tuple|4.69|108>>
     <associate|n\<less\>=m=\<gtr\>n.k\<less\>=m.k n,m,k integers
     k\<gtr\>=0|<tuple|6.38|153>>
-    <associate|n\<less\>m and r\<less\>s=\<gtr\>n+r\<less\>m+s|<tuple|4.67|108>>
+    <associate|n\<less\>m and r\<less\>s=\<gtr\>n+r\<less\>m+s|<tuple|4.66|108>>
     <associate|n\<less\>m,0\<less\>s=\<gtr\>n.s\<less\>m.s
     rationals|<tuple|7.28|166>>
     <associate|n\<less\>m=\<gtr\>exists a k such that n+k=m n,m natural
-    nubers|<tuple|4.57|106>>
+    nubers|<tuple|4.56|106>>
     <associate|n\<less\>m=\<gtr\>m-n\<gtr\>0 (integers)|<tuple|6.34|152>>
     <associate|n\<less\>m=\<gtr\>n+1\<less\>=m|<tuple|9.54|?>>
     <associate|n\<less\>m=\<gtr\>n+k\<less\>m+k for
     integers|<tuple|6.32|152>>
-    <associate|n\<less\>m=\<gtr\>n+k=m|<tuple|4.60|106>>
+    <associate|n\<less\>m=\<gtr\>n+k=m|<tuple|4.59|106>>
     <associate|n\<less\>m=\<gtr\>n.k\<less\>m.k if k\<gtr\>0,n,m
     integers|<tuple|6.37|153>>
-    <associate|n\<less\>m=\<gtr\>nk\<less\>mk|<tuple|4.69|108>>
-    <associate|n\<less\>m=\<gtr\>s(n)\<less\>=m|<tuple|4.50|104>>
+    <associate|n\<less\>m=\<gtr\>nk\<less\>mk|<tuple|4.68|108>>
+    <associate|n\<less\>m=\<gtr\>s(n)\<less\>=m|<tuple|4.49|104>>
     <associate|n\<less\>m=\<gtr\>s(n)\<less\>s(m) n,m natural
-    numbers|<tuple|4.54|105>>
+    numbers|<tuple|4.53|105>>
     <associate|n\<less\>m=\<gtr\>x^n\<less\>x^m\<less\>x^n|<tuple|9.66|221>>
     <associate|n\<less\>m=\<gtr\>x^n\<less\>x^m\<less\>x^n
     (R)|<tuple|8.73|204>>
     <associate|n\<less\>m=m=n+k,k\<less\>\<gtr\>0 in N embedded in
     integers|<tuple|6.43|154>>
-    <associate|n\<less\>n+k|<tuple|4.58|106>>
-    <associate|n\<less\>s(m)=\<gtr\>n\<less\>=m|<tuple|4.56|106>>
+    <associate|n\<less\>n+k|<tuple|4.57|106>>
+    <associate|n\<less\>s(m)=\<gtr\>n\<less\>=m|<tuple|4.55|106>>
     <associate|n\<less\>s(n)|<tuple|4.47|104>>
     <associate|n\<less\>s(n)=\<gtr\>no natural number between n and
-    s(n)|<tuple|4.65|107>>
+    s(n)|<tuple|4.64|107>>
     <associate|n=S_n|<tuple|5.16|113>>
     <associate|natural and integer numbers embedded in the rationals are
     denumerable|<tuple|7.39|169>>
@@ -26634,7 +26577,7 @@
     <associate|product of enumerable sets is enumerable|<tuple|5.59|129>>
     <associate|product of finite sets is finite|<tuple|5.44|123>>
     <associate|product of non zero natural numbers is non
-    zero|<tuple|4.68|108>>
+    zero|<tuple|4.67|108>>
     <associate|product of product of sets|<tuple|5.94|137>>
     <associate|product of products of sets|<tuple|2.103|56>>
     <associate|product of sets as element|<tuple|1.71|21>>
@@ -26774,7 +26717,7 @@
     <associate|successor set|<tuple|1.67|21>>
     <associate|sum and product of rational cuts|<tuple|8.27|190>>
     <associate|sup of set of bigger elements|<tuple|2.176|70>>
-    <associate|sup(A) is element of A in N|<tuple|4.66|107>>
+    <associate|sup(A) is element of A in N|<tuple|4.65|107>>
     <associate|sup(S+T)|<tuple|9.46|218>>
     <associate|sup(S+T) (R)|<tuple|8.46|197>>
     <associate|sup(S+x)|<tuple|9.47|?>>
@@ -26797,7 +26740,7 @@
     <associate|the integer numbers forms a group|<tuple|6.6|145>>
     <associate|the integer numbers in the reals are
     denumerable|<tuple|8.54|198>>
-    <associate|the natural numbers are well-ordered|<tuple|4.51|105>>
+    <associate|the natural numbers are well-ordered|<tuple|4.50|105>>
     <associate|the natural numbers embedded in the reals are
     well-ordered|<tuple|8.59|200>>
     <associate|the natural numbers in the reals are
@@ -26811,7 +26754,7 @@
     <associate|the reals are conditional complete|<tuple|9.43|217>>
     <associate|the reals are conditional complete (R)|<tuple|8.43|196>>
     <associate|the set of natural numbers is conditional
-    complete|<tuple|4.53|105>>
+    complete|<tuple|4.52|105>>
     <associate|the set of rational numbers forms a abelian group for
     addition|<tuple|7.7|160>>
     <associate|the set of rationals is not conditional
@@ -26846,7 +26789,6 @@
     <associate|union of two finite sets is finite|<tuple|5.37|120>>
     <associate|union of two graphs|<tuple|1.53|19>>
     <associate|union of two sets is a set|<tuple|1.61|20>>
-    <associate|universal property of natural numbers|<tuple|4.20|97>>
     <associate|unordered pair is a element|<tuple|1.32|14>>
     <associate|upper bound|<tuple|2.170|68>>
     <associate|upper bound in pre-ordered set|<tuple|2.169|68>>
@@ -27123,169 +27065,166 @@
 
       <tuple|<tuple|recursion>|<pageref|auto-157>>
 
-      <tuple|<tuple|universal property of
-      <with|mode|<quote|math>|\<bbb-N\><rsub|0>>>|<pageref|auto-158>>
+      <tuple|<tuple|iteration>|<pageref|auto-158>>
 
-      <tuple|<tuple|iteration>|<pageref|auto-159>>
-
-      <tuple|<tuple|field with characterization zero>|<pageref|auto-160>>
+      <tuple|<tuple|field with characterization zero>|<pageref|auto-159>>
 
       <tuple|<tuple|recursion on <with|mode|<quote|math>|\<bbb-N\><rsub|0>>
-      step form>|<pageref|auto-161>>
+      step form>|<pageref|auto-160>>
 
-      <tuple|<tuple|addition of natural numbers>|<pageref|auto-163>>
+      <tuple|<tuple|addition of natural numbers>|<pageref|auto-162>>
 
-      <tuple|<tuple|neutral element of natural elements>|<pageref|auto-164>>
+      <tuple|<tuple|neutral element of natural elements>|<pageref|auto-163>>
 
-      <tuple|<tuple|multiplication of natural numbers>|<pageref|auto-165>>
+      <tuple|<tuple|multiplication of natural numbers>|<pageref|auto-164>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-N\><rsub|0>.\<leqslant\>|\<rangle\>>
-      is conditional complete>>|<pageref|auto-167>>
+      is conditional complete>>|<pageref|auto-166>>
 
       <tuple|<tuple|Archimedean property of
-      <with|mode|<quote|math>|\<bbb-N\><rsub|0>>>|<pageref|auto-168>>
+      <with|mode|<quote|math>|\<bbb-N\><rsub|0>>>|<pageref|auto-167>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|{|n,\<ldots\>|}>>>|<pageref|auto-170>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|{|n,\<ldots\>|}>>>|<pageref|auto-169>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|f<rsub|n>\<circ\>\<ldots\>\<circ\>f<rsub|1>>>|<pageref|auto-171>>
+      <tuple|<tuple|<with|mode|<quote|math>|f<rsub|n>\<circ\>\<ldots\>\<circ\>f<rsub|1>>>|<pageref|auto-170>>
 
-      <tuple|<tuple|equipotent>|<pageref|auto-174>>
+      <tuple|<tuple|equipotent>|<pageref|auto-173>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|S<rsub|n>>>|<pageref|auto-176>>
+      <tuple|<tuple|<with|mode|<quote|math>|S<rsub|n>>>|<pageref|auto-175>>
 
       <tuple|<tuple|recursion on <with|mode|<quote|math>|S<rsub|n\<upl\>1>> -
-      step form>|<pageref|auto-177>>
+      step form>|<pageref|auto-176>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|n!>>|<pageref|auto-178>>
+      <tuple|<tuple|<with|mode|<quote|math>|n!>>|<pageref|auto-177>>
 
-      <tuple|<tuple|finite sets>|<pageref|auto-179>>
+      <tuple|<tuple|finite sets>|<pageref|auto-178>>
 
-      <tuple|<tuple|infinite sets>|<pageref|auto-180>>
+      <tuple|<tuple|infinite sets>|<pageref|auto-179>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|0>,\<ldots\>,a<rsub|n>|}>>>|<pageref|auto-181>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|0>,\<ldots\>,a<rsub|n>|}>>>|<pageref|auto-180>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|1>,\<ldots\>,a<rsub|n>|}>>>|<pageref|auto-182>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|{|a<rsub|1>,\<ldots\>,a<rsub|n>|}>>>|<pageref|auto-181>>
 
-      <tuple|<tuple|infinite countable set>|<pageref|auto-183>>
+      <tuple|<tuple|infinite countable set>|<pageref|auto-182>>
 
-      <tuple|<tuple|enumerable set>|<pageref|auto-184>>
+      <tuple|<tuple|enumerable set>|<pageref|auto-183>>
 
-      <tuple|<tuple|countable set>|<pageref|auto-185>>
+      <tuple|<tuple|countable set>|<pageref|auto-184>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|#<around*|(|A|)>>>|<pageref|auto-186>>
+      <tuple|<tuple|<with|mode|<quote|math>|#<around*|(|A|)>>>|<pageref|auto-185>>
 
-      <tuple|<tuple|sequence>|<pageref|auto-190>>
+      <tuple|<tuple|sequence>|<pageref|auto-189>>
 
       <tuple|<tuple|cartesian product of a family of
-      sets>|<pageref|auto-192>>
+      sets>|<pageref|auto-191>>
 
-      <tuple|<tuple|product tuple>|<pageref|auto-193>>
+      <tuple|<tuple|product tuple>|<pageref|auto-192>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<pi\><rsub|i>>>|<pageref|auto-194>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<pi\><rsub|i>>>|<pageref|auto-193>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Z\>>>|<pageref|auto-199>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Z\>>>|<pageref|auto-198>>
 
-      <tuple|<tuple|absorbing element of integers>|<pageref|auto-200>>
+      <tuple|<tuple|absorbing element of integers>|<pageref|auto-199>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>>|<pageref|auto-203>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>>|<pageref|auto-202>>
 
-      <tuple|<tuple|positive whole numbers>|<pageref|auto-204>>
+      <tuple|<tuple|positive whole numbers>|<pageref|auto-203>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|-\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>>|<pageref|auto-205>>
+      <tuple|<tuple|<with|mode|<quote|math>|-\<bbb-N\><rsub|0><rsub|\<bbb-Z\>>>>|<pageref|auto-204>>
 
-      <tuple|<tuple|negative whole numbers>|<pageref|auto-206>>
+      <tuple|<tuple|negative whole numbers>|<pageref|auto-205>>
 
-      <tuple|<tuple|order relation in <with|mode|<quote|math>|\<bbb-Z\>>>|<pageref|auto-207>>
-
-      <tuple|<tuple|Archimedean property of
-      <with|mode|<quote|math>|\<bbb-Z\>>>|<pageref|auto-208>>
-
-      <tuple|<tuple|absolute value>|<pageref|auto-209>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>>|<pageref|auto-210>>
-
-      <tuple|<tuple|division algorithm>|<pageref|auto-211>>
-
-      <tuple|<tuple|divides>|<pageref|auto-212>>
-
-      <tuple|<tuple|common divisor>|<pageref|auto-213>>
-
-      <tuple|<tuple|gcd>|<pageref|auto-214>>
-
-      <tuple|<tuple|even numbers>|<pageref|auto-215>>
-
-      <tuple|<tuple|odd numbers>|<pageref|auto-216>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|<frac|n|k>>>|<pageref|auto-220>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Q\>>>|<pageref|auto-221>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|<frac|n|k>>>|<pageref|auto-222>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-Q\>,\<upl\>|\<rangle\>>>>|<pageref|auto-223>>
-
-      <tuple|<tuple|order relation on rational numbers>|<pageref|auto-226>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-Q\>>>>|<pageref|auto-227>>
-
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Q\>>>>|<pageref|auto-228>>
+      <tuple|<tuple|order relation in <with|mode|<quote|math>|\<bbb-Z\>>>|<pageref|auto-206>>
 
       <tuple|<tuple|Archimedean property of
-      <with|mode|<quote|math>|\<bbb-Q\>>>|<pageref|auto-229>>
+      <with|mode|<quote|math>|\<bbb-Z\>>>|<pageref|auto-207>>
 
-      <tuple|<tuple|Dedekind's Cut>|<pageref|auto-233>>
+      <tuple|<tuple|absolute value>|<pageref|auto-208>>
 
-      <tuple|<tuple|the real numbers>|<pageref|auto-234>>
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|\|||\|>>>|<pageref|auto-209>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\>>>|<pageref|auto-235>>
+      <tuple|<tuple|division algorithm>|<pageref|auto-210>>
 
-      <tuple|<tuple|rational cuts>|<pageref|auto-236>>
+      <tuple|<tuple|divides>|<pageref|auto-211>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Q\><rsub|\<bbb-R\>>>>|<pageref|auto-237>>
+      <tuple|<tuple|common divisor>|<pageref|auto-212>>
 
-      <tuple|<tuple|negative cut>|<pageref|auto-238>>
+      <tuple|<tuple|gcd>|<pageref|auto-213>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|+>>>|<pageref|auto-242>>
+      <tuple|<tuple|even numbers>|<pageref|auto-214>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|->>>|<pageref|auto-243>>
+      <tuple|<tuple|odd numbers>|<pageref|auto-215>>
 
-      <tuple|<tuple|reciprocal cut>|<pageref|auto-244>>
+      <tuple|<tuple|<with|mode|<quote|math>|<frac|n|k>>>|<pageref|auto-219>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Q\>>>|<pageref|auto-220>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<frac|n|k>>>|<pageref|auto-221>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-Q\>,\<upl\>|\<rangle\>>>>|<pageref|auto-222>>
+
+      <tuple|<tuple|order relation on rational numbers>|<pageref|auto-225>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-Q\>>>>|<pageref|auto-226>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-Q\>>>>|<pageref|auto-227>>
+
+      <tuple|<tuple|Archimedean property of
+      <with|mode|<quote|math>|\<bbb-Q\>>>|<pageref|auto-228>>
+
+      <tuple|<tuple|Dedekind's Cut>|<pageref|auto-232>>
+
+      <tuple|<tuple|the real numbers>|<pageref|auto-233>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\>>>|<pageref|auto-234>>
+
+      <tuple|<tuple|rational cuts>|<pageref|auto-235>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Q\><rsub|\<bbb-R\>>>>|<pageref|auto-236>>
+
+      <tuple|<tuple|negative cut>|<pageref|auto-237>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|+>>>|<pageref|auto-241>>
+
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|->>>|<pageref|auto-242>>
+
+      <tuple|<tuple|reciprocal cut>|<pageref|auto-243>>
 
       <tuple|<tuple|<with|mode|<quote|math>|<around*|\<langle\>|\<bbb-R\>,+,\<cdot\>|\<rangle\>>
-      is a field>>|<pageref|auto-245>>
+      is a field>>|<pageref|auto-244>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<less\>>>|<pageref|auto-248>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<less\>>>|<pageref|auto-247>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<leqslant\>>>|<pageref|auto-249>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<leqslant\>>>|<pageref|auto-248>>
 
       <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\> is conditional
-      complete>>|<pageref|auto-250>>
+      complete>>|<pageref|auto-249>>
 
-      <tuple|<tuple|irrational numbers>|<pageref|auto-251>>
+      <tuple|<tuple|irrational numbers>|<pageref|auto-250>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-R\>>>>|<pageref|auto-252>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-R\>>>>|<pageref|auto-251>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-R\>>>>|<pageref|auto-253>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-N\><rsub|0><rsub|\<bbb-R\>>>>|<pageref|auto-252>>
 
-      <tuple|<tuple|density theorem>|<pageref|auto-254>>
+      <tuple|<tuple|density theorem>|<pageref|auto-253>>
 
-      <tuple|<tuple|absolute value>|<pageref|auto-255>>
+      <tuple|<tuple|absolute value>|<pageref|auto-254>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|<sqrt|x>>>|<pageref|auto-257>>
+      <tuple|<tuple|<with|mode|<quote|math>|<sqrt|x>>>|<pageref|auto-256>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-C\>>>|<pageref|auto-260>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-C\>>>|<pageref|auto-259>>
 
-      <tuple|<tuple|conjugate of a complex number>|<pageref|auto-261>>
+      <tuple|<tuple|conjugate of a complex number>|<pageref|auto-260>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>>>>|<pageref|auto-262>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>>>>|<pageref|auto-261>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>+>,\<bbb-R\><rsub|\<bbb-C\>->>>|<pageref|auto-264>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>+>,\<bbb-R\><rsub|\<bbb-C\>->>>|<pageref|auto-263>>
 
-      <tuple|<tuple|complex norm>|<pageref|auto-266>>
+      <tuple|<tuple|complex norm>|<pageref|auto-265>>
 
-      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-C\><rsub|\<bbb-N\><rsub|0>>>>|<pageref|auto-269>>
+      <tuple|<tuple|<with|mode|<quote|math>|\<bbb-C\><rsub|\<bbb-N\><rsub|0>>>>|<pageref|auto-268>>
 
-      <tuple|<tuple|density theorem>|<pageref|auto-271>>
+      <tuple|<tuple|density theorem>|<pageref|auto-270>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Classes>
@@ -27413,158 +27352,158 @@
 
       4.3<space|2spc>Arithmetic of the natural numbers
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-162>
+      <no-break><pageref|auto-161>
 
       4.4<space|2spc>Order relation on the natural numbers
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-166>
+      <no-break><pageref|auto-165>
 
       <with|par-left|<quote|1tab>|4.4.1<space|2spc>Other forms of
       Mathematical induction <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-169>>
+      <no-break><pageref|auto-168>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Finite
       and Infinite Sets> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-172><vspace|0.5fn>
+      <no-break><pageref|auto-171><vspace|0.5fn>
 
       5.1<space|2spc>Introduction <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-173>
+      <no-break><pageref|auto-172>
 
       5.2<space|2spc>Infinite and finite sets
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-175>
+      <no-break><pageref|auto-174>
 
       5.3<space|2spc>Properties of denumerable sets
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-187>
+      <no-break><pageref|auto-186>
 
       5.4<space|2spc>Some properties of countable sets
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-188>
+      <no-break><pageref|auto-187>
 
       5.5<space|2spc>Sequences <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-189>
+      <no-break><pageref|auto-188>
 
       5.6<space|2spc>Finite Cartesian product of sets
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-191>
+      <no-break><pageref|auto-190>
 
       <with|par-left|<quote|1tab>|5.6.1<space|2spc>Finite product of sets and
       denumerability and countability <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-195>>
+      <no-break><pageref|auto-194>>
 
       <with|par-left|<quote|1tab>|5.6.2<space|2spc>Notation conventions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-196>>
+      <no-break><pageref|auto-195>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>The
       Integer numbers> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-197><vspace|0.5fn>
+      <no-break><pageref|auto-196><vspace|0.5fn>
 
       6.1<space|2spc>Definition and arithmetic's
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-198>
+      <no-break><pageref|auto-197>
 
       <with|par-left|<quote|1tab>|6.1.1<space|2spc>Power in
       <with|mode|<quote|math>|\<bbb-Z\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-201>>
+      <no-break><pageref|auto-200>>
 
       6.2<space|2spc>Order relation of the Integers
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-202>
+      <no-break><pageref|auto-201>
 
       6.3<space|2spc>Denumerability of the integers
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-217>
+      <no-break><pageref|auto-216>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>The
       rational numbers> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-218><vspace|0.5fn>
+      <no-break><pageref|auto-217><vspace|0.5fn>
 
       7.1<space|2spc>Definition and arithmetic's
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-219>
+      <no-break><pageref|auto-218>
 
       7.2<space|2spc>Power in <with|mode|<quote|math>|\<bbb-Q\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-224>
+      <no-break><pageref|auto-223>
 
       7.3<space|2spc>Order relation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-225>
+      <no-break><pageref|auto-224>
 
       7.4<space|2spc>Denumerability of the rationals
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-230>
+      <no-break><pageref|auto-229>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>The
       real numbers> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-231><vspace|0.5fn>
+      <no-break><pageref|auto-230><vspace|0.5fn>
 
       8.1<space|2spc>Definition <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-232>
+      <no-break><pageref|auto-231>
 
       8.2<space|2spc>Arithmetic on <with|mode|<quote|math>|\<bbb-R\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-239>
+      <no-break><pageref|auto-238>
 
       <with|par-left|<quote|1tab>|8.2.1<space|2spc>Addition in
       <with|mode|<quote|math>|\<bbb-R\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-240>>
+      <no-break><pageref|auto-239>>
 
       <with|par-left|<quote|1tab>|8.2.2<space|2spc>Multiplication in
       <with|mode|<quote|math>|\<bbb-R\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-241>>
+      <no-break><pageref|auto-240>>
 
       <with|par-left|<quote|1tab>|8.2.3<space|2spc>Power in
       <with|mode|<quote|math>|\<bbb-R\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-246>>
+      <no-break><pageref|auto-245>>
 
       8.3<space|2spc>Order relation on <with|mode|<quote|math>|\<bbb-R\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-247>
+      <no-break><pageref|auto-246>
 
       8.4<space|2spc>Square root <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-256>
+      <no-break><pageref|auto-255>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>The
       complex numbers> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-258><vspace|0.5fn>
+      <no-break><pageref|auto-257><vspace|0.5fn>
 
       9.1<space|2spc>Definition and arithmetic's
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-259>
+      <no-break><pageref|auto-258>
 
       9.2<space|2spc>Order relation on <with|mode|<quote|math>|\<bbb-C\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-263>
+      <no-break><pageref|auto-262>
 
       9.3<space|2spc>Norm on <with|mode|<quote|math>|\<bbb-C\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-265>
+      <no-break><pageref|auto-264>
 
       9.4<space|2spc><with|mode|<quote|math>|\<bbb-R\>> and
       <with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-267>
+      <no-break><pageref|auto-266>
 
       <with|par-left|<quote|1tab>|9.4.1<space|2spc><with|mode|<quote|math>|\<bbb-N\><rsub|\<bbb-C\>>>,
       <with|mode|<quote|math>|\<bbb-Z\><rsub|\<bbb-C\>>> and
       <with|mode|<quote|math>|\<bbb-Q\><rsub|\<bbb-C\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-268>>
+      <no-break><pageref|auto-267>>
 
       <with|par-left|<quote|1tab>|9.4.2<space|2spc>Properties of
       <with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-270>>
+      <no-break><pageref|auto-269>>
 
       <with|par-left|<quote|1tab>|9.4.3<space|2spc>Square root on
       <with|mode|<quote|math>|\<bbb-R\><rsub|\<bbb-C\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-272>>
+      <no-break><pageref|auto-271>>
 
       9.5<space|2spc>Summarize <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-273>
+      <no-break><pageref|auto-272>
     </associate>
   </collection>
 </auxiliary>
