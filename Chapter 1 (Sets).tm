@@ -1,4 +1,4 @@
-<TeXmacs|2.1.2>
+<TeXmacs|2.1.1>
 
 <project|Book.tm>
 
@@ -22383,11 +22383,11 @@
       <math|\<exists\>n\<in\>\<bbb-N\><rsub|\<bbb-R\>>> such that
       <math|x\<less\>1\<cdot\>n=n>
 
-      <item>We have for <math|y> two possibilities
+      <item>We have for <math|x> two possibilities
 
       <\description>
         <item*|<math|0\<leqslant\>x>>then by (1) we have
-        <math|A=<around*|{|n\<in\>\<bbb-N\>\|y\<less\>n|}>\<neq\>\<emptyset\>>
+        <math|A=<around*|{|n\<in\>\<bbb-N\>\|x\<less\>n|}>\<neq\>\<emptyset\>>
         and by the well ordering of <math|\<bbb-N\><rsub|\<bbb-R\>>> there
         exists a least element <math|m\<in\>A\<Rightarrow\>x\<less\>n> then
         as <math|m-1\<less\>m> we<space|1em>have
@@ -22850,7 +22850,7 @@
     <math|0\<less\>x\<less\>1> we have that <math|1\<less\><frac|1|x>> so
     that by <math|><reference|x^n\<gtr\>n if x\<gtr\>1 (R)> there exists a
     <math|N\<in\>\<bbb-N\><rsub|\<bbb-R\>>\\<around*|{|0|}>> such that
-    <math|n\<less\>x<rsup|N>> and thus we have that
+    <math|n\<less\><around*|(|1/x|)><rsup|N>> and thus we have that
     <math|0\<less\><frac|1|\<varepsilon\>>\<less\><around*|(|<frac|1|x>|)><rsup|N>=<frac|1|x<rsup|N>>\<Rightarrowlim\><rsub|x,\<varepsilon\>\<gtr\>0>0\<less\>x<rsup|N>\<less\>\<varepsilon\>>.
     If now we have <math|n\<geqslant\>N> then by the previous theorem we have
     <math|0\<less\>x<rsup|n>\<leqslant\>x<rsup|N>\<less\>\<varepsilon\>>
@@ -22906,8 +22906,8 @@
         <item><dueto|<math|0\<less\>y\<neq\>1>>take then
         <math|S<rsub|y>=<around*|{|t\<in\>\<bbb-R\>\|0\<leqslant\>t\<wedge\>t<rsup|2>\<leqslant\>y|}>>.
         Then as <math|0<rsup|2>=0\<less\>y> we have <math|0\<in\>S<rsub|y>>
-        and thus <math|0\<nin\>S<rsub|y>>. Now as <math|y\<neq\>1> we have
-        the following possibilities for <math|y>
+        and thus <math|\<varnothing\>\<nin\>S<rsub|y>>. Now as
+        <math|y\<neq\>1> we have the following possibilities for <math|y>
 
         <\enumerate>
           <item><dueto|<math|y\<less\>1>>Take now <math|t\<in\>S<rsub|y>> and
@@ -22968,7 +22968,7 @@
         <math|0\<less\>\<varepsilon\>\<less\>s<rsub|y>> we have
         \ <math|0\<less\>s<rsub|y>-\<varepsilon\>\<less\>s<rsub|y>\<less\>s<rsub|y>+\<varepsilon\>>,
         \ then using <reference|properties of positive, negative real
-        numbers> we have <math|<around*|(|s<rsub|y>-\<varepsilon\>|)><rsup|2>\<less\>s+y\<cdot\><around*|(|s<rsub|y>-\<varepsilon\>|)>\<wedge\><around*|(|s<rsub|y>-\<varepsilon\>|)>\<cdot\>s<rsub|y>\<less\>s<rsub|y><rsup|2>>
+        numbers> we have <math|<around*|(|s<rsub|y>-\<varepsilon\>|)><rsup|2>\<less\>s<rsub|y>\<cdot\><around*|(|s<rsub|y>-\<varepsilon\>|)>\<wedge\><around*|(|s<rsub|y>-\<varepsilon\>|)>\<cdot\>s<rsub|y>\<less\>s<rsub|y><rsup|2>>
         and <math|s<rsub|y><rsup|2>\<less\>s<rsub|y>\<cdot\><around*|(|s<rsub|y>+\<varepsilon\>|)>\<wedge\>s<rsub|y>\<cdot\><around*|(|s<rsub|y>+\<varepsilon\>|)>\<less\><around*|(|s<rsub|y>+\<varepsilon\>|)><rsup|2>>
         giving finally <math|<around*|(|s<rsub|y>-\<varepsilon\>|)><rsup|2>\<less\>s<rsub|y><rsup|2>\<less\><around*|(|s<rsub|y>\<upl\>\<varepsilon\>|)><rsup|2>>.
         As <math|s<rsub|y>> is a upper bound of <math|S<rsub|y>> and

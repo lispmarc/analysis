@@ -698,7 +698,7 @@
             10.3.030>>>>>
           </eqnarray*>
 
-          As <math|\<sigma\><around*|(|n+1|)>\<neq\>n+1> we hvave
+          As <math|\<sigma\><around*|(|n+1|)>\<neq\>n+1> we have
           <math|\<sigma\><around*|(|n+1|)>\<in\><around*|{|0,\<ldots\>,n|}>>.
           Further if <math|\<exists\>i\<in\><around*|{|1,\<ldots\>,n-1|}>>
           such that <math|\<sigma\><around*|(|<around*|(|n\<leftrightarrow\><rsub|0,n>k|)><around*|(|i|)>|)>=n+1=\<sigma\><around*|(|k|)>>
@@ -1514,9 +1514,8 @@
       <item>Define <math|\<forall\>j\<in\>J>
       \ <math|I<rsub|j>=I\<times\><around*|{|j|}>> then we have clearly
       <math|I\<times\>J=<big|cup><rsub|i\<in\>j>I<rsub|i>> and if
-      <math|i,j\<in\>J> with <math|i\<neq\>j>we
-
-      <item> have if <math|<around*|(|n,m|)>\<in\>I<rsub|i><big|cap>I<rsub|j>\<Rightarrow\>m=i,m=j\<Rightarrow\>i=j>
+      <math|i,j\<in\>J> with <math|i\<neq\>j>we have if
+      <math|<around*|(|n,m|)>\<in\>I<rsub|i><big|cap>I<rsub|j>\<Rightarrow\>m=i,m=j\<Rightarrow\>i=j>
       contradicting <math|i\<neq\>j> so we have
       <math|I<rsub|i><big|cap>I<rsub|j>=\<emptyset\>>. Using then the
       previous theorem <reference|general associativity of general sums
@@ -1532,10 +1531,10 @@
   <\theorem>
     <label|finite sum of sums>Let <math|<around*|\<langle\>|A,+|\<rangle\>>>
     be a abelian semi-group, <math|n\<in\>\<bbb-N\><rsub|0>\\<around*|{|1|}>>,
-    <math|<around*|{|N<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
+    <math|<around*|{|A<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
     such that <math|N<rsub|i>> is finite and non empty and
     <math|f:<big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>\<rightarrow\>A>
-    then <math|<big|sum><rsub|\<gamma\>\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>f<around*|(|\<gamma\>|)>=<big|sum><rsub|\<gamma\>\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>f<around*|(|\<gamma\><rsub|1>,\<ldots\>,\<gamma\><rsub|n>|)>=<big|sum><rsub|\<gamma\>\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,k-1|}>>><around*|(|<big|sum><rsub|i\<in\>A<rsub|n>>f<around*|(|\<lambda\><rsub|1>,\<ldots\>,\<gamma\><rsub|n>,i|)>|)>>
+    then <math|<big|sum><rsub|\<gamma\>\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>f<around*|(|\<gamma\>|)>=<big|sum><rsub|\<gamma\>\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>A<rsub|i>>f<around*|(|\<gamma\><rsub|1>,\<ldots\>,\<gamma\><rsub|n>|)>=<big|sum><rsub|\<gamma\>\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,k-1|}>>A<rsub|i>><around*|(|<big|sum><rsub|i\<in\>A<rsub|n>>f<around*|(|\<lambda\><rsub|1>,\<ldots\>,\<gamma\><rsub|n>,i|)>|)>>
   </theorem>
 
   <\proof>
@@ -1648,7 +1647,7 @@
     is a abelian semi-group and <math|<around*|{|x<rsub|i>|}><rsub|i\<in\>I>>
     and <math|<around*|{|y<rsub|i>|}><rsub|i\<in\>I>> are family of sets in
     <math|A> with finite support then <math|<around*|{|x<rsub|i>\<upl\>y<rsub|i>|}><rsub|i\<in\>I><with|mode|text|
-    is a family with finite support and ><big|sum><rsub|i\<in\>I><around*|(|x<rsub|i>\<upl\>y<rsub|i>|)>=<around*|(|<big|sum><rsub|i\<in\>I>x<rsub|i>|)>\<upl\><around*|(|<big|sum><rsub|i\<in\>>y<rsub|i>|)>>
+    is a family with finite support and ><big|sum><rsub|i\<in\>I><around*|(|x<rsub|i>\<upl\>y<rsub|i>|)>=<around*|(|<big|sum><rsub|i\<in\>I>x<rsub|i>|)>\<upl\><around*|(|<big|sum><rsub|i\<in\>I>y<rsub|i>|)>>
   </theorem>
 
   <\proof>
@@ -4423,7 +4422,7 @@
 
   <\theorem>
     <label|product of vector spaces>If <math|<around*|\<langle\>|V<rsub|i>,+<rsub|i>,\<cdot\><rsub|i>|\<rangle\>><rsub|i\<in\>I>>
-    is a family of vecto spaces over a field
+    is a family of vector spaces over a field
     <math|<around*|\<langle\>|F,+,\<cdot\>|\<rangle\>>> then if we define:
 
     <\enumerate>
@@ -15679,7 +15678,7 @@
     <associate|info-flag|minimal>
     <associate|page-even-footer|>
     <associate|page-even-header|>
-    <associate|page-first|237>
+    <associate|page-first|235>
     <associate|page-height|auto>
     <associate|page-medium|papyrus>
     <associate|page-odd-footer|>
