@@ -857,8 +857,6 @@
     so that <math|<big|sum><rsub|i=n><rsup|m><around*|(|x<rsub|i>-x<rsub|i+1>|)>=<big|sum><rsub|i=n><rsup|<around*|(|n+k|)>><around*|(|x<rsub|i>-x<rsub|i+1>|)>=x<rsub|n>-x<rsub|<around*|(|n+k|)>+1>=x<rsub|n>-x<rsub|m+1>>
   </proof>
 
-  \;
-
   <\theorem>
     <label|sum in a field>Let <math|<around*|\<langle\>|F,+,\<cdot\>|\<rangle\>>>
     be a field, <math|\<alpha\>\<in\>F> and
