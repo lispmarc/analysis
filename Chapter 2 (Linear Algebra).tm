@@ -8868,7 +8868,7 @@
     spaces over a field <math|F> that has characteristics of zero (see
     <reference|field with characterization zero>) then given
     <math|n\<in\>\<bbb-N\><rsub|0>> and a n<nbhyph>linear mapping
-    <math|L\<in\>Hom<around*|(|X<rsup|n>;Y|)>> the the following are
+    <math|L\<in\>Hom<around*|(|X<rsup|n>;Y|)>> then the following are
     equivalent:
 
     <\enumerate>
@@ -8879,9 +8879,9 @@
       <math|i\<neq\>j> and <math|x<rsub|i>=x<rsub|j>> then
       <math|L<around*|(|x|)>=0>
 
-      <item>If <math|x=<around*|{|x<rsub|1>,\<ldots\>,x<rsub|n>|}>\<in\>X<rsup|n>>
+      <item>If <math|x=<around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>\<in\>X<rsup|n>>
       is such that <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
-      is linear independent then <math|L<around*|(|x|)>=0>
+      is linear dependent then <math|L<around*|(|x|)>=0>
     </enumerate>
   </theorem>
 
@@ -8955,7 +8955,7 @@
       </equation>
 
       Using <reference|eq 10.45>, <reference|eq 10.46> and <reference|eq
-      10.48> we have then <math|L<around*|(|x|)>+L<around*|(|x\<circ\><around*|(|i\<leftrightarrow\><rsub|n>j|)>|)>\<Rightarrow\>-L<around*|(|x|)>=L<around*|(|x\<circ\><around*|(|i\<leftrightarrow\><rsub|n>j|)>|)>>
+      10.48> we have then <math|L<around*|(|x|)>+L<around*|(|x\<circ\><around*|(|i\<leftrightarrow\><rsub|n>j|)>|)>=0\<Rightarrow\>-L<around*|(|x|)>=L<around*|(|x\<circ\><around*|(|i\<leftrightarrow\><rsub|n>j|)>|)>>
       or
 
       <\equation>
@@ -9280,7 +9280,7 @@
     n<nbhyph>linear mapping then
 
     <\equation*>
-      L<around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>=<around*|(|<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>>sign<around*|(|\<sigma\>|)>\<cdot\><big|prod><rsub|j\<in\><around*|{|1,\<ldots\>,m|}>>|)>\<cdot\>L<around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>
+      L<around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>=<around*|(|<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>>sign<around*|(|\<sigma\>|)>\<cdot\><big|prod><rsub|j\<in\><around*|{|1,\<ldots\>,m|}>>\<xi\><rsub|j><rsup|\<sigma\><around*|(|j|)>>|)>\<cdot\>L<around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>
     </equation*>
 
     Proving that <math|L> depends only on the values of <math|L> at
@@ -9298,7 +9298,7 @@
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|L<around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>>|<cell|=>|<cell|<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>><around*|(|<big|prod><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<xi\><rsub|j><rsup|\<sigma\><around*|(|j|)>>|)>\<cdot\>\<sigma\>L<around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>>>|<row|<cell|>|<cell|\<equallim\><rsub|L
-      is skew symmetric>>|<cell|<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>><around*|(|<big|prod><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<xi\><rsub|j><rsup|\<sigma\><around*|(|j|)>>|)>\<cdot\><around*|(|sign<around*|(|\<sigma\>|)>\<cdot\>L<around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>>sign<around*|(|\<sigma\>|)>\<cdot\><big|prod><rsub|j\<in\><around*|{|1,\<ldots\>,m|}>>|)>\<cdot\>L<around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>>>>>
+      is skew symmetric>>|<cell|<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>><around*|(|<big|prod><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>\<xi\><rsub|j><rsup|\<sigma\><around*|(|j|)>>|)>\<cdot\><around*|(|sign<around*|(|\<sigma\>|)>\<cdot\>L<around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>>sign<around*|(|\<sigma\>|)>\<cdot\><big|prod><rsub|j\<in\><around*|{|1,\<ldots\>,m|}>>\<xi\><rsub|j><rsup|\<sigma\><around*|(|j|)>>|)>\<cdot\>L<around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>>>>>
     </eqnarray*>
   </proof>
 
@@ -9377,7 +9377,7 @@
       if \<sigma\>=1<rsub|<around*|{|1,\<ldots\>,n|}>>>>>>>
     </equation*>
 
-    So we have finally <math|\<Delta\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>=<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>>sign<around*|(|\<sigma\>|)>\<cdot\>\<sigma\>\<Phi\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>=<big|sum><rsub|\<sigma\>\<in\><around*|{|i<rsub|<around*|{|1,\<ldots\>,n|}>>|}>>sign<around*|(|\<sigma\>|)>\<cdot\>\<sigma\>\<Phi\><around*|(|e<rsub|1,>\<ldots\>,e<rsub|n>|)>+<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>\\<around*|{|i<rsub|<around*|{|1,\<ldots\>,n|}>>|}>>sign<around*|(|\<sigma\>|)>\<cdot\>\<sigma\>\<Phi\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>=1+9=1<rsub|>>
+    So we have finally <math|\<Delta\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>=<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>>sign<around*|(|\<sigma\>|)>\<cdot\>\<sigma\>\<Phi\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>=<big|sum><rsub|\<sigma\>\<in\><around*|{|i<rsub|<around*|{|1,\<ldots\>,n|}>>|}>>sign<around*|(|\<sigma\>|)>\<cdot\>\<sigma\>\<Phi\><around*|(|e<rsub|1,>\<ldots\>,e<rsub|n>|)>+<big|sum><rsub|\<sigma\>\<in\>P<rsub|n>\\<around*|{|i<rsub|<around*|{|1,\<ldots\>,n|}>>|}>>sign<around*|(|\<sigma\>|)>\<cdot\>\<sigma\>\<Phi\><around*|(|e<rsub|1>,\<ldots\>,e<rsub|n>|)>=1+0=1<rsub|>>
 
     \;
   </proof>
@@ -9726,9 +9726,9 @@
 
         <item><dueto|<math|n\<gtr\>2>>In this case as
         <math|<around*|{|x<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
-        are linear independent there exists by <reference|condition for
-        linear dependency> a <math|i<rsub|0>\<in\><around*|{|1,\<ldots\>,n|}>>
-        and <math|<around*|{|\<alpha\><rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\<around*|{|i<rsub|0>|}>>>
+        are linear dependent there exists by <reference|condition for linear
+        dependency> a <math|i<rsub|0>\<in\><around*|{|1,\<ldots\>,n|}>> and
+        <math|<around*|{|\<alpha\><rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>\\<around*|{|i<rsub|0>|}>>>
         such that
 
         <\equation>
@@ -11702,7 +11702,7 @@
   </proof>
 
   <\lemma>
-    <label|sub determinant function>Let <math|n\<in\>\<bbb-N\><rsub|0>\\<around*|{|1|}>>,
+    <label|sub determinant function>L1et <math|n\<in\>\<bbb-N\><rsub|0>\\<around*|{|1|}>>,
     <math|F> a field of characterization zero,
     <math|<around*|{|\<varepsilon\><rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>>
     the canonical basis of <math|F<rsup|n>> then if
@@ -12193,8 +12193,6 @@
     <\equation>
       <label|eq 10.95>\<cal-M\><around*|(|adjoint<around*|(|L|)>,<around*|{|e<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>,<around*|{|e<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>|)><rsub|k,j>=\<Delta\><around*|(|b<rsub|1><rsup|k,j>,\<ldots\>,b<rsub|n><rsup|k,j>|)>
     </equation>
-
-    Define now <math|>
 
     Define now <math|\<forall\>i,j\<in\><around*|{|1,\<ldots\>,n|}>> the
     matrix <math|M<rsup|i,j>\<in\>M<around*|(|n\<times\>n,F|)>> by
