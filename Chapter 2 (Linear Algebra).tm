@@ -14418,7 +14418,7 @@
       <math|y=<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>\<delta\><around*|(|v<rsub|1><rsup|<around*|(|i|)><rsub|>>,\<ldots\>,v<rsub|n><rsup|<around*|(|i|)>>|)>>
       and thus <math|x=\<pi\><around*|(|<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>\<delta\><around*|(|v<rsub|1><rsup|<around*|(|i|)>>,\<ldots\>,v<rsub|n><rsup|<around*|(|i|)>>|)>|)>=<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>\<pi\><around*|(|\<delta\><around*|(|v<rsub|1><rsup|<around*|(|i|)>>,\<ldots\>,v<rsub|n><rsup|<around*|(|i|)>>|)>|)>=<big|sum><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>\<alpha\><rsub|i>\<cdot\>v<rsub|1><rsup|<around*|(|i|)>>\<otimes\>\<ldots\>v<rsub|n><rsup|<around*|(|i|)>>\<in\>\<cal-S\><around*|(|\<otimes\><around*|(|<big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>|)>|)>>
 
-      <item>As <math|<around*|{|\<delta\><rsub|x>\|z\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>|}>>
+      <item>As <math|<around*|{|\<delta\><rsub|z>\|z\<in\><big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>|}>>
       is by <reference|free vector space over a set> a basis for
       <math|\<cal-F\><around*|(|<big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>,F|)>>
       we have if <math|x\<in\>\<cal-F\><around*|(|<big|prod><rsub|i\<in\><around*|{|1,\<ldots\>,n|}>>V<rsub|i>,F|)>>
@@ -14662,7 +14662,7 @@
 
     So we have proved that <math|<around*|{|u<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,k|}>>>
     and <math|<around*|{|v<rsub|i>|}><rsub|i\<in\><around*|{|1,\<ldots\>,k|}>>>
-    are linear dependent.
+    are linear independent.
   </proof>
 
   <\theorem>
@@ -14749,7 +14749,7 @@
     multilinear so
 
     <\equation>
-      <label|eq10.119>\<psi\>\<in\>Hom<around*|(|<around*|(|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m>|)>,V<rsub|m+1>,V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m+1>|)>
+      <label|eq10.119>\<psi\>\<in\>Hom<around*|(|<around*|(|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m>|)>,V<rsub|m+1>;V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m+1>|)>
     </equation>
 
     Using the definition of the tensor product
@@ -14814,7 +14814,7 @@
     we have that <math|\<tau\>> is multilinear or
 
     <\equation>
-      \<tau\>\<in\>Hom<around*|(|<around*|(|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m>|)>,V<rsub|m+1>,V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m+1>|)>
+      \<tau\>\<in\>Hom<around*|(|<around*|(|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m>|)>,V<rsub|m+1>;V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m+1>|)>
     </equation>
 
     We finish by proving that <math|<around*|\<langle\>|V<rsub|1>\<otimes\>\<ldots\>\<otimes\>V<rsub|m+1>,\<tau\>|\<rangle\>>>
