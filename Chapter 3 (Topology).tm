@@ -69,8 +69,8 @@
       <\enumerate>
         <item>If <math|n=1> then <math|<big|cap><rsub|j\<in\><around*|{|1|}>>U<rsub|i<around*|(|j|)>>=U<rsub|i<around*|(|1|)>>\<in\>\<cal-T\>>
 
-        <item>If <math|n\<in\>X> then <math|<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n+1|}>>U<rsub|i<around*|(|j|)>>\<equallim\><rsub|<with|mode|text|<reference|generalized
-        distributive laws>>><around*|(|<big|cup><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>U<rsub|i<around*|(|j|)>>|)><big|cup>U<rsub|i<around*|(|j+1|)>>>
+        <item>If <math|n\<in\>X> then <math|<big|cap><rsub|j\<in\><around*|{|1,\<ldots\>,n+1|}>>U<rsub|i<around*|(|j|)>>\<equallim\><rsub|<with|mode|text|<reference|generalized
+        distributive laws>>><around*|(|<big|cap><rsub|j\<in\><around*|{|1,\<ldots\>,n|}>>U<rsub|i<around*|(|j|)>>|)><big|cap>U<rsub|i<around*|(|j+1|)>>>
         which is open because of <math|n\<in\>X> and <math|<around*|(|3|)>>
         of the definition of a topology.
       </enumerate>
@@ -1286,7 +1286,7 @@
   <\theorem>
     Let <math|<around*|\<langle\>|X,\<cal-T\>|\<rangle\>>> be a topological
     space, <math|A\<subseteq\>X> then <math|A<rsup|\<circ\>>=\<emptyset\>> if
-    and only if <math|X\\A> is dense in <math|A>
+    and only if <math|X\\A> is dense in <math|X>
   </theorem>
 
   <\proof>
@@ -1445,7 +1445,7 @@
   </theorem>
 
   <\proof>
-    Let <math|x\<in\>B<rsub|d><around*|(|x<rsub|1>,\<varepsilon\><rsub|1>|)><big|cap>B<rsub|d><around*|(|x<rsub|2>,\<varepsilon\><rsub|2>|)>\<Rightarrow\>d<around*|(|x<rsub|1>,x|)>\<less\>\<varepsilon\><rsub|1>\<wedge\>d<around*|(|x<rsub|2>,x|)>\<less\>\<varepsilon\>>,
+    Let <math|x\<in\>B<rsub|d><around*|(|x<rsub|1>,\<varepsilon\><rsub|1>|)><big|cap>B<rsub|d><around*|(|x<rsub|2>,\<varepsilon\><rsub|2>|)>\<Rightarrow\>d<around*|(|x<rsub|1>,x|)>\<less\>\<varepsilon\><rsub|1>\<wedge\>d<around*|(|x<rsub|2>,x|)>\<less\>\<varepsilon\><rsub|2>>,
     take then <math|\<varepsilon\>=min<around*|(|\<varepsilon\><rsub|1>-d<around*|(|x<rsub|1>,x|)>,\<varepsilon\><rsub|2>-d<around*|(|x<rsub|2>,x|)>|)>\<gtr\>0>
     then if <math|y\<in\>B<rsub|d><around*|(|x,\<varepsilon\>|)>> we have
     <math|d<around*|(|x,y|)>\<less\>\<varepsilon\>> so for <math|i=1,2> we
@@ -4513,7 +4513,7 @@
     <math|X>) at <math|x\<in\>A> iff <math|\<forall\>\<varepsilon\>\<in\>\<bbb-R\><rsub|+>>
     there exists a <math|\<delta\>\<in\>\<bbb-R\><rsub|+>> such that
     <math|\<forall\>y\<in\>A> with <math|d<rsub|X><around*|(|x,y|)>\<less\>\<delta\>>
-    we have <math|d<rsub|Y><around*|(|f<around*|(|x|)>,f<around*|(|y|)>|)>>
+    we have <math|d<rsub|Y><around*|(|f<around*|(|x|)>,f<around*|(|y|)>|)>\<less\>\<varepsilon\>>
   </corollary>
 
   <\proof>
@@ -19768,7 +19768,7 @@
     <associate|info-flag|minimal>
     <associate|page-even-footer|>
     <associate|page-even-header|>
-    <associate|page-first|389>
+    <associate|page-first|387>
     <associate|page-height|auto>
     <associate|page-medium|papyrus>
     <associate|page-odd-footer|>
