@@ -1,4 +1,4 @@
-<TeXmacs|2.1.1>
+<TeXmacs|2.1.4>
 
 <project|Book.tm>
 
@@ -6990,7 +6990,7 @@
     ordered class that is conditional complete then <math|I\<subseteq\>A> is
     a <with|font-series|bold|generalized interval >if
     <math|\<forall\>x,y\<in\>I> we have <math|<around*|[|x,y|]>\<subseteq\>I>.
-    </definition>
+  </definition>
 
   We have the floowing equivalent conditions for a generalized interval.
 
